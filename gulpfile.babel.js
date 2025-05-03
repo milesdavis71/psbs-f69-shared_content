@@ -12,7 +12,8 @@ import webpack2      from 'webpack';
 import named         from 'vinyl-named';
 import autoprefixer  from 'autoprefixer';
 import imagemin      from 'gulp-imagemin';
-// huhu
+
+// hihi
 const sass = require('gulp-sass')(require('sass-embedded'));
 const postcss = require('gulp-postcss');
 const uncss = require('postcss-uncss');
