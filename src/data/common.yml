@@ -1,0 +1,7 @@
+main:
+  - title: Home
+    link: index.html
+  - title: About
+    link: about.html
+  - title: Contact
+    link: contact.html

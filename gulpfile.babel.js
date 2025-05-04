@@ -13,7 +13,6 @@ import named         from 'vinyl-named';
 import autoprefixer  from 'autoprefixer';
 import imagemin      from 'gulp-imagemin';
 
-// hihi
 const sass = require('gulp-sass')(require('sass-embedded'));
 const postcss = require('gulp-postcss');
 const uncss = require('postcss-uncss');
@@ -187,3 +186,64 @@ function watch() {
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }
+
+// ----- School-specific Handling -----
+
+const SCHOOLS = ['school1', 'school2'];
+let currentSchool = yargs.argv.school || 'school1';
+
+function setSchool(school) {
+  return (done) => {
+    currentSchool = school;
+    console.log(`\n🔧 Building for: ${currentSchool}\n`);
+    done();
+  };
+}
+
+// This is the task for build pages of each school
+function pagesSchool() {
+  return gulp.src(`src/pages/${currentSchool}/**/*.{html,hbs,handlebars}`)
+    .pipe(panini({
+      root: `src/pages/${currentSchool}/`,
+      layouts: 'src/layouts/',
+      partials: 'src/partials/',
+      data: 'src/data/',
+      helpers: 'src/helpers/' 
+    }))
+    .pipe(gulp.dest(PATHS.dist));
+}
+
+// Override default `pages` task with the dynamic one
+gulp.task('pages', pagesSchool);
+
+// Update watch to reflect current school
+function watchSchool() {
+    gulp.watch(PATHS.assets, copy);
+    gulp.watch(`src/pages/${currentSchool}/**/*.html`).on('all', gulp.series(pagesSchool, browser.reload));
+    gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pagesSchool, browser.reload));
+    gulp.watch('src/data/**/*.{js,json,yml}').on('all', gulp.series(resetPages, pages, browser.reload));
+    gulp.watch('src/helpers/**/*.js').on('all', gulp.series(resetPages, pages, browser.reload));
+    gulp.watch('src/assets/scss/**/*.scss').on('all', sassBuild);
+    gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
+    gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
+    gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
+  }
+  
+  gulp.task('watch', watch);
+
+// Register school-specific build tasks
+SCHOOLS.forEach(school => {
+  gulp.task(`build:${school}`, gulp.series(
+    setSchool(school),
+    clean,
+    gulp.parallel(pagesSchool, javascript, images, copy),
+    sassBuild, 
+    styleGuide
+  ));
+  gulp.task(`start:${school}`, gulp.series(
+    setSchool(school),
+    `build:${school}`,
+    server,
+    watchSchool 
+  ));
+});
