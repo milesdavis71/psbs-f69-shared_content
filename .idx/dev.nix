@@ -10,6 +10,7 @@
     pkgs.yarn
     pkgs.exiftool
     pkgs.imagemagick
+    pkgs.openssh
   ];
 
   # Sets environment variables in the workspace
