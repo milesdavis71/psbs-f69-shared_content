@@ -1,5 +1,7 @@
-school_name: "Greenwood High School"
-address: "123 Education Way, Greenwood"
+school_name: 'Greenwood High School'
+address: '123 Education Way, Greenwood'
+school:
+  title: Huhu
 colors:
-  primary: "#2e8540"
-  secondary: "#ffcc00"
+  primary: '#2e8540'
+  secondary: '#ffcc00'
