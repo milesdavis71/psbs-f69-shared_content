@@ -1,7 +1,5 @@
 school_name: 'Greenwood High School'
-address: '123 Education Way, Greenwood'
-school:
-  title: Huhu
-colors:
-  primary: '#2e8540'
-  secondary: '#ffcc00'
+primary_color: '#2e8540'
+secondary_color: '#f1c40f'
+favicon: '/assets/images/school1/favicon.ico'
+theme: 'school1'

@@ -1,16 +1,2 @@
 @import 'foundation';
 @include foundation-everything;
-
-// School-specific theming
-@mixin school-theme($primary, $secondary) {
-  .primary-bg { background-color: $primary; }
-  .secondary-bg { background-color: $secondary; }
-  a { color: $primary; }
-  button, .button { background-color: $primary; }
-  .top-bar { background-color: $primary; }
-}
-
-// Default theme (will be overridden by school-specific YAML)
-body {
-  @include school-theme(#2c3e50, #e74c3c);
-}
