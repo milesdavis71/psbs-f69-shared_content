@@ -71,8 +71,8 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
     'primary': #1779ba,
-    'secondary': #767676,
-    'success': #3adb76,
+    'secondary': #ff4500,
+    'success': #30a8cb,
     'warning': #ffae00,
     'alert': #cc4b37,
 );
@@ -91,8 +91,8 @@ $global-padding: 1rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
-$global-menu-padding: 0.7rem 1rem;
+$global-radius: 0.3em;
+$global-menu-padding: 0.3rem 0rem;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
 $global-flexbox: true;
@@ -191,8 +191,8 @@ $header-styles: (
     ),
 );
 $header-text-rendering: optimizeLegibility;
-$small-font-size: 80%;
-$header-small-font-color: $medium-gray;
+$small-font-size: 90%;
+$header-small-font-color: $dark-gray;
 $paragraph-lineheight: 1.6;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
@@ -265,7 +265,7 @@ $accordion-background: $white;
 $accordion-plusminus: true;
 $accordion-plus-content: '\002B';
 $accordion-minus-content: '\2013';
-$accordion-title-font-size: rem-calc(12);
+$accordion-title-font-size: rem-calc(14);
 $accordion-item-color: $primary-color;
 $accordion-item-background-hover: $light-gray;
 $accordion-item-padding: 1.25rem 1rem;
