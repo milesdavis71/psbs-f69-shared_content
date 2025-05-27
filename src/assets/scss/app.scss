@@ -63,3 +63,8 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+.current a {
+    color: $secondary-color;
+    line-height: 1.3rem;
+}
