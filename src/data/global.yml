@@ -1,12 +1,1 @@
-common:
-  description: 'Ez minden oldalon közös leírás.'
-  author: 'Szegedi Tudományegyetem'
-
-sites:
-  default:
-    title: 'Alapértelmezett oldal'
-    favicon: '/assets/img/favicon-default.ico'
-
-  default2:
-    title: 'Második oldal'
-    favicon: '/assets/img/favicon-alt.ico'
+menu

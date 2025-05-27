@@ -1,11 +1,38 @@
-{{>default1}}
-<title>{{page.title}}</title>
-<link
-    rel="shortcut icon"
-    type="image/x-icon"
-    href="{{root}}assets/img/favicon_ps.ico"
-/>
-<link rel="stylesheet" href="{{root}}assets/css/app.css" />
-
-{{>default2}}
-{{> default3}}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{title}}</title>
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="{{root}}assets/img/{{favicon}}.ico"
+        />
+        <link rel="stylesheet" href="{{root}}assets/css/app.css" />
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="cell shrink header medium-cell-block-container">
+                <div class="grid-x grid-padding-x">{{> sticky_bar}}</div>
+            </div>
+            <div class="grid-x grid-padding-x">
+                <div class="cell medium-3 medium-cell-block-y">{{>menu}}</div>
+                <div class="cell medium-9 medium-cell-block-y">
+                    <div class="grid-x grid-padding-x">
+                        <div class="cell medium-12 large-9">{{> body}}</div>
+                        <div class="cell medium-12 large-3">
+                            {{> right_column}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <!-- <div class="cell shrink footer">
+            <h3>Here's my footer</h3>
+        </div> -->
+        </div>
+        <script src="{{root}}assets/js/app.js"></script>
+    </body>
+</html>

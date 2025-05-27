@@ -1,5 +1,63 @@
      
     </head>
     <body>
+        <div class="data-sticky-container show-for-small-only" data-sticky-container>
+            <div class="sticky" data-sticky data-sticky-on="small" data-options="marginTop:0;" style="width:100%">
+                <div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
+                    <div class="title-bar-left">
+                        <button class="menu-icon" id="menuicon" type="button" data-toggle></button>
+                        <strong>Menü</strong><strong>│</strong><a href="{{root}}index.html"><i class="fas fa-home fa-lg"></i></a>
+                    </div>
+                    <div class="title-bar-right">
+                        <a href=https://www.facebook.com/petofiszeged target="_blank" id="fb" style="color: white"><i class="fab fa-facebook-f">&thinsp;</i><strong>PS</strong></a>&emsp;
+                        <a href=https://www.facebook.com/balintszeged/ target="_blank" id="fb" style="color: white"><i class="fab fa-facebook-f fa-lg">&thinsp;</i><strong>BS</strong></a>
+                    </div>&emsp;
+                    <a href="https://klik200218001.e-kreta.hu" target="_blank" id="kreta" style="color: white; line-height: 1.5rem">
+                        <img src="{{root}}assets/img/kreta_logo_small.png">&thinsp;<strong>PS</strong></a>&emsp;
+                    <a href="https://klik200218003.e-kreta.hu" target="_blank" id="kreta" style="color: white; line-height: 1.5rem"><img src="{{root}}assets/img/kreta_logo_small.png">
+                        <strong>BS</strong></a>&thinsp;
+                </div>
+            </div>
+        </div>
+        <!-- END Top Bar small -->
+        <span class="show-for-small-only">
+            <p></p>
+        </span>
         <div class="grid-container">
+            <div class="grid-y medium-grid-frame">
+                <span class="show-for-large">
+                    <img src="{{root}}assets/img/csik.jpg">
+                </span>
+                <h5 class="text-center show-for-large" style="margin-top: -1rem">
+                    <a href="{{root}}index.html"><img src="{{root}}assets/img/logo_ps.jpg" style="margin-top: 1.2rem"></a>
+                    <strong>A <font color="#3fa9f5">Szegedi Petőfi Sándor Általános Iskola</font> és <font color="#f7931e">Bálint
+                            Sándor Tagiskolája</font> honlapja</strong>
+                    <a href="{{root}}index.html"><img src="{{root}}assets/img/logo_bs.jpg" style="margin-top: 1.2rem"></a>
+                </h5>
+                <p class="text-center show-for-large" style="margin-top: -2.2rem">
+                    Nyitva tartás: 7:00–18:00 óráig&emsp;|&emsp;Az intézmény fenntartója a Szegedi Tankerületi Központ
+                </p>
+                <span class="show-for-large">
+                    <img src="{{root}}assets/img/csik_bottom.jpg" style="margin-top: -2rem; margin-left: 7px; padding-right: 20px" ;>
+                </span>
+                <style type="text/css">
+                .menutd {
+                    font-size: 0.9rem;
+                }
+                </style>
+                <div class="cell medium-auto medium-cell-block-container">
+                    <div class="grid-x grid-padding-x">
+                        <div class="cell medium-3 medium-cell-block-y" id="becsuk">
+                            <div class="top-bar show-for-small" id="example-animated-menu" data-animate="hinge-in-from-top hinge-out-from-top">
+                                <div class="top-bar-left"> {{> menu}}
+                                </div>
+                            </div>
+                            <div class="show-for-large-only"> {{> menu}}
+                            </div>
+                        </div>
+                       
+                        {{> body}}
+                                         {{>menu}}
+           
+    </body>
 
