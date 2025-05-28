@@ -57,3 +57,27 @@ pages:
         page: 'gyermekvedelem'
         url: gyermekvedelem
         folder: bemutatkozas
+
+bemutatkozas:
+  - content:
+      - type: paragraph
+        text: Az iskola Petőfi-telep szívében, kertvárosi környezetben helyezkedik el. Évfolyamonként egy-egy osztályt indítunk, családias légkört tudunk biztosítani tanulóink számára.
+      - type: paragraph
+        text: Intézményünk nagy udvarral rendelkezik, mely a sportolás, a játék és rendezvényeink helyszíne. Korszerű udvari játékok, sakkpadok és sportpálya biztosítja a lehetőséget mind a tanulásra, mind a kikapcsolódásra.
+      - type: paragraph
+        text: Iskolánk az utóbbi évek során több felújításon ment keresztül, melynek köszönhetően egy modern, 21. századi épület várja a tanulókat. Minden tantermünk korszerű bútorokkal és interaktív táblával felszerelt. A kulturált étkezés feltételeit a felújított konyha és ebédlő biztosítja.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/bemutatkozas/ps/full/also-tagozatos-osztalyterem.jpg
+            thumb: /assets/img/bemutatkozas/ps/thumb/also-tagozatos-osztalyterem.jpg
+            alt: also tagozatos osztalyterem
+            caption: Alsó tagozatos osztályterem
+          - full: /assets/img/bemutatkozas/ps/full/felso-tagozatos-osztalyterem.jpg
+            thumb: /assets/img/bemutatkozas/ps/thumb/felso-tagozatos-osztalyterem.jpg
+            alt: felso tagozatos osztalyterem
+            caption: Felső tagozatos osztályterem
+          - full: /assets/img/bemutatkozas/ps/full/felujitott-tornaterem.jpg
+            thumb: /assets/img/bemutatkozas/ps/thumb/felujitott-tornaterem.jpg
+            alt: tornaterem
+            caption: Tornaterem

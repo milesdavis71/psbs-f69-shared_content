@@ -1,7 +1,44 @@
 ---
 school: Szegedi Petőfi Sándor Általános Iskola
+layout: two_columns
 favicon: favicon_ps
 logo: logo_ps
 title: Bemutatkozás
 ---
-<h4>{{title}}</h4>
+
+<h4 class="text-center">{{title}}</h4>
+
+<div class="grid-x grid-margin-x">
+    {{#each global.bemutatkozas}}
+      {{#each this.content}}
+        {{#ifequal this.type "paragraph"}}
+          <p>{{ this.text }}</p>
+        {{/ifequal}}
+
+        {{#ifequal this.type "images"}}
+        <div class="grid-container">
+          <div class="grid-x grid-margin-x">
+            {{#each this.images}}
+              <div class="cell small-12 medium-{{divide 12 ../images_per_row}}">
+                <div class="card">
+                  <div class="card-section text-center">
+                    <img src="{{ this.thumb }}" alt="{{ this.alt }}" data-open="modal-{{@../index}}-{{@index}}" style="cursor:pointer;" />
+                    <img src="{{ this.thumb }}" alt="{{ this.alt }}" class="thumbnail hide-for-medium" />
+                    {{#if this.caption}}<p class="caption">{{ this.caption }}</p>{{/if}}
+                  </div>
+                </div>
+
+                <div class="reveal large" id="modal-{{@../index}}-{{@index}}" data-reveal>
+                  <p class="text-center" style="margin: 0 0 0 0;"><img src="{{ this.full }}" alt="{{ this.alt }}" /></p>
+                  <button class="close-button" data-close aria-label="Bezárás" type="button">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              </div>
+            {{/each}}
+          </div>
+        </div>
+      {{/ifequal}}
+      {{/each}}
+  {{/each}}
+</div>
