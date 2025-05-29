@@ -65,19 +65,30 @@ bemutatkozas:
       - type: paragraph
         text: Intézményünk nagy udvarral rendelkezik, mely a sportolás, a játék és rendezvényeink helyszíne. Korszerű udvari játékok, sakkpadok és sportpálya biztosítja a lehetőséget mind a tanulásra, mind a kikapcsolódásra.
       - type: paragraph
-        text: Zuzuzu Iskolánk az utóbbi évek során több felújításon ment keresztül, melynek köszönhetően egy modern, 21. századi épület várja a tanulókat. Minden tantermünk korszerű bútorokkal és interaktív táblával felszerelt. A kulturált étkezés feltételeit a felújított konyha és ebédlő biztosítja.
+        text: Iskolánk az utóbbi évek során több felújításon ment keresztül, melynek köszönhetően egy modern, 21. századi épület várja a tanulókat. Minden tantermünk korszerű bútorokkal és interaktív táblával felszerelt. A kulturált étkezés feltételeit a felújított konyha és ebédlő biztosítja.
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/bemutatkozas/ps/full/also-tagozatos-osztalyterem.jpg
-            thumb: /assets/img/bemutatkozas/ps/thumb/also-tagozatos-osztalyterem.jpg
+          - full: /assets/img/ps/bemutatkozas/full/also-tagozatos-osztalyterem.jpg
+            thumb: /assets/img/ps/bemutatkozas/thumb/also-tagozatos-osztalyterem.jpg
             alt: also tagozatos osztalyterem
             caption: Alsó tagozatos osztályterem
-          - full: /assets/img/bemutatkozas/ps/full/felso-tagozatos-osztalyterem.jpg
-            thumb: /assets/img/bemutatkozas/ps/thumb/felso-tagozatos-osztalyterem.jpg
+          - full: /assets/img/ps/bemutatkozas/full/felso-tagozatos-osztalyterem.jpg
+            thumb: /assets/img/ps/bemutatkozas/thumb/felso-tagozatos-osztalyterem.jpg
             alt: felso tagozatos osztalyterem
             caption: Felső tagozatos osztályterem
-          - full: /assets/img/bemutatkozas/ps/full/felujitott-tornaterem.jpg
-            thumb: /assets/img/bemutatkozas/ps/thumb/felujitott-tornaterem.jpg
+          - full: /assets/img/ps/bemutatkozas/full/felujitott-tornaterem.jpg
+            thumb: /assets/img/ps/bemutatkozas/thumb/felujitott-tornaterem.jpg
             alt: tornaterem
             caption: Tornaterem
+
+
+ps:
+  school: Szegedi Petőfi Sándor Általános Iskola
+  favicon: ps/favicon_ps
+  logo: ps/logo_ps
+
+bs:
+  school: Szegedi Petőfi Sándor Általános Iskola Bálint Sándor Tagiskolája
+  favicon: bs/favicon_bs
+  logo: bs/logo_bs
