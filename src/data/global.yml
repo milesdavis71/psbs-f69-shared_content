@@ -1,3 +1,7 @@
+schools:
+ - name: ps
+ - name: bs
+
 pages:
   - title: Főoldal/Híreink
     url: index
@@ -81,14 +85,3 @@ bemutatkozas:
             thumb: /assets/img/ps/bemutatkozas/thumb/felujitott-tornaterem.jpg
             alt: tornaterem
             caption: Tornaterem
-
-
-ps:
-  school: Szegedi Petőfi Sándor Általános Iskola
-  favicon: ps/favicon_ps
-  logo: ps/logo_ps
-
-bs:
-  school: Szegedi Petőfi Sándor Általános Iskola Bálint Sándor Tagiskolája
-  favicon: bs/favicon_bs
-  logo: bs/logo_bs

@@ -1,23 +1,18 @@
 ---
 layout: two_columns
 title: Bemutatkozás
+address: 6727, Szeged, Benczúr Gyula u. 29.
+mail-tit: titkarsag@petofiszeged.hu
+mail-ig: igazgato@petofiszeged.hu
+phone1: +36 62 541 956
+phone2: +36 62 541 957
+phone3: +36 30 736 2795
 ---
 <h4 class="text-center">{{title}}</h4>
-<div class="grid-x grid-margin-x">
-    <div class="cell small-12 medium-3 text-center">
-        <img src="{{root}}assets/img/psai_logo_nagy.jpg">
-    </div>
-    <div class="cell small-12 medium-6">
-        {{> ps-elerhetoseg}}
-    </div>
-    <div class="cell small-12 medium-3"> <img src="{{root}}assets/img/psai-qrcode.png" style="width: 128px">
-    </div>
-</div>
-<p class=" text-center">
-    Igazgató: Winkler Andrea <br>
-    Az intézmény fenntartója és működtetője a Szegedi Tankerületi Központ.
-</p>
-<div class="grid-x grid-margin-x">
+{{> elerhetoseg}}
+{{#each global.schoools}}
+{{>bemutatkozas_text_block_variation type=name}}
+{{/each}}<div class="grid-x grid-margin-x">
     <div class="cell auto">
     </div>
     <div class="cell small-12 medium-5">
