@@ -1,0 +1,94 @@
+elerhetoseg:
+  - address: 6727, Szeged, Benczúr Gyula u. 29.
+    mail-tit: titkarsag@petofiszeged.hu
+    mail-ig: igazgato@petofiszeged.hu
+    phone1: +36 62 541 956
+    phone2: +36 62 541 957
+    phone3: +36 30 736 2795
+    line1: 'Igazgató: Winkler Andrea'
+    line2: Az intézmény fenntartója és működtetője a Szegedi Tankerületi Központ.
+    src:
+    shortname: ps
+
+pages:
+  - title: Főoldal/Híreink
+    url: index
+    icon: home
+
+  #bemutatkozás
+  - title: Bemutatkozás
+    url: bemutatkozas
+    icon: torsos-all
+    menu: bemutatkozas
+    submenu:
+      - title: Bemutatkozás
+        page: 'bemutatkozas'
+        url: bemutatkozas
+        folder: bemutatkozas
+      - title: Tanáraink
+        page: 'tanaraink'
+        url: tanaraink
+        folder: bemutatkozas
+      - title: Csengetési rend
+        page: 'csengetesi_rend'
+        url: csengetesi_rend
+        folder: bemutatkozas
+      - title: Iskolánkat segítő külsős munkatársak
+        page: 'iskolankat_segito_kulsos_munkatarsak'
+        url: iskolankat_segito_kulsos_munkatarsak
+        folder: bemutatkozas
+      - title: Hitoktatóink
+        page: 'hitoktatoink'
+        url: hitoktatoink
+        folder: bemutatkozas
+      - title: Felekezetek bemutatkozása
+        page: 'felekezetek_bemutatkozasa'
+        url: felekezetek_bemutatkozasa
+        folder: bemutatkozas
+      - title: Pedagógiai program
+        page: 'pedagogiai_program'
+        url: pedagogiai_program
+        folder: bemutatkozas
+      - title: SZMSZ
+        page: 'szmsz'
+        url: szmsz
+        folder: bemutatkozas
+      - title: Kollektív szerződés
+        page: 'kollektiv_szerzodes'
+        url: kollektiv_szerzodes
+        folder: bemutatkozas
+      - title: IMIP
+        page: 'imip'
+        url: imip
+        folder: bemutatkozas
+      - title: Házirend
+        page: 'hazirend'
+        url: hazirend
+        folder: bemutatkozas
+      - title: Gyermekvédelem
+        page: 'gyermekvedelem'
+        url: gyermekvedelem
+        folder: bemutatkozas
+
+bemutatkozas:
+  - type: paragraph
+    text: Az iskola Petőfi-telep szívében, kertvárosi környezetben helyezkedik el. Évfolyamonként egy-egy osztályt indítunk, családias légkört tudunk biztosítani tanulóink számára.
+  - type: paragraph
+    text: Intézményünk nagy udvarral rendelkezik, mely a sportolás, a játék és rendezvényeink helyszíne. Korszerű udvari játékok, sakkpadok és sportpálya biztosítja a lehetőséget mind a tanulásra, mind a kikapcsolódásra.
+  - type: paragraph
+    text: Iskolánk az utóbbi évek során több felújításon ment keresztül, melynek köszönhetően egy modern, 21. századi épület várja a tanulókat. Minden tantermünk korszerű bútorokkal és interaktív táblával felszerelt. A kulturált étkezés feltételeit a felújított konyha és ebédlő biztosítja.
+  - type: images
+    images_per_row: 3
+    images:
+      - full: /assets/img/ps/bemutatkozas/full/also-tagozatos-osztalyterem.jpg
+        thumb: /assets/img/ps/bemutatkozas/thumb/also-tagozatos-osztalyterem.jpg
+        alt: also tagozatos osztalyterem
+        caption: Alsó tagozatos osztályterem
+      - full: /assets/img/ps/bemutatkozas/full/felso-tagozatos-osztalyterem.jpg
+        thumb: /assets/img/ps/bemutatkozas/thumb/felso-tagozatos-osztalyterem.jpg
+        alt: felso tagozatos osztalyterem
+        caption: Felső tagozatos osztályterem
+      - full: /assets/img/ps/bemutatkozas/full/felujitott-tornaterem.jpg
+        thumb: /assets/img/ps/bemutatkozas/thumb/felujitott-tornaterem.jpg
+        alt: tornaterem
+        caption: Tornaterem
