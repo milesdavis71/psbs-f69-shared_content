@@ -1,39 +1,41 @@
 ---
-layout: two_columns
-title: Bemutatkozás
+layout: two_columns_ps
+fullname: Szegedi Petőfi Sándor Általános Iskola
+logo: /assets/img/ps/logo-nagy-ps.jpg
+qrcode: /assets/img/ps/qrcode-ps.png
+address: 6727, Szeged, Benczúr Gyula u. 29.
+mail-tit: titkarsag@petofiszeged.hu
+mail-ig: igazgato@petofiszeged.hu
+phone1: +36 62 541 956
+phone2: +36 62 541 957
+phone3: +36 30 736 2795
+line1: 'Igazgató: Winkler Andrea'
+line2: Az intézmény fenntartója és működtetője a Szegedi Tankerületi Központ.
 
 ---
+
 <h4 class="text-center">{{title}}</h4>
-{{> elerhetoseg}}
-
-
+{{>elerhetoseg-kozos}}
 <div class="grid-x grid-margin-x">
-    {{#each global.bemutatkozas}}
-    {{#ifequal this.type "paragraph"}}
-    <p>{{ this.text }}</p>
-    {{/ifequal}}
-    {{#ifequal this.type "images"}}
-    <div class="grid-container">
-        <div class="grid-x grid-margin-x">
-            {{#each this.images}}
-            <div class="cell small-12 medium-{{divide 12 ../images_per_row}}">
-                <div class="card">
-                    <div class="card-section text-center">
-                        <img src="{{ this.thumb }}" alt="{{ this.alt }}" data-open="modal-{{@../index}}-{{@index}}" style="cursor:pointer;" />
-                        <img src="{{ this.thumb }}" alt="{{ this.alt }}" class="thumbnail hide-for-medium" />
-                        {{#if this.caption}}<p class="caption">{{ this.caption }}</p>{{/if}}
-                    </div>
-                </div>
-                <div class="reveal large" id="modal-{{@../index}}-{{@index}}" data-reveal>
-                    <p class="text-center" style="margin: 0 0 0 0;"><img src="{{ this.full }}" alt="{{ this.alt }}" /></p>
-                    <button class="close-button" data-close aria-label="Bezárás" type="button">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            </div>
-            {{/each}}
-        </div>
+    <div class="cell auto"></div>
+    <div class="cell small-12 medium-5">
+        <img class="thumbnail" src="{{root}}assets/img/ps/bemutatkozas/ps-front.jpg" />
     </div>
-    {{/ifequal}}
+    <div class="cell auto"></div>
+</div>
+<div class="grid-x grid-margin-x">
+    {{#each global.bemutatkozas.ps}}
+    {{>bemutatkozas-kozos}}
     {{/each}}
+</div>
+<div class="grid-x grid-margin-x">
+    <div class="cell auto">
+    </div>
+    <div class="cell small-4">
+        <p class="text-center">
+            <img src="{{root}}assets/img/wa_sign.jpg"> <br>
+            <em>Winkler Andrea</em><br />
+            igazgató
+        </p>
+    </div>
 </div>

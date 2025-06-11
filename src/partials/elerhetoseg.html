@@ -1,3 +1,4 @@
+{{#each global.elerhetoseg}}
 <div class="grid-x grid-margin-x">
     <div class="cell small-12 medium-3 text-center">
         <img src="{{root}}assets/img/psai_logo_nagy.jpg">
@@ -6,17 +7,16 @@
         <p class="h5 text-center" style="margin-left: 10px;">
             <strong>Szegedi Petőfi Sándor Általános Iskola</strong>
         </p>
-       {{#each global.elerhetoseg}}
-       <p class="text-center">
-        Cím:</strong> {{address}}<br />
-        <i class="fa fa-envelope"></i><a href="mailto:titkarsag@petofiszeged.hu">
-            {{mail-tit}}</a><br />
-        <i class="fa fa-envelope"></i><a href="mailto:igazgato@petofiszeged.hu"> {{mail-ig}}</a><br />
-        <strong>Telefonszámok:</strong><br />
-        <a href="tel:+3662541956">{{phone1}}</a><br />
-        <a href="tel:+3662541957">{{phone2}}</a><br />
-        <a href="tel:+36307362795">{{phone3}}</a><br />
-    </p>
+        <p class="text-center">
+            Cím:</strong> {{address}}<br />
+            <i class="fa fa-envelope"></i><a href="mailto:titkarsag@petofiszeged.hu">
+                {{mail-tit}}</a><br />
+            <i class="fa fa-envelope"></i><a href="mailto:igazgato@petofiszeged.hu"> {{mail-ig}}</a><br />
+            <strong>Telefonszámok:</strong><br />
+            <a href="tel:+3662541956">{{phone1}}</a><br />
+            <a href="tel:+3662541957">{{phone2}}</a><br />
+            <a href="tel:+36307362795">{{phone3}}</a><br />
+        </p>
     </div>
     <div class="cell small-12 medium-3"> <img src="{{root}}assets/img/psai-qrcode.png" style="width: 128px">
     </div>
@@ -24,5 +24,11 @@
 <p class="text-center">
     {{line1}} <br> {{line2}}
 </p>
-{{> bemutatkozas-school-image type=shortname}}
+<div class="grid-x grid-margin-x">
+    <div class="cell auto"></div>
+    <div class="cell small-12 medium-5">
+        <img class="thumbnail" src="{{root}}assets/img/bemutatkozas/ps-front.jpg" />
+    </div>
+    <div class="cell auto"></div>
+</div>
 {{/each}}
