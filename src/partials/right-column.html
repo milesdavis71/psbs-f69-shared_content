@@ -1,0 +1,18 @@
+<a href="{{url}}.html">
+    <div class="callout small">
+        <p class="text-center"><strong>{{title}}</strong></p>
+        <p class="text-center"> <img src="{{img}}" alt="{{ alt }}"></p>
+
+        <p class="text-center"> <a class=" button success small" style="color: white; text-transform: uppercase;" href="{{url}}.html"><strong>{{buttontext}}</strong>
+            </a></p>
+        {{#if this.text}}
+        <p>{{ this.text }}</p>
+        {{/if}}
+        {{#if this.text2}}
+        <p>{{ this.text2 }}</p>
+        {{/if}}
+        {{#if this.text3}}
+        <p>{{ this.text3 }}</p>
+        {{/if}}
+    </div>
+</a>

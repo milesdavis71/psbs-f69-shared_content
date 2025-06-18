@@ -241,3 +241,17 @@ bemutatkozas:
         full: /assets/img/bs/bemutatkozas/full/12.jpg
         thumb: /assets/img/bs/bemutatkozas/thumb/12.jpg
         alt: Tagiskola
+
+right_column:
+  ps:
+    - title: Határtalanul! pályázataink
+      url: palyazatok/hatartalanul
+      img: /assets/img/common/hatartalanul-logok.jpg
+      alt: Határtalanul! logo
+      buttontext: Részletek
+  bs:
+    - title: Határtalanul! pályázataink
+      url: palyazatok/hatartalanul
+      img: /assets/img/common/hatartalanul-logok.jpg
+      alt: Határtalanul! logo
+      buttontext: Részletek
