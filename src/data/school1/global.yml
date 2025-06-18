@@ -98,7 +98,7 @@ bemutatkozas:
           images:
             - full: /assets/img/ps/bemutatkozas/full/also-tagozatos-osztalyterem.jpg
               thumb: /assets/img/ps/bemutatkozas/thumb/also-tagozatos-osztalyterem.jpg
-              alt: also tagozatos osztalyterem
+              alt: Tagiskola
               caption: Alsó tagozatos osztályterem
             - full: /assets/img/ps/bemutatkozas/full/felso-tagozatos-osztalyterem.jpg
               thumb: /assets/img/ps/bemutatkozas/thumb/felso-tagozatos-osztalyterem.jpg
@@ -194,10 +194,50 @@ bemutatkozas:
 
   bsimage:
     - image:
-        full: /assets/img/ps/bemutatkozas/full/also-tagozatos-osztalyterem.jpg
-        thumb: /assets/img/ps/bemutatkozas/thumb/also-tagozatos-osztalyterem.jpg
-        alt: also tagozatos osztalyterem
+        full: /assets/img/bs/bemutatkozas/full/01.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/01.jpg
+        alt: Tagiskola
     - image:
-        full: /assets/img/ps/bemutatkozas/full/felso-tagozatos-osztalyterem.jpg
-        thumb: /assets/img/ps/bemutatkozas/thumb/felso-tagozatos-osztalyterem.jpg
-        alt: felso tagozatos osztalyterem
+        full: /assets/img/bs/bemutatkozas/full/02.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/02.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/03.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/03.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/04.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/04.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/05.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/05.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/06.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/06.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/07.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/07.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/08.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/08.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/09.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/09.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/10.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/10.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/11.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/11.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/12.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/12.jpg
+        alt: Tagiskola

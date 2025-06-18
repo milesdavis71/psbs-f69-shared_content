@@ -15,14 +15,15 @@ line2: 'tagiskola-igazgató: Porkolábné Papp Zsuzsanna.'
 
 <h4 class="text-center">{{title}}</h4>
 {{>elerhetoseg-kozos}}
-<p>
-    „Mi azt akarjuk, hogy az iskola családi otthon legyen,<br>
-    ahol kinyílik a szív és feltárulnak a gondolatok”<br>
-    <i>(Célestin Freinet)</i>
-</p>
+
 
 <div class="grid-x grid-margin-x">
     <div class="cell small-12 medium-8">
+        <p>
+            „Mi azt akarjuk, hogy az iskola családi otthon legyen,<br>
+            ahol kinyílik a szív és feltárulnak a gondolatok”<br>
+            <i>(Célestin Freinet)</i>
+        </p>
         {{#each global.bemutatkozas.bstext}}
         <p>{{ this.text }}</p>
         {{/each}}
@@ -36,7 +37,7 @@ line2: 'tagiskola-igazgató: Porkolábné Papp Zsuzsanna.'
                         <div class="card-section text-center">
                             <img src="{{ this.image.thumb }}" alt="{{ this.image.alt }}" style="cursor:pointer;" />
                             <img src="{{ this.image.thumb }}" alt="{{ this.image.alt }}" class="thumbnail hide-for-medium" />
-                            <p class="caption">Klikk a nagyobb képért</p>
+                            <p class="caption" style="font-size: smaller; margin: 0;">Klikk a nagyobb képért</p>
                         </div>
                     </div>
                     <div class="reveal large" id="modal-{{@../index}}-{{@index}}" data-reveal>
