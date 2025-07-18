@@ -72,3 +72,10 @@
 .caption {
     padding: 0.5em 0 0.5em 0;
 }
+
+// Szélesség nagyobb kijelzőre
+@media screen and (min-width: 1440px) {
+    .grid-container {
+        max-width: 1366px;
+    }
+}
