@@ -1,257 +1,103 @@
-ps:
-  logo: /assets/img/ps/logo-ps.jpg
-  favicon: /assets/img/ps/favicon-ps.ico
-  title: Szegedi Petőfi Sándor Általános Iskola
-  keywords: iskola, általános iskola, Petőfi Sándor Általános Iskola, Szeged, oktatás, tanulás, pedagógia
-
-bs:
-  logo: /assets/img/bs/logo-bs.jpg
-  favicon: /assets/img/bs/favicon-bs.ico
-  title: Szegedi Petőfi Sándor Általános Iskola Bálint Sándor Tagiskolája
-  keywords: iskola, általános iskola, Petőfi Sándor Általános Iskola, Szeged, oktatás, tanulás, pedagógia
+logo: /assets/img/ps/logo-ps.jpg
+keywords: iskola, általános iskola, Petőfi Sándor Általános Iskola, Szeged, oktatás, tanulás, pedagógia
 
 elerhetoseg:
-  bs:
-    - fullname: Szegedi Petőfi Sándor Általános Iskola Bálint Sándor Tagsikolája
-      logo: /assets/img/ps/logo-nagy-bs.jpg
-      qrcode: /assets/img/ps/qrcode-bs.png
-      address: 6727, Szeged, Benczúr Gyula u. 29.
-      mail-tit: titkarsag@petofiszeged.hu
-      mail-ig: igazgato@petofiszeged.hu
-      phone1: +36 62 541 956
-      phone2: +36 62 541 957
-      phone3: +36 30 736 2795
-      line1: 'Igazgató: Winkler Andrea'
-      line2: Az intézmény fenntartója és működtetője a Szegedi Tankerületi Központ.
-
-pages:
-  - title: Főoldal/Híreink
-    url: index
-    icon: home
-
-  #bemutatkozás
-  - title: Bemutatkozás
-    url: bemutatkozas
-    icon: torsos-all
-    menu: bemutatkozas
-    submenu:
-      - title: Bemutatkozás
-        page: 'bemutatkozas'
-        url: bemutatkozas
-        folder: bemutatkozas
-      - title: Tanáraink
-        page: 'tanaraink'
-        url: tanaraink
-        folder: bemutatkozas
-      - title: Csengetési rend
-        page: 'csengetesi_rend'
-        url: csengetesi_rend
-        folder: bemutatkozas
-      - title: Iskolánkat segítő külsős munkatársak
-        page: 'iskolankat_segito_kulsos_munkatarsak'
-        url: iskolankat_segito_kulsos_munkatarsak
-        folder: bemutatkozas
-      - title: Hitoktatóink
-        page: 'hitoktatoink'
-        url: hitoktatoink
-        folder: bemutatkozas
-      - title: Felekezetek bemutatkozása
-        page: 'felekezetek_bemutatkozasa'
-        url: felekezetek_bemutatkozasa
-        folder: bemutatkozas
-      - title: Pedagógiai program
-        page: 'pedagogiai_program'
-        url: pedagogiai_program
-        folder: bemutatkozas
-      - title: SZMSZ
-        page: 'szmsz'
-        url: szmsz
-        folder: bemutatkozas
-      - title: Kollektív szerződés
-        page: 'kollektiv_szerzodes'
-        url: kollektiv_szerzodes
-        folder: bemutatkozas
-      - title: IMIP
-        page: 'imip'
-        url: imip
-        folder: bemutatkozas
-      - title: Házirend
-        page: 'hazirend'
-        url: hazirend
-        folder: bemutatkozas
-      - title: Gyermekvédelem
-        page: 'gyermekvedelem'
-        url: gyermekvedelem
-        folder: bemutatkozas
+  - fullname: Szegedi Petőfi Sándor Általános Iskola
+    logo: /assets/img/ps/logo-nagy.jpg
+    qrcode: /assets/img/ps/qrcode.png
+    address: 6727, Szeged, Benczúr Gyula u. 29.
 
 bemutatkozas:
-  ps:
-    - content:
-        - type: paragraph
-          text: Az iskola Petőfi-telep szívében, kertvárosi környezetben helyezkedik el. Évfolyamonként egy-egy osztályt indítunk, családias légkört tudunk biztosítani tanulóink számára.
-        - type: paragraph
-          text: Intézményünk nagy udvarral rendelkezik, mely a sportolás, a játék és rendezvényeink helyszíne. Korszerű udvari játékok, sakkpadok és sportpálya biztosítja a lehetőséget mind a tanulásra, mind a kikapcsolódásra.
-        - type: paragraph
-          text: Iskolánk az utóbbi évek során több felújításon ment keresztül, melynek köszönhetően egy modern, 21. századi épület várja a tanulókat. Minden tantermünk korszerű bútorokkal és interaktív táblával felszerelt. A kulturált étkezés feltételeit a felújított konyha és ebédlő biztosítja.
-        - type: images
-          images_per_row: 3
-          images:
-            - full: /assets/img/ps/bemutatkozas/full/also-tagozatos-osztalyterem.jpg
-              thumb: /assets/img/ps/bemutatkozas/thumb/also-tagozatos-osztalyterem.jpg
-              alt: Tagiskola
-              caption: Alsó tagozatos osztályterem
-            - full: /assets/img/ps/bemutatkozas/full/felso-tagozatos-osztalyterem.jpg
-              thumb: /assets/img/ps/bemutatkozas/thumb/felso-tagozatos-osztalyterem.jpg
-              alt: felso tagozatos osztalyterem
-              caption: Felső tagozatos osztályterem
-            - full: /assets/img/ps/bemutatkozas/full/felujitott-tornaterem.jpg
-              thumb: /assets/img/ps/bemutatkozas/thumb/felujitott-tornaterem.jpg
-              alt: tornaterem
-              caption: Tornaterem
-        - type: paragraph
-          text: Kiemelt értékként jelenik meg intézményünkben a gyermekközpontúság, a közösségépítés, a személyiségfejlesztés, a digitalizációs folyamatokhoz való alkalmazkodás, a rohanó világ elvárásaira, a munkaerőpiaci változásokra való felkészítés, a kertvárosi jellegből fakadó előnyök kihasználása, a partnerekkel való kiváló kapcsolat kialakítása.
-        - type: images
-          images_per_row: 3
-          images:
-            - full: /assets/img/ps/bemutatkozas/full/udvar-eletkep.jpg
-              thumb: /assets/img/ps/bemutatkozas/thumb/udvar-eletkep.jpg
-              alt: udvari eletkep
-              caption: Udvari életkép
-            - full: /assets/img/ps/bemutatkozas/full/udvari-jatszokak.jpg
-              thumb: /assets/img/ps/bemutatkozas/thumb/udvari-jatszokak.jpg
-              alt: jatek az udvaron
-              caption: Játék az udvaron
-            - full: /assets/img/ps/bemutatkozas/full/szureti-piknik.jpg
-              thumb: /assets/img/ps/bemutatkozas/thumb/szureti-piknik.jpg
-              alt: szureti piknik
-              caption: Szüreti piknik
-        - type: paragraph
-          text: Fő profilunk a sakk-logika tanórai oktatása alsó tagozaton. A helyi tantervünk részeként heti egy órában, csoportbontásban tanulják a gyerekek első osztálytól a sakkot. E mellett csatlakoztunk a Polgár Judit által fémjelzett Sakkpalota programhoz, melynek elsődleges célja a célja a személyiségfejlesztés, a tehetséggondozás, a kritikai gondolkodás fejlesztése intézményi keretek között. Felső tagozaton a sakk tanulását szakkör keretében folytathatják tanulóink.
-        - type: paragraph
-          text: Kiemelt szerepet kap az idegennyelv-oktatásunk. Az angol nyelv tanulására már első osztálytól emelt óraszámban van lehetőség. Felső tagozaton csoportbontásban az emelt óraszámú csoport heti öt órában tanulja az angol nyelvet. Tanulóink közül többen már nyolcadik osztályra nyelvvizsgát szereztek. Ötödik osztálytól második idegen nyelvként, szakköri formában a német is választható.
-        - type: images
-          images_per_row: 3
-          images:
-            - full: /assets/img/ps/bemutatkozas/full/angol-tan-1-oszt.jpg
-              thumb: /assets/img/ps/bemutatkozas/thumb/angol-tan-1-oszt.jpg
-              alt: udvari eletkep
-              caption: Udvari életkép
-            - full: /assets/img/ps/bemutatkozas/full/tablet.jpg
-              thumb: /assets/img/ps/bemutatkozas/thumb/tablet.jpg
-              alt: tablet hasznalata tanoran
-              caption: Tablet használata tanórán
-            - full: /assets/img/ps/bemutatkozas/full/info-szaktanterem.jpg
-              thumb: /assets/img/ps/bemutatkozas/thumb/info-szaktanterem.jpg
-              alt: informatika szaktanterem
-              caption: Informatika szaktanterem
-        - type: paragraph
-          text: Az Úszó Nemzet Program keretein belül a tanulókat heti rendszerességgel szakedzők segítségével tanítják úszni. A program része, hogy az oktatás mellett a teljes felszerelést is térítésmentesen kapják a tanulók.
-        - type: paragraph
-          text: 'Folyamatos innováció jellemzi a tantestületet, a szakmai megújulás érdekében új programok bevezetésével fejlődünk. Ilyen programunk az „Az erkölcsi nevelés, illemtan”, melynek három fő pillére: mentálhigiénés közösségi játékok a gyerekekkel, erkölcsi fogalmak feldolgozása osztályfőnöki órákon, viselkedéskultúra témakörök megbeszélése. Az idei tanévtől vezettük be legújabb programunkat, a „Tanulói laptopok felhasználása a tanítás és tanulás során”. Célunk olyan készségek, kompetenciák fejlesztése, melyeket a jövőbeni munkaerőpiacon hasznosíthatnak tanulóink.'
-        - type: paragraph
-          text: A mindennapokban színes, változatos, gyermekközpontú tanórákkal igyekszünk motiválttá tenni diákjainkat a tanulás iránt. A nevelés-oktatás elsődleges feladata az eredményességhez szükséges alapkészségek fejlesztése és megerősítése, a kulcskompetenciák fejlesztése. Kiemelt figyelmet fordítunk a tehetségazonosításra és tehetséggondozásra. Intézményünk hivatalos Tehetségpont. Tanulóink rangos országos, megyei tanulmányi versenyeken érnek el kiemelkedő eredményeket. A hátrányos helyzetű, a sajátos nevelési igényű és a beilleszkedési, tanulási, magatartási nehézséggel küzdő tanulóinkkal 3-4 fős fejlesztő foglalkozásokat szervezünk. Tanóráinkon a személyre szóló foglalkozás és a differenciálás elvét alkalmazzuk.
-          images_per_row: 3
-          images:
-            - full: /assets/img/ps/bemutatkozas/full/haziversenyek.jpg
-              thumb: /assets/img/ps/bemutatkozas/thumb/haziversenyek.jpg
-              alt: haziversenyek
-              caption: Háziversenyek
-            - full: /assets/img/ps/bemutatkozas/full/termtud-szaktanterem.jpg
-              thumb: /assets/img/ps/bemutatkozas/thumb/termtud-szaktanterem.jpg
-              alt: termeszettudomanyos szaktanterem
-              caption: Természettudományos szaktanterem
-            - full: /assets/img/ps/bemutatkozas/full/ebedlo.jpg
-              thumb: /assets/img/ps/bemutatkozas/thumb/ebedlo.jpg
-              alt: informatika ebedlo
-              caption: Ebédlő
-        - type: paragraph
-          text: 'Intézményünk az országos méréseken az országos átlagnál jobb eredményeket ér el. Lemorzsolódási mutatónk 0 %.'
-        - type: paragraph
-          text: 'Tanórán kívüli változatos programok várják az érdeklődő gyermekeket. Háziversenyeken, idegennyelvi délutánokon, témaheteken, leány kézilabda edzéseken, különböző szakkörökön vehetnek részt. Iskolánkban kamarakórus működik, mely rendezvényeink, ünnepségeink színvonalát emeli. Alsó tagozaton igen sok hagyományhoz kötődő szabadidős programunk van. Rendszeresen tartunk rendhagyó foglalkozásokat a magyar népmesékhez, a Márton naphoz, az adventi ünnepkörhöz kötődően, tavasszal a Föld napját a Füvészkertben töltjük. Lehetőséget biztosítunk alapfokú művészeti oktatás foglalkozásain való részvételre. A tanulók hegedű-, zongora, furulya- és szolfézsoktatáson vehetnek részt.'
-        - type: paragraph
-          text: 'Rendszeres szülői értekezletek, fogadóórák, családi délutánok teszik lehetővé a szülőkkel való kapcsolattartást. A legnagyobb közösségi programunk a szüret időszakában a minden évben megrendezett „Szüreti Piknik”. Ekkor kinyitjuk az iskola kapuit, és a helyi lakosok, óvódások, óvónők, szülők az iskola valamennyi dolgozójával együtt egy egész délutánt felölelő rendezvényen vesznek részt. A hagyományőrzés és a modern játékok különböző helyszíneinek kavalkádja várja ezen a délutánon az érdeklődőket.'
-        - type: paragraph
-          text: 'Szeretettel várjuk iskolánkba Petőfi-telep és a környék kisgyermekeit!'
-  bstext:
-    - text: Intézményünk pedagógiai programjában és a tagintézmény mindennapjaiban egyaránt tetten érhető a tiszteletadás, főhajtás a névadó Bálint Sándor különösen gazdag és értékes, Tápéhoz és a tápai hagyományokhoz is kötődő életútja előtt. E fontos érték mellett kiemelten hangsúlyos számunkra az iskolánkban folyó nevelő-oktatómunka alapjait meghatározó Freinet-pedagógia bizalomra és biztonságra épülő szemlélete.
-    - text: 'A tápéi iskola fő erőssége a mindennapokban is tapintható szeretetteljes, befogadó és elfogadó légkör, az a családias hangulat, melynek köszönhetően jól érzi magát és ezért szívesen megy be oda nap mint nap valamennyi „iskolahasználó”: gyermek, pedagógus, segítő munkatárs és szülő egyaránt. Az itt dolgozók felkészültsége, elkötelezettsége, tapasztalata és hite az alapja annak az oktató-nevelő munkának, amely – a korszerű tudás átadása mellett – generációk óta képes kapaszkodót, gyökereket, alapvető emberi értékeket plántálni az itt tanuló gyerekekbe.'
-    - text: A közösségi programok színes palettája (kirándulások, színház- és múzeumlátogatások, családi napok, közös programok és események szervezése Tápé közösségeivel) tovább gazdagítják az itt tanulók fejlődésének-fejlesztésének lehetőségeit.
-    - text: Tápén - Szegeden egyedüliként – a Freinet-pedagógián alapuló programot valósítunk meg az alsó tagozatban, amelynek legfontosabb eleme az egész napos iskolai nevelési program.
-    - text: Évfolyamonként 1 osztályt indítunk, melyben 2 tanító tanít. Az időben széthúzott tanítási napokon a rugalmas óraterv alkalmazkodik a gyerekek fizikai, pszichikai teljesítő- és tűrőképességéhez, így a pedagógusok hangsúlyosan figyelembe tudják venni az alsó tagozat alapozó funkcióját, az alapkészségek fejlesztését, a gyerekek egyéni sajátosságait. Egyenletesebb a terhelés, több lehetőség nyílik a differenciálásra, a folyamatos felzárkóztatásra és tehetséggondozásra.
-    - text: A felső tagozaton folyó nevelés-oktatás elsődleges feladata a sikeres iskolai tanuláshoz, az eredményességhez szükséges alapkészségek továbbfejlesztése és megerősítése.
-    - text: A kulcs- és tantárgyakon átívelő kompetenciák fejlesztése mellett kiemelt célunk az önálló tanulás, a problémamegoldó gondolkodás és a szövegértés fejlesztése, valamint a gyerekek egyéni képességeihez igazodó, differenciált tanulásszervezési eljárások rendszeres alkalmazása.
-    - text: Fontos érték számunkra a tehetségígéretek azonosítása és fejlesztése, és a lassabban haladó tanulók számára a felzárkózás lehetőségének biztosítása. A versenyekre való felkészítés, a tehetséggondozás a kollégák szívügye, a tehetséggondozás az intézmény pedagógiai munkájának középpontjában áll. Ennek köszönhetően szép eredményekkel büszkélkedhetünk a tantárgyi, művészeti és levelező versenyeken, valamint sportversenyeken.
-    - text: Idegen nyelvként iskolánkban az angol nyelvet tanítjuk, 4. osztálytól kezdődően csoportbontásban (a gyorsabban haladók számára heti 5 órában, a lassabban haladók számára heti 3 órában). Az informatika oktatása 3. osztálytól indul, és szintén kis létszámú csoportokban folyik.
-    - text: A sportolni vágyó gyermekek számára kitűnő lehetőséget teremt az, hogy iskolánk csatlakozott az Úszó Nemzet Programhoz, melynek keretében minden tanulónk legkésőbb a 2. osztály végéig legalább 1 úszásnemben megtanul úszni. Emellett tanulóinknak lehetősége van a kézilabda megismerésére, valamint a délutáni tömegsport keretei között az önfeledt mozgásra.
-    - text: Tápén nagyon fontos érték a hagyományok tisztelete és megőrzése, így nem csoda, hogy a tápéi iskola pedagógiai tevékenységének részeként hosszú évek óta széleskörű hagyományőrző tevékenység folyik. Az itt tanuló gyerekeknek és szüleiknek, nagyszüleiknek ezáltal lehetőségük nyílik generációkon átívelő programok megvalósítására, az értékek mentésére, a helyi közösségek és az iskola viszonyának gazdagítására és mélyítésére.
-    - text: Az intézmény tanrendjében és nevelési programjában kiemelt helyen szerepel a városrész, Tápé hagyományainak megismerése és ápolása. Az alsó tagozatos gyerekek heti egy testnevelés órán ismerkednek a néptánccal és a helyi népszokásokkal. A gyékényes mesterség alapjait az ötödik és hatodik osztályos tanulók technikaórán sajátíthatják el – ezeket a foglalkozásokat a tápéi hagyományőrző közösség, a Gyékényből Szőtt Egyesület tagjai vezetik. A tápéi iskola szoros kapcsolatot ápol a helyi hagyományőrző csoporttal is, akikkel közös rendezvényeken veszünk részt. A településrész ünnepein, közösségi eseményein együtt van jelen több korosztály.
-    - text: Iskolánk ökoiskola, mely lehetőséget kínál a fenntarthatóság és környezettudatosság elveit szem előtt tartó nevelés megvalósítására.
-    - text: A délutáni idősávban kapnak helyet a tanórán kívüli tanulást biztosító lehetőségek – ebben egyaránt fontos szerepet kapnak az együttműködő partnereink által megvalósított szolgáltatások (TRIOLA Alapfokú Művészeti Iskola, ToP Dance Company, jógaoktatás) és a pedagógusaink által megvalósított szakkörök gazdag kínálata (természettudományos szakkör, hagyományőrző szakkör, alkotókör, énekkar, logika szakkör, matematika szakkör). Gyermekeink sokszínű fejlesztését szolgálja az is, hogy ezen foglalkozások megvalósításába beépülnek a Komplex Alapprogram alprogramjainak elemei is.
-    - text: Gyermekeink biztonságát szolgálják azok a kezdeményezések, amelyekhez csatlakozva tanulóink elsajátíthatják a biztonságos közlekedés szabályait (KEVE Program), és bűnmegelőzési szemléletformálásban is részük lehet (KÉK TÉR Program).
-    - text: Iskolánk épülete 2020-ban egy teljes körű felújítás során kívül-belül megújult. Ennek is köszönhetően intézményünk esztétikus, tiszta, igényesen gondozott, biztonságos feltételeket biztosít az itt tanuló gyermekek számára. A növényekkel betelepített tágas udvar sportolásra, kikapcsolódásra, iskolakert működtetésére alkalmas. A kulturált étkezést tágas és világos ebédlő és tálalókonyha biztosítja.
-    - text: A mindennapi nevelő-oktató munka sikere érdekében iskolánk kiemelt partneri viszonyt ápol a fenntartó Szegedi Tankerületi Központtal, a Freinet Tanoda Alapítvánnyal, a Szegedi Pedagógiai Oktatási Központ és a Csongrád-Csanád Vármegyei Pedagógiai Szakszolgálat munkatársaival, a Szeged-Tápén működő tagóvodával, a Szent-Györgyi Albert Agóra Heller Ödön Művelődési Házával, a TRIOLA Alapfokú Művészeti Iskolával, a Somogyi-könyvtár Tápai fiókkönyvtárával, valamint a Gyékényből Szőtt Egyesülettel.
-    - text: Szakmai együttműködést folytatunk a Szegedi Tudományegyetem Neveléstudományi Intézetével, az MTA-SZTE Természettudomány Tanítása Kutatócsoport munkatársaival, valamint gyakorlóhelyet biztosítunk a Szegedi Tudományegyetem tanárképzésben résztvevő hallgatói számára.
-
-  bsimage:
-    - image:
-        full: /assets/img/bs/bemutatkozas/full/01.jpg
-        thumb: /assets/img/bs/bemutatkozas/thumb/01.jpg
-        alt: Tagiskola
-    - image:
-        full: /assets/img/bs/bemutatkozas/full/02.jpg
-        thumb: /assets/img/bs/bemutatkozas/thumb/02.jpg
-        alt: Tagiskola
-    - image:
-        full: /assets/img/bs/bemutatkozas/full/03.jpg
-        thumb: /assets/img/bs/bemutatkozas/thumb/03.jpg
-        alt: Tagiskola
-    - image:
-        full: /assets/img/bs/bemutatkozas/full/04.jpg
-        thumb: /assets/img/bs/bemutatkozas/thumb/04.jpg
-        alt: Tagiskola
-    - image:
-        full: /assets/img/bs/bemutatkozas/full/05.jpg
-        thumb: /assets/img/bs/bemutatkozas/thumb/05.jpg
-        alt: Tagiskola
-    - image:
-        full: /assets/img/bs/bemutatkozas/full/06.jpg
-        thumb: /assets/img/bs/bemutatkozas/thumb/06.jpg
-        alt: Tagiskola
-    - image:
-        full: /assets/img/bs/bemutatkozas/full/07.jpg
-        thumb: /assets/img/bs/bemutatkozas/thumb/07.jpg
-        alt: Tagiskola
-    - image:
-        full: /assets/img/bs/bemutatkozas/full/08.jpg
-        thumb: /assets/img/bs/bemutatkozas/thumb/08.jpg
-        alt: Tagiskola
-    - image:
-        full: /assets/img/bs/bemutatkozas/full/09.jpg
-        thumb: /assets/img/bs/bemutatkozas/thumb/09.jpg
-        alt: Tagiskola
-    - image:
-        full: /assets/img/bs/bemutatkozas/full/10.jpg
-        thumb: /assets/img/bs/bemutatkozas/thumb/10.jpg
-        alt: Tagiskola
-    - image:
-        full: /assets/img/bs/bemutatkozas/full/11.jpg
-        thumb: /assets/img/bs/bemutatkozas/thumb/11.jpg
-        alt: Tagiskola
-    - image:
-        full: /assets/img/bs/bemutatkozas/full/12.jpg
-        thumb: /assets/img/bs/bemutatkozas/thumb/12.jpg
-        alt: Tagiskola
+  - content:
+      - type: paragraph
+        text: Az iskola Petőfi-telep szívében, kertvárosi környezetben helyezkedik el. Évfolyamonként egy-egy osztályt indítunk, családias légkört tudunk biztosítani tanulóink számára.
+      - type: paragraph
+        text: Intézményünk nagy udvarral rendelkezik, mely a sportolás, a játék és rendezvényeink helyszíne. Korszerű udvari játékok, sakkpadok és sportpálya biztosítja a lehetőséget mind a tanulásra, mind a kikapcsolódásra.
+      - type: paragraph
+        text: Iskolánk az utóbbi évek során több felújításon ment keresztül, melynek köszönhetően egy modern, 21. századi épület várja a tanulókat. Minden tantermünk korszerű bútorokkal és interaktív táblával felszerelt. A kulturált étkezés feltételeit a felújított konyha és ebédlő biztosítja.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/bemutatkozas/full/also-tagozatos-osztalyterem.jpg
+            thumb: /assets/img/ps/bemutatkozas/thumb/also-tagozatos-osztalyterem.jpg
+            alt: Tagiskola
+            caption: Alsó tagozatos osztályterem
+          - full: /assets/img/ps/bemutatkozas/full/felso-tagozatos-osztalyterem.jpg
+            thumb: /assets/img/ps/bemutatkozas/thumb/felso-tagozatos-osztalyterem.jpg
+            alt: felso tagozatos osztalyterem
+            caption: Felső tagozatos osztályterem
+          - full: /assets/img/ps/bemutatkozas/full/felujitott-tornaterem.jpg
+            thumb: /assets/img/ps/bemutatkozas/thumb/felujitott-tornaterem.jpg
+            alt: tornaterem
+            caption: Tornaterem
+      - type: paragraph
+        text: Kiemelt értékként jelenik meg intézményünkben a gyermekközpontúság, a közösségépítés, a személyiségfejlesztés, a digitalizációs folyamatokhoz való alkalmazkodás, a rohanó világ elvárásaira, a munkaerőpiaci változásokra való felkészítés, a kertvárosi jellegből fakadó előnyök kihasználása, a partnerekkel való kiváló kapcsolat kialakítása.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/bemutatkozas/full/udvar-eletkep.jpg
+            thumb: /assets/img/ps/bemutatkozas/thumb/udvar-eletkep.jpg
+            alt: udvari eletkep
+            caption: Udvari életkép
+          - full: /assets/img/ps/bemutatkozas/full/udvari-jatszokak.jpg
+            thumb: /assets/img/ps/bemutatkozas/thumb/udvari-jatszokak.jpg
+            alt: jatek az udvaron
+            caption: Játék az udvaron
+          - full: /assets/img/ps/bemutatkozas/full/szureti-piknik.jpg
+            thumb: /assets/img/ps/bemutatkozas/thumb/szureti-piknik.jpg
+            alt: szureti piknik
+            caption: Szüreti piknik
+      - type: paragraph
+        text: Fő profilunk a sakk-logika tanórai oktatása alsó tagozaton. A helyi tantervünk részeként heti egy órában, csoportbontásban tanulják a gyerekek első osztálytól a sakkot. E mellett csatlakoztunk a Polgár Judit által fémjelzett Sakkpalota programhoz, melynek elsődleges célja a célja a személyiségfejlesztés, a tehetséggondozás, a kritikai gondolkodás fejlesztése intézményi keretek között. Felső tagozaton a sakk tanulását szakkör keretében folytathatják tanulóink.
+      - type: paragraph
+        text: Kiemelt szerepet kap az idegennyelv-oktatásunk. Az angol nyelv tanulására már első osztálytól emelt óraszámban van lehetőség. Felső tagozaton csoportbontásban az emelt óraszámú csoport heti öt órában tanulja az angol nyelvet. Tanulóink közül többen már nyolcadik osztályra nyelvvizsgát szereztek. Ötödik osztálytól második idegen nyelvként, szakköri formában a német is választható.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/bemutatkozas/full/angol-tan-1-oszt.jpg
+            thumb: /assets/img/ps/bemutatkozas/thumb/angol-tan-1-oszt.jpg
+            alt: udvari eletkep
+            caption: Udvari életkép
+          - full: /assets/img/ps/bemutatkozas/full/tablet.jpg
+            thumb: /assets/img/ps/bemutatkozas/thumb/tablet.jpg
+            alt: tablet hasznalata tanoran
+            caption: Tablet használata tanórán
+          - full: /assets/img/ps/bemutatkozas/full/info-szaktanterem.jpg
+            thumb: /assets/img/ps/bemutatkozas/thumb/info-szaktanterem.jpg
+            alt: informatika szaktanterem
+            caption: Informatika szaktanterem
+      - type: paragraph
+        text: Az Úszó Nemzet Program keretein belül a tanulókat heti rendszerességgel szakedzők segítségével tanítják úszni. A program része, hogy az oktatás mellett a teljes felszerelést is térítésmentesen kapják a tanulók.
+      - type: paragraph
+        text: 'Folyamatos innováció jellemzi a tantestületet, a szakmai megújulás érdekében új programok bevezetésével fejlődünk. Ilyen programunk az „Az erkölcsi nevelés, illemtan”, melynek három fő pillére: mentálhigiénés közösségi játékok a gyerekekkel, erkölcsi fogalmak feldolgozása osztályfőnöki órákon, viselkedéskultúra témakörök megbeszélése. Az idei tanévtől vezettük be legújabb programunkat, a „Tanulói laptopok felhasználása a tanítás és tanulás során”. Célunk olyan készségek, kompetenciák fejlesztése, melyeket a jövőbeni munkaerőpiacon hasznosíthatnak tanulóink.'
+      - type: paragraph
+        text: A mindennapokban színes, változatos, gyermekközpontú tanórákkal igyekszünk motiválttá tenni diákjainkat a tanulás iránt. A nevelés-oktatás elsődleges feladata az eredményességhez szükséges alapkészségek fejlesztése és megerősítése, a kulcskompetenciák fejlesztése. Kiemelt figyelmet fordítunk a tehetségazonosításra és tehetséggondozásra. Intézményünk hivatalos Tehetségpont. Tanulóink rangos országos, megyei tanulmányi versenyeken érnek el kiemelkedő eredményeket. A hátrányos helyzetű, a sajátos nevelési igényű és a beilleszkedési, tanulási, magatartási nehézséggel küzdő tanulóinkkal 3-4 fős fejlesztő foglalkozásokat szervezünk. Tanóráinkon a személyre szóló foglalkozás és a differenciálás elvét alkalmazzuk.
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/bemutatkozas/full/haziversenyek.jpg
+            thumb: /assets/img/ps/bemutatkozas/thumb/haziversenyek.jpg
+            alt: haziversenyek
+            caption: Háziversenyek
+          - full: /assets/img/ps/bemutatkozas/full/termtud-szaktanterem.jpg
+            thumb: /assets/img/ps/bemutatkozas/thumb/termtud-szaktanterem.jpg
+            alt: termeszettudomanyos szaktanterem
+            caption: Természettudományos szaktanterem
+          - full: /assets/img/ps/bemutatkozas/full/ebedlo.jpg
+            thumb: /assets/img/ps/bemutatkozas/thumb/ebedlo.jpg
+            alt: informatika ebedlo
+            caption: Ebédlő
+      - type: paragraph
+        text: 'Intézményünk az országos méréseken az országos átlagnál jobb eredményeket ér el. Lemorzsolódási mutatónk 0 %.'
+      - type: paragraph
+        text: 'Tanórán kívüli változatos programok várják az érdeklődő gyermekeket. Háziversenyeken, idegennyelvi délutánokon, témaheteken, leány kézilabda edzéseken, különböző szakkörökön vehetnek részt. Iskolánkban kamarakórus működik, mely rendezvényeink, ünnepségeink színvonalát emeli. Alsó tagozaton igen sok hagyományhoz kötődő szabadidős programunk van. Rendszeresen tartunk rendhagyó foglalkozásokat a magyar népmesékhez, a Márton naphoz, az adventi ünnepkörhöz kötődően, tavasszal a Föld napját a Füvészkertben töltjük. Lehetőséget biztosítunk alapfokú művészeti oktatás foglalkozásain való részvételre. A tanulók hegedű-, zongora, furulya- és szolfézsoktatáson vehetnek részt.'
+      - type: paragraph
+        text: 'Rendszeres szülői értekezletek, fogadóórák, családi délutánok teszik lehetővé a szülőkkel való kapcsolattartást. A legnagyobb közösségi programunk a szüret időszakában a minden évben megrendezett „Szüreti Piknik”. Ekkor kinyitjuk az iskola kapuit, és a helyi lakosok, óvódások, óvónők, szülők az iskola valamennyi dolgozójával együtt egy egész délutánt felölelő rendezvényen vesznek részt. A hagyományőrzés és a modern játékok különböző helyszíneinek kavalkádja várja ezen a délutánon az érdeklődőket.'
+      - type: paragraph
+        text: 'Szeretettel várjuk iskolánkba Petőfi-telep és a környék kisgyermekeit!'
 
 right_column:
-  ps:
-    - title: Határtalanul! pályázataink
-      url: palyazatok/hatartalanul
-      img: /assets/img/common/hatartalanul-logok.jpg
-      alt: Határtalanul! logo
-      buttontext: Részletek
-  bs:
-    - title: Határtalanul! pályázataink
-      url: palyazatok/hatartalanul
-      img: /assets/img/common/hatartalanul-logok.jpg
-      alt: Határtalanul! logo
-      buttontext: Részletek
+  - title: Határtalanul! pályázataink
+    url: palyazatok/hatartalanul
+    img: /assets/img/common/hatartalanul-logok.jpg
+    alt: Határtalanul! logo
+    buttontext: Részletek
