@@ -1,0 +1,38 @@
+---
+layout: two_columns_ps
+title:   A Szegedi Petőfi Sándor Általános Iskola tanárai
+---
+
+    <h5 class="text-center"></h5>
+    <h5 class="text-center" style="margin-bottom: 1.1rem">
+        {{title}}
+    </h5>
+
+    <table class="hover stack">
+        <tbody>
+            {{> vezetok_ps_table}}
+            {{#each tanarok}}
+            <tr>
+                <td>
+                    {{this.name}}
+                </td>
+                <td>
+                    {{this.grad}}
+                </td>
+                <td>
+                    {{#if this.spec1}}
+                    {{this.spec1}}
+                    {{/if}}
+                    {{#if this.spec2}}
+                    <br>{{this.spec2}}
+                    {{/if}}
+                    {{#if this.spec3}}
+                    <br>{{this.spec3}}
+                    {{/if}}
+                </td>
+            </tr> 
+            {{/each}}
+        </tbody>
+    </table>
+    {{>noksosok_ps}}
+</div>
