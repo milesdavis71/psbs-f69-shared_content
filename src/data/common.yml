@@ -1,5 +1,10 @@
+fenntarto:
+  name: Az intézmény fenntartója a Szegedi Tankerületi Központ
+  open: 'Nyitva tartás: 7:00–18:00 óráig'
+
 ps:
-  favicon: /assets/img/favicon-ps.ico
+  favicon: /assets/img/ps/favicon-ps.ico
+  logo: /assets/img/ps/logo-ps.jpg
   schoolname: Szegedi Petőfi Sándor Általános Iskola
 
 bs:

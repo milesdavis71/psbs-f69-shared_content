@@ -79,3 +79,30 @@
         max-width: 1366px;
     }
 }
+
+// flexbox a top barhoz
+
+.topbar-logo-wrap {
+    display: flex;
+    align-items: center;
+    /* fontos: ne törje le a sort a kép alá */
+    flex-wrap: nowrap;
+}
+
+.topbar-logo img {
+    display: block;
+    max-height: 40px; /* igény szerint */
+}
+
+.topbar-text {
+    margin-left: 0.75rem; /* kép és szöveg közötti hézag */
+    line-height: 1.2;
+}
+
+body {
+    background-color: #eeeeee;
+}
+.grid-container {
+    background-color: white;
+    padding-top: 1em;
+}
