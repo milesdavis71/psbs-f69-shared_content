@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-{{>head-start}}
-<title>{{common.bs.schoolname}}</title>
-<link rel="shortcut icon" type="image/x-icon" href="{{common.bs.favicon}}" />
-{{>head-end}}
-{{>body-common-start}}
-{{>sticky-bar-bs}}
-{{>body-3-columns-bs}}
+<html class="no-js" lang="hu">
+    {{>head-start}}
+    <title>{{common.bs.schoolname}}</title>
+    <link
+        rel="shortcut icon"
+        type="image/x-icon"
+        href="{{root}}assets/img/bs/favicon.png"
+    />
+    {{>head-end}}
+    <body>
+        <!-- Teljes magasságú, vertikális XY grid (keret) -->
+        <div class="grid-y grid-frame">
+            <!-- Felső, teljes szélességű top bar (nem scrollozik) -->
+            <header class="cell shrink">
+                <div class="top-bar" style="border-bottom: 3px solid #00ccff">
+                    <div class="top-bar-left topbar-logo-wrap">
+                        <a href="{{root}}index.html" class="topbar-logo">
+                            <img
+                                src="{{common.bs.logo}}"
+                                alt="{{global.ps.title}}"
+                            />
+                        </a>
+                        <div class="topbar-text">
+                            <span
+                                style="
+                                    color: rgb(63, 169, 245);
+                                    font-weight: 600;
+                                    font-size: 1.05em;
+                                "
+                                >A {{common.bs.schoolname}} honlapja</span
+                            ><br />
+                            <span style="color: grey">
+                                {{common.fenntarto.name}} |
+                                {{common.fenntarto.open}}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="top-bar-right">
+                        <!-- <ul class="menu">
+                                    <li><a href="#">Keresés</a></li>
+                                </ul> -->
+                    </div>
+                </div>
+            </header>
 
+            <!-- Scrollozható fő rész -->
+            <div class="cell auto cell-block-container">
+                <main class="cell-block-y">
+                    <div class="grid-container">
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell medium-3 medium-cell-block-y">
+                                {{>menu}}
+                            </div>
+                            <div class="cell medium-9 medium-cell-block-y">
+                                <div class="grid-x grid-padding-x">
+                                    <div class="cell medium-12 large-9">
+                                        {{> body}}
+                                    </div>
+                                    <div class="cell medium-12 large-3">
+                                        {{> right-column-bs}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <script src="{{root}}assets/js/app.js"></script>
+    </body>
 </html>

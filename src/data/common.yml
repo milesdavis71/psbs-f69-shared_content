@@ -8,7 +8,8 @@ ps:
   schoolname: Szegedi Petőfi Sándor Általános Iskola
 
 bs:
-  favicon: /assets/img/favicon-bs.ico
+  favicon: /assets/img/bs/favicon.png
+  logo: /assets/img/bs/logo-bs.jpg
   schoolname: Szegedi Petőfi Sándor Általános Iskola Bálint Sándor Tagiskolája
 
 pages:

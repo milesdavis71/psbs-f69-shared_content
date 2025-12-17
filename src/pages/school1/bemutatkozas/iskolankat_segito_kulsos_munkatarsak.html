@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Csengetési rend
+title: Iskolánkat segítő külsős munkatársak
 ---
 
+{{>title}} 
 {{#each iskolai_segitok}}
 <div class="card">
     <div class="card-divider" style="padding: 0.5em">
@@ -18,7 +19,7 @@ title: Csengetési rend
             <i class="fa fa-envelope" style="color: #ffa500"></i>
             <a href="mailto:{{mail}}"> {{mail}}</a>
         </p>
-        {{>md_ps_iskolai_segitok segito=job}}
+        {{>md-ps-iskolai-segitok segito=job}}
     </div>
 </div>
 {{/each}}
