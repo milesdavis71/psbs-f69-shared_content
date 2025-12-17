@@ -1,0 +1,43 @@
+1-:
+  - folder: ps/bemutatkozas/
+    filename: also-tagozatos-osztalyterem
+    caption: Alsó tagozatos osztályterem
+  - folder: ps/bemutatkozas/
+    filename: felso-tagozatos-osztalyterem
+    caption: Felső tagozatos osztályterem
+  - folder: ps/bemutatkozas/
+    filename: felujitott-tornaterem
+    caption: Tornaterem
+
+2-:
+  - folder: ps/bemutatkozas/
+    filename: udvar-eletkep
+    caption: Udvari életkép
+  - folder: ps/bemutatkozas/
+    filename: udvari-jatszokak
+    caption: Játék az udvaron
+  - folder: ps/bemutatkozas/
+    filename: szureti-piknik
+    caption: Szüreti piknik
+
+3-:
+  - folder: ps/bemutatkozas/
+    filename: angol-tan-1-oszt
+    caption: Angolnyelvtanítás első osztálytól
+  - folder: ps/bemutatkozas/
+    filename: tablet
+    caption: Tablet használata tanórán
+  - folder: ps/bemutatkozas/
+    filename: info-szaktanterem
+    caption: Informatikai szaktanterem
+
+4-:
+  - folder: ps/bemutatkozas/
+    filename: haziversenyek
+    caption: Háziversenyek
+  - folder: ps/bemutatkozas/
+    filename: termttud-szaktanterem
+    caption: Természettudományos szaktanterem
+  - folder: ps/bemutatkozas/
+    filename: ebedlo
+    caption: Ebédlő

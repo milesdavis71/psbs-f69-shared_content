@@ -1,9 +1,7 @@
-<h4>bal menü</h4>
-<!-- prettier-ignore -->
 {{#each common.pages}}
 <ul class="vertical menu accordion-menu" data-accordion-menu>
     <li {{#ifpage page}} class="current" {{/ifpage}}>
-        <a href="../{{url}}.html"><i class="fi-{{icon}}"></i> {{title}}</a>
+        <a href="../{{url}}.html"><i class="fas fa-{{icon}}"></i> {{title}}</a>
         {{#if submenu}}
         {{>submenus type=menu}}
         {{#each submenu}}

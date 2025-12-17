@@ -1,33 +1,34 @@
 ---
 layout: two_columns_ps
-fullname: Szegedi Petőfi Sándor Általános Iskola
-logo: /assets/img/ps/logo-nagy-ps.jpg
-qrcode: /assets/img/ps/qrcode-ps.png
-address: 6727, Szeged, Benczúr Gyula u. 29.
-mail-tit: titkarsag@petofiszeged.hu
-mail-ig: igazgato@petofiszeged.hu
-phone1: +36 62 541 956
-phone2: +36 62 541 957
-phone3: +36 30 736 2795
-line1: 'Igazgató: Winkler Andrea'
-line2: Az intézmény fenntartója és működtetője a Szegedi Tankerületi Központ.
-
+title:   A Szegedi Petőfi Sándor Általános Iskola tanárai
 ---
+<!-- 
+{{>title}} -->
 
-{{>title}}
-{{>elerhetoseg-kozos}}
 <div class="grid-x grid-margin-x">
-    <div class="cell auto"></div>
-    <div class="cell small-12 medium-5">
-        <img class="thumbnail" src="{{root}}assets/img/ps/bemutatkozas/ps-front.jpg" />
+    <div class="cell small-12 medium-3 text-center">
+        <img src="{{root}}assets/img/ps/logo-nagy-ps.jpg">
     </div>
-    <div class="cell auto"></div>
+    <div class="cell small-12 medium-6">
+        {{> elerhetoseg-ps}}
+    </div>
+    <div class="cell small-12 medium-3"> <img src="{{root}}assets/img/ps/qrcode-ps.png" style="width: 128px">
+    </div>
 </div>
+<p class=" text-center">
+    Igazgató: Winkler Andrea <br>
+    Az intézmény fenntartója és működtetője a Szegedi Tankerületi Központ.
+</p>
 <div class="grid-x grid-margin-x">
-    {{#each global.bemutatkozas.ps}}
-    {{>bemutatkozas-kozos}}
-    {{/each}}
+    <div class="cell auto">
+    </div>
+    <div class="cell small-12 medium-5">
+        <img class="thumbnail" src="{{root}}assets/img/ps/bemutatkozas/ps-front.jpg">
+    </div>
+    <div class="cell auto">
+    </div>
 </div>
+{{>md_ps_bemutatkozas}}
 <div class="grid-x grid-margin-x">
     <div class="cell auto">
     </div>

@@ -3,7 +3,7 @@ fenntarto:
   open: 'Nyitva tartás: 7:00–18:00 óráig'
 
 ps:
-  favicon: /assets/img/ps/favicon-ps.ico
+  favicon: /assets/img/ps/favicon.png
   logo: /assets/img/ps/logo-ps.jpg
   schoolname: Szegedi Petőfi Sándor Általános Iskola
 
@@ -17,7 +17,7 @@ pages:
     icon: home
   - title: Bemutatkozás
     url: bemutatkozas
-    icon: torsos-all
+    icon: chalkboard-teacher
     menu: bemutatkozas
     submenu:
       - title: Bemutatkozás
