@@ -1,0 +1,47 @@
+- job: iskolapszichológus
+  name: Ficz Gábor
+  mail: falco444@gmail.com
+  tel1: '+36203879927'
+  tel2: +36 20 387 9927
+
+- job: Gyógypedagógus I.
+  name: Mede Brigitta
+  mail: nincs megadva
+  tel1: '+36307362795'
+  tel2: +36 30 7362795
+
+- job: Gyógypedagógus II.
+  name: Bozóki Petra
+  mail: nincs megadva
+  tel1: '+36307362795'
+  tel2: +36 30 7362795
+
+- job: Logopédus
+  name: Dusik-Balázs Dóra
+  mail: nincs megadva
+  tel1: '+36307362795'
+  tel2: +36 30 7362795
+
+- job: Védőnő
+  name: Vona Dóra
+  mail: nincs megadva
+  tel1: '+36305108256'
+  tel2: +36 30 5108256
+
+- job: Iskolai szociális segítő
+  name: Balogh Gábor
+  mail: balogh.gabor@csgyjk.ritek.hu
+  tel1: '+36202932818'
+  tel2: +36 20 2932818
+
+- job: Drogprevenciós tanácsadó
+  name: Csala-Pellek Borbála r. őrnagy (Szegedi Rendőrkapitányság)
+  mail: csalapb@csongrad.police.hu
+  tel1: '+3662562400'
+  tel2: +36 62 562 400/48-56
+
+- job: Iskolarendőr
+  name: Kőhegyi Árpád
+  mail: kohegyia@csongrad.police.hu
+  tel1: '+36204986004'
+  tel2: +36 20 4986004

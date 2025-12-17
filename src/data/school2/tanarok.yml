@@ -1,0 +1,97 @@
+---
+- name: Bendéné Bán Gyöngyi
+  grad: főiskola
+  spec1: magyar–történelem–ének-zene szakos általános iskolai tanár
+
+- name: Bohusné Megyesi Vera
+  grad: egyetem
+  spec1: fizika–technika szakos általános iskolai tanár
+
+- name: Fodorné Kiss Magdolna
+  grad: főiskola
+  spec1: tanító
+
+- name: Darukáné Jójárt Renáta – tartósan távollévő
+  grad: főiskola
+  spec1: tanító
+
+- name: Héjja Emese
+  grad: főiskola
+  spec1: rajz szakos általános iskolai tanár
+  spec2: művelődésszervező
+
+- name: Kisné Fülöp Ilona
+  grad: főiskola
+  spec1: tanító
+
+- name: Kovács-Kincses Emilia
+  grad: főiskola
+  spec1: biológia–kémia szakos általános iskolai tanár
+
+- name: Minik Ilona
+  grad: egyetem
+  spec1: középiskolai informatikatanár
+  spec2: közgazdasági programozó matematikus
+
+- name: Megyesi Beáta
+  grad: főiskola
+  spec1: történelem szakos általános iskolai tanár
+  spec2: könyvtáros
+
+- name: Nagyistók Zsuzsanna
+  grad: főiskola
+  spec1: matematika-földrajz szakos általános iskolai tanár,
+  spec2: számítástechnika tanár
+
+- name: Pajkó Mihály Zsolt
+  grad: egyetem, főiskola
+  spec1: testnevelő tanár, testnevelés–technika szakos általános iskolai tanár
+  spec2: közoktatási vezető, mesterpedagógus,
+  spec3: művelődésszervező
+
+- name: Patyi Zoltán
+  grad: főiskola
+  spec1: néptánc oktató
+
+- name: Purcsi Kata
+  grad: egyetem
+  spec1: általános iskolai testnevelő tanár
+  spec2: általános iskolai természetismeret-környezettan tanár
+
+- name: Savanya Béláné
+  grad: főiskola
+  spec1: tanító
+
+- name: Simonné Tóth Edina
+  grad: főiskola
+  spec1: tanító
+
+- name: Skultéti Katalin
+  grad: főiskola
+  spec1: tanító
+
+- name: Széllné Bartók Mária
+  grad: főiskola
+  spec1: tanító
+
+- name: Terhes Bernadett
+  grad: főiskola
+  spec1: általános iskolai tanító
+
+- name: Tombácz Adél
+  grad: egyetem
+  spec1: angol nyelv és kultúra - magyar szakos középiskolai tanár
+
+- name: Túri Ágnes
+  grad: főiskola
+  spec1: általános iskolai angol nyelvtanár
+
+- name: Ungerné Fekete Mónika
+  grad: főiskola
+  spec1: általános iskolai magyar tanár és könyvtáros
+  spec2: differenciáló, fejlesztő pedagógiai ismeretek
+  spec3: szakvizsgázott pedagógus, fejlesztőpedagógus
+
+- name: Zombori-Benczur Izabella
+  grad: egyetem
+  spec1: középiskolai biológia–természetismeret-környezettan tanár

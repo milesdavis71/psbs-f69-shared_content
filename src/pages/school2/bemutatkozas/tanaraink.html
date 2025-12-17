@@ -1,0 +1,34 @@
+---
+layout: two_columns_bs
+title:   A Szegedi Petőfi Sándor Általános Iskola Bálint Sándor Tagiskolája tanárai
+---
+
+{{>title}}
+
+    <table class="hover stack">
+        <tbody>
+            {{> vezetok-bs-table}}
+            {{#each tanarok}}
+            <tr>
+                <td>
+                    {{this.name}}
+                </td>
+                <td>
+                    {{this.grad}}
+                </td>
+                <td>
+                    {{#if this.spec1}}
+                    {{this.spec1}}
+                    {{/if}}
+                    {{#if this.spec2}}
+                    <br>{{this.spec2}}
+                    {{/if}}
+                    {{#if this.spec3}}
+                    <br>{{this.spec3}}
+                    {{/if}}
+                </td>
+            </tr> 
+            {{/each}}
+        </tbody>
+    </table>
+    {{>noksosok-bs}}
