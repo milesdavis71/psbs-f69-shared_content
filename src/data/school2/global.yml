@@ -91,3 +91,21 @@ right_column:
     img: /assets/img/common/hatartalanul-logok.jpg
     alt: Határtalanul! logo
     buttontext: Részletek
+
+  - title: Nemzeti Tehetség Program
+    url: palyazatok/ntp
+    img: /assets/img/common/ntp-logo.jpg
+    alt: NTP logo
+    buttontext: Részletek
+
+  - title: Regisztrált tehetségpont
+    url: bemutatkozas/regisztralt_tehetsegpont
+    img: /assets/img/ps/bemutatkozas/regisztralt-tehetsegpont.png
+    alt: NTP logo
+    buttontext: Részletek
+
+  - title: KEVE program
+    url: palyazatok/keve_program
+    img: /assets/img/keve-program-logo.jpg
+    alt: NTP logo
+    buttontext: Részletek
