@@ -3,6 +3,7 @@ import yargs from 'yargs'
 import browser from 'browser-sync'
 import gulp from 'gulp'
 import panini from 'panini'
+import mergeStream from 'merge-stream'
 import rimraf from 'rimraf'
 import sherpa from 'style-sherpa'
 import yaml from 'js-yaml'
@@ -262,10 +263,10 @@ function watch() {
         gulp.series(styleGuide, browser.reload)
     )
 }
-
 // ----- School-specific Handling -----
 
 const SCHOOLS = ['school1', 'school2']
+const SHARED_DIR = 'kozos'
 let currentSchool = yargs.argv.school || 'school1'
 
 function setSchool(school) {
@@ -276,44 +277,73 @@ function setSchool(school) {
     }
 }
 
-// This is the task for build pages of each school
+// This is the task for build pages of each school + kozos
 function pagesSchool() {
-    return gulp
-        .src(`src/pages/${currentSchool}/**/*.{html,hbs,handlebars}`)
+    // 1) KOZOS: dist/kozos/...
+    const sharedPages = gulp
+        .src(
+            `src/pages/${SHARED_DIR}/**/*.{html,hbs,handlebars}`,
+            { base: 'src/pages' } // -> dist/kozos/...
+        )
         .pipe(
             panini({
-                root: `src/pages/${currentSchool}/`,
+                root: 'src/pages/',
                 layouts: 'src/layouts/',
                 partials: 'src/partials/',
                 data: 'src/data/',
                 helpers: 'src/helpers/',
             })
         )
-        .pipe(gulp.dest(PATHS.dist))
+
+    // 2) AKTUÁLIS ISKOLA: tartalom közvetlenül a dist gyökérbe
+    const schoolPages = gulp
+        .src(
+            `src/pages/${currentSchool}/**/*.{html,hbs,handlebars}`,
+            { base: `src/pages/${currentSchool}` } // school1/2 mappa levágása
+        )
+        .pipe(
+            panini({
+                root: 'src/pages/',
+                layouts: 'src/layouts/',
+                partials: 'src/partials/',
+                data: 'src/data/',
+                helpers: 'src/helpers/',
+            })
+        )
+
+    // A két stream összefésülése, majd kiírás a dist-be
+    return mergeStream(sharedPages, schoolPages).pipe(gulp.dest(PATHS.dist))
 }
 
 // Override default `pages` task with the dynamic one
 gulp.task('pages', pagesSchool)
 
-// Update watch to reflect current school
+// Update watch to reflect current school + kozos
 function watchSchool() {
     gulp.watch(PATHS.assets, copy)
-    gulp.watch(`src/pages/${currentSchool}/**/*.html`).on(
-        'all',
-        gulp.series(pagesSchool, browser.reload)
-    )
+
+    // school-specifikus + kozos oldalak figyelése
+    gulp.watch([
+        `src/pages/${currentSchool}/**/*.html`,
+        `src/pages/${SHARED_DIR}/**/*.html`,
+    ]).on('all', gulp.series(pagesSchool, browser.reload))
+
     gulp.watch('src/{layouts,partials}/**/*.html').on(
         'all',
         gulp.series(resetPages, pagesSchool, browser.reload)
     )
+
+    // data alatt minden yml/js/json – ebben benne van src/data/kozos is
     gulp.watch('src/data/**/*.{js,json,yml}').on(
         'all',
-        gulp.series(resetPages, pages, browser.reload)
+        gulp.series(resetPages, pagesSchool, browser.reload)
     )
+
     gulp.watch('src/helpers/**/*.js').on(
         'all',
-        gulp.series(resetPages, pages, browser.reload)
+        gulp.series(resetPages, pagesSchool, browser.reload)
     )
+
     gulp.watch('src/assets/scss/**/*.scss').on('all', sassBuild)
     gulp.watch('src/assets/js/**/*.js').on(
         'all',

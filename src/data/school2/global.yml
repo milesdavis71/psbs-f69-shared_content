@@ -93,7 +93,7 @@ right_column:
     buttontext: Részletek
 
   - title: Nemzeti Tehetség Program
-    url: palyazatok/ntp
+    url: kozos/palyazatok/ntp
     img: /assets/img/common/ntp-logo.jpg
     alt: NTP logo
     buttontext: Részletek
@@ -107,5 +107,23 @@ right_column:
   - title: KEVE program
     url: palyazatok/keve_program
     img: /assets/img/keve-program-logo.jpg
+    alt: NTP logo
+    buttontext: Részletek
+
+  - title: Iskolakert pályázat
+    url: palyazatok/keve_program
+    img: /assets/img/bs/palyazatok/iskolakerti-alapozo-logo.png
+    alt: NTP logo
+    buttontext: Részletek
+
+  - title: Digitális témahét
+    url: palyazatok/keve_program
+    img: /assets/img/bs/palyazatok/digitalis-temahet-logo.jpg
+    alt: NTP logo
+    buttontext: Részletek
+
+  - title: Kék tér program
+    url: palyazatok/keve_program
+    img: /assets/img/bs/bemutatkozas/kek-ter-logo.jpg
     alt: NTP logo
     buttontext: Részletek
