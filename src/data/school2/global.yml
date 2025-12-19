@@ -98,32 +98,26 @@ right_column:
     alt: NTP logo
     buttontext: Részletek
 
-  - title: Regisztrált tehetségpont
-    url: bemutatkozas/regisztralt_tehetsegpont
-    img: /assets/img/ps/bemutatkozas/regisztralt-tehetsegpont.png
-    alt: NTP logo
-    buttontext: Részletek
-
   - title: KEVE program
-    url: palyazatok/keve_program
+    url: kozos/palyazatok/keve_program
     img: /assets/img/keve-program-logo.jpg
-    alt: NTP logo
+    alt: Keve prorgam logo
     buttontext: Részletek
 
   - title: Iskolakert pályázat
-    url: palyazatok/keve_program
+    url: palyazatok/iskolakert
     img: /assets/img/bs/palyazatok/iskolakerti-alapozo-logo.png
-    alt: NTP logo
+    alt: Iskolakerti alapozó logo
     buttontext: Részletek
 
   - title: Digitális témahét
-    url: palyazatok/keve_program
+    url: palyazatok/digitalis_temahet
     img: /assets/img/bs/palyazatok/digitalis-temahet-logo.jpg
-    alt: NTP logo
+    alt: Digitális témahét logo
     buttontext: Részletek
 
   - title: Kék tér program
-    url: palyazatok/keve_program
+    url: bemutatkozas/kek_ter_program
     img: /assets/img/bs/bemutatkozas/kek-ter-logo.jpg
-    alt: NTP logo
+    alt: Kék tér program logo
     buttontext: Részletek
