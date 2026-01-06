@@ -1,7 +1,7 @@
 - job: hitoktató
-  name: Dr. Tóth Ildikó Éva
-  tel1: '+3662425370'
-  tel2: +36 62 425 370
+  name: Török Péter
+  tel1: '+36306348179'
+  tel2: +36 30 634 8179
   egyhaz: Magyar Katolikus Egyház
 
 - job: református lelkipásztor és vallástanár
@@ -12,7 +12,9 @@
   egyhaz: Magyar Református Egyház
 
 - job: hitoktató
-  name: Megyesi Zoltán
-  tel1: '+36207750600'
-  tel2: +36 20 775 0600
+  name: Olajos Barbara
   egyhaz: Magyar Baptista Egyház
+
+- job: hitoktató
+  name: Veres Zoltán
+  egyhaz: Magyar Görögkatolikus Egyház
