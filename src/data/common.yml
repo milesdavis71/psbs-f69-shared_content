@@ -69,3 +69,5 @@ pages:
         page: 'gyermekvedelem'
         url: gyermekvedelem
         folder: bemutatkozas
+
+TODO: global és common yamlok egyesítése

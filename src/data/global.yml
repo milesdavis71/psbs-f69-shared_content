@@ -121,3 +121,5 @@ right_column:
     img: /assets/img/bs/bemutatkozas/kek-ter-logo.jpg
     alt: Kék tér program logo
     buttontext: Részletek
+
+TODO: global és common yamlok egyesítése
