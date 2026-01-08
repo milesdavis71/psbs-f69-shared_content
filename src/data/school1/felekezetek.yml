@@ -1,5 +1,5 @@
-- vallas: hitoktató
+- vallas: Katolikus felekezet
   mp4path: ../assets/img/common/kat-felekezet.mp4
   alt: katolikus felekezet bemutatkozó videó
-  htmlpath: '+3662425370'
-  pdfpath: +36 62 425 370
+  htmlpath: 'katolikus_felekezet.html'
+  pdfpath: /assets/pdfs/ps/katolikus-ps-leaflet.pdf

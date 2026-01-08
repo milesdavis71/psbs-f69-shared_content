@@ -5,21 +5,19 @@ pdfUrl: /assets/pdfs/ps/katolikus-ps-leaflet.pdf
 ---
 
 {{>title}}
-<!-- <table>
+<table>
     <tbody>
         {{#each felekezetek}}
         <tr>
-            <td>{{vallas}}</td>
+            <td style="color: gray;"> <b>{{vallas}}</b></td>
             <td class="text-right"><a href="{{mp4path}}" target="_blank"><i class="fas fa-video"></i>&ensp;videó</a></td>
-            <td class="text-right"><a href="{{root}}bemutatkozas/{htmlfilename}" target="_blank"><i class="fas fa-file"></i>&ensp;pdf</a></td>
+            <td class="text-right"><a href="{{root}}{{htmlpath}}" target="_blank"><i class="fas fa-file"></i>&ensp;pdf megtekintése</a></td>
             <td class="text-right">
-                <a href="{{root}}assets/bemutatkozas/{{pdfname}}" download>
-                    <i class="fas fa-download"></i>&ensp;pdf
+                <a href="{{root}}{{pdfpath}}" download>
+                    <i class="fas fa-download"></i>&ensp;pdf letöltése
                 </a>
             </td>
         </tr>
         {{/each}}
     </tbody>
-</table> -->
-
-{{>pdf-viewer}}
+</table>
