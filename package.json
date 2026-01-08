@@ -13,6 +13,7 @@
     "foundation-sites": "latest",
     "jquery": "^3.6.0",
     "motion-ui": "latest",
+    "pdfjs-dist": "^2.16.105",
     "what-input": "^5.2.10"
   },
   "devDependencies": {

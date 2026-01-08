@@ -1,0 +1,25 @@
+---
+layout: two_columns_ps
+title: Felekezetek bemutatkozása
+pdf-path: ../assets/pdfs/common/kat-felekezet.pdf
+---
+
+{{>title}}
+<!-- <table>
+    <tbody>
+        {{#each felekezetek}}
+        <tr>
+            <td>{{vallas}}</td>
+            <td class="text-right"><a href="{{mp4path}}" target="_blank"><i class="fas fa-video"></i>&ensp;videó</a></td>
+            <td class="text-right"><a href="{{root}}bemutatkozas/{htmlfilename}" target="_blank"><i class="fas fa-file"></i>&ensp;pdf</a></td>
+            <td class="text-right">
+                <a href="{{root}}assets/bemutatkozas/{{pdfname}}" download>
+                    <i class="fas fa-download"></i>&ensp;pdf
+                </a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table> -->
+
+{{>pdf-viewer}}
