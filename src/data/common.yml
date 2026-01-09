@@ -45,12 +45,10 @@ pages:
         page: 'felekezetek_bemutatkozasa'
         url: felekezetek_bemutatkozasa
         folder: bemutatkozas
-      - url: reformatus_felekezet
-        folder: kozos/bemutatkozas
       - title: Pedagógiai program
         page: 'pedagogiai_program'
         url: pedagogiai_program
-        folder: bemutatkozas
+        folder: kozos/bemutatkozas
       - title: SZMSZ
         page: 'szmsz'
         url: szmsz
