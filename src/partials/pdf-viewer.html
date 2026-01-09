@@ -1,3 +1,23 @@
+{{!--
+PDF megjelenítő partial
+
+Használat:
+1. Az oldal frontmatterében add meg a pdfUrl kulcsot:
+---
+layout: default
+title: Dokumentum címe
+pdfUrl: /assets/pdfs/ps/dokumentum.pdf
+---
+
+2. Az oldal body részében hívd meg a partial-t:
+{ {>pdf-viewer} } (szóközök nélkül)
+
+Vagy paraméterrel:
+{ {>pdf-viewer pdfUrl="/assets/pdfs/common/dokumentum.pdf"} } (szóközök nélkül)
+
+Példa teljes használat:
+src/pages/school1/pdf-teszt.html
+--}}
 <div class="grid-container">
     <div class="callout">
         <div class="grid-x grid-padding-x align-middle" style="margin-bottom: 15px;">
