@@ -106,4 +106,22 @@ deeplinks:
   - class: '8'
     deeplink: 8o
 
+taneszkozok:
+  - class: '1a'
+  - class: '1b'
+  - class: '2a'
+  - class: '2b'
+  - class: '3a'
+  - class: '3b'
+  - class: '4a'
+  - class: '4b'
+  - class: '5a'
+  - class: '5b'
+  - class: '6a'
+  - class: '6b'
+  - class: '7a'
+  - class: '7b'
+  - class: '8a'
+  - class: '8b'
+
 TODO: global és common yamlok egyesítése

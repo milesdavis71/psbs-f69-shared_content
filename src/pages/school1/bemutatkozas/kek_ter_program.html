@@ -1,20 +1,6 @@
 ---
 layout: default
-title: Tankönyvlista
+title: Kék tér program
 ---
 
 {{>title}}
-<ul class="accordion" data-accordion data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500" id="deeplinked-accordion">
-    {{#each common.deeplinks}}
-    <li class="accordion-item" data-accordion-item>
-        <a href="#{{class}}a" class="accordion-title text-center">{{class}}. osztály</a>
-        <div class="accordion-content" id="{{class}}a" data-tab-content>
-            <h5 class="text-center subheader">Tankönyvlista – {{class}}. osztály</h5> <br>
-            <div class="grid-x grid-margin-x">
-                <div class="cell">
-                    {{> md_tk_ps list=deeplink}}
-                </div>
-            </div>
-    </li>
-    {{/each}}
-</ul>
