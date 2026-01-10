@@ -52,7 +52,7 @@ pages:
       - title: SZMSZ
         page: 'szmsz'
         url: szmsz
-        folder: bemutatkozas
+        folder: kozos/bemutatkozas
       - title: Kollektív szerződés
         page: 'kollektiv_szerzodes'
         url: kollektiv_szerzodes
