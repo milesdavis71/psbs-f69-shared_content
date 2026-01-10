@@ -15,6 +15,7 @@ bs:
 pages:
   - title: Főoldal/Híreink
     url: index
+    page: index
     icon: home
     noFolder: true
   - title: Bemutatkozás

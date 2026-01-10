@@ -1,11 +1,7 @@
 {{#each common.pages}}
 <ul class="vertical menu accordion-menu" data-accordion-menu>
     <li {{#ifpage page}} class="current" {{/ifpage}}>
-        {{#if noFolder}}
         <a href="../{{url}}.html"><i class="fas fa-{{icon}}"></i> {{title}}</a>
-        {{else}}
-        <a href="../{{url}}.html"><i class="fas fa-{{icon}}"></i> {{title}}</a>
-        {{/if}}
         {{#if submenu}}
         {{>submenus type=menu}}
         {{#each submenu}}
