@@ -40,7 +40,9 @@ src/pages/school1/pdf-teszt.html
                 </span>
             </div>
         </div>
-        <div class="pdf-viewer" style="height: 600px; max-height: 70vh; background: #f5f5f5; overflow: auto;">
+
+        <!-- viewer magasság: teljes viewport a 59px-es header alatt -->
+        <div class="pdf-viewer" style="height: calc(100vh - 59px); background: #f5f5f5; overflow-y: auto; overflow-x: hidden;">
             <canvas id="pdfCanvas" style="display: block; margin: 0 auto;"></canvas>
         </div>
     </div>
@@ -65,16 +67,37 @@ src/pages/school1/pdf-teszt.html
     let pageNum = 1;
     let pageRendering = false;
     let pageNumPending = null;
-    let scale = 1.2;
+
+    // aktuális zoom skála (manuális módnál használjuk)
+    let scale = 1;
+
+    // fit width mód: ha true, mindig a konténer szélességéhez igazítjuk
+    let isFitWidth = true;
 
     const canvas = document.getElementById('pdfCanvas');
     const ctx = canvas.getContext('2d');
+    const viewer = document.querySelector('.pdf-viewer');
 
     function renderPage(num) {
         pageRendering = true;
 
         pdfDoc.getPage(num).then(function (page) {
-            const viewport = page.getViewport({ scale: scale });
+            // Alap viewport scale=1-gyel (eredeti méret)
+            const unscaledViewport = page.getViewport({ scale: 1 });
+
+            let usedScale = scale;
+
+            if (isFitWidth) {
+                // konténer szélesség
+                const viewerWidth = viewer.clientWidth;
+                // horizontális fit: skála = konténer szélessége / pdf oldal szélessége
+                usedScale = viewerWidth / unscaledViewport.width;
+                // frissítjük a globális scale-t is, hogy a zoom innen induljon
+                scale = usedScale;
+            }
+
+            const viewport = page.getViewport({ scale: usedScale });
+
             canvas.width = viewport.width;
             canvas.height = viewport.height;
 
@@ -119,39 +142,33 @@ src/pages/school1/pdf-teszt.html
         queueRenderPage(pageNum);
     }
 
+    // Zoom +: kilépünk a fit width módból, manuális nagyítás
     function onZoomIn() {
-        scale += 0.1;
+        isFitWidth = false;
+        scale *= 1.1;
         queueRenderPage(pageNum);
     }
 
+    // Zoom −: kilépünk a fit width módból, manuális kicsinyítés
     function onZoomOut() {
-        scale = Math.max(0.5, scale - 0.2);
+        isFitWidth = false;
+        scale = Math.max(0.3, scale / 1.1);
         queueRenderPage(pageNum);
     }
 
+    // "Laphoz igazít" gomb: mostantól vízszintes fit width mód
     function onFitToPage() {
         if (!pdfDoc) return;
+        isFitWidth = true;
+        queueRenderPage(pageNum);
+    }
 
-        pdfDoc.getPage(pageNum).then(function (page) {
-            const viewer = document.querySelector('.pdf-viewer');
-            const viewerWidth = viewer.clientWidth;
-            const viewerHeight = viewer.clientHeight;
-
-            // Eredeti oldal méret 1.0 scale-en
-            const viewport = page.getViewport({ scale: 1.0 });
-
-            // Számoljuk ki a scale-t úgy, hogy biztosan elférjen
-            const scaleX = (viewerWidth * 0.95) / viewport.width;
-            const scaleY = (viewerHeight * 0.95) / viewport.height;
-
-            // A kisebb értéket használjuk, hogy mindkét irányban elférjen
-            scale = Math.min(scaleX, scaleY);
-
-            // Biztosítsuk, hogy a scale ésszerű határok között maradjon
-            scale = Math.max(0.3, Math.min(scale, 3.0));
-
+    // Ablakméret változáskor: ha fit width módban vagyunk, újrarenderelünk
+    function onWindowResize() {
+        if (!pdfDoc) return;
+        if (isFitWidth) {
             queueRenderPage(pageNum);
-        });
+        }
     }
 
     async function init() {
@@ -188,7 +205,13 @@ src/pages/school1/pdf-teszt.html
                 document.getElementById('nextPage').addEventListener('click', onNextPage);
             }
 
-            // Első oldal renderelése
+            // Ablakméret figyelése (fit width újraszámolás)
+            window.addEventListener('resize', onWindowResize);
+
+            // Első oldal renderelése (alapból fit width módban)
+            pageNum = 1;
+            isFitWidth = true;
+            scale = 1;
             renderPage(pageNum);
 
         } catch (err) {
