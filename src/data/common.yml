@@ -71,5 +71,27 @@ pages:
         page: 'gyermekvedelem'
         url: gyermekvedelem
         folder: bemutatkozas
+      - title: Tankönyvek
+        page: 'tankonyvek'
+        url: tankonyvek
+        folder: bemutatkozas
+
+deeplinks:
+  - class: '1'
+    deeplink: 1o
+  - class: '2'
+    deeplink: 2o
+  - class: '3'
+    deeplink: 3o
+  - class: '4'
+    deeplink: 4o
+  - class: '5'
+    deeplink: 5o
+  - class: '6'
+    deeplink: 6o
+  - class: '7'
+    deeplink: 7o
+  - class: '8'
+    deeplink: 8o
 
 TODO: global és common yamlok egyesítése
