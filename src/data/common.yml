@@ -75,6 +75,18 @@ pages:
         page: 'tankonyvek'
         url: tankonyvek
         folder: bemutatkozas
+      - title: Taneszközök
+        page: 'taneszkozok'
+        url: taneszkozok
+        folder: bemutatkozas
+      - title: Kék Tér Program
+        page: 'kek_ter_program'
+        url: kek_ter_program
+        folder: bemutatkozas
+      - title: KEVE Program
+        page: 'keve_program'
+        url: keve_program
+        folder: bemutatkozas
 
 deeplinks:
   - class: '1'
