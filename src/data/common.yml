@@ -16,6 +16,7 @@ pages:
   - title: Főoldal/Híreink
     url: index
     icon: home
+    noFolder: true
   - title: Bemutatkozás
     url: bemutatkozas
     icon: chalkboard-teacher
@@ -48,11 +49,11 @@ pages:
       - title: Pedagógiai program
         page: 'pedagogiai_program'
         url: pedagogiai_program
-        folder: kozos/bemutatkozas
+        folder: bemutatkozas
       - title: SZMSZ
         page: 'szmsz'
         url: szmsz
-        folder: kozos/bemutatkozas
+        folder: bemutatkozas
       - title: Kollektív szerződés
         page: 'kollektiv_szerzodes'
         url: kollektiv_szerzodes
