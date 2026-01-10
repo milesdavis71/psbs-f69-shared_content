@@ -9,9 +9,13 @@ pdfUrl: /assets/pdfs/ps/katolikus-ps-leaflet.pdf
     <tbody>
         {{#each felekezetek}}
         <tr>
-            <td style="color: gray;"> <b>{{vallas}}</b></td>
+            <td style="color: gray"><b>{{vallas}}</b></td>
             {{#if mp4path}}
-            <td class="text-right"><a href="{{mp4path}}" target="_blank"><i class="fas fa-video"></i>&ensp;videó megtekintése</a></td>
+            <td class="text-right">
+                <a href="{{mp4path}}" target="_blank"
+                    ><i class="fas fa-video"></i>&ensp;videó megtekintése</a
+                >
+            </td>
             {{else}}
             <td></td>
             {{/if}}
