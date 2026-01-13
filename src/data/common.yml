@@ -1,3 +1,121 @@
+etkezesbefizetes:
+  months:
+    - name: '2026. Január'
+      slug: 'januar'
+      dates:
+        - date: 2025. 12. 09.
+          time: '07:30–14:30'
+        - date: 2025. 12. 10.
+          time: '10:00–17:00'
+        - date: 2025. 12. 16.
+          time: '07:30–14:30'
+        - date: 2025. 12. 17.
+          time: '10:00–17:00'
+        - date: 2026. 01. 06.
+          time: '07:30–14:30'
+        - date: 2026. 01. 07.
+          time: '10:00–17:00'
+
+    - name: '2026. Február'
+      slug: 'februar'
+      dates:
+        - date: 2026. 01. 13.
+          time: '07:30–14:30'
+        - date: 2026. 01. 14.
+          time: '10:00–17:00'
+        - date: 2026. 01. 20.
+          time: '07:30–14:30'
+        - date: 2026. 01. 21.
+          time: '10:00–17:00'
+        - date: 2026. 01. 27.
+          time: '07:30–14:30'
+        - date: 2026. 01. 28.
+          time: '10:00–17:00'
+        - date: 2026. 02. 03.
+          time: '07:30–14:30'
+        - date: 2026. 02. 04.
+          time: '10:00–17:00'
+
+    - name: '2026. Március'
+      slug: 'marcius'
+      dates:
+        - date: 2026. 02. 10.
+          time: '07:30–14:30'
+        - date: 2026. 02. 11.
+          time: '10:00–17:00'
+        - date: 2026. 02. 17.
+          time: '07:30–14:30'
+        - date: 2026. 02. 18.
+          time: '10:00–17:00'
+        - date: 2026. 02. 24.
+          time: '07:30–14:30'
+        - date: 2026. 02. 25.
+          time: '10:00–17:00'
+        - date: 2026. 03. 03.
+          time: '07:30–14:30'
+        - date: 2026. 03. 04.
+          time: '10:00–17:00'
+
+    - name: '2026. Április'
+      slug: 'aprilis'
+      dates:
+        - date: 2026. 03. 10.
+          time: '07:30–14:30'
+        - date: 2026. 03. 11.
+          time: '10:00–17:00'
+        - date: 2026. 03. 17.
+          time: '07:30–14:30'
+        - date: 2026. 03. 18.
+          time: '10:00–17:00'
+        - date: 2026. 03. 24.
+          time: '07:30–14:30'
+        - date: 2026. 03. 25.
+          time: '10:00–17:00'
+
+    - name: '2026. Május'
+      slug: 'majus'
+      dates:
+        - date: 2026. 04. 07.
+          time: '07:30–14:30'
+        - date: 2026. 04. 08.
+          time: '10:00–17:00'
+        - date: 2026. 04. 14.
+          time: '07:30–14:30'
+        - date: 2026. 04. 15.
+          time: '10:00–17:00'
+        - date: 2026. 04. 21.
+          time: '07:30–14:30'
+        - date: 2026. 04. 22.
+          time: '10:00–17:00'
+        - date: 2026. 04. 28.
+          time: '07:30–14:30'
+        - date: 2026. 04. 29.
+          time: '10:00–17:00'
+        - date: 2026. 05. 05.
+          time: '07:30–14:30'
+        - date: 2026. 05. 06.
+          time: '10:00–17:00'
+
+    - name: '2026. Június'
+      slug: 'junius'
+      dates:
+        - date: 2026. 05. 12.
+          time: '07:30–14:30'
+        - date: 2026. 05. 13.
+          time: '10:00–17:00'
+        - date: 2026. 05. 19.
+          time: '07:30–14:30'
+        - date: 2026. 05. 20.
+          time: '10:00–17:00'
+        - date: 2026. 05. 26.
+          time: '07:30–14:30'
+        - date: 2026. 05. 27.
+          time: '10:00–17:00'
+        - date: 2026. 06. 02.
+          time: '07:30–14:30'
+        - date: 2026. 06. 03.
+          time: '10:00–17:00'
+
 fenntarto:
   name: Az intézmény fenntartója a Szegedi Tankerületi Központ
   open: 'Nyitva tartás: 7:00–18:00 óráig'
@@ -87,11 +205,16 @@ pages:
         page: 'keve_program'
         url: keve_program
         folder: bemutatkozas
-  - title: Főoldal/Híreink
+  - title: Étkezési információk
     url: index
     page: index
-    icon: home
-    noFolder: true
+    icon: utensils
+    menu: etkezesi-informaciok
+    submenu:
+      - title: Befizetési időpontok az NGSZ-nél
+        page: 'befiz_idopontok_ngsz'
+        url: befiz_idopontok_ngsz
+        folder: etkezesi_informaciok
 
 deeplinks:
   - class: '1'

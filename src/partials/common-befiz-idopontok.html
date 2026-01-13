@@ -1,0 +1,37 @@
+<p class="text-center">
+    Befizetési helyszín: NGSZ közétkeztetési ügyfélszolgálat (6724 Szeged,
+    Huszár u. 1.)
+</p>
+<div class="grid-x grid-margin-x">
+    <div class="cell auto"></div>
+    <div class="cell small-12 large-6">
+        <ul class="accordion" data-accordion>
+            {{#each common.etkezesbefizetes.months}}
+
+            <li
+                class="accordion-item {{#if @first}}is-active{{/if}}"
+                data-accordion-item
+            >
+                <a
+                    href="#"
+                    class="accordion-title text-center"
+                    style="font-size: 110%; margin: 0.5em 0 0.5em"
+                    >{{ name }}</a
+                >
+
+                <div class="accordion-content" data-tab-content>
+                    <ul class="no-bullet" style="margin: 1em 0 1em">
+                        {{#each dates}}
+                        <li class="text-center">
+                            <strong>{{ date }}</strong> &emsp13; {{ time }}
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </li>
+
+            {{/each}}
+        </ul>
+    </div>
+    <div class="cell auto"></div>
+</div>
