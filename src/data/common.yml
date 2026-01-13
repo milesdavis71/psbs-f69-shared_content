@@ -87,6 +87,11 @@ pages:
         page: 'keve_program'
         url: keve_program
         folder: bemutatkozas
+  - title: Főoldal/Híreink
+    url: index
+    page: index
+    icon: home
+    noFolder: true
 
 deeplinks:
   - class: '1'
