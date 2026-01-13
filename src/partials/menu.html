@@ -23,7 +23,11 @@
     {{#ifpage page}}
         class="current"
     {{/ifpage}}>
+        {{#if external}}
+        <a href="{{url}}" target="_blank" rel="noopener noreferrer"><i class="fas fa-{{icon}}"></i> {{title}}</a>
+        {{else}}
         <a href="../{{url}}.html"><i class="fas fa-{{icon}}"></i> {{title}}</a>
+        {{/if}}
         {{#if submenu}}
             {{>submenus type=menu}}
             {{#each submenu}}
@@ -31,7 +35,11 @@
                 {{#ifpage page}}
                     class="current"
                 {{/ifpage}}>
+                {{#if external}}
+                <a href="{{url}}" target="_blank" rel="noopener noreferrer">{{title}}</a>
+                {{else}}
                 <a href="../{{folder}}/{{url}}.html">{{title}}</a>
+                {{/if}}
                 </li>
             {{/each}}
         <!-- submenus partial záró -->
