@@ -206,8 +206,8 @@ pages:
         url: keve_program
         folder: bemutatkozas
   - title: Étkezési információk
-    url: index
-    page: index
+    url:
+    page:
     icon: utensils
     menu: etkezesi-informaciok
     submenu:
@@ -222,6 +222,13 @@ pages:
       - title: Közétkeztetés – NGSZ weboldal
         url: https://ngsz.hu/2021/01/01/kozetkeztetes/
         external: true
+      - title: Közétkeztetés – étlapok
+        url: https://ngsz.hu/2021/01/01/kozetkeztetes/#kozetkeztetes-etlap
+        external: true
+      - title: Leendő elsős szülők tájékoztatása közétkeztetésről
+        page: 'elsos_szulok_tajekoztatasa_kozetkeztetesrol'
+        url: elsos_szulok_tajekoztatasa_kozetkeztetesrol
+        folder: etkezesi_informaciok
 
 deeplinks:
   - class: '1'
