@@ -206,8 +206,6 @@ pages:
         url: keve_program
         folder: bemutatkozas
   - title: Étkezési információk
-    url:
-    page:
     icon: utensils
     menu: etkezesi-informaciok
     submenu:
@@ -235,8 +233,6 @@ pages:
     menu: bemutatkozas
     submenu:
       - title: Felvételi lehetőségről szóló tájékoztató
-        page:
-        url:
         folder: kozzeteteli_lista
         submenu:
           - title: huhuhu
