@@ -238,8 +238,6 @@ pages:
         page:
         url:
         folder: kozzeteteli_lista
-        submenu:
-          - title: huhuhu
 
 deeplinks:
   - class: '1'
