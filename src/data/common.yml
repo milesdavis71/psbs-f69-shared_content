@@ -229,6 +229,15 @@ pages:
         page: 'elsos_szulok_tajekoztatasa_kozetkeztetesrol'
         url: elsos_szulok_tajekoztatasa_kozetkeztetesrol
         folder: etkezesi_informaciok
+  - title: Közzétételi lista
+    url:
+    icon: list
+    menu: bemutatkozas
+    submenu:
+      - title: Felvételi lehetőségről szóló tájékoztató
+        page:
+        url:
+        folder: kozzeteteli_lista
 
 deeplinks:
   - class: '1'
