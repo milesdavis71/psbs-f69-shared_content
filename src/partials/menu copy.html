@@ -38,7 +38,10 @@
                 <li class="
                     {{#ifpage page}}current{{/ifpage}}
                     {{#ifequal url 'felveteli_lehetosegrol_szolo_tajekoztato'}}
-                        {{#ifpage 'felveteli_tajekoztato' 'beiratkozaskor_leadando_nyomtatvanyok'}}no-color-change{{/ifpage}}
+                        {{#ifpage 'felveteli_tajekoztato' 'beiratkozaskor_leadando_nyomtatvanyok'}}current no-color-change{{/ifpage}}
+                    {{/ifequal}}
+                    {{#ifequal url 'minta_lenyilo'}}
+                        {{#ifpage 'minta_oldal_1' 'minta_oldal_2'}}current{{/ifpage}}
                     {{/ifequal}}">
 
                     {{#if external}}

@@ -228,14 +228,49 @@ pages:
         url: elsos_szulok_tajekoztatasa_kozetkeztetesrol
         folder: etkezesi_informaciok
   - title: Közzétételi lista
-    url:
+    url: kozzeteteli_lista
     icon: list
-    menu: bemutatkozas
+    menu: kozzeteteli-lista
     submenu:
+      - title: Iskolahívogató
+        page: 'iskolahivagato_ps_bs_kozzetetel'
+        url: iskolahivagato_ps_bs_kozzetetel
+        folder: kozzeteteli_lista
+      - title: Körzetünk
+        page: 'beiratkozasi_korzet'
+        url: beiratkozasi_korzet
+        folder: kozzeteteli_lista
       - title: Felvételi lehetőségről szóló tájékoztató
+        url: felveteli_lehetosegrol_szolo_tajekoztato
         folder: kozzeteteli_lista
         submenu:
-          - title: huhuhu
+          - title: Felvételi tájékoztató
+            page: 'felveteli_tajekoztato'
+            url: felveteli_tajekoztato
+            folder: kozzeteteli_lista
+          - title: Beiratkozáskor leadandó nyomtatványok
+            page: 'beiratkozaskor_leadando_nyomtatvanyok'
+            url: beiratkozaskor_leadando_nyomtatvanyok
+            folder: kozzeteteli_lista
+
+  - title: Minta menü (2 szint)
+    url: minta_menu
+    page: minta_menu
+    icon: layer-group
+    menu: minta-menu
+    submenu:
+      - title: Minta lenyíló
+        url: minta_lenyilo
+        folder: minta
+        submenu:
+          - title: Minta oldal 1
+            page: 'minta_oldal_1'
+            url: minta_oldal_1
+            folder: minta
+          - title: Minta oldal 2
+            page: 'minta_oldal_2'
+            url: minta_oldal_2
+            folder: minta
 
 deeplinks:
   - class: '1'
