@@ -37,9 +37,17 @@
             {{#each submenu}}
                 <li class="
                     {{#ifpage page}}current{{/ifpage}}
-                    {{#ifequal url 'felveteli_lehetosegrol_szolo_tajekoztato'}}
-                        {{#ifpage 'felveteli_tajekoztato' 'beiratkozaskor_leadando_nyomtatvanyok'}}no-color-change{{/ifpage}}
-                    {{/ifequal}}">
+                    {{#ifequal url 
+                        'felveteli_lehetosegrol_szolo_tajekoztato'}}
+                        {{#ifpage
+                            'felveteli_tajekoztato'
+                            'beiratkozaskor_leadando_nyomtatvanyok'
+                            'beiratkozasi_korzet'
+                            'iskolahivogato'}}
+                            no-color-change
+                        {{/ifpage}}
+                    {{/ifequal}}
+                ">
 
                     {{#if external}}
                     <a href="{{url}}" target="_blank" rel="noopener noreferrer">{{title}}</a>
@@ -50,11 +58,16 @@
                     {{#if submenu}}
                         <ul class="menu vertical nested
                             {{#ifequal url 'felveteli_lehetosegrol_szolo_tajekoztato'}}
-                                {{#ifpage 'felveteli_tajekoztato' 'beiratkozaskor_leadando_nyomtatvanyok'}}is-active{{/ifpage}}
+                                {{#ifpage
+                                    'felveteli_tajekoztato'
+                                    'beiratkozaskor_leadando_nyomtatvanyok'
+                                    'beiratkozasi_korzet'
+                                    'iskolahivogato'
+                                }}
+                                    is-active
+                                {{/ifpage}}
                             {{/ifequal}}
-                            {{#ifequal url 'minta_lenyilo'}}
-                                {{#ifpage 'minta_oldal_1' 'minta_oldal_2'}}is-active{{/ifpage}}
-                            {{/ifequal}}">
+                        ">
 
                             {{#each submenu}}
                                 <li {{#ifpage page}}class="current"{{/ifpage}}>

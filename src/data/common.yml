@@ -232,14 +232,6 @@ pages:
     icon: list
     menu: kozzeteteli-lista
     submenu:
-      - title: Iskolahívogató
-        page: 'iskolahivagato_ps_bs_kozzetetel'
-        url: iskolahivagato_ps_bs_kozzetetel
-        folder: kozzeteteli_lista
-      - title: Körzetünk
-        page: 'beiratkozasi_korzet'
-        url: beiratkozasi_korzet
-        folder: kozzeteteli_lista
       - title: Felvételi lehetőségről szóló tájékoztató
         url: felveteli_lehetosegrol_szolo_tajekoztato
         folder: kozzeteteli_lista
@@ -252,25 +244,18 @@ pages:
             page: 'beiratkozaskor_leadando_nyomtatvanyok'
             url: beiratkozaskor_leadando_nyomtatvanyok
             folder: kozzeteteli_lista
-
-  - title: Minta menü (2 szint)
-    url: minta_menu
-    page: minta_menu
-    icon: layer-group
-    menu: minta-menu
-    submenu:
-      - title: Minta lenyíló
-        url: minta_lenyilo
-        folder: minta
-        submenu:
-          - title: Minta oldal 1
-            page: 'minta_oldal_1'
-            url: minta_oldal_1
-            folder: minta
-          - title: Minta oldal 2
-            page: 'minta_oldal_2'
-            url: minta_oldal_2
-            folder: minta
+          - title: Körzetünk
+            page: 'beiratkozasi_korzet'
+            url: beiratkozasi_korzet
+            folder: kozzeteteli_lista
+          - title: Iskolahívogató
+            page: 'iskolahivogato'
+            url: iskolahivogato
+            folder: kozzeteteli_lista
+      - title: Engedélyezett osztályok csoportok
+        page: 'engedelyezett_osztalyok_csoportok'
+        url: engedelyezett_osztalyok_csoportok
+        folder: kozzeteteli_lista
 
 deeplinks:
   - class: '1'
@@ -307,5 +292,19 @@ taneszkozok:
   - class: '7b'
   - class: '8a'
   - class: '8b'
+
+beiratkLeadNyomtatvanyok:
+  - name: 'nyilatkozat_torvenyes_kepviselo_2025.pdf'
+    file: nyilatkozat_torvenyes_kepviselo_2025.pdf
+    icon: fas fa-file-pdf fa-lg
+  - name: 'Nyilatkozat – Etika/Hit- és erkölcstan'
+    file: nyilatkozat_etika_hit-es_erkolcstan_2025.pdf
+    icon: fas fa-file-pdf fa-lg
+  - name: 'Tanulói adatlap'
+    file: tanuloi_adatlap_2025.pdf
+
+  - name: 'Nyilatkozat fokozott figyelmet igénylő egészségi állapotról'
+    file: nyilatkozat_egeszegugyi_allapotrol_2025.pdf
+    icon: fas fa-file-pdf fa-lg
 
 TODO: global és common yamlok egyesítése
