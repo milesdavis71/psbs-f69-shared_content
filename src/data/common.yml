@@ -252,9 +252,9 @@ pages:
             page: 'iskolahivogato'
             url: iskolahivogato
             folder: kozzeteteli_lista
-      - title: Engedélyezett osztályok csoportok
-        page: 'engedelyezett_osztalyok_csoportok'
-        url: engedelyezett_osztalyok_csoportok
+      - title: Engedélyezett osztályok, csoportok száma
+        page: 'osztalyok_tanulok_szama'
+        url: osztalyok_tanulok_szama
         folder: kozzeteteli_lista
 
 deeplinks:
