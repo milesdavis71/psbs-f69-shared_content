@@ -256,6 +256,22 @@ pages:
         page: 'osztalyok_tanulok_szama'
         url: osztalyok_tanulok_szama
         folder: kozzeteteli_lista
+      - title: Térítési díj, tandjíj
+        page: 'teritesi_dij'
+        url: teritesi_dij
+        folder: kozzeteteli_lista
+      - title: Étkezési térítési díjak
+        page: 'etkezesi_teritesi_dijak'
+        url: etkezesi_teritesi_dijak
+        folder: kozzeteteli_lista
+      - title: Fenntartói értékelés, nyilvános megállapításokat tartalmazó vizsgálatok
+        page: 'nyilvanos_vizsgalat'
+        url: nyilvanos_vizsgalat
+        folder: kozzeteteli_lista
+      - title: Nyitvatartás rendje
+        page: 'nyitvatartas'
+        url: nyitvatartas
+        folder: kozzeteteli_lista
 
 deeplinks:
   - class: '1'
