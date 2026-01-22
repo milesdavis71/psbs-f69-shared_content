@@ -6,3 +6,4 @@ dist
 .cache
 .idea
 yarn.lock
+copilot-instructions.md
