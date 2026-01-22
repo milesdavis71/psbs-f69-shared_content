@@ -43,7 +43,18 @@
                             'felveteli_tajekoztato'
                             'beiratkozaskor_leadando_nyomtatvanyok'
                             'beiratkozasi_korzet'
-                            'iskolahivogato'}}
+                            'iskolahivogato'
+                        }}
+                            no-color-change
+                        {{/ifpage}}
+                    {{/ifequal}}
+                    {{#ifequal url 
+                        'ped_ellenorzesi_feladatok'}}
+                        {{#ifpage
+                            'iskolai_tanfelugyelet_eredmenyei'
+                            'intezmenyvezetoi_tanfelugyelet_eredmenye'
+                            'pedagogus_tanfelugyelet_eredmenye'
+                            }}
                             no-color-change
                         {{/ifpage}}
                     {{/ifequal}}
@@ -63,6 +74,15 @@
                                     'beiratkozaskor_leadando_nyomtatvanyok'
                                     'beiratkozasi_korzet'
                                     'iskolahivogato'
+                                }}
+                                    is-active
+                                {{/ifpage}}
+                            {{/ifequal}}
+                            {{#ifequal url 'ped_ellenorzesi_feladatok'}}
+                                {{#ifpage
+                                    'iskolai_tanfelugyelet_eredmenyei'
+                                    'intezmenyvezetoi_tanfelugyelet_eredmenye'
+                                    'pedagogus_tanfelugyelet_eredmenye'
                                 }}
                                     is-active
                                 {{/ifpage}}

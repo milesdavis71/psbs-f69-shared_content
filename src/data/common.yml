@@ -143,7 +143,7 @@ pages:
     submenu:
       - title: Bemutatkozás
         page: 'bemutatkozas'
-        url: bemutatkozas
+        url: 'bemutatkozas'
         folder: bemutatkozas
       - title: Tanáraink
         page: 'tanaraink'
@@ -159,7 +159,7 @@ pages:
         folder: bemutatkozas
       - title: Hitoktatóink
         page: 'hitoktatoink'
-        url: hitoktatoink
+        url: 'hitoktatoink'
         folder: bemutatkozas
       - title: Felekezetek bemutatkozása
         page: 'felekezetek_bemutatkozasa'
@@ -175,7 +175,7 @@ pages:
         folder: bemutatkozas
       - title: Kollektív szerződés
         page: 'kollektiv_szerzodes'
-        url: kollektiv_szerzodes
+        url: 'kollektiv_szerzodes'
         folder: bemutatkozas
       - title: IMIP
         page: 'imip'
@@ -272,6 +272,26 @@ pages:
         page: 'nyitvatartas'
         url: nyitvatartas
         folder: kozzeteteli_lista
+      - title: Eseménynaptár
+        page: 'esemenynaptar'
+        url: esemenynaptar
+        folder: kozzeteteli_lista
+      - title: Pedagógiai-szakmai ellenőrzési feladatok ellenőrzése
+        url: ped_ellenorzesi_feladatok
+        folder: kozzeteteli_lista
+        submenu:
+          - title: Iskolai tanfelügyelet eredményei
+            page: 'iskolai_tanfelugyelet_eredmenyei'
+            url: iskolai_tanfelugyelet_eredmenyei
+            folder: kozzeteteli_lista
+          - title: Intézményvezetői tanfelügyelet eredménye
+            page: 'intezmenyvezetoi_tanfelugyelet_eredmenye'
+            url: 'intezmenyvezetoi_tanfelugyelet_eredmenye'
+            folder: kozzeteteli_lista
+          - title: Pedagógus tanfelügyelet eredménye
+            page: 'pedagogus_tanfelugyelet_eredmenye'
+            url: 'pedagogus_tanfelugyelet_eredmenye'
+            folder: kozzeteteli_lista
 
 deeplinks:
   - class: '1'

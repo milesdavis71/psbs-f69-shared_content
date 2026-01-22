@@ -1,0 +1,23 @@
+---
+layout: two_columns_ps
+title: Iskolai tanfelügyelet eredményei
+
+---
+
+{{> title}}
+
+<ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs" data-deep-link="true">
+    <li class="tabs-title is-active">
+        <a href="#panel1c" aria-selected="true">2023</a>
+    </li>
+    <li class="tabs-title"><a href="#panel2c">2018</a></li>
+</ul>
+
+<div class="tabs-content" data-tabs-content="collapsing-tabs">
+    <div class="tabs-panel is-active" id="panel1c">
+        {{> md-ps-tanfelugyelet-2023}}
+    </div>
+    <div class="tabs-panel" id="panel2c">
+        {{> md-ps-tanfelugyelet-2018}}
+    </div>
+</div>

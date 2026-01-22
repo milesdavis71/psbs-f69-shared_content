@@ -1,0 +1,224 @@
+<div class="grid-container">
+    <div class="callout">
+        <div class="grid-x grid-padding-x align-middle" style="margin-bottom: 15px;">
+            <div class="cell shrink" id="pageNavButtons2018" style="display: none;">
+                <button class="button small" id="prevPage2018" type="button">◀ Előző</button>
+                <button class="button small" id="nextPage2018" type="button">Következő ▶</button>
+            </div>
+            <div class="cell shrink">
+                <button class="button small secondary" id="zoomOut2018" type="button">−</button>
+            </div>
+            <div class="cell shrink">
+                <button class="button small secondary" id="zoomIn2018" type="button">+</button>
+            </div>
+            <div class="cell shrink">
+                <button class="button small secondary" id="fitToPage2018" type="button">Laphoz igazít</button>
+            </div>
+            <div class="cell auto">
+                <span class="label" id="pageInfo2018">
+                    Oldal: <span id="pageNum2018">1</span> / <span id="pageCount2018">?</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- viewer magasság: teljes viewport a 59px-es header alatt -->
+        <div class="pdf-viewer2018" style="height: calc(100vh - 59px); background: #f5f5f5; overflow-y: auto; overflow-x: hidden;">
+            <canvas id="pdfCanvas2018" style="display: block; margin: 0 auto;"></canvas>
+        </div>
+    </div>
+
+    <div id="errorContainer2018" class="callout alert" style="display: none;"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+    // PDF.js worker beállítása
+    if (!pdfjsLib.GlobalWorkerOptions.workerSrc) {
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    }
+
+    function showError2018(msg) {
+        const err = document.getElementById('errorContainer2018');
+        err.style.display = 'block';
+        err.innerHTML = `<h5>Hiba</h5><p>${msg}</p>`;
+    }
+
+    // PDF URL direkt megadva
+    const pdfUrl2018 = '/assets/pdfs/ps/kozzeteteli_lista/intezmenyi_tanfelugyelet_eredmenye_2018.pdf';
+    let pdfDoc2018 = null;
+    let pageNum2018 = 1;
+    let pageRendering2018 = false;
+    let pageNumPending2018 = null;
+
+    // aktuális zoom skála (manuális módnál használjuk)
+    let scale2018 = 1;
+
+    // fit width mód: ha true, mindig a konténer szélességéhez igazítjuk
+    let isFitWidth2018 = true;
+
+    const canvas2018 = document.getElementById('pdfCanvas2018');
+    const ctx2018 = canvas2018.getContext('2d');
+    const viewer2018 = document.querySelector('.pdf-viewer2018');
+
+    function renderPage2018(num) {
+        pageRendering2018 = true;
+
+        pdfDoc2018.getPage(num).then(function (page) {
+            // Alap viewport scale=1-gyel (eredeti méret)
+            const unscaledViewport = page.getViewport({ scale: 1 });
+
+            let usedScale = scale2018;
+
+            if (isFitWidth2018) {
+                // konténer szélesség
+                const viewerWidth = viewer2018.clientWidth;
+                // horizontális fit: skála = konténer szélessége / pdf oldal szélessége
+                usedScale = viewerWidth / unscaledViewport.width;
+                // frissítjük a globális scale-t is, hogy a zoom innen induljon
+                scale2018 = usedScale;
+            }
+
+            const viewport = page.getViewport({ scale: usedScale });
+
+            canvas2018.width = viewport.width;
+            canvas2018.height = viewport.height;
+
+            const renderContext = {
+                canvasContext: ctx2018,
+                viewport: viewport
+            };
+
+            const renderTask = page.render(renderContext);
+
+            renderTask.promise.then(function () {
+                pageRendering2018 = false;
+
+                if (pageNumPending2018 !== null) {
+                    renderPage2018(pageNumPending2018);
+                    pageNumPending2018 = null;
+                }
+
+                document.getElementById('pageNum2018').textContent = num;
+                document.getElementById('pageCount2018').textContent = pdfDoc2018.numPages;
+            });
+        });
+    }
+
+    function queueRenderPage2018(num) {
+        if (pageRendering2018) {
+            pageNumPending2018 = num;
+        } else {
+            renderPage2018(num);
+        }
+    }
+
+    function onPrevPage2018() {
+        if (pageNum2018 <= 1) return;
+        pageNum2018--;
+        queueRenderPage2018(pageNum2018);
+    }
+
+    function onNextPage2018() {
+        if (pageNum2018 >= pdfDoc2018.numPages) return;
+        pageNum2018++;
+        queueRenderPage2018(pageNum2018);
+    }
+
+    // Zoom +: kilépünk a fit width módból, manuális nagyítás
+    function onZoomIn2018() {
+        isFitWidth2018 = false;
+        scale2018 *= 1.1;
+        queueRenderPage2018(pageNum2018);
+    }
+
+    // Zoom −: kilépünk a fit width módból, manuális kicsinyítés
+    function onZoomOut2018() {
+        isFitWidth2018 = false;
+        scale2018 = Math.max(0.3, scale2018 / 1.1);
+        queueRenderPage2018(pageNum2018);
+    }
+
+    // "Laphoz igazít" gomb: mostantól vízszintes fit width mód
+    function onFitToPage2018() {
+        if (!pdfDoc2018) return;
+        isFitWidth2018 = true;
+        queueRenderPage2018(pageNum2018);
+    }
+
+    // Ablakméret változáskor: ha fit width módban vagyunk, újrarenderelünk
+    function onWindowResize2018() {
+        if (!pdfDoc2018) return;
+        if (isFitWidth2018) {
+            queueRenderPage2018(pageNum2018);
+        }
+    }
+
+    // Tab aktiváláskor inicializálunk (Foundation tabs esemény figyelése)
+    function init2018() {
+        // Várunk, amíg a tab aktívvá válik
+        const panel = document.getElementById('panel2c');
+        
+        // Ha már aktív a panel, azonnal inicializálunk
+        if (panel && panel.classList.contains('is-active')) {
+            loadPdf2018();
+        } else {
+            // Figyelünk a tab aktiválásra
+            $(document).on('change.zf.tabs', function(event, tab) {
+                if (tab[0].id === 'panel2c' && !pdfDoc2018) {
+                    loadPdf2018();
+                }
+            });
+        }
+    }
+
+    async function loadPdf2018() {
+        try {
+            if (!pdfUrl2018) {
+                showError2018('Nem található a PDF URL.');
+                return;
+            }
+
+            const loadingTask = pdfjsLib.getDocument(pdfUrl2018);
+            pdfDoc2018 = await loadingTask.promise;
+
+            // Zoom gombok bekötése
+            document.getElementById('zoomIn2018').addEventListener('click', onZoomIn2018);
+            document.getElementById('zoomOut2018').addEventListener('click', onZoomOut2018);
+            document.getElementById('fitToPage2018').addEventListener('click', onFitToPage2018);
+
+            // Oldal navigáció az oldalszám alapján
+            const pageNavButtons = document.getElementById('pageNavButtons2018');
+            const pageInfo = document.getElementById('pageInfo2018');
+
+            if (pdfDoc2018.numPages <= 1) {
+                // Egy oldalas PDF - oldal navigáció elrejtése
+                pageNavButtons.style.display = 'none';
+                pageInfo.style.display = 'none';
+            } else {
+                // Több oldalas PDF
+                pageNavButtons.style.display = 'block';
+                pageInfo.style.display = 'block';
+                document.getElementById('pageCount2018').textContent = pdfDoc2018.numPages;
+
+                // Oldal navigáció bekötése
+                document.getElementById('prevPage2018').addEventListener('click', onPrevPage2018);
+                document.getElementById('nextPage2018').addEventListener('click', onNextPage2018);
+            }
+
+            // Ablakméret figyelése (fit width újraszámolás)
+            window.addEventListener('resize', onWindowResize2018);
+
+            // Első oldal renderelése (alapból fit width módban)
+            pageNum2018 = 1;
+            isFitWidth2018 = true;
+            scale2018 = 1;
+            renderPage2018(pageNum2018);
+
+        } catch (err) {
+            showError2018(`Nem sikerült betölteni a PDF-et: ${err.message}`);
+        }
+    }
+
+    // Indítás tab aktiváláskor
+    init2018();
+</script>
