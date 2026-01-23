@@ -292,6 +292,18 @@ pages:
             page: 'pedagogus_tanfelugyelet_eredmenye'
             url: 'pedagogus_tanfelugyelet_eredmenye'
             folder: kozzeteteli_lista
+      - title: SZMSZ
+        page: 'szmsz'
+        url: szmsz
+        folder: kozzeteteli_lista
+      - title: Házirend
+        page: 'hazirend'
+        url: hazirend
+        folder: kozzeteteli_lista
+      - title: Pedagógiai program
+        page: 'pedagogiai_program'
+        url: pedagogiai_program
+        folder: kozzeteteli_lista
 
 deeplinks:
   - class: '1'
