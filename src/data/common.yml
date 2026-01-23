@@ -166,12 +166,12 @@ pages:
         url: felekezetek_bemutatkozasa
         folder: bemutatkozas
       - title: Pedagógiai program
-        page: 'pedagogiai_program'
-        url: pedagogiai_program
+        page: 'bemutatk_ped_program'
+        url: bemutatk_ped_program
         folder: bemutatkozas
       - title: SZMSZ
-        page: 'szmsz'
-        url: szmsz
+        page: 'bemutatk_szmsz'
+        url: bemutatk_szmsz
         folder: bemutatkozas
       - title: Kollektív szerződés
         page: 'kollektiv_szerzodes'
@@ -182,8 +182,8 @@ pages:
         url: imip
         folder: bemutatkozas
       - title: Házirend
-        page: 'hazirend'
-        url: hazirend
+        page: 'bemutatk_hazirend'
+        url: bemutatk_hazirend
         folder: bemutatkozas
       - title: Gyermekvédelem
         page: 'gyermekvedelem'
@@ -293,16 +293,16 @@ pages:
             url: 'pedagogus_tanfelugyelet_eredmenye'
             folder: kozzeteteli_lista
       - title: SZMSZ
-        page: 'szmsz'
-        url: szmsz
+        page: 'kozzetetel_szmsz'
+        url: kozzetetel_szmsz
         folder: kozzeteteli_lista
       - title: Házirend
-        page: 'hazirend'
-        url: hazirend
+        page: 'kozzetetel_hazirend'
+        url: kozzetetel_hazirend
         folder: kozzeteteli_lista
       - title: Pedagógiai program
-        page: 'pedagogiai_program'
-        url: pedagogiai_program
+        page: 'kozzetetel_ped_program'
+        url: kozzetetel_ped_program
         folder: kozzeteteli_lista
 
 deeplinks:
