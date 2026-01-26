@@ -2,23 +2,6 @@
   url: bemutatkozas
   icon: chalkboard-teacher
   menu: bemutatkozas
-  active_pages:
-    - 'bemutatkozas'
-    - 'tanaraink'
-    - 'csengetesi_rend'
-    - 'iskolankat_segito_kulsos_munkatarsak'
-    - 'hitoktatoink'
-    - 'felekezetek_bemutatkozasa'
-    - 'bemutatk_ped_program'
-    - 'bemutatk_szmsz'
-    - 'kollektiv_szerzodes'
-    - 'imip'
-    - 'bemutatk_hazirend'
-    - 'gyermekvedelem'
-    - 'tankonyvek'
-    - 'taneszkozok'
-    - 'kek_ter_program'
-    - 'keve_program'
   items:
     - title: Bemutatkozás
       page: 'bemutatkozas'

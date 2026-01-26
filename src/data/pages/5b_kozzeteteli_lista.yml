@@ -1,12 +1,12 @@
-- title: Közzétételi lista
-  url: kozzeteteli_lista
-  icon: list
-  menu: kozzeteteli-lista
-  submenu:
-    - title: Felvételi lehetőségről szóló tájékoztató
-      url: felveteli_lehetosegrol_szolo_tajekoztato
-      folder: kozzeteteli_lista
-      submenu:
+- title: 'Közzétételi lista'
+  page: 'kozzeteteli_root'
+  url: 'kozzeteteli_lista'
+  icon: 'list-ul'
+  items:
+    - title: 'Felvételi lehetőségről szóló tájékoztató'
+      page: 'felveteli_info_root' # Ez a 2. szintű szülő
+      url: 'felveteli_tajekoztato'
+      items: # <--- Itt kezdődik a HARMADIK mélység (al-almenü)
         - title: Felvételi tájékoztató
           page: 'felveteli_tajekoztato'
           url: felveteli_tajekoztato
@@ -48,9 +48,9 @@
       url: esemenynaptar
       folder: kozzeteteli_lista
     - title: Pedagógiai-szakmai ellenőrzési feladatok ellenőrzése
+      page: 'ped_ellenorzes_root' # Ez a 2. szintű szülő
       url: ped_ellenorzesi_feladatok
-      folder: kozzeteteli_lista
-      submenu:
+      items: # <--- Itt kezdődik a HARMADIK mélység (al-almenü)
         - title: Iskolai tanfelügyelet eredményei
           page: 'iskolai_tanfelugyelet_eredmenyei'
           url: iskolai_tanfelugyelet_eredmenyei

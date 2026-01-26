@@ -61,6 +61,10 @@
       page: 'taneszkozok'
       url: 'taneszkozok'
       folder: 'bemutatkozas'
+    - title: Regisztrált tehetségpont
+      page: 'regisztralt_tehetsegpont'
+      url: 'regisztralt_tehetsegpont'
+      folder: 'bemutatkozas'
     - title: Kék Tér Program
       page: 'kek_ter_program'
       url: 'kek_ter_program'

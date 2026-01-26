@@ -1,0 +1,31 @@
+---
+layout: two_columns_ps
+title: Felekezetek bemutatkozása
+pdfUrl: /assets/pdfs/ps/katolikus_ps_leaflet.pdf
+---
+
+{{>title}}
+<table>
+    <tbody>
+        {{#each felekezetek}}
+        <tr>
+            <td style="color: gray"><b>{{vallas}}</b></td>
+            {{#if mp4path}}
+            <td class="text-right">
+                <a href="{{mp4path}}" target="_blank"
+                    ><i class="fas fa-video"></i>&ensp;videó megtekintése</a
+                >
+            </td>
+            {{else}}
+            <td></td>
+            {{/if}}
+            <!-- <td class="text-right"><a href="{{root}}{{htmlpath}}" target="_blank"><i class="fas fa-file"></i>&ensp;pdf megtekintése</a></td> -->
+            <td class="text-right">
+                <a href="{{root}}{{pdfpath}}" download>
+                    <i class="fas fa-download"></i>&ensp;pdf letöltése
+                </a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
