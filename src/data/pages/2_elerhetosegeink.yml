@@ -7,3 +7,11 @@
       page: 'elerhetosegeink'
       url: 'elerhetosegeink'
       folder: elerhetosegeink
+    - title: Helyünk a térképen
+      page: ''
+      url: ''
+      folder: elerhetosegeink
+    - title: Adatvédelmi képviselő
+      page: ''
+      url: ''
+      folder: elerhetosegeink

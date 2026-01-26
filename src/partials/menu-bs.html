@@ -23,7 +23,16 @@
 </style>
 
 <ul class="vertical menu accordion-menu" data-accordion-menu>
-    {{#each (mergeMenuParts '1_fooldal' '3b_bemutatkozas'
-    '4_etkezesi_informaciok' '5b_kozzeteteli_lista' key='pages')}} {{> menu-item
-    this}} {{/each}}
+    {{#each
+        (mergeMenuParts
+            '1_fooldal'
+            '2_elerhetosegeink'
+            '3b_bemutatkozas'
+            '4_etkezesi_informaciok'
+            '5b_kozzeteteli_lista'
+            key='pages'
+        )
+    }}
+    {{> menu-item this}}
+    {{/each}}
 </ul>
