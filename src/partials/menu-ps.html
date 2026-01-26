@@ -22,7 +22,7 @@
 }
 </style>
 
-{{#each common.pages}}
+{{#each menu-ps}}
 <ul class="vertical menu accordion-menu" data-accordion-menu>
     <li {{#ifpage page}}class="current"{{/ifpage}}>
         {{#if external}}
@@ -37,28 +37,12 @@
             {{#each submenu}}
                 <li class="
                     {{#ifpage page}}current{{/ifpage}}
-                    {{#ifequal url 
-                        'felveteli_lehetosegrol_szolo_tajekoztato'}}
-                        {{#ifpage
-                            'felveteli_tajekoztato'
-                            'beiratkozaskor_leadando_nyomtatvanyok'
-                            'beiratkozasi_korzet'
-                            'iskolahivogato'
-                        }}
-                            no-color-change
-                        {{/ifpage}}
+                    {{#ifequal url 'felveteli_lehetosegrol_szolo_tajekoztato'}}
+                        {{#ifpage 'felveteli_tajekoztato' 'beiratkozaskor_leadando_nyomtatvanyok'}}current no-color-change{{/ifpage}}
                     {{/ifequal}}
-                    {{#ifequal url 
-                        'ped_ellenorzesi_feladatok'}}
-                        {{#ifpage
-                            'iskolai_tanfelugyelet_eredmenyei'
-                            'intezmenyvezetoi_tanfelugyelet_eredmenye'
-                            'pedagogus_tanfelugyelet_eredmenye'
-                            }}
-                            no-color-change
-                        {{/ifpage}}
-                    {{/ifequal}}
-                ">
+                    {{#ifequal url 'minta_lenyilo'}}
+                        {{#ifpage 'minta_oldal_1' 'minta_oldal_2'}}current{{/ifpage}}
+                    {{/ifequal}}">
 
                     {{#if external}}
                     <a href="{{url}}" target="_blank" rel="noopener noreferrer">{{title}}</a>
@@ -69,25 +53,11 @@
                     {{#if submenu}}
                         <ul class="menu vertical nested
                             {{#ifequal url 'felveteli_lehetosegrol_szolo_tajekoztato'}}
-                                {{#ifpage
-                                    'felveteli_tajekoztato'
-                                    'beiratkozaskor_leadando_nyomtatvanyok'
-                                    'beiratkozasi_korzet'
-                                    'iskolahivogato'
-                                }}
-                                    is-active
-                                {{/ifpage}}
+                                {{#ifpage 'felveteli_tajekoztato' 'beiratkozaskor_leadando_nyomtatvanyok'}}is-active{{/ifpage}}
                             {{/ifequal}}
-                            {{#ifequal url 'ped_ellenorzesi_feladatok'}}
-                                {{#ifpage
-                                    'iskolai_tanfelugyelet_eredmenyei'
-                                    'intezmenyvezetoi_tanfelugyelet_eredmenye'
-                                    'pedagogus_tanfelugyelet_eredmenye'
-                                }}
-                                    is-active
-                                {{/ifpage}}
-                            {{/ifequal}}
-                        ">
+                            {{#ifequal url 'minta_lenyilo'}}
+                                {{#ifpage 'minta_oldal_1' 'minta_oldal_2'}}is-active{{/ifpage}}
+                            {{/ifequal}}">
 
                             {{#each submenu}}
                                 <li {{#ifpage page}}class="current"{{/ifpage}}>

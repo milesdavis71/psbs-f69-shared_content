@@ -1,0 +1,77 @@
+- title: 'Közzétételi lista'
+  page: 'kozzeteteli_root'
+  url: 'kozzeteteli_lista'
+  icon: 'list-ul'
+  items:
+    - title: 'Felvételi lehetőségről szóló tájékoztató'
+      page: 'felveteli_info_root' # Ez a 2. szintű szülő
+      url: 'felveteli_tajekoztato'
+      items: # <--- Itt kezdődik a HARMADIK mélység (al-almenü)
+        - title: Felvételi tájékoztató
+          page: 'felveteli_tajekoztato'
+          url: felveteli_tajekoztato
+          folder: kozzeteteli_lista
+        - title: Beiratkozáskor leadandó nyomtatványok
+          page: 'beiratkozaskor_leadando_nyomtatvanyok'
+          url: beiratkozaskor_leadando_nyomtatvanyok
+          folder: kozzeteteli_lista
+        - title: Körzetünk
+          page: 'beiratkozasi_korzet'
+          url: beiratkozasi_korzet
+          folder: kozzeteteli_lista
+        - title: Iskolahívogató
+          page: 'iskolahivogato'
+          url: iskolahivogato
+          folder: kozzeteteli_lista
+    - title: Engedélyezett osztályok, csoportok száma
+      page: 'osztalyok_tanulok_szama'
+      url: osztalyok_tanulok_szama
+      folder: kozzeteteli_lista
+    - title: Térítési díj, tandjíj
+      page: 'teritesi_dij'
+      url: teritesi_dij
+      folder: kozzeteteli_lista
+    - title: Étkezési térítési díjak
+      page: 'etkezesi_teritesi_dijak'
+      url: etkezesi_teritesi_dijak
+      folder: kozzeteteli_lista
+    - title: Fenntartói értékelés, nyilvános megállapításokat tartalmazó vizsgálatok
+      page: 'nyilvanos_vizsgalat'
+      url: nyilvanos_vizsgalat
+      folder: kozzeteteli_lista
+    - title: Nyitvatartás rendje
+      page: 'nyitvatartas'
+      url: nyitvatartas
+      folder: kozzeteteli_lista
+    - title: Eseménynaptár
+      page: 'esemenynaptar'
+      url: esemenynaptar
+      folder: kozzeteteli_lista
+    - title: Pedagógiai-szakmai ellenőrzési feladatok ellenőrzése
+      page: 'ped_ellenorzes_root' # Ez a 2. szintű szülő
+      url: ped_ellenorzesi_feladatok
+      items: # <--- Itt kezdődik a HARMADIK mélység (al-almenü)
+        - title: Iskolai tanfelügyelet eredményei
+          page: 'iskolai_tanfelugyelet_eredmenyei'
+          url: iskolai_tanfelugyelet_eredmenyei
+          folder: kozzeteteli_lista
+        - title: Intézményvezetői tanfelügyelet eredménye
+          page: 'intezmenyvezetoi_tanfelugyelet_eredmenye'
+          url: 'intezmenyvezetoi_tanfelugyelet_eredmenye'
+          folder: kozzeteteli_lista
+        - title: Pedagógus tanfelügyelet eredménye
+          page: 'pedagogus_tanfelugyelet_eredmenye'
+          url: 'pedagogus_tanfelugyelet_eredmenye'
+          folder: kozzeteteli_lista
+    - title: SZMSZ
+      page: 'kozzetetel_szmsz'
+      url: kozzetetel_szmsz
+      folder: kozzeteteli_lista
+    - title: Házirend
+      page: 'kozzetetel_hazirend'
+      url: kozzetetel_hazirend
+      folder: kozzeteteli_lista
+    - title: Pedagógiai program
+      page: 'kozzetetel_ped_program'
+      url: kozzetetel_ped_program
+      folder: kozzeteteli_lista

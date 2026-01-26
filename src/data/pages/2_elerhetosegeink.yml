@@ -1,0 +1,9 @@
+- title: Elérhetőségeink
+  url: elerhetosegeink
+  icon: fa-map-marker-alt
+  menu: elerhetosegeink
+  items:
+    - title: Cimek, e-mail címek telefonszámok
+      page: 'elerhetosegeink'
+      url: 'elerhetosegeink'
+      folder: elerhetosegeink

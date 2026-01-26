@@ -1,0 +1,23 @@
+- title: Étkezési információk
+  page: 'etkezesi_informaciok_root'
+  url: 'etkezesi_informaciok'
+  icon: utensils
+  items:
+    - title: Befizetési időpontok az NGSZ-nél
+      page: 'befiz_idopontok_ngsz'
+      url: befiz_idopontok_ngsz
+      folder: etkezesi_informaciok
+    - title: Étkezési térítési díjak
+      page: 'etkezesi_teritesi_dijak'
+      url: etkezesi_teritesi_dijak
+      folder: etkezesi_informaciok
+    - title: Közétkeztetés – NGSZ weboldal
+      url: https://ngsz.hu/2021/01/01/kozetkeztetes/
+      external: true
+    - title: Közétkeztetés – étlapok
+      url: https://ngsz.hu/2021/01/01/kozetkeztetes/#kozetkeztetes-etlap
+      external: true
+    - title: Leendő elsős szülők tájékoztatása közétkeztetésről
+      page: 'elsos_szulok_tajekoztatasa_kozetkeztetesrol'
+      url: elsos_szulok_tajekoztatasa_kozetkeztetesrol
+      folder: etkezesi_informaciok

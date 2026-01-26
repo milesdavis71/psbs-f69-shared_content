@@ -106,3 +106,206 @@ body {
     background-color: white;
     padding-top: 1em;
 }
+
+// ==========================================================================
+// STABIL, KIZÁRÓLAG VÍZSZINTES VONALAS MENÜ
+// ==========================================================================
+
+.accordion-menu {
+    background: none !important;
+    border: none !important; // Keret teljes eltávolítása a főkonténerről
+
+    li {
+        background: none !important;
+        list-style: none !important;
+        border: none !important; // Függőleges vonalak tiltása a listaelemen
+
+        a {
+            background: none !important;
+            display: block !important;
+            color: #007cba !important;
+            font-size: 0.95rem !important;
+            line-height: 1.1rem !important;
+            padding: 0.3rem 1rem !important;
+            font-weight: normal !important;
+
+            // KIZÁRÓLAG VÍZSZINTES VONAL (Alsó szegély)
+            border-top: none !important;
+            border-left: none !important;
+            border-right: none !important;
+            border-bottom: 1px solid rgba(162, 231, 246, 0.4) !important;
+
+            box-shadow: none !important;
+            text-decoration: none !important;
+            transition: color 0.1s ease !important;
+
+            // Ikonok és nyilak eltüntetése (ahogy kérted)
+            &::after,
+            &::before {
+                content: none !important;
+                display: none !important;
+            }
+
+            &:hover {
+                color: #005a87 !important;
+            }
+        }
+
+        // --- Aktív állapot (Narancs) ---
+        &.current > a {
+            color: #ffa500 !important;
+            // Vízszintes vonal marad aktív állapotban is
+            border-bottom: 1px solid rgba(162, 231, 246, 0.4) !important;
+        }
+
+        // --- Almenük stabilizálása (Függőleges vonalak nélkül) ---
+        ul.nested {
+            background: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            list-style: none !important;
+            border: none !important; // Itt is tiltjuk a keretet
+            overflow: visible !important;
+
+            &.is-active {
+                display: block !important;
+                height: auto !important;
+                visibility: visible !important;
+            }
+        }
+
+        // --- Behúzások (Csak paddinggal, vonalak nélkül) ---
+        .nested > li > a {
+            padding-left: 1.6rem !important;
+            border-left: none !important; // Biztonsági tiltás
+        }
+
+        .nested .nested > li > a {
+            padding-left: 2.4rem !important;
+            border-left: none !important; // Biztonsági tiltás
+        }
+    }
+}
+
+// Foundation globális felülbírálás
+.is-accordion-submenu-parent {
+    border: none !important;
+    &::after {
+        display: none !important;
+    }
+}
+
+.is-accordion-submenu {
+    border: none !important;
+    transition: none !important;
+}
+// ==========================================================================
+// FIXÁLT NARANCS IKONOK - TELJES ÚTVONAL SZÍNEZÉSSEL (STABILIZÁLT)
+// ==========================================================================
+
+.accordion-menu {
+    background: none !important;
+
+    li {
+        background: none !important;
+        position: relative !important;
+
+        a {
+            background: none !important;
+            display: block !important;
+            color: #007cba !important; // Alap kék
+            font-size: 0.95rem !important;
+            line-height: 1.1rem !important;
+            padding: 0.35rem 2.2rem 0.35rem 1rem !important;
+            border-bottom: 1px solid rgba(162, 231, 246, 0.4) !important;
+            text-decoration: none !important;
+            transition: color 0.1s ease !important;
+
+            &::after,
+            &::before {
+                content: none !important;
+                display: none !important;
+            }
+
+            i {
+                transition: color 0.1s ease !important;
+            }
+        }
+
+        // --- EGYSÉGES SZÍNKEZELÉS (ÚTVONAL SZÍNEZÉS) ---
+        // Narancs lesz, ha:
+        // 1. Ez a konkrét aktív oldal (.current)
+        // 2. Ez egy nyitott szülő (.is-active)
+        // 3. A Foundation épp nyitottnak jelöli ([aria-expanded='true'])
+        // 4. Van benne olyan elem, ami aktív (:has szelektor a modernebb böngészőknek, de a többi osztály is védi)
+
+        &.current > a,
+        &.is-active > a,
+        &[aria-expanded='true'] > a {
+            color: #ffa500 !important;
+
+            i {
+                color: #ffa500 !important;
+            }
+        }
+
+        // --- KÜLÖNÁLLÓ HÁROMSZÖG LOGIKA (MINDIG NARANCS) ---
+        &.is-accordion-submenu-parent {
+            &::after {
+                content: '' !important;
+                display: block !important;
+                position: absolute !important;
+                right: 0.8rem !important;
+                top: 0.85rem !important;
+                z-index: 10 !important;
+                width: 0 !important;
+                height: 0 !important;
+                border: inset 5px !important;
+                border-color: #ffa500 transparent transparent !important; // Narancs lefelé
+                border-top-style: solid !important;
+                pointer-events: none !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+            }
+
+            // Felfelé nyíl, ha nyitva van (bármilyen nyitott állapotban)
+            &[aria-expanded='true']::after,
+            &.is-active::after {
+                border-top-color: transparent !important;
+                border-bottom: 5px solid #ffa500 !important; // Narancs felfelé
+                top: 0.6rem !important;
+            }
+        }
+
+        // --- Almenü stabilitás ---
+        ul.nested {
+            background: none !important;
+            display: none;
+            margin: 0 !important;
+            padding: 0 !important;
+            border: none !important;
+            overflow: visible !important;
+
+            &.is-active {
+                display: block !important;
+                height: auto !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+            }
+        }
+
+        // --- Behúzások ---
+        .nested > li > a {
+            padding-left: 1.8rem !important;
+        }
+        .nested .nested > li > a {
+            padding-left: 2.6rem !important;
+        }
+    }
+}
+
+// Biztonsági fix a Foundation maradványok ellen
+.is-accordion-submenu-parent > a::after {
+    content: none !important;
+    display: none !important;
+}
