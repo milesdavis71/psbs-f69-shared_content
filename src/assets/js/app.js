@@ -9,9 +9,7 @@ import 'what-input'
 window.jQuery = $
 require('foundation-sites')
 
-// If you want to pick and choose which modules to include, comment out the above and uncomment
-// the line below
-//import './lib/foundation-explicit-pieces';
+// Bal oldali accordion menü kezelésére vonatkozó egyedi kód (Gemini)
 
 $(document).foundation()
 

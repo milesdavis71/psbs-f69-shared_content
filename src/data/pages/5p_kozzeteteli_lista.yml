@@ -75,3 +75,7 @@
       page: 'kozzetetel_ped_program'
       url: kozzetetel_ped_program
       folder: kozzeteteli_lista
+    - title: Értékelési rendszer helyi szabályzata
+      page: 'ertekelesi_rendszer_szabalyzat'
+      url: ertekelesi_rendszer_szabalyzat
+      folder: kozzeteteli_lista
