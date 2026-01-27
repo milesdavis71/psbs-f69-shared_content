@@ -1,0 +1,26 @@
+<style>
+    #map {
+        height: 400px;
+    }
+</style>
+
+<div id="map"></div>
+<script>
+    var map = L.map('map', {
+        center: [{{latitude}}, {{length}}],
+        zoom: 15,
+    })
+    var psIcon = L.icon({
+        iconUrl: '/assets/img/common/{{pointer_img}}',
+    })
+    0
+    L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png').addTo(
+        map
+    )
+    var firstMarker = L.marker([{{latitude}}, {{length}}], {
+        icon: psIcon,
+    })
+        .addTo(map)
+        .bindPopup('{{school_name}}')
+    L.marker([{{latitude}}, {{length}}])
+</script>

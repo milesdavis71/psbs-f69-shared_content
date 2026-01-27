@@ -8,10 +8,10 @@
       url: 'cimek_mailek_tel_szamok'
       folder: elerhetosegeink
     - title: Helyünk a térképen
-      page: ''
-      url: ''
+      page: 'helyunk_a_terkepen'
+      url: 'helyunk_a_terkepen'
       folder: elerhetosegeink
     - title: Adatvédelmi képviselő
-      page: ''
-      url: ''
+      page: 'adatvedelmi_kepviselo'
+      url: 'adatvedelmi_kepviselo'
       folder: elerhetosegeink
