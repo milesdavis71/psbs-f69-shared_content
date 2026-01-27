@@ -75,3 +75,7 @@
       page: 'kozzetetel_ped_program'
       url: kozzetetel_ped_program
       folder: kozzeteteli_lista
+    - title: Pedagógusok iskolai végzettsége
+      page: 'pedagogusok_iskolai_vegzettsege'
+      url: pedagogusok_iskolai_vegzettsege
+      folder: kozzeteteli_lista
