@@ -121,13 +121,13 @@ fenntarto:
   open: 'Nyitva tartás: 7:00–18:00 óráig'
 
 ps:
-  favicon: /assets/img/ps/favicon.png
-  logo: /assets/img/ps/logo-ps.jpg
+  favicon: /assets/img/common/school_logos/ps-favicon.png
+  logo: /assets/img/common/school_logos/ps-logo.jpg
   schoolname: Szegedi Petőfi Sándor Általános Iskola
 
 bs:
-  favicon: /assets/img/bs/favicon.png
-  logo: /assets/img/bs/logo-bs.jpg
+  favicon: /assets/img/common/school_logos/bs-favicon.png
+  logo: /assets/img/common/school_logos/bs-logo.jpg
   schoolname: Szegedi Petőfi Sándor Általános Iskola Bálint Sándor Tagiskolája
 
 pages:

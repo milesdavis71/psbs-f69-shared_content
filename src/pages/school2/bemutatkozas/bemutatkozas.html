@@ -1,8 +1,8 @@
 ---
 layout: two_columns_bs
 fullname: Szegedi Petőfi Sándor Általános Iskola Bálint Sándor Tagiskolája
-logo: /assets/img/bs/logo-nagy-bs.jpg
-qrcode: /assets/img/bs/qrcode-bs.png
+logo: /assets/img/common/school_logos/bs-logo-nagy.jpg
+qrcode: /assets/img/common/qrcode-bs.png
 address: 6753, Szeged, Kölcsey tér 16.
 mail-tit: titkarsag@balintiskola.hu
 mail-ig: igazgato@petofiszeged.hu
@@ -10,18 +10,16 @@ phone1: 62 547 150
 phone2: 30 736 3456
 line1: Az intézmény igazgatója Winkler Andrea,
 line2: 'tagiskola-igazgató: Porkolábné Papp Zsuzsanna.'
-
 ---
 
 <h4 class="text-center">{{title}}</h4>
 {{>elerhetoseg-kozos}}
 
-
 <div class="grid-x grid-margin-x">
     <div class="cell small-12 medium-8">
         <p>
-            „Mi azt akarjuk, hogy az iskola családi otthon legyen,<br>
-            ahol kinyílik a szív és feltárulnak a gondolatok”<br>
+            „Mi azt akarjuk, hogy az iskola családi otthon legyen,<br />
+            ahol kinyílik a szív és feltárulnak a gondolatok”<br />
             <i>(Célestin Freinet)</i>
         </p>
         {{#each global.bemutatkozas.bstext}}
@@ -32,17 +30,46 @@ line2: 'tagiskola-igazgató: Porkolábné Papp Zsuzsanna.'
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
                 {{#each global.bemutatkozas.bsimage}}
-                <div class="cell small-12 medium-{{divide 12 ../images_per_row}}">
+                <div
+                    class="cell small-12 medium-{{divide 12 ../images_per_row}}"
+                >
                     <div class="card">
                         <div class="card-section text-center">
-                            <img src="{{ this.image.thumb }}" alt="{{ this.image.alt }}" style="cursor:pointer;" />
-                            <img src="{{ this.image.thumb }}" alt="{{ this.image.alt }}" class="thumbnail hide-for-medium" />
-                            <p class="caption" style="font-size: smaller; margin: 0;">Klikk a nagyobb képért</p>
+                            <img
+                                src="{{ this.image.thumb }}"
+                                alt="{{ this.image.alt }}"
+                                style="cursor: pointer"
+                            />
+                            <img
+                                src="{{ this.image.thumb }}"
+                                alt="{{ this.image.alt }}"
+                                class="thumbnail hide-for-medium"
+                            />
+                            <p
+                                class="caption"
+                                style="font-size: smaller; margin: 0"
+                            >
+                                Klikk a nagyobb képért
+                            </p>
                         </div>
                     </div>
-                    <div class="reveal large" id="modal-{{@../index}}-{{@index}}" data-reveal>
-                        <p class="text-center" style="margin: 0 0 0 0;"><img src="{{ this.image.full }}" alt="{{ this.image.alt }}" /></p>
-                        <button class="close-button" data-close aria-label="Bezárás" type="button">
+                    <div
+                        class="reveal large"
+                        id="modal-{{@../index}}-{{@index}}"
+                        data-reveal
+                    >
+                        <p class="text-center" style="margin: 0 0 0 0">
+                            <img
+                                src="{{ this.image.full }}"
+                                alt="{{ this.image.alt }}"
+                            />
+                        </p>
+                        <button
+                            class="close-button"
+                            data-close
+                            aria-label="Bezárás"
+                            type="button"
+                        >
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -51,5 +78,4 @@ line2: 'tagiskola-igazgató: Porkolábné Papp Zsuzsanna.'
             </div>
         </div>
     </div>
-
 </div>

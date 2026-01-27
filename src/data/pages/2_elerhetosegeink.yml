@@ -3,9 +3,9 @@
   icon: fa-map-marker-alt
   menu: elerhetosegeink
   items:
-    - title: Cimek, e-mail címek telefonszámok
-      page: 'elerhetosegeink'
-      url: 'elerhetosegeink'
+    - title: Cimek, e-mail címek, telefonszámok
+      page: 'cimek_mailek_tel_szamok'
+      url: 'cimek_mailek_tel_szamok'
       folder: elerhetosegeink
     - title: Helyünk a térképen
       page: ''
