@@ -290,7 +290,12 @@ function pagesSchool() {
                 root: 'src/pages/',
                 layouts: 'src/layouts/',
                 partials: 'src/partials/',
-                data: 'src/data/',
+                data: [
+                    'src/data/global.yml',
+                    'src/data/common.yml',
+                    'src/data/pages/',
+                    `src/data/${currentSchool}/`,
+                ],
                 helpers: 'src/helpers/',
             })
         )
@@ -306,7 +311,12 @@ function pagesSchool() {
                 root: 'src/pages/',
                 layouts: 'src/layouts/',
                 partials: 'src/partials/',
-                data: 'src/data/',
+                data: [
+                    'src/data/global.yml',
+                    'src/data/common.yml',
+                    'src/data/pages/',
+                    `src/data/${currentSchool}/`,
+                ],
                 helpers: 'src/helpers/',
             })
         )
