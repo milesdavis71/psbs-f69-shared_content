@@ -83,3 +83,7 @@
       page: 'pedagogusok_iskolai_vegzettsege'
       url: pedagogusok_iskolai_vegzettsege
       folder: kozzeteteli_lista
+    - title: Noksosok száma, szakképzettsége
+      page: 'noksosok_szama_szakkepzettsege'
+      url: noksosok_szama_szakkepzettsege
+      folder: kozzeteteli_lista

@@ -2,7 +2,7 @@
     Pedagógiai munkát segítők a Szegedi Petőfi Sándor Általános Iskolában
 </h5>
 
-<table class="hover">
+<!-- <table class="hover">
     <tbody>
         <tr>
             <td width="180">Szabó Zsuzsanna</td>
@@ -25,5 +25,17 @@
                 szoftverfejlesztő
             </td>
         </tr>
+    </tbody>
+</table> -->
+
+<table class="hover">
+    <tbody>
+        {{#each noksosok}}
+         <tr>
+            <td>{{name}}</td>
+            <td>{{school}}</td>
+            <td>{{job}}</td>
+        </tr>
+        {{/each}}
     </tbody>
 </table>
