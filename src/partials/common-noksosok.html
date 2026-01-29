@@ -27,11 +27,11 @@
         </tr>
     </tbody>
 </table> -->
-
+{{#schoolData schoolKey "noksosok"}}
 <table class="hover">
     <tbody>
-        {{#each noksosok}}
-         <tr>
+        {{#each this}}
+        <tr>
             <td>{{name}}</td>
             <td>{{school}}</td>
             <td>{{job}}</td>
@@ -39,3 +39,4 @@
         {{/each}}
     </tbody>
 </table>
+{{/schoolData}}

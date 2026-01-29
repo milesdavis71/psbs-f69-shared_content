@@ -1,7 +1,30 @@
 ---
 layout: two_columns_ps
 title: Noksosok száma, szakképzetsége
+schoolKey: school1
 ---
 
 {{> title}}
-{{> common-noksosok}}
+
+{{>common-noksosok}}
+<!-- 
+{{!-- schoolKey a page front matter-ből jön: school1 / school2 --}}
+{{#schoolData schoolKey "noksosok"}}
+  <h2>Nevelő-oktató munkát segítők</h2>
+  <ul>
+    {{#each this}}
+      <li><strong>{{name}}</strong> – {{school}} – {{job}}</li>
+    {{/each}}
+  </ul>
+{{/schoolData}}
+
+{{#schoolData schoolKey "noksosok"}}
+  <ul>
+    {{#each this}}
+      <li>
+        <strong>{{name}}</strong> – {{school}} – {{job}}
+
+      </li>
+    {{/each}}
+  </ul>
+{{/schoolData}} -->

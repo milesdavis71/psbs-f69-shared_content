@@ -1,6 +1,9 @@
 <table class="hover stack">
     <tbody>
-        {{> vezetok_ps_table}} {{#each bs-tanarok}}
+        <!-- {{> vezetok_ps_table}} -->
+         {{#schoolData schoolKey "tanarok"}}
+
+        {{#each this}}
         <tr>
             <td>{{this.name}}</td>
             <td>{{this.grad}}</td>
@@ -11,5 +14,6 @@
             </td>
         </tr>
         {{/each}}
+        {{/schoolData}}
     </tbody>
 </table>

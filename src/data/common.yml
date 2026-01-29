@@ -1,3 +1,119 @@
+beiratkLeadNyomtatvanyok:
+  - name: 'nyilatkozat_torvenyes_kepviselo_2025.pdf'
+    file: nyilatkozat_torvenyes_kepviselo_2025.pdf
+    icon: fas fa-file-pdf fa-lg
+  - name: 'Nyilatkozat – Etika/Hit- és erkölcstan'
+    file: nyilatkozat_etika_hit-es_erkolcstan_2025.pdf
+    icon: fas fa-file-pdf fa-lg
+  - name: 'Tanulói adatlap'
+    file: tanuloi_adatlap_2025.pdf
+
+  - name: 'Nyilatkozat fokozott figyelmet igénylő egészségi állapotról'
+    file: nyilatkozat_egeszegugyi_allapotrol_2025.pdf
+    icon: fas fa-file-pdf fa-lg
+
+bemutatkozas:
+  bstext:
+    - text: Intézményünk pedagógiai programjában és a tagintézmény mindennapjaiban egyaránt tetten érhető a tiszteletadás, főhajtás a névadó Bálint Sándor különösen gazdag és értékes, Tápéhoz és a tápai hagyományokhoz is kötődő életútja előtt. E fontos érték mellett kiemelten hangsúlyos számunkra az iskolánkban folyó nevelő-oktatómunka alapjait meghatározó Freinet-pedagógia bizalomra és biztonságra épülő szemlélete.
+    - text: 'A tápéi iskola fő erőssége a mindennapokban is tapintható szeretetteljes, befogadó és elfogadó légkör, az a családias hangulat, melynek köszönhetően jól érzi magát és ezért szívesen megy be oda nap mint nap valamennyi „iskolahasználó”: gyermek, pedagógus, segítő munkatárs és szülő egyaránt. Az itt dolgozók felkészültsége, elkötelezettsége, tapasztalata és hite az alapja annak az oktató-nevelő munkának, amely – a korszerű tudás átadása mellett – generációk óta képes kapaszkodót, gyökereket, alapvető emberi értékeket plántálni az itt tanuló gyerekekbe.'
+    - text: A közösségi programok színes palettája (kirándulások, színház- és múzeumlátogatások, családi napok, közös programok és események szervezése Tápé közösségeivel) tovább gazdagítják az itt tanulók fejlődésének-fejlesztésének lehetőségeit.
+    - text: Tápén - Szegeden egyedüliként – a Freinet-pedagógián alapuló programot valósítunk meg az alsó tagozatban, amelynek legfontosabb eleme az egész napos iskolai nevelési program.
+    - text: Évfolyamonként 1 osztályt indítunk, melyben 2 tanító tanít. Az időben széthúzott tanítási napokon a rugalmas óraterv alkalmazkodik a gyerekek fizikai, pszichikai teljesítő- és tűrőképességéhez, így a pedagógusok hangsúlyosan figyelembe tudják venni az alsó tagozat alapozó funkcióját, az alapkészségek fejlesztését, a gyerekek egyéni sajátosságait. Egyenletesebb a terhelés, több lehetőség nyílik a differenciálásra, a folyamatos felzárkóztatásra és tehetséggondozásra.
+    - text: A felső tagozaton folyó nevelés-oktatás elsődleges feladata a sikeres iskolai tanuláshoz, az eredményességhez szükséges alapkészségek továbbfejlesztése és megerősítése.
+    - text: A kulcs- és tantárgyakon átívelő kompetenciák fejlesztése mellett kiemelt célunk az önálló tanulás, a problémamegoldó gondolkodás és a szövegértés fejlesztése, valamint a gyerekek egyéni képességeihez igazodó, differenciált tanulásszervezési eljárások rendszeres alkalmazása.
+    - text: Fontos érték számunkra a tehetségígéretek azonosítása és fejlesztése, és a lassabban haladó tanulók számára a felzárkózás lehetőségének biztosítása. A versenyekre való felkészítés, a tehetséggondozás a kollégák szívügye, a tehetséggondozás az intézmény pedagógiai munkájának középpontjában áll. Ennek köszönhetően szép eredményekkel büszkélkedhetünk a tantárgyi, művészeti és levelező versenyeken, valamint sportversenyeken.
+    - text: Idegen nyelvként iskolánkban az angol nyelvet tanítjuk, 4. osztálytól kezdődően csoportbontásban (a gyorsabban haladók számára heti 5 órában, a lassabban haladók számára heti 3 órában). Az informatika oktatása 3. osztálytól indul, és szintén kis létszámú csoportokban folyik.
+    - text: A sportolni vágyó gyermekek számára kitűnő lehetőséget teremt az, hogy iskolánk csatlakozott az Úszó Nemzet Programhoz, melynek keretében minden tanulónk legkésőbb a 2. osztály végéig legalább 1 úszásnemben megtanul úszni. Emellett tanulóinknak lehetősége van a kézilabda megismerésére, valamint a délutáni tömegsport keretei között az önfeledt mozgásra.
+    - text: Tápén nagyon fontos érték a hagyományok tisztelete és megőrzése, így nem csoda, hogy a tápéi iskola pedagógiai tevékenységének részeként hosszú évek óta széleskörű hagyományőrző tevékenység folyik. Az itt tanuló gyerekeknek és szüleiknek, nagyszüleiknek ezáltal lehetőségük nyílik generációkon átívelő programok megvalósítására, az értékek mentésére, a helyi közösségek és az iskola viszonyának gazdagítására és mélyítésére.
+    - text: Az intézmény tanrendjében és nevelési programjában kiemelt helyen szerepel a városrész, Tápé hagyományainak megismerése és ápolása. Az alsó tagozatos gyerekek heti egy testnevelés órán ismerkednek a néptánccal és a helyi népszokásokkal. A gyékényes mesterség alapjait az ötödik és hatodik osztályos tanulók technikaórán sajátíthatják el – ezeket a foglalkozásokat a tápéi hagyományőrző közösség, a Gyékényből Szőtt Egyesület tagjai vezetik. A tápéi iskola szoros kapcsolatot ápol a helyi hagyományőrző csoporttal is, akikkel közös rendezvényeken veszünk részt. A településrész ünnepein, közösségi eseményein együtt van jelen több korosztály.
+    - text: Iskolánk ökoiskola, mely lehetőséget kínál a fenntarthatóság és környezettudatosság elveit szem előtt tartó nevelés megvalósítására.
+    - text: A délutáni idősávban kapnak helyet a tanórán kívüli tanulást biztosító lehetőségek – ebben egyaránt fontos szerepet kapnak az együttműködő partnereink által megvalósított szolgáltatások (TRIOLA Alapfokú Művészeti Iskola, ToP Dance Company, jógaoktatás) és a pedagógusaink által megvalósított szakkörök gazdag kínálata (természettudományos szakkör, hagyományőrző szakkör, alkotókör, énekkar, logika szakkör, matematika szakkör). Gyermekeink sokszínű fejlesztését szolgálja az is, hogy ezen foglalkozások megvalósításába beépülnek a Komplex Alapprogram alprogramjainak elemei is.
+    - text: Gyermekeink biztonságát szolgálják azok a kezdeményezések, amelyekhez csatlakozva tanulóink elsajátíthatják a biztonságos közlekedés szabályait (KEVE Program), és bűnmegelőzési szemléletformálásban is részük lehet (KÉK TÉR Program).
+    - text: Iskolánk épülete 2020-ban egy teljes körű felújítás során kívül-belül megújult. Ennek is köszönhetően intézményünk esztétikus, tiszta, igényesen gondozott, biztonságos feltételeket biztosít az itt tanuló gyermekek számára. A növényekkel betelepített tágas udvar sportolásra, kikapcsolódásra, iskolakert működtetésére alkalmas. A kulturált étkezést tágas és világos ebédlő és tálalókonyha biztosítja.
+    - text: A mindennapi nevelő-oktató munka sikere érdekében iskolánk kiemelt partneri viszonyt ápol a fenntartó Szegedi Tankerületi Központtal, a Freinet Tanoda Alapítvánnyal, a Szegedi Pedagógiai Oktatási Központ és a Csongrád-Csanád Vármegyei Pedagógiai Szakszolgálat munkatársaival, a Szeged-Tápén működő tagóvodával, a Szent-Györgyi Albert Agóra Heller Ödön Művelődési Házával, a TRIOLA Alapfokú Művészeti Iskolával, a Somogyi-könyvtár Tápai fiókkönyvtárával, valamint a Gyékényből Szőtt Egyesülettel.
+    - text: Szakmai együttműködést folytatunk a Szegedi Tudományegyetem Neveléstudományi Intézetével, az MTA-SZTE Természettudomány Tanítása Kutatócsoport munkatársaival, valamint gyakorlóhelyet biztosítunk a Szegedi Tudományegyetem tanárképzésben résztvevő hallgatói számára.
+
+  bsimage:
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/01.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/01.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/02.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/02.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/03.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/03.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/04.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/04.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/05.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/05.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/06.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/06.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/07.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/07.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/08.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/08.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/09.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/09.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/10.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/10.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/11.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/11.jpg
+        alt: Tagiskola
+    - image:
+        full: /assets/img/bs/bemutatkozas/full/12.jpg
+        thumb: /assets/img/bs/bemutatkozas/thumb/12.jpg
+        alt: Tagiskola
+
+deeplinks:
+  - class: '1'
+    deeplink: 1o
+  - class: '2'
+    deeplink: 2o
+  - class: '3'
+    deeplink: 3o
+  - class: '4'
+    deeplink: 4o
+  - class: '5'
+    deeplink: 5o
+  - class: '6'
+    deeplink: 6o
+  - class: '7'
+    deeplink: 7o
+  - class: '8'
+    deeplink: 8o
+
+elerhetoseg:
+  - fullname: Szegedi Petőfi Sándor Általános Iskola Bálint Sándor Tagsikolája
+    logo: /assets/img/ps/logo-nagy-bs.jpg
+    qrcode: /assets/img/ps/qrcode-bs.png
+    address: 6727, Szeged, Benczúr Gyula u. 29.
+    mail-tit: titkarsag@petofiszeged.hu
+    mail-ig: igazgato@petofiszeged.hu
+    phone1: +36 62 541 956
+    phone2: +36 62 541 957
+    phone3: +36 30 736 2795
+    line1: 'Igazgató: Winkler Andrea'
+    line2: Az intézmény fenntartója és működtetője a Szegedi Tankerületi Központ.
+
 etkezesbefizetes:
   months:
     - name: '2026. Január'
@@ -121,207 +237,14 @@ fenntarto:
   open: 'Nyitva tartás: 7:00–18:00 óráig'
 
 ps:
-  favicon: /assets/img/common/school_logos/ps-favicon.png
-  logo: /assets/img/common/school_logos/ps-logo.jpg
+  favicon: ../assets/img/common/school_logos/ps-favicon.png
+  logo: ../assets/img/common/school_logos/ps-logo.jpg
   schoolname: Szegedi Petőfi Sándor Általános Iskola
 
 bs:
-  favicon: /assets/img/common/school_logos/bs-favicon.png
-  logo: /assets/img/common/school_logos/bs-logo.jpg
+  favicon: ../assets/img/common/school_logos/bs-favicon.png
+  logo: ../assets/img/common/school_logos/bs-logo.jpg
   schoolname: Szegedi Petőfi Sándor Általános Iskola Bálint Sándor Tagiskolája
-
-pages:
-  - title: Főoldal/Híreink
-    url: index
-    page: index
-    icon: home
-    noFolder: true
-  - title: Bemutatkozás
-    url: bemutatkozas
-    icon: chalkboard-teacher
-    menu: bemutatkozas
-    submenu:
-      - title: Bemutatkozás
-        page: 'bemutatkozas'
-        url: 'bemutatkozas'
-        folder: bemutatkozas
-      - title: Tanáraink
-        page: 'tanaraink'
-        url: tanaraink
-        folder: bemutatkozas
-      - title: Csengetési rend
-        page: 'csengetesi_rend'
-        url: csengetesi_rend
-        folder: bemutatkozas
-      - title: Iskolánkat segítő külsős munkatársak
-        page: 'iskolankat_segito_kulsos_munkatarsak'
-        url: iskolankat_segito_kulsos_munkatarsak
-        folder: bemutatkozas
-      - title: Hitoktatóink
-        page: 'hitoktatoink'
-        url: 'hitoktatoink'
-        folder: bemutatkozas
-      - title: Felekezetek bemutatkozása
-        page: 'felekezetek_bemutatkozasa'
-        url: felekezetek_bemutatkozasa
-        folder: bemutatkozas
-      - title: Pedagógiai program
-        page: 'bemutatk_ped_program'
-        url: bemutatk_ped_program
-        folder: bemutatkozas
-      - title: SZMSZ
-        page: 'bemutatk_szmsz'
-        url: bemutatk_szmsz
-        folder: bemutatkozas
-      - title: Kollektív szerződés
-        page: 'kollektiv_szerzodes'
-        url: 'kollektiv_szerzodes'
-        folder: bemutatkozas
-      - title: IMIP
-        page: 'imip'
-        url: imip
-        folder: bemutatkozas
-      - title: Házirend
-        page: 'bemutatk_hazirend'
-        url: bemutatk_hazirend
-        folder: bemutatkozas
-      - title: Gyermekvédelem
-        page: 'gyermekvedelem'
-        url: gyermekvedelem
-        folder: bemutatkozas
-      - title: Tankönyvek
-        page: 'tankonyvek'
-        url: tankonyvek
-        folder: bemutatkozas
-      - title: Taneszközök
-        page: 'taneszkozok'
-        url: taneszkozok
-        folder: bemutatkozas
-      - title: Kék Tér Program
-        page: 'kek_ter_program'
-        url: kek_ter_program
-        folder: bemutatkozas
-      - title: KEVE Program
-        page: 'keve_program'
-        url: keve_program
-        folder: bemutatkozas
-  - title: Étkezési információk
-    icon: utensils
-    menu: etkezesi-informaciok
-    submenu:
-      - title: Befizetési időpontok az NGSZ-nél
-        page: 'befiz_idopontok_ngsz'
-        url: befiz_idopontok_ngsz
-        folder: etkezesi_informaciok
-      - title: Étkezési térítési díjak
-        page: 'etkezesi_teritesi_dijak'
-        url: etkezesi_teritesi_dijak
-        folder: etkezesi_informaciok
-      - title: Közétkeztetés – NGSZ weboldal
-        url: https://ngsz.hu/2021/01/01/kozetkeztetes/
-        external: true
-      - title: Közétkeztetés – étlapok
-        url: https://ngsz.hu/2021/01/01/kozetkeztetes/#kozetkeztetes-etlap
-        external: true
-      - title: Leendő elsős szülők tájékoztatása közétkeztetésről
-        page: 'elsos_szulok_tajekoztatasa_kozetkeztetesrol'
-        url: elsos_szulok_tajekoztatasa_kozetkeztetesrol
-        folder: etkezesi_informaciok
-  - title: Közzétételi lista
-    url: kozzeteteli_lista
-    icon: list
-    menu: kozzeteteli-lista
-    submenu:
-      - title: Felvételi lehetőségről szóló tájékoztató
-        url: felveteli_lehetosegrol_szolo_tajekoztato
-        folder: kozzeteteli_lista
-        submenu:
-          - title: Felvételi tájékoztató
-            page: 'felveteli_tajekoztato'
-            url: felveteli_tajekoztato
-            folder: kozzeteteli_lista
-          - title: Beiratkozáskor leadandó nyomtatványok
-            page: 'beiratkozaskor_leadando_nyomtatvanyok'
-            url: beiratkozaskor_leadando_nyomtatvanyok
-            folder: kozzeteteli_lista
-          - title: Körzetünk
-            page: 'beiratkozasi_korzet'
-            url: beiratkozasi_korzet
-            folder: kozzeteteli_lista
-          - title: Iskolahívogató
-            page: 'iskolahivogato'
-            url: iskolahivogato
-            folder: kozzeteteli_lista
-      - title: Engedélyezett osztályok, csoportok száma
-        page: 'osztalyok_tanulok_szama'
-        url: osztalyok_tanulok_szama
-        folder: kozzeteteli_lista
-      - title: Térítési díj, tandjíj
-        page: 'teritesi_dij'
-        url: teritesi_dij
-        folder: kozzeteteli_lista
-      - title: Étkezési térítési díjak
-        page: 'etkezesi_teritesi_dijak'
-        url: etkezesi_teritesi_dijak
-        folder: kozzeteteli_lista
-      - title: Fenntartói értékelés, nyilvános megállapításokat tartalmazó vizsgálatok
-        page: 'nyilvanos_vizsgalat'
-        url: nyilvanos_vizsgalat
-        folder: kozzeteteli_lista
-      - title: Nyitvatartás rendje
-        page: 'nyitvatartas'
-        url: nyitvatartas
-        folder: kozzeteteli_lista
-      - title: Eseménynaptár
-        page: 'esemenynaptar'
-        url: esemenynaptar
-        folder: kozzeteteli_lista
-      - title: Pedagógiai-szakmai ellenőrzési feladatok ellenőrzése
-        url: ped_ellenorzesi_feladatok
-        folder: kozzeteteli_lista
-        submenu:
-          - title: Iskolai tanfelügyelet eredményei
-            page: 'iskolai_tanfelugyelet_eredmenyei'
-            url: iskolai_tanfelugyelet_eredmenyei
-            folder: kozzeteteli_lista
-          - title: Intézményvezetői tanfelügyelet eredménye
-            page: 'intezmenyvezetoi_tanfelugyelet_eredmenye'
-            url: 'intezmenyvezetoi_tanfelugyelet_eredmenye'
-            folder: kozzeteteli_lista
-          - title: Pedagógus tanfelügyelet eredménye
-            page: 'pedagogus_tanfelugyelet_eredmenye'
-            url: 'pedagogus_tanfelugyelet_eredmenye'
-            folder: kozzeteteli_lista
-      - title: SZMSZ
-        page: 'kozzetetel_szmsz'
-        url: kozzetetel_szmsz
-        folder: kozzeteteli_lista
-      - title: Házirend
-        page: 'kozzetetel_hazirend'
-        url: kozzetetel_hazirend
-        folder: kozzeteteli_lista
-      - title: Pedagógiai program
-        page: 'kozzetetel_ped_program'
-        url: kozzetetel_ped_program
-        folder: kozzeteteli_lista
-
-deeplinks:
-  - class: '1'
-    deeplink: 1o
-  - class: '2'
-    deeplink: 2o
-  - class: '3'
-    deeplink: 3o
-  - class: '4'
-    deeplink: 4o
-  - class: '5'
-    deeplink: 5o
-  - class: '6'
-    deeplink: 6o
-  - class: '7'
-    deeplink: 7o
-  - class: '8'
-    deeplink: 8o
 
 taneszkozok:
   - class: '1a'
@@ -340,19 +263,5 @@ taneszkozok:
   - class: '7b'
   - class: '8a'
   - class: '8b'
-
-beiratkLeadNyomtatvanyok:
-  - name: 'nyilatkozat_torvenyes_kepviselo_2025.pdf'
-    file: nyilatkozat_torvenyes_kepviselo_2025.pdf
-    icon: fas fa-file-pdf fa-lg
-  - name: 'Nyilatkozat – Etika/Hit- és erkölcstan'
-    file: nyilatkozat_etika_hit-es_erkolcstan_2025.pdf
-    icon: fas fa-file-pdf fa-lg
-  - name: 'Tanulói adatlap'
-    file: tanuloi_adatlap_2025.pdf
-
-  - name: 'Nyilatkozat fokozott figyelmet igénylő egészségi állapotról'
-    file: nyilatkozat_egeszegugyi_allapotrol_2025.pdf
-    icon: fas fa-file-pdf fa-lg
 
 TODO: global és common yamlok egyesítése
