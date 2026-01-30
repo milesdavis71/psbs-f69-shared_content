@@ -83,3 +83,7 @@
       page: 'noksosok_szama_szakkepzettsege'
       url: noksosok_szama_szakkepzettsege
       folder: kozzeteteli_lista
+    - title: Országos mérés-értékelés évenkénti eredményei
+      page: 'kompetenciameres_eredmenyei'
+      url: kompetenciameres_eredmenyei
+      folder: kozzeteteli_lista

@@ -22,14 +22,14 @@ line2: 'tagiskola-igazgató: Porkolábné Papp Zsuzsanna.'
             ahol kinyílik a szív és feltárulnak a gondolatok”<br />
             <i>(Célestin Freinet)</i>
         </p>
-        {{#each global.bemutatkozas.bstext}}
+        {{#each common.bemutatkozas.bstext}}
         <p>{{ this.text }}</p>
         {{/each}}
     </div>
     <div class="cell small-12 medium-4">
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
-                {{#each global.bemutatkozas.bsimage}}
+                {{#each common.bemutatkozas.bsimage}}
                 <div
                     class="cell small-12 medium-{{divide 12 ../images_per_row}}"
                 >
