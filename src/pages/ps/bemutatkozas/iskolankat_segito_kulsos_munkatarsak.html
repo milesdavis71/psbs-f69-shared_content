@@ -1,25 +1,8 @@
 ---
 layout: default
 title: Iskolánkat segítő külsős munkatársak
+schoolKey: ps
 ---
 
 {{>title}}
-{{#each iskolai_segitok}}
-<div class="card">
-    <div class="card-divider" style="padding: 0.5em">
-        <strong>{{job}}</strong>
-    </div>
-    <div class="card-section" style="padding: 0.5em">
-        <p>
-            <b>{{name}}</b><br />
-            <i class="fa fa-phone-square" style="color: #ffa500"></i>&ensp;<a
-                href="tel:{{tel1}}"
-                >{{tel2}}</a
-            ><br />
-            <i class="fa fa-envelope" style="color: #ffa500"></i>
-            <a href="mailto:{{mail}}"> {{mail}}</a>
-        </p>
-        {{>md-ps-iskolai-segitok segito=job}}
-    </div>
-</div>
-{{/each}}
+{{>schooldata-iskolai-segitok}}
