@@ -1,0 +1,38 @@
+<style>
+    .current a {
+        color: #ffa500;
+        line-height: 1.3rem;
+    }
+
+    /*
+  A „Felvételi lehetőségről szóló tájékoztató” egy "gyűjtő" menüpont.
+  Akkor is maradjon alap színű, ha a benne lévő 2. szintű elem aktív.
+*/
+    .no-color-change.current a {
+        color: inherit;
+    }
+
+    .accordion-title {
+        box-shadow: inset 0 -1px #a2e7f6;
+    }
+
+    .accordion-menu a {
+        box-shadow: inset 0 -1px #a2e7f6;
+        line-height: 1.3rem;
+    }
+</style>
+
+<ul class="vertical menu accordion-menu" data-accordion-menu>
+    {{#each
+        (mergeMenuParts
+            '1_fooldal'
+            '2_elerhetosegeink'
+            '3b_bemutatkozas'
+            '4_etkezesi_informaciok'
+            '5b_kozzeteteli_lista'
+            key='pages'
+        )
+    }}
+    {{> menu-item this}}
+    {{/each}}
+</ul>

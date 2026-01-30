@@ -1,0 +1,62 @@
+<style>
+    #meres {
+    padding: 0.15rem 0.5rem 0.15rem;
+    border: 1px solid darkgrey;
+    background-color: white;
+  }
+ 
+</style>
+
+
+<div class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <!-- Vertical Tabs Navigation -->
+    <div class="cell medium-2 small-text-center">
+      <ul class="vertical tabs text-center" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500" data-tabs id="deeplinked-tabs">
+{{#schoolData schoolKey "kompetenciameres"}}
+        {{#each this.tabs}}
+          <li class="tabs-title{{#if @first}} is-active{{/if}}">
+            <a href="#{{id}}"{{#if @first}} aria-selected="true"{{/if}} style="font-size: 0.85rem;">{{tabtitle}}</a>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+    
+    <!-- Tab Content -->
+    <div class="cell medium-10">
+      <div class="tabs-content" data-tabs-content="deeplinked-tabs">
+        {{#each this.tabs}}
+          <div class="tabs-panel{{#if @first}} is-active{{/if}}" id="{{id}}">
+            <h5 class="text-center">{{title}}</h5>
+            {{>kompetenciameres-title2line type=id}}
+            {{> kompetenciameres-tableheader-title-short-visz-csop type=id}}
+            <div class="table-scroll" >
+            <table class="unstriped">
+              <thead >
+                <tr>
+                  {{#each this.table.headers}}
+                    <th class="text-center" id="meres">{{this}}</th>
+                  {{/each}}
+                </tr>
+              </thead>
+              <tbody>
+                {{#each this.table.rows}}
+                  <tr>
+                    {{#each this}}
+                      <td class="text-center"  id="meres" {{#if rowspan}}rowspan="{{rowspan}}"{{/if}}>
+                        {{content}}
+                      </td>
+                    {{/each}}
+                  </tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>
+          </div>
+        {{/each}}
+        {{/schoolData}}
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -83,7 +83,7 @@
       page: 'pedagogusok_iskolai_vegzettsege'
       url: pedagogusok_iskolai_vegzettsege
       folder: kozzeteteli_lista
-    - title: Noksosok száma, szakképzettsége
-      page: 'noksosok_szama_szakkepzettsege'
-      url: noksosok_szama_szakkepzettsege
+    - title: Országos mérés-értékelés évenkénti eredményei
+      page: 'kompetenciameres_eredmenyei'
+      url: kompetenciameres_eredmenyei
       folder: kozzeteteli_lista

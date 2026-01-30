@@ -1,0 +1,649 @@
+tabs:
+  - id: '2024'
+    tabtitle: '2024'
+    title: '2024'
+    table:
+      headers:
+        [
+          'tantárgy',
+          'oszt',
+          'fh eredm',
+          'fh eredm orsz átl',
+          'fh eredm 1 visz csop',
+          'fh eredm 2 visz csop',
+        ]
+      rows:
+        - - rowspan: 3
+            content: angol nyelv
+          - content: '6.'
+          - content: 1562
+          - content: 🙂
+          - content: 😑
+          - content: 🙂
+        - - content: '7.'
+          - content: 1639
+          - content: 🙂
+          - content: 😑
+          - content: 🙂
+        - - content: '8.'
+          - content: 1652
+          - content: 😑
+          - content: 😑
+          - content: 🙂
+        - - rowspan: 4
+            content: digitális kultúra
+          - content: '5.'
+          - content: 1484
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '6.'
+          - content: 1598
+          - content: 🙂
+          - content: 😑
+          - content: 🙂
+        - - content: '7.'
+          - content: 1550
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '8.'
+          - content: 1500
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - rowspan: 5
+            content: matematika
+          - content: '4.'
+          - content: 1500
+          - content: 🙂
+          - content: 🙂
+          - content: 🙂
+        - - content: '5.'
+          - content: 1463
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '6.'
+          - content: 1507
+          - content: 😑
+          - content: 😑
+          - content: 🙂
+        - - content: '7.'
+          - content: 1550
+          - content: 😑
+          - content: 😑
+          - content: 🙂
+        - - content: '8.'
+          - content: 1586
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - rowspan: 5
+            content: szövegértés
+          - content: '4.'
+          - content: 1515
+          - content: 🙂
+          - content: 😑
+          - content: 🙂
+        - - content: '5.'
+          - content: 1510
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '6.'
+          - content: 1534
+          - content: 🙂
+          - content: 😑
+          - content: 🙂
+        - - content: '7.'
+          - content: 1511
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '8.'
+          - content: 1508
+          - content: 🙂
+          - content: 🙂
+          - content: 🙂
+        - - rowspan: 3
+            content: term. tud.
+          - content: '6.'
+          - content: 1573
+          - content: 🙂
+          - content: 🙂
+          - content: 🙂
+        - - content: '7.'
+          - content: 1547
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '8.'
+          - content: 1622
+          - content: 😑
+          - content: 😑
+          - content: 🙂
+        - - rowspan: 2
+            content: történelem
+          - content: '5.'
+          - content: 1485
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '6.'
+          - content: 1529
+          - content: 😑
+          - content: 😑
+          - content: 😑
+
+  - id: '2023'
+    tabtitle: '2023'
+    title: '2023'
+    table:
+      headers:
+        [
+          'tantárgy',
+          'oszt',
+          'fh eredm',
+          'fh eredm orsz átl',
+          'fh eredm 1 visz csop',
+          'fh eredm 2 visz csop',
+        ]
+      rows:
+        - - rowspan: 3
+            content: angol nyelv
+          - content: '6.'
+          - content: 1507
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '7.'
+          - content: 1622
+          - content: 😑
+          - content: 😑
+          - content: 🙂
+        - - content: '8.'
+          - content: 1630
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - rowspan: 3
+            content: matematika
+          - content: '6.'
+          - content: 1512
+          - content: 😑
+          - content: 😑
+          - content: 🙂
+        - - content: '7.'
+          - content: 1577
+          - content: 😑
+          - content: 😑
+          - content: 🙂
+        - - content: '8.'
+          - content: 1617
+          - content: 😑
+          - content: 😑
+          - content: 🙂
+        - - rowspan: 3
+            content: szövegértés
+          - content: '6.'
+          - content: 1501
+          - content: 😑
+          - content: 😑
+          - content: 🙂
+        - - content: '7.'
+          - content: 1569
+          - content: 😑
+          - content: 😑
+          - content: 🙂
+        - - content: '8.'
+          - content: 1616
+          - content: 🙂
+          - content: 🙂
+          - content: 🙂
+        - - rowspan: 3
+            content: term. tud.
+          - content: '6.'
+          - content: 1464
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '7.'
+          - content: 1588
+          - content: 😑
+          - content: 😑
+          - content: 🙂
+        - - content: '8.'
+          - content: 1554
+          - content: 😑
+          - content: 😑
+          - content: 😑
+
+  - id: '2022'
+    tabtitle: '2022'
+    title: '2022'
+    table:
+      headers:
+        ['oszt', 'tantárgy', 'fh eredm', 'orsz átl', 'székhely', 'tagiskola']
+      rows:
+        - - rowspan: 2
+            content: '6.'
+          - content: matematika
+          - content: 1554
+          - content: 1493
+          - content: 1538
+          - content: 1569
+        - - content: szövegértés
+          - content: 1490
+          - content: 1475
+          - content: 1505
+          - content: 1550
+        - - rowspan: 2
+            content: '8.'
+          - content: matematika
+          - content: 1596
+          - content: 1602
+          - content: 1564
+          - content: 1628
+        - - content: szövegértés
+          - content: 1580
+          - content: 1535
+          - content: 1632
+          - content: 1527
+
+  - id: '2021'
+    tabtitle: '2021'
+    title: '2021'
+    table:
+      headers:
+        ['oszt', 'tantárgy', 'fh eredm', 'orsz átl', 'székhely', 'tagiskola']
+      rows:
+        - - rowspan: 2
+            content: '6.'
+          - content: matematika
+          - content: 1448
+          - content: 1468
+          - content: 1421
+          - content: 1474
+        - - content: szövegértés
+          - content: 1505
+          - content: 1478
+          - content: 1495
+          - content: 1514
+        - - rowspan: 2
+            content: '8.'
+          - content: matematika
+          - content: 1607
+          - content: 1609
+          - content: 1572
+          - content: 1641
+        - - content: szövegértés
+          - content: 1607
+          - content: 1590
+          - content: 1528
+          - content: 1686
+
+  - id: '2020'
+    tabtitle: '2020'
+    title: A mérés elmaradt
+
+  - id: '2019'
+    tabtitle: '2019'
+    title: '2019'
+    table:
+      headers:
+        ['oszt', 'tantárgy', 'fh eredm', 'orsz átl', 'székhely', 'tagiskola']
+      rows:
+        - - rowspan: 2
+            content: '6.'
+          - content: matematika
+          - content: 1513
+          - content: 1495
+          - content: 1504
+          - content: 1522
+        - - content: szövegértés
+          - content: 1566
+          - content: 1499
+          - content: 1497
+          - content: 1638
+        - - rowspan: 2
+            content: '8.'
+          - content: matematika
+          - content: 1574
+          - content: 1624
+          - content: 1611
+          - content: 1540
+        - - content: szövegértés
+          - content: 1605
+          - content: 1608
+          - content: 1564
+          - content: 1642
+
+  - id: '2018'
+    tabtitle: '2018'
+    title: '2018'
+    table:
+      headers:
+        ['oszt', 'tantárgy', 'fh eredm', 'orsz átl', 'székhely', 'tagiskola']
+      rows:
+        - - rowspan: 2
+            content: '6.'
+          - content: matematika
+          - content: 1513
+          - content: 1499
+          - content: 1498
+          - content: 1524
+        - - content: szövegértés
+          - content: 1499
+          - content: 1492
+          - content: 1481
+          - content: 1513
+        - - rowspan: 2
+            content: '8.'
+          - content: matematika
+          - content: 1624
+          - content: 1614
+          - content: 1634
+          - content: 1613
+        - - content: szövegértés
+          - content: 1660
+          - content: 1602
+          - content: 1679
+          - content: 1640
+
+  - id: '2017'
+    tabtitle: '2017'
+    title: '2017'
+    table:
+      headers:
+        ['oszt', 'tantárgy', 'fh eredm', 'orsz átl', 'székhely', 'tagiskola']
+      rows:
+        - - rowspan: 2
+            content: '6.'
+          - content: matematika
+          - content: 1499
+          - content: 1486
+          - content: 1499
+          - content: 1498
+        - - content: szövegértés
+          - content: 1552
+          - content: 1494
+          - content: 1556
+          - content: 1548
+        - - rowspan: 2
+            content: '8.'
+          - content: matematika
+          - content: 1635
+          - content: 1597
+          - content: 1671
+          - content: 1594
+        - - content: szövegértés
+          - content: 1594
+          - content: 1568
+          - content: 1582
+          - content: 1608
+
+  - id: '2016'
+    tabtitle: '2016'
+    title: '2016'
+    table:
+      headers:
+        ['oszt', 'tantárgy', 'fh eredm', 'orsz átl', 'székhely', 'tagiskola']
+      rows:
+        - - rowspan: 2
+            content: '6.'
+          - content: matematika
+          - content: 1499
+          - content: 1486
+          - content: 1499
+          - content: 1498
+        - - content: szövegértés
+          - content: 1552
+          - content: 1494
+          - content: 1556
+          - content: 1548
+        - - rowspan: 2
+            content: '8.'
+          - content: matematika
+          - content: 1635
+          - content: 1597
+          - content: 1671
+          - content: 1594
+        - - content: szövegértés
+          - content: 1594
+          - content: 1568
+          - content: 1582
+          - content: 1608
+
+  - id: '2015'
+    tabtitle: '2015'
+    title: '2015'
+    table:
+      headers:
+        ['oszt', 'tantárgy', 'fh eredm', 'orsz átl', 'székhely', 'tagiskola']
+      rows:
+        - - rowspan: 2
+            content: '6.'
+          - content: matematika
+          - content: 1594
+          - content: 1497
+          - content: 1601
+          - content: 1586
+        - - content: szövegértés
+          - content: 1592
+          - content: 1488
+          - content: 1602
+          - content: 1583
+        - - rowspan: 2
+            content: '8.'
+          - content: matematika
+          - content: 1657
+          - content: 1618
+          - content: 1707
+          - content: 1619
+        - - content: szövegértés
+          - content: 1593
+          - content: 1567
+          - content: 1615
+          - content: 1577
+
+  - id: '2014'
+    tabtitle: '2014'
+    title: '2014'
+    table:
+      headers:
+        ['oszt', 'tantárgy', 'fh eredm', 'orsz átl', 'székhely', 'tagiskola']
+      rows:
+        - - rowspan: 2
+            content: '6.'
+          - content: matematika
+          - content: 1582
+          - content: 1491
+          - content: 1617
+          - content: 1544
+        - - content: szövegértés
+          - content: 1547
+          - content: 1481
+          - content: 1573
+          - content: 1520
+        - - rowspan: 2
+            content: '8.'
+          - content: matematika
+          - content: 1721
+          - content: 1617
+          - content: 1702
+          - content: 1739
+        - - content: szövegértés
+          - content: 1653
+          - content: 1557
+          - content: 1703
+          - content: 1606
+
+  - id: '2013'
+    tabtitle: '2013'
+    title: '2013'
+    table:
+      headers:
+        ['oszt', 'tantárgy', 'fh eredm', 'orsz átl', 'székhely', 'tagiskola']
+      rows:
+        - - rowspan: 2
+            content: '6.'
+          - content: matematika
+          - content: 1553
+          - content: 1489
+          - content: 1566
+          - content: 1543
+        - - content: szövegértés
+          - content: 1536
+          - content: 1497
+          - content: 1541
+          - content: 1533
+        - - rowspan: 2
+            content: '8.'
+          - content: matematika
+          - content: 1756
+          - content: 1620
+          - content: 1746
+          - content: 1766
+        - - content: szövegértés
+          - content: 1689
+          - content: 1555
+          - content: 1615
+          - content: 1760
+
+  - id: '2012'
+    tabtitle: '2012'
+    title: '2012'
+    table:
+      headers:
+        ['oszt', 'tantárgy', 'fh eredm', 'orsz átl', 'székhely', 'tagiskola']
+      rows:
+        - - rowspan: 2
+            content: '6.'
+          - content: matematika
+          - content: 1548
+          - content: 1489
+          - content: 1555
+          - content: 1540
+        - - content: szövegértés
+          - content: 1607
+          - content: 1472
+          - content: 1696
+          - content: 1518
+        - - rowspan: 2
+            content: '8.'
+          - content: matematika
+          - content: 1619
+          - content: 1612
+          - content: 1628
+          - content: 1610
+        - - content: szövegértés
+          - content: 1607
+          - content: 1567
+          - content: 1621
+          - content: 1593
+
+  - id: '2011'
+    tabtitle: '2011'
+    title: 'Szegedi Petőfi Sándor Általános Iskola Bálint Sándor Tagiskola és Hunyadi János Tagiskola - 2011'
+    table:
+      headers: ['tantárgy', 'oszt', 'fh eredm', 'orsz átl', 'PS', 'BS', 'HJ']
+      rows:
+        - - rowspan: 2
+            content: '6.'
+          - content: matematika
+          - content: 1519
+          - content: 1486
+          - content: 1577
+          - content: 1532
+          - content: 1286
+        - - content: 'szövegértés'
+          - content: 1605
+          - content: 1465
+          - content: 1556
+          - content: 1717
+          - content: 1339
+        - - rowspan: 2
+            content: '8.'
+          - content: matematika
+          - content: 1626
+          - content: 1601
+          - content: 1782
+          - content: 1645
+          - content: 1477
+        - - content: szövegértés
+          - content: 1594
+          - content: 1577
+          - content: 1671
+          - content: 1571
+          - content: 1551
+
+  - id: '2010'
+    tabtitle: '2010'
+    title: 'Szegedi Petőfi Sándor Általános Iskola Bálint Sándor Tagiskola és Hunyadi János Tagiskola - 2010'
+    table:
+      headers: ['tantárgy', 'oszt', 'fh eredm', 'orsz átl', 'PS', 'BS', 'HJ']
+      rows:
+        - - rowspan: 2
+            content: '6.'
+          - content: matematika
+          - content: 1568
+          - content: 1498
+          - content: 1654
+          - content: 1593
+          - content: 1387
+        - - content: 'szövegértés'
+          - content: 1572
+          - content: 1483
+          - content: 1648
+          - content: 1582
+          - content: 1429
+        - - rowspan: 2
+            content: '8.'
+          - content: matematika
+          - content: 1643
+          - content: 1622
+          - content: 1735
+          - content: 1602
+          - content: 1542
+        - - content: szövegértés
+          - content: 1670
+          - content: 1583
+          - content: 1731
+          - content: 1609
+          - content: 1639
+
+  - id: '2009'
+    tabtitle: '2009'
+    title: 'Szegedi Petőfi Sándor Általános Iskola Bálint Sándor Tagiskola és Hunyadi János Tagiskola - 2009'
+    table:
+      headers: ['tantárgy', 'oszt', 'fh eredm', 'orsz átl', 'PS', 'BS', 'HJ']
+      rows:
+        - - rowspan: 2
+            content: '6.'
+          - content: matematika
+          - content: 540
+          - content: 489
+          - content: 642
+          - content: 522
+          - content: 467
+        - - content: 'szövegértés'
+          - content: 545
+          - content: 513
+          - content: 597
+          - content: 534
+          - content: 509
+        - - rowspan: 2
+            content: '8.'
+          - content: matematika
+          - content: 480
+          - content: 484
+          - content: 1513
+          - content: 456
+          - content: 473
+        - - content: szövegértés
+          - content: 537
+          - content: 502
+          - content: 619
+          - content: 469
+          - content: 527
