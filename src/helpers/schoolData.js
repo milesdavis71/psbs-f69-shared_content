@@ -1,6 +1,6 @@
 // Használat: {{#schoolData schoolKey "tanarok"}} ... {{/schoolData}}
 // A schoolKey a front matter-ből származó változó neve (pl. "schoolKey"),
-// amelynek értéke "school1" vagy "school2"
+// amelynek értéke "ps" vagy "bs"
 const fs = require('fs')
 const path = require('path')
 const yaml = require('js-yaml')
@@ -11,7 +11,7 @@ module.exports = function (schoolKeyVar, fileKey, options) {
         options && options.data && options.data.root ? options.data.root : this
 
     // Ha schoolKeyVar egy string (pl. "schoolKey"), akkor feloldjuk a root-ból
-    // hogy megkapjuk a tényleges school értéket (pl. "school1" vagy "school2")
+    // hogy megkapjuk a tényleges school értéket (pl. "ps" vagy "bs")
     let actualSchoolKey = schoolKeyVar
 
     // Ha a schoolKeyVar egy változó név (string), akkor feloldjuk
@@ -24,7 +24,7 @@ module.exports = function (schoolKeyVar, fileKey, options) {
         return `<!-- schoolKey változó nem található vagy érvénytelen: "${schoolKeyVar}" -->`
     }
 
-    // Elérjük a school-specifikus adatokat: először root.school1/school2 objektumból
+    // Elérjük a school-specifikus adatokat: először root.ps/bs objektumból
     let data = null
     if (root[actualSchoolKey] && root[actualSchoolKey][fileKey]) {
         data = root[actualSchoolKey][fileKey]

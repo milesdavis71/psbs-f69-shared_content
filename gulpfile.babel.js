@@ -265,9 +265,9 @@ function watch() {
 }
 // ----- School-specific Handling -----
 
-const SCHOOLS = ['school1', 'school2']
+const SCHOOLS = ['ps', 'bs']
 const SHARED_DIR = 'kozos'
-let currentSchool = yargs.argv.school || 'school1'
+let currentSchool = yargs.argv.school || 'ps'
 
 function setSchool(school) {
     return (done) => {
@@ -299,7 +299,7 @@ function pagesSchool() {
     const schoolPages = gulp
         .src(
             `src/pages/${currentSchool}/**/*.{html,hbs,handlebars}`,
-            { base: `src/pages/${currentSchool}` } // school1/2 mappa levágása
+            { base: `src/pages/${currentSchool}` } // ps/2 mappa levágása
         )
         .pipe(
             panini({

@@ -1,224 +1,259 @@
-{{!--
-PDF megjelenítő partial
-
-Használat:
-1. Az oldal frontmatterében add meg a pdfUrl kulcsot:
----
-layout: default
-title: Dokumentum címe
-pdfUrl: /assets/pdfs/ps/dokumentum.pdf
----
-
-2. Az oldal body részében hívd meg a partial-t:
-{ {>pdf-viewer} } (szóközök nélkül)
-
-Vagy paraméterrel:
-{ {>pdf-viewer pdfUrl="/assets/pdfs/common/dokumentum.pdf"} } (szóközök nélkül)
-
-Példa teljes használat:
-src/pages/school1/pdf-teszt.html
---}}
+{{!-- PDF megjelenítő partial Használat: 1. Az oldal frontmatterében add meg a
+pdfUrl kulcsot: --- layout: default title: Dokumentum címe pdfUrl:
+/assets/pdfs/ps/dokumentum.pdf --- 2. Az oldal body részében hívd meg a
+partial-t: { {>pdf-viewer} } (szóközök nélkül) Vagy paraméterrel: { {>pdf-viewer
+pdfUrl="/assets/pdfs/common/dokumentum.pdf"} } (szóközök nélkül) Példa teljes
+használat: src/pages/ps/pdf-teszt.html --}}
 <div class="grid-container">
     <div class="callout">
-        <div class="grid-x grid-padding-x align-middle" style="margin-bottom: 15px;">
-            <div class="cell shrink" id="pageNavButtons" style="display: none;">
-                <button class="button small" id="prevPage" type="button">◀ Előző</button>
-                <button class="button small" id="nextPage" type="button">Következő ▶</button>
+        <div
+            class="grid-x grid-padding-x align-middle"
+            style="margin-bottom: 15px"
+        >
+            <div class="cell shrink" id="pageNavButtons" style="display: none">
+                <button class="button small" id="prevPage" type="button">
+                    ◀ Előző
+                </button>
+                <button class="button small" id="nextPage" type="button">
+                    Következő ▶
+                </button>
             </div>
             <div class="cell shrink">
-                <button class="button small secondary" id="zoomOut" type="button">−</button>
+                <button
+                    class="button small secondary"
+                    id="zoomOut"
+                    type="button"
+                >
+                    −
+                </button>
             </div>
             <div class="cell shrink">
-                <button class="button small secondary" id="zoomIn" type="button">+</button>
+                <button
+                    class="button small secondary"
+                    id="zoomIn"
+                    type="button"
+                >
+                    +
+                </button>
             </div>
             <div class="cell shrink">
-                <button class="button small secondary" id="fitToPage" type="button">Laphoz igazít</button>
+                <button
+                    class="button small secondary"
+                    id="fitToPage"
+                    type="button"
+                >
+                    Laphoz igazít
+                </button>
             </div>
             <div class="cell auto">
                 <span class="label" id="pageInfo">
-                    Oldal: <span id="pageNum">1</span> / <span id="pageCount">?</span>
+                    Oldal: <span id="pageNum">1</span> /
+                    <span id="pageCount">?</span>
                 </span>
             </div>
         </div>
 
         <!-- viewer magasság: teljes viewport a 59px-es header alatt -->
-        <div class="pdf-viewer" style="height: calc(100vh - 59px); background: #f5f5f5; overflow-y: auto; overflow-x: hidden;">
-            <canvas id="pdfCanvas" style="display: block; margin: 0 auto;"></canvas>
+        <div
+            class="pdf-viewer"
+            style="
+                height: calc(100vh - 59px);
+                background: #f5f5f5;
+                overflow-y: auto;
+                overflow-x: hidden;
+            "
+        >
+            <canvas
+                id="pdfCanvas"
+                style="display: block; margin: 0 auto"
+            ></canvas>
         </div>
     </div>
 
-    <div id="errorContainer" class="callout alert" style="display: none;"></div>
+    <div id="errorContainer" class="callout alert" style="display: none"></div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script>
     // PDF.js worker beállítása
-    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js'
 
     function showError(msg) {
-        const err = document.getElementById('errorContainer');
-        err.style.display = 'block';
-        err.innerHTML = `<h5>Hiba</h5><p>${msg}</p>`;
+        const err = document.getElementById('errorContainer')
+        err.style.display = 'block'
+        err.innerHTML = `<h5>Hiba</h5><p>${msg}</p>`
     }
 
     // PDF URL frontmatterből
-    const pdfUrl = '{{pdfUrl}}';
-    let pdfDoc = null;
-    let pageNum = 1;
-    let pageRendering = false;
-    let pageNumPending = null;
+    const pdfUrl = '{{pdfUrl}}'
+    let pdfDoc = null
+    let pageNum = 1
+    let pageRendering = false
+    let pageNumPending = null
 
     // aktuális zoom skála (manuális módnál használjuk)
-    let scale = 1;
+    let scale = 1
 
     // fit width mód: ha true, mindig a konténer szélességéhez igazítjuk
-    let isFitWidth = true;
+    let isFitWidth = true
 
-    const canvas = document.getElementById('pdfCanvas');
-    const ctx = canvas.getContext('2d');
-    const viewer = document.querySelector('.pdf-viewer');
+    const canvas = document.getElementById('pdfCanvas')
+    const ctx = canvas.getContext('2d')
+    const viewer = document.querySelector('.pdf-viewer')
 
     function renderPage(num) {
-        pageRendering = true;
+        pageRendering = true
 
         pdfDoc.getPage(num).then(function (page) {
             // Alap viewport scale=1-gyel (eredeti méret)
-            const unscaledViewport = page.getViewport({ scale: 1 });
+            const unscaledViewport = page.getViewport({ scale: 1 })
 
-            let usedScale = scale;
+            let usedScale = scale
 
             if (isFitWidth) {
                 // konténer szélesség
-                const viewerWidth = viewer.clientWidth;
+                const viewerWidth = viewer.clientWidth
                 // horizontális fit: skála = konténer szélessége / pdf oldal szélessége
-                usedScale = viewerWidth / unscaledViewport.width;
+                usedScale = viewerWidth / unscaledViewport.width
                 // frissítjük a globális scale-t is, hogy a zoom innen induljon
-                scale = usedScale;
+                scale = usedScale
             }
 
-            const viewport = page.getViewport({ scale: usedScale });
+            const viewport = page.getViewport({ scale: usedScale })
 
-            canvas.width = viewport.width;
-            canvas.height = viewport.height;
+            canvas.width = viewport.width
+            canvas.height = viewport.height
 
             const renderContext = {
                 canvasContext: ctx,
-                viewport: viewport
-            };
+                viewport: viewport,
+            }
 
-            const renderTask = page.render(renderContext);
+            const renderTask = page.render(renderContext)
 
             renderTask.promise.then(function () {
-                pageRendering = false;
+                pageRendering = false
 
                 if (pageNumPending !== null) {
-                    renderPage(pageNumPending);
-                    pageNumPending = null;
+                    renderPage(pageNumPending)
+                    pageNumPending = null
                 }
 
-                document.getElementById('pageNum').textContent = num;
-                document.getElementById('pageCount').textContent = pdfDoc.numPages;
-            });
-        });
+                document.getElementById('pageNum').textContent = num
+                document.getElementById('pageCount').textContent =
+                    pdfDoc.numPages
+            })
+        })
     }
 
     function queueRenderPage(num) {
         if (pageRendering) {
-            pageNumPending = num;
+            pageNumPending = num
         } else {
-            renderPage(num);
+            renderPage(num)
         }
     }
 
     function onPrevPage() {
-        if (pageNum <= 1) return;
-        pageNum--;
-        queueRenderPage(pageNum);
+        if (pageNum <= 1) return
+        pageNum--
+        queueRenderPage(pageNum)
     }
 
     function onNextPage() {
-        if (pageNum >= pdfDoc.numPages) return;
-        pageNum++;
-        queueRenderPage(pageNum);
+        if (pageNum >= pdfDoc.numPages) return
+        pageNum++
+        queueRenderPage(pageNum)
     }
 
     // Zoom +: kilépünk a fit width módból, manuális nagyítás
     function onZoomIn() {
-        isFitWidth = false;
-        scale *= 1.1;
-        queueRenderPage(pageNum);
+        isFitWidth = false
+        scale *= 1.1
+        queueRenderPage(pageNum)
     }
 
     // Zoom −: kilépünk a fit width módból, manuális kicsinyítés
     function onZoomOut() {
-        isFitWidth = false;
-        scale = Math.max(0.3, scale / 1.1);
-        queueRenderPage(pageNum);
+        isFitWidth = false
+        scale = Math.max(0.3, scale / 1.1)
+        queueRenderPage(pageNum)
     }
 
     // "Laphoz igazít" gomb: mostantól vízszintes fit width mód
     function onFitToPage() {
-        if (!pdfDoc) return;
-        isFitWidth = true;
-        queueRenderPage(pageNum);
+        if (!pdfDoc) return
+        isFitWidth = true
+        queueRenderPage(pageNum)
     }
 
     // Ablakméret változáskor: ha fit width módban vagyunk, újrarenderelünk
     function onWindowResize() {
-        if (!pdfDoc) return;
+        if (!pdfDoc) return
         if (isFitWidth) {
-            queueRenderPage(pageNum);
+            queueRenderPage(pageNum)
         }
     }
 
     async function init() {
         try {
             if (!pdfUrl) {
-                showError('Nem található a PDF URL a frontmatterben.');
-                return;
+                showError('Nem található a PDF URL a frontmatterben.')
+                return
             }
 
-            const loadingTask = pdfjsLib.getDocument(pdfUrl);
-            pdfDoc = await loadingTask.promise;
+            const loadingTask = pdfjsLib.getDocument(pdfUrl)
+            pdfDoc = await loadingTask.promise
 
             // Zoom gombok bekötése
-            document.getElementById('zoomIn').addEventListener('click', onZoomIn);
-            document.getElementById('zoomOut').addEventListener('click', onZoomOut);
-            document.getElementById('fitToPage').addEventListener('click', onFitToPage);
+            document
+                .getElementById('zoomIn')
+                .addEventListener('click', onZoomIn)
+            document
+                .getElementById('zoomOut')
+                .addEventListener('click', onZoomOut)
+            document
+                .getElementById('fitToPage')
+                .addEventListener('click', onFitToPage)
 
             // Oldal navigáció az oldalszám alapján
-            const pageNavButtons = document.getElementById('pageNavButtons');
-            const pageInfo = document.getElementById('pageInfo');
+            const pageNavButtons = document.getElementById('pageNavButtons')
+            const pageInfo = document.getElementById('pageInfo')
 
             if (pdfDoc.numPages <= 1) {
                 // Egy oldalas PDF - oldal navigáció elrejtése
-                pageNavButtons.style.display = 'none';
-                pageInfo.style.display = 'none';
+                pageNavButtons.style.display = 'none'
+                pageInfo.style.display = 'none'
             } else {
                 // Több oldalas PDF
-                pageNavButtons.style.display = 'block';
-                pageInfo.style.display = 'block';
-                document.getElementById('pageCount').textContent = pdfDoc.numPages;
+                pageNavButtons.style.display = 'block'
+                pageInfo.style.display = 'block'
+                document.getElementById('pageCount').textContent =
+                    pdfDoc.numPages
 
                 // Oldal navigáció bekötése
-                document.getElementById('prevPage').addEventListener('click', onPrevPage);
-                document.getElementById('nextPage').addEventListener('click', onNextPage);
+                document
+                    .getElementById('prevPage')
+                    .addEventListener('click', onPrevPage)
+                document
+                    .getElementById('nextPage')
+                    .addEventListener('click', onNextPage)
             }
 
             // Ablakméret figyelése (fit width újraszámolás)
-            window.addEventListener('resize', onWindowResize);
+            window.addEventListener('resize', onWindowResize)
 
             // Első oldal renderelése (alapból fit width módban)
-            pageNum = 1;
-            isFitWidth = true;
-            scale = 1;
-            renderPage(pageNum);
-
+            pageNum = 1
+            isFitWidth = true
+            scale = 1
+            renderPage(pageNum)
         } catch (err) {
-            showError(`Nem sikerült betölteni a PDF-et: ${err.message}`);
+            showError(`Nem sikerült betölteni a PDF-et: ${err.message}`)
         }
     }
 
     // Indítás
-    init();
+    init()
 </script>
