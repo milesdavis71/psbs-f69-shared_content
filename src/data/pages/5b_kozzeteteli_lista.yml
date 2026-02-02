@@ -87,3 +87,43 @@
       page: 'kompetenciameres_eredmenyei'
       url: kompetenciameres_eredmenyei
       folder: kozzeteteli_lista
+    - title: Tanulók le- és kimaradásával, évfolyamismétlésével kapcsolatos adatok
+      page: 'evismetles'
+      url: evismetles
+      folder: kozzeteteli_lista
+    - title: Tanórán kívüli foglalkozások igénybevételének lehetősége
+      page: 'tanoran_kivuli_foglalkozasok_igenybevetelenek_lehetosege_root' # Ez a 2. szintű szülő
+      url: tanoran_kivuli_foglalkozasok_igenybevetelenek_lehetosege
+      items: # <--- Itt kezdődik a HARMADIK mélység (al-almenü)
+        - title: Egyéni fejlesztés
+          page: 'egyeni_fejlesztes'
+          url: egyeni_fejlesztes
+          folder: kozzeteteli_lista
+        - title: Szakkörök, tehetséggondozás
+          page: 'szakkorok_tehetseggondozas'
+          url: 'szakkorok_tehetseggondozas'
+          folder: kozzeteteli_lista
+        - title: Szaktárgyi_korrepetálások
+          page: 'szaktargyi_korrepetalasok'
+          url: 'szaktargyi_korrepetalasok'
+          folder: kozzeteteli_lista
+    - title: Hétvégi házi feladatok, dolgozatok szabályai
+      page: 'hetvegi_hazi_feladatok_dolgozatok_szabalyai'
+      url: hetvegi_hazi_feladatok_dolgozatok_szabalyai
+      folder: kozzeteteli_lista
+    - title: Tanulmányok alatti vizsgák követelményei
+      page: 'tanulmanyok_alatti_vizsgak_kovetelmenyei_root' # Ez a 2. szintű szülő
+      url: tanulmanyok_alatti_vizsgak_kovetelmenyei
+      items: # <--- Itt kezdődik a HARMADIK mélység (al-almenü)
+        - title: Osztályozó vizsgák követelményei
+          page: 'osztalyozo_vizsgak_kovetelmenyei'
+          url: osztalyozo_vizsgak_kovetelmenyei
+          folder: kozzeteteli_lista
+        - title: A tanulmányok alatti vizsgák tervezett rendje
+          page: 'tanulmanyok_alatti_vizsgak_tervezett_rendje'
+          url: tanulmanyok_alatti_vizsgak_tervezett_rendje
+          folder: kozzeteteli_lista
+        - title: Osztályozó vizsgák értékelési rendje
+          page: 'osztályozo_vizsgak_ertekelesi_rendje'
+          url: osztályozo_vizsgak_ertekelesi_rendje
+          folder: kozzeteteli_lista

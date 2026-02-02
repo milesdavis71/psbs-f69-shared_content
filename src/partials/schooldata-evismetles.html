@@ -1,0 +1,16 @@
+<div class="grid-x grid-margin-x">
+    <div class="cell auto"></div>
+    <div class="cell small-9 large-9">
+        <table class="hover">
+            <tbody>
+                {{#schoolData schoolKey "evismetles"}} {{#each this}}
+                <tr>
+                    <td>{{year}} tanév</td>
+                    <td>{{num}}</td>
+                </tr>
+                {{/each}} {{/schoolData}}
+            </tbody>
+        </table>
+    </div>
+    <div class="cell auto"></div>
+</div>
