@@ -125,5 +125,9 @@
           folder: kozzeteteli_lista
         - title: Osztályozó vizsgák értékelési rendje
           page: 'osztalyozo_vizsgak_ertekelesi_rendje'
-          url: osztályozo_vizsgak_ertekelesi_rendje
+          url: osztalyozo_vizsgak_ertekelesi_rendje
           folder: kozzeteteli_lista
+    - title: Osztályok száma és tanulók létszáma
+      page: 'osztalyok_szama_es_tanulok_letszama'
+      url: osztalyok_szama_es_tanulok_letszama
+      folder: kozzeteteli_lista
