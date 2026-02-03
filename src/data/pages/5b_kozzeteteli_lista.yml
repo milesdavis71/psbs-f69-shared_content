@@ -124,6 +124,6 @@
           url: tanulmanyok_alatti_vizsgak_tervezett_rendje
           folder: kozzeteteli_lista
         - title: Osztályozó vizsgák értékelési rendje
-          page: 'osztályozo_vizsgak_ertekelesi_rendje'
+          page: 'osztalyozo_vizsgak_ertekelesi_rendje'
           url: osztályozo_vizsgak_ertekelesi_rendje
           folder: kozzeteteli_lista
