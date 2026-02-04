@@ -32,8 +32,8 @@
       url: teritesi_dij
       folder: kozzeteteli_lista
     - title: Étkezési térítési díjak
-      page: 'etkezesi_teritesi_dijak'
-      url: etkezesi_teritesi_dijak
+      page: 'kozzetetel_etkezesi_teritesi_dijak'
+      url: kozzetetel_etkezesi_teritesi_dijak
       folder: kozzeteteli_lista
     - title: Fenntartói értékelés, nyilvános megállapításokat tartalmazó vizsgálatok
       page: 'nyilvanos_vizsgalat'
