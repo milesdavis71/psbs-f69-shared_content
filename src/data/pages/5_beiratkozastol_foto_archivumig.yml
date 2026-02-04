@@ -20,3 +20,8 @@
       page: 'beiratkozas_kretan_keresztul_utmutato' # Ez a 2. szintű szülő
       url: 'beiratkozas_kretan_keresztul_utmutato'
       folder: beiratkozas_felvetel
+- title: A tanév rendje
+  page: 'tanev_rendje_root'
+  url: 'tanev_rendje'
+  icon: 'calendar'
+  no-folder: true
