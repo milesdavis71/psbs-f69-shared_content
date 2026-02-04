@@ -1,0 +1,21 @@
+{{!-- 
+  Dynamic Breadcrumb Partial
+  Usage: {{> breadcrumb}}
+  Reads 'page' and 'dataFile' from frontmatter
+  Only Home is linked, intermediate pages are shown as text without links
+--}}
+<nav aria-label="You are here:" role="navigation">
+    <ul class="breadcrumbs">
+        {{#each (breadcrumbs)}}
+            <li {{#if disabled}}class="disabled"{{/if}}>
+                {{#if isHome}}
+                    <a href="{{url}}">{{title}}</a>
+                {{else if disabled}}
+                    <span class="show-for-sr">Current: </span>{{title}}
+                {{else}}
+                    {{title}}
+                {{/if}}
+            </li>
+        {{/each}}
+    </ul>
+</nav>
