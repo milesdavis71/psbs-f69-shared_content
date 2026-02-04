@@ -131,25 +131,3 @@
       page: 'osztalyok_szama_es_tanulok_letszama'
       url: osztalyok_szama_es_tanulok_letszama
       folder: kozzeteteli_lista
-- title: 'Beiratkozás, felvétel'
-  page: 'beiratkozas_root'
-  url: 'beiratkozas'
-  icon: 'pencil'
-  folder: beiratkozas_felvetel
-  items:
-    - title: 'Tájékoztató a beiratkozásról'
-      page: 'tajekoztato_a_beiratkozasrol' # Ez a 2. szintű szülő
-      url: 'tajekoztato_a_beiratkozasrol'
-      folder: beiratkozas_felvetel
-    - title: 'Beiratkozáskor leadandó nyomtatványok'
-      page: 'beiratkozaskor_leadando_nyomtatvanyok' # Ez a 2. szintű szülő
-      url: 'beiratkozaskor_leadando_nyomtatvanyok'
-      folder: beiratkozas_felvetel
-    - title: 'Engedélyezett osztályok, csoportok száma'
-      page: 'engedelyezett_osztalyok_es_csoportok_szama' # Ez a 2. szintű szülő
-      url: 'engedelyezett_osztalyok_es_csoportok_szama'
-      folder: beiratkozas_felvetel
-    - title: 'Beiratkozás KRÉTÁn keresztül – útmutató'
-      page: 'beiratkozas_kretan_keresztul_utmutato' # Ez a 2. szintű szülő
-      url: 'beiratkozas_kretan_keresztul_utmutato'
-      folder: beiratkozas_felvetel

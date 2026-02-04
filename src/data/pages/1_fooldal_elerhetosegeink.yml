@@ -1,3 +1,8 @@
+- title: Főoldal/Híreink
+  url: index
+  page: index
+  icon: home
+  noFolder: true
 - title: Elérhetőségeink
   url: elerhetosegeink
   icon: fa-map-marker-alt
