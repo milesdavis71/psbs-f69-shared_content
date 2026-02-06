@@ -1,0 +1,67 @@
+{{! Dinamikus táblázat partial - működő változat }} {{! Használat: {{>
+dynamic-table-working}} }} {{! Frontmatter-ben megadható: tableColumns: 2 vagy 3
+}} {{#schoolData schoolKey "dynamic_table_example"}} {{! A legegyszerűbb
+megoldás: külön partial-ok vagy inline logika }} {{! 1. Ellenőrizzük, hogy van-e
+tableColumns beállítás }} {{#if @root.tableColumns}} {{! 2. Egyszerű szám
+összehasonlítás - ha a tableColumns értéke 2 }} {{#if (isTwo
+@root.tableColumns)}} {{! 2 oszlopos táblázat - fejlécek YAML-ből }}
+<table class="hover">
+    <thead>
+        <tr>
+            {{#each tableHeaders.twoColumn}}
+            <th>{{name}}</th>
+            {{/each}}
+        </tr>
+    </thead>
+    <tbody>
+        {{#each tableData}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{description}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{else}} {{! 3. Ha a tableColumns értéke 3 }} {{#if (isThree
+@root.tableColumns)}} {{! 3 oszlopos táblázat - fejlécek YAML-ből }}
+<table class="hover">
+    <thead>
+        <tr>
+            {{#each tableHeaders.threeColumn}}
+            <th>{{name}}</th>
+            {{/each}}
+        </tr>
+    </thead>
+    <tbody>
+        {{#each tableData}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{description}}</td>
+            <td>{{category}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{else}} {{! 4. Hibás érték }}
+<p class="callout alert">
+    Hibás oszlopszám: {{@root.tableColumns}}. Csak 2 vagy 3 lehet.
+</p>
+{{/if}} {{/if}} {{else}} {{! 5. Alapértelmezett: 2 oszlop }}
+<table class="hover">
+    <thead>
+        <tr>
+            {{#each tableHeaders.twoColumn}}
+            <th>{{name}}</th>
+            {{/each}}
+        </tr>
+    </thead>
+    <tbody>
+        {{#each tableData}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{description}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{/if}} {{/schoolData}}

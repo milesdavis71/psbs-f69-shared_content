@@ -1,0 +1,22 @@
+# Dinamikus táblázat példa adatok
+# A táblázat fejlécei külön YAML struktúrában
+tableHeaders:
+  twoColumn:
+    - name: 'Név'
+      key: 'name'
+    - name: 'Leírás'
+      key: 'description'
+
+  threeColumn:
+    - name: 'tantárgy'
+      key: 'name'
+    - name: 'nap'
+      key: 'description'
+    - name: 'óra'
+      key: 'category'
+
+# Táblázat adatok
+tableData:
+  - name: 'Egyéni fejlesztés 1.'
+    description: 'Csütörtök'
+    category: '	6. óra'

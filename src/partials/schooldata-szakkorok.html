@@ -1,0 +1,23 @@
+{{#schoolData schoolKey "szakkorok"}} {{#each this}}
+<table class="hover">
+    <thead>
+        <tr>
+            <th class="text-center" colspan="3">{{ egyhaz }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="200">{{ name }}</td>
+            <td width="250">{{ job }}</td>
+            <td width="200">
+                {{#if this.tel1}}Telefonszám:
+                <a href="tel:{{ tel1 }}">{{ tel2 }}</a>
+                {{/if}}<br />
+                {{#if this.mail}}
+                <a href="mailto:{{ mail }}"> {{ mail }}</a>
+                {{/if}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+{{/each}} {{/schoolData}}

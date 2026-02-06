@@ -1,0 +1,34 @@
+# Dinamikus táblázat példa adatok
+# A táblázat fejlécei külön YAML struktúrában
+tableHeaders:
+  twoColumn:
+    - name: 'Név'
+      key: 'name'
+    - name: 'Leírás'
+      key: 'description'
+
+  threeColumn:
+    - name: 'Név'
+      key: 'name'
+    - name: 'Leírás'
+      key: 'description'
+    - name: 'Kategória'
+      key: 'category'
+
+# Táblázat adatok
+tableData:
+  - name: 'Első elem'
+    description: 'Az első elem leírása'
+    category: 'A kategória'
+
+  - name: 'Második elem'
+    description: 'A második elem leírása'
+    category: 'B kategória'
+
+  - name: 'Harmadik elem'
+    description: 'A harmadik elem leírása'
+    category: 'A kategória'
+
+  - name: 'Negyedik elem'
+    description: 'A negyedik elem leírása'
+    category: 'C kategória'

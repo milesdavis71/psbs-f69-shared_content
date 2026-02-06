@@ -1,0 +1,29 @@
+---
+layout: default
+title: Dinamikus táblázat példa - 3 oszlop
+page: dynamic_table_example_3col
+schoolKey: ps
+tableColumns: 2
+---
+
+{{> breadcrumb}} {{> title}}
+
+<h3>3 oszlopos táblázat példa</h3>
+<p>Frontmatter: tableColumns: 3</p>
+
+{{> dynamic-table-solution}}
+
+<hr />
+
+<h4>Megjegyzés:</h4>
+<p>
+    Ez az oldal ugyanazt a partial-t használja, mint a 2 oszlopos változat, de a
+    frontmatter-ben a <code>tableColumns: 3</code> érték áll.
+</p>
+
+<div class="callout success">
+    <p>
+        A táblázat automatikusan 3 oszlopos lett, mert a frontmatter-ben
+        <code>tableColumns: 3</code> érték van megadva.
+    </p>
+</div>

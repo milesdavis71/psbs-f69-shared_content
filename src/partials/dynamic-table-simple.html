@@ -1,0 +1,64 @@
+{{! Dinamikus táblázat partial - egyszerű változat }} {{! Használat: {{>
+dynamic-table-simple}} }} {{! Frontmatter-ben megadható: tableColumns: 2 vagy 3
+}} {{#schoolData schoolKey "dynamic_table_example"}} {{! A legegyszerűbb
+megoldás: külön partial-ok vagy inline logika }} {{! 1. Ellenőrizzük, hogy van-e
+tableColumns beállítás }} {{#if @root.tableColumns}} {{! 2. Ha a tableColumns
+értéke 2 }} {{#ifCond @root.tableColumns '==' 2}} {{! 2 oszlopos táblázat }}
+<table class="hover">
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Leírás</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each tableData}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{description}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{else}} {{! 3. Ha a tableColumns értéke 3 }} {{#ifCond @root.tableColumns '=='
+3}} {{! 3 oszlopos táblázat }}
+<table class="hover">
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Leírás</th>
+            <th>Kategória</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each tableData}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{description}}</td>
+            <td>{{category}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{else}} {{! 4. Hibás érték esetén }}
+<p class="callout alert">
+    Hibás oszlopszám: {{@root.tableColumns}}. Csak 2 vagy 3 lehet.
+</p>
+{{/ifCond}} {{/ifCond}} {{else}} {{! 5. Alapértelmezett: 2 oszlop }}
+<table class="hover">
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Leírás</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each tableData}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{description}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{/if}} {{/schoolData}}

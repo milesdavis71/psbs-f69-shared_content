@@ -1,0 +1,67 @@
+{{! Dinamikus táblázat partial }} {{! Használat: {{> dynamic-table}} }} {{!
+Frontmatter-ben megadható: tableColumns: 2 vagy 3 }} {{#schoolData schoolKey
+"dynamic_table_example"}} {{! Egyszerűbb megoldás: külön partial-ok használata
+vagy inline logika }} {{#if @root.tableColumns}} {{#if (is @root.tableColumns
+'===' 2)}} {{! 2 oszlopos táblázat }} {{#with tableHeaders.twoColumn as
+|headers|}}
+<table class="hover">
+    <thead>
+        <tr>
+            {{#each headers}}
+            <th>{{name}}</th>
+            {{/each}}
+        </tr>
+    </thead>
+    <tbody>
+        {{#each tableData}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{description}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{/with}} {{else}} {{#if (is @root.tableColumns '===' 3)}} {{! 3 oszlopos
+táblázat }} {{#with tableHeaders.threeColumn as |headers|}}
+<table class="hover">
+    <thead>
+        <tr>
+            {{#each headers}}
+            <th>{{name}}</th>
+            {{/each}}
+        </tr>
+    </thead>
+    <tbody>
+        {{#each tableData}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{description}}</td>
+            <td>{{category}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{/with}} {{else}}
+<p class="callout alert">
+    Hibás oszlopszám: {{@root.tableColumns}}. Csak 2 vagy 3 lehet.
+</p>
+{{/if}} {{/if}} {{else}} {{! Alapértelmezett: 2 oszlop }} {{#with
+tableHeaders.twoColumn as |headers|}}
+<table class="hover">
+    <thead>
+        <tr>
+            {{#each headers}}
+            <th>{{name}}</th>
+            {{/each}}
+        </tr>
+    </thead>
+    <tbody>
+        {{#each tableData}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{description}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{/with}} {{/if}} {{/schoolData}}
