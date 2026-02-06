@@ -1,54 +1,10 @@
 ---
 layout: default
 title: Egyéni fejlesztés
-page: dynamic_table_example
+page: egyeni_fejlesztes
 dataFile: 4p_kozzeteteli_lista
-sdhoolKey: ps
-tableColumns: 2
-
-
 ---
 
 {{> breadcrumb}}
 {{> title}}
-
-<h3>2 oszlopos táblázat példa</h3>
-<p>Frontmatter: tableColumns: 2</p>
-
-{{> dynamic-table-solution}}
-
-<hr />
-
-<h3>Ugyanaz az oldal, de 3 oszlopos táblázattal</h3>
-<p>
-    Megjegyzés: A tableColumns értékét módosítani kell a frontmatter-ben 3-ra a
-    3 oszlopos változathoz.
-</p>
-
-<div class="callout warning">
-    <p>
-        Ha 3 oszlopos táblázatot szeretnél látni, módosítsd a frontmatter-ben a
-        <code>tableColumns: 2</code> értéket <code>tableColumns: 3</code>-ra.
-    </p>
-</div>
-
-<h4>Használati útmutató:</h4>
-<ol>
-    <li>
-        Hozz létre egy YAML fájlt a <code>src/data/ps/</code> könyvtárban (pl.
-        <code>sajat_tablazat.yml</code>)
-    </li>
-    <li>
-        A YAML struktúra következzen a
-        <code>src/data/ps/dynamic_table_example.yml</code> mintáját
-    </li>
-    <li>A partial meghívása: <code>\{{> dynamic-table-solution}}</code></li>
-    <li>
-        Frontmatter-ben állítsd be a <code>tableColumns: 2</code> vagy
-        <code>tableColumns: 3</code> értéket
-    </li>
-    <li>
-        Frontmatter-ben állítsd be a <code>schoolKey: ps</code> vagy
-        <code>schoolKey: bs</code> értéket
-    </li>
-</ol>
+{{> md-ps-egyeni-fejlesztes}}

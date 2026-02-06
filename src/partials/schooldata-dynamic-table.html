@@ -1,15 +1,6 @@
-{{! Dinamikus táblázat partial - végső megoldás }}
-{{! Használat: {{> dynamic-table-solution}} }}
-{{! Frontmatter-ben megadható: tableColumns: 2 vagy 3 }}
-
 {{#schoolData schoolKey "egyeni_fejlesztes"}}
-{{! A legegyszerűbb megoldás: külön partial-ok vagy inline logika }}
-
-{{! Ellenőrizzük a tableColumns értékét }}
 {{#if @root.tableColumns}}
-  {{! Ha tableColumns = 2 (egyszerű string összehasonlítás) }}
   {{#equals @root.tableColumns 2}}
-    {{! 2 oszlopos táblázat - fejlécek YAML-ből }}
     <table class="hover">
         <thead>
             <tr>
@@ -28,9 +19,7 @@
         </tbody>
     </table>
   {{else}}
-    {{! Ha tableColumns = 3 }}
     {{#equals @root.tableColumns 3}}
-      {{! 3 oszlopos táblázat - fejlécek YAML-ből }}
       <table class="hover">
           <thead>
               <tr>
@@ -55,7 +44,6 @@
     {{/equals}}
   {{/equals}}
 {{else}}
-  {{! Alapértelmezett: 2 oszlop }}
   <table class="hover">
       <thead>
           <tr>
