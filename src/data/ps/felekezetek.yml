@@ -1,7 +1,7 @@
 - vallas: Katolikus felekezet
   mp4path: ../assets/img/common/kat-felekezet.mp4
-  pdfpath: /assets/pdfs/ps/bemutatkozas/katolikus_ps_leaflet.pdf
+  pdfpath: /assets/pdf/ps/bemutatkozas/katolikus_ps_leaflet.pdf
 - vallas: Református felekezet
-  pdfpath: /assets/pdfs/common/bemutatkozas/reformatus-leaflet.pdf
+  pdfpath: /assets/pdf/common/bemutatkozas/reformatus-leaflet.pdf
 - vallas: Baptista felekezet
-  pdfpath: /assets/pdfs/ps/bemutatkozas/baptista_ps_leaflet.pdf
+  pdfpath: /assets/pdf/ps/bemutatkozas/baptista_ps_leaflet.pdf

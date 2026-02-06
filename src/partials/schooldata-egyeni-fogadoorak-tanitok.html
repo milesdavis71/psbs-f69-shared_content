@@ -1,0 +1,16 @@
+<h5 class="text-center">Tanítók</h5>
+<table class="hover">
+    <thead>
+        <tr>
+            <td>Tanár neve</td>
+            <td>Időpont</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#schoolData schoolKey "egyeni_fogadoorak_tanitok"}} {{#each this}}
+            <td>{{this.tanar}}</td>
+            <td>{{this.nap}}</td>
+        </tr>
+        {{/each}} {{/schoolData}}
+    </tbody>
+</table>

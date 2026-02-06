@@ -5,23 +5,51 @@
   folder: beiratkozas_felvetel
   items:
     - title: 'Tájékoztató a beiratkozásról'
-      page: 'tajekoztato_a_beiratkozasrol' # Ez a 2. szintű szülő
+      page: 'tajekoztato_a_beiratkozasrol'
       url: 'tajekoztato_a_beiratkozasrol'
       folder: beiratkozas_felvetel
     - title: 'Beiratkozáskor leadandó nyomtatványok'
-      page: 'beiratk_leadando_nyomtatvanyok' # Ez a 2. szintű szülő
+      page: 'beiratk_leadando_nyomtatvanyok'
       url: 'beiratk_leadando_nyomtatvanyok'
       folder: beiratkozas_felvetel
     - title: 'Engedélyezett osztályok, csoportok száma'
-      page: 'engedelyezett_osztalyok_es_csoportok_szama' # Ez a 2. szintű szülő
+      page: 'engedelyezett_osztalyok_es_csoportok_szama'
       url: 'engedelyezett_osztalyok_es_csoportok_szama'
       folder: beiratkozas_felvetel
     - title: 'Beiratkozás KRÉTÁ-n keresztül – útmutató'
-      page: 'beiratkozas_kretan_keresztul_utmutato' # Ez a 2. szintű szülő
+      page: 'beiratkozas_kretan_keresztul_utmutato'
       url: 'beiratkozas_kretan_keresztul_utmutato'
       folder: beiratkozas_felvetel
 - title: A tanév rendje
-  page: 'tanev_rendje_root'
+  page: 'tanev_rendje'
   url: 'tanev_rendje'
-  icon: 'calendar'
+  icon: 'calendar-alt'
   no-folder: true
+- title: Osztályaink
+  page: 'osztalyaink'
+  url: 'osztalyaink'
+  icon: 'users-class'
+  no-folder: true
+- title: Órarend
+  page: 'orarend'
+  url: 'orarend'
+  icon: 'table'
+  no-folder: true
+- title: 'Szülői értekezletek, fogadóórák'
+  page: 'szuloi_ertekezletek_fogadoorak_root'
+  url: 'szuloi_ertekezletek_fogadoorak'
+  icon: 'users'
+  folder: szuloi_ertekezletek_fogadoorak
+  items:
+    - title: 'Szülői értekezletek '
+      page: 'szuloi_ertekezletek'
+      url: 'szuloi_ertekezletek'
+      folder: szuloi_ertekezletek_fogadoorak
+    - title: 'Fogadóórák'
+      page: 'fogadoorak'
+      url: 'fogadoorak'
+      folder: szuloi_ertekezletek_fogadoorak
+    - title: 'Egyéni fogadóórák'
+      page: 'egyeni_fogadoorak'
+      url: 'egyeni_fogadoorak'
+      folder: szuloi_ertekezletek_fogadoorak

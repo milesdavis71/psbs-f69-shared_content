@@ -1,0 +1,15 @@
+<table class="hover">
+    <thead>
+        <tr>
+            <td>Tanár neve</td>
+            <td>Időpont</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#schoolData schoolKey "egyeni_fogadoorak"}} {{#each this}}
+            <td>{{this.tanar}}</td>
+            <td>{{this.nap}}</td>
+        </tr>
+        {{/each}} {{/schoolData}}
+    </tbody>
+</table>

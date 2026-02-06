@@ -1,0 +1,26 @@
+{{#schoolData schoolKey "osztalyok"}}
+<ul
+    class="accordion"
+    data-accordion
+    data-deep-link="true"
+    data-update-history="true"
+    data-deep-link-smudge="true"
+    data-deep-link-smudge-delay="500"
+    id="deeplinked-accordion"
+>
+    {{#each this}}
+    <li class="accordion-item" data-accordion-item>
+        <a href="#{{class}}o" class="accordion-title text-center"
+            >{{class}}. osztály</a
+        >
+        <div class="accordion-content" data-tab-content id="{{class}}o">
+            <ol>
+                {{#each students}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ol>
+        </div>
+    </li>
+    {{/each}}
+</ul>
+{{/schoolData}}
