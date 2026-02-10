@@ -1,0 +1,9 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+alt+shift+o",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Sort Frontmatter - Current File",
+        "when": "editorTextFocus"
+    }
+]
