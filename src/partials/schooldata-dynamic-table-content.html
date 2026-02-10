@@ -1,0 +1,63 @@
+{{#if @root.tableColumns}}
+{{#equals @root.tableColumns 2}}
+    <table class="hover">
+        <thead>
+            <tr>
+                {{#each tableHeaders.twoColumn}}
+                <th>{{name}}</th>
+                {{/each}}
+            </tr>
+        </thead>
+        <tbody>
+            {{#each tableData}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{description}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+{{else}}
+{{#equals @root.tableColumns 3}}
+    <table class="hover">
+        <thead>
+            <tr>
+                {{#each tableHeaders.threeColumn}}
+                <th>{{name}}</th>
+                {{/each}}
+            </tr>
+        </thead>
+        <tbody>
+            {{#each tableData}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{description}}</td>
+                <td>{{category}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+{{else}}
+{{! Hibás érték }}
+    <p class="callout alert">
+        Hibás oszlopszám: {{@root.tableColumns}}. Csak 2 vagy 3 lehet.
+    </p>
+{{/equals}} {{/equals}} {{else}}
+<table class="hover">
+    <thead>
+        <tr>
+            {{#each tableHeaders.twoColumn}}
+            <th>{{name}}</th>
+            {{/each}}
+        </tr>
+    </thead>
+    <tbody>
+        {{#each tableData}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{description}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{/if}}

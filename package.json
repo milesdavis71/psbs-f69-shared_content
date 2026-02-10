@@ -38,7 +38,7 @@
         "gulp-sass": "^5.1.0",
         "gulp-sourcemaps": "^3.0.0",
         "gulp-terser": "^2.0.1",
-        "js-yaml": "^4.1.0",
+        "js-yaml": "^4.1.1",
         "js-yaml-js-types": "^1.0.0",
         "merge-stream": "^2.0.0",
         "panini": "latest",
@@ -51,6 +51,7 @@
         "vinyl-named": "^1.1.0",
         "webpack": "^5.52.1",
         "webpack-stream": "^7.0.0",
+        "yaml-front-matter": "^4.1.1",
         "yargs": "^17.1.1"
     },
     "repository": {

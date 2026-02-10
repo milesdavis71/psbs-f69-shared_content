@@ -1,4 +1,12 @@
 {
     "IDX.aI.enableInlineCompletion": true,
-    "IDX.aI.enableCodebaseIndexing": true
+    "IDX.aI.enableCodebaseIndexing": true,
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": ".**pages.**html",
+                "cmd": "node \"${workspaceFolder}/sort-fm.js\" \"${file}\""
+            }
+        ]
+    }
 }

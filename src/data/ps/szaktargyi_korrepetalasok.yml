@@ -1,0 +1,46 @@
+# Dinamikus táblázat példa adatok
+# A táblázat fejlécei külön YAML struktúrában
+tableHeaders:
+  twoColumn:
+    - name: 'Név'
+      key: 'name'
+    - name: 'Leírás'
+      key: 'description'
+
+  threeColumn:
+    - name: 'Szakkör neve'
+      key: 'name'
+    - name: 'osztály'
+      key: 'description'
+    - name: 'Időpont'
+      key: 'category'
+
+# Táblázat adatok
+tableData:
+  - name: 'korrepetálás 1'
+    description: 'hétfő'
+    category: '4. óra'
+  - name: 'korrepetálás 2'
+    description: 'péntek'
+    category: '4. óra'
+  - name: 'korrepetálás 3'
+    description: 'péntek'
+    category: '4. óra'
+  - name: 'korrepetálás 4'
+    description: 'kedd'
+    category: '4. óra'
+  - name: 'korrepetálás 5'
+    description: 'szerda'
+    category: '5. óra'
+  - name: 'korrepetálás 6'
+    description: 'kedd'
+    category: '5. óra'
+  - name: 'korrepetálás 7'
+    description: 'hétfő'
+    category: '2. óra'
+  - name: 'korrepetálás 8'
+    description: 'szerda'
+    category: '6. óra'
+  - name: 'korrepetálás 9'
+    description: 'csütörtök'
+    category: '7. óra'

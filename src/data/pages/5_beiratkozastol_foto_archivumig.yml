@@ -53,3 +53,21 @@
       page: 'egyeni_fogadoorak'
       url: 'egyeni_fogadoorak'
       folder: szuloi_ertekezletek_fogadoorak
+- title: 'Tanórán kívüli foglalkozások'
+  page: 'tanoran_kivuli_foglalkozasok_root'
+  url: 'tanoran_kivuli_foglalkozasok'
+  icon: 'paper-plane'
+  folder: tanoran_kivuli_foglalkozasok
+  items:
+    - title: 'Egyéni fejlesztés'
+      page: 'tan_kiv_fogl_egyeni_fejlesztes'
+      url: 'tan_kiv_fogl_egyeni_fejlesztes'
+      folder: tanoran_kivuli_foglalkozasok
+    - title: 'Szakkörök, tehetséggondozás'
+      page: 'tan_kiv_fogl_szakkorok'
+      url: 'tan_kiv_fogl_szakkorok'
+      folder: tanoran_kivuli_foglalkozasok
+    - title: 'Szaktargyi korrepetálások'
+      page: 'tan_kiv_fogl_szaktargyi_korrepetalasok'
+      url: 'tan_kiv_fogl_szaktargyi_korrepetalasok'
+      folder: tanoran_kivuli_foglalkozasok
