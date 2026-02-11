@@ -1,0 +1,38 @@
+{{!-- cards tömb kikeresése a data fájlból --}} {{#each (lookup (lookup @root
+data) "cards")}} {{#if @first}}
+<div
+    class="grid-x grid-margin-x small-up-1 medium-up-3 large-up-4"
+    data-equalizer
+    data-equalize-on="medium"
+>
+    {{/if}}
+
+    <div class="cell" style="margin-bottom: 0.5em">
+        <div class="card" data-equalizer-watch>
+            <a
+                href="/galeriak/{{../year}}/{{slug}}.html"
+                aria-label="{{title}}"
+            >
+                <img
+                    src="/assets/img/{{../schoolfoldername}}/galeriak/{{../year}}/{{slug}}/thumb/01_thumb.jpg"
+                    alt="{{title}}"
+                    loading="lazy"
+                />
+            </a>
+            <div class="card-section">
+                <p
+                    class="text-center"
+                    style="margin-bottom: 0.25rem; line-height: 1.25rem"
+                >
+                    <a href="/galeriak/{{../year}}/{{slug}}.html"> {{title}}</a>
+                </p>
+                {{#if date}}
+                <p class="text-center">{{date}}</p>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+
+    {{#if @last}}
+</div>
+{{/if}} {{/each}}

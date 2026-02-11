@@ -1,0 +1,9 @@
+- title: Fotó archívumok
+  page: 'galeriak_root'
+  url: 'galeriak'
+  icon: camera
+  items:
+    - title: '2025_26'
+      page: 'fooldal'
+      url: 'fooldal'
+      folder: 'galeriak/2025_26'
