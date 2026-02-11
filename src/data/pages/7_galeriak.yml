@@ -6,4 +6,6 @@
     - title: '2025_26'
       page: 'fooldal'
       url: 'fooldal'
-      folder: 'galeriak/2025_26'
+      folder: galeriak/2025_26
+    - page: '2025_09_01_tanevnyito'
+    - url: '2025_09_01_tanevnyito'
