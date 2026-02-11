@@ -1,0 +1,41 @@
+- title: Versenyeredmények
+  page: 'versenyeredmenyek_root'
+  url: 'versenyeredmenyek'
+  icon: award
+  items:
+    - title: '2022_23'
+      page: '2022_23'
+      url: '2022_23'
+      folder: versenyeredmenyek
+    - title: '2021_22'
+      page: '2021_22'
+      url: '2021_22'
+      folder: versenyeredmenyek
+    - title: '2020_21'
+      page: '2020_21'
+      url: '2020_21'
+      folder: versenyeredmenyek
+    - title: '2019_20'
+      page: '2019_20'
+      url: '2019_20'
+      folder: versenyeredmenyek
+    - title: '2018_19'
+      page: '2018_19'
+      url: '2018_19'
+      folder: versenyeredmenyek
+    - title: '2017_18'
+      page: '2017_18'
+      url: '2017_18'
+      folder: versenyeredmenyek
+    - title: '2016_17'
+      page: '2016_17'
+      url: '2016_17'
+      folder: versenyeredmenyek
+    - title: '2015_16'
+      page: '2015_16'
+      url: '2015_16'
+      folder: versenyeredmenyek
+    - title: '2014_15'
+      page: '2014_15'
+      url: '2014_15'
+      folder: versenyeredmenyek
