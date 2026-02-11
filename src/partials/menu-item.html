@@ -1,4 +1,4 @@
-<li class="{{#ifpage page}}current is-active{{/ifpage}} {{#if noColor}}no-color-change{{/if}}" 
+<li class="{{#ifpage page}}current is-active{{/ifpage}} {{#if childPages}}{{#ifpageInList childPages}}current is-active{{/ifpageInList}}{{/if}} {{#if noColor}}no-color-change{{/if}}" 
     {{#if items}}data-accordion-item{{/if}}>
     
     {{#if items}}
@@ -7,7 +7,7 @@
            {{#if external}}target="_blank" rel="noopener noreferrer"{{/if}}>
             {{#if icon}}<i class="fas fa-{{icon}}"></i> {{/if}}{{title}}
         </a>
-        <ul class="menu vertical nested {{#ifpage page}}is-active{{/ifpage}}" data-submenu>
+        <ul class="menu vertical nested {{#ifpage page}}is-active{{/ifpage}} {{#if childPages}}{{#ifpageInList childPages}}is-active{{/ifpageInList}}{{/if}}" data-submenu>
             {{#each items}}
                 {{!-- Rekurzív hívás: önmagát hívja meg az újabb szintekhez --}}
                 {{> menu-item this}}
