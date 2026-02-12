@@ -1,0 +1,111 @@
+#!/bin/bash
+VERSION='1.0.0-MODIFIED'
+
+# define me
+me=$(basename "$0")
+
+# check if arrays are supported
+metest[0]='test' || { echo >&2 "$me requires a bash that supports arrays. Aborting."; exit 2; }
+
+# check if (ImageMagick) convert is installed
+command -v convert >/dev/null 2>&1 || { echo >&2 "$me requires ImageMagick's \"convert\" but it's not installed. Aborting."; exit 2; }
+
+#########################################################################
+# CUSTOMIZATION AREA
+#########################################################################
+
+# formats to generate, array positions must match!
+# folder names
+F_NAME=("thumb" "full")
+# options for ImageMagick convert
+F_CONV=(
+  # Thumbnails: 265px width
+  '-coalesce -auto-orient -resize 265> -quality 75'
+  # Full size: 1500px width
+  '-coalesce -auto-orient -resize 1500> -quality 75'
+)
+# List of file types to convert into web-displayable formats:
+F_CHANGETYPE=(
+  'tif,jpg'   # convert tif to jpg (smaller & browsers can display it)
+  'tiff,jpg'  # ditto
+  'mpo,jpg'   # .mpo (a 3D image format) are actually 2 JPEGs in one file
+  'jpeg,jpg'  # jpeg to jpg, for purely aesthetical reasons
+)
+
+#########################################################################
+# The actual conversion stuff
+#########################################################################
+
+echo "$me v$VERSION …"
+
+# create folders if they don’t yet exist
+for f in ${F_NAME[@]}; do
+  if [[ ! -d "${f}" ]]; then
+    mkdir "${f}"
+  fi
+done
+
+# handle single file
+handlefile() {
+  i=$(basename "$1") # clean out leading "./"
+  echo "Processing \"${i}\" … "
+
+  # care for the (rare) cases with UPPERCASE file extension:
+  # go and rename to lowercase extension.
+  if [[ "$i" = *.* ]]; then
+    ib="${i%.*}"  # get basename
+    ix="${i##*.}" # get extension
+    ixl="${ix,,}" # make lowercase (requires recent bash)
+    if [[ "$ix" != "$ixl" ]]; then
+      mv -- "$i" "$ib.$ixl"
+      i="$ib.$ixl"  # modify "$i" for script below
+    fi
+  fi
+
+  # Go convert into each desired image format (separate folders).
+  f=0
+  while [ "x${F_NAME[f]}" != "x" ]; do
+
+    echo -n "  - ${F_NAME[f]}: "
+
+    F_FEXT="${i##*.}" # extension only
+    F_FEXT="${F_FEXT,,}"  # make lowercase
+    # see if we need to convert to a different type (i.e., tiff → jpg)
+    # if so, change extension
+    for ct in "${F_CHANGETYPE[@]}"; do
+      tfrom=${ct%%,*}
+      tto=${ct##*,}
+      if [ "$tfrom" = "${F_FEXT}" ]; then
+        F_FEXT="$tto"
+      fi
+    done
+    
+    # Construct the new filename
+    F_FNAME_OUT="${i%.*}_${F_NAME[f]}.${F_FEXT}"
+
+    if [ ! -s "${F_NAME[f]}/${F_FNAME_OUT}" ]; then
+      convert "$i" ${F_CONV[f]} "${F_NAME[f]}/${F_FNAME_OUT}" 2> /dev/null
+      echo "created."
+    else
+      echo "already exists. Skipped."
+    fi
+
+    f=$(( $f + 1 ))
+  done
+  echo
+}
+
+
+# for each image found (in this folder, NOT in subfolders!), generate some code
+# We need this complicated construct for files containing special characters
+# like whitespace and/or newlines.
+# And we need a "sort" that supports the "-z" option to sort zero-terminated strings.
+#
+while IFS= read -r -d '' i; do
+  handlefile "$i"
+done < <(find . -maxdepth 1 \( -iname '*.jp*g' -o -iname '*.png' \
+  -o -iname '*.gif' -o -iname '*.mpo' -o -iname '*.tif' -o -iname '*.tiff' \) \
+  -type f -print0 | sort -z)
+
+echo "All done."
+exit 0

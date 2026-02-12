@@ -1,0 +1,116 @@
+cards:
+  - slug: '2025_09_01_tanevnyito'
+    title: 'Tanévnyitó ünnepség'
+    date: '2025. 09. 01.'
+
+  - slug: '2025_09_16_szakkoreink_1'
+    title: 'Szakköreink 1.'
+    date: '2025. 09. 16.'
+
+  - slug: '2025_09_22_szakkoreink_2'
+    title: 'Szakköreink 2.'
+    date: '2025. 09. 22.'
+
+  - slug: '2025_09_24_szakkoreink_3'
+    title: 'Szakköreink 3.'
+    date: '2025. 09. 24.'
+
+  - slug: '2025_09_26_szakkoreink_4'
+    title: 'Szakköreink 4.'
+    date: '2025. 09. 26.'
+
+  - slug: '2025_09_30_szakkoreink_5'
+    title: 'Szakköreink 5.'
+    date: '2025. 09. 30.'
+
+  - slug: '2025_10_01_magyar_nepmese_napja'
+    title: 'Magyar népmese napja'
+    date: '2025. 10. 01.'
+
+  - slug: '2025_10_02_szent_mihaly-napi_lepegeto'
+    title: 'Szent Mihály-napi lépegető'
+    date: '2025. 10. 02.'
+
+  - slug: '2025_10_02_varazslatos_matematika_kiallitason'
+    title: 'A Varázslatos matematika kiállításon'
+    date: '2025. 10. 02.'
+
+  - slug: '2025_10_08_allatok_vilagnapja'
+    title: 'Álllatok világnapja'
+    date: '2025. 10. 03.'
+
+  - slug: '2025_10_09_magyar_nepi_jatek_napja'
+    title: 'Magyar népi játék napja'
+    date: '2025. 10. 09.'
+
+  - slug: '2025_10_09_szakkoreink_6'
+    title: 'Szakköreink 6'
+    date: '2025. 10. 09.'
+
+  - slug: '2025_10_14_rendhagyo_testneveles_ora'
+    title: 'Rendhagyó testnevelés óra'
+    date: '2025. 10. 14.'
+
+  - slug: '2025_10_18_palyaorientacios_nap'
+    title: 'Pályaorientációs nap'
+    date: '2025. 10. 18.'
+
+  - slug: '2025_11_14_rendhagyo_magyarora'
+    title: 'Rendhagyó magyar óra'
+    date: '2025. 11. 14.'
+
+  - slug: '2025_11_17_marton_nap'
+    title: 'Márton nap'
+    date: '2025. 11. 17.'
+
+  - slug: '2025_11_18_kozos_tanulasi_program'
+    title: 'Közös tanulási program'
+    date: '2025. 11. 18.'
+
+  - slug: '2025_11_26_versenyeredmenyek_1'
+    title: 'Versenyeredmények 1'
+    date: '2025. 11. 26.'
+
+  - slug: '2025_11_28_8_oszt_a_torvenyszeken'
+    title: '8. osztály a törvényszéken'
+    date: '2025. 11. 28.'
+
+  - slug: '2025_11_28_versenyeredmenyek_2'
+    title: 'Versenyeredmények 2'
+    date: '2025. 11. 28.'
+
+  - slug: '2025_12_03_kezmuves szakkor'
+    title: 'Kézműves szakkör'
+    date: '2025. 12. 03.'
+
+  - slug: '2025_12_05_versenyeredmenyek_3'
+    title: 'Versenyeredmények 3'
+    date: '2025. 12. 05.'
+
+  - slug: '2025_12_09_versenyeredmenyek_4'
+    title: 'Versenyeredmények 4'
+    date: '2025. 12. 09.'
+
+  - slug: '2025_12_10_betlehem_kiallítas'
+    title: 'Betlehem kiállítás'
+    date: '2025. 12. 10.'
+
+  - slug: '2025_12_11_iskolai_matematika_verseny'
+    title: 'Iskolai matematika verseny'
+    date: '2025. 12. 11.'
+
+  - slug: '2025_12_15_adventi_keszulodes'
+    title: 'Adventi készülődés'
+    date: '2025. 12. 15.'
+
+  - slug: '2025_12_18_agora_mikulas_kakao_bar'
+    title: 'Agora Mikulás kakaóbár'
+    date: '2025. 12. 18.'
+
+  - slug: '2025_12_19_karacsonyi_musor'
+    title: 'Karácsonyi műsor'
+    date: '2025. 12. 19.'
+
+  - slug: '2026_01_09_teli_varazslat'
+    title: 'Téli varázslat'
+    date: '2026. 01. 09.'
