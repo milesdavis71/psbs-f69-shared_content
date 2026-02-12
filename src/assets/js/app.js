@@ -81,18 +81,18 @@ $(document).ready(function () {
     }
 
     function forceOpenMenu() {
-        // Prefer template-marked active item, but fall back to URL matching.
-        // This is important for gallery pages where "page" frontmatter is not always set.
+        const currentPath = normalizePath(window.location.pathname)
+
+        // 1. Keressük meg az aktív menüelemet
         var $activeItem = $('.accordion-menu li.current').first()
         if (!$activeItem.length) {
             $activeItem = findActiveMenuItemByUrl()
         }
 
         if ($activeItem.length) {
-            // Ensure the active item is marked (useful for URL-based fallback)
             $activeItem.addClass('current is-active')
 
-            // Open all ancestor accordion items (and itself if it has a submenu)
+            // Nyissuk ki az összes szülő accordiont
             $activeItem
                 .parents('li')
                 .addBack()
@@ -101,22 +101,27 @@ $(document).ready(function () {
                 })
         }
 
-        // Special rule: "Fotó archívumok" dropdown should stay open on any gallery page.
-        // We detect gallery pages by URL path and open the menu item that points to /galeriak.html.
-        const currentPath = normalizePath(window.location.pathname)
-        if (currentPath.startsWith('/galeriak/')) {
-            const $fotoArchivLi = $('.accordion-menu a[href]')
-                .filter(function () {
-                    const href = $(this).attr('href') || ''
-                    return href.endsWith('galeriak.html')
-                })
-                .first()
-                .closest('li')
+        // 2. URL alapú automatikus accordion nyitás (folder alapján)
+        // Pl. ha az URL /bemutatkozas/tanaraink.html, nyissa ki a "Bemutatkozás" accordiont
+        $('.accordion-menu li[data-accordion-item]').each(function () {
+            const $parentLi = $(this)
+            const $link = $parentLi.children('a.accordion-title').first()
 
-            if ($fotoArchivLi.length) {
-                openAccordionLi($fotoArchivLi)
+            if ($link.length) {
+                const href = $link.attr('href') || ''
+
+                // Kinyerjük a folder részt az URL-ből
+                const match = href.match(/\/([^\/]+)\.html$/)
+                if (match) {
+                    const folderName = match[1]
+
+                    // Ha az aktuális URL tartalmazza ezt a foldert, nyissuk ki
+                    if (currentPath.includes('/' + folderName + '/')) {
+                        openAccordionLi($parentLi)
+                    }
+                }
             }
-        }
+        })
     }
 
     // 1. Futtatás azonnal betöltéskor
@@ -127,6 +132,17 @@ $(document).ready(function () {
         forceOpenMenu()
     })
 
-    // 3. Biztonsági tartalék 300ms után (amikor az összes Panini és Foundation script lefutott)
+    // 3. Biztonsági tartalék több késleltetéssel
+    setTimeout(forceOpenMenu, 100)
     setTimeout(forceOpenMenu, 300)
+    setTimeout(forceOpenMenu, 500)
+    setTimeout(forceOpenMenu, 1000)
+
+    // 4. Accordion esemény után is nyissuk meg
+    $('.accordion-menu').on(
+        'down.zf.accordionMenu up.zf.accordionMenu',
+        function () {
+            setTimeout(forceOpenMenu, 50)
+        }
+    )
 })

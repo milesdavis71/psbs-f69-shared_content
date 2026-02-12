@@ -3,7 +3,6 @@
   url: 'bemutatkozas'
   folder: 'bemutatkozas'
   icon: 'chalkboard-teacher'
-  # Az active_pages lista törölve, a JS automatikusan megoldja!
   items:
     - title: Bemutatkozás
       page: 'bemutatkozas'
