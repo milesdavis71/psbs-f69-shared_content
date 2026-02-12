@@ -15,28 +15,107 @@ $(document).foundation()
 
 // Custom JS can go here
 $(document).ready(function () {
-    function forceOpenMenu() {
-        // Keressük az aktív pontot (.current)
-        var $activeItem = $('.accordion-menu li.current')
+    function normalizePath(path) {
+        if (!path) return ''
 
-        if ($activeItem.length) {
-            // Végigmegyünk az összes szülőn felfelé (3. szint -> 2. szint -> 1. szint)
-            $activeItem.parents('li').each(function () {
-                var $li = $(this)
-                var $ul = $li.children('ul')
+        // Remove query/hash, normalize slashes, and trim trailing slash
+        let p = String(path).split(/[?#]/)[0]
+        p = p.replace(/\\/g, '/')
 
-                // Ha van almenüje, kényszerítjük a nyitást
-                if ($ul.length) {
-                    $li.addClass('is-active')
-                    $li.attr('aria-expanded', 'true')
+        // Treat "/index.html" as "/"
+        p = p.replace(/\/index\.html$/i, '/')
 
-                    // Kényszerített láthatóság inline stílussal a JS animációk ellen
-                    $ul.addClass('is-active').attr(
-                        'style',
-                        'display: block !important; opacity: 1 !important; visibility: visible !important;'
+        // Trim trailing slash except root
+        if (p.length > 1) p = p.replace(/\/$/, '')
+
+        return p
+    }
+
+    function findActiveMenuItemByUrl() {
+        const currentPath = normalizePath(window.location.pathname)
+        if (!currentPath) return $()
+
+        const $activeLink = $('.accordion-menu a[href]')
+            .filter(function () {
+                const href = $(this).attr('href')
+                if (!href) return false
+
+                // Ignore external/anchor links
+                if (
+                    href.startsWith('http://') ||
+                    href.startsWith('https://') ||
+                    href.startsWith('#') ||
+                    href.startsWith('mailto:')
+                ) {
+                    return false
+                }
+
+                try {
+                    const linkPath = normalizePath(
+                        new URL(href, window.location.origin).pathname
                     )
+                    return linkPath === currentPath
+                } catch (e) {
+                    return false
                 }
             })
+            .first()
+
+        return $activeLink.length ? $activeLink.closest('li') : $()
+    }
+
+    function openAccordionLi($li) {
+        const $ul = $li.children('ul')
+
+        // Only accordion items have nested <ul>
+        if ($ul.length) {
+            $li.addClass('is-active')
+            $li.attr('aria-expanded', 'true')
+
+            // Force visibility against Foundation animation states
+            $ul.addClass('is-active').attr(
+                'style',
+                'display: block !important; opacity: 1 !important; visibility: visible !important;'
+            )
+        }
+    }
+
+    function forceOpenMenu() {
+        // Prefer template-marked active item, but fall back to URL matching.
+        // This is important for gallery pages where "page" frontmatter is not always set.
+        var $activeItem = $('.accordion-menu li.current').first()
+        if (!$activeItem.length) {
+            $activeItem = findActiveMenuItemByUrl()
+        }
+
+        if ($activeItem.length) {
+            // Ensure the active item is marked (useful for URL-based fallback)
+            $activeItem.addClass('current is-active')
+
+            // Open all ancestor accordion items (and itself if it has a submenu)
+            $activeItem
+                .parents('li')
+                .addBack()
+                .each(function () {
+                    openAccordionLi($(this))
+                })
+        }
+
+        // Special rule: "Fotó archívumok" dropdown should stay open on any gallery page.
+        // We detect gallery pages by URL path and open the menu item that points to /galeriak.html.
+        const currentPath = normalizePath(window.location.pathname)
+        if (currentPath.startsWith('/galeriak/')) {
+            const $fotoArchivLi = $('.accordion-menu a[href]')
+                .filter(function () {
+                    const href = $(this).attr('href') || ''
+                    return href.endsWith('galeriak.html')
+                })
+                .first()
+                .closest('li')
+
+            if ($fotoArchivLi.length) {
+                openAccordionLi($fotoArchivLi)
+            }
         }
     }
 

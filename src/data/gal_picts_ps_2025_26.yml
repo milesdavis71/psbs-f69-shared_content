@@ -1,75 +1,23 @@
 cards:
-  - slug: '2025_09_01_tanevnyito'
-    title: 'tanévnyitó ünnepség'
-    date: '2025. 09. 01.'
+  - slug: '2025_12_18_interaktiv_angolorak'
+    title: 'interaktív angolórák'
+    date: '2025. 12. 18.'
 
-  - slug: '2025_09_19_szureti_piknik'
-    title: 'szüreti piknik'
-    date: '2025. 09. 19.'
+  - slug: '2025_12_09_rendhagyo_tortenelemora_projektmunka'
+    title: 'rendhagyó történelemóra'
+    date: '2025. 12. 09.'
 
-  - slug: '2025_09_23_logi-grafi_klub'
-    title: 'logi-grafi klub'
-    date: '2025. 09. 23.'
+  - slug: '2025_12_04_mikulas_buli'
+    title: 'mikulás buli'
+    date: '2025. 12. 04.'
 
-  - slug: '2025_09_25_6_osztaly_piknik'
-    title: '6. osztály piknik'
-    date: '2025. 09. 25.'
+  - slug: '2025_12_03_tanuloink_iskolan_kivuli_sikerei'
+    title: 'Tanulóink iskolán kívüli sikerei'
+    date: '2025. 12.  03.'
 
-  - slug: '2025_09_26_europai_diaksport_napja'
-    title: 'európai diáksport napja'
-    date: '2025. 09. 26.'
-
-  - slug: '2025_09_26_kutatok_ejszakaja'
-    title: 'kutatók éjszakája'
-    date: '2025. 09. 26.'
-
-  - slug: '2025_09_30_magyar_nepmese_napja'
-    title: 'magyar népmese napja'
-    date: '2025. 09. 30.'
-
-  - slug: '2025_10_01_mezei_futoverseny'
-    title: 'mezei futóverseny'
-    date: '2025. 10. 01.'
-
-  - slug: '2025_10_08_szovegertes_fejlesztese_tapasztalatszerzes_reven'
-    title: 'szövegértés fejlesztése'
-    date: '2025. 10. 08.'
-
-  - slug: '2025_10_09_pav_nap'
-    title: 'páv nap'
-    date: '2025. 10. 09.'
-
-  - slug: '2025_10_14_angol_nyelvu_digitalis_prezentacio_keszitese_es_kutatomunka'
-    title: 'angol nyelvű digitális prezentáció készítése és kutatómunka'
-    date: '2025. 10. 14.'
-
-  - slug: '2025_10_20_halloween_afternoon'
-    title: 'halloween afternoon'
-    date: '2025. 10. 20.'
-
-  - slug: '2025_10_21_oszi_papirgyujtes'
-    title: 'őszi papírgyűjtés'
-    date: '2025. 10. 21.'
-
-  - slug: '2025_10_22_csaladi_program-darules'
-    title: 'családi program: darules'
-    date: '2025. 10. 22.'
-
-  - slug: '2025_10_22_epitsd_a_jovot'
-    title: 'építsd a jövőt'
-    date: '2025. 10. 22.'
-
-  - slug: '2025_10_23_lazar_ervin_program'
-    title: 'lázár ervin program'
-    date: '2025. 10. 23.'
-
-  - slug: '2025_10_25_csaladi_mozizas'
-    title: 'családi mozizás'
-    date: '2025. 10. 25.'
-
-  - slug: '2025_11_24_tarsas_tanulas'
-    title: 'társas tanulás'
-    date: '2025. 11. 24.'
+  - slug: '2025_11_26_egeszsegnap'
+    title: 'egészségnap'
+    date: '2025. 11. 26.'
 
   - slug: '2025_11_25_2025_bolyai_csapatverseny'
     title: '2025 bolyai csapatverseny'
@@ -79,22 +27,74 @@ cards:
     title: '5. osztályosok a Móra Múzeumban '
     date: '2025. 11. 25.'
 
-  - slug: '2025_11_26_egeszsegnap'
-    title: 'egészségnap'
-    date: '2025. 11. 26.'
+  - slug: '2025_11_24_tarsas_tanulas'
+    title: 'társas tanulás'
+    date: '2025. 11. 24.'
 
-  - slug: '2025_12_03_tanuloink_iskolan_kivuli_sikerei'
-    title: 'Tanulóink iskolán kívüli sikerei'
-    date: '2025. 12.  03.'
+  - slug: '2025_10_25_csaladi_mozizas'
+    title: 'családi mozizás'
+    date: '2025. 10. 25.'
 
-  - slug: '2025_12_04_mikulas_buli'
-    title: 'mikulás buli'
-    date: '2025. 12. 04.'
+  - slug: '2025_10_23_lazar_ervin_program'
+    title: 'lázár ervin program'
+    date: '2025. 10. 23.'
 
-  - slug: '2025_12_09_rendhagyo_tortenelemora_projektmunka'
-    title: 'rendhagyó történelemóra'
-    date: '2025. 12. 09.'
+  - slug: '2025_10_22_csaladi_program-darules'
+    title: 'családi program: darules'
+    date: '2025. 10. 22.'
 
-  - slug: '2025_12_18_interaktiv_angolorak'
-    title: 'interaktív angolórák'
-    date: '2025. 12. 18.'
+  - slug: '2025_10_22_epitsd_a_jovot'
+    title: 'építsd a jövőt'
+    date: '2025. 10. 22.'
+
+  - slug: '2025_10_21_oszi_papirgyujtes'
+    title: 'őszi papírgyűjtés'
+    date: '2025. 10. 21.'
+
+  - slug: '2025_10_20_halloween_afternoon'
+    title: 'halloween afternoon'
+    date: '2025. 10. 20.'
+
+  - slug: '2025_10_14_angol_nyelvu_digitalis_prezentacio_keszitese_es_kutatomunka'
+    title: 'angol nyelvű digitális prezentáció készítése és kutatómunka'
+    date: '2025. 10. 14.'
+
+  - slug: '2025_10_09_pav_nap'
+    title: 'páv nap'
+    date: '2025. 10. 09.'
+
+  - slug: '2025_10_08_szovegertes_fejlesztese_tapasztalatszerzes_reven'
+    title: 'szövegértés fejlesztése'
+    date: '2025. 10. 08.'
+
+  - slug: '2025_10_01_mezei_futoverseny'
+    title: 'mezei futóverseny'
+    date: '2025. 10. 01.'
+
+  - slug: '2025_09_30_magyar_nepmese_napja'
+    title: 'magyar népmese napja'
+    date: '2025. 09. 30.'
+
+  - slug: '2025_09_26_europai_diaksport_napja'
+    title: 'európai diáksport napja'
+    date: '2025. 09. 26.'
+
+  - slug: '2025_09_26_kutatok_ejszakaja'
+    title: 'kutatók éjszakája'
+    date: '2025. 09. 26.'
+
+  - slug: '2025_09_25_6_osztaly_piknik'
+    title: '6. osztály piknik'
+    date: '2025. 09. 25.'
+
+  - slug: '2025_09_23_logi-grafi_klub'
+    title: 'logi-grafi klub'
+    date: '2025. 09. 23.'
+
+  - slug: '2025_09_19_szureti_piknik'
+    title: 'szüreti piknik'
+    date: '2025. 09. 19.'
+
+  - slug: '2025_09_01_tanevnyito'
+    title: 'tanévnyitó ünnepség'
+    date: '2025. 09. 01.'
