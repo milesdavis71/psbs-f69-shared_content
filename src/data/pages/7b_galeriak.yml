@@ -1,4 +1,4 @@
-- title: FotĂł archĂ­vumok
+- title: Fotó archívumok
   page: 'galeriak_root'
   url: 'galeriak'
   icon: camera
@@ -6,6 +6,6 @@
   items:
     - title: '2025_26'
       page: '2025_26'
-      url: 'fooldal'
-      folder: galeriak/2025_26
+      url: '2025_26'
+      folder: galeriak
       childPages: '2025_09_01_tanevnyito 2025_09_16_szakkoreink_1 2025_09_22_szakkoreink_2 2025_09_24_szakkoreink_3 2025_09_26_szakkoreink_4 2025_09_30_szakkoreink_5 2025_10_01_magyar_nepmese_napja 2025_10_02_szent_mihaly-napi_lepegeto 2025_10_02_varazslatos_matematika_kiallitason 2025_10_08_allatok_vilagnapja 2025_10_09_magyar_nepi_jatek_napja 2025_10_09_szakkoreink_6 2025_10_14_rendhagyo_testneveles_ora 2025_10_18_palyaorientacios_nap 2025_11_14_rendhagyo_magyarora 2025_11_17_marton_nap 2025_11_18_kozos_tanulasi_program 2025_11_26_versenyeredmenyek_1 2025_11_28_8_oszt_a_torvenyszeken 2025_11_28_versenyeredmenyek_2 2025_12_03_kezmuves szakkor 2025_12_05_versenyeredmenyek_3 2025_12_09_versenyeredmenyek_4 2025_12_10_betlehem_kiallĂ­tas 2025_12_11_iskolai_matematika_verseny 2025_12_15_adventi_keszulodes 2025_12_18_agora_mikulas_kakao_bar 2025_12_19_karacsonyi_musor 2026_01_09_teli_varazslat '
