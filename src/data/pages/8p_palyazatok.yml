@@ -1,0 +1,31 @@
+- title: Pályázatok
+  page: 'palyazatok_root'
+  url: 'palyazatok'
+  icon: file-alt
+  items:
+    - title: 'EFOP-4.1.3'
+      page: 'EFOP_4_1_3'
+      url: 'EFOP_4_1_3'
+      folder: palyazatok
+    - title: 'Határtalanul'
+      page: 'hatartalanul'
+      url: 'hatartalanul'
+      logo: hatartalanul-es-bga-logo.jpg
+      folder: palyazatok
+    - title: 'Nemzeti Tehetség Program'
+      page: 'ntp'
+      url: 'ntp'
+      logo: ntp-logo-small.jpg
+      folder: palyazatok
+    - title: 'Comenius projekt'
+      page: 'comenius_projekt'
+      url: 'comenius_projekt'
+      folder: palyazatok
+    - title: 'Mi iskolánk'
+      page: 'mi_iskolank'
+      url: 'mi_iskolank'
+      folder: palyazatok
+    - title: 'TIOP 2008'
+      page: 'tiop_2008'
+      url: 'tiop_2008'
+      folder: palyazatok

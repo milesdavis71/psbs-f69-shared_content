@@ -17,7 +17,7 @@
     {{else}}
         <a href="{{#if external}}{{url}}{{else}}/{{#if folder}}{{folder}}/{{/if}}{{url}}.html{{/if}}" 
            {{#if external}}target="_blank" rel="noopener noreferrer"{{/if}}>
-            {{#if icon}}<i class="fas fa-{{icon}}"></i> {{/if}}{{title}}
+            {{#if icon}}<i class="fas fa-{{icon}}"></i> {{/if}} {{#if logo}} <img src="/assets/img/common/{{logo}}" alt=""> {{/if}} {{title}}
         </a>
     {{/if}}
 </li>
