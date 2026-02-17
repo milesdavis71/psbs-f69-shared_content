@@ -83,7 +83,7 @@ $(document).ready(function () {
     function forceOpenMenu() {
         const currentPath = normalizePath(window.location.pathname)
 
-        // 1. Keressük meg az aktív menüelemet
+        // 1. Keressük meg az aktív menüelemet (minden szinten)
         var $activeItem = $('.accordion-menu li.current').first()
         if (!$activeItem.length) {
             $activeItem = findActiveMenuItemByUrl()
@@ -92,30 +92,34 @@ $(document).ready(function () {
         if ($activeItem.length) {
             $activeItem.addClass('current is-active')
 
-            // Nyissuk ki az összes szülő accordiont
-            $activeItem
-                .parents('li')
-                .addBack()
-                .each(function () {
-                    openAccordionLi($(this))
-                })
+            // Nyissuk ki az összes szülő accordiont rekurzívan (minden szinten)
+            // Ez működik a harmadik mélységben is
+            $activeItem.parents('li[data-accordion-item]').each(function () {
+                openAccordionLi($(this))
+            })
+
+            // Magát az aktív elemet is nyissuk ki, ha van almenüje
+            openAccordionLi($activeItem)
         }
 
-        // 2. URL alapú automatikus accordion nyitás (folder alapján)
-        // Pl. ha az URL /bemutatkozas/tanaraink.html, nyissa ki a "Bemutatkozás" accordiont
+        // 2. Keressük meg azokat az accordion elemeket, amelyeknek van aktív gyereke
+        // Ez kezeli azokat az eseteket, ahol a harmadik szintű elem aktív,
+        // de a második szintű szülő nem kapott current osztályt a template-től
         $('.accordion-menu li[data-accordion-item]').each(function () {
             const $parentLi = $(this)
-            const $link = $parentLi.children('a.accordion-title').first()
 
+            // Ha ennek az accordion elemnek van active gyereke (akármilyen mélyen), nyissuk ki
+            if ($parentLi.find('li.current, li.is-active').length > 0) {
+                openAccordionLi($parentLi)
+            }
+
+            // URL alapú ellenőrzés a folder alapján
+            const $link = $parentLi.children('a.accordion-title').first()
             if ($link.length) {
                 const href = $link.attr('href') || ''
-
-                // Kinyerjük a folder részt az URL-ből
                 const match = href.match(/\/([^\/]+)\.html$/)
                 if (match) {
                     const folderName = match[1]
-
-                    // Ha az aktuális URL tartalmazza ezt a foldert, nyissuk ki
                     if (currentPath.includes('/' + folderName + '/')) {
                         openAccordionLi($parentLi)
                     }
