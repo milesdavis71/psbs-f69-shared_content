@@ -16,7 +16,7 @@
       page: 'okoiskola'
       url: 'okoiskola'
       folder: palyazatok
-    - title: 'Iksolakert'
+    - title: 'Iskolakert'
       page: 'iskolakert'
       url: 'iskolakert'
       folder: palyazatok
