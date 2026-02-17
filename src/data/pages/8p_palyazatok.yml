@@ -21,7 +21,7 @@
       page: 'comenius_projekt'
       url: 'comenius_projekt'
       folder: palyazatok
-    - title: 'Mi iskolánk'
+    - title: 'Mi iskolánk pályázat'
       page: 'mi_iskolank'
       url: 'mi_iskolank'
       folder: palyazatok

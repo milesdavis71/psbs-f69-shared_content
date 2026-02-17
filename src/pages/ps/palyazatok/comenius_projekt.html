@@ -3,50 +3,43 @@ layout: two_columns_ps
 title: Infrastrukturális fejlesztések a Szegedi Petőfi Sándor Általános Iskolában
 page: EFOP_4_1_3
 dataFile: 8p_palyazatok
+pdfUrl: /assets/pdf/common/palyazatok/comenius_projekt.pdf
 ---
 
-<div class="cell medium-9 medium-cell-block-y">
-  <h4 class="text-center">Comenius Iskola együttműködés</h4>
+{{> breadcrumb}} {{> title}}
+
 
   <ul class="tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true"
     data-deep-link-smudge-delay="500" data-tabs id="deeplinked-tabs">
-    <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true" style="color: orange;">A projekt
+    <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">A projekt
         leírása</a></li>
     <li class="tabs-title"><a href="#panel2d">Projektfilmek</a></li>
   </ul>
 
 
-  {{>tabs_content1}}
-  <div class="responsive-embed">
-    <div id="example1" style="height: 85vh; width: 100vw;"></div>
-    {{>pdf-viewer}}
-    <script>PDFObject.embed("{{root}}assets/palyazatok/comenius_projekt/comenius_projekt.pdf", "#example1");</script>
-  </div>
-  {{>tabs_content2}}
+  {{> tabs_content1}}
+  {{> pdf-viewer}}
+  {{> tabs_content2}}
   <div class="grid-x grid-margin-x">
 
 
     <div class="cell auto"></div>
     <div class="cell small-12 large-8">
-      <br />
-      <p class="text-center">
-        <a href="{{root}}assets/comenius_projekt/comenius_projekt.pdf" target="_blank" class="button">Comenius
-          projekt</a>
-      </p>
+
       <p class="text-center" style="margin-top: -1rem">
         Projektfilm 2008–2009 – Első rész
       </p>
       <div class="responsive-embed">
-        <video width="400" poster="{{root}}assets/comenius_projekt/projektfilm_2008_2009_1.jpg" controls>
-          <source src="{{root}}assets/comenius_projekt/projektfilm_2008_2009_1.mp4" type="video/mp4">
+        <video width="400" poster="{{root}}assets/video/projektfilm_2008_2009_1.jpg" controls>
+          <source src="{{root}}assets/video/projektfilm_2008_2009_1.mp4" type="video/mp4">
       </div>
       <br />
       <p class="text-center">
         Projektfilm 2008–2009 – Második rész
       </p>
       <div class="responsive-embed">
-        <video width="400" poster="{{root}}assets/comenius_projekt/projektfilm_2008_2009_2.jpg" controls>
-          <source src="{{root}}assets/comenius_projekt/projektfilm_2008_2009_2.mp4" type="video/mp4">
+        <video width="400" poster="{{root}}assets/video/projektfilm_2008_2009_2.jpg" controls>
+          <source src="{{root}}assets/video/projektfilm_2008_2009_2.mp4" type="video/mp4">
       </div>
 
       <br />
@@ -55,7 +48,7 @@ dataFile: 8p_palyazatok
       </p>
       <div class="responsive-embed">
         <video width="400" controls>
-          <source src="{{root}}assets/comenius_projekt/projektfilm_2009_2010_1.mp4" type="video/mp4">
+          <source src="{{root}}assets/video/projektfilm_2009_2010_1.mp4" type="video/mp4">
       </div>
 
       <br />

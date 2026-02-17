@@ -1,0 +1,17 @@
+<table>
+    <tbody>
+        {{#schoolData schoolKey "download_tiop"}} {{#each this}}
+        <tr>
+            <td>
+                <i class="fas fa-file-pdf fa-lg" style="color: gray"></i
+                >&ensp;{{title}}
+            </td>
+            <td style="text-align: right">
+                <a href="{{root}}{{url}}" download
+                    ><i class="fas fa-download"></i>&thinsp;Letöltés</a
+                >
+            </td>
+        </tr>
+        {{/each}} {{/schoolData}}
+    </tbody>
+</table>
