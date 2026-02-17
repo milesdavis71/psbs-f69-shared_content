@@ -1,0 +1,82 @@
+{{#schoolData schoolKey "content"}}
+
+
+<div class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <div class="cell medium-2">
+      <ul class="vertical tabs small-text-center" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500" data-tabs id="deeplinked-tabs">
+        {{#each this.sections}}
+          <li class="tabs-title {{#if @first}}is-active{{/if}}">
+            <a href="#panel{{@index}}" {{#if @first}}aria-selected="true"{{/if}}> <span style="font-size: smaller;">{{ this.title }}</span> </a>
+          </li>
+        {{/each}}
+      </ul>
+      <p>&emsp;</p>
+      <div class="cell text-center">
+        <img
+            class="thumbnail"
+            src="/assets/img/common/palyazatok/magyar_kormány_támogatás.jpg"
+        />
+    </div>
+    <div class="cell text-center">
+        <img
+            class="thumbnail"
+            src="/assets/img/common/palyazatok/bga_logo_2023.jpg"
+        />
+    </div>
+    <div class="cell text-center">
+        <img
+            class="thumbnail"
+            src="/assets/img/common/palyazatok/hatartalanul_2019_logo_large.jpg"
+        />
+    </div>
+  </div>
+    <div class="cell medium-9">
+      <div class="tabs-content vertical"  data-tabs-content="deeplinked-tabs">
+        {{#each this.sections}}
+          <div class="tabs-panel {{#if @first}}is-active{{/if}}" id="panel{{@index}}">
+            {{#each this.content}}
+            {{#ifequal this.type "maintitle"}}
+            <h5 class="text-center" style="margin-bottom: 0;">{{ this.text }}</h5>
+              {{/ifequal}}
+              {{#ifequal this.type "date"}}
+              <h6 class="text-center subheader">{{ this.text }}</h6>
+                {{/ifequal}}
+              {{#ifequal this.type "heading"}}
+                <h5 class="subheader">{{ this.text }}</h4>
+              {{/ifequal}}
+
+              {{#ifequal this.type "paragraph"}}
+                <p>{{ this.text }}</p>
+              {{/ifequal}}
+
+              {{#ifequal this.type "images"}}
+                <div class="grid-x grid-margin-x">
+                  {{#each this.images}}
+                    <div class="cell small-12 medium-{{divide 12 ../images_per_row}}">
+                      <div class="card">
+                        <div class="card-section text-center">
+                          <img src="{{ this.thumb }}" alt="{{ this.alt }}" class="thumbnail show-for-medium" data-open="modal-{{@../index}}-{{@index}}" style="cursor:pointer;" />
+                          <img src="{{ this.thumb }}" alt="{{ this.alt }}" class="thumbnail hide-for-medium" />
+                          {{#if this.caption}}<p class="caption">{{ this.caption }}</p>{{/if}}
+                        </div>
+                      </div>
+
+                      <div class="reveal large" id="modal-{{@../index}}-{{@index}}" data-reveal>
+                        <img src="{{ this.full }}" alt="{{ this.alt }}" />
+                        <button class="close-button" data-close aria-label="Bezárás" type="button">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                    </div>
+                  {{/each}}
+              </div>
+            {{/ifequal}}
+            {{/each}}
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
+{{/schoolData}}

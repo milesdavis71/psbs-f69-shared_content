@@ -1,0 +1,39 @@
+- title: Pályázatok
+  page: 'palyazatok_root'
+  url: 'palyazatok'
+  icon: file-alt
+  items:
+    - title: 'Határtalanul'
+      page: 'hatartalanul'
+      url: 'hatartalanul'
+      logo: hatartalanul-es-bga-logo.jpg
+      folder: palyazatok
+    - title: 'Digitális témahét'
+      page: 'digitalis_temahet'
+      url: 'digitalis_temahet'
+      folder: palyazatok
+    - title: 'Ökoiskola'
+      page: 'okoiskola'
+      url: 'okoiskola'
+      folder: palyazatok
+    - title: 'Iksolakert'
+      page: 'iskolakert'
+      url: 'iskolakert'
+      folder: palyazatok
+    - title: 'Nemzeti Tehetség Program'
+      page: 'ntp'
+      url: 'ntp'
+      logo: ntp-logo-small.jpg
+      folder: palyazatok
+    - title: 'Comenius projekt'
+      page: 'comenius_projekt'
+      url: 'comenius_projekt'
+      folder: palyazatok
+    - title: 'Mi iskolánk pályázat'
+      page: 'mi_iskolank'
+      url: 'mi_iskolank'
+      folder: palyazatok
+    - title: 'TIOP 2008'
+      page: 'tiop_2008'
+      url: 'tiop_2008'
+      folder: palyazatok
