@@ -1,10 +1,11 @@
 - title: Intézményfenntartó
-  page: 'adatkezelesi_tajekoztatok_root'
-  url: 'adatkezelesi_tajekoztatok'
+  page: 'intezmenyfenntarto'
+  url: https://ngsz.hu/2021/01/01/kozetkeztetes/
   icon: building
+  external: true
   noFolder: true
 - title: Impresszum
-  page: 'adatkezelesi_tajekoztatok_root'
-  url: 'adatkezelesi_tajekoztatok'
+  page: 'impresszum'
+  url: 'impresszum'
   icon: user-cog
   noFolder: true
