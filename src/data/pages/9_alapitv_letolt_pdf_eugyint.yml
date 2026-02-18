@@ -19,10 +19,10 @@
       url: 'leendo_elsosok_szulei_reszere'
       folder: e_ugyintezes
     - title: 'Általános tájékoztató'
-      page: 'altalanos_tajekozto'
-      url: 'altalanos_tajekozto'
+      page: 'altalanos_tajekoztato'
+      url: 'altalanos_tajekoztato'
       folder: e_ugyintezes
     - title: 'A KRÉTA rendszer használata'
-      url: https://ngsz.hu/2021/01/01/kozetkeztetes/
+      url: https://tudasbazis.ekreta.hu/pages/viewpage.action?pageId=2424949&preview=/2424949/11829263/KR%C3%89TA%20rendszer%20%C3%A1ttekint%C3%A9se.pptx
       external: true
       folder: e_ugyintezes
