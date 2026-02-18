@@ -246,6 +246,29 @@ bs:
   logo: ../assets/img/common/school_logos/bs-logo.jpg
   schoolname: Szegedi Petőfi Sándor Általános Iskola Bálint Sándor Tagiskolája
 
+right_column:
+  - title: 'Határtalanul! pályázataink'
+    url: 'palyazatok/hatartalanul'
+    img: 'bga-hatartalanul-logo-right-column.jpg'
+    text: ''
+    text2: ''
+    text3: ''
+    buttontext: tovább az aloldalra
+  - title: 'Nemzeti Tehetség Program'
+    url: 'palyazatok/ntp'
+    img: 'ntp_logo.jpg'
+    text: ''
+    text2: ''
+    text3: ''
+    buttontext: tovább az aloldalra
+  - title: 'KEVE program'
+    url: 'palyazatok/keve_program'
+    img: 'keve-program-logo-2025.jpg'
+    text: ''
+    text2: ''
+    text3: ''
+    buttontext: tovább az aloldalra
+
 taneszkozok:
   - class: '1a'
   - class: '1b'

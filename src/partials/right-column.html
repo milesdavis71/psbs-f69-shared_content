@@ -1,15 +1,20 @@
 <div class="grid-x grid-margin-x">
     <div class="cell">
-        <a href="{{url}}.html">
+        <a href="{{root}}{{url}}.html">
             <div class="callout small">
                 <p class="text-center"><strong>{{title}}</strong></p>
-                <p class="text-center"><img src="{{img}}" alt="{{ alt }}" /></p>
+                <p class="text-center">
+                    <img
+                        src="assets/img/common/right_column/{{img}}"
+                        alt="{{ alt }}"
+                    />
+                </p>
 
                 <p class="text-center">
                     <a
                         class="button success small"
                         style="color: white; text-transform: uppercase"
-                        href="../{{url}}.html"
+                        href="{{root}}{{url}}.html"
                         ><strong>{{buttontext}}</strong>
                     </a>
                 </p>
