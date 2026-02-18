@@ -1,0 +1,38 @@
+- title: Adatkezelési tájékoztatók
+  page: 'adatkezelesi_tajekoztatok_root'
+  url: 'adatkezelesi_tajekoztatok'
+  icon: lock
+  folder: adatkezelesi_tajekoztatok
+  items:
+    - title: 'Adatkezelési tájékoztató'
+      page: 'adatkezelesi_tajekoztato'
+      url: 'adatkezelesi_tajekoztato'
+      folder: adatkezelesi_tajekoztatok
+    - title: 'Adatkezelési tájékoztató – panaszok'
+      page: 'adatkezelesi_tajekoztato_panaszok'
+      url: 'adatkezelesi_tajekoztato_panaszok'
+      folder: adatkezelesi_tajekoztatok
+    - title: 'Adatkezelési tájékoztató – panaszok'
+      page: 'adatkezelesi_tajekoztato_panaszok'
+      url: 'adatkezelesi_tajekoztato_panaszok'
+      folder: adatkezelesi_tajekoztatok
+    - title: 'Adatkezelési tájékoztató – panaszok'
+      page: 'adatkezelesi_tajekoztato_panaszok'
+      url: 'adatkezelesi_tajekoztato_panaszok'
+      folder: adatkezelesi_tajekoztatok
+    - title: 'Adatkezelési tájékoztató – panaszok'
+      page: 'adatkezelesi_tajekoztato_panaszok'
+      url: 'adatkezelesi_tajekoztato_panaszok'
+      folder: adatkezelesi_tajekoztatok
+    - title: 'Adatkezelési tájékoztató – panaszok'
+      page: 'adatkezelesi_tajekoztato_panaszok'
+      url: 'adatkezelesi_tajekoztato_panaszok'
+      folder: adatkezelesi_tajekoztatok
+    - title: 'Adatkezelési tájékoztató – panaszok'
+      page: 'adatkezelesi_tajekoztato_panaszok'
+      url: 'adatkezelesi_tajekoztato_panaszok'
+      folder: adatkezelesi_tajekoztatok
+    - title: 'Adatkezelési tájékoztató – panaszok'
+      page: 'adatkezelesi_tajekoztato_panaszok'
+      url: 'adatkezelesi_tajekoztato_panaszok'
+      folder: adatkezelesi_tajekoztatok

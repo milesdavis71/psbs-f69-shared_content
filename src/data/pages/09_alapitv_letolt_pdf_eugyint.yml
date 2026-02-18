@@ -9,7 +9,7 @@
   icon: download
   noFolder: true
 - title: e-ügyintézés
-  page: 'e_ugyintezes'
+  page: 'e_ugyintezes_root'
   url: 'e_ugyintezes'
   icon: at
   folder: e_ugyintezes

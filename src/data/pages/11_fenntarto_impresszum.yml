@@ -1,0 +1,10 @@
+- title: Intézményfenntartó
+  page: 'adatkezelesi_tajekoztatok_root'
+  url: 'adatkezelesi_tajekoztatok'
+  icon: building
+  noFolder: true
+- title: Impresszum
+  page: 'adatkezelesi_tajekoztatok_root'
+  url: 'adatkezelesi_tajekoztatok'
+  icon: user-cog
+  noFolder: true
