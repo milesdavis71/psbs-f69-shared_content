@@ -101,6 +101,15 @@ module.exports = function (schoolKey, options) {
         return `<!-- News data is not an array for year: "${year}" -->`
     }
 
+    // Debug: log the structure of first few items
+    const debugItems = rightColumnData
+        .slice(0, 3)
+        .map((item) => {
+            const keys = Object.keys(item)
+            return keys.join(',')
+        })
+        .join('; ')
+
     // Filter and merge items for the specified school
     let filteredItems = []
 
@@ -109,30 +118,36 @@ module.exports = function (schoolKey, options) {
         const olderItems = []
 
         rightColumnData.forEach((item) => {
-            // Check if this item has an "older" key
+            // Check if this item has an "older" array
+            // The older array can be:
+            // 1. At the top level: item.older
+            // 2. Nested under a school key: item.ps.older or item.bs.older
+            // 3. Nested under common: item.common.older
+
             if (item.older && Array.isArray(item.older)) {
-                // Add all older items to the collection
+                // Case 1: Top-level older array
                 olderItems.push(...item.older)
-            } else if (
-                item.ps &&
-                item.ps.older &&
-                Array.isArray(item.ps.older)
+            }
+
+            // Check if older is nested under the current school key
+            if (
+                item[actualSchoolKey] &&
+                typeof item[actualSchoolKey] === 'object' &&
+                item[actualSchoolKey].older &&
+                Array.isArray(item[actualSchoolKey].older)
             ) {
-                // Case: older is nested under ps
-                olderItems.push(...item.ps.older)
-            } else if (
-                item.bs &&
-                item.bs.older &&
-                Array.isArray(item.bs.older)
-            ) {
-                // Case: older is nested under bs
-                olderItems.push(...item.bs.older)
-            } else if (
+                // Case 2: older is nested under ps or bs
+                olderItems.push(...item[actualSchoolKey].older)
+            }
+
+            // Check if older is nested under common
+            if (
                 item.common &&
+                typeof item.common === 'object' &&
                 item.common.older &&
                 Array.isArray(item.common.older)
             ) {
-                // Case: older is nested under common
+                // Case 3: older is nested under common
                 olderItems.push(...item.common.older)
             }
         })
@@ -140,76 +155,112 @@ module.exports = function (schoolKey, options) {
         // Now filter the older items by school
         filteredItems = olderItems
             .map((item, index) => {
-                // Check the structure of the item
-                if (item.common) {
-                    // Case 1: Item has common section (appears in both schools)
-                    const commonData = item.common || {}
-                    const schoolData = item[actualSchoolKey] || {}
+                // Determine the item structure and filter by school
+                const hasCommon =
+                    item.common &&
+                    typeof item.common === 'object' &&
+                    item.common !== null
+                const schoolData = item[actualSchoolKey]
+                const otherSchoolData =
+                    actualSchoolKey === 'ps' ? item.bs : item.ps
+                const hasSchoolData = schoolData !== undefined
+                const hasOtherSchoolData = otherSchoolData !== undefined
 
-                    // If school-specific data is false, return null to exclude
-                    if (item[actualSchoolKey] === false) {
+                // Case 1: Item has common section
+                if (hasCommon) {
+                    // If school-specific data is explicitly false, exclude this item
+                    if (schoolData === false) {
                         return null
                     }
-
-                    // Merge common data with school-specific overrides
-                    return {
-                        ...commonData,
-                        ...schoolData,
+                    // Merge common data with school-specific overrides (if any)
+                    const merged = { ...item.common }
+                    if (schoolData && typeof schoolData === 'object') {
+                        Object.assign(merged, schoolData)
                     }
-                } else if (item.ps || item.bs) {
-                    // Case 2: Item has only ps or bs section (school-specific only)
-                    // Check if this item is for the current school
-                    if (item[actualSchoolKey]) {
-                        return item[actualSchoolKey]
-                    } else {
-                        return null
-                    }
-                } else {
-                    // Case 3: Old structure - item is directly the data
-                    return item
+                    return merged
                 }
+
+                // Case 2: No common section, but has school-specific data
+                if (hasSchoolData) {
+                    // If school data is false, exclude
+                    if (schoolData === false) {
+                        return null
+                    }
+                    // If school data is an object and not null, use it directly
+                    if (typeof schoolData === 'object' && schoolData !== null) {
+                        return schoolData
+                    }
+                    // If school data is null or other primitive, treat as school-specific item
+                    // where the item itself contains the news data (old YAML structure)
+                    // Remove school keys and return the rest
+                    const { ps, bs, common, ...itemData } = item
+                    return itemData
+                }
+
+                // Case 3: Only has data for the other school (no common, no school data)
+                if (hasOtherSchoolData) {
+                    return null
+                }
+
+                // Case 4: Old structure - item is directly the news data
+                return item
             })
-            .filter((item) => {
-                // Remove null items (filtered out)
-                return item !== null
-            })
+            .filter((item) => item !== null)
     } else {
         // Normal mode: filter top-level news items
         filteredItems = rightColumnData
             .map((item, index) => {
-                // Check the structure of the item
-                if (item.common) {
-                    // Case 1: Item has common section (appears in both schools)
-                    const commonData = item.common || {}
-                    const schoolData = item[actualSchoolKey] || {}
+                // Determine the item structure and filter by school
+                const hasCommon =
+                    item.common &&
+                    typeof item.common === 'object' &&
+                    item.common !== null
+                const schoolData = item[actualSchoolKey]
+                const otherSchoolData =
+                    actualSchoolKey === 'ps' ? item.bs : item.ps
+                const hasSchoolData = schoolData !== undefined
+                const hasOtherSchoolData = otherSchoolData !== undefined
 
-                    // If school-specific data is false, return null to exclude
-                    if (item[actualSchoolKey] === false) {
+                // Case 1: Item has common section
+                if (hasCommon) {
+                    // If school-specific data is explicitly false, exclude this item
+                    if (schoolData === false) {
                         return null
                     }
-
-                    // Merge common data with school-specific overrides
-                    return {
-                        ...commonData,
-                        ...schoolData,
+                    // Merge common data with school-specific overrides (if any)
+                    const merged = { ...item.common }
+                    if (schoolData && typeof schoolData === 'object') {
+                        Object.assign(merged, schoolData)
                     }
-                } else if (item.ps || item.bs) {
-                    // Case 2: Item has only ps or bs section (school-specific only)
-                    // Check if this item is for the current school
-                    if (item[actualSchoolKey]) {
-                        return item[actualSchoolKey]
-                    } else {
-                        return null
-                    }
-                } else {
-                    // Case 3: Old structure - item is directly the data
-                    return item
+                    return merged
                 }
+
+                // Case 2: No common section, but has school-specific data
+                if (hasSchoolData) {
+                    // If school data is false, exclude
+                    if (schoolData === false) {
+                        return null
+                    }
+                    // If school data is an object and not null, use it directly
+                    if (typeof schoolData === 'object' && schoolData !== null) {
+                        return schoolData
+                    }
+                    // If school data is null or other primitive, treat as school-specific item
+                    // where the item itself contains the news data (old YAML structure)
+                    // Remove school keys and return the rest
+                    const { ps, bs, common, ...itemData } = item
+                    return itemData
+                }
+
+                // Case 3: Only has data for the other school (no common, no school data)
+                if (hasOtherSchoolData) {
+                    return null
+                }
+
+                // Case 4: Old structure - item is directly the news data
+                return item
             })
-            .filter((item) => {
-                // Remove null items (filtered out)
-                return item !== null
-            })
+            .filter((item) => item !== null)
     }
 
     // Create a new context with the filtered items
@@ -221,7 +272,7 @@ module.exports = function (schoolKey, options) {
     const rendered = options.fn(context)
 
     // Add debug comment (only in development)
-    const debugComment = `<!-- filterNews: school=${actualSchoolKey}, year=${year}, items=${filteredItems.length} -->`
+    const debugComment = `<!-- filterNews: school=${actualSchoolKey}, year=${year}, items=${filteredItems.length}, debugItems=${debugItems} -->`
 
     return debugComment + rendered
 }

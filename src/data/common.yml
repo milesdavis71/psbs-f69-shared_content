@@ -366,6 +366,38 @@ right_column:
 
 news:
   2025-26:
+    - common:
+      title: Álláspályázat igazgató munkakör betöltésére
+      school: all
+      img: felkialtojel.jpg
+      align: center
+      imgclass: medium-2
+      contentclass: medium-10
+      content: news71
+    - bs:
+      title: Iskolába hívogató
+      school: Tagiskola
+      img: bs-iskolaba-hivogato-sport.jpg
+      align: center
+      imgclass: medium-3
+      contentclass: medium-9
+      content: news70
+    - common:
+      title: KRÉTA online nyelvtanuló alkalmazás
+      school: all
+      img: kreta-nyelvtanulas.jpg
+      align: center
+      imgclass: medium-12
+      contentclass: medium-12
+      content: news69
+    - common:
+      title: Rendhagyó könyvtári óra szülőknek és pedagógusoknak
+      school: all
+      img: baracsi-katalin.jpg
+      align: center
+      imgclass: medium-3
+      contentclass: medium-9
+      content: news68
     - ps:
       title: Félévi szülői értekezletek
       school: Székhely
