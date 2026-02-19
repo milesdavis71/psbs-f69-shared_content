@@ -14,8 +14,22 @@ module.exports = function (options) {
 
     if (!root || !currentPage || !dataFileName) return []
 
-    // Get the data file
-    const dataFile = root[dataFileName.replace(/\.(yml|yaml|json)$/i, '')]
+    // Get the data file - try multiple possible keys
+    const cleanDataFileName = dataFileName.replace(/\.(yml|yaml|json)$/i, '')
+    let dataFile = root[cleanDataFileName]
+
+    // If not found, try with leading zero (e.g., "4p_kozzeteteli_lista" -> "04p_kozzeteteli_lista")
+    if (!dataFile && /^\d[^0]/.test(cleanDataFileName)) {
+        const withLeadingZero = '0' + cleanDataFileName
+        dataFile = root[withLeadingZero]
+    }
+
+    // Also try the opposite: if starts with "0", try without it
+    if (!dataFile && /^0\d/.test(cleanDataFileName)) {
+        const withoutLeadingZero = cleanDataFileName.substring(1)
+        dataFile = root[withoutLeadingZero]
+    }
+
     if (!dataFile) return []
 
     const breadcrumbs = []
