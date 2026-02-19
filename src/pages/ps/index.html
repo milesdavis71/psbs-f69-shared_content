@@ -1,10 +1,37 @@
 ---
 layout: default
-title: Híreink PS
+title: Híreink
 page: index
+year: 2025-26
+olderYear: 2025-ös
 ---
-<div></div>
-{{>title}}
-<hr />
 
-TODO: breadrcrumb fejlesztése
+<img src="{{root}}assets/img/ps/ps_front_1200x500_2023.jpg" alt="" style="margin: 0 0 1em;">
+{{> title}}
+
+{{#filterNews "ps"}}
+{{#each items}}
+<div
+    class="title-bar"
+    style="
+        background-color: rgb(214.8186602871, 235.9894736842, 250.0313397129);
+        color: black;
+        font-weight: bold;
+    "
+>
+    {{title}}
+</div>
+<div class="card">
+    <div class="card-section">
+        <div class="grid-x grid-margin-x">
+            {{> hir-cells imageclass=img}}
+            <div class="cell small-12 {{contentclass}}">
+                {{> common-md-news-content-2025-26 hir=content}}
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}
+{{/filterNews}}
+
+{{> common-korabbi-hirek}}

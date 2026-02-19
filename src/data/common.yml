@@ -364,6 +364,150 @@ right_column:
   #   ps: {}
   #   bs: false
 
+news:
+  2025-26:
+    - ps:
+      title: Félévi szülői értekezletek
+      school: Székhely
+      img: szuloi.png
+      align: center
+      imgclass: medium-6
+      contentclass: medium-6
+      content: news67
+    - bs:
+      title: Félévi szülői értekezletek
+      school: Tagiskola
+      img: szuloi.png
+      align: center
+      imgclass: medium-6
+      contentclass: medium-6
+      content: news66
+    - bs:
+      title: Rajzpályázat
+      school: Tagiskola
+      img: rajzpalyazat.jpg
+      align: center
+      imgclass: medium-12
+      contentclass: medium-12
+      content: news65
+    - ps:
+      title: Tavaszi suliváró foglalkozásaink
+      school: Székhely
+      img: boy.jpg
+      align: center
+      imgclass: medium-12
+      contentclass: medium-12
+      content: news64
+      older:
+        - common:
+          title: Téli szünet
+          school: all
+          img: teli_szunet.jpg
+          imgclass: medium-6
+          contentclass: medium-6
+          content: news63
+        - ps:
+          title: Karácsonyi vásár
+          school: Székhely
+          img: kari-vasar.jpg
+          imgclass: medium-3
+          contentclass: medium-9
+          content: news62
+        - bs:
+          title: Iskolába hívogató
+          school: Tagiskola
+          img: robot.jpg
+          imgclass: medium-3
+          contentclass: medium-9
+          content: news61
+        - ps:
+          title: Fogadóóra – 2025. december
+          school: Székhely
+          img: fogadoora_small.jpg
+          imgclass: medium-3
+          contentclass: medium-9
+          content: news60
+        - bs:
+          title: Készíts színes falevelekből egy képet!
+          school: Tagiskola
+          img: falevel.jpg
+          imgclass: medium-3
+          contentclass: medium-9
+          content: news59
+        - ps:
+          title: Járási mesemondó és prózamondó verseny
+          school: Székhely
+          img: nincs
+          imgclass: medium-12
+          contentclass: medium-12
+          content: news58
+        - common:
+          title: Őszi szünet
+          school: all
+          img: oszi-szunet-2025.jpg
+          imgclass: medium-4
+          contentclass: medium-8
+          content: news57
+        - bs:
+          title: Iskolába hívogató
+          school: Tagiskola
+          img: iskolaba-hivogato.jpg
+          imgclass: medium-4
+          contentclass: medium-8
+          content: news56
+        - bs:
+          title: Szent Mihály-napi lépegető
+          school: Tagiskola
+          img: lepegeto.jpg
+          imgclass: medium-4
+          contentclass: medium-8
+          content: news55
+        - ps:
+          title: Iskolába hívogató
+          school: Székhely
+          img: iskolaba-hivogato.jpg
+          imgclass: medium-3
+          contentclass: medium-9
+          content: news54
+        - bs:
+          title: Iskolába hívogató
+          school: Tagiskola
+          img: iskolaba-hivogato.jpg
+          imgclass: medium-3
+          contentclass: medium-9
+          content: news53
+        - ps:
+          title: Tanévnyitó ünnepség 2025 ősz
+          school: Székhely
+          img: tanevnyito.jpg
+          imgclass: medium-3
+          contentclass: medium-9
+          content: news52
+        - bs:
+          title: Tanévnyitó ünnepség 2025 ősz
+          school: Tagiskola
+          img: tanevnyito.jpg
+          align: center
+          imgclass: medium-3
+          contentclass: medium-9
+          content: news51
+        - bs:
+          title: Szülői értekezletek 2025 ősz
+          school: Tagiskola
+          img: szuloi.png
+          align: center
+          imgclass: medium-6
+          contentclass: medium-6
+          content: news50
+        - ps:
+          title: Szülői értekezletek 2025 ősz
+          school: Székhely
+          img: szuloi.png
+          align: center
+          imgclass: medium-6
+          contentclass: medium-6
+          content: news49
+
 taneszkozok:
   - class: '1a'
   - class: '1b'
