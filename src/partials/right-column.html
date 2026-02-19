@@ -5,12 +5,12 @@
                 <p class="text-center"><strong>{{title}}</strong></p>
                 <p class="text-center">
                     <img
-                        src="assets/img/common/right_column/{{img}}"
+                        src="assets/img/right_column/{{img}}"
                         alt="{{ alt }}"
                     />
                 </p>
 
-                <p class="text-center">
+                <p class="text-center" style="margin-bottom: 0">
                     <a
                         class="button success small"
                         style="color: white; text-transform: uppercase"
@@ -19,7 +19,7 @@
                     </a>
                 </p>
                 {{#if this.text}}
-                <p>{{ this.text }}</p>
+                <p style="line-height: normal">{{ this.text }}</p>
                 {{/if}} {{#if this.text2}}
                 <p>{{ this.text2 }}</p>
                 {{/if}} {{#if this.text3}}

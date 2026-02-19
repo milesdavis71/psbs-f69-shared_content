@@ -23,9 +23,11 @@
         <i class="fab fa-facebook-f fa-lg" style="color: white">&ensp;</i>BS Facebook</a>
 </div>
 
-{{#each global.right_column}}
+{{#filterRightColumn "bs"}}
+{{#each items}}
 {{>right-column}}
 {{/each}}
+{{/filterRightColumn}}
 
 <div class="callout small">
 

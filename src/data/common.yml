@@ -247,27 +247,122 @@ bs:
   schoolname: Szegedi Petőfi Sándor Általános Iskola Bálint Sándor Tagiskolája
 
 right_column:
-  - title: 'Határtalanul! pályázataink'
-    url: 'palyazatok/hatartalanul'
-    img: 'bga-hatartalanul-logo-right-column.jpg'
-    text: ''
-    text2: ''
-    text3: ''
-    buttontext: tovább az aloldalra
-  - title: 'Nemzeti Tehetség Program'
-    url: 'palyazatok/ntp'
-    img: 'ntp_logo.jpg'
-    text: ''
-    text2: ''
-    text3: ''
-    buttontext: tovább az aloldalra
-  - title: 'KEVE program'
-    url: 'palyazatok/keve_program'
-    img: 'keve-program-logo-2025.jpg'
-    text: ''
-    text2: ''
-    text3: ''
-    buttontext: tovább az aloldalra
+  # Common items (appear in both schools)
+  - common:
+      title: 'Határtalanul! pályázataink'
+      url: 'palyazatok/hatartalanul'
+      img: 'bga-hatartalanul-logo-right-column.jpg'
+      text: ''
+      text2: ''
+      text3: ''
+      buttontext: tovább az aloldalra
+    ps: {}
+    bs: {}
+  - common:
+      title: 'Nemzeti Tehetség Program'
+      url: 'palyazatok/ntp'
+      img: 'ntp_logo.jpg'
+      text: ''
+      text2: ''
+      text3: ''
+      buttontext: tovább az aloldalra
+    ps: {}
+    bs: {}
+
+  - bs:
+      title: 'Ökoiskola'
+      url: 'palyazatok/okoiskola'
+      img: 'okoiskola-logo.jpg'
+      text: 'Fenntarthatóságra nevelés'
+      text2: ''
+      text3: ''
+      buttontext: tovább az aloldalra
+
+  # PS-specific items (appear only in PS school)
+  - ps:
+      title: 'Regisztrált Tehetségpont'
+      url: 'bemutatkozas/regisztralt_tehetsegpont'
+      img: 'ps-regisztralt-tehetsegpont.png'
+      text: ''
+      text2: ''
+      text3: ''
+      buttontext: tovább az aloldalra
+
+  - common:
+      title: 'KEVE program'
+      url: 'palyazatok/keve_program'
+      img: 'keve-program-logo-2025.jpg'
+      text: ''
+      text2: ''
+      text3: ''
+      buttontext: tovább az aloldalra
+    ps: {}
+    bs: {}
+
+  - bs:
+      title: 'Iskolakert pályázatunk'
+      url: 'palyazatok/iskolakert'
+      img: 'iskolakerti-alapozo-logo.jpg'
+      text: ''
+      text2: ''
+      text3: ''
+      buttontext: tovább az aloldalra
+
+  - bs:
+      title: 'Digitális Témahét'
+      url: 'palyazatok/digitalis_temahet'
+      img: 'digitalis-temahet.jpg'
+      text: ''
+      text2: ''
+      text3: ''
+      buttontext: tovább az aloldalra
+
+  - common:
+      title: 'Kék tér program'
+      url: 'bemutatkozas/kek_ter_program'
+      img: 'kek-ter-logo.jpg'
+      text: ''
+      text2: ''
+      text3: ''
+      buttontext: tovább az aloldalra
+    ps: {}
+    bs: {}
+
+  # BS-specific items (appear only in BS school)
+  - bs:
+      title: 'BS specifikus program'
+      url: 'palyazatok/bs_specifikus'
+      img: 'bs-logo.jpg'
+      text: 'Ez a program csak a BS iskolában jelenik meg'
+      text2: ''
+      text3: ''
+      buttontext: tovább az aloldalra
+
+  # Example of common item with school-specific overrides
+  # - common:
+  #     title: 'Közös program felülírással'
+  #     url: 'palyazatok/kozos_program'
+  #     img: 'kozosseg-logo.jpg'
+  #     text: 'Alap szöveg mindkét iskolában'
+  #     text2: ''
+  #     text3: ''
+  #     buttontext: tovább az aloldalra
+  #   ps:
+  #     text: 'PS iskolára specifikus szöveg felülírás'
+  #   bs:
+  #     text: 'BS iskolára specifikus szöveg felülírás'
+
+  # Example of common item disabled for BS
+  # - common:
+  #     title: 'Közös program, de BS-ben letiltva'
+  #     url: 'palyazatok/letiltott_bs'
+  #     img: 'letiltott-logo.jpg'
+  #     text: 'Ez a program csak PS iskolában jelenik meg'
+  #     text2: ''
+  #     text3: ''
+  #     buttontext: tovább az aloldalra
+  #   ps: {}
+  #   bs: false
 
 taneszkozok:
   - class: '1a'
