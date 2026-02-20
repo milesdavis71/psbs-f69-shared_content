@@ -20,6 +20,10 @@
       page: 'beiratkozas_kretan_keresztul_utmutato'
       url: 'beiratkozas_kretan_keresztul_utmutato'
       folder: beiratkozas_felvetel
+    - title: 'Iskolahívogató'
+      page: 'beiratk_iskolahivogato'
+      url: 'beiratk_iskolahivogato'
+      folder: beiratkozas_felvetel
 - title: A tanév rendje
   page: 'tanev_rendje'
   url: 'tanev_rendje'
