@@ -3,6 +3,10 @@
   url: 'versenyeredmenyek'
   icon: award
   items:
+    - title: '2023_24'
+      page: '2023_24'
+      url: '2023_24'
+      folder: versenyeredmenyek
     - title: '2022_23'
       page: '2022_23'
       url: '2022_23'
