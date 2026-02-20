@@ -1,13 +1,5 @@
----
-layout: default_bs
-title: Híreink
-page: index
----
-<img src="{{root}}assets/img/bs/bs_front_1200x500.jpg" alt="" style="margin: 0 0 1em;">
-{{> title}}
-
-
-{{#filterNews "bs"}}
+{{#filterNews "bs" older=true}}
+<!-- filterNews older mode: {{items.length}} items -->
 {{#each items}}
 <div
     class="title-bar"
@@ -29,7 +21,4 @@ page: index
         </div>
     </div>
 </div>
-{{/each}}
-{{/filterNews}}
-
-{{> common-bs-korabbi-hirek}}
+{{/each}} {{/filterNews}}
