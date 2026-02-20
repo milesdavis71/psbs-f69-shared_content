@@ -3,7 +3,7 @@ layout: two_columns_bs
 address: 6753, Szeged, Kölcsey tér 16.
 fullname: Szegedi Petőfi Sándor Általános Iskola Bálint Sándor Tagiskolája
 line1: Az intézmény igazgatója Winkler Andrea,
-line2: "tagiskola-igazgató: Porkolábné Papp Zsuzsanna."
+line2: 'tagiskola-igazgató: Porkolábné Papp Zsuzsanna.'
 logo: /assets/img/common/school_logos/bs-logo-nagy.jpg
 mail-ig: igazgato@petofiszeged.hu
 mail-tit: titkarsag@balintiskola.hu
@@ -11,70 +11,65 @@ phone1: 62 547 150
 phone2: 30 736 3456
 qrcode: /assets/img/common/qrcode-bs.png
 ---
+
 <h4 class="text-center">{{title}}</h4>
 {{>elerhetoseg-kozos}}
 
+<style type="text/css">
+    .card:hover {
+        box-shadow: 0 0 30px rgba(33, 33, 33, 0.3);
+    }
+</style>
+
+<p>
+    „Mi azt akarjuk, hogy az iskola családi otthon legyen, <br />
+    ahol kinyílik a szív és feltárulnak a gondolatok”<br />
+    (Célestin Freinet)
+</p>
 <div class="grid-x grid-margin-x">
-    <div class="cell small-12 medium-8">
-        <p>
-            „Mi azt akarjuk, hogy az iskola családi otthon legyen,<br />
-            ahol kinyílik a szív és feltárulnak a gondolatok”<br />
-            <i>(Célestin Freinet)</i>
-        </p>
-        {{#each common.bemutatkozas.bstext}}
-        <p>{{ this.text }}</p>
-        {{/each}}
-    </div>
+    <div class="cell small-12 medium-8">{{> bemutatkozas_bs_markdown}}</div>
+
     <div class="cell small-12 medium-4">
-        <div class="grid-container">
-            <div class="grid-x grid-margin-x">
-                {{#each common.bemutatkozas.bsimage}}
-                <div
-                    class="cell small-12 medium-{{divide 12 ../images_per_row}}"
+        {{#each common.bemutatkozas.bsimage}}
+        <div class="cell">
+            <div class="card">
+                <!-- pict --><a
+                    href="{{root}}/bemutatkozas/bemutatkozas.html#panel2d"
+                    data-toggle="Modal{{filename}}"
                 >
-                    <div class="card">
-                        <div class="card-section text-center">
-                            <img
-                                src="{{ this.image.thumb }}"
-                                alt="{{ this.image.alt }}"
-                                style="cursor: pointer"
-                            />
-                            <img
-                                src="{{ this.image.thumb }}"
-                                alt="{{ this.image.alt }}"
-                                class="thumbnail hide-for-medium"
-                            />
-                            <p
-                                class="caption"
-                                style="font-size: smaller; margin: 0"
-                            >
-                                Klikk a nagyobb képért
-                            </p>
-                        </div>
-                    </div>
-                    <div
-                        class="reveal large"
-                        id="modal-{{@../index}}-{{@index}}"
-                        data-reveal
+                    <img src="{{this.image.thumb}}" />
+                    <p
+                        class="text-center show-for-medium"
+                        style="margin: 3px 0"
                     >
-                        <p class="text-center" style="margin: 0 0 0 0">
-                            <img
-                                src="{{ this.image.full }}"
-                                alt="{{ this.image.alt }}"
-                            />
-                        </p>
-                        <button
-                            class="close-button"
-                            data-close
-                            aria-label="Bezárás"
-                            type="button"
-                        >
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                </div>
-                {{/each}}
+                        Klikk a nagyobb képért
+                    </p> </a
+                ><!-- end pict -->
             </div>
         </div>
+        <!-- end cell -->
+        <!-- modal -->
+        <div
+            class="large js-gallery-reveal gallery-reveal reveal"
+            id="Modal{{filename}}"
+            data-reveal
+            data-overlay="true"
+        >
+            <img
+                class="js-modal-preview modal-preview"
+                src="{{this.image.full}}"
+                alt=""
+            />
+            <button
+                class="close-button"
+                data-close
+                aria-label="Close reveal"
+                type="button"
+            >
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <!-- end  modal -->
+        {{/each}}
     </div>
 </div>
