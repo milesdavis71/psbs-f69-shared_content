@@ -3,38 +3,7 @@ layout: two_columns_bs
 title: Felekezetek bemutatkozása
 page: felekezetek_bemutatkozasa
 dataFile: 02b_bemutatkozass
+schoolKey: bs
 ---
 
-{{> breadcrumb}} {{>title}}
-<table>
-    <tbody>
-        {{#each felekezetek}}
-        <tr>
-            <td style="color: gray"><b>{{vallas}}</b></td>
-            {{#if urlpath}}
-            <td class="text-right">
-                <a href="{{urlpath}}" target="_blank"
-                    ><i class="fas fa-video"></i>&ensp;weboldal</a
-                >
-            </td>
-            {{else}}
-            <td></td>
-            {{/if}} {{#if mp4path}}
-            <td class="text-right">
-                <a href="{{mp4path}}" target="_blank"
-                    ><i class="fas fa-video"></i>&ensp;videó megtekintése</a
-                >
-            </td>
-            {{else}}
-            <td></td>
-            {{/if}}
-            <!-- <td class="text-right"><a href="{{root}}{{htmlpath}}" target="_blank"><i class="fas fa-file"></i>&ensp;pdf megtekintése</a></td> -->
-            <td class="text-right">
-                <a href="{{root}}{{pdfpath}}" download>
-                    <i class="fas fa-download"></i>&ensp;pdf letöltése
-                </a>
-            </td>
-        </tr>
-        {{/each}}
-    </tbody>
-</table>
+{{> breadcrumb}} {{>title}} {{> schooldata-felekezetek-bemutatkozasa}}
