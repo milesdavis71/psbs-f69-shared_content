@@ -232,15 +232,6 @@ right_column:
     ps: {}
     bs: {}
 
-  - bs:
-      title: 'Ökoiskola'
-      url: 'palyazatok/okoiskola'
-      img: 'okoiskola-logo.jpg'
-      text: 'Fenntarthatóságra nevelés'
-      text2: ''
-      text3: ''
-      buttontext: tovább az aloldalra
-
   # PS-specific items (appear only in PS school)
   - ps:
       title: 'Regisztrált Tehetségpont'

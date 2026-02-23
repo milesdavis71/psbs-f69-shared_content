@@ -12,10 +12,6 @@
       page: 'digitalis_temahet'
       url: 'digitalis_temahet'
       folder: palyazatok
-    - title: 'Ökoiskola'
-      page: 'okoiskola'
-      url: 'okoiskola'
-      folder: palyazatok
     - title: 'Iskolakert'
       page: 'iskolakert'
       url: 'iskolakert'

@@ -1,14 +1,7 @@
----
-layout: two_columns_bs
-title: Felekezetek bemutatkozása
-page: felekezetek_bemutatkozasa
-dataFile: 02b_bemutatkozass
----
-
-{{> breadcrumb}} {{>title}}
+{{#schoolData schoolKey "felekezetek"}}
 <table>
     <tbody>
-        {{#each felekezetek}}
+        {{#each this}}
         <tr>
             <td style="color: gray"><b>{{vallas}}</b></td>
             {{#if urlpath}}
@@ -38,3 +31,4 @@ dataFile: 02b_bemutatkozass
         {{/each}}
     </tbody>
 </table>
+{{/schoolData}}
