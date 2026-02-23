@@ -49,14 +49,14 @@
   spec2: közoktatási vezető, mesterpedagógus,
   spec3: művelődésszervező
 
-- name: Költő Julianna Gizella
-  grad: főiskola
-  spec1: néptánc oktató
-
 - name: Purcsi Kata
   grad: egyetem
   spec1: általános iskolai testnevelő tanár
   spec2: általános iskolai természetismeret-környezettan tanár
+
+- name: Költő Julianna Gizella
+  grad: főiskola
+  spec1: néptánc oktató
 
 - name: Savanya Béláné
   grad: főiskola
