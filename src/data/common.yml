@@ -283,14 +283,14 @@ right_column:
     bs: {}
 
   # BS-specific items (appear only in BS school)
-  - bs:
-      title: 'BS specifikus program'
-      url: 'palyazatok/bs_specifikus'
-      img: 'bs-logo.jpg'
-      text: 'Ez a program csak a BS iskolában jelenik meg'
-      text2: ''
-      text3: ''
-      buttontext: tovább az aloldalra
+  # - bs:
+  #     title: 'BS specifikus program'
+  #     url: 'palyazatok/bs_specifikus'
+  #     img: 'bs-logo.jpg'
+  #     text: 'Ez a program csak a BS iskolában jelenik meg'
+  #     text2: ''
+  #     text3: ''
+  #     buttontext: tovább az aloldalra
 
   # Example of common item with school-specific overrides
   # - common:
