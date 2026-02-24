@@ -1,0 +1,18 @@
+<div class="grid-x grid-margin-x">
+    <table class="hover">
+        <tbody>
+            {{#each this}}
+            <tr>
+                <td>{{year}}</td>
+                <td>{{month}}</td>
+                <td class="text-right">{{day}}.</td>
+                {{#if title}}
+                <td>{{title}}</td>
+                {{else}}
+                <td></td>
+                {{/if}}
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
