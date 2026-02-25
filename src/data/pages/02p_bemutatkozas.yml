@@ -36,14 +36,14 @@
       page: 'bemutatk_szmsz'
       url: 'bemutatk_szmsz'
       folder: 'bemutatkozas'
-    - title: Kollektív szerződés
-      page: 'kollektiv_szerzodes'
-      url: 'kollektiv_szerzodes'
-      folder: 'bemutatkozas'
-    - title: IMIP
-      page: 'imip'
-      url: 'imip'
-      folder: 'bemutatkozas'
+    # - title: Kollektív szerződés
+    #   page: 'kollektiv_szerzodes'
+    #   url: 'kollektiv_szerzodes'
+    #   folder: 'bemutatkozas'
+    # - title: IMIP
+    #   page: 'imip'
+    #   url: 'imip'
+    #   folder: 'bemutatkozas'
     - title: Házirend
       page: 'bemutatk_hazirend'
       url: 'bemutatk_hazirend'

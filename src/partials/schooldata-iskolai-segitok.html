@@ -1,5 +1,9 @@
 {{#schoolData schoolKey "iskolai_segitok"}}
+<div class="grid-x grid-margin-x">
+<div class="cell auto"></div>
+<div class="cell large-7">
 {{#each this}}
+
 <div class="card">
     <div class="card-divider" style="padding: 0.5em">
         <strong>{{job}}</strong>
@@ -7,15 +11,33 @@
     <div class="card-section" style="padding: 0.5em">
         <p>
             <b>{{name}}</b><br />
-            <i class="fa fa-phone-square" style="color: #ffa500"></i>&ensp;<a
+            {{#if tel1}}
+                <i class="fa fa-phone-square" style="color: #ffa500"></i>&ensp;<a
                 href="tel:{{tel1}}"
                 >{{tel2}}</a
-            ><br />
-            <i class="fa fa-envelope" style="color: #ffa500"></i>
-            <a href="mailto:{{mail}}"> {{mail}}</a>
+                ><br />
+            {{/if}}
+            {{#if mail}}
+                <i class="fa fa-envelope" style="color: #ffa500"></i>&ensp;<a
+                    href="mailto:{{mail}}"
+                    >{{mail}}</a
+            >
+            {{/if}}
         </p>
-        {{>md-ps-iskolai-segitok segito=job}}
+      
+        {{#if day}}
+        <p>Személyes elérhetőség az iskolában:</p>
+        <table class="hover">
+        <tr>
+            <td>{{day}}</td>
+            <td>{{hour}}</td>
+        </tr>
+        </table>
+        {{/if}}
     </div>
 </div>
 {{/each}}
+</div>
+<div class="cell auto"></div>
+</div>
 {{/schoolData}}

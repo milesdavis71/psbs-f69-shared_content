@@ -1,24 +1,34 @@
-- job: iskolapszichológus
+- job: iskolapszichológus I.
   name: Ficz Gábor
-  mail: falco444@gmail.com
-  tel1: '+36203879927'
-  tel2: +36 20 387 9927
+  mail: igazgato@petofiszeged.hu
+  tel1: '+36307362795'
+  tel2: +36 30 736 2795
+
+- job: iskolapszichológus II.
+  name: Mészáros Adrienn
+  mail: igazgato@petofiszeged.hu
+  tel1: '+36307362795'
+  tel2: +36 30 736 2795
 
 - job: Gyógypedagógus
   name: Mede Brigitta
-  mail: nincs megadva
+  mail:
   tel1: '+36307362795'
   tel2: +36 30 7362795
+  day: 'péntek'
+  hour: '13:00–13.45'
 
 - job: Logopédus
   name: Dusik-Balázs Dóra
-  mail: nincs megadva
+  mail:
   tel1: '+36307362795'
   tel2: +36 30 7362795
+  day: szerda
+  hour: 14:45–15:30
 
 - job: Védőnő
   name: Vona Dóra
-  mail: nincs megadva
+  mail:
   tel1: '+36305108256'
   tel2: +36 30 5108256
 
@@ -27,6 +37,8 @@
   mail: karadag.emin@szeged-eszi.hu
   tel1: '+36307362795'
   tel2: +36 30 7362795
+  day: kedd
+  hour: 08:00–12:00
 
 - job: Drogprevenciós tanácsadó
   name: Csala-Pellek Borbála r. őrnagy (Szegedi Rendőrkapitányság)

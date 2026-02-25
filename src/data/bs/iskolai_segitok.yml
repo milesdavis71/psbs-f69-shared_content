@@ -1,26 +1,37 @@
-- job: iskolapszichológus
+- job: iskolapszichológus I.
+  name: Ficz Gábor
+  mail: igazgato@petofiszeged.hu
+  tel1: '+36307362795'
+  tel2: +36 30 736 2795
+
+- job: iskolapszichológus II.
   name: Mészáros Adrienn
-  mail: –
-  tel1: '–'
-  tel2: –
+  mail: igazgato@petofiszeged.hu
+  tel1: '+36307362795'
+  tel2: +36 30 736 2795
 
 - job: Gyógypedagógus I.
   name: Mede Brigitta
-  mail: nincs megadva
   tel1: '+36307362795'
   tel2: +36 30 7362795
+  day: 'kedd'
+  hour: '14:00–14:45'
 
 - job: Gyógypedagógus II.
   name: Bozóki Petra
   mail: nincs megadva
   tel1: '+36307362795'
   tel2: +36 30 7362795
+  day: 'hétfő'
+  hour: '12:00–13:45'
 
 - job: Logopédus
   name: Dusik-Balázs Dóra
-  mail: nincs megadva
+  mail:
   tel1: '+36307362795'
   tel2: +36 30 7362795
+  day: szerda
+  hour: 09:00–09:45
 
 - job: Védőnő
   name: Vona Dóra
