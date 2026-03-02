@@ -320,6 +320,22 @@ right_column:
 
 news:
   2025-26:
+    - bs:
+      title: Iskolába hívogató
+      school: Tagiskola
+      img: bs-iskolaba-hivogato-2026-festes.jpg
+      align: center
+      imgclass: medium-3
+      contentclass: medium-9
+      content: news73
+    - bs:
+      title: Elsőseink már otthonosan mozognak iskolánkban
+      school: Tagiskola
+      img: bs-elsosok.jpg
+      align: center
+      imgclass: medium-12
+      contentclass: medium-12
+      content: news72
     - common:
       title: Álláspályázat igazgató munkakör betöltésére
       school: all
