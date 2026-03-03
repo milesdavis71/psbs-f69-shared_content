@@ -337,6 +337,14 @@ news:
       contentclass: medium-6
       content: news74
     - bs:
+      title: A Parasport világnapja iskolánkban
+      school: Tagiskola
+      img: bs-parasport-napja-2026-tavasz.jpg
+      align: center
+      imgclass: medium-6
+      contentclass: medium-6
+      content: news76
+    - bs:
       title: Iskolába hívogató
       school: Tagiskola
       img: bs-iskolaba-hivogato-2026-festes.jpg
