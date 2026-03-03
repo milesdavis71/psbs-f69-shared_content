@@ -320,8 +320,16 @@ right_column:
 
 news:
   2025-26:
+    - ps:
+      title: III. helyezés a Tisza-vetélkedő döntőjében
+      school: Székhely
+      img: ps-term-tud-vetelkedo-dontosok-2026.jpg
+      align: center
+      imgclass: medium-6
+      contentclass: medium-6
+      content: news75
     - bs:
-      title: Első helyezés a Tisza-vetélkedő döntőjében
+      title: I. helyezés a Tisza-vetélkedő döntőjében
       school: Tagiskola
       img: bs-term-tud-vetelkedo-dontosok-2026.jpg
       align: center
