@@ -321,6 +321,14 @@ right_column:
 news:
   2025-26:
     - bs:
+      title: Első helyezés a Tisza-vetélkedő döntőjében
+      school: Tagiskola
+      img: bs-term-tud-vetelkedo-dontosok-2026.jpg
+      align: center
+      imgclass: medium-6
+      contentclass: medium-6
+      content: news74
+    - bs:
       title: Iskolába hívogató
       school: Tagiskola
       img: bs-iskolaba-hivogato-2026-festes.jpg
