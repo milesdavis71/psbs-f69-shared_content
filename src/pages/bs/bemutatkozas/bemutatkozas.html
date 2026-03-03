@@ -35,9 +35,9 @@ qrcode: /assets/img/common/qrcode-bs.png
             <div class="card">
                 <!-- pict --><a
                     href="{{root}}/bemutatkozas/bemutatkozas.html#panel2d"
-                    data-toggle="Modal{{filename}}"
+                    data-toggle="Modal{{@index}}"
                 >
-                    <img src="{{this.image.thumb}}" />
+                    <img src="{{this.image.thumb}}" alt="{{this.image.alt}}" />
                     <p
                         class="text-center show-for-medium"
                         style="margin: 3px 0"
@@ -51,14 +51,14 @@ qrcode: /assets/img/common/qrcode-bs.png
         <!-- modal -->
         <div
             class="large js-gallery-reveal gallery-reveal reveal"
-            id="Modal{{filename}}"
+            id="Modal{{@index}}"
             data-reveal
             data-overlay="true"
         >
             <img
                 class="js-modal-preview modal-preview"
                 src="{{this.image.full}}"
-                alt=""
+                alt="{{this.image.alt}}"
             />
             <button
                 class="close-button"
