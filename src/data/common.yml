@@ -320,6 +320,14 @@ right_column:
 
 news:
   2025-26:
+    - bs:
+      title: Hit- és erkölcstan oktatással kapcsolatos tájékoztató
+      school: Tagiskola
+      img: hittan.jpg
+      align: center
+      imgclass: medium-3
+      contentclass: medium-9
+      content: news77
     - ps:
       title: III. helyezés a Tisza-vetélkedő döntőjében
       school: Székhely
