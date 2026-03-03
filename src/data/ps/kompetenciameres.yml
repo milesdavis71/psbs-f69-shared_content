@@ -1,4 +1,151 @@
 tabs:
+  - id: '2025'
+    tabtitle: '2025'
+    title: '2025'
+    table:
+      headers:
+        [
+          'tantárgy',
+          'oszt',
+          'fh eredm',
+          'fh eredm orsz átl',
+          'fh eredm 1 visz csop',
+          'fh eredm 2 visz csop',
+        ]
+      rows:
+        - - rowspan: 3
+            content: angol nyelv
+          - content: '6.'
+          - content: 0000
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '7.'
+          - content: 0000
+          - content: 🙂
+          - content: 😑
+          - content: 😑
+        - - content: '8.'
+          - content: 0000
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - rowspan: 4
+            content: digitális kultúra
+          - content: '5.'
+          - content: 0000
+          - content: 🙂
+          - content: 🙂
+          - content: 🙂
+        - - content: '6.'
+          - content: 0000
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '7.'
+          - content: 0000
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '8.'
+          - content: 0000
+          - content: 😢
+          - content: 😢
+          - content: 😑
+        - - rowspan: 5
+            content: matematika
+          - content: '4.'
+          - content: 0000
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '5.'
+          - content: 0000
+          - content: 🙂
+          - content: 🙂
+          - content: 🙂
+        - - content: '6.'
+          - content: 0000
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '7.'
+          - content: 0000
+          - content: 😢
+          - content: 😑
+          - content: 😑
+        - - content: '8.'
+          - content: 0000
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - rowspan: 5
+            content: szövegértés
+          - content: '4.'
+          - content: 0000
+          - content: 🙂
+          - content: 😑
+          - content: 😑
+        - - content: '5.'
+          - content: 0000
+          - content: 😑
+          - content: 🙂
+          - content: 🙂
+        - - content: '6.'
+          - content: 0000
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '7.'
+          - content: 0000
+          - content: 🙂
+          - content: 😑
+          - content: 😑
+        - - content: '8.'
+          - content: 0000
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - rowspan: 3
+            content: term. tud.
+          - content: '6.'
+          - content: 0000
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '7.'
+          - content: 0000
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '8.'
+          - content: 0000
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - rowspan: 4
+            content: történelem
+          - content: '5.'
+          - content: 0000
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '6.'
+          - content: 0000
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '7.'
+          - content: 0000
+          - content: 😑
+          - content: 😑
+          - content: 😑
+        - - content: '8.'
+          - content: 0000
+          - content: 😑
+          - content: 😑
+          - content: 😑
+
   - id: '2024'
     tabtitle: '2024'
     title: '2024'
