@@ -320,6 +320,38 @@ right_column:
 
 news:
   2025-26:
+    - ps:
+      title: Fogadóóra
+      school: Székhely
+      img: fogadoora_small.png
+      align: center
+      imgclass: medium-4
+      contentclass: medium-8
+      content: news81
+    - ps:
+      title: Sakk egyéni diákolimpia ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜
+      school: Székhely
+      img: ps-sakkverseny.jpg
+      align: center
+      imgclass: medium-6
+      contentclass: medium-6
+      content: news80
+    - ps:
+      title: Parasport napja
+      school: Székhely
+      img: ps-parasport-nap-2026.jpg
+      align: center
+      imgclass: medium-12
+      contentclass: medium-12
+      content: news79
+    - ps:
+      title: Farsang
+      school: Székhely
+      img: ps-farsang-2026.jpg
+      align: center
+      imgclass: medium-6
+      contentclass: medium-6
+      content: news78
     - bs:
       title: Hit- és erkölcstan oktatással kapcsolatos tájékoztató
       school: Tagiskola
