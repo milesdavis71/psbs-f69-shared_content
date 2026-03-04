@@ -1,4 +1,8 @@
 ---
+- name: Arany Anita
+  grad: főiskola
+  spec1: tanító
+
 - name: Bendéné Bán Gyöngyi
   grad: főiskola
   spec1: magyar–történelem–ének-zene szakos általános iskolai tanár
@@ -74,7 +78,7 @@
   grad: főiskola
   spec1: tanító
 
-- name: Terhes Bernadett
+- name: Terhes Bernadett – tartósan távollévő
   grad: főiskola
   spec1: általános iskolai tanító
 
