@@ -13,138 +13,143 @@ tabs:
           'fh eredm 2 visz csop',
         ]
       rows:
-        - - rowspan: 3
-            content: angol nyelv
-          - content: '6.'
-          - content: 0000
-          - content: 😑
-          - content: 😑
-          - content: 😑
-        - - content: '7.'
-          - content: 0000
-          - content: 🙂
-          - content: 😑
-          - content: 😑
-        - - content: '8.'
-          - content: 0000
-          - content: 😑
-          - content: 😑
-          - content: 😑
-        - - rowspan: 4
-            content: digitális kultúra
-          - content: '5.'
-          - content: 0000
-          - content: 🙂
-          - content: 🙂
-          - content: 🙂
-        - - content: '6.'
-          - content: 0000
-          - content: 😑
-          - content: 😑
-          - content: 😑
-        - - content: '7.'
-          - content: 0000
-          - content: 😑
-          - content: 😑
-          - content: 😑
-        - - content: '8.'
-          - content: 0000
-          - content: 😢
-          - content: 😢
-          - content: 😑
         - - rowspan: 5
             content: matematika
           - content: '4.'
-          - content: 0000
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 1401
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '5.'
-          - content: 0000
-          - content: 🙂
-          - content: 🙂
-          - content: 🙂
+          - content: 1469
+          - content: 🟡
+          - content: 🟡
+          - content: 🟢
         - - content: '6.'
-          - content: 0000
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 1579
+          - content: 🟢
+          - content: 🟢
+          - content: 🟢
         - - content: '7.'
-          - content: 0000
-          - content: 😢
-          - content: 😑
-          - content: 😑
+          - content: 1560
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '8.'
-          - content: 0000
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 1635
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+
         - - rowspan: 5
             content: szövegértés
           - content: '4.'
-          - content: 0000
-          - content: 🙂
-          - content: 😑
-          - content: 😑
+          - content: 1449
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '5.'
-          - content: 0000
-          - content: 😑
-          - content: 🙂
-          - content: 🙂
+          - content: 1457
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '6.'
-          - content: 0000
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 1643
+          - content: 🟢
+          - content: 🟢
+          - content: 🟢
         - - content: '7.'
-          - content: 0000
-          - content: 🙂
-          - content: 😑
-          - content: 😑
+          - content: 1600
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '8.'
-          - content: 0000
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 1530
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+
         - - rowspan: 3
             content: term. tud.
           - content: '6.'
-          - content: 0000
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 1550
+          - content: 🟢
+          - content: 🟡
+          - content: 🟢
         - - content: '7.'
-          - content: 0000
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 1568
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '8.'
-          - content: 0000
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 1524
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+
+        - - rowspan: 3
+            content: angol nyelv
+          - content: '6.'
+          - content: 1584
+          - content: 🟢
+          - content: 🟡
+          - content: 🟢
+        - - content: '7.'
+          - content: 1596
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+        - - content: '8.'
+          - content: 1665
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+
         - - rowspan: 4
             content: történelem
           - content: '5.'
-          - content: 0000
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 1485
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '6.'
-          - content: 0000
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 1666
+          - content: 🟢
+          - content: 🟢
+          - content: 🟢
         - - content: '7.'
-          - content: 0000
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 1602
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '8.'
-          - content: 0000
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 1580
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+
+        - - rowspan: 4
+            content: digitális kultúra
+          - content: '5.'
+          - content: 1560
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+        - - content: '6.'
+          - content: 1630
+          - content: 🟢
+          - content: 🟢
+          - content: 🟢
+        - - content: '7.'
+          - content: 1630
+          - content: 🟡
+          - content: 🟡
+          - content: 🟢
+        - - content: '8.'
+          - content: 1672
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
 
   - id: '2024'
     tabtitle: '2024'
@@ -164,134 +169,134 @@ tabs:
             content: angol nyelv
           - content: '6.'
           - content: 1481
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '7.'
           - content: 1638
-          - content: 🙂
-          - content: 😑
-          - content: 😑
+          - content: 🟢
+          - content: 🟡
+          - content: 🟡
         - - content: '8.'
           - content: 1653
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - rowspan: 4
             content: digitális kultúra
           - content: '5.'
           - content: 1555
-          - content: 🙂
-          - content: 🙂
-          - content: 🙂
+          - content: 🟢
+          - content: 🟢
+          - content: 🟢
         - - content: '6.'
           - content: 1525
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '7.'
           - content: 1562
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '8.'
           - content: 1450
-          - content: 😢
-          - content: 😢
-          - content: 😑
+          - content: 🔴
+          - content: 🔴
+          - content: 🟡
         - - rowspan: 5
             content: matematika
           - content: '4.'
           - content: 1424
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '5.'
           - content: 1575
-          - content: 🙂
-          - content: 🙂
-          - content: 🙂
+          - content: 🟢
+          - content: 🟢
+          - content: 🟢
         - - content: '6.'
           - content: 1471
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '7.'
           - content: 1305
-          - content: 😢
-          - content: 😑
-          - content: 😑
+          - content: 🔴
+          - content: 🟡
+          - content: 🟡
         - - content: '8.'
           - content: 1606
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - rowspan: 5
             content: szövegértés
           - content: '4.'
           - content: 1389
-          - content: 🙂
-          - content: 😑
-          - content: 😑
+          - content: 🟢
+          - content: 🟡
+          - content: 🟡
         - - content: '5.'
           - content: 1603
-          - content: 😑
-          - content: 🙂
-          - content: 🙂
+          - content: 🟡
+          - content: 🟢
+          - content: 🟢
         - - content: '6.'
           - content: 1467
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '7.'
           - content: 1472
-          - content: 🙂
-          - content: 😑
-          - content: 😑
+          - content: 🟢
+          - content: 🟡
+          - content: 🟡
         - - content: '8.'
           - content: 1490
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - rowspan: 3
             content: term. tud.
           - content: '6.'
           - content: 1485
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '7.'
           - content: 1539
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '8.'
           - content: 1551
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - rowspan: 4
             content: történelem
           - content: '5.'
           - content: 1589
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '6.'
           - content: 1510
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '7.'
           - content: 1504
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '8.'
           - content: 1471
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
 
   - id: '2023'
     tabtitle: '2023'
@@ -311,70 +316,70 @@ tabs:
             content: angol nyelv
           - content: '6.'
           - content: 1566
-          - content: 🙂
+          - content: 🟢
           - content: 😐
-          - content: 😑
+          - content: 🟡
         - - content: '7.'
           - content: 1571
-          - content: 😑
-          - content: 😑
-          - content: 🙂
+          - content: 🟡
+          - content: 🟡
+          - content: 🟢
         - - content: '8.'
           - content: 1686
-          - content: 🙂
-          - content: 😑
-          - content: 🙂
+          - content: 🟢
+          - content: 🟡
+          - content: 🟢
         - - rowspan: 3
             content: matematika
           - content: '6.'
           - content: 1531
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
           - content: 😐
         - - content: '7.'
           - content: 1613
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
           - content: 😐
         - - content: '8.'
           - content: 1613
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
           - content: 😐
         - - rowspan: 3
             content: szövegértés
           - content: '6.'
           - content: 1481
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
           - content: 😐
         - - content: '7.'
           - content: 1562
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
           - content: 😐
         - - content: '8.'
           - content: 1587
           - content: 😐
-          - content: 😑
+          - content: 🟡
           - content: 😐
         - - rowspan: 3
             content: term. tud.
           - content: '6.'
           - content: 1493
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
         - - content: '7.'
           - content: 1598
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
           - content: 😐
         - - content: '8.'
           - content: 1591
-          - content: 😑
-          - content: 😑
-          - content: 😑
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
 
   - id: '2022'
     tabtitle: '2022'
