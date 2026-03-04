@@ -48,8 +48,9 @@
                 <strong>Tanítás nélküli munkanap: </strong>{{tan_nelk_nap_5}}
             </li>
             <li>
-                <b>Osztálykirándulások: PS:</b> {{osztalykirandulas_ps}} |
-                <b>BS:</b> {{osztalykirandulas_bs}}
+                <b>Osztálykirándulások</b> {{#if osztalykirandulas_ps}}
+                {{osztalykirandulas_ps}} {{else}} {{osztalykirandulas_bs}}
+                {{/if}}
             </li>
             <li>
                 <strong>Tanítás nélküli munkanap: </strong>{{tan_nelk_nap_6}}

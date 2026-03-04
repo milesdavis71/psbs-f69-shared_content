@@ -9,6 +9,8 @@
   mail: igazgato@petofiszeged.hu
   tel1: '+36307362795'
   tel2: +36 30 736 2795
+  day: 'csütörtök'
+  hour: '11:00–13:00'
 
 - job: Gyógypedagógus
   name: Mede Brigitta
@@ -38,7 +40,7 @@
   tel1: '+36307362795'
   tel2: +36 30 7362795
   day: kedd
-  hour: 08:00–12:00
+  hour: 12:00–15:30
 
 - job: Drogprevenciós tanácsadó
   name: Csala-Pellek Borbála r. őrnagy (Szegedi Rendőrkapitányság)
