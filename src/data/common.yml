@@ -320,6 +320,14 @@ right_column:
 
 news:
   2025-26:
+    - ps:
+      title: Suliváró foglalkozásaink
+      school: Székhely
+      img: ps-2026-tavasz-sulivaro-fogl.jpg
+      align: center
+      imgclass: medium-4
+      contentclass: medium-8
+      content: news82
     - bs:
       title: Fogadóóra
       school: Tagiskola
