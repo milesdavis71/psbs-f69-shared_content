@@ -320,9 +320,9 @@ right_column:
 
 news:
   2025-26:
-    - ps:
+    - bs:
       title: Fogadóóra
-      school: Székhely
+      school: Tagiskola
       img: fogadoora_small.png
       align: center
       imgclass: medium-4
