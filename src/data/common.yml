@@ -320,6 +320,14 @@ right_column:
 
 news:
   2025-26:
+    - bs:
+      title: Elismerő oklevél iskolánknak
+      school: Tagiskola
+      img: bs-csaladbarat-koznevelesi-intezmeny.jpg
+      align: center
+      imgclass: medium-4
+      contentclass: medium-8
+      content: news83
     - ps:
       title: Suliváró foglalkozásaink
       school: Székhely
