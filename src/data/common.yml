@@ -327,7 +327,7 @@ news:
       imgclass: medium-3
       contentclass: medium-9
       content: news84
-    - bs:
+    - common:
       title: Elismerő oklevél iskolánknak
       school: Tagiskola
       img: bs-csaladbarat-koznevelesi-intezmeny.jpg
