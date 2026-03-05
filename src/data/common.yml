@@ -320,6 +320,13 @@ right_column:
 
 news:
   2025-26:
+    - ps:
+      title: Kiemelt eDia Partneriskola tanúsítvány
+      img: edia-szte-logo.jpg
+      align: center
+      imgclass: medium-3
+      contentclass: medium-9
+      content: news84
     - bs:
       title: Elismerő oklevél iskolánknak
       school: Tagiskola
