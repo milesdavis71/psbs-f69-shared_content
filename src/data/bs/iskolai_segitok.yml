@@ -19,7 +19,6 @@
 
 - job: Gyógypedagógus II.
   name: Bozóki Petra
-  mail: nincs megadva
   tel1: '+36307362795'
   tel2: +36 30 7362795
   day: 'hétfő'
@@ -33,9 +32,11 @@
   day: szerda
   hour: 09:00–09:45
 
+- job: iskolaorvos
+  name: Dr. Csilek Éva
+
 - job: Védőnő
-  name: Vona Dóra
-  mail: nincs megadva
+  name: Bereczki Tímea
   tel1: '+36305108256'
   tel2: +36 30 5108256
 
