@@ -32,6 +32,11 @@
   grad: főiskola
   spec1: biológia–kémia szakos általános iskolai tanár
 
+- name: Költő Julianna Gizella
+  grad: főiskola
+  spec1: néptánc oktató
+  spec2: óraadó
+
 - name: Minik Ilona
   grad: egyetem
   spec1: középiskolai informatikatanár
@@ -57,10 +62,6 @@
   grad: egyetem
   spec1: általános iskolai testnevelő tanár
   spec2: általános iskolai természetismeret-környezettan tanár
-
-- name: Költő Julianna Gizella
-  grad: főiskola
-  spec1: néptánc oktató
 
 - name: Savanya Béláné
   grad: főiskola
