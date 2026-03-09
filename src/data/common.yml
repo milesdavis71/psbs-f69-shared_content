@@ -320,6 +320,13 @@ right_column:
 news:
   2025-26:
     - common:
+      title: Tájékoztató a 2026/2027. tanévre történő általános iskolai beiratkozásról
+      img: beiratkozas.jpg
+      align: center
+      imgclass: medium-4
+      contentclass: medium-8
+      content: news85
+    - common:
       title: Kiemelt eDia Partneriskola tanúsítvány
       img: edia-szte-logo.jpg
       align: center
