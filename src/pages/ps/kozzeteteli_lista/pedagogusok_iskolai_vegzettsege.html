@@ -3,8 +3,15 @@ layout: two_columns_ps
 title: Pedagógusok iskolai végzettsége
 page: pedagogusok_iskolai_vegzettsege
 dataFile: 4p_kozzeteteli_lista
+schoolKey: bs
 ---
 {{> breadcrumb}}
 {{> title}}
-{{> ps-tanarok-table}}
+
+<table class="hover stack">
+    <tbody>
+{{> vezetok_ps_table}}
+{{>schooldata-tanarok}}
+</tbody>
+</table>
 
