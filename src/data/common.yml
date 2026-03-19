@@ -320,6 +320,13 @@ right_column:
 news:
   2025-26:
     - common:
+      title: Balatonkenesei nyári tábor az NGSZ szervezésében
+      img: nyari-tabor.jpg
+      align: center
+      imgclass: medium-3
+      contentclass: medium-9
+      content: news87
+    - common:
       title: Rendhagyó könyvtári órák szülőknek és pedagógusoknak
       img: drogprevencio.jpg
       align: center
