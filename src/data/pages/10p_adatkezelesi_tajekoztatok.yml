@@ -4,17 +4,17 @@
   icon: lock
   folder: adatkezelesi_tajekoztatok
   items:
-    - title: 'Adatkezelési tájékoztató'
-      page: 'adatkezelesi_tajekoztato'
-      url: 'adatkezelesi_tajekoztato'
+    - title: 'Intézményi adatkezelési szabályzat'
+      page: 'intezmenyi_adatkezelesi_szabalyzat'
+      url: 'intezmenyi_adatkezelesi_szabalyzat'
+      folder: adatkezelesi_tajekoztatok
+    - title: 'Adatkezelési tájékoztató – tanulók és szülők részére'
+      page: 'adatkezelesi_szabalyzat'
+      url: 'adatkezelesi_szabalyzat'
       folder: adatkezelesi_tajekoztatok
     - title: 'Adatkezelési tájékoztató – panaszok'
       page: 'adatkezelesi_tajekoztato_panaszok'
       url: 'adatkezelesi_tajekoztato_panaszok'
-      folder: adatkezelesi_tajekoztatok
-    - title: 'Adatkezelési szabályzat'
-      page: 'adatkezelesi_szabalyzat'
-      url: 'adatkezelesi_szabalyzat'
       folder: adatkezelesi_tajekoztatok
     - title: 'Nyilatkozat'
       page: 'nyilatkozat'
