@@ -320,6 +320,13 @@ right_column:
 news:
   2025-26:
     - common:
+      title: Tavaszi szünet
+      img: easter_bunny_2023.png
+      align: center
+      imgclass: medium-3
+      contentclass: medium-9
+      content: news88
+    - common:
       title: Balatonkenesei nyári tábor az NGSZ szervezésében
       img: nyari-tabor.jpg
       align: center
