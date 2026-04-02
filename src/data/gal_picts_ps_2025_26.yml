@@ -1,4 +1,136 @@
 cards:
+  - slug: '2026_03_31_memory_delutan'
+    title: 'memory délután'
+    date: '2026. 03. 31.'
+
+  - slug: '2026_03_30_forditott_tori_ora_5_osztaly'
+    title: 'fordított töri óra 5 osztály'
+    date: '2026. 03. 30.'
+
+  - slug: '2026_03_24_digitalis_temahet'
+    title: 'digitális témahét'
+    date: '2026. 03. 24.'
+
+  - slug: '2026_03_19_iskolai_helyesirasi_verseny'
+    title: 'iskolai helyesírási verseny'
+    date: '2026. 03. 19.'
+
+  - slug: '2026_03_19_varjuk_a_tavaszt'
+    title: 'várjuk a tavaszt'
+    date: '2026. 03. 19.'
+
+  - slug: '2026_03_17_angol_nyelvu_prezentaciok'
+    title: 'angol nyelvű prezentációk'
+    date: '2026. 03. 17.'
+
+  - slug: '2026_03_13_marcius_15'
+    title: 'március 15'
+    date: '2026. 03. 13.'
+
+  - slug: '2026_03_12_turcsanyi-fele_gerinctorna'
+    title: 'turcsányi-féle gerinctorna'
+    date: '2026. 03. 12.'
+
+  - slug: '2026_03_10_logikai_csapatverseny'
+    title: 'logikai csapatverseny'
+    date: '2026. 03. 10.'
+
+  - slug: '2026_03_07_sakk_megyei_csapatdonto'
+    title: 'sakk megyei csapatdöntő'
+    date: '2026. 03. 07.'
+
+  - slug: '2026_03_06_tavaszi_kerteszkedes'
+    title: 'tavaszi kertészkedés'
+    date: '2026. 03. 06.'
+
+  - slug: '2026_03_05_szinhazlatogatas'
+    title: 'színházlátogatás'
+    date: '2026. 03. 05.'
+
+  - slug: '2026_03_05_nyomozas_matekoran'
+    title: 'nyomozás matekórán'
+    date: '2026. 03. 05.'
+
+  - slug: '2026_03_05_osztalybuli_a_6_osztalyban'
+    title: 'osztálybuli a 6. osztályban'
+    date: '2026. 03. 05.'
+
+  - slug: '2026_03_03_lazar_ervin_program'
+    title: 'lázár ervin program'
+    date: '2026. 03. 03.'
+
+  - slug: '2026_02_23_csendeletfesto_haziverseny'
+    title: 'csendéletfestő háziverseny'
+    date: '2026. 02. 23.'
+
+  - slug: '2026_02_20_meg_mindig_farsang'
+    title: 'még mindig farsang'
+    date: '2026. 02. 20.'
+
+  - slug: '2026_02_20_magyar_parasport_napja'
+    title: 'magyar parasport napja'
+    date: '2026. 02. 20.'
+
+  - slug: '2026_02_19_robotok_farsangkor_is'
+    title: 'robotok farsangkor is'
+    date: '2026. 02. 19.'
+
+  - slug: '2026_02_18_farsang'
+    title: 'farsang'
+    date: '2026. 02. 18.'
+
+  - slug: '2026_02_06_varazskez_foglalkozas'
+    title: 'varázskéz foglalkozás'
+    date: '2026. 02. 06.'
+
+  - slug: '2026_02_05_aramkorok_a_gyakorlatban'
+    title: 'áramkörök a gyakorlatban'
+    date: '2026. 02. 05.'
+
+  - slug: '2026_02_03_meseszoknya'
+    title: 'meseszoknya'
+    date: '2026. 02. 03.'
+
+  - slug: '2026_01_30_hazi_sakkverseny'
+    title: 'házi sakkverseny'
+    date: '2026. 01. 30.'
+
+  - slug: '2026_01_29_eszporgeto_haziverseny'
+    title: 'észpörgető háziverseny'
+    date: '2026. 01. 29.'
+
+  - slug: '2026_01_27_nemet_szakkor'
+    title: 'német szakkör'
+    date: '2026. 01. 27.'
+
+  - slug: '2026_01_19_2_osztaly_rajzora'
+    title: '2. osztály rajzóra'
+    date: '2026. 01. 19.'
+
+  - slug: '2026_01_19_hoemberek_rajzoran'
+    title: 'hóemberek rajzórán'
+    date: '2026. 01. 19.'
+
+  - slug: '2026_01_17_csokimatine'
+    title: 'csokimatiné'
+    date: '2026. 01. 17.'
+
+  - slug: '2026_01_16_interaktiv_enekora'
+    title: 'interaktív énekóra'
+    date: '2026. 01. 16.'
+
+  - slug: '2026_01_15_ping-pong_szakkor'
+    title: 'ping-pong szakkör'
+    date: '2026. 01. 15.'
+
+  - slug: '2026_01_07_es_meg_mindig_ho'
+    title: 'és még mindig hó'
+    date: '2026. 01. 07.'
+
+  - slug: '2026_01_06_tesiora_a_szabadban'
+    title: 'tesióra a szabadban'
+    date: '2026. 01. 06.'
+
   - slug: '2025_12_18_interaktiv_angolorak'
     title: 'interaktív angolórák'
     date: '2025. 12. 18.'
