@@ -12,12 +12,18 @@ data) "cards")}} {{#if @first}}
             <a
                 href="/galeriak/{{../year}}/{{slug}}.html"
                 aria-label="{{title}}"
+                style="display: block"
             >
-                <img
-                    src="/assets/img/{{../schoolKey}}/galeriak/{{../year}}/{{slug}}/thumb/01_thumb.jpg"
-                    alt="{{title}}"
-                    loading="lazy"
-                />
+                <div
+                    style="position: relative; width: 100%; padding-top: 75%; overflow: hidden"
+                >
+                    <img
+                        src="/assets/img/{{../schoolKey}}/galeriak/{{../year}}/{{slug}}/thumb/01_thumb.jpg"
+                        alt="{{title}}"
+                        loading="lazy"
+                        style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center"
+                    />
+                </div>
             </a>
             <div class="card-section" style="padding: 0 0 0.5rem">
                 <p
