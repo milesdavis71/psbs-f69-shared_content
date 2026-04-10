@@ -1,4 +1,8 @@
 cards:
+  - slug: '2026_04_02_mozilatogatas'
+    title: 'mozilátogatás'
+    date: '2026. 04. 02.'
+
   - slug: '2026_03_31_memory_delutan'
     title: 'memory délután'
     date: '2026. 03. 31.'
@@ -102,10 +106,6 @@ cards:
   - slug: '2026_01_27_nemet_szakkor'
     title: 'német szakkör'
     date: '2026. 01. 27.'
-
-  - slug: '2026_01_19_2_osztaly_rajzora'
-    title: '2. osztály rajzóra'
-    date: '2026. 01. 19.'
 
   - slug: '2026_01_19_hoemberek_rajzoran'
     title: 'hóemberek rajzórán'
