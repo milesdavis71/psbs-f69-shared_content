@@ -1,4 +1,24 @@
 cards:
+  - slug: '2026_03_25_fuveszkertben'
+    title: 'Füvészkertben'
+    date: '2026. 03. 25.'
+
+  - slug: '2026_03_24_iskolaban_az_erdo'
+    title: 'Iskolában az erdő'
+    date: '2026. 03. 24.'
+
+  - slug: '2026_03_23_viz_vilagnapja'
+    title: 'Víz világnapja'
+    date: '2026. 03. 23.'
+
+  - slug: '2026_03_10_matematika_szakkor'
+    title: 'Matematika szakkör'
+    date: '2026. 03. 10.'
+
+  - slug: '2026_03_10_marcius_15'
+    title: 'Március 15.'
+    date: '2025. 03. 10.'
+
   - slug: '2026_02_28_parasport_napja'
     title: 'Parasport napja'
     date: '2026. 02. 28.'
