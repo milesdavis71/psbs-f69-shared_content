@@ -319,6 +319,22 @@ right_column:
 
 news:
   2025-26:
+    - ps:
+      title: Köszönjük adója 1%-át!
+      school: Székhely
+      img: ado_ps.jpg
+      align: center
+      imgclass: medium-5
+      contentclass: medium-7
+      content: news91
+    - bs:
+      title: Adója 1%-ával támogassa iskolai alapítványunkat!
+      school: Tagiskola
+      img: bs_1_szazalek.jpg
+      align: center
+      imgclass: medium-3
+      contentclass: medium-9
+      content: news90
     - common:
       title: Beiratkozás
       img: beiratkozas.jpg
