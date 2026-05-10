@@ -319,6 +319,15 @@ right_column:
 
 news:
   2025-26:
+    - common:
+      title: Rendhagyó könyvtári óra szülőknek és pedagógusoknak
+      school: all
+      img: szecsno-nora.jpg
+      align: center
+      imgclass: medium-3
+      contentclass: medium-9
+      content: news92
+
     - ps:
       title: Köszönjük adója 1%-át!
       school: Székhely
