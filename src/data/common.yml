@@ -319,6 +319,15 @@ right_column:
 
 news:
   2025-26:
+    - bs:
+      title: Tavaszi szülői értekezletek
+      school: Tagiskola
+      img: szuloi.png
+      align: center
+      imgclass: medium-6
+      contentclass: medium-6
+      content: news93
+
     - common:
       title: Rendhagyó könyvtári óra szülőknek és pedagógusoknak
       school: all
