@@ -319,15 +319,6 @@ right_column:
 
 news:
   2025-26:
-    - bs:
-      title: Családi nap a Bálint Sándor Tagiskolában
-      school: Tagiskola
-      img: bs-csaladi-nap.jpg
-      align: center
-      imgclass: medium-3
-      contentclass: medium-9
-      content: news95
-
     - common:
       title: Labanczné Bányász Anett igazgatói pályázata
       school: all
@@ -336,6 +327,16 @@ news:
       imgclass: medium-2
       contentclass: medium-10
       content: news95
+
+    - bs:
+      title: Családi nap a Bálint Sándor Tagiskolában
+      school: Tagiskola
+      img: bs-csaladi-nap.jpg
+      align: center
+      imgclass: medium-3
+      contentclass: medium-9
+      content: news96
+
 
     - common:
       title: Leendő első osztályos tanulók szüleinek tájékoztatása a közétkeztetés igénybevételével kapcsolatban
