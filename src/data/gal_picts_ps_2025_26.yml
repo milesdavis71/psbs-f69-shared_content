@@ -1,30 +1,106 @@
 cards:
+  - slug: '2026_05_14_sakkpalota_es_helyesiras'
+    title: 'Sakkpalota és helyesírás'
+    date: '2026. 05. 14.'
+
+  - slug: '2026_05_12_matematikaora_jatekosan'
+    title: 'Matematikaóra játékosan'
+    date: '2026. 05. 12.'
+
+  - slug: '2026_05_10_iskolan_kivuli_sikerek'
+    title: 'Iskolán kívüli sikerek'
+    date: '2026. 05. 10.'
+
+  - slug: '2026_05_08_triola_bemutato'
+    title: 'Triola bemutató'
+    date: '2026. 05. 08.'
+
+  - slug: '2026_05_08_rendhagyo_irodalomora'
+    title: 'Rendhagyó irodalomóra'
+    date: '2026. 05. 08.'
+
+  - slug: '2026_05_07_focitorna_algyon'
+    title: 'Focitorna Algyőn'
+    date: '2026. 05. 07.'
+
+  - slug: '2026_05_05_robotika_haziverseny'
+    title: 'Robotika háziverseny'
+    date: '2026. 05. 05.'
+
+  - slug: '2026_05_05_5._osztaly_varosi_kalandja'
+    title: '5. osztály városi kalandja'
+    date: '2026. 05. 05.'
+
+  - slug: '2026_04_27_atletika_tobbproba_diakolimpia'
+    title: 'Atlétika többpróba diákolimpia'
+    date: '2026. 04. 27.'
+
+  - slug: '2026_04_24_konyvbol_elmeny'
+    title: 'Könyvböl élmény'
+    date: '2026. 04. 24.'
+
+  - slug: '2026_04_23_fenntarthatosag_doboz_hajtogatas'
+    title: 'Fenntarthatóság doboz hajtogatás'
+    date: '2026. 04. 23.'
+
+  - slug: '2026_04_22_fenntarhatosag_digitalis_platform_tanulasa'
+    title: 'Fenntarhatóság digitális platform tanulása'
+    date: '2026. 04. 22.'
+
+  - slug: '2026_04_21_iskolai_szavaloverseny'
+    title: 'Iskolai szavalóverseny'
+    date: '2026. 04. 21.'
+
+  - slug: '2026_04_21_hazmakett_keszitese_technikaoran'
+    title: 'Házmakett készitese technikaórán'
+    date: '2026. 04. 21.'
+
+  - slug: '2026_04_20_fold_napja_vetelkedo'
+    title: 'Föld napja vetélkedő'
+    date: '2026. 04. 20.'
+
+  - slug: '2026_04_17_dom_tura_a_8_cal'
+    title: 'Dóm túra a 8. osztállyal'
+    date: '2026. 04. 17.'
+
+  - slug: '2026_04_16_szoforgato_2._fordulo'
+    title: 'Szóforgató 2. forduló'
+    date: '2026. 04. 16.'
+
+  - slug: '2026_04_14_memory_delutan'
+    title: 'Memory délután'
+    date: '2026. 04. 14.'
+
+  - slug: '2026_04_13_posztolj_verset_az_utcara'
+    title: 'Posztolj verset az utcára'
+    date: '2026. 04. 13.'
+
   - slug: '2026_04_02_mozilatogatas'
-    title: 'mozilátogatás'
+    title: 'Mozilátogatás'
     date: '2026. 04. 02.'
 
   - slug: '2026_03_31_memory_delutan'
-    title: 'memory délután'
+    title: 'Memory délután'
     date: '2026. 03. 31.'
 
   - slug: '2026_03_30_forditott_tori_ora_5_osztaly'
-    title: 'fordított töri óra 5 osztály'
+    title: 'Fordított töri óra 5. osztály'
     date: '2026. 03. 30.'
 
   - slug: '2026_03_24_digitalis_temahet'
-    title: 'digitális témahét'
+    title: 'Digitális témahét'
     date: '2026. 03. 24.'
 
-  - slug: '2026_03_19_iskolai_helyesirasi_verseny'
-    title: 'iskolai helyesírási verseny'
+  - slug: '2026_03_19_varjuk_a_tavaszt'
+    title: 'Várjuk a tavaszt'
     date: '2026. 03. 19.'
 
-  - slug: '2026_03_19_varjuk_a_tavaszt'
-    title: 'várjuk a tavaszt'
+  - slug: '2026_03_19_iskolai_helyesirasi_verseny'
+    title: 'Iskolai helyesírási verseny'
     date: '2026. 03. 19.'
 
   - slug: '2026_03_17_angol_nyelvu_prezentaciok'
-    title: 'angol nyelvű prezentációk'
+    title: 'Angol nyelvű prezentációk'
     date: '2026. 03. 17.'
 
   - slug: '2026_03_13_marcius_15'
@@ -32,115 +108,115 @@ cards:
     date: '2026. 03. 13.'
 
   - slug: '2026_03_12_turcsanyi-fele_gerinctorna'
-    title: 'turcsányi-féle gerinctorna'
+    title: 'Turcsányi-féle gerinctorna'
     date: '2026. 03. 12.'
 
   - slug: '2026_03_10_logikai_csapatverseny'
-    title: 'logikai csapatverseny'
+    title: 'Logikai csapatverseny'
     date: '2026. 03. 10.'
 
   - slug: '2026_03_07_sakk_megyei_csapatdonto'
-    title: 'sakk megyei csapatdöntő'
+    title: 'Sakk megyei csapatdöntő'
     date: '2026. 03. 07.'
 
   - slug: '2026_03_06_tavaszi_kerteszkedes'
-    title: 'tavaszi kertészkedés'
+    title: 'Tavaszi kertészkedés'
     date: '2026. 03. 06.'
 
   - slug: '2026_03_05_szinhazlatogatas'
-    title: 'színházlátogatás'
-    date: '2026. 03. 05.'
-
-  - slug: '2026_03_05_nyomozas_matekoran'
-    title: 'nyomozás matekórán'
+    title: 'Színházlátogatás'
     date: '2026. 03. 05.'
 
   - slug: '2026_03_05_osztalybuli_a_6_osztalyban'
-    title: 'osztálybuli a 6. osztályban'
+    title: 'Osztálybuli a 6. osztályban'
+    date: '2026. 03. 05.'
+
+  - slug: '2026_03_05_nyomozas_matekoran'
+    title: 'Nyomozás matekórán'
     date: '2026. 03. 05.'
 
   - slug: '2026_03_03_lazar_ervin_program'
-    title: 'lázár ervin program'
+    title: 'Lázár ervin program'
     date: '2026. 03. 03.'
 
   - slug: '2026_02_23_csendeletfesto_haziverseny'
-    title: 'csendéletfestő háziverseny'
+    title: 'Csendéletfestő háziverseny'
     date: '2026. 02. 23.'
 
   - slug: '2026_02_20_meg_mindig_farsang'
-    title: 'még mindig farsang'
+    title: 'Még mindig farsang'
     date: '2026. 02. 20.'
 
   - slug: '2026_02_20_magyar_parasport_napja'
-    title: 'magyar parasport napja'
+    title: 'Magyar parasport napja'
     date: '2026. 02. 20.'
 
   - slug: '2026_02_19_robotok_farsangkor_is'
-    title: 'robotok farsangkor is'
+    title: 'Robotok farsangkor is'
     date: '2026. 02. 19.'
 
   - slug: '2026_02_18_farsang'
-    title: 'farsang'
+    title: 'Farsang'
     date: '2026. 02. 18.'
 
   - slug: '2026_02_06_varazskez_foglalkozas'
-    title: 'varázskéz foglalkozás'
+    title: 'Varázskéz foglalkozás'
     date: '2026. 02. 06.'
 
   - slug: '2026_02_05_aramkorok_a_gyakorlatban'
-    title: 'áramkörök a gyakorlatban'
+    title: 'Áramkörök a gyakorlatban'
     date: '2026. 02. 05.'
 
   - slug: '2026_02_03_meseszoknya'
-    title: 'meseszoknya'
+    title: 'Meseszoknya'
     date: '2026. 02. 03.'
 
   - slug: '2026_01_30_hazi_sakkverseny'
-    title: 'házi sakkverseny'
+    title: 'Házi sakkverseny'
     date: '2026. 01. 30.'
 
   - slug: '2026_01_29_eszporgeto_haziverseny'
-    title: 'észpörgető háziverseny'
+    title: 'Észpörgető háziverseny'
     date: '2026. 01. 29.'
 
   - slug: '2026_01_27_nemet_szakkor'
-    title: 'német szakkör'
+    title: 'Német szakkör'
     date: '2026. 01. 27.'
 
   - slug: '2026_01_19_hoemberek_rajzoran'
-    title: 'hóemberek rajzórán'
+    title: 'Hóemberek rajzórán'
     date: '2026. 01. 19.'
 
   - slug: '2026_01_17_csokimatine'
-    title: 'csokimatiné'
+    title: 'Csokimatiné'
     date: '2026. 01. 17.'
 
   - slug: '2026_01_16_interaktiv_enekora'
-    title: 'interaktív énekóra'
+    title: 'Interaktív énekóra'
     date: '2026. 01. 16.'
 
   - slug: '2026_01_15_ping-pong_szakkor'
-    title: 'ping-pong szakkör'
+    title: 'Ping-pong szakkör'
     date: '2026. 01. 15.'
 
   - slug: '2026_01_07_es_meg_mindig_ho'
-    title: 'és még mindig hó'
+    title: 'És még mindig hó'
     date: '2026. 01. 07.'
 
   - slug: '2026_01_06_tesiora_a_szabadban'
-    title: 'tesióra a szabadban'
+    title: 'Tesióra a szabadban'
     date: '2026. 01. 06.'
 
   - slug: '2025_12_18_interaktiv_angolorak'
-    title: 'interaktív angolórák'
+    title: 'Interaktív angolórák'
     date: '2025. 12. 18.'
 
   - slug: '2025_12_09_rendhagyo_tortenelemora_projektmunka'
-    title: 'rendhagyó történelemóra'
+    title: 'Rendhagyó történelemóra'
     date: '2025. 12. 09.'
 
   - slug: '2025_12_04_mikulas_buli'
-    title: 'mikulás buli'
+    title: 'Mikulás buli'
     date: '2025. 12. 04.'
 
   - slug: '2025_12_03_tanuloink_iskolan_kivuli_sikerei'
@@ -148,71 +224,71 @@ cards:
     date: '2025. 12.  03.'
 
   - slug: '2025_11_26_egeszsegnap'
-    title: 'egészségnap'
+    title: 'Egészségnap'
     date: '2025. 11. 26.'
-
-  - slug: '2025_11_25_2025_bolyai_csapatverseny'
-    title: '2025 bolyai csapatverseny'
-    date: '2025. 11. 25.'
 
   - slug: '2025_11_25_5_osztalyosok_a_Mora_ferenc_muzeumban'
     title: '5. osztályosok a Móra Múzeumban '
     date: '2025. 11. 25.'
 
+  - slug: '2025_11_25_2025_bolyai_csapatverseny'
+    title: '2025 bolyai csapatverseny'
+    date: '2025. 11. 25.'
+
   - slug: '2025_11_24_tarsas_tanulas'
-    title: 'társas tanulás'
+    title: 'Társas tanulás'
     date: '2025. 11. 24.'
 
   - slug: '2025_10_25_csaladi_mozizas'
-    title: 'családi mozizás'
+    title: 'Családi mozizás'
     date: '2025. 10. 25.'
 
   - slug: '2025_10_23_lazar_ervin_program'
-    title: 'lázár ervin program'
+    title: 'Lázár ervin program'
     date: '2025. 10. 23.'
 
-  - slug: '2025_10_22_csaladi_program-darules'
-    title: 'családi program: darules'
+  - slug: '2025_10_22_epitsd_a_jovot'
+    title: 'Építsd a jövőt'
     date: '2025. 10. 22.'
 
-  - slug: '2025_10_22_epitsd_a_jovot'
-    title: 'építsd a jövőt'
+  - slug: '2025_10_22_csaladi_program-darules'
+    title: 'Családi program: darules'
     date: '2025. 10. 22.'
 
   - slug: '2025_10_21_oszi_papirgyujtes'
-    title: 'őszi papírgyűjtés'
+    title: 'Őszi papírgyűjtés'
     date: '2025. 10. 21.'
 
   - slug: '2025_10_20_halloween_afternoon'
-    title: 'halloween afternoon'
+    title: 'Halloween afternoon'
     date: '2025. 10. 20.'
 
   - slug: '2025_10_14_angol_nyelvu_digitalis_prezentacio_keszitese_es_kutatomunka'
-    title: 'angol nyelvű prez. készítés és kutatómunka'
+    title: 'Angol nyelvű prez. készítés és kutatómunka'
     date: '2025. 10. 14.'
 
   - slug: '2025_10_09_pav_nap'
-    title: 'páv nap'
+    title: 'PÁV nap'
     date: '2025. 10. 09.'
 
   - slug: '2025_10_08_szovegertes_fejlesztese_tapasztalatszerzes_reven'
-    title: 'szövegértés fejlesztése'
+    title: 'Szövegértés fejlesztése'
     date: '2025. 10. 08.'
 
   - slug: '2025_10_01_mezei_futoverseny'
-    title: 'mezei futóverseny'
+    title: 'Mezei futóverseny'
     date: '2025. 10. 01.'
 
   - slug: '2025_09_30_magyar_nepmese_napja'
-    title: 'magyar népmese napja'
+    title: 'Magyar népmese napja'
     date: '2025. 09. 30.'
 
-  - slug: '2025_09_26_europai_diaksport_napja'
-    title: 'európai diáksport napja'
+  - slug: '2025_09_26_kutatok_ejszakaja'
+    title: 'Kutatók éjszakája'
     date: '2025. 09. 26.'
 
-  - slug: '2025_09_26_kutatok_ejszakaja'
-    title: 'kutatók éjszakája'
+  - slug: '2025_09_26_europai_diaksport_napja'
+    title: 'Európai diáksport napja'
     date: '2025. 09. 26.'
 
   - slug: '2025_09_25_6_osztaly_piknik'
@@ -220,13 +296,13 @@ cards:
     date: '2025. 09. 25.'
 
   - slug: '2025_09_23_logi-grafi_klub'
-    title: 'logi-grafi klub'
+    title: 'Logi-grafi klub'
     date: '2025. 09. 23.'
 
   - slug: '2025_09_19_szureti_piknik'
-    title: 'szüreti piknik'
+    title: 'Szüreti piknik'
     date: '2025. 09. 19.'
 
   - slug: '2025_09_01_tanevnyito'
-    title: 'tanévnyitó ünnepség'
+    title: 'Tanévnyitó ünnepség'
     date: '2025. 09. 01.'
