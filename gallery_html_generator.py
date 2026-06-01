@@ -188,6 +188,7 @@ class GalleryGeneratorApp:
         self.school_key = StringVar(value="ps")
         self.ps_checked = BooleanVar(value=True)
         self.bs_checked = BooleanVar(value=False)
+        self.update_yaml_checked = BooleanVar(value=True)
         self.output_dir = StringVar(value=str(DEFAULT_OUTPUT_DIR))
         self.status = StringVar(value="Húzd ide a galéria képmappákat, vagy válaszd ki őket a gombbal.")
         self.folders: list[Path] = []
@@ -218,6 +219,14 @@ class GalleryGeneratorApp:
         browse.pack(fill="x")
         Button(browse, text="Képmappák tallózása", command=self._choose_folders).pack(side=LEFT)
         Button(browse, text="Lista törlése", command=self._clear_folders).pack(side=LEFT, padx=(8, 0))
+
+        options = Frame(self.root, padx=12, pady=6)
+        options.pack(fill="x")
+        Checkbutton(
+            options,
+            text="YAML lista frissítése új slug/title/date elemekkel",
+            variable=self.update_yaml_checked,
+        ).pack(side=LEFT)
 
         output = Frame(self.root, padx=12, pady=6)
         output.pack(fill="x")
@@ -290,7 +299,7 @@ class GalleryGeneratorApp:
 
         yaml_added = 0
         yaml_files: list[Path] = []
-        if generated_galleries:
+        if generated_galleries and self.update_yaml_checked.get():
             try:
                 yaml_added, yaml_files = update_gallery_yaml_files(generated_galleries)
             except Exception as exc:
@@ -300,12 +309,17 @@ class GalleryGeneratorApp:
         if yaml_files:
             yaml_names = ", ".join(path.name for path in yaml_files)
             yaml_message = f"\nYAML listaelemek hozzáadva: {yaml_added}\nFrissített fájlok: {yaml_names}"
+        elif generated_galleries and not self.update_yaml_checked.get():
+            yaml_message = "\nYAML lista frissítése kikapcsolva."
 
         if errors:
             messagebox.showwarning("Részben kész", f"{created} HTML fájl létrehozva.{yaml_message}\n\nHibák:\n" + "\n".join(errors))
         else:
             messagebox.showinfo("Kész", f"{created} HTML fájl létrehozva.{yaml_message}")
-        self.status.set(f"Kész: {created} HTML fájl, {yaml_added} YAML listaelem.")
+        if self.update_yaml_checked.get():
+            self.status.set(f"Kész: {created} HTML fájl, {yaml_added} YAML listaelem.")
+        else:
+            self.status.set(f"Kész: {created} HTML fájl. YAML frissítés kikapcsolva.")
 
     def run(self) -> None:
         self.root.mainloop()

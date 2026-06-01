@@ -1,4 +1,64 @@
 cards:
+  - slug: '2026_05_22_falatnyi_tudomany_foglalkozas'
+    title: 'Falatnyi tudomány foglalkozás'
+    date: '2026. 05. 22.'
+
+  - slug: '2026_05_21_iskolakertben'
+    title: 'Iskolakertben'
+    date: '2026. 05. 21.'
+
+  - slug: '2026_05_18_rendhagyo_testneveles_ora'
+    title: 'Rendhagyó testnevelésóra'
+    date: '2026. 05. 18.'
+
+  - slug: '2026_05_13_muvelodesi_haz_kreativ_foglalkozas'
+    title: 'Művelődési ház kreatív foglalkozás'
+    date: '2026. 05. 13.'
+
+  - slug: '2026_05_10_madarak_es_fak_napja'
+    title: 'Madarak és fák napja'
+    date: '2026. 05. 10.'
+
+  - slug: '2026_05_08_triola_hangszerbemutato'
+    title: 'Triola hangszerbemutató'
+    date: '2026. 05. 08.'
+
+  - slug: '2026_05_06_magyar_sport_napja'
+    title: 'Magyar sport napja'
+    date: '2026. 05. 06.'
+
+  - slug: '2026_05_05_diszkortefa_ajandekozas'
+    title: 'Díszkörtefa ajándékozás'
+    date: '2026. 05. 05.'
+
+  - slug: '2026_05_01_kip_ora'
+    title: 'KIP óra'
+    date: '2026. 05. 01.'
+
+  - slug: '2026_04_29_varazsecset_csendeletfesto_verseny'
+    title: 'Varázsecset csendéletfestő verseny'
+    date: '2026. 04. 29.'
+
+  - slug: '2026_04_28_kerekparos_kupa'
+    title: 'Kerékpáros kupa'
+    date: '2026. 04. 28.'
+
+  - slug: '2026_04_24_fenntarthatosagi_temahet'
+    title: 'Fenntarthatósági témahét'
+    date: '2026. 04. 24.'
+
+  - slug: '2026_04_19_agota_futas'
+    title: 'ÁGOTA futás'
+    date: '2026. 04. 19.'
+
+  - slug: '2026_04_17_robotika_foglalkozas'
+    title: 'Robotika foglalkozás'
+    date: '2026. 04. 17.'
+
+  - slug: '2026_03_31_ujjbabok_keszitese'
+    title: 'Ujjbábok készítése'
+    date: '2026. 03. 31.'
+
   - slug: '2026_03_25_fuveszkertben'
     title: 'Füvészkertben'
     date: '2026. 03. 25.'
