@@ -11,7 +11,7 @@ sections:
         images_per_row: 1
         images:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_24/full/01.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/tumb/01.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/thumb/01.jpg
             alt: Kép 1
       - type: paragraph
         text: 'Valamikor nyáron jött a nagy hír: az iskolánk pályázik a Határtalanul! programra!'
@@ -47,7 +47,7 @@ sections:
         images_per_row: 1
         images:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_24/full/02.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/tumb/02.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/thumb/02.jpg
             alt: Kép 1
       - type: paragraph
         text: 'Ezután irány Gyulafehérvár!'
@@ -57,7 +57,7 @@ sections:
         images_per_row: 1
         images:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_24/full/03.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/tumb/03.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/thumb/03.jpg
         alt: Kép 1
       - type: paragraph
         text: 'Amikor beléptünk, egy pillanatra mindenki elnémult. Komolyan, mintha megállt volna az idő – csak bámultuk a hatalmas, gyönyörű templomot. Tátott szájjal, csillogó szemmel.'
@@ -73,7 +73,7 @@ sections:
         images_per_row: 1
         images:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_24/full/04.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/tumb/04.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/thumb/04.jpg
             alt: Kép 1
       - type: paragraph
         text: 'Na, ez nem volt semmi… A lépcső szűk volt, meredek, minden lépésnél nyikorgott valami – olyan érzésünk volt, mintha bármelyik pillanatban elszállhatnánk az időben. Volt, aki meg se mert mozdulni ott fönt!'
@@ -85,7 +85,7 @@ sections:
         images_per_row: 1
         images:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_24/full/05.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/tumb/05.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/thumb/05.jpg
             alt: Kép 1
       - type: paragraph
         text: 'Már nagyon vártuk, hogy megérkezzünk, mert a sok utazás és a lépcsőmászás után mindenki kicsit „lemerült”. De amikor megérkeztünk, azonnal jobb kedvünk lett – nagyon kedvesen fogadtak minket, szinte úgy éreztük, mintha hazaértünk volna.'
@@ -105,7 +105,7 @@ sections:
         images_per_row: 1
         images:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_24/full/06.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/tumb/06.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/thumb/06.jpg
             alt: Kép 1
       - type: paragraph
         text: 'A legizgibb rész még csak ezután jött: Robi szólt, hogy most mindenki kapcsolja le a zseblámpát. Először csak nevetgéltünk, aztán beállt a totális sötétség és csönd. Se fény, se hang – csak mi és a barlang. Furcsa és kicsit hátborzongató érzés volt, de közben nagyon különleges is. Olyasmi, amit az ember soha nem felejt el.'
@@ -115,7 +115,7 @@ sections:
         images_per_row: 1
         images:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_24/full/07.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/tumb/07.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/thumb/07.jpg
             alt: Kép 1
       - type: paragraph
         text: 'Mert bizony várt ránk a Békás-szoros is! Ez a hely egyszerűen lélegzetelállító – hatalmas sziklafalak, alattunk a Békás-patak, körülöttünk a természet minden csodája. Mintha egy képeslap közepén sétálnánk.'
@@ -123,7 +123,7 @@ sections:
         images_per_row: 1
         images:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_24/full/08.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/tumb/08.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/thumb/08.jpg
             alt: Kép 1
       - type: paragraph
         text: 'És hogy ne legyen túl könnyű a nap: át kellett mennünk egy függőhídon is!'
@@ -141,7 +141,7 @@ sections:
         images_per_row: 1
         images:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_24/full/09.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/tumb/09.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/thumb/09.jpg
             alt: Kép 1
       - type: paragraph
         text: 'Délután pedig a hegyek között töltöttük az időt, a Hidegség nevű helyen. Ott, a Muhos patak mellett volt egy esztena (ez olyan, mint egy régi parasztház meg a környéke), ahol szalonnát és kolbászt sütöttünk. Megmutatta a sajtkészítés minden lépését, és azt is, hogyan használják az oltógyomrot (ami... hát, nem volt a lányok kedvence, sőt, volt, aki kicsit rosszul is lett tőle 😄).'
@@ -149,7 +149,7 @@ sections:
         images_per_row: 1
         images:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_24/full/10.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/tumb/10.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/thumb/10.jpg
             alt: Kép 1
       - type: paragraph
         text: Hát, az ízek… egyszerűen mennyei volt!
@@ -161,7 +161,7 @@ sections:
         images_per_row: 1
         images:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_24/full/11.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/tumb/11.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/thumb/11.jpg
         alt: Kép 1
       - type: paragraph
         text: Valahogy ezen az estén mindenki megváltozott egy kicsit. Nem tudjuk megmagyarázni, de olyan érzésünk volt, mintha ez a közös éneklés és tánc összekötött volna minket. Ettől a perctől kezdve már nem csak osztálytársak voltunk, hanem egy igazi csapat. Barátkoztunk, nevettünk, táncoltunk – és ez volt az egyik legszebb este az egész út alatt.
@@ -173,7 +173,7 @@ sections:
         images_per_row: 1
         images:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_24/full/12.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/tumb/12.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/thumb/12.jpg
         alt: Kép 1
       - type: paragraph
         text: Ezután irány Parajd, ahol a sóbánya várt ránk! Már maga a lejutás is izgalmas volt, de odalent mindenkit elvarázsolt a hatalmas tér és a sós levegő. Nemcsak nézelődni lehetett, hanem hintázni, röpizni, tollasozni, és sokan minden játékot kipróbáltak.
@@ -181,7 +181,7 @@ sections:
         images_per_row: 1
         images:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_24/full/13.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/tumb/13.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/thumb/13.jpg
         alt: Kép 1
       - type: paragraph
         text: Délután szekerekkel mentünk a Csorgókő-vízeséshez – olyan volt, mintha egy igazi időutazásba csöppentünk volna! Rázkódott minden, de közben rengeteget nevettünk és beszélgettünk.
@@ -189,7 +189,7 @@ sections:
         images_per_row: 1
         images:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_24/full/14.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/tumb/14.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/thumb/14.jpg
         alt: Kép 1
       - type: paragraph
         text: A vízesés csodás volt, a víz csobogása teljesen lenyűgözött minket.
@@ -199,7 +199,7 @@ sections:
         images_per_row: 1
         images:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_24/full/15.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/tumb/15.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/thumb/15.jpg
             alt: Kép 1
       - type: paragraph
         text: 'Ott fent a kilátón állva tényleg éreztük, milyen szép a természet'
@@ -221,7 +221,7 @@ sections:
         images_per_row: 1
         images:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_24/full/16.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/tumb/16.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/thumb/16.jpg
             alt: Kép 1
       - type: paragraph
         text: 'Aztán Segesvárra érkeztünk, ahol sétáltunk egy nagyot a vár területén. Megmásztuk a híres Diákok lépcsőjét, és megnéztük Petőfi szobrát is. Itt már éreztük, hogy lassan tényleg búcsúzunk Erdélytől, de a szívünkben sok szép emlék maradt.'
@@ -229,7 +229,7 @@ sections:
         images_per_row: 1
         images:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_24/full/17.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/tumb/17.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/thumb/17.jpg
       - type: paragraph
         text: 'Megkezdődött a hazautunk – kb. 6 óra buszozás várt ránk. Nagylaknál egy hatalmas kamionsor állt a határon, már azt hittük, sose jutunk át. De a sofőrünk profin tudta, hova kell sorolni, így gyorsan átvitt minket a határon. Este 8-kor visszaértünk Szegedre, ahol a szülők már alig várták, hogy újra lássanak minket.'
       - type: paragraph
@@ -238,7 +238,7 @@ sections:
         images_per_row: 1
         images:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_24/full/18.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/tumb/18.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_24/thumb/18.jpg
             alt: Kép 1
       - type: heading
         text: Értékelő óra – újra együtt, kicsit másképp
@@ -310,7 +310,7 @@ sections:
       - type: images
         images_per_row: 2
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_23/full/Úton_b_Csorgókő_vízeséshez.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_23/full/Úton_a_Csorgókő_vízeséshez.jpg
             thumb: /assets/img/ps/palyazatok/hatartalanul/hat_23/thumb/Úton_a_Csorgókő_vízeséshez.jpg
             alt: Kép 3
             caption: Úton a Csorgókő vízeséshez
@@ -470,7 +470,7 @@ sections:
             thumb: /assets/img/common/palyazatok/hatartalanul/hat_22/thumb/1_7_székelyvarság.jpg
             alt: 02
             caption: Fehéregyháza
-          - full: /assets/img/common/palyazatok/hatartalanul/hat_22/full/1_3_1_8_székelyvarságeva.jpg
+          - full: /assets/img/common/palyazatok/hatartalanul/hat_22/full/1_8_székelyvarság.jpg
             thumb: /assets/img/common/palyazatok/hatartalanul/hat_22/thumb/1_8_székelyvarság.jpg
             alt: 03
             caption: Székelyvarság
@@ -669,16 +669,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/1_1_Arad.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/1_1_Arad.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/full/1_1_Arad.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/thumb/1_1_Arad.jpg
             alt: Arad
             caption: Arad
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/1_2_Déva.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/1_2_Déva.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/full/1_2_Déva.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/thumb/1_2_Déva.jpg
             alt: Déva
             caption: Déva
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/1_3_Fehéregyháza.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/1_3_Fehéregyháza.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/full/1_3_Fehéregyháza.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/thumb/1_3_Fehéregyháza.jpg
             alt: Fehéregyháza
             caption: Fehéregyháza
       - type: heading
@@ -690,16 +690,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/2_1_Nyerges-tető.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/2_1_Nyerges-tető.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/full/2_1_Nyerges-tető.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/thumb/2_1_Nyerges-tető.jpg
             alt: Nyerges-tető
             caption: Nyerges-tető
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/2_2_Kézdivásárhely.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/2_2_Kézdivásárhely.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/full/2_2_Kézdivásárhely.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/thumb/2_2_Kézdivásárhely.jpg
             alt: Kézdivásárhely
             caption: Kézdivásárhely
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/2_3_Szent_Anna-tó.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/2_3_Szent_Anna-tó.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/full/2_3_Szent_Anna-tó.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/thumb/2_3_Szent_Anna-tó.jpg
             alt: Szent Anna-tó
             caption: Szent Anna-tó
       - type: heading
@@ -711,16 +711,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/3_1_Farkaslaka.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/3_1_Farkaslaka.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/full/3_1_Farkaslaka.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/thumb/3_1_Farkaslaka.jpg
             alt: Farkaslaka
             caption: Farkaslaka
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/3_2_parajdi_sóbánya.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/3_2_parajdi_sóbánya.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/full/3_2_parajdi_sóbánya.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/thumb/3_2_parajdi_sóbánya.jpg
             alt: A parajdi sóbánya
             caption: A parajdi sóbánya
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/3_3_Gyergyószentmiklós.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/3_3_Gyergyószentmiklós.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/full/3_3_Gyergyószentmiklós.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/thumb/3_3_Gyergyószentmiklós.jpg
             alt: Gyergyószentmiklós
             caption: Gyergyószentmiklós
       - type: heading
@@ -732,16 +732,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/4_1_Mádéfalva.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/4_1_Mádéfalva.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/full/4_1_Mádéfalva.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/thumb/4_1_Mádéfalva.jpg
             alt: Madéfalva
             caption: Madéfalva
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/4_2_Gyimesbükk.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/4_2_Gyimesbükk.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/full/4_2_Gyimesbükk.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/thumb/4_2_Gyimesbükk.jpg
             alt: Gyimesbükk
             caption: Gyimesbükk
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/4_3_Csángók_földjén.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/4_3_Csángók_földjén.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/full/4_3_Csángók_földjén.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/thumb/4_3_Csángók_földjén.jpg
             alt: Ezeréves határ
             caption: Ezeréves határ
       - type: heading
@@ -753,16 +753,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/5_1_Karcfalva.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/5_1_Karcfalva.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/full/5_1_Karcfalva.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/thumb/5_1_Karcfalva.jpg
             alt: Csíkkarcfalva
             caption: Csíkkarcfalva
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/5_2_Segesvár.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/5_2_Segesvár.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/full/5_2_Segesvár.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/thumb/5_2_Segesvár.jpg
             alt: Segesvár
             caption: Segesvár
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/5_3_Tordai-hasadék.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/5_3_Tordai-hasadék.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/full/5_3_Tordai-hasadék.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/thumb/5_3_Tordai-hasadék.jpg
             alt: A Tordai-hasadék
             caption: A Tordai-hasadék
   - title: PS HAT19
@@ -780,16 +780,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/1_1_Arad.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/1_1_Arad.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/full/1_1_Arad.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/thumb/1_1_Arad.jpg
             alt: Arad
             caption: Arad
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/1_2_Déva.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/1_2_Déva.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/full/1_2_Déva.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/thumb/1_2_Déva.jpg
             alt: Déva
             caption: Déva
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/1_3_Fehéregyháza.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/1_3_Fehéregyháza.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/full/1_3_Fehéregyháza.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/thumb/1_3_Fehéregyháza.jpg
             alt: Fehéregyháza
             caption: Fehéregyháza
       - type: heading
@@ -801,16 +801,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/2_1_Nyerges-tető.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/2_1_Nyerges-tető.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/full/2_1_Nyerges-tető.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/thumb/2_1_Nyerges-tető.jpg
             alt: Tőzegmohaláp
             caption: Tőzegmohaláp
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/2_2_Nyerges-tető.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/2_2_Nyerges-tető.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/full/2_2_Nyerges-tető.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/thumb/2_2_Nyerges-tető.jpg
             alt: Nyerges-tető
             caption: Nyerges-tető
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/2_3_Szent_Anna-tó.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/2_3_Szent_Anna-tó.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/full/2_3_Szent_Anna-tó.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/thumb/2_3_Szent_Anna-tó.jpg
             alt: Szent Anna-tó
             caption: Szent Anna-tó
       - type: heading
@@ -822,16 +822,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/3_1_Farkaslaka.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/3_1_Farkaslaka.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/full/3_1_Farkaslaka.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/thumb/3_1_Farkaslaka.jpg
             alt: Farkaslaka
             caption: Farkaslaka
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/3_2_parajdi_sóbánya.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/3_2_parajdi_sóbánya.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/full/3_2_parajdi_sóbánya.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/thumb/3_2_parajdi_sóbánya.jpg
             alt: A parajdi sóbánya
             caption: A parajdi sóbánya
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/3_3_Gyergyószentmiklós.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/3_3_Gyergyószentmiklós.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/full/3_3_Gyergyószentmiklós.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/thumb/3_3_Gyergyószentmiklós.jpg
             alt: Gyergyószentmiklós
             caption: Gyergyószentmiklós
       - type: heading
@@ -843,16 +843,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/4_1_Mádéfalva.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/4_1_Mádéfalva.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/full/4_1_Mádéfalva.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/thumb/4_1_Mádéfalva.jpg
             alt: Mádéfalva
             caption: Mádéfalva
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/4_2_Gyimesbükk.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/4_2_Gyimesbükk.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/full/4_2_Gyimesbükk.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/thumb/4_2_Gyimesbükk.jpg
             alt: Gyimesbükk
             caption: Gyimesbükk
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/4_3_Csángók_földjén.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/4_3_Csángók_földjén.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/full/4_3_Csángók_földjén.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/thumb/4_3_Csángók_földjén.jpg
             alt: Ezeréves határ
             caption: Ezeréves határ
       - type: heading
@@ -864,16 +864,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/5_1_Segesvár.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/5_1_Segesvár.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/full/5_1_Segesvár.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/thumb/5_1_Segesvár.jpg
             alt: Segesvár
             caption: Segesvár
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/5_2_Segesvár.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/5_2_Segesvár.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/full/5_2_Segesvár.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/thumb/5_2_Segesvár.jpg
             alt: Csíkkarcfalva
             caption: Csíkkarcfalva
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/5_3_Tordai-hasadék.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/5_3_Tordai-hasadék.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/full/5_3_Tordai-hasadék.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/thumb/5_3_Tordai-hasadék.jpg
             alt: A Tordai-hasadék
             caption: A Tordai-hasadék
   - title: PS HAT18
@@ -887,16 +887,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/1_1_arad.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/1_1_arad.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/full/1_1_arad.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/thumb/1_1_arad.jpg
             alt: Aradi emlékmű
             caption: Aradi emlékmű
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/1_2_mariaadna.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/1_2_mariaadna.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/full/1_2_mariaadna.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/thumb/1_2_mariaadna.jpg
             alt: Máriaradna
             caption: Máriaradna
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/1_3_deva.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/1_3_deva.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/full/1_3_deva.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/thumb/1_3_deva.jpg
             alt: Déva váránál
             caption: Déva váránál
       - type: paragraph
@@ -906,16 +906,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/2_1_aranyosfo.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/2_1_aranyosfo.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/full/2_1_aranyosfo.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/thumb/2_1_aranyosfo.jpg
             alt: Aranyosfő – túra a jégbarlanghoz
             caption: Aranyosfő – túra a jégbarlanghoz
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/2_2_aranyosfo.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/2_2_aranyosfo.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/full/2_2_aranyosfo.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/thumb/2_2_aranyosfo.jpg
             alt: Aranyosfő – túra a jégbarlanghoz
             caption: Aranyosfő – túra a jégbarlanghoz
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/2_3_aranyosfo.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/2_3_aranyosfo.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/full/2_3_aranyosfo.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/thumb/2_3_aranyosfo.jpg
             alt: Aranyosfő – túra a jégbarlanghoz
             caption: Aranyosfő – túra a jégbarlanghoz
       - type: paragraph
@@ -925,16 +925,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/3_1_torda.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/3_1_torda.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/full/3_1_torda.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/thumb/3_1_torda.jpg
             alt: Torda
             caption: Torda
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/3_2_torda.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/3_2_torda.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/full/3_2_torda.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/thumb/3_2_torda.jpg
             alt: Torda
             caption: Torda
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/3_3_torda.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/3_3_torda.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/full/3_3_torda.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/thumb/3_3_torda.jpg
             alt: Torda
             caption: Torda
       - type: paragraph
@@ -944,16 +944,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/4_1_bogako.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/4_1_bogako.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/full/4_1_bogako.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/thumb/4_1_bogako.jpg
             alt: Bogakő
             caption: Bogakő
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/4_2_bogako.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/4_2_bogako.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/full/4_2_bogako.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/thumb/4_2_bogako.jpg
             alt: Bogakő
             caption: Bogakő
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/4_3_haromkiraly_vizeses.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/4_3_haromkiraly_vizeses.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/full/4_3_haromkiraly_vizeses.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/thumb/4_3_haromkiraly_vizeses.jpg
             alt: Háromkirályok vízesés
             caption: Háromkirályok vízesés
       - type: paragraph
@@ -965,16 +965,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/5_1_kiskoh_medvebarlang.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/5_1_kiskoh_medvebarlang.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/full/5_1_kiskoh_medvebarlang.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/thumb/5_1_kiskoh_medvebarlang.jpg
             alt: Kiskoh – medvebarlang
             caption: Kiskoh – medvebarlang
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/5_2_ady_emlekhaz.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/5_2_ady_emlekhaz.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/full/5_2_ady_emlekhaz.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/thumb/5_2_ady_emlekhaz.jpg
             alt: Nagyvárad – Ady Emlékház
             caption: Nagyvárad – Ady Emlékház
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/5_3_nagyszalonta_arany_emlekhaz.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/5_3_nagyszalonta_arany_emlekhaz.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/full/5_3_nagyszalonta_arany_emlekhaz.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/thumb/5_3_nagyszalonta_arany_emlekhaz.jpg
             alt: Nagyszalontán
             caption: Nagyszalontán
       - type: paragraph
@@ -993,16 +993,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/1_deva_1.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/1_deva_1_small.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/full/1_deva_1.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/thumb/1_deva_1.jpg
             alt: Déva vára
             caption: Déva vára
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/1_deva_2.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/1_deva_2_small.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/full/1_deva_2.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/thumb/1_deva_2.jpg
             alt: Déva váránál
             caption: Déva váránál
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/1_deva_3.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/1_deva_3_small.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/full/1_deva_3.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/thumb/1_deva_3.jpg
             alt: Fehéregyházán
             caption: Fehéregyházán
       - type: paragraph
@@ -1016,16 +1016,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/2_csikarcfalva_iskola_4.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/2_csikarcfalva_iskola_4_small.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/full/2_csikarcfalva_iskola_4.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/thumb/2_csikarcfalva_iskola_4.jpg
             alt: A csíkkarcfalvi iskolánál
             caption: A csíkkarcfalvi iskolánál
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/2_csikkarcfalva_1.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/2_csikkarcfalva_1_small.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/full/2_csikkarcfalva_1.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/thumb/2_csikkarcfalva_1.jpg
             alt: A csíkkarcfalvi erődtemplomban
             caption: A csíkkarcfalvi erődtemplomban
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/2_szent_anna_to_4.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/2_szent_anna_to_4_small.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/full/2_szent_anna_to_4.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/thumb/2_szent_anna_to_4.jpg
             alt: A Szent Anna-tónál
             caption: A Szent Anna-tónál
       - type: paragraph
@@ -1041,16 +1041,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/3_bekas_szoros_1.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/3_bekas_szoros_1_small.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/full/3_bekas_szoros_1.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/thumb/3_bekas_szoros_1.jpg
             alt: A Békás-szoros
             caption: A Békás-szoros
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/3_bekas_szoros_2.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/3_bekas_szoros_2_small.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/full/3_bekas_szoros_2.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/thumb/3_bekas_szoros_2.jpg
             alt: A Békás-szorosnál
             caption: A Békás-szorosnál
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/3_gyilkos_to_4.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/3_gyilkos_to_4_small.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/full/3_gyilkos_to_4.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/thumb/3_gyilkos_to_4.jpg
             alt: A Gyilkos-tónál
             caption: A Gyilkos-tónál
       - type: paragraph
@@ -1060,16 +1060,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/5_csiksomlyo_1.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/5_csiksomlyo_1_small.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/full/5_csiksomlyo_1.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/thumb/5_csiksomlyo_1.jpg
             alt: Csíksomlyón
             caption: Csíksomlyón
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/5_csiksomlyo_2.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/5_csiksomlyo_2_small.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/full/5_csiksomlyo_2.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/thumb/5_csiksomlyo_2.jpg
             alt: Csíksomlyón
             caption: Csíksomlyón
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/5_csiksomlyo_3.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/5_csiksomlyo_3_small.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/full/5_csiksomlyo_3.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/thumb/5_csiksomlyo_3.jpg
             alt: Csíksomlyón
             caption: Csíksomlyón
       - type: paragraph
@@ -1079,16 +1079,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/4_gyimesbukk_1.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/4_gyimesbukk_1_small.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/full/4_gyimesbukk_1.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/thumb/4_gyimesbukk_1.jpg
             alt: A Rákóczi-vár
             caption: A Rákóczi-vár
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/4_gyimesbukk_2.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/4_gyimesbukk_2_small.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/full/4_gyimesbukk_2.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/thumb/4_gyimesbukk_2.jpg
             alt: A Rákóczi-várnál
             caption: A Rákóczi-várnál
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/4_gyimeskozeplok.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/4_gyimeskozeplok_small.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/full/4_gyimeskozeplok.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/thumb/4_gyimeskozeplok.jpg
             alt: Nyársazás
             caption: Nyársazás
       - type: paragraph
@@ -1102,16 +1102,16 @@ sections:
       - type: images
         images_per_row: 3
         images:
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/6_kiralyhago_4.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/6_kiralyhago_4_small.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/full/6_kiralyhago_4.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/thumb/6_kiralyhago_4.jpg
             alt: A Király-hágónál
             caption: A Király-hágónál
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/6_nagyszalonta_1.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/6_nagyszalonta_1_small.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/full/6_nagyszalonta_1.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/thumb/6_nagyszalonta_1.jpg
             alt: Nagyszalontán
             caption: Nagyszalontán
-          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/6_nagyszalonta_3.jpg
-            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/6_nagyszalonta_3_small.jpg
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/full/6_nagyszalonta_3.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/thumb/6_nagyszalonta_3.jpg
             alt: Nagyszalontán
             caption: Nagyszalontán
       - type: paragraph
