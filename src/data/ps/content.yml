@@ -657,24 +657,464 @@ sections:
   - title: PS HAT20
     content:
       - type: maintitle
-        text: Az 1848-49-es szabadságharc hőseinek nyomában Erdély területén – Hamarosan...
+        text: Az 1848–49-es szabadságharc hőseinek nyomában Erdély területén
       - type: date
         text: 2022. június 11–15.
+      - type: heading
+        text: Első nap
+      - type: paragraph
+        text: Kora reggeli indulást követően Aradhoz közeledve hallgattuk meg az első tanulói kiselőadást, majd megtekintettük a történelmi tanulmányokból is ismert eseményekhez kapcsolódó aradi tizenhárom vértanú emlékművét. A koszorúzás után Déva vára felé indultunk, útközben felelevenítettük az irodalmi tanulmányokat és Kőmíves Kelemenék történetét. Déva vára kapcsán is rövid tanulói kiselőadásra került sor, majd a vár körüli időzés után folytattuk utunkat. Iskolánk névadójáról a Fehéregyháza határában található emlékhelyénél koszorúval emlékeztünk meg. Utazás közben „Ki tud többet Petőfi Sándorról?” játékos vetélkedővel elevenítettük fel a gyerekek ismereteit.
+      - type: paragraph
+        text: Este a szállás elfoglalása és a szobák elosztása után vacsora, majd a fárasztó napot követően gyors lámpaoltás következett.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/1_1_Arad.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/1_1_Arad.jpg
+            alt: Arad
+            caption: Arad
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/1_2_Déva.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/1_2_Déva.jpg
+            alt: Déva
+            caption: Déva
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/1_3_Fehéregyháza.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/1_3_Fehéregyháza.jpg
+            alt: Fehéregyháza
+            caption: Fehéregyháza
+      - type: heading
+        text: Második nap
+      - type: paragraph
+        text: Esős időben indultunk a kopjafás temetőhöz, de a tanulói kiselőadások és a helyi vezetőnktől kapott érdekes, elgondolkodtató, hasznos információk kárpótoltak bennünket az időjárás okozta viszontagságokért.
+      - type: paragraph
+        text: A Szent Anna-tóhoz érve már szikrázó napsütés fogadott bennünket, így alföldről érkezőkként megismerhettük a hegyvidék változó, szeszélyes, ám mégis barátságos időjárását. Gyönyörű látvány tárult elénk, amint a tó körül ücsörögve az igazi, helyi kürtőskalácsot ettük. A gyerekek kedvükre játszhattak és beszélgethettek egy ideig, majd a hegyoldal túrázáshoz alkalmas útvonalát választva közelítettük meg a tőzegmohalápot. Idegenvezetőnk érdekesen, ízes székely nyelvjárásban, sok humorral és anekdotákkal fűszerezve mutatta be nekünk a lápokban gyakori tőzegmoha különleges élővilágát.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/2_1_Nyerges-tető.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/2_1_Nyerges-tető.jpg
+            alt: Nyerges-tető
+            caption: Nyerges-tető
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/2_2_Kézdivásárhely.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/2_2_Kézdivásárhely.jpg
+            alt: Kézdivásárhely
+            caption: Kézdivásárhely
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/2_3_Szent_Anna-tó.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/2_3_Szent_Anna-tó.jpg
+            alt: Szent Anna-tó
+            caption: Szent Anna-tó
+      - type: heading
+        text: Harmadik nap
+      - type: paragraph
+        text: A délelőtt folyamán a Jézus Szíve-kilátót tekintettük meg, majd Farkaslakára érkezve Tamási Áron sírhelyénél helyeztük el a megemlékezés koszorúját. Megtekintettük szülőházát, és a gyerekek megismerkedtek az író életével, ami a nyolcadik osztályos irodalom tananyag része lesz. A parajdi sóbányába érkezve magunkba szívtuk a sós levegőt, ismerkedtünk az erdélyi sóbányászat történelmével, majd hosszan időztünk, hogy a hatalmas terület minden zegét-zugát bejárhassák a gyerekek.
+      - type: paragraph
+        text: Gyergyószentmiklósra érve is tanulói kiselőadásokból ismerhettük meg a ’48-as emlékműhöz kapcsolódó tudnivalókat, majd a koszorúzást követően még egy fagyizásra is jutott idő.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/3_1_Farkaslaka.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/3_1_Farkaslaka.jpg
+            alt: Farkaslaka
+            caption: Farkaslaka
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/3_2_parajdi_sóbánya.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/3_2_parajdi_sóbánya.jpg
+            alt: A parajdi sóbánya
+            caption: A parajdi sóbánya
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/3_3_Gyergyószentmiklós.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/3_3_Gyergyószentmiklós.jpg
+            alt: Gyergyószentmiklós
+            caption: Gyergyószentmiklós
+      - type: heading
+        text: Negyedik nap
+      - type: paragraph
+        text: Indulást követően a tanulói kiselőadások meghallgatása után a madéfalvi veszedelemre emlékezve a hős székelyek tiszteletére helyeztük el koszorúnkat az emlékmű talapzatánál. A nap folytatásaként a varázslatos Gyimes felé vettük utunkat, ahol először a gyönyörű táj nyűgözött le mindenkit, majd helyi vezetőnk elbeszéléséből megismertük a csángók történetét. Az ezeréves határnál megmásztuk a Rákóczi-vár romjait. Kiadós lovaskocsizás után a hegytetőre érve a gyerekek láthatták, hogyan készítik a sajtot, milyen a hegyi emberek élete és milyen a pásztorélet egy esztenában. Csodálatos környezetben sütöttünk szalonnát és kóstoltunk sajtot is.
+      - type: paragraph
+        text: A nap zárásaként Csíksomlyóra érkeztünk, ahol a búcsújáróhelyen és a kegytemplomban tettünk látogatást.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/4_1_Mádéfalva.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/4_1_Mádéfalva.jpg
+            alt: Madéfalva
+            caption: Madéfalva
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/4_2_Gyimesbükk.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/4_2_Gyimesbükk.jpg
+            alt: Gyimesbükk
+            caption: Gyimesbükk
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/4_3_Csángók_földjén.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/4_3_Csángók_földjén.jpg
+            alt: Ezeréves határ
+            caption: Ezeréves határ
+      - type: heading
+        text: Ötödik nap
+      - type: paragraph
+        text: Zárónapunkon hazafelé megálltunk Segesváron, ahol a történelmi városnegyedben végigjártuk az 1642-ben készült Diáklépcsőt, hogy fentről megcsodálhassuk a város látképét.
+      - type: paragraph
+        text: A Torockói-hegységben található Tordai-hasadék kapcsán megint érdekes legendákkal ismerkedtek meg a gyerekek a kiselőadásokat hallgatva, majd közelebb sétálva utunk során elénk tárult a természeti képződmény különleges látványa is. Erdélyi kirándulásunk búcsúzásául a kürtőskalácsozást választottuk.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/5_1_Karcfalva.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/5_1_Karcfalva.jpg
+            alt: Csíkkarcfalva
+            caption: Csíkkarcfalva
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/5_2_Segesvár.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/5_2_Segesvár.jpg
+            alt: Segesvár
+            caption: Segesvár
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_20/5_3_Tordai-hasadék.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_20/5_3_Tordai-hasadék.jpg
+            alt: A Tordai-hasadék
+            caption: A Tordai-hasadék
   - title: PS HAT19
     content:
       - type: maintitle
-        text: Erdély természeti kincsei gyermekszemmel – Hamarosan...
+        text: Erdély természeti kincsei gyermekszemmel
       - type: date
         text: 2022. június 11–15.
+      - type: heading
+        text: Első nap
+      - type: paragraph
+        text: Kora reggeli indulást követően Aradhoz közeledve hallgattuk meg az első tanulói kiselőadást, majd megtekintettük a történelmi tanulmányokból is ismert eseményekhez kapcsolódó aradi tizenhárom vértanú emlékművét. A koszorúzás után Déva vára felé indultunk, útközben felelevenítettük az irodalmi tanulmányokat és Kőmíves Kelemenék történetét. Déva vára kapcsán is rövid tanulói kiselőadásra került sor, majd a vár körüli időzés után folytattuk utunkat. Iskolánk névadójáról, Fehéregyháza határában található emlékhelyénél koszorúval emlékeztünk meg. Utazás közben „Ki tud többet Petőfi Sándorról” játékos vetélkedővel elevenítettük fel a gyerekek ismereteit.
+      - type: paragraph
+        text: Este a szállás elfoglalása és a szobák elosztása után vacsora és a fárasztó nap után gyors lámpaoltás következett.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/1_1_Arad.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/1_1_Arad.jpg
+            alt: Arad
+            caption: Arad
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/1_2_Déva.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/1_2_Déva.jpg
+            alt: Déva
+            caption: Déva
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/1_3_Fehéregyháza.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/1_3_Fehéregyháza.jpg
+            alt: Fehéregyháza
+            caption: Fehéregyháza
+      - type: heading
+        text: Második nap
+      - type: paragraph
+        text: Esős időben indultunk a kopjafás temetőhöz, de tanulói kiselőadások mellett helyi vezetőnktől megtudott érdekes, elgondolkodtató, hasznos információk kárpótoltak bennünket az időjárás okozta viszontagságok miatt.
+      - type: paragraph
+        text: A Szent Anna-tóhoz érve már szikrázó napsütés fogadott bennünket, így alföldről érkezőkként megismerhettük a hegyvidék változó, szeszélyes ám mégis barátságos időjárását. Gyönyörű látvány tárult elénk, amint a tó körül ücsörögve az igazi, helyi kürtöskalácsot ettük. A gyerekek kedvükre játszhattak, beszélgethettek egy ideig, majd a hegyoldal túrázáshoz alkalmas útvonalát választva közelítettük meg a tőzegmohalápot. Idegenvezetőnk érdekesen, ízes székely nyelvjárásban, sok humorral anekdotákkal fűszerezve mutatta be nekünk lápokban gyakori növény a tőzegmoha különleges élővilágát.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/2_1_Nyerges-tető.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/2_1_Nyerges-tető.jpg
+            alt: Tőzegmohaláp
+            caption: Tőzegmohaláp
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/2_2_Nyerges-tető.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/2_2_Nyerges-tető.jpg
+            alt: Nyerges-tető
+            caption: Nyerges-tető
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/2_3_Szent_Anna-tó.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/2_3_Szent_Anna-tó.jpg
+            alt: Szent Anna-tó
+            caption: Szent Anna-tó
+      - type: heading
+        text: Harmadik nap
+      - type: paragraph
+        text: A délelőtt folyamán a Jézus Szíve Kilátót tekintettük meg, majd Farkaslakára érkezve Tamási Áron sírhelyénél helyeztük el a megemlékezés koszorúját, megtekintettük szülőházát és ismerkedtek a gyerekek az író életével, ami a nyolcadik osztályos irodalom tananyag része lesz. A parajdi sóbányába érkezve magunkba szívtuk a sós levegőt, ismerkedtünk az erdélyi sóbányászat történelmével majd hosszan időztünk, hogy a hatalmas terület minden zegét-zugát bejárhassák a gyerekek.
+      - type: paragraph
+        text: Gyergyószentmiklósra érve is tanulói kiselőadásokból ismerhettük meg a ’48-as emlékműhöz kapcsolódó tudnivalókat, majd koszorúzást követően még egy fagyizásra is jutott idő.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/3_1_Farkaslaka.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/3_1_Farkaslaka.jpg
+            alt: Farkaslaka
+            caption: Farkaslaka
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/3_2_parajdi_sóbánya.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/3_2_parajdi_sóbánya.jpg
+            alt: A parajdi sóbánya
+            caption: A parajdi sóbánya
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/3_3_Gyergyószentmiklós.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/3_3_Gyergyószentmiklós.jpg
+            alt: Gyergyószentmiklós
+            caption: Gyergyószentmiklós
+      - type: heading
+        text: Negyedik nap
+      - type: paragraph
+        text: Indulást követően a tanulói kiselőadások meghallgatása után a mádéfalvi veszedelemre emlékezve a hős székelyek tiszteletére helyeztük el koszorúnkat az emlékmű talapzatánál. A nap folytatásaként a varázslatos Gyimes felé vettünk az utunkat, ahol először a gyönyörű táj nyűgözött le mindenkit, majd helyi vezetőnk elbeszéléséből megismertük a csángók történetét, az ezeréves határnál megmásztuk a Rákóczi vár romjait. Kiadós lovaskocsizás után a hegytetőre érve a gyerekek láthatták hogyan készítik a sajtot, milyen a hegyi emberek élete, milyen egy esztenában a pásztorélet. Csodálatos környezetben sütöttünk szalonnát és kóstoltunk sajtot is.
+      - type: paragraph
+        text: A nap zárásaként Csíksomlyóra érkeztünk, ahol a búcsújáróhelyen és kegytemplomban tettünk látogatást.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/4_1_Mádéfalva.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/4_1_Mádéfalva.jpg
+            alt: Mádéfalva
+            caption: Mádéfalva
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/4_2_Gyimesbükk.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/4_2_Gyimesbükk.jpg
+            alt: Gyimesbükk
+            caption: Gyimesbükk
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/4_3_Csángók_földjén.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/4_3_Csángók_földjén.jpg
+            alt: Ezeréves határ
+            caption: Ezeréves határ
+      - type: heading
+        text: Ötödik nap
+      - type: paragraph
+        text: Zárónapunkon hazafelé megálltunk Segesváron, ahol a történelmi városnegyedben végigjártuk az 1642-ben készült Diáklépcsőt, hogy fentről megcsodálhassuk a város látképét.
+      - type: paragraph
+        text: A Torockói-hegységben található Tordai-hasadék kapcsán megint érdekes legendákkal ismerkedtek meg a gyerekek a kiselőadásokat hallgatva, majd közelebb sétálva utunk során elénk tárult a természeti képződmény különleges látványa is. Erdélyi kirándulásunk búcsúzásául a kürtőskalácsozást választottuk.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/5_1_Segesvár.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/5_1_Segesvár.jpg
+            alt: Segesvár
+            caption: Segesvár
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/5_2_Segesvár.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/5_2_Segesvár.jpg
+            alt: Csíkkarcfalva
+            caption: Csíkkarcfalva
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_19/5_3_Tordai-hasadék.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_19/5_3_Tordai-hasadék.jpg
+            alt: A Tordai-hasadék
+            caption: A Tordai-hasadék
   - title: PS HAT18
     content:
       - type: maintitle
-        text: Magyar írók, költők nyomában Erdély területén – Hamarosan...
-      - type: date
-        text:
+        text: Magyar írók, költők nyomában Erdély területén
+      - type: paragraph
+        text: "Az öt napos tanulmányi kirándulás alatt a következő programokat valósítottuk meg:"
+      - type: heading
+        text: Első nap
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/1_1_arad.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/1_1_arad.jpg
+            alt: Aradi emlékmű
+            caption: Aradi emlékmű
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/1_2_mariaadna.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/1_2_mariaadna.jpg
+            alt: Máriaradna
+            caption: Máriaradna
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/1_3_deva.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/1_3_deva.jpg
+            alt: Déva váránál
+            caption: Déva váránál
+      - type: paragraph
+        text: A nap folyamán megtekintettük az aradi tizenhárom vértanú emlékművét, majd folytattuk utunkat a máriaadnai kegytemplomhoz. Végül Déva várához mentünk fel. A nap esővel kezdődött, de ez nem befolyásolta a jó hangulatunkat. Déván pedig már a nap is kisütött, ahol a várat fedezhettük fel.
+      - type: heading
+        text: Második nap
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/2_1_aranyosfo.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/2_1_aranyosfo.jpg
+            alt: Aranyosfő – túra a jégbarlanghoz
+            caption: Aranyosfő – túra a jégbarlanghoz
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/2_2_aranyosfo.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/2_2_aranyosfo.jpg
+            alt: Aranyosfő – túra a jégbarlanghoz
+            caption: Aranyosfő – túra a jégbarlanghoz
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/2_3_aranyosfo.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/2_3_aranyosfo.jpg
+            alt: Aranyosfő – túra a jégbarlanghoz
+            caption: Aranyosfő – túra a jégbarlanghoz
+      - type: paragraph
+        text: "Túravezető segítségével az aranyosfői – jégbarlangot kerestük fel. A túrán erejéhez mérten mindenki „kitett magáért”: 12 kilométeres távon közel 600 méteres szintkülönbséget győztünk le. Fáradozásunk meghozta gyümölcsét: felfedeztük egy Európában egyedülálló jégbarlang csodálatos világát."
+      - type: heading
+        text: Harmadik nap
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/3_1_torda.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/3_1_torda.jpg
+            alt: Torda
+            caption: Torda
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/3_2_torda.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/3_2_torda.jpg
+            alt: Torda
+            caption: Torda
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/3_3_torda.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/3_3_torda.jpg
+            alt: Torda
+            caption: Torda
+      - type: paragraph
+        text: Tordára tartottunk. Az útról láthattuk a Tordai hasadékot. Megérkezve a városba először a református parókiára mentünk, ahol a Petőfi szobor előtt a helyi lelkész mesélt a város történetéről és a magyarság helyzetéről Erdélyben. Megkoszorúztuk a szabadságharc költőjének szobrát. Innen utunk a tordai sóbányához vezetett, ahol a magyar idegenvezető érdekesen és egyben szórakoztatóan mesélt. Elcsodálkoztunk a lenyűgöző méreteken. A buszút sok-sok beszélgetéssel, játékos fejtörőkkel telt.
+      - type: heading
+        text: Negyedik nap
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/4_1_bogako.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/4_1_bogako.jpg
+            alt: Bogakő
+            caption: Bogakő
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/4_2_bogako.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/4_2_bogako.jpg
+            alt: Bogakő
+            caption: Bogakő
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/4_3_haromkiraly_vizeses.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/4_3_haromkiraly_vizeses.jpg
+            alt: Háromkirályok vízesés
+            caption: Háromkirályok vízesés
+      - type: paragraph
+        text: A napot a Boga-kő kilátónál kezdtük, ahol a tél „maradványaival” találkozva májusi hógolyózásra is sor került. A kilátónál gyönyörű látvány tárult elénk; ráláttunk a Boga-völgyre, ahol a szállásunk is van. Ezt követően a völgyben izgalmas túrán jutottunk el a Háromkirályok vízeséshez. A bátrabbak bemerészkedtek a vízzuhatag alá is.
+      - type: heading
+        text: Ötödik nap
+      - type: paragraph
+        text: Utunk a kiskohi Medve-barlangba vezetett, ahol a gyönyörű cseppköveken kívül egy 15 000 éves medvecsontvázat is láthattunk. Folytattuk utunkat Nagyváradra, ahol fagyizással kezdtük a városnézést, majd az Ady Endre emlékmúzeumhoz mentünk. Utolsó állomásunk Nagyszalontán Arany János szülőháza volt, ahol érdekességeket tudtunk meg a költő gyerekkoráról.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/5_1_kiskoh_medvebarlang.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/5_1_kiskoh_medvebarlang.jpg
+            alt: Kiskoh – medvebarlang
+            caption: Kiskoh – medvebarlang
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/5_2_ady_emlekhaz.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/5_2_ady_emlekhaz.jpg
+            alt: Nagyvárad – Ady Emlékház
+            caption: Nagyvárad – Ady Emlékház
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_18/5_3_nagyszalonta_arany_emlekhaz.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_18/5_3_nagyszalonta_arany_emlekhaz.jpg
+            alt: Nagyszalontán
+            caption: Nagyszalontán
+      - type: paragraph
+        text: Szerencsések vagyunk, hogy lehetőséget kaptunk erre az erdélyi kirándulásra, mely maradandó élmény mindannyiunk számára. A diákok bővítették tudásukat, képet kaptak a magyar lakta területek helyzetéről. Személyesen felkereshették a magyar írók, költő által is járt tájakat. Nem utolsó sorban pedig igazi csapatépítő hatással volt az osztályra.
+      - type: video
+        src: /assets/img/ps/palyazatok/hatartalanul/hat_18/slideshow_video.mp4
+        caption: Slideshow video a kiránduláson készült képekből
   - title: PS HAT17
     content:
       - type: maintitle
-        text: Erdélyi legendák nyomában – Hamarosan...
-      - type: date
-        text: 2018. május 30-a és június 3-a között
+        text: Erdélyi legendák nyomában
+      - type: paragraph
+        text: Iskolánk hetedik osztályos tanulóival a Határtalanul! pályázat keretében 2018. május 30-a és június 3-a között Erdélybe utazhattunk, ahol rendkívül sok érdekes program várt minket.
+      - type: heading
+        text: Első nap
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/1_deva_1.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/1_deva_1_small.jpg
+            alt: Déva vára
+            caption: Déva vára
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/1_deva_2.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/1_deva_2_small.jpg
+            alt: Déva váránál
+            caption: Déva váránál
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/1_deva_3.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/1_deva_3_small.jpg
+            alt: Fehéregyházán
+            caption: Fehéregyházán
+      - type: paragraph
+        text: Az indulás napján nagyon hosszú út állt előttünk, de egyáltalán nem unatkoztunk, hiszen a csíkkarcfalvi szállásra vezető utunkat többször is megszakítottuk egy-egy izgalmas helyszínen. Déva váránál is megálltunk, ahol felelevenítettük Mikes Kelemen legendáját. Hosszú út vezetett a vár tetejére, de megérte az erőfeszítést, mivel onnan gyönyörű kilátás nyílt a környező hegyekre.
+      - type: paragraph
+        text: Fehéregyházán felkerestük Petőfi Sándor emlékművét, amelynél közösen elszavaltuk a Nemzeti Dalt, valamint egy saját készítésű koszorút helyeztünk el.
+      - type: paragraph
+        text: Innen utunk a szállásunkra vezetett, egy kis erdélyi faluba, Csíkkarcfalvára. Itt igen kedves fogadtatásban volt részünk az Európa Panzióban. Este még maradt energiánk egy kis sétára is, melynek során körbejártuk a minket vendégül látó falucskát.
+      - type: heading
+        text: Második nap
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/2_csikarcfalva_iskola_4.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/2_csikarcfalva_iskola_4_small.jpg
+            alt: A csíkkarcfalvi iskolánál
+            caption: A csíkkarcfalvi iskolánál
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/2_csikkarcfalva_1.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/2_csikkarcfalva_1_small.jpg
+            alt: A csíkkarcfalvi erődtemplomban
+            caption: A csíkkarcfalvi erődtemplomban
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/2_szent_anna_to_4.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/2_szent_anna_to_4_small.jpg
+            alt: A Szent Anna-tónál
+            caption: A Szent Anna-tónál
+      - type: paragraph
+        text: Kirándulásunk második napján a helyi Mártonffy György Általános Iskolába látogattunk el, ahol megismerkedtünk az ottani hetedik osztályosokkal. Bemutattuk nekik Szeged városát és iskolánkat, elénekeltünk közösen egy csíkkarcfalvi népdalt, barátságos focimeccset játszottunk, valamint ellátogattunk az iskola közvetlen szomszédságában épült jégpályához is, ahol a helyi gyerekek közül sokan jégkorongoznak. Nagyon érdekes volt belepillantani az itt élő gyerekek mindennapjaiba. Ajándékba kaptunk tőlük egy jégkorong ütőt, amely azóta iskolánk egyik falát díszíti, és mi is adtunk nekik egy-egy kézzel festett kövecskét, melyet még itthon készítettünk a kirándulást megelőző napokban.
+      - type: paragraph
+        text: Délután a Szent Anna-tóhoz utaztunk. Gyönyörű látvány fogadott itt minket, nem győztük csodálni ezt a természeti szépséget. A tó mellett épült hangulatos kis kápolnához is szerettünk volna elmenni, ám az ott élő medvecsaládot megpillantva inkább visszafordultunk, nehogy megzavarjuk nyugalmukat.
+      - type: paragraph
+        text: A Mohos-tőzeglápot egy helyi kísérővel nézhettük meg, aki az út során megismertette velünk a tőzegláp kialakulásának történetét, valamint az itt élő növény – és állatvilágot is bemutatta. Ezen a napon este sor került még a csíkkarcfalvi erődtemplom megtekintésére, melyet a helyi kántor mutatott be, miközben sok érdekes dolgot mesélt nekünk a falu múltjáról.
+      - type: paragraph
+        text: Ezen a napon este sor került még a csíkkarcfalvi erődtemplom megtekintésére, melyet a helyi kántor mutatott be, miközben sok érdekes dolgot mesélt nekünk a falu múltjáról.
+      - type: heading
+        text: Harmadik nap
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/3_bekas_szoros_1.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/3_bekas_szoros_1_small.jpg
+            alt: A Békás-szoros
+            caption: A Békás-szoros
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/3_bekas_szoros_2.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/3_bekas_szoros_2_small.jpg
+            alt: A Békás-szorosnál
+            caption: A Békás-szorosnál
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/3_gyilkos_to_4.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/3_gyilkos_to_4_small.jpg
+            alt: A Gyilkos-tónál
+            caption: A Gyilkos-tónál
+      - type: paragraph
+        text: Kirándulásunk harmadik napjának reggelén a Békási-víztározó felé vettük az irányt. Az út ismét elég hosszú volt, de kárpótolt minket a lenyűgöző szépségű táj, amit láthattunk. Visszafelé a Békás-szoros egy részén gyalog tettük meg az utat. Lélegzetelállítóan gyönyörű látványt nyújt a Békás-patak és az azt körülölelő hatalmas sziklafalak. Igazi természeti ritkaság, amit itt láthattunk.
+      - type: paragraph
+        text: A Gyilkos-tó szintén csodálatosan szép, sokáig gyönyörködtünk is benne, mielőtt meghallgattuk kialakulásának legendáját.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/5_csiksomlyo_1.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/5_csiksomlyo_1_small.jpg
+            alt: Csíksomlyón
+            caption: Csíksomlyón
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/5_csiksomlyo_2.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/5_csiksomlyo_2_small.jpg
+            alt: Csíksomlyón
+            caption: Csíksomlyón
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/5_csiksomlyo_3.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/5_csiksomlyo_3_small.jpg
+            alt: Csíksomlyón
+            caption: Csíksomlyón
+      - type: paragraph
+        text: Ezt követően elindultunk Csíksomlyóra, ahol megkóstoltuk a borvizet és túráztunk a híres búcsújáróhelyen is. A csíksomlyói kegytemplomot is megtekintettük.
+      - type: heading
+        text: Negyedik nap
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/4_gyimesbukk_1.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/4_gyimesbukk_1_small.jpg
+            alt: A Rákóczi-vár
+            caption: A Rákóczi-vár
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/4_gyimesbukk_2.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/4_gyimesbukk_2_small.jpg
+            alt: A Rákóczi-várnál
+            caption: A Rákóczi-várnál
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/4_gyimeskozeplok.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/4_gyimeskozeplok_small.jpg
+            alt: Nyársazás
+            caption: Nyársazás
+      - type: paragraph
+        text: "Erdélyi tartózkodásunk negyedik napján egy újabb festői szépségű táj megtekintésére volt lehetőségünk: Gyimesbükkbe látogattunk el. Itt egy helyi idegenvezető megismertette velünk a gyimesi csángók történetét, megmutatta nekünk az ezeréves határt, valamint a Rákóczi-vár romjait. Lovaskocsival mentünk fel a hegyek közé, ahol egy esztenánál szalonnát és kolbászt sütöttünk, házi készítésű sajtot és túrót kóstoltunk. Megismerkedtünk Juhásszal, a terelőkutyával, aki minden este segít hazaterelni a gazdaság teheneit."
+      - type: paragraph
+        text: A helyi tehetséges fiatalok népviseleti ruháikban mutatták be nekünk táncaikat, és egy közös, jó hangulatú körtáncra is invitáltak minket.
+      - type: heading
+        text: Ötödik nap
+      - type: paragraph
+        text: Az ötödik nap ismét az utazásról szólt. Szívünkben vegyes érzésekkel indultunk haza. Egyrészt sajnáltuk, hogy vége a csodás kalandoknak, másrészt örültünk, hogy este végre viszontláthatjuk a családunkat. Útközben megálltunk a Király-hágónál, ahonnan visszatekinthettünk Erdély hegyeire, felidéztük magunkban a festői szépségű tájakat, melyeket lehetőségünk volt látni az elmúlt napokban.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/6_kiralyhago_4.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/6_kiralyhago_4_small.jpg
+            alt: A Király-hágónál
+            caption: A Király-hágónál
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/6_nagyszalonta_1.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/6_nagyszalonta_1_small.jpg
+            alt: Nagyszalontán
+            caption: Nagyszalontán
+          - full: /assets/img/ps/palyazatok/hatartalanul/hat_17/6_nagyszalonta_3.jpg
+            thumb: /assets/img/ps/palyazatok/hatartalanul/hat_17/6_nagyszalonta_3_small.jpg
+            alt: Nagyszalontán
+            caption: Nagyszalontán
+      - type: paragraph
+        text: Utolsó állomásunk Nagyszalontán volt, ahol Arany János szülőházánál sok-sok érdekességet hallhatunk a költő gyerekkoráról. Itt helyeztük el az utolsó koszorúnkat, majd a határ felé vettük utunkat.
+      - type: paragraph
+        text: Szerencsések vagyunk, hogy lehetőséget kaptunk erre az erdélyi kirándulásra, mely maradandó élmény mindannyiunk számára, egy szép, örök emlék, mely akkor is összeköt majd minket, ha már nem leszünk együtt a mindennapokban.

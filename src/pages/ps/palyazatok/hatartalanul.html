@@ -60,13 +60,13 @@ title: Határtalanul! pályázatok
                           <div class="cell small-12 medium-{{divide 12 ../images_per_row}}">
                             <div class="card">
                               <div class="card-section text-center">
-                                <img src="{{ this.thumb }}" alt="{{ this.alt }}" class="thumbnail show-for-medium" data-open="modal-{{@../index}}-{{@index}}" style="cursor:pointer;" />
+                                <img src="{{ this.thumb }}" alt="{{ this.alt }}" class="thumbnail show-for-medium" data-open="modal-{{@../../index}}-{{@../index}}-{{@index}}" style="cursor:pointer;" />
                                 <img src="{{ this.thumb }}" alt="{{ this.alt }}" class="thumbnail hide-for-medium" />
                                 {{#if this.caption}}<p class="caption">{{ this.caption }}</p>{{/if}}
                               </div>
                             </div>
     
-                            <div class="reveal large" id="modal-{{@../index}}-{{@index}}" data-reveal>
+                            <div class="reveal large" id="modal-{{@../../index}}-{{@../index}}-{{@index}}" data-reveal>
                               <img src="{{ this.full }}" alt="{{ this.alt }}" />
                               <button class="close-button" data-close aria-label="Bezárás" type="button">
                                 <span aria-hidden="true">&times;</span>
@@ -74,6 +74,23 @@ title: Határtalanul! pályázatok
                             </div>
                           </div>
                         {{/each}}
+                    </div>
+                  {{/ifequal}}
+
+                  {{#ifequal this.type "video"}}
+                    {{#if this.caption}}
+                      <h6 class="text-center subheader">{{ this.caption }}</h6>
+                    {{/if}}
+                    <div class="grid-x grid-margin-x">
+                      <div class="cell auto"></div>
+                      <div class="cell small-12 large-8">
+                        <div class="responsive-embed widescreen">
+                          <video controls preload="metadata">
+                            <source src="{{ this.src }}" type="video/mp4" />
+                          </video>
+                        </div>
+                      </div>
+                      <div class="cell auto"></div>
                     </div>
                   {{/ifequal}}
                   {{/each}}
