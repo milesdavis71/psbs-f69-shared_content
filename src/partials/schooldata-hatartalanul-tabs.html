@@ -56,13 +56,13 @@
                     <div class="cell small-12 medium-{{divide 12 ../images_per_row}}">
                       <div class="card">
                         <div class="card-section text-center">
-                          <img src="{{ this.thumb }}" alt="{{ this.alt }}" class="thumbnail show-for-medium" data-open="modal-{{@../index}}-{{@index}}" style="cursor:pointer;" />
+                          <img src="{{ this.thumb }}" alt="{{ this.alt }}" class="thumbnail show-for-medium" data-open="modal-{{@../../index}}-{{@../index}}-{{@index}}" style="cursor:pointer;" />
                           <img src="{{ this.thumb }}" alt="{{ this.alt }}" class="thumbnail hide-for-medium" />
                           {{#if this.caption}}<p class="caption">{{ this.caption }}</p>{{/if}}
                         </div>
                       </div>
 
-                      <div class="reveal large" id="modal-{{@../index}}-{{@index}}" data-reveal>
+                      <div class="reveal large" id="modal-{{@../../index}}-{{@../index}}-{{@index}}" data-reveal>
                         <img src="{{ this.full }}" alt="{{ this.alt }}" />
                         <button class="close-button" data-close aria-label="Bezárás" type="button">
                           <span aria-hidden="true">&times;</span>

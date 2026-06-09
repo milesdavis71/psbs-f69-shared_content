@@ -720,20 +720,422 @@ sections:
   - title: BS HAT19
     content:
       - type: maintitle
-        text: Királyok és fejedelmek nyomában Erdélyben – Hamarosan...
-      - type: date
-        text: 2022. június 10–14.
+        text: Királyok és fejedelmek nyomában Erdélyben
+      - type: paragraph
+        text: A Szegedi Petőfi Sándor Általános Iskola Bálint Sándor Tagiskolája 7. évfolyamos diákjai a Határtalanul! pályázatnak köszönhetően 2022. június 10–14. között Erdély csodaszép tájain barangolhattak.
+      - type: paragraph
+        text: Tanulmányi kirándulásunkat előkészítő tevékenység előzte meg, melynek során diákjaink felkészültek az útra. Végigtekintettük a kirándulás állomásait, annak történelmi, néprajzi és természeti-földrajzi vonatkozásait. Az információszerzést és a kutató-rendszerező munkát csoportokban, párokban és egyénileg végezték a gyerekek. Játékos vetélkedő a megszerzett információkat, az utazásunk során érintett királyok, fejedelmek életéről mélyítették a tanulók tudáselemeit, kötődésük a külhoni magyarok irányában erősödött.
+      - type: heading
+        text: Első nap
+      - type: paragraph
+        text: Első állomásunk Gyulafehérvár volt, ahol megismertük a székesegyház történetét, majd megkoszorúztuk a Hunyadi család síremlékét, miközben meghallgattuk a Hunyadi kardja című mondát. A Károly kapuról is érdekes információkat tudtunk meg a gyerekek kiselőadásából.
+      - type: paragraph
+        text: Utunkat folytatva Segesvár ódon utcáin sétáltunk, a Diákok lépcsőjén jutottunk fel a várba, majd az Óratornyot csodáltuk meg, miközben a történetéről hallgattunk beszámolót. Emellett Bem József életéről és a segesvári csatában betöltött jelentőségéről is megtudtunk új információkat.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_19/1_1_Gyulafehérvár.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_19/1_1_Gyulafehérvár.jpg
+            alt: Gyulafehérvár
+            caption: Gyulafehérvár
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_19/1_2_Segesvár.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_19/1_2_Segesvár.jpg
+            alt: Segesvár
+            caption: Segesvár
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_19/1_3_Fehéregyháza.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_19/1_3_Fehéregyháza.jpg
+            alt: Fehéregyháza
+            caption: Fehéregyháza
+      - type: paragraph
+        text: A Segesvár melletti Fehéregyházán található Petőfi-emlékműnél helyi idegenvezetőnk érdekes előadást tartott Petőfiről és a segesvári csatában vállalt szerepéről, valamint eltűnésének, halálának rejtélyeiről. Végül a Nemzeti dal közös elszavalásával emlékeztünk hősi halált halt költőnkre.
+      - type: paragraph
+        text: Ezután a szálláshelyünkre igyekeztünk, Zeteváraljára, amely Székelyudvarhelytől 34 kilométerre, a Hargita hegység délnyugati lábánál, a Nagyküküllő völgyében helyezkedett el.
+      - type: heading
+        text: Második nap
+      - type: paragraph
+        text: Következő nap utunk a Gyergyói-havasokban található Súgó-barlanghoz vezetett. Gyergyószentmiklósi idegenvezetőnk segítségével megismertük a barlang keletkezését, felfedezésének történetét és élővilágát. Ezután utunkat folytatva Erdély legszebb tavánál, a Gyilkos-tónál megismertük a tó legendáját. Idegenvezetőnk beszélt a tó kialakulásáról folyamatos feltöltődéséről, jövőjéről. Kirándulásunkat a Keleti-Kárpátok leghosszabb tektonikus eredetű szurdokvölgyében, a Békás-szorosban folytattuk. Megismertük a völgyet alkotó mészkő tulajdonságait, felhasználásának lehetőségeit, valamint a szerkezeti törésvonalak és a folyóvízi eróziót is megfigyelhettük. A Békás-szorosban a gyerekek ámulva nézték a vidék természeti kincseit, a hatalmas égbe nyúló sziklákat, a gyönyörű, meseszép tájat.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_19/2_1_Súgó-barlang.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_19/2_1_Súgó-barlang.jpg
+            alt: A Súgó barlang
+            caption: A Súgó barlang
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_19/2_2_Gyilkos-tó.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_19/2_2_Gyilkos-tó.jpg
+            alt: A Gyilkos-tónál
+            caption: A Gyilkos-tónál
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_19/2_3_Esti-szórakozás.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_19/2_3_Esti-szórakozás.jpg
+            alt: Esti szórakozás
+            caption: Esti szórakozás
+      - type: paragraph
+        text: Kirándulásunkat folytatva a Gyimesbükk felé vettük az irányt. Az ezeréves határnál megemlékeztünk hazánk Trianon előtti kiterjedéséről, annak természeti, gazdasági és kulturális értékéről. Majd megmásztuk a Rákóczi-vár romjait, és gyönyörködtünk a Moldva felé táruló csodálatos kilátásban. A vár tövében megnéztük a 30. számú vasúti őrházat, amely a Magyar Királyi Államvasutak legkeletibb őrháza volt.
+      - type: heading
+        text: Harmadik nap
+      - type: paragraph
+        text: Kirándulásunkat folytatva a Gyimesbükk felé vettük az irányt. Az ezeréves határnál megemlékeztünk hazánk Trianon előtti kiterjedéséről, annak természeti, gazdasági és kulturális értékéről. Majd megmásztuk a Rákóczi-vár romjait, és gyönyörködtünk a Moldva felé táruló csodálatos kilátásban. A vár tövében megnéztük a 30. számú vasúti őrházat, amely a Magyar Királyi Államvasutak legkeletibb őrháza volt.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_19/3_1_Gyimesbükki-szekerezés.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_19/3_1_Gyimesbükki-szekerezés.jpg
+            alt: Gyimesbükki szekerezés
+            caption: Gyimesbükki szekerezés
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_19/3_2_Sajtkészítés.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_19/3_2_Sajtkészítés.jpg
+            alt: Sajtkészítés
+            caption: Sajtkészítés
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_19/3_3_Sütögetés-az-esztenánál.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_19/3_3_Sütögetés-az-esztenánál.jpg
+            alt: Sütögetés az esztenánál
+            caption: Sütögetés az esztenánál
+      - type: paragraph
+        text: "Innen Gyimesközéplok felé vettük az irányt, ahol lovaskocsis túrát tettünk vendéglátónk esztenájához: itt részesei lehettünk a házi túrókészítésnek, és finomabbnál finomabb házi sajtokat kóstolhattunk, szalonnát és kolbászt sütöttünk."
+      - type: paragraph
+        text: A szállásra visszatérve dézsafürdőt vettek a kirándulásban megfáradt fiatalok, majd egy gyergyószentmiklósi osztállyal ismerkedtünk. A gyerekek hamar összebarátkoztak, közös játék, beszélgetés kezdődött.
+      - type: heading
+        text: Negyedik nap
+      - type: paragraph
+        text: "A napi program Székelyudvarhelyen indult: az Emlékezet parkjában ismerkedtünk a híres történelmi, irodalmi személyek életével, munkásságával."
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_19/4_1_emlékezet-parkja.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_19/4_1_emlékezet-parkja.jpg
+            alt: Székelyudvarhely, Emlékezet parkja
+            caption: Székelyudvarhely, Emlékezet parkja
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_19/4_2_A-parajdi-sóbánya.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_19/4_2_A-parajdi-sóbánya.jpg
+            alt: A parajdi sóbánya
+            caption: A parajdi sóbánya
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_19/4_3_a-taplász-mesternél.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_19/4_3_a-taplász-mesternél.jpg
+            alt: A taplász mesternél
+            caption: A taplász mesternél
+      - type: paragraph
+        text: Szejkefürdőn felkerestük Orbán Balázs polihisztor sírját, ahol elhelyeztük az emlékezés és tisztelet koszorúját, és végigsétáltunk a szabadtéri Székelykapu Múzeumban.
+      - type: paragraph
+        text: Ezután következett a parajdi sóbánya. Megismerkedtünk a sóbányászat történetével, és a sóterápia jelentőségével. Érdekes információkat tudtunk meg a bánya jelenlegi termékeiről, a földalatti gyógykezelésről, a sóterápiával kezelhető légúti betegségekről.
+      - type: paragraph
+        text: "Következő úticélunk Korondra vezetett: meglátogattunk egy helyi lakost, aki bükkfataplóból készít különböző használati tárgyakat, a gyerekek gyakorlatban is megtapasztalhatták egy ma is élő mesterség munkafolyamatait, a tapló megmunkálását."
+      - type: paragraph
+        text: Utolsó állomásunk e napon Farkaslaka volt, koszorút helyeztünk el Tamási Áron sírjánál, és megemlékeztünk az íróról.
+      - type: paragraph
+        text: A szállásra visszatérve ismét a gyergyószentmiklósi fiatalokkal töltötte az osztály az este nagy részét, a gyerekek vidáman, önfeledten játszottak, beszélgettek egymással.
+      - type: heading
+        text: Ötödik nap
+      - type: paragraph
+        text: Utazásunk utolsó napján először Szováta felé, a Medve-tó partjára vezetett utunk, ahol érdeklődve hallgattuk A tündérasszony könnye című mondát.
+      - type: paragraph
+        text: A következő megálló Kolozsvár volt. Megtekintettük Mátyás király és Bocskai István szülőházát, majd Mátyás király híres lovasszobránál fotózkodtunk.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_19/5_1_Kolozsvár.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_19/5_1_Kolozsvár.jpg
+            alt: Kolozsvár
+            caption: Kolozsvár
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_19/5_2_Kolozsvár-Mátyás-tér.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_19/5_2_Kolozsvár-Mátyás-tér.jpg
+            alt: Kolozsvár, Mátyás tér
+            caption: Kolozsvár, Mátyás tér
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_19/5_3_Királyhágó.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_19/5_3_Királyhágó.jpg
+            alt: Királyhágó
+            caption: Királyhágó
+      - type: paragraph
+        text: Utolsó erdélyi megállónk a Király-hágónál volt. A Partium és a történelmi Erdély határánál tudatosult bennünk, hogy hamarosan véget ér ez a csodás öt nap, amit Erdély vadregényes tájain töltöttünk.
+      - type: paragraph
+        text: Hazatérve, a következő napon osztályfőnöki órák keretében hetedikeseink értékelték a kiránduláson történteket, felidézték azokat a legismertebb történelmi és irodalmi nevezetességeket, helyeket, ahol jártunk, s amelyekkel a tanítási órákon már találkozhattak, vagy hamarosan találkozni fognak. Kiemelték minden egyes nap legjobb programját, megbeszélték és feldolgozták azt a sok új ismeretet, emléket, amire az út során szert tettek, s melyek életre szóló élménnyel megajándékozva őket, örökké emlékezetesek maradnak.
+      - type: paragraph
+        text: Mivel fontosnak tartjuk a tudásmegosztást is, ezért az alattunk lévő évfolyamnak képekkel, élményekkel színesített bemutató előadást tervezünk szeptember elejére, felkeltve érdeklődésüket, hiszen reményeink szerint a következő tanévben ők is részt vehetnek a Határtalanul program keretében egy tanulmányi kiránduláson.
+      - type: paragraph
+        text: Elmondhatjuk, hogy nagyon sokat dolgoztunk ez idő alatt, de az új ismeretek, élmények, a határon túl élő magyarság megismerése, magyarság tudatunk erősödése feledtette velünk ezt. Hisszük, hogy a közös élmények tovább mélyítik az együttműködés lehetőségét, a tanulók megismerik egymás kultúráját, életvitelét és hagyományait, ezáltal nyitottabbá és toleránsabbakká válnak.
+      - type: paragraph
+        text: Ungerné Fekete Mónika osztályfőnök
 
   - title: BS HAT18
     content:
       - type: maintitle
-        text: Történelmi megállók Erdélyben – Hamarosan...
-      - type: date
-        text: 2019. május 23-27.
+        text: Történelmi megállók Erdélyben
+      - type: paragraph
+        text: A Bálint Sándor Tagiskola hetedik osztályos tanulói 2019. május 23-27. között a Határtalanul program keretében Erdélybe látogatott.
+      - type: paragraph
+        text: Az utazás előtti hetek lázas készülődéssel teltek. A tanárok segítségével a gyerekek megismerkedtek az utazás programjával, Erdély történelmével, földrajzával, a trianoni békeszerződés tragikus következményeivel. A gyerekek önállóan felkészültek arra is, hogy idegenvezetőként kalauzolják majd társaikat egy-egy helyszínen. Iskolánk egyik tanára a Délvidékről származik. Egy délutáni beszélgetésen a tanárnő mesélt a határon túli magyarság nehéz életéről. Mivel a program része volt egy gyerekotthon meglátogatása, a gyerekek ajándékcsomagokat állítottak össze a Segesváron élő fiúknak, lányoknak. Egy-egy általuk készített, megírt képeslap is belekerült a csomagba.
+      - type: heading
+        text: Első nap
+      - type: paragraph
+        text: Csütörtökön hajnal 4 órakor keltünk útra. Ezen a napon több mint 600 kilométernyi út várt ránk. Déván felvonóval mentünk a várba, Gyulafehérváron körbejártuk a történelmi belvárost és elhelyeztük koszorúnkat a Hunyadiak síremlékénél a székesegyházban. Segesváron megmásztuk a Diákok lépcsőjét, barangoltunk a város csodálatos ódon épületei között. De a legnagyobb izgalommal a gyerekotthonba tett látogatást várták a tanulóink. Bár rövid időt tudtunk ott tölteni, mindenki szívét megmelengette ez a különleges találkozás.
+      - type: paragraph
+        text: Még egy érdekes élményben volt részünk Nagybaromlakán. A települést szászok lakták egykor. A Ceaucescu rezsim alatt, 2 ember kivételével, elhagyták otthonaikat az itt élők és Németországba költöztek. Lám, más nemzeti kisebbségnek is a magyarokéhoz hasonló, nehéz sors jutott. A település egy különleges erődtemplommal dicsekedhet. Megtudtuk, hogy a falu lakói itt őrizték az élelem-tartalékaikat a középkorban, a gyakori tatár, török betörések idején.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_18/1_1_arvahaz.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_18/1_1_arvahaz.jpg
+            alt: Segesvári gyermekotthon
+            caption: Segesvári gyermekotthon
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_18/1_2_gyulafehervar.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_18/1_2_gyulafehervar.jpg
+            alt: Gyulafehérvár
+            caption: Gyulafehérvár
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_18/1_3_segesvar.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_18/1_3_segesvar.jpg
+            alt: Segesvár
+            caption: Segesvár
+      - type: paragraph
+        text: Este nyolc óra volt, mire megérkeztünk Zeteváraljára, a szállásunkra. Bőséges vacsora, és lélegzetelállító, gyönyörű környezet várt ránk. Gyorsan elfoglaltuk szállásunkat, és rövid idő múlva az egész társaság mély álomba merült.
+      - type: heading
+        text: Második nap
+      - type: paragraph
+        text: Második nap is sok kitűnő programmal várt bennünket. Elsőként Szejkefürdőn tisztelegtünk Orbán Balázs sírjánál. Az egyik kis idegenvezetőnk a székelykapuk titkait mondta el nekünk, miközben a szabadtéri múzeum kapui alatt haladtunk. Majd a parajdi sóbánya gyomra nyelt el bennünket néhány kellemes órára.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_18/2_1_parajd.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_18/2_1_parajd.jpg
+            alt: Parajdi sóbánya
+            caption: Parajdi sóbánya
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_18/2_2_korond.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_18/2_2_korond.jpg
+            alt: Székelykapu Korondon
+            caption: Székelykapu Korondon
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_18/2_3_korond_taplasz_mester.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_18/2_3_korond_taplasz_mester.jpg
+            alt: Taplász mester Korondon
+            caption: Taplász mester Korondon
+      - type: paragraph
+        text: Korondon egy igen ritka foglalkozás rejtelmeibe vezettek be minket. Egy taplász mester mutatta meg, hogyan készül tapló gombából megannyi szép használati tárgy, dísz. Szomorúan hallottuk, hogy a mesterség kihalófélben van. Ennek egyik oka az, hogy a globális felmelegedés miatt egyre kevesebb a felhasználható alapanyag.
+      - type: paragraph
+        text: Természetesen mi sem hagytuk ki a bazár soron a sétát, a vásárlást.
+      - type: heading
+        text: Harmadik nap
+      - type: paragraph
+        text: A harmadik nap a természet alkotta csodáké volt. Egy helyi, székely idegenvezető csatlakozott hozzánk. Élveztük ízes beszédét, kiváló humorát. Felvitt bennünket egy hegyre, a Súgó nevű cseppkőbarlangba. Izgalmas volt a sötét helyen, elem lámpával, egymásba kapaszkodva körbe járni. Ezután a Békás-szoroshoz mentünk. Útközben úgy tűnt, elhagyott bennünket a szerencse, mert elkezdett zuhogni az eső. De mire kiszálltunk a buszból csillapodott és végig sétálhattuk a szorost, megcsodálva a természet erejét.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_18/3_1_sugo_barlang.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_18/3_1_sugo_barlang.jpg
+            alt: Túra a Súgó barlanghoz
+            caption: Túra a Súgó barlanghoz
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_18/3_2_bekas-szoros.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_18/3_2_bekas-szoros.jpg
+            alt: Békás-szoros
+            caption: Békás-szoros
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_18/3_3_gyilkos-to.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_18/3_3_gyilkos-to.jpg
+            alt: A Gyilkos-tónál
+            caption: A Gyilkos-tónál
+      - type: paragraph
+        text: Visszafelé úton megálltunk a Gyilkos-tónál, ahol tanulói kiselőadásból megtudhattuk a tó legendája mellett a valós történetét is. A tó gyönyörű volt. Persze nem hagytuk ki a világ legfinomabb kürtös kalácsát sem. Ezen az estén sem kellett álomba ringatni senkit.
+      - type: heading
+        text: Negyedik nap
+      - type: paragraph
+        text: A negyedik nap volt a kirándulás csúcspontja. Ellátogattunk az ezer éves határhoz Gyimesbükkre. Könnyes szemmel hallgattuk házigazdánk elbeszélését a csángók nehéz sorsáról. Majd megmásztuk a Rákóczi vár romjait megcsodálva a csodálatos kilátást Moldva felé. A vár tövében megnéztük a 30. számú vasúti őrházat és a benne lévő vasúttörténeti kiállítást, amely a Magyar Királyi Államvasutak legkeletibb őrháza volt. A hely különlegességét az adta számunkra, hogy Nagyistók tanárnő nagyapja 1941-ben itt teljesített vasúti őrszolgálatot.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_18/4_1_gyimes.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_18/4_1_gyimes.jpg
+            alt: Gyimesbükk, Rákóczi vár
+            caption: Gyimesbükk, Rákóczi vár
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_18/4_2_gyimes.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_18/4_2_gyimes.jpg
+            alt: Gyimesbükk, Rákóczi vár
+            caption: Gyimesbükk, Rákóczi vár
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_18/4_3_gyimes.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_18/4_3_gyimes.jpg
+            alt: A „székely jakuzzi”
+            caption: A „székely jakuzzi”
+      - type: paragraph
+        text: "Ezután lovas kocsikra ültünk és a Tatros patak völgyében felkapaszkodtunk házigazdánk esztenájába. A hegyen megtanultuk, hogyan készül a sajt. A hihetetlenül zöld hegyek között fogyasztottuk el az ebédünket, puliszkát házi túróval, nyárson sült szalonnát, friss házi kenyérrel. A frissen készült sajtot mindenkinek nagyon ízlett. Szomjunkat friss forrásvízzel oltottuk. Itt értettük meg Wass Albert fájdalmas sorait: „Adjátok vissza a hegyeimet!”"
+      - type: paragraph
+        text: Szállásunkon különleges meglepetés várt ránk. Kipróbálhattuk a „székely jakuzzit”, ami egy felfűthető hatalmas dézsa volt a patak partján. Nagyot pancsoltunk benne.
+      - type: paragraph
+        text: Az utolsó este közös sportolással zárult. Közben a gyerekek az elmúlt napok élményeiről beszélgettek.
+      - type: heading
+        text: Ötödik nap
+      - type: paragraph
+        text: Az ötödik nap reggelén búcsút intettünk Zeteváraljának. Irány hazafelé!
+      - type: paragraph
+        text: Természetesen most sem hagytuk ki az utunkba eső látnivalókat. Szovátán körbe sétáltuk a Medve-tavat. Útközben megcsodáltuk a Tordai-hasadékot, majd Torockó házainak egyedisége elragadtatott bennünket.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_18/5_1_szovata_medve_to.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_18/5_1_szovata_medve_to.jpg
+            alt: Szovátán a Medve-tónál
+            caption: Szovátán a Medve-tónál
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_18/5_2_torocko.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_18/5_2_torocko.jpg
+            alt: Torockón a Székelykő alatt
+            caption: Torockón a Székelykő alatt
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_18/5_3_kiraly-hago.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_18/5_3_kiraly-hago.jpg
+            alt: A Király-hágónál
+            caption: A Király-hágónál
+      - type: paragraph
+        text: Utolsó erdélyi megállónk a Király-hágónál volt. A Partium és a történelmi Erdély határánál fájó szívvel és az ide még egyszer visszatérünk fogadalommal léptük át a határt.
+      - type: paragraph
+        text: "Másnap az iskolában hozzákezdtünk a következő nagy, közös feladatunkhoz, a nemzeti összetartozás napi megemlékező műsorunkhoz. Június 4-én, szívünkben az erdélyi emlékekkel álltunk társaink elé. Az egész iskola együtt énekelte az Ismerős Arcok szívszorító sorait: „mi egy vérből valók vagyunk”. Mi frissen szerzett székely barátainkra gondoltunk közben."
 
   - title: BS HAT17
     content:
       - type: maintitle
-        text: Erdély kincseinek nyomában – Hamarosan...
-      - type: date
-        text:
+        text: Erdély kincseinek nyomában
+      - type: paragraph
+        text: Az Emberi Erőforrások Minisztériuma által meghirdetett Határtalanul pályázat keretében iskolánk hetedik osztályos tanulóival 2017. augusztus 24-28. között Erdélybe látogattunk, hogy megismerjük Székelyföld természeti szépségeit, Erdély semmihez nem hasonlítható természeti gazdagságát, s betekinthessünk a külhoni magyarság életébe.
+      - type: paragraph
+        text: Komplex programunk összeállításának konkrét célja az volt, hogy tanítványaink saját élményeiken keresztül tapasztalják meg, amit már irodalomból, történelemből, földrajzból, természetismeretből elsajátítottak korábbi tanulmányaik során, s így váljon az bevésődött, könnyen felidézhető, emlékekhez köthető tudássá. Tanulmányi kirándulásunk a külhoni magyarsággal kapcsolatos ismeretek bővítésére, a magyarországi és külhoni fiatalok közötti kapcsolatok kialakulásának elősegítésére is remek lehetőséget adott. A kirándulás során erősíteni kívántuk magyarságtudatukat, hazaszeretetüket is, hogy megértsék a magyar nemzet összetartozását, átérezzék Trianon tragédiáját.
+      - type: paragraph
+        text: Ráhangolódásként előkészítő foglalkozásokat tartottunk, melyek során tanulóink megismerkedtek a határainkon túl élő magyarság létszámával, az államhatáron kívüli elhelyezkedés történelmi okaival, a meglátogatandó ország magyarságának történetével és jelenével.
+      - type: paragraph
+        text: Előzetesen feladatokat, kiselőadásokat vállaltak a tanulók, s ezeket lelkiismeretesen, színvonalasan készítették el. Az út során figyelmesen hallgatták egymás beszámolóit.
+      - type: heading
+        text: Első nap
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/1_deva1.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/1_deva1_small.jpg
+            alt: Déva vára
+            caption: Déva vára
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/1_deva2.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/1_deva2_small.jpg
+            alt: Déva váránál
+            caption: Déva váránál
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/1_deva3.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/1_deva3_small.jpg
+            alt: Déva váránál
+            caption: Déva váránál
+      - type: paragraph
+        text: Barangolásunk első állomásaként Déva várához látogattunk el. Felidéztük a vár építéséhez kötődő népballadát, a Kőmíves Kelemennét.
+      - type: paragraph
+        text: Utunkat Gyulafehérvár felé folytattuk, ahol megkoszorúztuk a Hunyadi család síremlékét.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/1_feheregyhaza1.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/1_feheregyhaza_1_small.jpg
+            alt: A Petőfi-emlékmű Fehéregyházán
+            caption: A Petőfi-emlékmű Fehéregyházán
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/1_feheregyhaza2.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/1_feheregyhaza_2_small.jpg
+            alt: A Petőfi-emlékmű Fehéregyházán
+            caption: A Petőfi-emlékmű Fehéregyházán
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/1_gyulafehervar1.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/1_gyulafehervar_1_small.jpg
+            alt: Gyulafehérváron
+            caption: Gyulafehérváron
+      - type: paragraph
+        text: A Segesvár melletti Fehéregyházán található Petőfi-emlékműnél a Nemzeti dal közös elszavalásával emlékeztünk a csatamezőn hősi halált halt költőnkre. Ezután a szálláshelyünkre igyekeztünk, Zeteváraljára, amely Székelyudvarhelytől 34 kilométerre a Hargita hegység délnyugati lábánál, a Nagyküküllő völgyében helyezkedett el.
+      - type: heading
+        text: Második nap
+      - type: paragraph
+        text: Második nap felkapaszkodtunk a Gyergyói-havasokban megbújó Súgó-barlanghoz. Egy idegenvezető segítségével megismertük a barlang keletkezését, felfedezésének történetét és élővilágát. Délután megcsodáltuk a Gyilkos-tavat és a Békás-szorost.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/2_sugo_barlang1.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/2_sugo_barlang_1_small.jpg
+            alt: Súgó-barlang
+            caption: Súgó-barlang
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/2_bekas-szoros.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/2_bekas-szoros_small.jpg
+            alt: A Békás-szorosnál
+            caption: A Békás-szorosnál
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/2_gyilkos_to1.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/2_gyilkos_to_1_small.jpg
+            alt: A Békás-szorosnál
+            caption: A Békás-szorosnál
+      - type: paragraph
+        text: Sikaszón Sütő András nyári lakjához sétáltunk el. Megismerkedtek a tanulók az író életpályájával, és részleteket olvastunk fel Gyermekkorom tükörcserepei című írásából.
+      - type: heading
+        text: Harmadik nap
+      - type: paragraph
+        text: A harmadik napon Csíksomlyón felkerestük az évente több ezer embert vonzó zarándokhelyet, megismertük az ottani búcsú hagyományait.
+      - type: paragraph
+        text: Kirándulásunkat folytatva Gyimesközéplokon lovaskocsis túrát tettünk vendéglátónk esztenájához, ahol részesei lehettünk a házi túrókészítésnek, és finomabbnál finomabb házi sajtokat kóstolhattunk.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/3csiksomlyo.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/3csiksomlyo_small.jpg
+            alt: Csíksomlyón
+            caption: Csíksomlyón
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/3_gyimes1.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/3_gyimes_1_small.jpg
+            alt: Lovaskocsis túra Gyimesközéplokon
+            caption: Lovaskocsis túra Gyimesközéplokon
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/3_1000_eves_hatar.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/3_1000_eves_hatar_small.jpg
+            alt: Az ezeréves határnál
+            caption: Az ezeréves határnál
+      - type: paragraph
+        text: Innen Gyimesbükk felé vettük az irányt. Kimerítő sétát tettünk az 1000 éves határnál, megemlékeztünk hazánk Trianon előtti kiterjedéséről, annak természeti, gazdasági és kulturális értékéről.
+      - type: heading
+        text: Negyedik nap
+      - type: paragraph
+        text: A negyedik napon Szejkefürdőn meglátogattuk Orbán Balázs néprajzgyűjtő sírját, és végigsétáltunk a szabadtéri Székelykapu Múzeumban.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/4_szejkefurdo_szekelykapu_muz.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/4_szejkefurdo_szekelykapu_muz_small.jpg
+            alt: Székelykapu Múzeum Szejkefürdőn
+            caption: Székelykapu Múzeum Szejkefürdőn
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/4_korond1.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/4_korond_1_small.jpg
+            alt: Korondon
+            caption: Korondon
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/4_parajd.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/4_parajd_small.jpg
+            alt: A parajdi sóbányában
+            caption: A parajdi sóbányában
+      - type: paragraph
+        text: Farkaslakán koszorút helyeztünk el Tamási Áron sírjánál, és az íróra emlékezve részletet olvastunk fel az Ábel a rengetegben című regényéből.
+      - type: paragraph
+        text: "Ezután Korondra látogattunk. Itt a gyerekek gyakorlatban is megtapasztalhatták egy ma is élő mesterség munkafolyamatait: a tapló megmunkálását. Megismerkedtünk egy helyi lakossal, aki bükkfataplóból készít különböző használati tárgyakat."
+      - type: paragraph
+        text: Utolsó állomásunk e napon a parajdi sóbánya volt. Egy idegenvezető megismertetett bennünket a sóbányászat történetével, és a sóterápia jelentőségével. Érdekes információkat tudtunk meg a bánya jelenlegi termékeiről, a földalatti gyógykezelésről, a sóterápiával kezelhető légúti betegségekről. Megismerkedtünk a bányában található kápolna névadójának, Nepomuki Szent Jánosnak az életével, legendájával.
+      - type: paragraph
+        text: Parajdon ellátogattunk Áprily Lajos szülőházához is.
+      - type: paragraph
+        text: Székelyudvarhelyen a református gimnázium előtt Kányádi Sándorra emlékeztünk.
+      - type: heading
+        text: Ötödik nap
+      - type: paragraph
+        text: Az ötödik napon utunk először Szováta felé, a Medve-tó partjára vezetett, ahol érdeklődve hallgattuk A tündérasszony könnye című mondát.
+      - type: paragraph
+        text: Ezután a Csucsán lévő Ady-emlékházat tekintettük meg.
+      - type: paragraph
+        text: Majd Erdély kapuját, a közeli Király-hágót csodáltuk meg.
+      - type: images
+        images_per_row: 3
+        images:
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/5_csucsa_ady_emlekhaz1.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/5_csucsa_ady_emlekhaz_1_small.jpg
+            alt: Csucsa, Ady-emlékház
+            caption: Csucsa, Ady-emlékház
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/5_kiralyhago.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/5_kiralyhago_small.jpg
+            alt: A Király-hágónál
+            caption: A Király-hágónál
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/5_tordaihasadek.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/5_tordai-hasadek_small.jpg
+            alt: A Tordai-hasadék
+            caption: A Tordai-hasadék
+      - type: paragraph
+        text: Erdélyi barangolásunk Nagyszalontán fejeződött be, Arany János szülőházánál, ahol koszorút helyeztünk el emlékezve nagy költőnkre.
+      - type: images
+        images_per_row: 1
+        images:
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_17/5_nagyszalonta.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_17/small/5_nagyszalonta_small.jpg
+            alt: Nagyszalonta
+      - type: paragraph
+        text: Rengeteg élménnyel gazdagodva tértünk haza erről a felejthetetlen kirándulásról!
+      - type: paragraph
+        text: Köszönet az iskola vezetésének a támogató együttműködésért!
