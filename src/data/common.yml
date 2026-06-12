@@ -329,6 +329,15 @@ news:
       content: news95
 
     - bs:
+      title: Szülői értekezlet a leendő első osztályos gyerekek szüleinek
+      school: Tagiskola
+      img: bs-szuloi-2026.jpg
+      align: center
+      imgclass: medium-3
+      contentclass: medium-9
+      content: news97
+
+    - bs:
       title: Családi nap a Bálint Sándor Tagiskolában
       school: Tagiskola
       img: bs-csaladi-nap.jpg
