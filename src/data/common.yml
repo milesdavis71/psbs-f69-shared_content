@@ -319,32 +319,23 @@ right_column:
 
 news:
   2025-26:
-    - common:
-      title: Labanczné Bányász Anett igazgatói pályázata
-      school: all
-      img: pdf-icon.png
-      align: center
-      imgclass: medium-2
-      contentclass: medium-10
-      content: news95
-
     - ps:
-      title: Ballagás
+      title: Nyári ügyeleti napok
       school: Székhely
-      img: ballagas-2026.jpg
+      img: nyari_ugyeleti_napok.jpg
       align: center
-      imgclass: medium-2
-      contentclass: medium-10
-      content: news98
+      imgclass: medium-4
+      contentclass: medium-8
+      content: news102
 
     - bs:
-      title: Ballagás
-      school: Tagiskola
-      img: ballagas-2026.jpg
+      title: Nyári ügyeleti napok
+      school: Székhely
+      img: nyari_ugyeleti_napok.jpg
       align: center
-      imgclass: medium-2
-      contentclass: medium-10
-      content: news99
+      imgclass: medium-4
+      contentclass: medium-8
+      content: news103
 
     - ps:
       title: Tanévzáró
@@ -364,15 +355,33 @@ news:
       contentclass: medium-8
       content: news101
 
+    - ps:
+      title: Ballagás
+      school: Székhely
+      img: ballagas-2026.jpg
+      align: center
+      imgclass: medium-2
+      contentclass: medium-10
+      content: news98
+
+    - bs:
+      title: Ballagás
+      school: Tagiskola
+      img: ballagas-2026.jpg
+      align: center
+      imgclass: medium-2
+      contentclass: medium-10
+      content: news99
+
+
     - common:
-      title: Nyári ügyelet
+      title: Labanczné Bányász Anett igazgatói pályázata
       school: all
       img: pdf-icon.png
       align: center
       imgclass: medium-2
       contentclass: medium-10
       content: news95
-
 
     - bs:
       title: Szülői értekezlet a leendő első osztályos gyerekek szüleinek
