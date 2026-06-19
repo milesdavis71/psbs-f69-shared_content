@@ -346,6 +346,34 @@ news:
       contentclass: medium-10
       content: news99
 
+    - ps:
+      title: Tanévzáró
+      school: Székhely
+      img: tanevzaro.jpg
+      align: center
+      imgclass: medium-4
+      contentclass: medium-8
+      content: news100
+
+    - bs:
+      title: Tanévzáró
+      school: Tagiskola
+      img: tanevzaro.jpg
+      align: center
+      imgclass: medium-4
+      contentclass: medium-8
+      content: news101
+
+    - common:
+      title: Nyári ügyelet
+      school: all
+      img: pdf-icon.png
+      align: center
+      imgclass: medium-2
+      contentclass: medium-10
+      content: news95
+
+
     - bs:
       title: Szülői értekezlet a leendő első osztályos gyerekek szüleinek
       school: Tagiskola
