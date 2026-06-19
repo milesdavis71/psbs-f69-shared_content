@@ -328,6 +328,24 @@ news:
       contentclass: medium-10
       content: news95
 
+    - ps:
+      title: Ballagás
+      school: Székhely
+      img: ballagas-2026.jpg
+      align: center
+      imgclass: medium-2
+      contentclass: medium-10
+      content: news98
+
+    - bs:
+      title: Ballagás
+      school: Tagiskola
+      img: ballagas-2026.jpg
+      align: center
+      imgclass: medium-2
+      contentclass: medium-10
+      content: news99
+
     - bs:
       title: Szülői értekezlet a leendő első osztályos gyerekek szüleinek
       school: Tagiskola
