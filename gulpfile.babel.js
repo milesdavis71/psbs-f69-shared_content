@@ -57,7 +57,10 @@ gulp.task('sass', function () {
         .pipe(sourcemaps.init())
         .pipe(
             sass
-                .sync({ includePaths: ['node_modules'] })
+                .sync({
+                    includePaths: ['node_modules'],
+                    quietDeps: true,
+                })
                 .on('error', sass.logError)
         )
         .pipe(sourcemaps.write('.'))
@@ -142,6 +145,7 @@ function sassBuild() {
         .pipe(
             sass({
                 includePaths: PATHS.sass,
+                quietDeps: true,
             }).on('error', sass.logError)
         )
         .pipe(postcss(postCssPlugins))
