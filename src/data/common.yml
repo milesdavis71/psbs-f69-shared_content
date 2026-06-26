@@ -319,6 +319,15 @@ right_column:
 
 news:
   2025-26:
+    - bs:
+      title: Taneszköz listák a 2026/2027-es tanévre
+      school: Tagiskola
+      img: taneszkoz.jpg
+      align: center
+      imgclass: medium-3
+      contentclass: medium-9
+      content: news104
+
     - ps:
       title: Taneszköz listák a 2026/2027-es tanévre
       school: Székhely
