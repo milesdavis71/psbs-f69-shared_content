@@ -320,6 +320,15 @@ right_column:
 news:
   2025-26:
     - ps:
+      title: Taneszköz listák a 2026/2027-es tanévre
+      school: Székhely
+      img: taneszkoz.jpg
+      align: center
+      imgclass: medium-3
+      contentclass: medium-9
+      content: news104
+
+    - ps:
       title: Nyári ügyeleti napok
       school: Székhely
       img: nyari_ugyeleti_napok.jpg
