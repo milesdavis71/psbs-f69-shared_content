@@ -2,5 +2,9 @@
     "IDX.aI.enableInlineCompletion": true,
     "IDX.aI.enableCodebaseIndexing": true,
     "todo-tree.ripgrep": "c:\\Users\\heves\\.vscode\\extensions\\openai.chatgpt-26.527.31454-win32-x64\\bin\\windows-x86_64\\rg.exe",
-    "todo-tree.ripgrep.ripgrep": "c:\\Users\\heves\\.vscode\\extensions\\openai.chatgpt-26.527.31454-win32-x64\\bin\\windows-x86_64\\rg.exe"
+    "todo-tree.ripgrep.ripgrep": "c:\\Users\\heves\\.vscode\\extensions\\openai.chatgpt-26.527.31454-win32-x64\\bin\\windows-x86_64\\rg.exe",
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.formatOnSave": true
+    }
 }
