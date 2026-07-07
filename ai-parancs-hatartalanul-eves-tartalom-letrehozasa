@@ -1,0 +1,126 @@
+A bekopizott txt fájl alapján a korábban megcsinált BS HAT25-tel megegyező elve alapján teljes egészében készítsd el az alább bekopizott text alapján a PS HAT25 szekciót. Itt mosd írd be a maintitle-t és a date-et is. Itt is nézd meg a yaml fájl kulcsait, és a bekopizott text fájl megfelelő részeihez rendeld hozzá a hozzá tartozó kulcsokat.
+A nyers text fájlban a címeket "title" felirattal jelzem. A képek felett mindenhol "images" szöveg van.
+Az images row-k kialakításánál számold meg, hogy hány kép van az images felirat alatt felsorolva. a képek nevét pontosan írtam le, a képmappa a /assets/img/bs/palyazatok/hatartalanul/hat_25/full/ illetve a /assets/img/bs/palyazatok/hatartalanul/hat_25/thumb/ ezekbe. Az "images" alatti képneveket használva használva illeszd be minden képhez a mefelelő elérési utat. a kiterjesztés mindig "jpg" Írd be a captionokat is a képek alá a kép fájlnevek alapján
+
+„Szívünk Erdélyben dobban”
+Határtalanul! erdélyi kirándulás
+2026. 06. 02-2026. 06. 06
+title
+Előkészületek:
+Mielőtt elindultunk Erdélybe, az iskolában több előkészítő órán vettünk részt, hogy minél többet megtudjunk azokról a helyekről, ahová készültünk. Az okostoboz.hu oldalon sok játékos feladatot oldottunk meg, így tanultunk Erdély nemzetiségeiről, az erdélyi fejedelemségről, az erdélyi konyháról és a híres erdélyi városokról is. A feladatok érdekesek voltak, ezért szinte észre sem vettük, hogy közben mennyi új ismeretet szereztünk.
+Az előkészítő órákon sokat beszélgettünk arról is, hogy milyen történelmi és természeti értékeket fogunk látni a kirándulás során. Amikor később személyesen is eljutottunk ezekre a helyekre, jó érzés volt felismerni azokat, amelyekről már tanultunk. Így még izgalmasabb és élvezetesebb lett az utazás, mert nem ismeretlen helyekre érkeztünk, hanem olyanokra, amelyekhez már sok érdekesség kötődött.
+
+images
+utkozben
+ps-busz
+
+title
+1.nap: 
+Az első állomásunk Déva vára volt. Már a várhoz vezető út sem volt könnyű, mert rengeteg lépcsőt kellett megmásznunk, de minden fáradságot megért. Amikor felértünk, csodálatos kilátás fogadott bennünket. El sem tudtuk képzelni, milyen nehéz lehetett régen egy ilyen magas várban élni és azt megvédeni. Nagyon érdekes volt hallani a vár történetét és Kőműves Kelemen legendáját is.
+
+images
+1-nap-deva-1.jpg
+1-nap-deva-2.jpg
+
+Ezután Gyulafehérvárra utaztunk, ahol sétáltunk a történelmi belvárosban. Megcsodáltuk a hatalmas várfalakat és a gyönyörű épületeket. Idegenvezetőnk sok érdekességet mesélt a város múltjáról, és jó érzés volt olyan helyen járni, amelyről korábban az iskolában már tanultunk.
+
+images
+1-nap-gyfhvar
+
+A hosszú, élményekkel teli nap után este érkeztünk meg a szállásunkra. Nagyon kedvesen fogadtak bennünket, és finom, bőséges vacsora várt ránk. A vacsora közben mindenki lelkesen mesélte, melyik program tetszett neki a legjobban. Bár elfáradtunk, még sokáig beszélgettünk a szobákban a nap eseményeiről. Végül este tizenegy órakor villanyoltás volt, és gyorsan el is aludtunk, mert tudtuk, hogy másnap újabb izgalmas kalandok várnak ránk.
+szallas
+title
+2.nap: 
+A második napot már kipihenten és izgatottan kezdtük. Reggeli után lovaskocsikázni indultunk, ami mindannyiunk számára különleges élmény volt. Utunk során végig velünk tartott Pötyi, a barátságos kutya, aki hűségesen kísérte a lovaskocsit. Útközben gyönyörű tájakon haladtunk keresztül, és nagy örömünkre egy szarvast, valamint egy őzcsaládot is sikerült megpillantanunk. Csendben figyeltük őket, hogy ne zavarjuk meg a nyugalmukat.
+
+images
+2-nap-szejerezes
+
+A lovaskocsis kirándulás során megálltunk egy hangulatos vízesésnél, ahol készítettünk néhány közös fényképet, majd felmentünk egy kilátóhoz is. Innen csodálatos panoráma nyílt a környező hegyekre és erdőkre. Jó volt egy kicsit megpihenni, és gyönyörködni a természet szépségében.
+Délután Korondra utaztunk, ahol megismerkedtünk a település híres kézműves hagyományaival. Volt időnk ajándékokat és emlékeket vásárolni a családunknak, majd mi magunk is kipróbálhattuk az aragonit csiszolását. Nagyon érdekes volt látni, hogyan válik a nyers kőből szép dísztárgy. Ezután egy taplász mester tartott nekünk bemutatót. Megtudtuk, hogy a taplógombából régen milyen sokféle használati tárgyat készítettek, és ma is milyen különleges alkotások születnek belőle.
+
+images
+2-nap-korond-aragonit-1
+2-nap-korond-aragonit-2
+2-nap-korond-taplasz-1
+
+A nap végére kellemesen elfáradtunk. A finom vacsora után még sokat beszélgettünk az aznapi élményeinkről, és mindenki megmutatta, mit vásárolt Korondon. Annyira elfáradtunk, hogy ezen az estén a szokásosnál fél órával korábban bújtunk ágyba, hogy kipihenjük magunkat a következő nap újabb kalandjai előtt.
+
+title
+3.nap: 
+A harmadik nap különösen izgalmasnak ígérkezett, hiszen ellátogattunk a gyimesfelsőloki Dani Gergely Általános Iskolába. Már az érkezésünkkor nagyon kedvesen fogadtak bennünket. A helyi diákok képes bemutatóval készültek, meséltek az iskolájukról, majd népdalokat énekeltek és néptáncot mutattak be nekünk. Nagyon tetszett, hogy milyen természetesen őrzik a hagyományaikat. A műsor végén minket is meghívtak táncolni. Eleinte egy kicsit bátortalanok voltunk, de hamar feloldódtunk, és együtt táncoltunk új barátainkkal. A találkozó végén átadtuk az ajándékokat, amelyeket itthonról vittünk nekik, és örültünk, hogy ezzel is kifejezhettük barátságunkat.
+
+images
+gyimesbukk-2
+3-nap-gyimes-tanchaz
+
+Ezután az ezeréves határhoz utaztunk. Különösen megható volt, hogy éppen a Nemzeti Összetartozás Napján állhattunk ezen a történelmi helyszínen. Miközben hallgattuk a történeteket, mindenki elgondolkodott azon, milyen fontos, hogy a határok ellenére is egy nemzethez tartozunk. Az emlékhelyet közösen megkoszorúztuk, majd készítettünk néhány fényképet, hogy ezt a különleges pillanatot sokáig megőrizhessük.
+
+images
+3-nap-gyimes-ezereves-hatar
+
+Innen egy meredek emelkedőn gyalogoltunk tovább a sajtkészítő műhelyhez. Megérkezésünkkor friss limonádéval, házi szalámival és különféle kézműves sajtokkal fogadtak bennünket. Megnéztük, hogyan készülnek a sajtok, és azt is megtudtuk, hogy a tej olyan tehenektől származik, amelyeket természetes módon tartanak és nem etetnek gabonával. A kóstoló után körbejártuk a gazdaságot, ahol két gyönyörű, halakkal teli tavat és a legelésző teheneket is megcsodálhattuk.
+
+images
+3-nap-gyimes-sajt
+
+Amikor visszaindultunk a buszhoz, hirtelen eleredt az eső, így egy kicsit megáztunk, de ez sem szegte a kedvünket. Ezután egy közeli étteremben ebédeltünk, ahol megkóstoltuk Erdély egyik jellegzetes ételét, a puliszkát is. Érdekes volt új ízeket kipróbálni.
+
+images
+3-nap-skanzen
+
+A sok program és élmény után estére kellemesen elfáradtunk. Vacsora után még volt egy kis időnk beszélgetni, játszani és felidézni a nap legjobb pillanatait, majd mindenki nyugovóra tért, hogy másnap újult erővel folytathassuk az utazást.
+
+title
+4.nap: 
+A negyedik nap ismét korán indultunk útnak. Körülbelül kétórás buszozás után megérkeztünk a Gyilkos-tóhoz. Robi bácsi érdekes történeteket mesélt a tó keletkezéséről és a hozzá kapcsolódó legendákról. Miközben körbesétáltunk, megcsodáltuk a vízből kiálló fatörzseket, amelyek igazán különleges látványt nyújtottak. Ezután kaptunk egy kis szabadidőt, amikor körülnézhettünk a szuvenírárusoknál, és vásárolhattunk emlékeket a családunknak.
+
+images
+4-nap-gyilkos-to-1
+4-nap-gyilkos-to-2
+
+A következő állomásunk a Békás-szoros volt. Ahogy beléptünk a hatalmas sziklák közé, mindenkit lenyűgözött a természet ereje. A keskeny ösvényen néhol óvatosan kellett haladnunk, mert több helyen csúszós volt az út. Végül eljutottunk egy imbolygó függőhídhoz, amelyen egyesével keltünk át. Bár néhányan egy kicsit izgultunk, mindenkinek sikerült átjutnia. A híd túloldalán sok fényképet készítettünk, hogy megőrizzük ezt a különleges élményt.
+
+images
+4-nap-bekas
+
+Ezután egy olyan helyre látogattunk, ahol saját kürtőskalácsot készíthettünk. Mindenki kiválaszthatta a kedvenc ízét: fahéjasat, kakaósat vagy cukrosat. Nagyon élveztük, hogy mi magunk formázhattuk és süthettük meg a kalácsot, és még finomabbnak éreztük, mert a saját kezünk munkája volt.
+
+images
+4-nap-kurtos-kalacs
+
+Hazafelé még egy felejthetetlen meglepetés is ért bennünket. Már jó ideje utaztunk, amikor tanárunk egyszer csak felkiáltott: „Medve!” A buszvezető biztonságosan megállt, mi pedig izgatottan az ablakokhoz siettünk. Sikerült megpillantanunk a medvét, és többen fényképet is készítettünk róla. Ez volt az egyik legizgalmasabb pillanata az egész kirándulásnak.
+
+A hosszú, élményekkel teli nap végén visszaérkeztünk a szállásunkra. A finom vacsora után még együtt játszottunk, beszélgettünk és felidéztük a nap legemlékezetesebb pillanatait. Jó hangulatban telt az este, bár mindenki érezte, hogy közeledik a kirándulás vége.
+
+images
+este
+
+title
+5.nap: 
+Az utolsó napunkon már fél hét előtt ébresztettek bennünket a tanáraink. Kicsit álmosan, de annál több élménnyel ébredtünk. Mindannyian éreztük, hogy különleges nap lesz, hiszen ez volt az erdélyi kirándulásunk utolsó napja. Gyorsan összepakoltuk a bőröndjeinket, majd egy finom reggeli után búcsút vettünk a szállásunktól, amely öt napon át az otthonunk volt.
+Elsőként Fehéregyházára látogattunk, ahol megkoszorúztuk a Petőfi-szobrot. Megható érzés volt ott állni azon a helyen, amely Petőfi Sándor emlékét őrzi, és elgondolkodni a magyar történelem egyik fontos eseményén.
+
+images
+5-nap-feheregyhaza
+
+Ezután Segesvárra utaztunk, ahol felfedeztük a híres várnegyedet. Felmásztunk a Diáklépcsőn is, amely az előző napok túrái után már nem is tűnt olyan fárasztónak. A várból csodálatos kilátás nyílt a városra, miközben idegenvezetőnk érdekes történeteket mesélt a város múltjáról. Jó érzés volt olyan helyeken járni, amelyekről korábban csak a történelemórákon hallottunk.
+
+images
+5-nap-segesvar-1
+5-nap-segesvar-2
+
+Következő állomásunk Nagybaromlak volt, ahol megtekintettük a lenyűgöző erődtemplomot. Bejártuk az épületet, felkapaszkodtunk a keskeny csigalépcsőn egészen a harangig, és megcsodáltuk a templom különleges szerkezetét. Érdekes volt elképzelni, hogyan szolgálta egykor a település lakóinak védelmét.
+
+images
+5-nap-nagybaromlak
+
+Ezután már hazafelé vettük az irányt. A hosszú buszút alatt mindenki felidézte a kirándulás legjobb pillanatait. Beszélgettünk, nevettünk, nézegettük a telefonjainkban készült fényképeket, és néhányan egy kicsit aludtak is. Bár fáradtak voltunk, senki sem szerette volna, hogy véget érjen ez az öt nap.
+
+
+title
+Az utazás zárása:
+Hazaérkezésünk után az első osztályfőnöki órán újra együtt felidéztük az erdélyi kirándulás élményeit. Az utazás során készült fényképeket nézegetve szinte egymás szavába vágva meséltük a legemlékezetesebb, legviccesebb és legmeghatóbb pillanatokat. Jó volt újra átélni a közös kalandokat, a sok nevetést, a gyönyörű tájakat és azokat a különleges helyeket, amelyeket együtt fedeztünk fel.
+Sokan elmondtuk, hogy a legnagyobb élményt a gyimesi diákokkal való találkozás, az ezeréves határ felkeresése, a medve megpillantása vagy éppen a saját készítésű kürtőskalács jelentette. Közelebb kerültünk a határon túli magyarok életének megismeréséhez, és még büszkébbek lettünk arra, hogy egy nemzethez tartozunk. Ez a kirándulás biztosan sokáig emlékezetes marad számunkra.
+
+
