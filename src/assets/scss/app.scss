@@ -73,6 +73,37 @@
     padding: 0.5em 0 0.5em 0;
 }
 
+.hatartalanul-image-reveal {
+    width: min(1000px, calc(100vw - 2rem));
+    max-width: min(1000px, calc(100vw - 2rem));
+    padding: 0;
+    overflow: visible;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: contain;
+    }
+
+    .close-button {
+        top: -0.35rem;
+        right: -0.35rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.95);
+        line-height: 1;
+    }
+}
+
+@media screen and (max-height: 820px) {
+    .hatartalanul-image-reveal {
+        width: min(calc((100vh - 4rem) * 4 / 3), calc(100vw - 2rem), 1000px);
+    }
+}
+
 // Szélesség nagyobb kijelzőre
 @media screen and (min-width: 1440px) {
     .grid-container {
