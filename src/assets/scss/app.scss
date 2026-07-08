@@ -73,6 +73,14 @@
     padding: 0.5em 0 0.5em 0;
 }
 
+.hatartalanul-tab-image-set {
+    display: none;
+
+    &.is-active {
+        display: block;
+    }
+}
+
 .hatartalanul-image-grid {
     margin-bottom: 0.35rem;
 

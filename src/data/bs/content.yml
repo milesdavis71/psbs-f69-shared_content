@@ -1,5 +1,12 @@
 sections:
   - title: BS HAT25
+    tab_images:
+      - src: /assets/img/common/palyazatok/magyar_kormány_támogatás.jpg
+        alt: Magyarország Kormánya támogatás
+      - src: /assets/img/common/palyazatok/bga_logo_2023.jpg
+        alt: Bethlen Gábor Alapkezelő
+      - src: /assets/img/common/palyazatok/hatartalanul_2019_logo_large.jpg
+        alt: Határtalanul program
     content:
       - type: maintitle
         text: „Ismerd meg, érezd át, vidd haza!”

@@ -1,7 +1,7 @@
 {{#schoolData schoolKey "content"}}
 
 
-<div class="grid-container">
+<div class="grid-container hatartalanul-tabs-page">
   <div class="grid-x grid-margin-x">
     <div class="cell medium-2">
       <ul class="vertical tabs small-text-center" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500" data-tabs id="deeplinked-tabs">
@@ -12,24 +12,29 @@
         {{/each}}
       </ul>
       <p>&emsp;</p>
-      <div class="cell text-center">
-        <img
-            class="thumbnail"
-            src="/assets/img/common/palyazatok/magyar_kormány_támogatás.jpg"
-        />
-    </div>
-    <div class="cell text-center">
-        <img
-            class="thumbnail"
-            src="/assets/img/common/palyazatok/bga_logo_2023.jpg"
-        />
-    </div>
-    <div class="cell text-center">
-        <img
-            class="thumbnail"
-            src="/assets/img/common/palyazatok/hatartalanul_2019_logo_large.jpg"
-        />
-    </div>
+      <div class="hatartalanul-tab-images">
+        {{#each this.sections}}
+          <div class="hatartalanul-tab-image-set {{#if @first}}is-active{{/if}}" data-hatartalanul-tab-images="panel{{@index}}">
+            {{#if this.tab_images}}
+              {{#each this.tab_images}}
+                <div class="cell text-center">
+                  <img class="thumbnail" src="{{ this.src }}" alt="{{ this.alt }}" />
+                </div>
+              {{/each}}
+            {{else}}
+              <div class="cell text-center">
+                <img class="thumbnail" src="/assets/img/common/palyazatok/magyar_kormány_támogatás.jpg" alt="" />
+              </div>
+              <div class="cell text-center">
+                <img class="thumbnail" src="/assets/img/common/palyazatok/bga_logo_2023.jpg" alt="" />
+              </div>
+              <div class="cell text-center">
+                <img class="thumbnail" src="/assets/img/common/palyazatok/hatartalanul_2019_logo_large.jpg" alt="" />
+              </div>
+            {{/if}}
+          </div>
+        {{/each}}
+      </div>
   </div>
     <div class="cell medium-9">
       <div class="tabs-content vertical"  data-tabs-content="deeplinked-tabs">
@@ -72,6 +77,22 @@
                   {{/each}}
               </div>
             {{/ifequal}}
+            {{#ifequal this.type "video"}}
+              {{#if this.caption}}
+                <h6 class="text-center subheader">{{ this.caption }}</h6>
+              {{/if}}
+              <div class="grid-x grid-margin-x">
+                <div class="cell auto"></div>
+                <div class="cell small-12 large-8">
+                  <div class="responsive-embed widescreen">
+                    <video controls preload="metadata">
+                      <source src="{{ this.src }}" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+                <div class="cell auto"></div>
+              </div>
+            {{/ifequal}}
             {{/each}}
           </div>
         {{/each}}
@@ -79,4 +100,29 @@
     </div>
   </div>
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.hatartalanul-tabs-page').forEach(function (tabsPage) {
+      var tabs = tabsPage.querySelectorAll('#deeplinked-tabs a[href^="#panel"]')
+      var imageSets = tabsPage.querySelectorAll('[data-hatartalanul-tab-images]')
+
+      function showImages(panelId) {
+        imageSets.forEach(function (imageSet) {
+          imageSet.classList.toggle('is-active', imageSet.getAttribute('data-hatartalanul-tab-images') === panelId)
+        })
+      }
+
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          showImages(tab.getAttribute('href').slice(1))
+        })
+      })
+
+      var activeTab = tabsPage.querySelector('#deeplinked-tabs .tabs-title.is-active a[href^="#panel"]') || tabs[0]
+      if (activeTab) {
+        showImages(activeTab.getAttribute('href').slice(1))
+      }
+    })
+  })
+</script>
 {{/schoolData}}
