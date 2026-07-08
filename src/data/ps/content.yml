@@ -1,12 +1,10 @@
 sections:
   - title: PS HAT25
     tab_images:
-      - src: /assets/img/common/palyazatok/magyar_kormány_támogatás.jpg
-        alt: Magyarország Kormánya támogatás
-      - src: /assets/img/common/palyazatok/bga_logo_2023.jpg
-        alt: Bethlen Gábor Alapkezelő
-      - src: /assets/img/common/palyazatok/hatartalanul_2019_logo_large.jpg
-        alt: Határtalanul program
+      - src: /assets/img/common/palyazatok/megvalosult-m-korm-tamogat.jpg
+        alt: Megvalósult Magyarország Kormánya támogatásával
+      - src: /assets/img/common/palyazatok/bga-logo.jpg
+        alt: Bethlen Gábor Alapkezelő Zrt.
     content:
       - type: maintitle
         text: "„Szívünk Erdélyben dobban”"
@@ -172,7 +170,7 @@ sections:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_25/full/4-nap-kurtos-kalacs_full.jpg
             thumb: /assets/img/ps/palyazatok/hatartalanul/hat_25/thumb/4-nap-kurtos-kalacs_thumb.jpg
             alt: Kép 1
-            caption: Kürtőskalácssütés
+            caption: Kürtőskalács-sütés
       - type: paragraph
         text: "Hazafelé még egy felejthetetlen meglepetés is ért bennünket. Már jó ideje utaztunk, amikor tanárunk egyszer csak felkiáltott: „Medve!” A buszvezető biztonságosan megállt, mi pedig izgatottan az ablakokhoz siettünk. Sikerült megpillantanunk a medvét, és többen fényképet is készítettünk róla. Ez volt az egyik legizgalmasabb pillanata az egész kirándulásnak."
       - type: paragraph
@@ -229,6 +227,11 @@ sections:
         text: Sokan elmondtuk, hogy a legnagyobb élményt a gyimesi diákokkal való találkozás, az ezeréves határ felkeresése, a medve megpillantása vagy éppen a saját készítésű kürtőskalács jelentette. Közelebb kerültünk a határon túli magyarok életének megismeréséhez, és még büszkébbek lettünk arra, hogy egy nemzethez tartozunk. Ez a kirándulás biztosan sokáig emlékezetes marad számunkra.
 
   - title: PS HAT24
+    tab_images:
+      - src: /assets/img/common/palyazatok/megvalosult-m-korm-tamogat.jpg
+        alt: Megvalósult Magyarország Kormánya támogatásával
+      - src: /assets/img/common/palyazatok/bga-logo.jpg
+        alt: Bethlen Gábor Alapkezelő Zrt.
     content:
       - type: maintitle
         text: Erdélyország gyöngyszemei
@@ -486,6 +489,11 @@ sections:
       - type: paragraph
         text: "Köszönjük az Emberi Erőforrás Minisztériumának a pályázati támogatást, a sok kedves embernek, akik segítettek minket az utunk során, és persze Viki és Rita néninek azt, hogy el mertek minket vinni ilyen messzire és végig gondoskodtak rólunk."
   - title: PS HAT23
+    tab_images:
+      - src: /assets/img/common/palyazatok/megvalosult-m-korm-tamogat.jpg
+        alt: Megvalósult Magyarország Kormánya támogatásával
+      - src: /assets/img/common/palyazatok/bga-logo.jpg
+        alt: Bethlen Gábor Alapkezelő Zrt.
     content:
       - type: maintitle
         text: „Történelmi megállók Erdélyben”
@@ -638,6 +646,11 @@ sections:
       - type: paragraph
         text: Szerencsések vagyunk, hogy lehetőséget kaptunk erre az erdélyi útra. Rengeteg tudással gazdagodtunk. Olyan határainkon kívül eső területeken játunk, ahol magyarul beszélnek, magyarként élnek az emberek. Megismerhettük hagyományaikat, népi kultúrájukat is. Minden általunk meglátogatott helyszínről előzetesen kiselőadásokkal készültünk, melyeket hol a hosszú út közben, hol a helyszíneken adtunk elő egymásnak. Esténként vetélkedőket szerveztünk, melyek során játékos formában mérhették össze frissen megszerzett tudásunkat tanulóink. Lefekvés előtt soha nem maradt el a közös játék a szabadban, vagy a társalgóban, ahol időnként spontán bulik is kialakultak. A hosszú buszúton sem unatkoztunk soha. Rengeteget nevettünk és énekeltünk. Maradandó élmény marad ez az út mindannyiunk számára, egy szép, örök emlék, mely akkor is összeköt majd bennünket, ha már nem járunk egy iskolába.
   - title: PS|BS HAT22
+    tab_images:
+      - src: /assets/img/common/palyazatok/megvalosult-m-korm-tamogat.jpg
+        alt: Megvalósult Magyarország Kormánya támogatásával
+      - src: /assets/img/common/palyazatok/bga-logo.jpg
+        alt: Bethlen Gábor Alapkezelő Zrt.
     content:
       - type: maintitle
         text: Királyok, fejedelmek az 1000 éves határ mentén
@@ -884,6 +897,13 @@ sections:
       - type: paragraph
         text: Szerencsések vagyunk, hogy lehetőséget kaptunk erre az erdélyi útra. Rengeteg tudással gazdagodtunk. Olyan határainkon kívül eső területeken játunk, ahol magyarul beszélnek, magyarként élnek az emberek. Megismerhettük hagyományaikat, népi kultúrájukat is. Minden általunk meglátogatott helyszínről előzetesen kiselőadásokkal készültünk, melyeket hol a hosszú út közben, hol a helyszíneken adtunk elő egymásnak. Esténként vetélkedőket szerveztünk, melyek során játékos formában mérhették össze frissen megszerzett tudásunkat tanulóink. Lefekvés előtt soha nem maradt el a közös játék a szabadban, vagy a társalgóban, ahol időnként spontán bulik is kialakultak. Még jobbá tette a kirándulást, hogy iskolánk székhelyének és tagintézményének diákjai közösen utaztak és a szállás is egy épületben volt. Így új barátságok is kialakultak, és többünkben is megfogalmazódott, hogy a jövőben is szívesen vennénk részt közös programokon. A hosszú buszúton sem unatkoztunk soha. Rengeteget nevettünk és énekeltünk. Maradandó élmény marad ez az út mindannyiunk számára, egy szép, örök emlék, mely akkor is összeköt majd bennünket, ha már nem járunk egy iskolába.
   - title: PS HAT20
+    tab_images:
+      - src: /assets/img/common/palyazatok/hatartalanul-logo.jpg
+        alt: Határtalanul! pályázat
+      - src: /assets/img/common/palyazatok/min-elnokseg-nemzetpol-allamtit.jpg
+        alt: Miniszterelnökség Nemzetpolitikiai Államtitkárság
+      - src: /assets/img/common/palyazatok/bga-logo.jpg
+        alt: Bethlen Gábor Alapkezelő Zrt.
     content:
       - type: maintitle
         text: Az 1848–49-es szabadságharc hőseinek nyomában Erdély területén
@@ -995,6 +1015,13 @@ sections:
             alt: A Tordai-hasadék
             caption: A Tordai-hasadék
   - title: PS HAT19
+    tab_images:
+      - src: /assets/img/common/palyazatok/hatartalanul-logo.jpg
+        alt: Határtalanul! pályázat
+      - src: /assets/img/common/palyazatok/min-elnokseg-nemzetpol-allamtit.jpg
+        alt: Miniszterelnökség Nemzetpolitikiai Államtitkárság
+      - src: /assets/img/common/palyazatok/bga-logo.jpg
+        alt: Bethlen Gábor Alapkezelő Zrt.
     content:
       - type: maintitle
         text: Erdély természeti kincsei gyermekszemmel
@@ -1106,9 +1133,18 @@ sections:
             alt: A Tordai-hasadék
             caption: A Tordai-hasadék
   - title: PS HAT18
+    tab_images:
+      - src: /assets/img/common/palyazatok/hatartalanul-logo.jpg
+        alt: Határtalanul! pályázat
+      - src: /assets/img/common/palyazatok/min-elnokseg-nemzetpol-allamtit.jpg
+        alt: Miniszterelnökség Nemzetpolitikiai Államtitkárság
+      - src: /assets/img/common/palyazatok/bga-logo.jpg
+        alt: Bethlen Gábor Alapkezelő Zrt.
     content:
       - type: maintitle
         text: Magyar írók, költők nyomában Erdély területén
+      - type: paragraph
+        text: ""
       - type: paragraph
         text: "Az öt napos tanulmányi kirándulás alatt a következő programokat valósítottuk meg:"
       - type: heading
@@ -1212,6 +1248,13 @@ sections:
         src: /assets/img/ps/palyazatok/hatartalanul/hat_18/slideshow_video.mp4
         caption: Slideshow video a kiránduláson készült képekből
   - title: PS HAT17
+    tab_images:
+      - src: /assets/img/common/palyazatok/hatartalanul-logo.jpg
+        alt: Határtalanul! pályázat
+      - src: /assets/img/common/palyazatok/min-elnokseg-nemzetpol-allamtit.jpg
+        alt: Miniszterelnökség Nemzetpolitikiai Államtitkárság
+      - src: /assets/img/common/palyazatok/bga-logo.jpg
+        alt: Bethlen Gábor Alapkezelő Zrt.
     content:
       - type: maintitle
         text: Erdélyi legendák nyomában

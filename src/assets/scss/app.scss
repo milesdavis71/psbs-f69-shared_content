@@ -96,6 +96,24 @@
         padding-left: 0;
         margin-right: 0.625rem;
         margin-left: 0.625rem;
+
+        .card {
+            margin-bottom: 0.2rem;
+        }
+
+        .card-section {
+            padding: calc(0.15rem + 3px);
+        }
+
+        .thumbnail {
+            margin-bottom: 0;
+        }
+
+        .caption {
+            padding: 0.1rem 0 0;
+            margin-bottom: 0;
+            line-height: 1.15;
+        }
     }
 
     > .medium-4 .card,
