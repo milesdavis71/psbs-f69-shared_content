@@ -83,7 +83,7 @@ sections:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_25/full/2-nap-korond-aragonit-1_full.jpg
             thumb: /assets/img/ps/palyazatok/hatartalanul/hat_25/thumb/2-nap-korond-aragonit-1_thumb.jpg
             alt: Kép 1
-            caption: Korond
+            caption: Korond, aragonit csiszolás
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_25/full/2-nap-korond-aragonit-2_full.jpg
             thumb: /assets/img/ps/palyazatok/hatartalanul/hat_25/thumb/2-nap-korond-aragonit-2_thumb.jpg
             alt: Kép 2
@@ -91,7 +91,7 @@ sections:
           - full: /assets/img/ps/palyazatok/hatartalanul/hat_25/full/2-nap-korond-taplasz-1_full.jpg
             thumb: /assets/img/ps/palyazatok/hatartalanul/hat_25/thumb/2-nap-korond-taplasz-1_thumb.jpg
             alt: Kép 3
-            caption: Korond
+            caption: Korond, taplász mesternél
       - type: paragraph
         text: A nap végére kellemesen elfáradtunk. A finom vacsora után még sokat beszélgettünk az aznapi élményeinkről, és mindenki megmutatta, mit vásárolt Korondon. Annyira elfáradtunk, hogy ezen az estén a szokásosnál fél órával korábban bújtunk ágyba, hogy kipihenjük magunkat a következő nap újabb kalandjai előtt.
       - type: heading
