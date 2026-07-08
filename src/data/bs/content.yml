@@ -16,7 +16,7 @@ sections:
       - type: images
         images_per_row: 1
         images:
-          - full: /assets/img/bs/palyazatok/hatartalanul/hat_25/full/0/bs_busz_full.jpg
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_25/full/bs_busz_full.jpg
             thumb: /assets/img/bs/palyazatok/hatartalanul/hat_25/thumb/bs_busz_thumb.jpg
             alt: Kép 1
       - type: heading
@@ -45,12 +45,16 @@ sections:
       - type: paragraph
         text: "A második napon a kicsit későbbi ébredés és a bőséges, finom reggeli után izgalmas program várt ránk: szekértúrára indultunk. A szekerek Székelyvarság központjában vettek fel bennünket. Útközben megálltunk a Csorgókő-vízesésnél, amely gyönyörű látványt nyújtott. Az út során a kulacsainkat is feltölthettük hűsítő forrásvízzel. Egy közeli kilátót is útba ejtettünk, ahonnan csodálatos panoráma tárult elénk. A szekereken utazva rengeteget nevettünk és viccelődtünk; mindannyian nagyon jól éreztük magunkat, és egy igazán felejthetetlen élménnyel gazdagodtunk."
       - type: images
-        images_per_row: 2
+        images_per_row: 3
         images:
           - full: /assets/img/bs/palyazatok/hatartalanul/hat_25/full/szekertura_full.jpg
             thumb: /assets/img/bs/palyazatok/hatartalanul/hat_25/thumb/szekertura_thumb.jpg
             alt: Kép 1
             caption: Szekértúra
+          - full: /assets/img/bs/palyazatok/hatartalanul/hat_25/full/kilato_full.jpg
+            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_25/thumb/kilato_thumb.jpg
+            alt: Kép 2
+            caption: Kilátó
           - full: /assets/img/bs/palyazatok/hatartalanul/hat_25/full/vizeses_full.jpg
             thumb: /assets/img/bs/palyazatok/hatartalanul/hat_25/thumb/vizeses_thumb.jpg
             alt: Kép 2
@@ -99,11 +103,11 @@ sections:
           - full: /assets/img/bs/palyazatok/hatartalanul/hat_25/full/gyimesbukk-4_full.jpg
             thumb: /assets/img/bs/palyazatok/hatartalanul/hat_25/thumb/gyimesbukk-4_thumb.jpg
             alt: Kép 1
-            caption: Gyimesbükk
+            caption: Gyimesbükk, sajtműhely
           - full: /assets/img/bs/palyazatok/hatartalanul/hat_25/full/gyimesbukk-5_full.jpg
             thumb: /assets/img/bs/palyazatok/hatartalanul/hat_25/thumb/gyimesbukk-5_thumb.jpg
             alt: Kép 2
-            caption: Gyimesbükk
+            caption: Gyimesi skanzen
           - full: /assets/img/bs/palyazatok/hatartalanul/hat_25/full/3-nap-este_full.jpg
             thumb: /assets/img/bs/palyazatok/hatartalanul/hat_25/thumb/3-nap-este_thumb.jpg
             alt: Kép 3
@@ -131,11 +135,11 @@ sections:
           - full: /assets/img/bs/palyazatok/hatartalanul/hat_25/full/kurtos-kalacs-1_full.jpg
             thumb: /assets/img/bs/palyazatok/hatartalanul/hat_25/thumb/kurtos-kalacs-1_thumb.jpg
             alt: Kép 1
-            caption: Kürtőskalácssütés
+            caption: Kürtőskalács-sütés
           - full: /assets/img/bs/palyazatok/hatartalanul/hat_25/full/kurtos-kalacs-2_full.jpg
             thumb: /assets/img/bs/palyazatok/hatartalanul/hat_25/thumb/kurtos-kalacs-2_thumb.jpg
             alt: Kép 2
-            caption: Kürtőskalácssütés
+            caption: Kürtőskalács-sütés
           - full: /assets/img/bs/palyazatok/hatartalanul/hat_25/full/4-nap-este_full.jpg
             thumb: /assets/img/bs/palyazatok/hatartalanul/hat_25/thumb/4-nap-este_thumb.jpg
             alt: Kép 3
@@ -158,16 +162,12 @@ sections:
       - type: paragraph
         text: Erdélyi utazásunk legutolsó helyszíne a nagybaromlaki erődtemplom volt. Itt felmerészkedtünk a templomtoronyba is, ahonnan csodálatos kilátás nyílt a festői környékre.
       - type: images
-        images_per_row: 2
+        images_per_row: 1
         images:
           - full: /assets/img/bs/palyazatok/hatartalanul/hat_25/full/nagybaromlak_full.jpg
             thumb: /assets/img/bs/palyazatok/hatartalanul/hat_25/thumb/nagybaromlak_thumb.jpg
             alt: Kép 1
             caption: Nagybaromlak
-          - full: /assets/img/bs/palyazatok/hatartalanul/hat_25/full/kilato_full.jpg
-            thumb: /assets/img/bs/palyazatok/hatartalanul/hat_25/thumb/kilato_thumb.jpg
-            alt: Kép 2
-            caption: Kilátó
       - type: paragraph
         text: "Innen már megállás nélkül, egyenesen hazafelé tartottunk a busszal. Az út végén vegyes érzések kavarogtak bennünk: egyrészt mindannyian sajnáltuk, hogy véget értek ezek a csodás kalandok, másrészt viszont már nagyon örültünk annak, hogy este végre viszontláthatjuk a családunkat."
       - type: paragraph
@@ -186,7 +186,7 @@ sections:
           - full: /assets/img/bs/palyazatok/hatartalanul/hat_25/full/zarashoz_full.jpg
             thumb: /assets/img/bs/palyazatok/hatartalanul/hat_25/thumb/zarashoz_thumb.jpg
             alt: Kép 1
-            caption: Osztályfőnöki óra
+            caption: Élménybeszámoló
   - title: BS HAT24
     content:
       - type: maintitle

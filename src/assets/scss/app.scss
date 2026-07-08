@@ -73,6 +73,50 @@
     padding: 0.5em 0 0.5em 0;
 }
 
+.hatartalanul-image-grid {
+    margin-bottom: 0.35rem;
+
+    > .cell {
+        padding-right: 0.125rem;
+        padding-left: 0.125rem;
+        margin-bottom: 0.25rem;
+    }
+
+    > .medium-12 {
+        width: calc(100% - 1.25rem);
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0.625rem;
+        margin-left: 0.625rem;
+    }
+
+    > .medium-4 .card,
+    > .medium-6 .card {
+        margin-bottom: 0.25rem;
+    }
+
+    > .medium-4 .card-section,
+    > .medium-6 .card-section {
+        padding: 0.2rem;
+    }
+
+    > .medium-4 .thumbnail,
+    > .medium-6 .thumbnail {
+        padding: 1px;
+        margin-bottom: 0;
+        border-width: 1px;
+        box-shadow: none;
+    }
+
+    > .medium-4 .caption,
+    > .medium-6 .caption {
+        padding: 0.15rem 0 0;
+        margin-bottom: 0;
+        font-size: 0.85rem;
+        line-height: 1.15;
+    }
+}
+
 .hatartalanul-image-reveal {
     width: min(1000px, calc(100vw - 2rem));
     max-width: min(1000px, calc(100vw - 2rem));
