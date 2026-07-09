@@ -1,8 +1,4 @@
 ---
-- name: Arany Anita
-  grad: főiskola
-  spec1: tanító
-
 - name: Bendéné Bán Gyöngyi
   grad: főiskola
   spec1: magyar–történelem–ének-zene szakos általános iskolai tanár
@@ -15,7 +11,7 @@
   grad: főiskola
   spec1: tanító
 
-- name: Darukáné Jójárt Renáta – tartósan távollévő
+- name: Darukáné Jójárt Renáta
   grad: egyetem
   spec1: matematika szakos középiskolai tanár
 
@@ -75,17 +71,9 @@
   grad: főiskola
   spec1: tanító
 
-- name: Széllné Bartók Mária
-  grad: főiskola
-  spec1: tanító
-
 - name: Terhes Bernadett – tartósan távollévő
   grad: főiskola
   spec1: tanító
-
-- name: Tombácz Adél
-  grad: egyetem
-  spec1: angol nyelv és kultúra - magyar szakos középiskolai tanár
 
 - name: Túri Ágnes
   grad: főiskola
@@ -96,6 +84,11 @@
   spec1: általános iskolai magyar tanár és könyvtáros
   spec2: differenciáló, fejlesztő pedagógiai ismeretek
   spec3: szakvizsgázott pedagógus, fejlesztőpedagógus
+
+- name: Vörös Balázs Zsolt
+  grad: egyetem
+  spec1: angol nyelv és kultúra tanára
+  spec2: könyvtárostanár
 
 - name: Zombori-Benczur Izabella – tartósan távollévő
   grad: egyetem
