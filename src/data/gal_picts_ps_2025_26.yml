@@ -1,4 +1,52 @@
 cards:
+  - slug: '2026-06-23-tanevzaro'
+    title: 'Tanévzáró'
+    date: '2026. 06. 23.'
+
+  - slug: '2026-06-19-ballagas'
+    title: 'Ballagás'
+    date: '2026. 06. 19.'
+
+  - slug: '2026-06-17-eld-elmenysport-diakoknak'
+    title: 'Éld élménysport diákoknak'
+    date: '2026. 06. 17.'
+
+  - slug: '2026-06-07-orszagos-sakk-csapat-diakolimpia'
+    title: 'Országos sakk csapat diákolimpia'
+    date: '2026. 06. 07.'
+
+  - slug: '2026-06-05-varazskez-foglalkozas'
+    title: 'Varázskéz foglalkozás'
+    date: '2026. 06. 05.'
+
+  - slug: '2026-06-04-mozilatogatas'
+    title: 'Mozilátogatás'
+    date: '2026. 06. 04.'
+
+  - slug: '2026-06-03-mozgasfejleszto-szakkor-mehecske-csoport'
+    title: 'Mozgásfejlesztő szakkör – Méhecske csoport'
+    date: '2026. 06. 03.'
+
+  - slug: '2026-06-03-floorball-korut'
+    title: 'Floorball körút'
+    date: '2026. 06. 03.'
+
+  - slug: '2026-05-27-kihivas-napja'
+    title: 'Kihívás napja'
+    date: '2026. 05. 27.'
+
+  - slug: '2026-05-21-papirgyujtes'
+    title: 'Papírgyűjtés'
+    date: '2026. 05. 21.'
+
+  - slug: '2026-05-21-4o-mozilatogatas'
+    title: '4.o mozilátogatás'
+    date: '2026. 05. 21.'
+
+  - slug: '2026-05-20-rendhagyo-magyarora-a-szabadban'
+    title: 'Rendhagyó magyaróra a szabadban'
+    date: '2026. 05. 20.'
+
   - slug: '2026_05_14_sakkpalota_es_helyesiras'
     title: 'Sakkpalota és helyesírás'
     date: '2026. 05. 14.'

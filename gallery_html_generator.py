@@ -17,7 +17,6 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "src" / "pages" / "ps" / "galeriak" / "2025-26"
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".tif", ".tiff"}
 ALT_TEXT = "lórum ipse"
-TITLE_TEXT = "Cím"
 
 
 @dataclass
@@ -41,7 +40,21 @@ class GalleryListItem:
 
 
 def normalize_slug(folder_name: str) -> str:
-    return folder_name.replace("-", "_")
+    # A slug egyben a képmappa neve is, ezért nem szabad a kötőjeleket
+    # aláhúzásra cserélni: az eltérő név hibás képútvonalat eredményezne.
+    return folder_name
+
+
+def title_from_folder_name(folder_name: str) -> str:
+    title = re.sub(
+        r"^\d{4}[_ -]\d{2}[_ -]\d{2}(?:[_ -]+|$)",
+        "",
+        folder_name,
+    )
+    title = re.sub(r"[_ -]+", " ", title).strip()
+    if not title:
+        raise ValueError(f"A mappanévben nincs cím: {folder_name}")
+    return title[0].upper() + title[1:]
 
 
 def parse_date(slug: str) -> tuple[int, int, int]:
@@ -62,17 +75,41 @@ def count_gallery_files(source_dir: Path) -> int:
     return sum(1 for item in count_dir.iterdir() if item.is_file() and item.suffix.lower() in IMAGE_EXTENSIONS)
 
 
+def validate_gallery_files(source_dir: Path, count: int) -> None:
+    if count == 0:
+        raise ValueError("A galériamappa nem tartalmaz képeket.")
+
+    missing: list[str] = []
+    for index in range(1, count + 1):
+        number = f"{index:02d}"
+        for variant in ("thumb", "full"):
+            expected = source_dir / variant / f"{number}_{variant}.jpg"
+            if not expected.is_file():
+                missing.append(str(expected.relative_to(source_dir)))
+
+    if missing:
+        preview = ", ".join(missing[:5])
+        suffix = f" (+{len(missing) - 5} további)" if len(missing) > 5 else ""
+        raise ValueError(
+            "Hiányzó vagy hibásan elnevezett galériaképek: "
+            f"{preview}{suffix}. Előbb futtasd a resizer.py programot "
+            "2 számjegyű fájlnevekkel."
+        )
+
+
 def build_gallery(source_dir: Path, output_dir: Path, school_key: str) -> GalleryData:
     slug = normalize_slug(source_dir.name)
     year_num, month, day = parse_date(slug)
     year_value = school_year(year_num, month)
     output_file = output_dir / f"{slug}.html"
+    count = count_gallery_files(source_dir)
+    validate_gallery_files(source_dir, count)
     return GalleryData(
         source_dir=source_dir,
         output_file=output_file,
         layout=f"two_columns_{school_key}",
-        title=TITLE_TEXT,
-        count=count_gallery_files(source_dir),
+        title=title_from_folder_name(source_dir.name),
+        count=count,
         date=f"{year_num}. {month:02d}. {day:02d}.",
         school_key=school_key,
         slug=slug,
