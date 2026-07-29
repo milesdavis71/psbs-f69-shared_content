@@ -30,6 +30,7 @@ class GalleryData:
     school_key: str
     slug: str
     year: str
+    warnings: list[str]
 
 
 @dataclass
@@ -75,7 +76,7 @@ def count_gallery_files(source_dir: Path) -> int:
     return sum(1 for item in count_dir.iterdir() if item.is_file() and item.suffix.lower() in IMAGE_EXTENSIONS)
 
 
-def validate_gallery_files(source_dir: Path, count: int) -> None:
+def validate_gallery_files(source_dir: Path, count: int) -> list[str]:
     if count == 0:
         raise ValueError("A galériamappa nem tartalmaz képeket.")
 
@@ -90,11 +91,13 @@ def validate_gallery_files(source_dir: Path, count: int) -> None:
     if missing:
         preview = ", ".join(missing[:5])
         suffix = f" (+{len(missing) - 5} további)" if len(missing) > 5 else ""
-        raise ValueError(
+        return [
             "Hiányzó vagy hibásan elnevezett galériaképek: "
-            f"{preview}{suffix}. Előbb futtasd a resizer.py programot "
-            "2 számjegyű fájlnevekkel."
-        )
+            f"{preview}{suffix}. A HTML elkészült, de a képek helyes "
+            "megjelenítéséhez futtasd a resizer.py programot 2 számjegyű "
+            "fájlnevekkel."
+        ]
+    return []
 
 
 def build_gallery(source_dir: Path, output_dir: Path, school_key: str) -> GalleryData:
@@ -103,7 +106,7 @@ def build_gallery(source_dir: Path, output_dir: Path, school_key: str) -> Galler
     year_value = school_year(year_num, month)
     output_file = output_dir / f"{slug}.html"
     count = count_gallery_files(source_dir)
-    validate_gallery_files(source_dir, count)
+    warnings = validate_gallery_files(source_dir, count)
     return GalleryData(
         source_dir=source_dir,
         output_file=output_file,
@@ -114,7 +117,30 @@ def build_gallery(source_dir: Path, output_dir: Path, school_key: str) -> Galler
         school_key=school_key,
         slug=slug,
         year=year_value,
+        warnings=warnings,
     )
+
+
+def gallery_folders_from_path(path: Path) -> list[Path]:
+    """Egy galériamappát vagy annak közvetlen gyűjtőmappáját bontja ki."""
+    if not path.is_dir():
+        return []
+    try:
+        parse_date(path.name)
+        return [path]
+    except ValueError:
+        pass
+
+    galleries: list[Path] = []
+    for child in sorted(path.iterdir(), key=lambda item: item.name.lower()):
+        if not child.is_dir():
+            continue
+        try:
+            parse_date(child.name)
+        except ValueError:
+            continue
+        galleries.append(child)
+    return galleries
 
 
 def render_html(data: GalleryData) -> str:
@@ -280,7 +306,9 @@ class GalleryGeneratorApp:
         self.school_key.set(value)
         self.ps_checked.set(value == "ps")
         self.bs_checked.set(value == "bs")
-        self.status.set(f"Kiválasztva: {value}")
+        selected_output_dir = PROJECT_ROOT / "src" / "pages" / value / "galeriak" / "2025-26"
+        self.output_dir.set(str(selected_output_dir))
+        self.status.set(f"Kiválasztva: {value}. HTML célmappa: {selected_output_dir}")
 
     def _choose_folders(self) -> None:
         selected = filedialog.askdirectory(initialdir=PROJECT_ROOT / "src" / "assets" / "img", title="Galéria képmappa kiválasztása")
@@ -299,11 +327,16 @@ class GalleryGeneratorApp:
     def _add_folders(self, paths: list[Path]) -> None:
         added = 0
         for path in paths:
-            if path.is_dir() and path not in self.folders:
-                self.folders.append(path)
-                self.listbox.insert(END, str(path))
+            for gallery_path in gallery_folders_from_path(path):
+                if gallery_path in self.folders:
+                    continue
+                self.folders.append(gallery_path)
+                self.listbox.insert(END, str(gallery_path))
                 added += 1
-        self.status.set(f"{added} mappa hozzáadva. Összesen: {len(self.folders)}")
+        if added:
+            self.status.set(f"{added} galériamappa hozzáadva. Összesen: {len(self.folders)}")
+        else:
+            self.status.set("Nem találtam dátummal kezdődő galériamappát.")
 
     def _clear_folders(self) -> None:
         self.folders.clear()
@@ -324,6 +357,7 @@ class GalleryGeneratorApp:
 
         created = 0
         errors: list[str] = []
+        warnings: list[str] = []
         generated_galleries: list[GalleryData] = []
         for folder in self.folders:
             try:
@@ -331,6 +365,7 @@ class GalleryGeneratorApp:
                 data.output_file.write_text(render_html(data), encoding="utf-8")
                 created += 1
                 generated_galleries.append(data)
+                warnings.extend(f"{folder.name}: {warning}" for warning in data.warnings)
             except Exception as exc:
                 errors.append(f"{folder.name}: {exc}")
 
@@ -349,8 +384,21 @@ class GalleryGeneratorApp:
         elif generated_galleries and not self.update_yaml_checked.get():
             yaml_message = "\nYAML lista frissítése kikapcsolva."
 
+        warning_message = ""
+        if warnings:
+            warning_message = "\n\nFigyelmeztetések:\n" + "\n".join(warnings)
+
         if errors:
-            messagebox.showwarning("Részben kész", f"{created} HTML fájl létrehozva.{yaml_message}\n\nHibák:\n" + "\n".join(errors))
+            messagebox.showwarning(
+                "Részben kész",
+                f"{created} HTML fájl létrehozva.{yaml_message}"
+                f"{warning_message}\n\nHibák:\n" + "\n".join(errors),
+            )
+        elif warnings:
+            messagebox.showwarning(
+                "Kész, figyelmeztetésekkel",
+                f"{created} HTML fájl létrehozva.{yaml_message}{warning_message}",
+            )
         else:
             messagebox.showinfo("Kész", f"{created} HTML fájl létrehozva.{yaml_message}")
         if self.update_yaml_checked.get():
