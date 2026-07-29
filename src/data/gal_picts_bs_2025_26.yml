@@ -1,200 +1,248 @@
 cards:
-  - slug: '2026_05_22_falatnyi_tudomany_foglalkozas'
-    title: 'Falatnyi tudomány foglalkozás'
-    date: '2026. 05. 22.'
+  - slug: "2026-06-24-tanevzaro"
+    title: "Tanévzáró"
+    date: "2026. 06. 24."
 
-  - slug: '2026_05_21_iskolakertben'
-    title: 'Iskolakertben'
-    date: '2026. 05. 21.'
+  - slug: "2026-06-20-ballagas"
+    title: "Ballagás"
+    date: "2026. 06. 20."
 
-  - slug: '2026_05_18_rendhagyo_testneveles_ora'
-    title: 'Rendhagyó testnevelésóra'
-    date: '2026. 05. 18.'
+  - slug: "2026-06-19-vakacio-elott"
+    title: "Vakáció előtt"
+    date: "2026. 06. 19."
 
-  - slug: '2026_05_13_muvelodesi_haz_kreativ_foglalkozas'
-    title: 'Művelődési ház kreatív foglalkozás'
-    date: '2026. 05. 13.'
+  - slug: "2026-06-17-eld-elmenysport-diakoknak"
+    title: "Éld+Élménysport diákoknak"
+    date: "2026. 06. 17."
 
-  - slug: '2026_05_10_madarak_es_fak_napja'
-    title: 'Madarak és fák napja'
-    date: '2026. 05. 10.'
+  - slug: "2026-06-16-4-o-a-vizirendeszeti-rendorsegnel"
+    title: "4. o. a Vízirendészeti Rendőrségnél"
+    date: "2026. 06. 16."
 
-  - slug: '2026_05_08_triola_hangszerbemutato'
-    title: 'Triola hangszerbemutató'
-    date: '2026. 05. 08.'
+  - slug: "2026-06-13-csaladi-nap-az-iskolaban"
+    title: "Családi nap az iskolában"
+    date: "2026. 06. 13."
 
-  - slug: '2026_05_06_magyar_sport_napja'
-    title: 'Magyar sport napja'
-    date: '2026. 05. 06.'
+  - slug: "2026-06-09-osztalykirandulasok"
+    title: "Osztálykirandulások"
+    date: "2026. 06. 09."
 
-  - slug: '2026_05_05_diszkortefa_ajandekozas'
-    title: 'Díszkörtefa ajándékozás'
-    date: '2026. 05. 05.'
+  - slug: "2026-06-04-floorball-korut"
+    title: "Floorball körút"
+    date: "2026. 06. 04."
 
-  - slug: '2026_05_01_kip_ora'
-    title: 'KIP óra'
-    date: '2026. 05. 01.'
+  - slug: "2026-06-02-8-o-a-domban"
+    title: "8. o. a Dómban"
+    date: "2026. 06. 02."
 
-  - slug: '2026_04_29_varazsecset_csendeletfesto_verseny'
-    title: 'Varázsecset csendéletfestő verseny'
-    date: '2026. 04. 29.'
+  - slug: "2026-06-01-belvarosi-seta-elsosoknek"
+    title: "Belvárosi séta elsősöknek"
+    date: "2026. 06. 01."
 
-  - slug: '2026_04_28_kerekparos_kupa'
-    title: 'Kerékpáros kupa'
-    date: '2026. 04. 28.'
+  - slug: "2026-05-28-medve-matematikaversenyen"
+    title: "Medve matematikaversenyen"
+    date: "2026. 05. 28."
 
-  - slug: '2026_04_24_fenntarthatosagi_temahet'
-    title: 'Fenntarthatósági témahét'
-    date: '2026. 04. 24.'
+  - slug: "2026-05-28-jatekos-rejtvenyfejtes"
+    title: "Játékos rejtvényfejtés"
+    date: "2026. 05. 28."
 
-  - slug: '2026_04_19_agota_futas'
-    title: 'ÁGOTA futás'
-    date: '2026. 04. 19.'
+  - slug: "2026_05_22_falatnyi_tudomany_foglalkozas"
+    title: "Falatnyi tudomány foglalkozás"
+    date: "2026. 05. 22."
 
-  - slug: '2026_04_17_robotika_foglalkozas'
-    title: 'Robotika foglalkozás'
-    date: '2026. 04. 17.'
+  - slug: "2026_05_21_iskolakertben"
+    title: "Iskolakertben"
+    date: "2026. 05. 21."
 
-  - slug: '2026_03_31_ujjbabok_keszitese'
-    title: 'Ujjbábok készítése'
-    date: '2026. 03. 31.'
+  - slug: "2026_05_18_rendhagyo_testneveles_ora"
+    title: "Rendhagyó testnevelésóra"
+    date: "2026. 05. 18."
 
-  - slug: '2026_03_25_fuveszkertben'
-    title: 'Füvészkertben'
-    date: '2026. 03. 25.'
+  - slug: "2026_05_13_muvelodesi_haz_kreativ_foglalkozas"
+    title: "Művelődési ház kreatív foglalkozás"
+    date: "2026. 05. 13."
 
-  - slug: '2026_03_24_iskolaban_az_erdo'
-    title: 'Iskolában az erdő'
-    date: '2026. 03. 24.'
+  - slug: "2026_05_10_madarak_es_fak_napja"
+    title: "Madarak és fák napja"
+    date: "2026. 05. 10."
 
-  - slug: '2026_03_23_viz_vilagnapja'
-    title: 'Víz világnapja'
-    date: '2026. 03. 23.'
+  - slug: "2026_05_08_triola_hangszerbemutato"
+    title: "Triola hangszerbemutató"
+    date: "2026. 05. 08."
 
-  - slug: '2026_03_10_matematika_szakkor'
-    title: 'Matematika szakkör'
-    date: '2026. 03. 10.'
+  - slug: "2026_05_06_magyar_sport_napja"
+    title: "Magyar sport napja"
+    date: "2026. 05. 06."
 
-  - slug: '2026_03_10_marcius_15'
-    title: 'Március 15.'
-    date: '2025. 03. 10.'
+  - slug: "2026_05_05_diszkortefa_ajandekozas"
+    title: "Díszkörtefa ajándékozás"
+    date: "2026. 05. 05."
 
-  - slug: '2026_02_28_parasport_napja'
-    title: 'Parasport napja'
-    date: '2026. 02. 28.'
+  - slug: "2026_05_01_kip_ora"
+    title: "KIP óra"
+    date: "2026. 05. 01."
 
-  - slug: '2026_01_09_teli_varazslat'
-    title: 'Téli varázslat'
-    date: '2026. 01. 09.'
+  - slug: "2026_04_29_varazsecset_csendeletfesto_verseny"
+    title: "Varázsecset csendéletfestő verseny"
+    date: "2026. 04. 29."
 
-  - slug: '2025_12_19_karacsonyi_musor'
-    title: 'Karácsonyi műsor'
-    date: '2025. 12. 19.'
+  - slug: "2026_04_28_kerekparos_kupa"
+    title: "Kerékpáros kupa"
+    date: "2026. 04. 28."
 
-  - slug: '2025_12_18_agora_mikulas_kakao_bar'
-    title: 'Agora Mikulás kakaóbár'
-    date: '2025. 12. 18.'
+  - slug: "2026_04_24_fenntarthatosagi_temahet"
+    title: "Fenntarthatósági témahét"
+    date: "2026. 04. 24."
 
-  - slug: '2025_12_15_adventi_keszulodes'
-    title: 'Adventi készülődés'
-    date: '2025. 12. 15.'
+  - slug: "2026_04_19_agota_futas"
+    title: "ÁGOTA futás"
+    date: "2026. 04. 19."
 
-  - slug: '2025_12_11_iskolai_matematika_verseny'
-    title: 'Iskolai matematika verseny'
-    date: '2025. 12. 11.'
+  - slug: "2026_04_17_robotika_foglalkozas"
+    title: "Robotika foglalkozás"
+    date: "2026. 04. 17."
 
-  - slug: '2025_12_10_betlehem_kiallítas'
-    title: 'Betlehem kiállítás'
-    date: '2025. 12. 10.'
+  - slug: "2026_03_31_ujjbabok_keszitese"
+    title: "Ujjbábok készítése"
+    date: "2026. 03. 31."
 
-  - slug: '2025_12_09_versenyeredmenyek_4'
-    title: 'Versenyeredmenyek 4'
-    date: '2025. 12. 09.'
+  - slug: "2026_03_25_fuveszkertben"
+    title: "Füvészkertben"
+    date: "2026. 03. 25."
 
-  - slug: '2025_12_05_versenyeredmenyek_3'
-    title: 'Versenyeredmenyek 3'
-    date: '2025. 12. 05.'
+  - slug: "2026_03_24_iskolaban_az_erdo"
+    title: "Iskolában az erdő"
+    date: "2026. 03. 24."
 
-  - slug: '2025_12_03_kezmuves szakkor'
-    title: 'Kézműves szakkör'
-    date: '2025. 12. 03.'
+  - slug: "2026_03_23_viz_vilagnapja"
+    title: "Víz világnapja"
+    date: "2026. 03. 23."
 
-  - slug: '2025_11_28_8_oszt_a_torvenyszeken'
-    title: '8. osztály a törvényszéken'
-    date: '2025. 11. 28.'
+  - slug: "2026_03_10_matematika_szakkor"
+    title: "Matematika szakkör"
+    date: "2026. 03. 10."
 
-  - slug: '2025_11_28_versenyeredmenyek_2'
-    title: 'Versenyeredmenyek 2'
-    date: '2025. 11. 28.'
+  - slug: "2026_02_28_parasport_napja"
+    title: "Parasport napja"
+    date: "2026. 02. 28."
 
-  - slug: '2025_11_26_versenyeredmenyek_1'
-    title: 'Versenyeredmenyek 1'
-    date: '2025. 11. 26.'
+  - slug: "2026_01_09_teli_varazslat"
+    title: "Téli varázslat"
+    date: "2026. 01. 09."
 
-  - slug: '2025_11_18_kozos_tanulasi_program'
-    title: 'Közös tanulási program'
-    date: '2025. 11. 18.'
+  - slug: "2025_12_19_karacsonyi_musor"
+    title: "Karácsonyi műsor"
+    date: "2025. 12. 19."
 
-  - slug: '2025_11_17_marton_nap'
-    title: 'Márton nap'
-    date: '2025. 11. 17.'
+  - slug: "2025_12_18_agora_mikulas_kakao_bar"
+    title: "Agora Mikulás kakaóbár"
+    date: "2025. 12. 18."
 
-  - slug: '2025_11_14_rendhagyo_magyarora'
-    title: 'Rendhagyó magyar óra'
-    date: '2025. 11. 14.'
+  - slug: "2025_12_15_adventi_keszulodes"
+    title: "Adventi készülődés"
+    date: "2025. 12. 15."
 
-  - slug: '2025_10_18_palyaorientacios_nap'
-    title: 'Pályaorientációs nap'
-    date: '2025. 10. 18.'
+  - slug: "2025_12_11_iskolai_matematika_verseny"
+    title: "Iskolai matematika verseny"
+    date: "2025. 12. 11."
 
-  - slug: '2025_10_14_rendhagyo_testneveles_ora'
-    title: 'Rendhagyó testnevelés óra'
-    date: '2025. 10. 14.'
+  - slug: "2025_12_10_betlehem_kiallítas"
+    title: "Betlehem kiállítás"
+    date: "2025. 12. 10."
 
-  - slug: '2025_10_09_magyar_nepi_jatek_napja'
-    title: 'Magyar népi játék napja'
-    date: '2025. 10. 09.'
+  - slug: "2025_12_09_versenyeredmenyek_4"
+    title: "Versenyeredmenyek 4"
+    date: "2025. 12. 09."
 
-  - slug: '2025_10_09_szakkoreink_6'
-    title: 'Szakköreink 6'
-    date: '2025. 10. 09.'
+  - slug: "2025_12_05_versenyeredmenyek_3"
+    title: "Versenyeredmenyek 3"
+    date: "2025. 12. 05."
 
-  - slug: '2025_10_08_allatok_vilagnapja'
-    title: 'Álllatok világnapja'
-    date: '2025. 10. 03.'
+  - slug: "2025_12_03_kezmuves szakkor"
+    title: "Kézműves szakkör"
+    date: "2025. 12. 03."
 
-  - slug: '2025_10_02_szent_mihaly-napi_lepegeto'
-    title: 'Szent Mihály-napi lépegető'
-    date: '2025. 10. 02.'
+  - slug: "2025_11_28_versenyeredmenyek_2"
+    title: "Versenyeredmenyek 2"
+    date: "2025. 11. 28."
 
-  - slug: '2025_10_02_varazslatos_matematika_kiallitason'
-    title: 'A Varázslatos matematika kiállításon'
-    date: '2025. 10. 02.'
+  - slug: "2025_11_28_8_oszt_a_torvenyszeken"
+    title: "8. osztály a törvényszéken"
+    date: "2025. 11. 28."
 
-  - slug: '2025_10_01_magyar_nepmese_napja'
-    title: 'Magyar népmese napja'
-    date: '2025. 10. 01.'
+  - slug: "2025_11_26_versenyeredmenyek_1"
+    title: "Versenyeredmenyek 1"
+    date: "2025. 11. 26."
 
-  - slug: '2025_09_30_szakkoreink_5'
-    title: 'Szakköreink 5.'
-    date: '2025. 09. 30.'
+  - slug: "2025_11_18_kozos_tanulasi_program"
+    title: "Közös tanulási program"
+    date: "2025. 11. 18."
 
-  - slug: '2025_09_26_szakkoreink_4'
-    title: 'Szakköreink 4.'
-    date: '2025. 09. 26.'
+  - slug: "2025_11_17_marton_nap"
+    title: "Márton nap"
+    date: "2025. 11. 17."
 
-  - slug: '2025_09_24_szakkoreink_3'
-    title: 'Szakköreink 3.'
-    date: '2025. 09. 24.'
+  - slug: "2025_11_14_rendhagyo_magyarora"
+    title: "Rendhagyó magyar óra"
+    date: "2025. 11. 14."
 
-  - slug: '2025_09_22_szakkoreink_2'
-    title: 'Szakköreink 2.'
-    date: '2025. 09. 22.'
+  - slug: "2025_10_18_palyaorientacios_nap"
+    title: "Pályaorientációs nap"
+    date: "2025. 10. 18."
 
-  - slug: '2025_09_16_szakkoreink_1'
-    title: 'Szakköreink 1.'
-    date: '2025. 09. 16.'
+  - slug: "2025_10_14_rendhagyo_testneveles_ora"
+    title: "Rendhagyó testnevelés óra"
+    date: "2025. 10. 14."
 
-  - slug: '2025_09_01_tanevnyito'
-    title: 'Tanévnyitó ünnepség'
-    date: '2025. 09. 01.'
+  - slug: "2025_10_09_szakkoreink_6"
+    title: "Szakköreink 6"
+    date: "2025. 10. 09."
+
+  - slug: "2025_10_09_magyar_nepi_jatek_napja"
+    title: "Magyar népi játék napja"
+    date: "2025. 10. 09."
+
+  - slug: "2025_10_08_allatok_vilagnapja"
+    title: "Álllatok világnapja"
+    date: "2025. 10. 03."
+
+  - slug: "2025_10_02_varazslatos_matematika_kiallitason"
+    title: "A Varázslatos matematika kiállításon"
+    date: "2025. 10. 02."
+
+  - slug: "2025_10_02_szent_mihaly-napi_lepegeto"
+    title: "Szent Mihály-napi lépegető"
+    date: "2025. 10. 02."
+
+  - slug: "2025_10_01_magyar_nepmese_napja"
+    title: "Magyar népmese napja"
+    date: "2025. 10. 01."
+
+  - slug: "2025_09_30_szakkoreink_5"
+    title: "Szakköreink 5."
+    date: "2025. 09. 30."
+
+  - slug: "2025_09_26_szakkoreink_4"
+    title: "Szakköreink 4."
+    date: "2025. 09. 26."
+
+  - slug: "2025_09_24_szakkoreink_3"
+    title: "Szakköreink 3."
+    date: "2025. 09. 24."
+
+  - slug: "2025_09_22_szakkoreink_2"
+    title: "Szakköreink 2."
+    date: "2025. 09. 22."
+
+  - slug: "2025_09_16_szakkoreink_1"
+    title: "Szakköreink 1."
+    date: "2025. 09. 16."
+
+  - slug: "2025_09_01_tanevnyito"
+    title: "Tanévnyitó ünnepség"
+    date: "2025. 09. 01."
+
+  - slug: "2026_03_10_marcius_15"
+    title: "Március 15."
+    date: "2025. 03. 10."
