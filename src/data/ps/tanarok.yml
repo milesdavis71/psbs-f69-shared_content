@@ -14,10 +14,6 @@
   grad: főiskola
   spec1: általános iskolai tanító
 
-- name: Gonda Babett
-  grad: főiskola
-  spec1: általános iskolai tanító
-
 - name: Gusztosné Thékes Andrea
   grad: főiskola
   spec1: magyar–történelem szakos általános iskolai tanár
@@ -44,10 +40,6 @@
   spec3: fejlesztőpedagógus
 
 - name: Labanczné Bányász Anett
-  grad: főiskola
-  spec1: általános iskolai tanító
-
-- name: Májer Szilvia
   grad: főiskola
   spec1: általános iskolai tanító
 
@@ -84,6 +76,10 @@
   spec1: általános iskolai tanító
 
 - name: Szabó Amanda Márta
+  grad: főiskola
+  spec1: általános iskolai tanító
+
+- name: Szilágyi Lilla
   grad: főiskola
   spec1: általános iskolai tanító
 
