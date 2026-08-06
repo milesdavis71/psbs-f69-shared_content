@@ -37,7 +37,7 @@ module.exports = function (options) {
     // Add home as the first breadcrumb
     breadcrumbs.push({
         title: 'Főoldal',
-        url: '../index.html',
+        url: '../',
         isHome: true,
         disabled: false,
     })

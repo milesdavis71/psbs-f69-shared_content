@@ -22,8 +22,8 @@ $(document).ready(function () {
         let p = String(path).split(/[?#]/)[0]
         p = p.replace(/\\/g, '/')
 
-        // Treat "/index.html" as "/"
-        p = p.replace(/\/index\.html$/i, '/')
+        // Treat the clean home-page path as "/"
+        p = p.replace(/\/index$/i, '/')
 
         // Trim trailing slash except root
         if (p.length > 1) p = p.replace(/\/$/, '')
@@ -117,7 +117,7 @@ $(document).ready(function () {
             const $link = $parentLi.children('a.accordion-title').first()
             if ($link.length) {
                 const href = $link.attr('href') || ''
-                const match = href.match(/\/([^\/]+)\.html$/)
+                const match = href.match(/\/([^/]+)\/?$/)
                 if (match) {
                     const folderName = match[1]
                     if (currentPath.includes('/' + folderName + '/')) {

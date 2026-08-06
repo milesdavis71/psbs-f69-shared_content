@@ -1,10 +1,10 @@
 <li class="{{#ifpage page}}current is-active{{/ifpage}} {{#if childPages}}{{#ifpageInList childPages}}current is-active{{/ifpageInList}}{{/if}} {{#if noColor}}no-color-change{{/if}}" 
     {{#if items}}data-accordion-item{{/if}}
     {{#if items}}{{#ifpage page}}aria-expanded="true"{{/ifpage}}{{#if childPages}}{{#ifpageInList childPages}}aria-expanded="true"{{/ifpageInList}}{{/if}}{{/if}}
-    {{#if url}}data-menu-url="{{#if external}}{{url}}{{else}}/{{#if folder}}{{folder}}/{{/if}}{{url}}.html{{/if}}"{{/if}}>
+    {{#if url}}data-menu-url="{{#if external}}{{url}}{{else}}/{{#if folder}}{{folder}}/{{/if}}{{url}}{{/if}}"{{/if}}>
     
     {{#if items}}
-        <a href="{{#if external}}{{url}}{{else}}/{{#if folder}}{{folder}}/{{/if}}{{url}}.html{{/if}}" 
+        <a href="{{#if external}}{{url}}{{else}}/{{#if folder}}{{folder}}/{{/if}}{{url}}{{/if}}"
            class="accordion-title"
            {{#if external}}target="_blank" rel="noopener noreferrer"{{/if}}>
             {{#if icon}}<i class="fas fa-{{icon}}"></i> {{/if}}{{title}}
@@ -16,7 +16,7 @@
             {{/each}}
         </ul>
     {{else}}
-        <a href="{{#if external}}{{url}}{{else}}/{{#if folder}}{{folder}}/{{/if}}{{url}}.html{{/if}}" 
+        <a href="{{#if external}}{{url}}{{else}}/{{#if folder}}{{folder}}/{{/if}}{{url}}{{/if}}"
            {{#if external}}target="_blank" rel="noopener noreferrer"{{/if}}>
             {{#if icon}}<i class="fas fa-{{icon}}"></i> {{/if}} {{#if logo}} <img src="/assets/img/common/{{logo}}" alt=""> {{/if}} {{title}}
         </a>

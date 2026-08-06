@@ -8,6 +8,7 @@ import rimraf from 'rimraf'
 import sherpa from 'style-sherpa'
 import yaml from 'js-yaml'
 import fs from 'fs'
+import path from 'path'
 import webpackStream from 'webpack-stream'
 import webpack2 from 'webpack'
 import named from 'vinyl-named'
@@ -19,6 +20,20 @@ const postcss = require('gulp-postcss')
 const uncss = require('postcss-uncss')
 var sourcemaps = require('gulp-sourcemaps')
 var plumber = require('gulp-plumber')
+
+const HTACCESS_RULES = `Options -MultiViews
+RewriteEngine On
+
+# Redirect direct .html requests to clean URLs.
+RewriteCond %{THE_REQUEST} \\s/+(.+?)\\.html[\\s?] [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Serve extensionless page URLs from their generated .html files.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+`
 
 // Load all Gulp plugins into one variable
 const $ = plugins()
@@ -73,7 +88,7 @@ gulp.task(
     'build',
     gulp.series(
         clean,
-        gulp.parallel(pages, javascript, images, copy),
+        gulp.parallel(pages, javascript, images, copy, routing),
         sassBuild,
         styleGuide
     )
@@ -92,6 +107,12 @@ function clean(done) {
 // This task skips over the "img", "js", and "scss" folders, which are parsed separately
 function copy() {
     return gulp.src(PATHS.assets).pipe(gulp.dest(PATHS.dist + '/assets'))
+}
+
+function routing(done) {
+    fs.mkdirSync(PATHS.dist, { recursive: true })
+    fs.writeFileSync(path.join(PATHS.dist, '.htaccess'), HTACCESS_RULES)
+    done()
 }
 
 // Copy page templates into finished HTML files
@@ -223,9 +244,47 @@ function server(done) {
         {
             server: PATHS.dist,
             port: PORT,
+            middleware: [cleanUrlMiddleware],
         },
         done
     )
+}
+
+function cleanUrlMiddleware(req, res, next) {
+    const [pathname, queryString] = req.url.split('?')
+    const query = queryString ? `?${queryString}` : ''
+
+    if (pathname.endsWith('.html')) {
+        const cleanPath = pathname.replace(/\.html$/, '') || '/'
+        res.writeHead(302, { Location: `${cleanPath}${query}` })
+        res.end()
+        return
+    }
+
+    if (pathname === '/' || path.extname(pathname)) {
+        next()
+        return
+    }
+
+    let decodedPath
+
+    try {
+        decodedPath = decodeURIComponent(pathname).replace(/^\/+/, '')
+    } catch (error) {
+        next()
+        return
+    }
+
+    const distRoot = path.resolve(PATHS.dist)
+    const htmlPath = path.resolve(distRoot, `${decodedPath}.html`)
+    const isInsideDist =
+        htmlPath === distRoot || htmlPath.startsWith(`${distRoot}${path.sep}`)
+
+    if (isInsideDist && fs.existsSync(htmlPath)) {
+        req.url = `${pathname}.html${query}`
+    }
+
+    next()
 }
 
 // Reload the browser with BrowserSync
@@ -372,7 +431,7 @@ SCHOOLS.forEach((school) => {
         gulp.series(
             setSchool(school),
             clean,
-            gulp.parallel(pagesSchool, javascript, images, copy),
+            gulp.parallel(pagesSchool, javascript, images, copy, routing),
             sassBuild,
             styleGuide
         )
