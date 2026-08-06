@@ -29,7 +29,8 @@ RewriteCond %{THE_REQUEST} \\s/+(.+?)\\.html[\\s?] [NC]
 RewriteRule ^ %1 [R=301,L]
 
 # Serve extensionless page URLs from their generated .html files.
-RewriteCond %{REQUEST_FILENAME} !-d
+# Prefer a sibling HTML page over a same-named directory. Gallery grid pages
+# intentionally share their route with the directory containing their albums.
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{DOCUMENT_ROOT}/$1.html -f
 RewriteRule ^(.+?)/?$ $1.html [L]
