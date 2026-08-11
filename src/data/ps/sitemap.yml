@@ -22,7 +22,7 @@ sections:
         name: "Hitoktatóink"
       - status: ""
         name: "Felekezetek bemutatkozása"
-      - status: ""
+      - status: "✅"
         name: "Pedagógiai program"
       - status: ""
         name: "SZMSZ"
