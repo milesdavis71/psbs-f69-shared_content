@@ -1,0 +1,30 @@
+---
+layout: default
+title: Régi hírfolyam 2026
+page: 2025_26
+schoolKey: bs
+year: 2025-26
+---
+
+{{#filterNews "bs" newsData=news-2025-26}} {{#each items}}
+<div
+    class="title-bar"
+    style="
+        background-color: rgb(214.8186602871, 235.9894736842, 250.0313397129);
+        color: black;
+        font-weight: bold;
+    "
+>
+    {{title}}
+</div>
+<div class="card">
+    <div class="card-section">
+        <div class="grid-x grid-margin-x">
+            {{> hir-cells imageclass=img}}
+            <div class="cell small-12 {{contentclass}}">
+                {{> common-md-news-content-2025-26 hir=content}}
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}} {{/filterNews}}
