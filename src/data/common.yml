@@ -1,20 +1,20 @@
 beiratkLeadNyomtatvanyok:
-  - name: ' Nyilatkozat – Törvényes képviselő'
+  - name: " Nyilatkozat – Törvényes képviselő"
     file: nyilatkozat_torvenyes_kepviselo.pdf
     icon: fas fa-file-pdf fa-lg
-  - name: 'Nyilatkozat – Etika/Hit- és erkölcstan'
+  - name: "Nyilatkozat – Etika/Hit- és erkölcstan"
     file: nyilatkozat_etika_hit-es_erkolcstan_2026-27.pdf
     icon: fas fa-file-pdf fa-lg
-  - name: 'Tanulói adatlap'
+  - name: "Tanulói adatlap"
     file: tanuloi_adatlap.pdf
-  - name: 'Nyilatkozat fokozott figyelmet igénylő egészségi állapotról'
+  - name: "Nyilatkozat fokozott figyelmet igénylő egészségi állapotról"
     file: nyilatkozat_egeszegugyi_allapotrol.pdf
     icon: fas fa-file-pdf fa-lg
 
 bemutatkozas:
   bstext:
     - text: Intézményünk pedagógiai programjában és a tagintézmény mindennapjaiban egyaránt tetten érhető a tiszteletadás, főhajtás a névadó Bálint Sándor különösen gazdag és értékes, Tápéhoz és a tápai hagyományokhoz is kötődő életútja előtt. E fontos érték mellett kiemelten hangsúlyos számunkra az iskolánkban folyó nevelő-oktatómunka alapjait meghatározó Freinet-pedagógia bizalomra és biztonságra épülő szemlélete.
-    - text: 'A tápéi iskola fő erőssége a mindennapokban is tapintható szeretetteljes, befogadó és elfogadó légkör, az a családias hangulat, melynek köszönhetően jól érzi magát és ezért szívesen megy be oda nap mint nap valamennyi „iskolahasználó”: gyermek, pedagógus, segítő munkatárs és szülő egyaránt. Az itt dolgozók felkészültsége, elkötelezettsége, tapasztalata és hite az alapja annak az oktató-nevelő munkának, amely – a korszerű tudás átadása mellett – generációk óta képes kapaszkodót, gyökereket, alapvető emberi értékeket plántálni az itt tanuló gyerekekbe.'
+    - text: "A tápéi iskola fő erőssége a mindennapokban is tapintható szeretetteljes, befogadó és elfogadó légkör, az a családias hangulat, melynek köszönhetően jól érzi magát és ezért szívesen megy be oda nap mint nap valamennyi „iskolahasználó”: gyermek, pedagógus, segítő munkatárs és szülő egyaránt. Az itt dolgozók felkészültsége, elkötelezettsége, tapasztalata és hite az alapja annak az oktató-nevelő munkának, amely – a korszerű tudás átadása mellett – generációk óta képes kapaszkodót, gyökereket, alapvető emberi értékeket plántálni az itt tanuló gyerekekbe."
     - text: A közösségi programok színes palettája (kirándulások, színház- és múzeumlátogatások, családi napok, közös programok és események szervezése Tápé közösségeivel) tovább gazdagítják az itt tanulók fejlődésének-fejlesztésének lehetőségeit.
     - text: Tápén - Szegeden egyedüliként – a Freinet-pedagógián alapuló programot valósítunk meg az alsó tagozatban, amelynek legfontosabb eleme az egész napos iskolai nevelési program.
     - text: Évfolyamonként 1 osztályt indítunk, melyben 2 tanító tanít. Az időben széthúzott tanítási napokon a rugalmas óraterv alkalmazkodik a gyerekek fizikai, pszichikai teljesítő- és tűrőképességéhez, így a pedagógusok hangsúlyosan figyelembe tudják venni az alsó tagozat alapozó funkcióját, az alapkészségek fejlesztését, a gyerekek egyéni sajátosságait. Egyenletesebb a terhelés, több lehetőség nyílik a differenciálásra, a folyamatos felzárkóztatásra és tehetséggondozásra.
@@ -83,21 +83,21 @@ bemutatkozas:
         alt: Tagiskola
 
 deeplinks:
-  - class: '1'
+  - class: "1"
     deeplink: 1o
-  - class: '2'
+  - class: "2"
     deeplink: 2o
-  - class: '3'
+  - class: "3"
     deeplink: 3o
-  - class: '4'
+  - class: "4"
     deeplink: 4o
-  - class: '5'
+  - class: "5"
     deeplink: 5o
-  - class: '6'
+  - class: "6"
     deeplink: 6o
-  - class: '7'
+  - class: "7"
     deeplink: 7o
-  - class: '8'
+  - class: "8"
     deeplink: 8o
 
 elerhetoseg:
@@ -110,93 +110,93 @@ elerhetoseg:
     phone1: +36 62 541 956
     phone2: +36 62 541 957
     phone3: +36 30 736 2795
-    line1: 'Igazgató: Winkler Andrea'
+    line1: "Igazgató: Winkler Andrea"
     line2: Az intézmény fenntartója és működtetője a Szegedi Tankerületi Központ.
 
 etkezesbefizetes:
   months:
-    - name: '2026. március'
-      slug: 'marcius'
+    - name: "2026. március"
+      slug: "marcius"
       dates:
         - date: 2026. 02. 10.
-          time: '07:30–14:30'
+          time: "07:30–14:30"
         - date: 2026. 02. 11.
-          time: '10:00–17:00'
+          time: "10:00–17:00"
         - date: 2026. 02. 17.
-          time: '07:30–14:30'
+          time: "07:30–14:30"
         - date: 2026. 02. 18.
-          time: '10:00–17:00'
+          time: "10:00–17:00"
         - date: 2026. 02. 24.
-          time: '07:30–14:30'
+          time: "07:30–14:30"
         - date: 2026. 02. 25.
-          time: '10:00–17:00'
+          time: "10:00–17:00"
         - date: 2026. 03. 03.
-          time: '07:30–14:30'
+          time: "07:30–14:30"
         - date: 2026. 03. 04.
-          time: '10:00–17:00'
-    - name: '2026. április'
-      slug: 'aprilis'
+          time: "10:00–17:00"
+    - name: "2026. április"
+      slug: "aprilis"
       dates:
         - date: 2026. 03. 10.
-          time: '07:30–14:30'
+          time: "07:30–14:30"
         - date: 2026. 03. 11.
-          time: '10:00–17:00'
+          time: "10:00–17:00"
         - date: 2026. 03. 17.
-          time: '07:30–14:30'
+          time: "07:30–14:30"
         - date: 2026. 03. 18.
-          time: '10:00–17:00'
+          time: "10:00–17:00"
         - date: 2026. 03. 24.
-          time: '07:30–14:30'
+          time: "07:30–14:30"
         - date: 2026. 03. 25.
-          time: '10:00–17:00'
+          time: "10:00–17:00"
 
-    - name: '2026. május'
-      slug: 'majus'
+    - name: "2026. május"
+      slug: "majus"
       dates:
         - date: 2026. 04. 07.
-          time: '07:30–14:30'
+          time: "07:30–14:30"
         - date: 2026. 04. 08.
-          time: '10:00–17:00'
+          time: "10:00–17:00"
         - date: 2026. 04. 14.
-          time: '07:30–14:30'
+          time: "07:30–14:30"
         - date: 2026. 04. 15.
-          time: '10:00–17:00'
+          time: "10:00–17:00"
         - date: 2026. 04. 21.
-          time: '07:30–14:30'
+          time: "07:30–14:30"
         - date: 2026. 04. 22.
-          time: '10:00–17:00'
+          time: "10:00–17:00"
         - date: 2026. 04. 28.
-          time: '07:30–14:30'
+          time: "07:30–14:30"
         - date: 2026. 04. 29.
-          time: '10:00–17:00'
+          time: "10:00–17:00"
         - date: 2026. 05. 05.
-          time: '07:30–14:30'
+          time: "07:30–14:30"
         - date: 2026. 05. 06.
-          time: '10:00–17:00'
+          time: "10:00–17:00"
 
-    - name: '2026. június'
-      slug: 'junius'
+    - name: "2026. június"
+      slug: "junius"
       dates:
         - date: 2026. 05. 12.
-          time: '07:30–14:30'
+          time: "07:30–14:30"
         - date: 2026. 05. 13.
-          time: '10:00–17:00'
+          time: "10:00–17:00"
         - date: 2026. 05. 19.
-          time: '07:30–14:30'
+          time: "07:30–14:30"
         - date: 2026. 05. 20.
-          time: '10:00–17:00'
+          time: "10:00–17:00"
         - date: 2026. 05. 26.
-          time: '07:30–14:30'
+          time: "07:30–14:30"
         - date: 2026. 05. 27.
-          time: '10:00–17:00'
+          time: "10:00–17:00"
         - date: 2026. 06. 02.
-          time: '07:30–14:30'
+          time: "07:30–14:30"
         - date: 2026. 06. 03.
-          time: '10:00–17:00'
+          time: "10:00–17:00"
 
 fenntarto:
   name: Az intézmény fenntartója a Szegedi Tankerületi Központ
-  open: 'Nyitvatartás: 7:00–18:00 óráig'
+  open: "Nyitvatartás: 7:00–18:00 óráig"
 
 ps:
   favicon: ../assets/img/common/school_logos/ps-favicon.png
@@ -211,72 +211,72 @@ bs:
 right_column:
   # Common items (appear in both schools)
   - common:
-      title: 'Határtalanul! pályázataink'
-      url: 'palyazatok/hatartalanul'
-      img: 'bga-hatartalanul-logo-right-column.jpg'
-      text: ''
-      text2: ''
-      text3: ''
+      title: "Határtalanul! pályázataink"
+      url: "palyazatok/hatartalanul"
+      img: "bga-hatartalanul-logo-right-column.jpg"
+      text: ""
+      text2: ""
+      text3: ""
       buttontext: tovább az aloldalra
     ps: {}
     bs: {}
   - common:
-      title: 'Nemzeti Tehetség Program'
-      url: 'palyazatok/ntp'
-      img: 'ntp_logo.jpg'
-      text: ''
-      text2: ''
-      text3: ''
+      title: "Nemzeti Tehetség Program"
+      url: "palyazatok/ntp"
+      img: "ntp_logo.jpg"
+      text: ""
+      text2: ""
+      text3: ""
       buttontext: tovább az aloldalra
     ps: {}
     bs: {}
 
   # PS-specific items (appear only in PS school)
   - ps:
-      title: 'Regisztrált Tehetségpont'
-      url: 'bemutatkozas/regisztralt_tehetsegpont'
-      img: 'ps-regisztralt-tehetsegpont.png'
-      text: ''
-      text2: ''
-      text3: ''
+      title: "Regisztrált Tehetségpont"
+      url: "bemutatkozas/regisztralt_tehetsegpont"
+      img: "ps-regisztralt-tehetsegpont.png"
+      text: ""
+      text2: ""
+      text3: ""
       buttontext: tovább az aloldalra
 
   - common:
-      title: 'KEVE program'
-      url: 'palyazatok/keve_program'
-      img: 'keve-program-logo-2025.jpg'
-      text: ''
-      text2: ''
-      text3: ''
+      title: "KEVE program"
+      url: "palyazatok/keve_program"
+      img: "keve-program-logo-2025.jpg"
+      text: ""
+      text2: ""
+      text3: ""
       buttontext: tovább az aloldalra
     ps: {}
     bs: {}
 
   - bs:
-      title: 'Iskolakert pályázatunk'
-      url: 'palyazatok/iskolakert'
-      img: 'iskolakerti-alapozo-logo.jpg'
-      text: ''
-      text2: ''
-      text3: ''
+      title: "Iskolakert pályázatunk"
+      url: "palyazatok/iskolakert"
+      img: "iskolakerti-alapozo-logo.jpg"
+      text: ""
+      text2: ""
+      text3: ""
       buttontext: tovább az aloldalra
 
   - bs:
-      title: 'Digitális Témahét'
-      url: 'palyazatok/digitalis_temahet'
-      img: 'digitalis-temahet.jpg'
-      text: ''
-      text2: ''
-      text3: ''
+      title: "Digitális Témahét"
+      url: "palyazatok/digitalis_temahet"
+      img: "digitalis-temahet.jpg"
+      text: ""
+      text2: ""
+      text3: ""
       buttontext: tovább az aloldalra
 
   - common:
-      title: 'Kék tér program'
-      url: 'bemutatkozas/kek_ter_program'
-      img: 'kek-ter-logo.jpg'
-      text: ''
-      text2: ''
-      text3: ''
+      title: "Kék tér program"
+      url: "bemutatkozas/kek_ter_program"
+      img: "kek-ter-logo.jpg"
+      text: ""
+      text2: ""
+      text3: ""
       buttontext: tovább az aloldalra
     ps: {}
     bs: {}
@@ -318,479 +318,23 @@ right_column:
   #   bs: false
 
 news:
-  2025-26:
-    - bs:
-      title: Taneszköz listák a 2026/2027-es tanévre
-      school: Tagiskola
-      img: taneszkoz.jpg
-      align: center
-      imgclass: medium-3
-      contentclass: medium-9
-      content: news104
-
-    - ps:
-      title: Taneszköz listák a 2026/2027-es tanévre
-      school: Székhely
-      img: taneszkoz.jpg
-      align: center
-      imgclass: medium-3
-      contentclass: medium-9
-      content: news104
-
-    - ps:
-      title: Nyári ügyeleti napok
-      school: Székhely
-      img: nyari_ugyeleti_napok.jpg
-      align: center
-      imgclass: medium-4
-      contentclass: medium-8
-      content: news102
-
-    - bs:
-      title: Nyári ügyeleti napok
-      school: Székhely
-      img: nyari_ugyeleti_napok.jpg
-      align: center
-      imgclass: medium-4
-      contentclass: medium-8
-      content: news103
-
-    - ps:
-      title: Tanévzáró
-      school: Székhely
-      img: tanevzaro.jpg
-      align: center
-      imgclass: medium-4
-      contentclass: medium-8
-      content: news100
-
-    - bs:
-      title: Tanévzáró
-      school: Tagiskola
-      img: tanevzaro.jpg
-      align: center
-      imgclass: medium-4
-      contentclass: medium-8
-      content: news101
-
-    - ps:
-      title: Ballagás
-      school: Székhely
-      img: ballagas-2026.jpg
-      align: center
-      imgclass: medium-2
-      contentclass: medium-10
-      content: news98
-
-    - bs:
-      title: Ballagás
-      school: Tagiskola
-      img: ballagas-2026.jpg
-      align: center
-      imgclass: medium-2
-      contentclass: medium-10
-      content: news99
-
-
-    - common:
-      title: Labanczné Bányász Anett igazgatói pályázata
-      school: all
-      img: pdf-icon.png
-      align: center
-      imgclass: medium-2
-      contentclass: medium-10
-      content: news95
-
-    - bs:
-      title: Szülői értekezlet a leendő első osztályos gyerekek szüleinek
-      school: Tagiskola
-      img: bs-szuloi-2026.jpg
-      align: center
-      imgclass: medium-3
-      contentclass: medium-9
-      content: news97
-
-    - bs:
-      title: Családi nap a Bálint Sándor Tagiskolában
-      school: Tagiskola
-      img: bs-csaladi-nap.jpg
-      align: center
-      imgclass: medium-3
-      contentclass: medium-9
-      content: news96
-
-
-    - common:
-      title: Leendő első osztályos tanulók szüleinek tájékoztatása a közétkeztetés igénybevételével kapcsolatban
-      school: all
-      img: children-eat.jpg
-      align: center
-      imgclass: medium-3
-      contentclass: medium-9
-      content: news94
-
-    - bs:
-      title: Tavaszi szülői értekezletek
-      school: Tagiskola
-      img: szuloi.png
-      align: center
-      imgclass: medium-6
-      contentclass: medium-6
-      content: news93
-
-    - common:
-      title: Rendhagyó könyvtári óra szülőknek és pedagógusoknak
-      school: all
-      img: szecsno-nora.jpg
-      align: center
-      imgclass: medium-3
-      contentclass: medium-9
-      content: news92
-
-    - ps:
-      title: Köszönjük adója 1%-át!
-      school: Székhely
-      img: ado_ps.jpg
-      align: center
-      imgclass: medium-5
-      contentclass: medium-7
-      content: news91
-    - bs:
-      title: Adója 1%-ával támogassa iskolai alapítványunkat!
-      school: Tagiskola
-      img: bs_1_szazalek.jpg
-      align: center
-      imgclass: medium-3
-      contentclass: medium-9
-      content: news90
-    - common:
-      title: Beiratkozás
-      img: beiratkozas.jpg
-      align: center
-      imgclass: medium-3
-      contentclass: medium-9
-      content: news89
-    - common:
-      title: Tavaszi szünet
-      img: easter_bunny_2023.png
-      align: center
-      imgclass: medium-3
-      contentclass: medium-9
-      content: news88
-    - common:
-      title: Balatonkenesei nyári tábor az NGSZ szervezésében
-      img: nyari-tabor.jpg
-      align: center
-      imgclass: medium-3
-      contentclass: medium-9
-      content: news87
-    - common:
-      title: Rendhagyó könyvtári órák szülőknek és pedagógusoknak
-      img: drogprevencio.jpg
-      align: center
-      imgclass: medium-3
-      contentclass: medium-9
-      content: news86
-    - common:
-      title: Tájékoztató a 2026/2027. tanévre történő általános iskolai beiratkozásról
-      img: beiratkozas.jpg
-      align: center
-      imgclass: medium-4
-      contentclass: medium-8
-      content: news85
-    - common:
-      title: Kiemelt eDia Partneriskola tanúsítvány
-      img: edia-szte-logo.jpg
-      align: center
-      imgclass: medium-3
-      contentclass: medium-9
-      content: news84
-    - common:
-      title: Elismerő oklevél iskolánknak
-      school: Tagiskola
-      img: bs-csaladbarat-koznevelesi-intezmeny.jpg
-      align: center
-      imgclass: medium-4
-      contentclass: medium-8
-      content: news83
-    - ps:
-      title: Suliváró foglalkozásaink
-      school: Székhely
-      img: ps-2026-tavasz-sulivaro-fogl.jpg
-      align: center
-      imgclass: medium-4
-      contentclass: medium-8
-      content: news82
-    - bs:
-      title: Fogadóóra
-      school: Tagiskola
-      img: fogadoora_small.png
-      align: center
-      imgclass: medium-4
-      contentclass: medium-8
-      content: news81
-    - ps:
-      title: Sakk egyéni diákolimpia ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜
-      school: Székhely
-      img: ps-sakkverseny.jpg
-      align: center
-      imgclass: medium-6
-      contentclass: medium-6
-      content: news80
-    - ps:
-      title: Parasport napja
-      school: Székhely
-      img: ps-parasport-nap-2026.jpg
-      align: center
-      imgclass: medium-12
-      contentclass: medium-12
-      content: news79
-    - ps:
-      title: Farsang
-      school: Székhely
-      img: ps-farsang-2026.jpg
-      align: center
-      imgclass: medium-6
-      contentclass: medium-6
-      content: news78
-    - bs:
-      title: Hit- és erkölcstan oktatással kapcsolatos tájékoztató
-      school: Tagiskola
-      img: hittan.jpg
-      align: center
-      imgclass: medium-3
-      contentclass: medium-9
-      content: news77
-    - ps:
-      title: III. helyezés a Tisza-vetélkedő döntőjében
-      school: Székhely
-      img: ps-term-tud-vetelkedo-dontosok-2026.jpg
-      align: center
-      imgclass: medium-6
-      contentclass: medium-6
-      content: news75
-    - bs:
-      title: I. helyezés a Tisza-vetélkedő döntőjében
-      school: Tagiskola
-      img: bs-term-tud-vetelkedo-dontosok-2026.jpg
-      align: center
-      imgclass: medium-6
-      contentclass: medium-6
-      content: news74
-    - bs:
-      title: A Parasport világnapja iskolánkban
-      school: Tagiskola
-      img: bs-parasport-napja-2026-tavasz.jpg
-      align: center
-      imgclass: medium-6
-      contentclass: medium-6
-      content: news76
-    - bs:
-      title: Iskolába hívogató
-      school: Tagiskola
-      img: bs-iskolaba-hivogato-2026-festes.jpg
-      align: center
-      imgclass: medium-3
-      contentclass: medium-9
-      content: news73
-    - bs:
-      title: Elsőseink már otthonosan mozognak iskolánkban
-      school: Tagiskola
-      img: bs-elsosok.jpg
-      align: center
-      imgclass: medium-12
-      contentclass: medium-12
-      content: news72
-    - common:
-      title: Álláspályázat igazgató munkakör betöltésére
-      school: all
-      img: felkialtojel.jpg
-      align: center
-      imgclass: medium-2
-      contentclass: medium-10
-      content: news71
-    - bs:
-      title: Iskolába hívogató
-      school: Tagiskola
-      img: bs-iskolaba-hivogato-sport.jpg
-      align: center
-      imgclass: medium-3
-      contentclass: medium-9
-      content: news70
-    - common:
-      title: KRÉTA online nyelvtanuló alkalmazás
-      school: all
-      img: kreta-nyelvtanulas.jpg
-      align: center
-      imgclass: medium-12
-      contentclass: medium-12
-      content: news69
-    - common:
-      title: Rendhagyó könyvtári óra szülőknek és pedagógusoknak
-      school: all
-      img: baracsi-katalin.jpg
-      align: center
-      imgclass: medium-3
-      contentclass: medium-9
-      content: news68
-    - ps:
-      title: Félévi szülői értekezletek
-      school: Székhely
-      img: szuloi.png
-      align: center
-      imgclass: medium-6
-      contentclass: medium-6
-      content: news67
-    - bs:
-      title: Félévi szülői értekezletek
-      school: Tagiskola
-      img: szuloi.png
-      align: center
-      imgclass: medium-6
-      contentclass: medium-6
-      content: news66
-    - bs:
-      title: Rajzpályázat
-      school: Tagiskola
-      img: rajzpalyazat.jpg
-      align: center
-      imgclass: medium-12
-      contentclass: medium-12
-      content: news65
-    - ps:
-      title: Tavaszi suliváró foglalkozásaink
-      school: Székhely
-      img: boy.jpg
-      align: center
-      imgclass: medium-12
-      contentclass: medium-12
-      content: news64
-      older:
-        - common:
-          title: Téli szünet
-          school: all
-          img: teli_szunet.jpg
-          imgclass: medium-6
-          contentclass: medium-6
-          content: news63
-        - ps:
-          title: Karácsonyi vásár
-          school: Székhely
-          img: kari-vasar.jpg
-          imgclass: medium-3
-          contentclass: medium-9
-          content: news62
-        - bs:
-          title: Iskolába hívogató
-          school: Tagiskola
-          img: robot.jpg
-          imgclass: medium-3
-          contentclass: medium-9
-          content: news61
-        - ps:
-          title: Fogadóóra – 2025. december
-          school: Székhely
-          img: fogadoora_small.jpg
-          imgclass: medium-3
-          contentclass: medium-9
-          content: news60
-        - bs:
-          title: Készíts színes falevelekből egy képet!
-          school: Tagiskola
-          img: falevel.jpg
-          imgclass: medium-3
-          contentclass: medium-9
-          content: news59
-        - ps:
-          title: Járási mesemondó és prózamondó verseny
-          school: Székhely
-          img: nincs
-          imgclass: medium-12
-          contentclass: medium-12
-          content: news58
-        - common:
-          title: Őszi szünet
-          school: all
-          img: oszi-szunet-2025.jpg
-          imgclass: medium-4
-          contentclass: medium-8
-          content: news57
-        - bs:
-          title: Iskolába hívogató
-          school: Tagiskola
-          img: iskolaba-hivogato.jpg
-          imgclass: medium-4
-          contentclass: medium-8
-          content: news56
-        - bs:
-          title: Szent Mihály-napi lépegető
-          school: Tagiskola
-          img: lepegeto.jpg
-          imgclass: medium-4
-          contentclass: medium-8
-          content: news55
-        - ps:
-          title: Iskolába hívogató
-          school: Székhely
-          img: iskolaba-hivogato.jpg
-          imgclass: medium-3
-          contentclass: medium-9
-          content: news54
-        - bs:
-          title: Iskolába hívogató
-          school: Tagiskola
-          img: iskolaba-hivogato.jpg
-          imgclass: medium-3
-          contentclass: medium-9
-          content: news53
-        - ps:
-          title: Tanévnyitó ünnepség 2025 ősz
-          school: Székhely
-          img: tanevnyito.jpg
-          imgclass: medium-3
-          contentclass: medium-9
-          content: news52
-        - bs:
-          title: Tanévnyitó ünnepség 2025 ősz
-          school: Tagiskola
-          img: tanevnyito.jpg
-          align: center
-          imgclass: medium-3
-          contentclass: medium-9
-          content: news51
-        - bs:
-          title: Szülői értekezletek 2025 ősz
-          school: Tagiskola
-          img: szuloi.png
-          align: center
-          imgclass: medium-6
-          contentclass: medium-6
-          content: news50
-        - ps:
-          title: Szülői értekezletek 2025 ősz
-          school: Székhely
-          img: szuloi.png
-          align: center
-          imgclass: medium-6
-          contentclass: medium-6
-          content: news49
 
 taneszkozok:
-  - class: '1a'
-  - class: '1b'
-  - class: '2a'
-  - class: '2b'
-  - class: '3a'
-  - class: '3b'
-  - class: '4a'
-  - class: '4b'
-  - class: '5a'
-  - class: '5b'
-  - class: '6a'
-  - class: '6b'
-  - class: '7a'
-  - class: '7b'
-  - class: '8a'
-  - class: '8b'
+  - class: "1a"
+  - class: "1b"
+  - class: "2a"
+  - class: "2b"
+  - class: "3a"
+  - class: "3b"
+  - class: "4a"
+  - class: "4b"
+  - class: "5a"
+  - class: "5b"
+  - class: "6a"
+  - class: "6b"
+  - class: "7a"
+  - class: "7b"
+  - class: "8a"
+  - class: "8b"
 
 # TODO: global és common yamlok egyesítése

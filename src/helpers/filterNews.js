@@ -38,17 +38,23 @@ module.exports = function (schoolKey, options) {
         // We'll determine this after we get the news data
     }
 
-    // Get the news data from common.yml (available in different contexts)
-    let newsData = null
+    // Prefer an explicitly supplied news data file, for example:
+    // {{#filterNews "ps" newsData=news-2025-26}}
+    let newsData = options.hash && options.hash.newsData
 
-    // Try different possible locations for the news data
-    if (root.common && root.common.news) {
+    // Fall back to the legacy locations for older pages.
+    if (!newsData && root.common && root.common.news) {
         newsData = root.common.news
-    } else if (root.global && root.global.news) {
+    } else if (!newsData && root.global && root.global.news) {
         newsData = root.global.news
-    } else if (root.news) {
+    } else if (!newsData && root.news) {
         newsData = root.news
-    } else if (root.data && root.data.common && root.data.common.news) {
+    } else if (
+        !newsData &&
+        root.data &&
+        root.data.common &&
+        root.data.common.news
+    ) {
         newsData = root.data.common.news
     }
 
@@ -262,6 +268,14 @@ module.exports = function (schoolKey, options) {
             })
             .filter((item) => item !== null)
     }
+
+    // Keep Panini's page-relative root path available inside each news item.
+    // The block helper creates a new context, so nested partials cannot otherwise
+    // resolve assets correctly on pages below the site root.
+    filteredItems = filteredItems.map((item) => ({
+        ...item,
+        root: root.root || '',
+    }))
 
     // Create a new context with the filtered items
     const context = {

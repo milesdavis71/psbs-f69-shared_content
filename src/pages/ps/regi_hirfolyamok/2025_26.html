@@ -1,16 +1,12 @@
 ---
 layout: default
-title: Híreink
-page: index
+title: Régi hírfolyam 2026
+page: 2025_26
+schoolKey: ps
 year: 2025-26
-olderYear: 2025-ös
 ---
 
-<img src="{{root}}assets/img/ps/ps_front_1200x500_2023.jpg" alt="" style="margin: 0 0 1em;">
-{{> title}}
-
-{{#filterNews "ps" newsData=news-2025-26}}
-{{#each items}}
+{{#filterNews "ps" newsData=news-2025-26}} {{#each items}}
 <div
     class="title-bar"
     style="
@@ -31,8 +27,4 @@ olderYear: 2025-ös
         </div>
     </div>
 </div>
-{{/each}}
-{{/filterNews}}
-
-<!-- ha vannak korábbi hírek, akkor kapcsold be -->
-<!-- {{> common-ps-korabbi-hirek}} -->
+{{/each}} {{/filterNews}}
