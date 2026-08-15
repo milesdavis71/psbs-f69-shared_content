@@ -1,0 +1,8 @@
+ 
+
+Az oldalt fejlesztette és a tartalmat szerkeszti: <br>
+Hevesi István <br>
+Szegedi Petőfi Sándor Általános Iskola <br>
+és Bálint Sándor Tagiskola rendszergazdája.
+
+

@@ -1,0 +1,1363 @@
+{{#ifequal (concat list suffix) "1a"}}
+
+
+Váltócipő
+
+<p style="margin: 0; font-weight: bold;">Füzetek: </p>
+
+* 2 db A/4-es sima
+* 3 db 14-32 1. osztályos vonalazású füzet
+* 2 db 27-32 négyzetrácsos füzet
+* 1 db sima füzet A/5 
+
+Minden füzetet, átlátszó **nem ragasztós** borítóba legyenek szívesek csomagolni! A könyveket **ne** csomagolják be! 
+
+* 3 csomag írólap
+* 40 db félfamentes rajzlap A/4
+* 1 csomag színes papír A/4
+* 1 db tartályos hegyező
+* 3 db A/4-es méretű gumis mappa
+1 db fekete tűfilc (nem alkoholos)
+
+<p style="margin: 1em 0 0; font-weight: bold;">1 db tolltartó, benne:</p>
+
+* 5 db HB-s grafitceruza (radír nélküli) 
+* 2 db vékony piros-kék ceruza
+* 1 db piros-kék vastag postairon
+* 1 db fehér radír
+* 12 darabos színes ceruza (tizenkét különböző színű, jó minőségű)
+* 1 db 10-15 cm-es vonalzó (merev, ami a tolltartóban elfér)
+* 1 db zöld ceruza
+
+<p></p>
+
+**Legyenek szívesek a gyermek nevét, vagy monogramját és óvodai jelét mindenre ráírni!**
+
+<p style="margin: 1em 0 0; font-weight: bold;">Matematika vászonzsákban </p>
+
+* 2 doboz számolókorong
+* 1 csomag számolópálcika
+* olló	
+
+<p style="margin: 1em 0 0; font-weight: bold;">Tornazsákban </p>
+
+* 1 db kicsi törölköző
+* 1 pár fehér zokni
+* 1 pár tornacipő vagy edzőcipő (ne legyen csúszós a talpa) 
+* Petőfis póló / fehér póló, sötét színű rövidnadrág	
+
+<p style="margin: 1em 0 0; font-weight: bold;">Rajz vászonzsákban </p>
+  
+* anilinky festék
+* 12 színű filctoll
+* gyurma színtelen 
+* Zsírkréta 12 színű
+* ecset 6,10,12-es
+* ecsettál
+* festős póló nagy
+
+<p></p>
+
+**Legyenek szívesek a gyermek nevét, vagy monogramját és óvodai jelét mindenre ráírni!**
+
+Váltóruha évszaknak megfelelően fehérnemű, póló, pulóver, nadrág, zokni.
+
+
+* 100 darab nem éttermi szalvéta, /Hetes
+* 2 csomag 100 darabos zsebkendő, /Hetes
+* uzsonnás doboz, benne ruhaszalvéta, és teáskanál
+
+<p></p>
+
+*Köszönettel: Amanda néni és Anita néni* 
+
+
+{{/ifequal}}
+
+{{#ifequal (concat list suffix) "2a"}}
+
+
+A füzetekre csak nevet kérünk ráírni, tantárgyat nem!
+
+*	tartályos hegyező
+*	radír
+*	4db A/4 es gumis mappa
+*	1 nagyalakú simafüzetek
+*	5 db kisalakú 16-32 sz. vonalas füzet 
+*	3 db kisalakú 27-32 sz. négyzetrácsos füzet 
+*	1 db nagyalakú négyzetrácsos füzet 87-32 nem spirálos
+*	2 db kisalakú sima füzet 20-32
+*	1 db kisalakú üzenőfüzet (vonalas is jó)
+*	5-6 db HB-s grafit ceruza radírnélküli
+*	12 színes ceruza, plusz kék, piros, zöld 1-1- db, vékony postaírón 1 db
+*	kisméretű (max. 20cm-es) vonalzó, ami a tolltartóban elfér (nem papír)
+*	30 db „műszaki” rajzlap fehér
+*	1 fekete filctoll
+*	5 csomag írólap
+
+<p></p>
+
+**Minden tavalyi, megfelelő állapotú eszköz az idén is használható!**
+
+*	1 db mérőszalag
+*	váltóruha, váltó cipő
+*	tornafelszerelés tornazsákban:
+
+<ul>
+  <li>1 db mérőszalag</li>
+  <li>váltóruha, váltócipő</li>
+  <li>tornafelszerelés tornazsákban:</li>
+  <ul>
+        <li>évszaknak megfelelően rövid, vagy hosszú nadrág Petőfis póló, pulóver</li>
+        <li>fehér zokni</li>
+        <li>kényelmes csúszásmentes cipő</li>
+  </ul>
+</ul>
+
+
+{{/ifequal}}
+
+{{#ifequal (concat list suffix) "3a"}}
+
+
+**A füzetekre csak nevet kérünk ráírni, tantárgyat nem!**
+
+- váltóruha évszaknak megfelelően
+- 1 db A/4 es négyzetrácsos füzet
+- 1 db A/4 es vonalas füzet
+- 1 db 16-32 (másodikos vonalazású!) füze
+- 7 db negyedikes vonalazású füzet
+- 1 db szótárfüzet angolosoknak
+- 2 db 27-32 sz. négyzetrácsos füzet
+- 1 db leckefüzet
+- 1 db üzenőfüzet
+- 1 db értékelő füzet
+- 1 db rajzos sima füzet(nagy)
+- Hangjegyfüzet – 2. osztályban használt. <u>(Nem kell új!)</u> 
+- 5 db HB-s grafit ceruza – ne legyen radíros és lehetőleg ne henger alakú
+- 2 db B-s grafit ceruza rajzórára
+- 1 db fehér elefántos radír
+- 15-20 cm-es vonalzó (tolltartóba)
+- 1 db zöld ceruza
+- 1 db kék ceruza
+- 1 db piros ceruza
+- 1 db golyóstoll (csak kék színű)
+- 12 színű színes ceruza
+- olló
+- vizes edény <u>(a tavalyi is jó!)</u>
+- 1 db fekete tűfilc
+- 12 színű filctoll készlet
+- 30 db fehér rajzlap A/4-es 
+- 20 db fehér rajzlap A/3-as műszaki
+- 3 db különböző vastagságú ecset
+- 12 színű Anilinky festék <u>(a tavalyi is jó!)</u>
+- törlőrongy az ecsethez
+- hegyező
+- A/4 méretű színespapír csomag
+- A/4 méretű színeskarton csomag
+-  négyzet alakú színespapír csomag
+- 2 csomag írólap
+- szivacs (kicsi a festéshez)
+- 1 db A/4 es gumis mappa rajzoknak <u>(tavalyi is jó!)</u>
+- 3 db A/4 es gumis mappa <u>(a tavalyi is jó!)</u>
+
+<p style="margin: 1em 0 0; font-weight: bold;">
+Digitális kultúra:</p>
+
+- 1 db 27-32 kisméretű négyzetrácsos füzet
+- 1 db kék színű toll
+
+<p style="margin: 1em 0 0; font-weight: bold;">Tornafelszerelés:</p>
+
+- tornazsák
+- Petőfis póló
+- sötét alsó
+- fehér zokni
+- torna-/edzőcipő
+- kis méretű törölköző
+
+<p style="margin: 1em 0 0; font-weight: bold;">Angol:</p>
+ 
+-  1 db A/4 es vonalas füzet
+
+<p></p>
+
+**Minden tavalyi, megfelelő állapotú eszköz az idén is használható!**
+
+
+{{/ifequal}}
+
+{{#ifequal (concat list suffix) "4a"}}
+
+
+**Minden tavalyi, megfelelő állapotú eszköz az idén is használható!**
+
+-  1 db kisalakú sima füzet
+- 7 db 21-32 sz. kisalakú vonalas füzet
+- 1 db 27-32 sz. kisalakú négyzetrácsos füzet 
+- 1 db 36-16 sz. hangjegyfüzet (A/5 méretben) Jó a tavalyi is.
+- 1 db leckefüzet
+- 1 db üzenőfüzet
+- 3 db grafit ceruza, 1 db B-s ceruza, radír, vékony piros-kék ceruza, 12 db-os színes ceruza készlet (12 db különbözőszínű, jó minőségű)
+- kis vonalzó, ami elfér a tolltartóban
+- 30 cm-es vonalzó
+- vékony hegyű kék színű toll (NEM zselés)
+- 1 csomag írólap
+- A/4-esműanyag boríték 
+- A/5-ősműanyag boríték 
+- 12 színű tempera
+- margarinos doboz
+- 12 színű filctoll
+- fekete tűfilc
+- 1 uzsonnásdoboz
+- 1 db teáskanál
+- textilszalvéta
+- műanyagpohár 
+- váltó ruha
+- tornafelszerelés: Névbeírással!
+- sötét alsó (rövid sportnadrág)
+- Petőfis, vagy fehér póló
+- tornacipő
+- fehér zokni
+
+<p style="margin: 1em 0 0; font-weight: bold;">Angol 1 (Kati néni):</p> 
+
+- 1 db 31-32 kisalakú szótárfüzet
+- 3 db 21-32 kisalakú vonalas füzet
+
+<p style="margin: 1em 0 0; font-weight: bold;">
+Digitális kultúra:</p>
+
+- 1 db kék színű toll
+- 1 db 27-32 sz. kisalakú négyzetrácsos füzet
+
+<p style="margin: 1em 0 0; font-weight: bold;">Angol 2 (Viki néni):</p>
+ 
+- 1 db 81-32 sz. nagyalakú vonalas füzet
+- 1 db 31-32 kisalakú szótárfüzet
+- 1 db 21-32 sz. kisalakú vonalas füzet
+
+
+
+{{/ifequal}}
+
+{{#ifequal (concat list suffix) "5a"}}
+
+
+<p style="margin: 1em 0 0; font-weight: bold;">Magyar nyelvtan</p>
+
+- 1 db nagyalakú vonalas füzet 81-32
+- 1 db kisalakú vonalas füzet 21-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Magyar irodalom</p>
+
+- 1 db kisalakú vonalas füzet 21-32
+- 1 db nagyalakú vonalas füzet 81-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Történelem és állampolgári ismeretek</p>
+
+- 1 db nagyalakú vonalas füzet 81-32
+- 1 db kisalakú vonalas füzet 21-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Angol 5/1 (Rita néni)</p>
+
+-	1 db nagyalakú vonalas füzet 81-32
+-	1 db kisalakú szótárfüzet 31-32 
+
+<p style="margin: 1em 0 0; font-weight: bold;">Angol 5/2 (Lili néni)</p>
+
+- 1 db kisalakú szótárfüzet 31-32 
+- 1 db kisalakú vonalas füzet 21-32
+-	1 db nagyalakú vonalas füzet 81-32
+  
+<p style="margin: 1em 0 0; font-weight: bold;">Matematika</p>
+
+- 1 db nagyalakú négyzetrácsos füzet 87-32
+- 1 db kisalakú négyzetrácsos füzet 27-32
+- 1 db nagyalakú sima füzet 80-32
+- 1 db kisalakú sima füzet 20-32
+- 1 db papír szögmérő
+- 1 db körző
+- 2 db derékszögű vonalzó
+- 1 db kisvonalzó, ami a tolltartóban elfér
+
+<p style="margin: 1em 0 0; font-weight: bold;">Természettudomány</p>
+
+- 1 db vonalas füzet 21-32 vagy 88-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Ének-zene</p>
+
+- 1 db kisalakú hangjegyfüzet 36-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Technika és életvitel</p>
+
+- 10 db műszaki rajzlap
+- 10 db félfamentes rajzlap
+- 1 db A4-es mappa
+- olló
+- ragasztó
+- 1 csomag A4-es színes papír készlet
+- 1 db kisalakú vonalas füzet 20-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Etika</p>
+
+- 1 db kisalakú vonalas füzet 21-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Digitális kultúra</p>
+
+- 1 db kisméretű négyzetrácsos füzet 27-32
+- 1 db kék színű toll
+Rajz- és vizuális kultúra
+- rajzlap: 40 db A/4-es méretű famentes
+Csak a kifogyott felszerelést kell pótolni.
+- 1 db cipős doboz
+- 1 db 12 színű gombfesték (lehetőleg Anilinky)
+- minimum 3 db ecset
+- 1 db temperakészlet (6 vagy 12 színű)
+- 12 színű színes ceruza
+- 2B-s ceruza
+- 1 csomag gyurma (natúr)
+- 1 db olló, ragasztó
+- 1 db mappa
+- A4-s színes papír készlet
+- 1 db rossz póló
+- 1 db rongy
+- Fekete tűfilc
+- 1 db Zsírkréta készlet minimum 6 színű
+
+<p style="margin: 1em 0 0; font-weight: bold;">Testnevelés és sport</p>
+
+- 1 db tornazsák
+- Petőfis póló
+- fehér zokni
+- sötét alsó Fiúknak: rövid nadrág Lányoknak: hosszú sztreccs, vagy térdig érő nadrág 
+- csúszásmentes tornacipő
+
+<p style="margin: 1em 0 0; font-weight: bold;">Osztályfőnöki</p>
+
+- 1 db kisalakú vonalas füzet 21-32
+
+<p></p>
+
+**Minden órán legyen: Színes ceruza: sárga, világos barna, sötétbarna, kék, zöld, piros, fekete, ceruza (B-s, HB-s), radír, kék színű golyóstoll, zöld színű golyóstoll, vonalzó**
+
+<p style="margin: 1em 0 0; font-weight: bold;">Kötelező olvasmány</p>
+ 
+- Molnár Ferenc: A Pál utcai fiúk
+
+
+{{/ifequal}}
+
+{{#ifequal (concat list suffix) "6a"}}
+
+
+<p style="margin: 1em 0 0; font-weight: bold;">Magyar nyelvtan</p>
+
+- 1 db nagyalakú vonalas füzet 81-32
+- 1 db kisalakú vonalas füzet 21-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Magyar irodalom</p>
+
+- 1 db nagyalakú vonalas füzet 81-32
+- 1 db kisalakú vonalas füzet 21-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Történelem és állampolgári ismeretek</p>
+
+- 1 db nagyalakú vonalas füzet 81-32
+- 1 db kisalakú vonalas füzet 21-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Angol 6/2 Lili néni</p>
+
+- 1 db nagyalakú vonalas füzet 81-32
+- 1 db kisalakú vonalas füzet 21-32
+- 1 db kisalakú szótárfüzet 31-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Angol 6/1 Rita néni</p>
+
+- 1 db nagyalakú vonalas füzet 81-32
+- 1 db kisalakú szótárfüzet 31-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Matematika</p>
+
+- 1 db nagyalakú négyzetrácsos füzet 87-32
+- 1 db kisalakú négyzetrácsos füzet 27-32
+- 1 db nagyalakú sima füzet 80-32
+- 1 db kisalakú sima füzet 20-32
+- 1 db körző
+- 2 db derékszögű vonalzó
+- 1 csomag írólap
+- 1 db kisvonalzó, ami a tolltartóban elfér
+
+<p style="margin: 1em 0 0; font-weight: bold;">Digitális kultúra</p>
+
+- 1 db kisméretű négyzetrácsos füzet 27-32 
+
+<p style="margin: 1em 0 0; font-weight: bold;">Természettudomány</p>
+
+- 1 db kisméretű vonalas füzet 21-32 vagy 88-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Ének-zene</p>
+
+- 1 db kisalakú hangjegyfüzet 36-32 
+
+<p style="margin: 1em 0 0; font-weight: bold;">Technika és életvitel</p>
+
+- 10 db műszaki rajzlap
+- 10 db félfamentes rajzlap
+
+<p style="margin: 0; font-weight: bold;">
+Csak a kifogyott felszerelést kell pótolni.
+
+- 1 db A4-es mappa
+- olló
+- ragasztó
+- 1 csomag A4-es színes papír készlet
+- 1 db kisalakú vonalas füzet 20-32 tavalyi folytatható
+
+<p style="margin: 1em 0 0; font-weight: bold;">Osztályfőnöki</p>
+- 1 db kisalakú vonalas füzet 21-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Rajz- és vizuális kultúra</p>
+
+- 40 db A/4-es méretű famentes rajzlap
+
+<p style="margin: 0; font-weight: bold;">
+Csak a kifogyott felszerelést kell pótolni.
+
+- 1 db cipős doboz
+- 1 db 12 színű gombfesték (lehetőleg Anilinky)
+- minimum 3 db ecset
+- 1 db temperakészlet (6vagy 12 színű)
+- 12 színű színes ceruza
+- 2B-s ceruza
+- 1 csomag gyurma (natúr)
+- 1 db olló, ragasztó
+- 1 db mappa
+- A4-s színes papír készlet 
+- 1 db rossz póló
+- 1 db rongy
+- Fekete tűfilc
+- 1 db zsírkréta készlet min. 6 színű
+
+<p style="margin: 1em 0 0; font-weight: bold;">Testnevelés és sport</p>
+
+- 1 db tornazsák
+- Petőfis póló
+- fehér zokni
+- sötét alsó Fiúknak: rövid nadrág Lányoknak: hosszú sztreccs, vagy térdig érő nadrág 
+- csúszásmentes tornacipő
+
+</p></p>
+
+**Minden órán legyen: Színes ceruza: sárga, világos barna, sötétbarna, kék, zöld, piros, fekete, ceruza (B-s, HB-s), radír, kék színű golyóstoll, zöld színű golyóstoll, vonalzó** 
+
+
+{{/ifequal}}
+
+{{#ifequal (concat list suffix) "7a"}}
+
+
+<p style="margin: 1em 0 0; font-weight: bold;">Magyar nyelvtan</p>
+
+- 1 db nagyalakú vonalas füzet 81-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Magyar irodalom</p>
+
+- 1 db kisalakú vonalas füzet 21-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Történelem és állampolgári ismeretek</p>
+
+- 1 db nagyalakú vonalas füzet 81-32
+- 1 db kisalakú vonalas füzet 21-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Angol 7/2 Rita néni</p>
+
+- 1 db nagyalakú vonalas füzet 81-32
+- 1 db kisalakú szótárfüzet 31-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Angol tagozat 7/1 Lili néni</p>
+
+- 1 db nagyalakú vonalas füzet 81-32
+- 1 db kisalakú vonalas füzet 21-32
+- 1 db kisalakú szótárfüzet 31-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Matematika</p>
+
+- 5 db kisalakú négyzetrácsos füzet 27-32
+- 1 db sima kisalakú füzet 20-32
+- 1 db körző
+- 2 db derékszögű vonalzó
+- 1 db egyenes vonalzó 30cm
+- 1 db kisvonalzó, ami a tolltartóban elfér
+
+<p style="margin: 1em 0 0; font-weight: bold;">Digitális kultúra</p>
+
+- 1 db kisalakú négyzetrácsos füzet 27-32 
+
+<p style="margin: 1em 0 0; font-weight: bold;">Fizika</p>
+
+- 1 db nagyalakú négyzetrácsos füzet 87-32
+- 1 csomag írólap
+
+<p style="margin: 1em 0 0; font-weight: bold;">Biológia</p>
+
+- vonalas füzet (21-32 vagy 81-32)
+
+<p style="margin: 1em 0 0; font-weight: bold;">Kémia</p>
+
+- vonalas füzet (21-32 vagy 81-32)
+
+<p style="margin: 1em 0 0; font-weight: bold;">Földrajz</p>
+
+- 1 db nagyalakú vonalas füzet 81-32
+- 1 csomag írólap
+
+<p style="margin: 1em 0 0; font-weight: bold;">Ének-zene</p>
+
+- 1 db kisalakú hangjegyfüzet 36-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Etika</p>
+
+- 1 db kisalakú vonalas füzet 21-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Osztályfőnöki:</p>
+
+- 1 db kisalakú vonalas füzet 21-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Testnevelés és sport</p> 
+
+- 1 db tornazsák
+- Petőfis póló
+- fehér zokni
+- sötét alsó Fiúknak: rövid nadrág Lányoknak: hosszú sztreccs, vagy térdig érő nadrág
+- csúszásmentes tornacipő
+
+<p style="margin: 1em 0 0; font-weight: bold;">Rajz- és vizuális kultúra</p>
+
+- 40 db A/4-es méretű famentes rajzlap
+
+<p style="margin: 0; font-weight: bold;">
+Csak a kifogyott felszerelést kell pótolni.
+
+- 1 db cipős doboz
+- 1 db 12 színű gombfesték (lehetőleg Anilinky)
+- minimum 3 db. ecset
+- 1 db temperakészlet (6 vagy 12 színű)
+- 12 színű színes ceruza
+- 2B-s ceruza
+- 1 db olló, ragasztó
+- 1 db mappa
+- A4-s színes papír készlet
+- 1 db rossz póló
+- 1 db rongy
+- Fekete tűfilc
+- 1 db zsírkréta készlet min. 6 színű
+
+<p style="margin: 1em 0 0; font-weight: bold;">Technika és életvitel</p>
+
+- 10 db műszaki rajzlap
+- 10 db félfamentes rajzlap
+
+<p style="margin: 0; font-weight: bold;">Csak a kifogyott felszerelést kell pótolni.</p>
+
+- 1 db A4-es mappa
+- olló
+- ragasztó
+- 1 csomag A4-es színes papír készlet
+- 1 db kisalakú vonalas füzet 20-32 tavalyi folytatható
+
+<p></p>
+
+**Minden órán legyen: Színes ceruza: sárga, világos barna, sötétbarna, kék, zöld, piros, fekete, ceruza (B-s, HB-s), radír, kék színű golyóstoll, zöld színű golyóstoll, vonalzó**
+
+<p style="margin: 0; font-weight: bold;">
+Kötelező olvasmány </p>
+
+- Mikszáth Kálmán: Szent Péter esernyője  
+- \+ kedvenc olvasmányom
+
+{{/ifequal}}
+
+{{#ifequal (concat list suffix) "8a"}}
+
+
+<p style="margin: 1em 0 0; font-weight: bold;">Magyar nyelvtan és Magyar irodalom</p>
+
+- 1 db nagyalakú vonalas füzet 81-32
+- 1 db kisalakú vonalas füzet 21-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Történelem</p>
+
+- 1 db nagyalakú vonalas füzet 81-32
+- 1 db kisalakú vonalas füzet 21-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Állampolgári ismeretek</p>
+
+- 1 db kisalakú vonalas füzet 21-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Angol 8/2 Kati néni</p>
+
+- 1 db nagyalakú vonalas füzet 81-32
+- 1 db kisalakú szótárfüzet 31-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Angol tagozat 8/1 Lili néni</p>
+
+- 1 db nagyalakú vonalas füzet 81-32
+- 2 db kisalakú vonalas füzet 21-32
+- 1 db kisalakú szótárfüzet 31-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Matematika</p>
+
+- 5 db négyzetrácsos füzet 27-32
+- 1 db sima füzet A/4 80-32
+- 1 db körző
+- 2 db derékszögű vonalzó
+- 1 db egyenes vonalzó 30cm
+- 1 db kisvonalzó, ami a tolltartóban elfér
+- 1db A/4-es mappa 
+
+<p style="margin: 1em 0 0; font-weight: bold;">
+Digitális kultúra</p>
+
+- 1 db kisalakú négyzetrácsos 27-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Fizika</p>
+
+- 1 db nagyalakú négyzetrácsos füzet (tavalyi folytatható) 87-32
+- 1 csomag írólap
+
+<p style="margin: 1em 0 0; font-weight: bold;">Biológia</p>
+
+- vonalas füzet (21-32 vagy 81-32)
+
+<p style="margin: 1em 0 0; font-weight: bold;">Kémia</p>
+
+- vonalas füzet (21-32 vagy 81-32)
+
+<p style="margin: 1em 0 0; font-weight: bold;">
+Földrajz</p>
+
+- 1 db vonalas A/4-es vonalas füzet 81-32
+- 1 csomag írólap
+
+<p style="margin: 1em 0 0; font-weight: bold;">Ének-zene</p>
+
+- 1 db kisalakú hangjegyfüzet 36-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Etika</p>
+
+- 1 db kisalakú vonalas füzet 21-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">Osztályfőnöki:</p>
+
+- 1 db kisalakú vonalas füzet 21-32
+
+<p style="margin: 1em 0 0; font-weight: bold;">
+Testnevelés és sport</p>
+
+- 1 db tornazsák
+- Petőfis póló
+- fehér zokni
+- sötét alsó Fiúknak: rövid nadrág Lányoknak: hosszú sztreccs, vagy térdig érő nadrág 
+- csúszásmentes tornacipő
+
+<p style="margin: 1em 0 0; font-weight: bold;">
+Rajz- és vizuális kultúra</p>
+
+- rajzlap: 40 db A/4-es méretű famentes
+
+<p style="margin: 0; font-weight: bold;">Csak a kifogyott felszerelést kell pótolni.</p>
+
+- 1 db cipős doboz
+- 1 db 12 színű gombfesték (lehetőleg Anilinky)
+- minimum 3 db ecset
+- 1 db temperakészlet (6 vagy 12 színű)
+- 12 színű színes ceruza
+- 2B-s ceruza
+- 1 db olló
+- 1 db stift ragasztó
+- 1 db mappa
+- A4-s színes papír készlet
+- 1 db rossz póló
+- 1 db rongy
+- Fekete tűfilc
+- 1 db zsírkréta készlet min. 6 színű
+
+<p></p>
+
+**Minden órán legyen: Színes ceruza: sárga, világos barna, sötétbarna, kék, zöld, piros, fekete, ceruza (B-s, HB-s), radír, kék színű golyóstoll, zöld színű golyóstoll, vonalzó, ragasztó** 
+
+<p style="margin: 1em 0 0; font-weight: bold;">
+Kötelező olvasmány:</p>
+
+- Móricz Zsigmond: Légy jó mindhalálig
+- \+ kedvenc olvasmányom
+
+
+
+{{/ifequal}}
+
+
+<!-- 1 -->
+{{#ifequal (concat list suffix) "1b"}}
+
+
+
+<p style="margin: 1em 0 0; "><u>Füzetek, dossziék:</u> <i>Kérjük, borítsák be a füzeteket és a gyermeknek csak a nevét írják rá!</i> </p>
+
+- 3 db vonalas (14-32)
+- 1 db négyzetrácsos (27-32) margóval
+- 1 db sima füzet
+- 1 db üzenő füzet (vonalas)
+- 1 db széles és erős A/4-es gumis mappa (vastag karton vagy erős műanyag)
+- 1 db vékony A/4-es gumis mappa
+- 1 db kb. 7-10 cm széles irattartó papucs (karton, műanyag vagy fa)
+
+<p style="margin: 1em 0 0; "> <u>Tolltartó:</u> <i>Kérjük az eszközöket a tanuló nevével vagy monogramjával ellátni!</i> </p> 
+
+- 4 db postairón (piros-kék végű: 2 db vastag, 2 db vékony)
+- 12 db-os színes ceruzakészlet
+- 1 db puha radír
+- 1 db egyenes műanyag vonalzó (10-15 cm)
+- 3 db HB-s grafit ceruza
+
+<p style="margin: 1em 0 0;"> <u>Matematika:</u> <i>Kérjük az eszközöket a tanuló nevével vagy monogramjával ellátni!</i> </p>
+
+- 1 doboz piros-kék számolókorong
+- 1 db kis tükör (téglalap alakú)
+- 1 db műanyag óralap
+- 1 méteres papír mérőszalag
+- 2 db dobókocka
+- 1 db 30 cm-es műanyag vonalzó
+- 1. osztályos szám- és jelkártya csomag
+- 1 csomag színes számolópálcika
+
+<p style="margin: 1em 0 0;"> <u>Rajz, technika:</u> <i>Kérjük az eszközöket a tanuló nevével vagy monogramjával ellátni!</i> </p>
+
+- 3 csomag írólap (hófehér)
+- 30 db A/4-es műszaki rajzlap
+- 1 csomag A/4-es színes lap
+- 12 színű vízfesték
+- 1 db ecsettörlő rongy
+- vizes tál (nagyobb méretű) - margarinos doboz is jó
+- 2-es, 6-os, 10-es ecset (szőrecset, nem műanyag)
+- 2 db ragasztóstift (22 g, Pritt stift)
+- 1 db kék Technokol Rapid (35 g) ragasztó
+- 1 db jobb minőségű olló
+- 1 db fekete színű tűfilc
+- 6-12 db-os filctoll készlet
+- 12 db-os zsírkréta
+- 1 doboz natúr gyurmakészlet
+- A/4-es műanyag gyurmatábla
+
+<p style="margin: 1em 0 0;"> <u>Egyéb:</u> </p>
+
+- babzsák (kb. 10x15 cm)
+- székpárna 4 megkötővel
+- 2 csomag 100 db-os papír zsebkendő
+- 2 csomag széthajtható papírszalvéta
+- 1 db textilszalvéta
+- 1 db műanyag pohár
+- 1 db műanyag uzsonnás doboz
+ 
+- 1 db teáskanál
+- váltócipő (nem papucs)
+- IKEA (SAMLA 28x20x14cm/5 l) átlátszó műanyag tárolódoboz tetővel
+
+<p style="margin: 1em 0 0;"> <u>Testnevelés:</u> <i>Kérjük az eszközöket a tanuló nevével vagy monogramjával ellátni!</i> </p>
+
+- tornazsák, fehér póló, zokni, rövidnadrág, tornacipő, télen melegítő alsó és felső
+
+
+{{/ifequal}}
+
+<!-- 2 -->
+{{#ifequal (concat list suffix) "2b"}}
+
+ 
+<p style="margin: 1em 0 0; font-weight: bold;">Füzetek, dossziék:</p>
+
+- 3 db karton A/4 - es gumis dosszié
+- 3 db négyzetrácsos füzet (27-32)
+- 4 db vonalas füzet (16-32)
+- 1 db sima füzet (20-32)
+- 1 db 36-16 sz. hangjegyfüzet (A/5-ös méret)
+Kérjük, borítsák be a füzeteket, és a gyermeküknek csak a nevét írják rá! Tolltartó:
+- 2 db vékony postairón
+- 3 db HB-s grafit ceruza (Stabilo, Faber castell, Koh-i-noor)
+- 12 db-os színes ceruza (Stabilo, Faber castell, Koh-i-noor)
+- 1 db puha radír (Rotring, Faber castell, Stabilo)
+- 1 db egyenes műanyag vonalzó (10-15 cm)
+
+<p style="margin: 1em 0 0; font-weight: bold;">Matematika:</p>
+
+- 100 db színes számolópálca (10 db tízes csoport (a halmazok gumigyűrűvel összefogva))
+
+<p style="margin: 1em 0 0; font-weight: bold;">Rajz, technika:</p>
+
+- 12 színű vízfesték (Anilinky ajánlott)
+- 1 db ecsettörlő rongy
+- 6db-os nagy tubusos tempera
+- vizes tálka (nagyobb méretű) - margarinos doboz is jó
+- befőttes üveg teteje
+- nagyméretű újságpapír (2-3 db)
+- 6 színű filctoll készlet
+- vastag, közepes és vékony ecset (szőrecset legyen, ne műanyag)
+- 10 db A/4-es műszaki rajzlap - (Dipa)
+- 1 db stift nagy méretű ragasztó (Pritt Stift) - 40g
+- 1 db jobb minőségű olló, névvel ellátva
+- 3 csomag írólap
+- 1 db fekete tűfilc
+- 1 db hegyező (tartályos)
+
+<p style="margin: 1em 0 0; font-weight: bold;">Testnevelés:</p>
+
+- tornazsák
+- fehér póló
+- zokni
+- rövidnadrág
+- tornacipő
+
+<p style="margin: 1em 0 0; font-weight: bold;">Egyéb:</p>
+
+- 2 csomag uzsonnás nylon zacskó
+- váltócipő (ne papucs)
+- székpárna 4 megkötővel (nem kötelező)
+- 3 csomag 100 db-os papír zsebkendő
+- 1 csomag szalvéta (széthajtható)
+- 1 db teáskanál
+- 1 db műanyag uzsonnás doboz
+- uzsonnához, textil szalvéta
+
+<p></p>
+
+**1. osztályból megmaradt eszközök, amennyiben épségben megmaradtak, akkor nem kell újat venni helyettük!**
+
+**Kérjük a Szülőket, hogy minden eszközön szerepeljen a tanuló neve!**
+
+
+{{/ifequal}}
+
+
+<!-- 3 -->
+{{#ifequal (concat list suffix) "3b"}}
+
+
+<p style="margin: 1em 0 0; font-weight: bold;">Füzetek:</p>
+
+- 4 db 3. osztályos vonalazású füzet (12-32)
+- 3 db négyzetrácsos füzet
+- 3 db sima füzet 20-32-es
+- 1 db karton A/4-es gumis dosszié
+- 1 db hangjegyfüzet A/5-ös 36-32-es
+- 1 db üzenőfüzet
+
+<p style="margin: 1em 0 0; font-weight: bold;">Tolltartó:</p>
+
+- 4 db HB-s grafitceruza (stabilo, faber castell, koh-i-noor)
+- 2 db postairon (kék-piros végű, vékony)
+- 12 db-os színes ceruza (stabilo, faber castell, koh-i-noor)
+- 1 db műanyag vonalzó (10-15 cm)
+- 1 db puha radír (rotring, faber castell, stabilo)
+- 1 db tartályos hegyező
+
+<p style="margin: 1em 0 0; font-weight: bold;">Matematika:</p>
+
+- 1 db műanyag óra
+- 1 méteres papír mérőszalag
+- 2 db dobókocka
+- 1 db 30 cm-es műanyag vonalzó
+
+<p style="margin: 1em 0 0; font-weight: bold;">Rajz, technika:</p>
+
+- 1 db olló (névvel ellátva)
+- 12 db-os vízfesték (Anilinky aljánlott)
+- 12 db-os olajpasztell kréta
+- 12 db-os filctoll készlet
+- 6 db-os nagy tubusos tempera
+- 1 db mosogatószivacs
+- 2-es, 6-os, 10-es ecset
+- 1 db ecsettörlő rongy
+- 2-3 db nagyméretű újságpapír
+- 3 csomag írólap
+- 50 db A/4-es műszaki rajzlap
+- vizes tál
+- 1 db stift ragasztó (Pritt Stift nagy-40 g)
+- 1 db fekete színű tűfilc
+- 1 db fekete filc
+- 2 db stift ragasztó (Pritt Stift)
+- 1 db Technokol ragasztó
+- 1 csomag A/3-as színes karton
+
+<p style="margin: 1em 0 0; font-weight: bold;">Digitális kultúra:</p>
+
+- 1 db A/5-ös, kisméretű négyzetrácsos füzet
+- 1 db kék színű golyóstoll
+
+<p style="margin: 1em 0 0; font-weight: bold;">Testnevelés felszerelés:</p>
+
+- tornazsák, fehér póló, tréning hosszú nadrág, felső, fehér váltó zokni
+- tornanadrág, tornacipő
+
+<p style="margin: 1em 0 0; font-weight: bold;">Egyéb:</p>
+
+ 
+- váltócipő (nem papucs)
+- székpárna megkötővel
+- 1 db teáskanál
+- 3 csomag 100 db-os papír zsebkendő
+- 3 csomag széthajtható szalvéta
+- 1 db uzsonnás doboz
+- 1 csomag uzsonnás nylon zacskó
+
+
+{{/ifequal}}
+
+
+<!-- 4 -->
+
+{{#ifequal (concat list suffix) "4b"}}
+
+
+<p></p>
+
+<p style="margin: 1em 0 0; "> <u>Füzetek, dossziék:</u> <i>Kérjük, borítsák be a füzeteket és a gyermeknek csak a nevét írják rá!</i> </p>
+
+- 5 db vonalas (21-32)
+- 3 db négyzetrácsos (27-32) margóval
+- 1 db sima füzet
+- 1 db szótárfüzet (31-32)
+- 1 db A/4-es méretű vonalas
+- 1 db hangjegy füzet (36-16) A tavalyi is jó!
+- 1 db széles és erős A/4 - es gumis mappa
+- 1 db széles álló irattartó papucs (karton, műanyag vagy fa)
+Tolltartó: Kérjük a Szülőket, hogy minden eszközön szerepeljen a tanuló neve!
+- 1 db golyóstoll
+- 12 db-os színes ceruza
+- 1 db puha radír
+- 1 db egyenes műanyag vonalzó (10-15 cm)
+- 1 db tartályos hegyező
+- 4 db HB-s grafit ceruza, 1 db B-s grafit ceruza
+
+<p style="margin: 1em 0 0; font-weight: bold;">Matematika:</p>
+
+- 1 db kis tükör
+- 1 db körző
+- 1 méteres papír mérőszalag
+- 2 db dobókocka
+- 1 db 30 cm-es műanyag vonalzó
+- 1 db derékszögű háromszög vonalzó
+
+<p style="margin: 1em 0 0; font-weight: bold;">Rajz, technika:</p>
+
+- 2 csomag írólap (hófehér)
+- 20 db A/4-es műszaki rajzlap
+- 12 színű vízfesték
+- 1 db ecsettörlő rongy
+- vizes tál (nagyobb méretű) - margarinos doboz is jó
+- 2-es, 4-es, 10-es ecset (szőrecset, nem műanyag)
+- 2 db ragasztóstift (22 g, Pritt stift)
+- 1 db kék Technokol Rapid ragasztó
+- 1 db jobb minőségű olló
+- 2 db fekete színű tűfilc
+- 12 db-os filctoll készlet
+
+<p style="margin: 1em 0 0; font-weight: bold;">Testnevelés:</p>
+
+- tornazsák, fehér póló, zokni, rövidnadrág, tornacipő, télen melegítőnadrág és felső
+
+<p style="margin: 1em 0 0; font-weight: bold;">Egyéb:</p>
+
+- székpárna
+- 2 csomag 100 db-os papír zsebkendő
+- 2 csomag széthajtható papírszalvéta
+- 1 db textil szalvéta
+- 1 db műanyag pohár
+- 1 db műanyag uzsonnás doboz
+- 1 db teáskanál
+- váltócipő (nem papucs)
+
+<p></p>
+
+**Az épségben megmaradt felszerelések helyett nem kell újat vásárolni!**
+
+
+{{/ifequal}}
+
+<!-- 5 -->
+
+{{#ifequal (concat list suffix) "5b"}}
+
+
+<p style="margin: 1em 0 0; font-weight: bold;">Angol:</p>
+
+- 1 db A/4-es, nagyméretű vonalas füzet
+- 1 db A/5-ös, kisméretű vonalas füzet
+- 1 db szótár füzet (tavalyi folytatható)
+- nagy alakú gumis mappa a teljes felszerelésnek
+
+<p style="margin: 1em 0 0; font-weight: bold;">Digitális kultúra:</p>
+
+- 1 db A/5-ös, kisméretű négyzetrácsos füzet
+- 1 db kék színű golyóstoll
+
+<p style="margin: 1em 0 0; font-weight: bold;">Ének-zene:</p>
+
+- 1 db A/5-ös, kisméretű hangjegyfüzet
+
+<p style="margin: 1em 0 0; font-weight: bold;">Etika:</p>
+
+- 1 db A/5-ös, kisméretű vonalas füzet
+
+<p style="margin: 1em 0 0; font-weight: bold;">Magyar nyelv és irodalom:</p>
+
+- 4 db A/5-ös, kisméretű vonalas füzet
+- ragasztóstift (tolltartóba)
+- olló (tolltartóba)
+- kék és zöld színű toll
+- szövegkiemelő
+- 5 db színes ceruza (kék, zöld, barna, narancssárga, piros)
+- 15-20 cm-es kisméretű vonalzó (tolltartóba)
+
+<p style="margin: 1em 0 0; font-weight: bold;">Matematika:</p>
+
+- 3 db A/4-es, nagyméretű négyzetrácsos füzet (nem spirál)
+- 1 db A/5-ös, kisméretű négyzetrácsos füzet
+- B-s grafitceruza, hegyező
+- 2 db vonalzó (egyenes, háromszög) névvel ellátva,
+kisméretű is lehet (tolltartóba)
+- 1 db használható körző (névvel ellátva)
+- 3 db színes ceruza (piros, kék, zöld)
+- 1 db radír
+- papír szögmérő (névvel ellátva)
+- 2 db dobókocka
+- 1 doboz piros-kék korong (1. osztályos)
+- olló, ragasztóstift (tolltartóba)
+
+<p style="margin: 1em 0 0; font-weight: bold;">Technika:</p>
+
+- 1 db A/4-es mappa
+- 1 csomag félfamentes rajzlap
+- 1 csomag műszaki rajzlap
+- A/4-es színeslapcsomag
+- olló és ragasztó (tolltartóba)
+- négyzetrácsos füzet
+
+<p style="margin: 1em 0 0; font-weight: bold;">Természettudomány:</p>
+
+ 
+- 1 db vonalas füzet
+- 1 csomag írólap
+
+<p style="margin: 1em 0 0; font-weight: bold;">Testnevelés:</p>
+
+- tornazsák
+- fehér póló
+- zokni
+- nadrág
+- tornacipő
+- lányoknak hajgumi
+
+<p style="margin: 1em 0 0; font-weight: bold;">Történelem:</p>
+
+- 1 db A/4-es, nagyméretű vonalas füzet
+- 1 csomag írólap
+- kék színű golyóstoll
+
+<p style="margin: 1em 0 0; font-weight: bold;">Vizuális kultúra: (DOBOZBAN!)</p>
+
+- Anilinky vízfesték
+- 12 színű tempera
+- 2-es, 4-es, 6-os, 10-es ecset + vizestál
+- törlőrongy
+- fekete tűfilc
+- 1 csomag zsírkréta (min. 6 db-os)
+- HB-s, 2B-s, 3B-s ceruza
+- 40 db A/4-es famentes rajzlap
+- A/4-es színeslapcsomag
+- ragasztóstift, olló
+
+
+{{/ifequal}}
+
+<!-- 6 -->
+
+{{#ifequal (concat list suffix) "6b"}}
+
+
+<p style="margin: 1em 0 0; font-weight: bold;">Angol:</p>
+
+- 1 db A/4-es, nagyméretű vonalas füzet
+- 1 db A/5-ös, kisméretű vonalas füzet
+- 1 db szótár füzet (tavalyi folytatható)
+- nagy alakú gumis mappa a teljes felszerelésnek
+- 1db zöld színű golyóstoll
+
+<p style="margin: 1em 0 0; font-weight: bold;">Digitális kultúra:</p>
+
+- 1 db A/5-ös, kisméretű négyzetrácsos füzet
+- 1 db kék színű golyóstoll
+
+<p style="margin: 1em 0 0; font-weight: bold;">Ének-zene:</p>
+
+- 1 db A/5-ös, kisméretű hangjegyfüzet
+
+<p style="margin: 1em 0 0; font-weight: bold;">Etika:</p>
+
+- 1 db A/5-ös, kisméretű vonalas füzet (tavalyi folytatása!)
+
+<p style="margin: 1em 0 0; font-weight: bold;">Magyar nyelv és irodalom:</p>
+
+- 3 db A/4-es, nagyméretű vonalas füzet
+- 1 db A/5-ös, kisméretű vonalas füzet (dolgozatnak)
+- 1 csomag írólap
+- ragasztóstift (tolltartóba)
+- olló (tolltartóba)
+- 5 db színes ceruza (kék, zöld, barna, narancssárga, piros)
+- zöld színű toll
+- 15-20 cm-es kisméretű vonalzó (tolltartóba)
+- szövegkiemelő
+
+<p style="margin: 1em 0 0; font-weight: bold;">Matematika:</p>
+
+- 3 db A/4-es, nagyméretű négyzetrácsos füzet (nem spirál)
+- B-s grafitceruza
+- 2 db vonalzó (1 db egyenes, 1 db háromszög, tolltartóba)
+- 1 db használható körző – névvel ellátva
+- 3 db színes ceruza (piros, kék, zöld)
+- 1 db radír (tolltartóba)
+- 1 db papír szögmérő – névvel ellátva
+- 2 db dobókocka
+- olló, ragasztóstift (tolltartóba)
+
+<p style="margin: 1em 0 0; font-weight: bold;">Technika:</p>
+
+- 1 db négyzetrácsos füzet (a tavalyi folytatható)
+- pótolni a mappa tartalmát (rajzlap, műszaki rajzlap, színeslap)
+- olló, ragasztó (tolltartóban)
+
+<p style="margin: 1em 0 0; font-weight: bold;">Természettudomány:</p>
+
+- 1 db vonalas füzet
+- 1 csomag A/5-ös írólap
+ 
+
+<p style="margin: 1em 0 0; font-weight: bold;">Testnevelés:</p>
+
+- tornazsák
+- fehér póló
+- zokni
+- rövidnadrág
+- tornacipő
+
+<p style="margin: 1em 0 0; font-weight: bold;">Történelem:</p>
+
+- 1 db A/4-es, nagyméretű vonalas füzet
+- 1 csomag írólap
+- kék színű golyóstoll
+- ragasztóstift, olló
+
+<p style="margin: 1em 0 0;"><b>Vizuális kultúra:</b> (5. osztályos DOBOZBAN!)</p>
+
+- elfogyott eszközök pótlása
+- 40 db A/4-es famentes rajzlap
+
+
+{{/ifequal}}
+
+<!-- 7 -->
+
+{{#ifequal (concat list suffix) "7b"}}
+
+
+<p style="margin: 1em 0 0; font-weight: bold;">Angol:</p>
+
+- 2 db A/4-es nagyméretű vonalas füzet
+- 2 db A/5-ös, kisméretű vonalas füzet
+- 1 db szótár füzet (tavalyi folytatható)
+- nagy alakú gumis mappa a teljes felszerelésnek
+- 1 db piros, 1 db kék, 1db zöld színű golyóstoll
+
+<p style="margin: 1em 0 0; font-weight: bold;">Digitális kultúra:</p>
+
+- 1 db A/5-ös, kisméretű négyzetrácsos füzet
+- 1 db kék színű golyóstoll
+
+<p style="margin: 1em 0 0; font-weight: bold;">Ének-zene:</p>
+
+- 1 db kisméretű hangjegyfüzet
+
+<p style="margin: 1em 0 0; font-weight: bold;">Etika:</p>
+
+- 1 db A/5-ös, kisméretű vonalas füzet (tavalyi folytatása!)
+- 1 csomag írólap
+
+<p style="margin: 1em 0 0; font-weight: bold;">Magyar nyelv és irodalom:</p>
+
+- 3 db A/4-es, nagyméretű vonalas füzet
+- 1 db A/5-ös, kisméretű vonalas füzet (dolgozatnak)
+- ragasztóstift (tolltartóba)
+- olló (tolltartóba)
+- 5 db színes ceruza (kék, zöld, barna, narancssárga, piros)
+- 15-20 cm-es kisméretű vonalzó (tolltartóba)
+- nagy alakú gumis mappa a teljes felszerelésnek
++ 2 db lefűzhető tasak
+
+<p style="margin: 1em 0 0; font-weight: bold;">Matematika:</p>
+
+- 3-4 db A/4-es, nagyméretű négyzetrácsos füzet (nem spirál)
+- B-s grafitceruza (ceruzahegyező, tolltartóba)
+- 2 db vonalzó (1 db egyenes, 1 db háromszög tolltartóba)
+- 1 db használható körző – névvel ellátva
+- 3 db színes ceruza (piros, kék, zöld) tolltartóba
+- 1 db radír (tolltartóba)
+- 1 db papír szögmérő – névvel ellátva
+- 2 db dobókocka
+- olló, ragasztóstift (tolltartóba)
+
+<p style="margin: 1em 0 0; font-weight: bold;">Technika:</p>
+
+- 1 db négyzetrácsos füzet (a tavalyi folytatható)
+- pótolni a mappa tartalmát (rajzlap, műszaki rajzlap, színeslap)
+
+<p style="margin: 1em 0 0; font-weight: bold;">Fizika:</p>
+
+- 1 db A/4-es, nagyméretű négyzetrácsos füzet
+- 1 csomag írólap
+ 
+
+<p style="margin: 1em 0 0; font-weight: bold;">Kémia:</p>
+
+- 1 db A/4-es, nagyméretű négyzetrácsos füzet
+- 1 db A/5-ös, kisméretű négyzetrácsos füzet
+
+<p style="margin: 1em 0 0; font-weight: bold;">Biológia:</p>
+
+- 1 db vonalas füzet
+
+<p style="margin: 1em 0 0; font-weight: bold;">Földrajz:</p>
+
+- 1 db A/4-es, nagyméretű sima vagy vonalas füzet
+- színes ceruzák
+
+<p style="margin: 1em 0 0; font-weight: bold;">Testnevelés:</p>
+
+- tornazsák
+- fehér póló
+- zokni
+- rövidnadrág
+- tornacipő
+
+<p style="margin: 1em 0 0; font-weight: bold;">Történelem:</p>
+
+- 1 db A/4-es nagyméretű vonalas füzet
+- 1 csomag írólap
+- 1 db kék színű golyóstoll
+- olló, ragasztóstift (tolltartóba)
+
+<p style="margin: 1em 0 0; font-weight: bold;">Vizuális kultúra:</p>
+
+- a 6. osztályos dobozban elfogyott eszközök pótlása
+- 40 db A/4-es famentes rajzlap, A/4-es mappában
+
+
+{{/ifequal}}
+
+<!-- 8 -->
+
+{{#ifequal (concat list suffix) "8b"}}
+
+ 
+<p style="margin: 1em 0 0; font-weight: bold;">Angol:</p>
+
+- 1 db A/4-es, nagyméretű vonalas füzet
+- 2 db A/5-ös, kisméretű vonalas füzet
+- 1 db szótár füzet (a tavalyi folytatható)
+- 1 gumis mappa
+- zöld színű toll
+
+<p style="margin: 1em 0 0; font-weight: bold;">Digitális kultúra:</p>
+
+- 1 db A/5-ös, kisméretű négyzetrácsos füzet
+- 1 db kék színű golyóstoll
+
+<p style="margin: 1em 0 0; font-weight: bold;">Ének-zene:</p>
+
+- 1 db A/5-ös, kisméretű hangjegyfüzet
+
+<p style="margin: 1em 0 0; font-weight: bold;">Magyar nyelv és irodalom:</p>
+
+- 3 db A/4-es, nagyméretű vonalas füzet
+- 1 csomag írólap
+- olló, ragasztóstift (tolltartóba)
+- kisméretű vonalzó (15-20 cm)
+- 1 db gyorsfűző, lefűző tasakokkal
+- szövegkiemelő
+- zöld színű toll
+
+<p style="margin: 1em 0 0; font-weight: bold;">Matematika:</p>
+
+- 3 db A/4-es, nagyméretű négyzetrácsos füzet
+(nem spirál)
+- B-s grafitceruza, hegyező
+- 2 db vonalzó (1 db egyenes, 1 db háromszög) a tolltartóba
+- 1 db használható körző tolltartóba
+- 3 db színes ceruza (piros, kék, zöld) - tolltartóba
+- 1 db radír - tolltartóba
+- 2 db dobókocka
+- olló, ragasztóstift – tolltartóba
+- 1 db gyorsfűző, lefűző tasakokkal
+
+<p style="margin: 1em 0 0; font-weight: bold;">Vizuális kultúra: elfogyott eszközök pótlása</p>
+
+- 40 db A/4-es famentes rajzlap
+- A/4-es mappában Egy db cipősdoboz tartalma:
+- 1 db 12 színű gombfesték (Anilinky)
+- minimum 3 db ecset
+- 1 db tempera készlet (6 vagy 12 színű)
+- 12 db színes ceruza
+- HB-s, 2B-s, 3B-s ceruza
+- 1 csomag zsírkréta (min. 6 db-os)
+- 1 db olló
+- A/4-es színeslap készlet
+- ecsethez rongy
+- Pritt ragasztóstift
+- fekete tűfilc
+ 
+
+<p style="margin: 1em 0 0; font-weight: bold;">Fizika:</p>
+
+- 1 db nagyalakú négyzetrácsos füzet (tavalyi folytatható)
+- 1 csomag írólap
+
+<p style="margin: 1em 0 0; font-weight: bold;">Kémia:</p>
+
+- 1 db nagyméretű négyzetrácsos füzet (A/4)
+
+<p style="margin: 1em 0 0; font-weight: bold;">Biológia:</p>
+
+- 1 db vonalas füzet
+
+<p style="margin: 1em 0 0; font-weight: bold;">Földrajz:</p>
+
+- 1 db nagyméretű sima füzet, de jó a vonalas is
+- színes ceruzák
+
+<p style="margin: 1em 0 0; font-weight: bold;">Testnevelés:</p>
+
+- tornazsák
+- fehér póló
+- zokni
+- nadrág
+- tornacipő
+- lányoknak hajgumi
+
+<p style="margin: 1em 0 0; font-weight: bold;">Történelem:</p>
+
+- 1 db A/4-es nagyméretű vonalas füzet
+- 1 csomag írólap
+- 1 db kék színű golyóstoll
+- olló, ragasztóstift (tolltartóba)
+
+
+{{/ifequal}}

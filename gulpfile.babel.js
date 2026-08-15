@@ -313,6 +313,10 @@ function watch() {
         'all',
         gulp.series(resetPages, pages, browser.reload)
     )
+    gulp.watch('src/content/**/*.md').on(
+        'all',
+        gulp.series(resetPages, pages, browser.reload)
+    )
     gulp.watch('src/assets/scss/**/*.scss').on('all', sassBuild)
     gulp.watch('src/assets/js/**/*.js').on(
         'all',
@@ -404,6 +408,11 @@ function watchSchool() {
     )
 
     gulp.watch('src/helpers/**/*.js').on(
+        'all',
+        gulp.series(resetPages, pagesSchool, browser.reload)
+    )
+
+    gulp.watch('src/content/**/*.md').on(
         'all',
         gulp.series(resetPages, pagesSchool, browser.reload)
     )
