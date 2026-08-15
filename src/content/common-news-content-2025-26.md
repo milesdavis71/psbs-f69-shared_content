@@ -908,15 +908,6 @@ A nyári ügyelet a **Szegedi Petőfi Sándor Általános Iskolában** kerül me
 
 {{/ifequal}}
 
-{{#ifequal hir "news104"}}
-
-Iskolánk osztályokra bontott taneszközlistái a 2026/2027-es tanévre az alábbi linkre kattintva megtekinthetők.
-
-<a href="{{root}}bemutatkozas/taneszkozok"> <u>Taneszközlisták 2026/2027</u>
-</a>
-
-{{/ifequal}}
-
 
 
 
