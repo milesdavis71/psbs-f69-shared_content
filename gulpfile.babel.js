@@ -26,7 +26,7 @@ RewriteEngine On
 
 # Redirect direct .html requests to clean URLs.
 RewriteCond %{THE_REQUEST} \\s/+(.+?)\\.html[\\s?] [NC]
-RewriteRule ^ %1 [R=301,L]
+RewriteRule ^ /%1 [R=301,L,NE]
 
 # Serve extensionless page URLs from their generated .html files.
 # Prefer a sibling HTML page over a same-named directory. Gallery grid pages

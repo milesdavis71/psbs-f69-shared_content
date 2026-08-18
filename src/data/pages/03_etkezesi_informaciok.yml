@@ -1,14 +1,18 @@
 - title: Étkezési információk
-  page: 'etkezesi_informaciok_root'
-  url: 'etkezesi_informaciok'
+  page: "etkezesi_informaciok_root"
+  url: "etkezesi_informaciok"
   icon: utensils
   items:
+    - title: Szabadszedéses étkezési rendszer bevezetése
+      page: szabadszedeses_etkezes
+      url: szabadszedeses_etkezes
+      folder: etkezesi_informaciok
     - title: Befizetési időpontok az NGSZ-nél
-      page: 'befiz_idopontok_ngsz'
+      page: "befiz_idopontok_ngsz"
       url: befiz_idopontok_ngsz
       folder: etkezesi_informaciok
     - title: Étkezési térítési díjak
-      page: 'etkezes_teritesi_dijak'
+      page: "etkezes_teritesi_dijak"
       url: etkezes_teritesi_dijak
       folder: etkezesi_informaciok
     - title: Közétkeztetés – NGSZ weboldal
@@ -18,6 +22,6 @@
       url: https://ngsz.hu/etlapok-etlapvaltozasok/
       external: true
     - title: Leendő elsős szülők tájékoztatása közétkeztetésről
-      page: 'elsos_szulok_tajekoztatasa_kozetkeztetesrol'
+      page: "elsos_szulok_tajekoztatasa_kozetkeztetesrol"
       url: elsos_szulok_tajekoztatasa_kozetkeztetesrol
       folder: etkezesi_informaciok
