@@ -3,11 +3,7 @@
 <table class="hover">
     <tbody>
         {{#each this}}
-        <tr>
-            <td>{{name}}</td>
-            <td>{{school}}</td>
-            <td>{{job}}</td>
-        </tr>
+        {{>schooldata-base-table-employers}}
         {{/each}}
     </tbody>
 </table>

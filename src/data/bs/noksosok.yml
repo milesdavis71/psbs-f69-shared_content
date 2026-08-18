@@ -1,9 +1,17 @@
 - name: Kruzslicz Mónika
-  school: középfokú
-  job: pénzügyi-számviteli ügyintéző, számítógép-kezelő
-- name: Faragó-Balázs Nóra
-  school: középfokú
-  job: pedagógiai asszisztens
+  grade: középfokú
+  spec1: iskolatitkár
+  spec2: pénzügyi-számviteli ügyintéző
+  spec3: számítógép-kezelő
+
+- name: Dr. Zádoriné Pepó Patrícia
+  grade: egyetem
+  spec1: pedagógiai asszisztens
+  spec2: középiskolai földrajztanár
+
 - name: Hevesi István
-  school: főiskola, középfokú
-  job: magyar–történelem szakos általános iskolai tanár, szoftverfejlesztő
+  grad: főiskola, középfokú
+  spec1: rendszergazda
+  spec2: szoftverfejlesztő
+  spec3: magyar–történelem szakos általános iskolai tanár
+  spec4: újságíró

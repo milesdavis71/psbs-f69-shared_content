@@ -1,9 +1,13 @@
 - name: Szabó Zsuzsanna
-  school: főiskola
-  job: szociálpedagógus
+  grad: főiskola
+  spec1: iskolatitkár
+  spec2: szociálpedagógus
 - name: Lehotai Papdi Orsolya
-  school: középfokú
-  job: pedagógiai asszisztens
+  grad: középfokú
+  spec1: pedagógiai asszisztens
 - name: Hevesi István
-  school: főiskola, középfokú
-  job: magyar–történelem szakos általános iskolai tanár, szoftverfejlesztő
+  grad: főiskola, középfokú
+  spec1: rendszergazda
+  spec2: szoftverfejlesztő
+  spec3: magyar–történelem szakos általános iskolai tanár
+  spec4: újságíró

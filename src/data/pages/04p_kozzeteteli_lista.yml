@@ -1,133 +1,137 @@
-- title: 'Közzétételi lista'
-  page: 'kozzeteteli_root'
-  url: 'kozzeteteli_lista'
-  icon: 'list-ul'
+- title: "Közzétételi lista"
+  page: "kozzeteteli_root"
+  url: "kozzeteteli_lista"
+  icon: "list-ul"
   items:
-    - title: 'Felvételi lehetőségről szóló tájékoztató'
-      page: 'felveteli_info_root' # Ez a 2. szintű szülő
-      url: 'felveteli_tajekoztato'
+    - title: "Felvételi lehetőségről szóló tájékoztató"
+      page: "felveteli_info_root" # Ez a 2. szintű szülő
+      url: "felveteli_tajekoztato"
       items: # <--- Itt kezdődik a HARMADIK mélység (al-almenü)
         - title: Felvételi tájékoztató
-          page: 'felveteli_tajekoztato'
+          page: "felveteli_tajekoztato"
           url: felveteli_tajekoztato
           folder: kozzeteteli_lista
         - title: Beiratkozáskor leadandó nyomtatványok
-          page: 'beiratkozaskor_leadando_nyomtatvanyok'
+          page: "beiratkozaskor_leadando_nyomtatvanyok"
           url: beiratkozaskor_leadando_nyomtatvanyok
           folder: kozzeteteli_lista
         - title: Körzetünk
-          page: 'beiratkozasi_korzet'
+          page: "beiratkozasi_korzet"
           url: beiratkozasi_korzet
           folder: kozzeteteli_lista
         - title: Iskolahívogató
-          page: 'iskolahivogato'
+          page: "iskolahivogato"
           url: iskolahivogato
           folder: kozzeteteli_lista
     - title: Engedélyezett osztályok, csoportok száma
-      page: 'osztalyok_tanulok_szama'
+      page: "osztalyok_tanulok_szama"
       url: osztalyok_tanulok_szama
       folder: kozzeteteli_lista
     - title: Térítési díj, tandjíj
-      page: 'teritesi_dij'
+      page: "teritesi_dij"
       url: teritesi_dij
       folder: kozzeteteli_lista
     - title: Étkezési térítési díjak
-      page: 'kozzetetel_etkezesi_teritesi_dijak'
+      page: "kozzetetel_etkezesi_teritesi_dijak"
       url: kozzetetel_etkezesi_teritesi_dijak
       folder: kozzeteteli_lista
     - title: Fenntartói értékelés, nyilvános megállapításokat tartalmazó vizsgálatok
-      page: 'nyilvanos_vizsgalat'
+      page: "nyilvanos_vizsgalat"
       url: nyilvanos_vizsgalat
       folder: kozzeteteli_lista
     - title: Nyitvatartás rendje
-      page: 'nyitvatartas'
+      page: "nyitvatartas"
       url: nyitvatartas
       folder: kozzeteteli_lista
     - title: Eseménynaptár
-      page: 'esemenynaptar'
+      page: "esemenynaptar"
       url: esemenynaptar
       folder: kozzeteteli_lista
     - title: Pedagógiai-szakmai ellenőrzési feladatok ellenőrzése
-      page: 'ped_ellenorzes_root' # Ez a 2. szintű szülő
+      page: "ped_ellenorzes_root" # Ez a 2. szintű szülő
       url: ped_ellenorzesi_feladatok
       items: # <--- Itt kezdődik a HARMADIK mélység (al-almenü)
         - title: Iskolai tanfelügyelet eredményei
-          page: 'iskolai_tanfelugyelet_eredmenyei'
+          page: "iskolai_tanfelugyelet_eredmenyei"
           url: iskolai_tanfelugyelet_eredmenyei
           folder: kozzeteteli_lista
         - title: Intézményvezetői tanfelügyelet eredménye
-          page: 'intezmenyvezetoi_tanfelugyelet_eredmenye'
-          url: 'intezmenyvezetoi_tanfelugyelet_eredmenye'
+          page: "intezmenyvezetoi_tanfelugyelet_eredmenye"
+          url: "intezmenyvezetoi_tanfelugyelet_eredmenye"
           folder: kozzeteteli_lista
         - title: Pedagógus tanfelügyelet eredménye
-          page: 'pedagogus_tanfelugyelet_eredmenye'
-          url: 'pedagogus_tanfelugyelet_eredmenye'
+          page: "pedagogus_tanfelugyelet_eredmenye"
+          url: "pedagogus_tanfelugyelet_eredmenye"
           folder: kozzeteteli_lista
     - title: SZMSZ
-      page: 'kozzetetel_szmsz'
+      page: "kozzetetel_szmsz"
       url: kozzetetel_szmsz
       folder: kozzeteteli_lista
     - title: Házirend
-      page: 'kozzetetel_hazirend'
+      page: "kozzetetel_hazirend"
       url: kozzetetel_hazirend
       folder: kozzeteteli_lista
     - title: Pedagógiai program
-      page: 'kozzetetel_ped_program'
+      page: "kozzetetel_ped_program"
       url: kozzetetel_ped_program
       folder: kozzeteteli_lista
     - title: Értékelési rendszer helyi szabályzata
-      page: 'ertekelesi_rendszer_szabalyzat'
+      page: "ertekelesi_rendszer_szabalyzat"
       url: ertekelesi_rendszer_szabalyzat
       folder: kozzeteteli_lista
     - title: Pedagógusok iskolai végzettsége
-      page: 'pedagogusok_iskolai_vegzettsege'
+      page: "pedagogusok_iskolai_vegzettsege"
       url: pedagogusok_iskolai_vegzettsege
       folder: kozzeteteli_lista
+    - title: "Noksosok száma, szakképzettsége"
+      page: "noksosok_szama_szakkepzettsege"
+      url: noksosok_szama_szakkepzettsege
+      folder: kozzeteteli_lista
     - title: Országos mérés-értékelés évenkénti eredményei
-      page: 'kompetenciameres_eredmenyei'
+      page: "kompetenciameres_eredmenyei"
       url: kompetenciameres_eredmenyei
       folder: kozzeteteli_lista
     - title: Tanulók le- és kimaradásával, évfolyamismétlésével kapcsolatos adatok
-      page: 'evismetles'
+      page: "evismetles"
       url: evismetles
       folder: kozzeteteli_lista
     - title: Tanórán kívüli foglalkozások igénybevételének lehetősége
-      page: 'tanoran_kivuli_foglalkozasok_igenybevetelenek_lehetosege_root' # Ez a 2. szintű szülő
+      page: "tanoran_kivuli_foglalkozasok_igenybevetelenek_lehetosege_root" # Ez a 2. szintű szülő
       url: tanoran_kivuli_foglalkozasok_igenybevetelenek_lehetosege
       items: # <--- Itt kezdődik a HARMADIK mélység (al-almenü)
         - title: Egyéni fejlesztés
-          page: 'egyeni_fejlesztes'
+          page: "egyeni_fejlesztes"
           url: egyeni_fejlesztes
           folder: kozzeteteli_lista
         - title: Szakkörök, tehetséggondozás
-          page: 'szakkorok_tehetseggondozas'
-          url: 'szakkorok_tehetseggondozas'
+          page: "szakkorok_tehetseggondozas"
+          url: "szakkorok_tehetseggondozas"
           folder: kozzeteteli_lista
         - title: Szaktárgyi_korrepetálások
-          page: 'szaktargyi_korrepetalasok'
-          url: 'szaktargyi_korrepetalasok'
+          page: "szaktargyi_korrepetalasok"
+          url: "szaktargyi_korrepetalasok"
           folder: kozzeteteli_lista
     - title: Hétvégi házi feladatok, dolgozatok szabályai
-      page: 'hetvegi_hazi_feladatok_dolgozatok_szabalyai'
+      page: "hetvegi_hazi_feladatok_dolgozatok_szabalyai"
       url: hetvegi_hazi_feladatok_dolgozatok_szabalyai
       folder: kozzeteteli_lista
     - title: Tanulmányok alatti vizsgák követelményei
-      page: 'tanulmanyok_alatti_vizsgak_kovetelmenyei_root' # Ez a 2. szintű szülő
+      page: "tanulmanyok_alatti_vizsgak_kovetelmenyei_root" # Ez a 2. szintű szülő
       url: tanulmanyok_alatti_vizsgak_kovetelmenyei
       items: # <--- Itt kezdődik a HARMADIK mélység (al-almenü)
         - title: Osztályozó vizsgák követelményei
-          page: 'osztalyozo_vizsgak_kovetelmenyei'
+          page: "osztalyozo_vizsgak_kovetelmenyei"
           url: osztalyozo_vizsgak_kovetelmenyei
           folder: kozzeteteli_lista
         - title: A tanulmányok alatti vizsgák tervezett rendje
-          page: 'tanulmanyok_alatti_vizsgak_tervezett_rendje'
+          page: "tanulmanyok_alatti_vizsgak_tervezett_rendje"
           url: tanulmanyok_alatti_vizsgak_tervezett_rendje
           folder: kozzeteteli_lista
         - title: Osztályozó vizsgák értékelési rendje
-          page: 'osztalyozo_vizsgak_ertekelesi_rendje'
+          page: "osztalyozo_vizsgak_ertekelesi_rendje"
           url: osztalyozo_vizsgak_ertekelesi_rendje
           folder: kozzeteteli_lista
     - title: Osztályok száma és tanulók létszáma
-      page: 'osztalyok_szama_es_tanulok_letszama'
+      page: "osztalyok_szama_es_tanulok_letszama"
       url: osztalyok_szama_es_tanulok_letszama
       folder: kozzeteteli_lista
