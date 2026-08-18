@@ -1,13 +1,6 @@
-{{#ifequal hir "news01"}}
 
-Iskolánk osztályokra bontott taneszközlistái a 2026/2027-es tanévre az alábbi linkre kattintva megtekinthetők.
 
-<a href="{{root}}bemutatkozas/taneszkozok"> <u>Taneszközlisták 2026/2027</u>
-</a>
-
-{{/ifequal}}
-
-{{#ifequal hir "news02"}}
+{{#ifequal hir "news03"}}
 |           |                  |       |
 |-----------|------------------|-------|
 | 1\. oszt. | aug. 31.(hétfő)  | 17:00 |
