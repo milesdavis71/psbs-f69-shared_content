@@ -58,9 +58,10 @@
 
 - name: Pajkó Mihály Zsolt
   grad: egyetem, főiskola
-  spec1: testnevelő tanár, testnevelés–technika szakos általános iskolai tanár
-  spec2: közoktatási vezető, mesterpedagógus,
-  spec3: művelődésszervező
+  spec1: középiskolai testnevelő tanár,
+  spec2: testnevelés–technika szakos általános iskolai tanár
+  spec3: közoktatási vezető, mesterpedagógus
+  spec4: művelődésszervező
 
 - name: Purcsi Kata
   grad: egyetem
@@ -89,15 +90,17 @@
 
 - name: Ungerné Fekete Mónika
   grad: főiskola
-  spec1: általános iskolai magyar tanár és könyvtáros
-  spec2: differenciáló, fejlesztő pedagógiai ismeretek
-  spec3: szakvizsgázott pedagógus, fejlesztőpedagógus
+  spec1: általános iskolai magyar tanár
+  spec2: könyvtáros
+  spec3: differenciáló, fejlesztő pedagógiai ismeretek
+  spec4: szakvizsgázott pedagógus
+  spec5: fejlesztőpedagógus
 
 - name: Vörös Balázs Zsolt
   grad: egyetem
-  spec1: angol nyelv és kultúra tanára
+  spec1: angol nyelv és kultúra középiskolai tanár
   spec2: könyvtárostanár
 
 - name: Zombori-Benczur Izabella – tartósan távollévő
   grad: egyetem
-  spec1: középiskolai biológia–természetismeret-környezettan tanár
+  spec1: biológia–természetismeret-környezettan középiskolai tanár

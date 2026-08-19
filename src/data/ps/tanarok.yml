@@ -4,7 +4,7 @@
 
 - name: Bogár Ildikó
   grad: főiskola
-  spec1: általános iskolai tanító vizuális nevelés szakkollégiumi képzéssel
+  spec1: tanító vizuális nevelés szakkollégiumi képzéssel
 
 - name: Bohusné Megyesi Vera
   grad: egyetem
@@ -12,7 +12,7 @@
 
 - name: Csányi Erika
   grad: főiskola
-  spec1: általános iskolai tanító
+  spec1: tanító
 
 - name: Gusztosné Thékes Andrea
   grad: főiskola
@@ -20,13 +20,13 @@
 
 - name: Harsányiné Szöllősi Edit
   grad: főiskola
-  spec1: általános iskolai tanító
+  spec1: tanító
 
 - name: Haumann Anett – tartósan távollévő
   grad: egyetem
-  spec1: okleveles német- és nemzetiségi német szakos általános iskolai tanár
-  spec2: angol–német szakos tanár
-  spec3: okleveles informatikatanár (digitális kultúra tanára)
+  spec1: német- és nemzetiségi német szakos általános iskolai tanár
+  spec2: angol–német szakos középiskolai tanár
+  spec3: középiskolai informatikatanár
 
 - name: Héjja Emese
   grad: főiskola
@@ -39,8 +39,8 @@
 
 - name: Kovácsné Farsang Beáta
   grad: egyetem
-  spec1: filozófia szakos bölcsész tanár
-  spec2: történelem szakos bölcsész és tanár
+  spec1: filozófia szakos középiskolai tanár
+  spec2: történelem szakos középiskolai tanár
   spec3: fejlesztőpedagógus
 
 - name: Minik Ilona
@@ -73,19 +73,19 @@
 
 - name: Szabó Adrienne
   grad: főiskola
-  spec1: általános iskolai tanító
+  spec1: tanító
 
 - name: Szabó Amanda Márta
   grad: főiskola
-  spec1: általános iskolai tanító
+  spec1: tanító
 
 - name: Szilágyi Lilla
   grad: főiskola
-  spec1: általános iskolai tanító
+  spec1: tanító
 
 - name: Vigh Anita
   grad: főiskola
-  spec1: általános iskolai tanító
+  spec1: tanító
 
 - name: Winkler Andrea
   grad: főiskola
@@ -97,4 +97,4 @@
 
 - name: Zombori-Benczur Izabella – tartósan távollévő
   grad: egyetem
-  spec1: középiskolai biológia–természetismeret-környezettan tanár
+  spec1: biológia–természetismeret-környezettan középiskolai tanár
