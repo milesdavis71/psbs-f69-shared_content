@@ -7,7 +7,7 @@
     imgclass: medium-3
     contentclass: medium-9
     content: news02
-  - ps:
+  - common:
     title: Taneszközlisták a 2026/2027-es tanévre
     school: Common
     img: taneszkoz.jpg
