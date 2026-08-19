@@ -1,1 +1,2 @@
 [0818/183634.169:ERROR:third_party\crashpad\crashpad\util\win\registration_protocol_win.cc:108] CreateFile: A hozzáférés megtagadva. (0x5)
+[0819/095952.134:ERROR:third_party\crashpad\crashpad\util\win\registration_protocol_win.cc:108] CreateFile: A hozzáférés megtagadva. (0x5)
