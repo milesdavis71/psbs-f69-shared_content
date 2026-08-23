@@ -19,3 +19,14 @@ Iskolánk osztályokra bontott taneszközlistái a 2026/2027-es tanévre az alá
 
 {{/ifequal}}
 
+{{#ifequal hir "news03"}}
+
+###### Kedves Szülők!
+
+Ebben a tanévben az alsós tanulók tankönyveit a szülői értekezleten adjuk át.
+
+A felsősök a tankönyveket a szaktanároktól kapják meg az első tanítási órákon.
+
+*Kérjük, a könyveket ne csomagoljåk be!*
+
+{{/ifequal}}
