@@ -20,6 +20,20 @@ Iskolánk osztályokra bontott taneszközlistái a 2026/2027-es tanévre az alá
 {{/ifequal}}
 
 {{#ifequal hir "news03"}}
+
+###### Kedves Szülők!
+
+Ebben a tanévben az alsós tanulók tankönyveit a szülői értekezleten adjuk át.
+
+A felsősök a tankönyveket a szaktanároktól kapják meg az első tanítási órákon.
+
+*Kérjük, a könyveket ne csomagoljåk be!*
+
+{{/ifequal}}
+
+
+
+{{#ifequal hir "news04"}}
 |           |                        |       |
 |-----------|------------------------|-------|
 | 1\. oszt. | szept. 01. (kedd)      | 16:30 |
@@ -32,14 +46,19 @@ Iskolánk osztályokra bontott taneszközlistái a 2026/2027-es tanévre az alá
 | 8\. oszt. | szept. 10. (csütörtök) | 16:30 |
 {{/ifequal}}
 
-{{#ifequal hir "news04"}}
+{{#ifequal hir "news05"}}
+**Időpont:** 2026. 09. 01. (kedd) 8:00
 
-###### Kedves Szülők!
+*Megjelenés ünneplőben 7:30 kor*
 
-Ebben a tanévben az alsós tanulók tankönyveit a szülői értekezleten adjuk át.
+Szeretettel várunk minden érdeklődőt!
 
-A felsősök a tankönyveket a szaktanároktól kapják meg az első tanítási órákon.
+<p style="margin-bottom: -1em;">Az első napon a következő felszerelés legyen mindenkinél:<p>
 
-*Kérjük, a könyveket ne csomagoljåk be!*
+- üzenőfüzet
+- tolltaró
+- órarend
 
+Aki ebéd után (11:45-től) szeretne hazamenni, hozzon magával szülői kikérőt.
 {{/ifequal}}
+

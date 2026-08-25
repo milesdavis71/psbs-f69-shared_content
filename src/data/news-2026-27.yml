@@ -1,4 +1,12 @@
 2026-27:
+  - ps:
+    title: Tanévnyitó ünnepség
+    school: Székhely
+    img: tanevnyito.jpg
+    align: center
+    imgclass: medium-3
+    contentclass: medium-9
+    content: news05
   - bs:
     title: Szülői értekezletek 2026 ősz
     school: Tagiskola
@@ -6,6 +14,14 @@
     align: center
     imgclass: medium-3
     contentclass: medium-9
+    content: news04
+  - ps:
+    title: Tankönyvek átvétele
+    school: Székhely
+    img: tankonyvosztas_left.jpg
+    align: center
+    imgclass: medium-2
+    contentclass: medium-10
     content: news03
   - ps:
     title: Szülői értekezletek 2026 ősz
