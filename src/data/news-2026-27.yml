@@ -1,11 +1,11 @@
 2026-27:
-  - ps:
-    title: Tankönyvek átvétele
-    school: Székhely
-    img: tankonyvosztas_left.jpg
+  - bs:
+    title: Szülői értekezletek 2026 ősz
+    school: Tagiskola
+    img: szuloi.png
     align: center
-    imgclass: medium-2
-    contentclass: medium-10
+    imgclass: medium-3
+    contentclass: medium-9
     content: news03
   - ps:
     title: Szülői értekezletek 2026 ősz
