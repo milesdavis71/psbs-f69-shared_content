@@ -20,8 +20,9 @@
   spec1: tanító
 
 - name: Darukáné Jójárt Renáta
-  grad: egyetem
+  grad: egyetem, főiskola
   spec1: matematika szakos középiskolai tanár
+  spec2: tanító
 
 - name: Héjja Emese
   grad: főiskola
