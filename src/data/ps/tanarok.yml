@@ -89,11 +89,12 @@
 
 - name: Winkler Andrea
   grad: főiskola
-  spec1: mesterpedagógus
-  spec2: minősítési és tanfelügyeleti szakértő
-  spec3: matematika–földrajz szakos általános iskolai tanár
-  spec4: közoktatási vezető – szakvizsgázott pedagógus
-  spec5: szakközgazdász
+  spec1: címzetes igazgató
+  spec2: mesterpedagógus
+  spec3: minősítési és tanfelügyeleti szakértő
+  spec4: matematika–földrajz szakos általános iskolai tanár
+  spec5: közoktatási vezető – szakvizsgázott pedagógus
+  spec6: szakközgazdász
 
 - name: Zombori-Benczur Izabella – tartósan távollévő
   grad: egyetem
