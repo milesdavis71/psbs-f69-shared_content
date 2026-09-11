@@ -108,7 +108,7 @@ sections:
         name: "Tanórán kívüli foglalkozások igénybevételének lehetősége"
       - status: "❌"
         name: "Egyéni fejlesztés"
-      - status: "❌"
+      - status: "✅"
         name: "Szakkörök, tehetséggondozás"
       - status: "❌"
         name: "Szaktárgyi korrepetálások"
@@ -153,7 +153,7 @@ sections:
         name: "Szülői értekezletek"
       - status: "❌"
         name: "Fogadóórák"
-      - status: "❌"
+      - status: "✅"
         name: "Egyéni fogadóórák"
 
   - name: "Tanórán kívüli foglalkozások"
@@ -162,7 +162,7 @@ sections:
         name: "Egyéni fejlesztés"
       - status: "❌"
         name: "Szakkörök, tehetséggondozás"
-      - status: "❌"
+      - status: "✅"
         name: "Szaktárgyi korrepetálások"
 
   - name: "Versenyeredmények"
