@@ -109,7 +109,7 @@ sections:
       - name: "Egyéni fejlesztés"
         status: "❌"
       - name: "Szakkörök, tehetséggondozás"
-        status: "❌"
+        status: "✅"
       - name: "Szaktárgyi korrepetálások"
         status: "❌"
       - name: "Hétvégi házi feladatok, dolgozatok szabályai"
