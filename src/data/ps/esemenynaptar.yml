@@ -1,0 +1,35 @@
+# A PS eseményei a saját naptárforrás megadásakor tölthetők fel.
+months:
+  - id: augusztus
+    title: Augusztus
+    events: []
+  - id: szeptember
+    title: Szeptember
+    events: []
+  - id: oktober
+    title: Október
+    events: []
+  - id: november
+    title: November
+    events: []
+  - id: december
+    title: December
+    events: []
+  - id: januar
+    title: Január
+    events: []
+  - id: februar
+    title: Február
+    events: []
+  - id: marcius
+    title: Március
+    events: []
+  - id: aprilis
+    title: Április
+    events: []
+  - id: majus
+    title: Május
+    events: []
+  - id: junius
+    title: Június
+    events: []

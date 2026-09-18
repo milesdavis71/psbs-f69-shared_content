@@ -1,16 +1,15 @@
-{{#schoolData schoolKey "content"}}
-
-
 <div class="grid-container hatartalanul-tabs-page">
+  {{#if school_year}}<p class="text-center subheader">{{school_year}}. tanév</p>{{/if}}
   <div class="grid-x grid-margin-x">
     <div class="cell medium-2">
-      <ul class="vertical tabs small-text-center" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500" data-tabs id="deeplinked-tabs">
+      <ul class="vertical tabs text-center medium-text-left" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500" data-tabs id="deeplinked-tabs">
         {{#each this.sections}}
           <li class="tabs-title {{#if @first}}is-active{{/if}}">
             <a href="#panel{{@index}}" {{#if @first}}aria-selected="true"{{/if}}> <span style="font-size: smaller;">{{ this.title }}</span> </a>
           </li>
         {{/each}}
       </ul>
+      {{#unless calendar}}
       <p>&emsp;</p>
       <div class="hatartalanul-tab-images">
         {{#each this.sections}}
@@ -35,11 +34,31 @@
           </div>
         {{/each}}
       </div>
+      {{/unless}}
   </div>
     <div class="cell medium-9">
       <div class="tabs-content vertical"  data-tabs-content="deeplinked-tabs">
         {{#each this.sections}}
           <div class="tabs-panel {{#if @first}}is-active{{/if}}" id="panel{{@index}}">
+            {{#if ../calendar}}
+              <h2 class="h5">{{title}}</h2>
+              {{#if events}}
+                <table class="hover stack">
+                  <caption class="show-for-sr">{{title}} – események</caption>
+                  <thead><tr><th scope="col">Időpont</th><th scope="col">Téma</th></tr></thead>
+                  <tbody>
+                    {{#each events}}
+                      <tr>
+                        <td>{{date}}</td>
+                        <td>{{#each description}}{{#unless @first}}<br />{{/unless}}{{this}}{{/each}}</td>
+                      </tr>
+                    {{/each}}
+                  </tbody>
+                </table>
+              {{else}}
+                <p>A hónap eseményei hamarosan elérhetők.</p>
+              {{/if}}
+            {{/if}}
             {{#each this.content}}
             {{#ifequal this.type "maintitle"}}
             <h5 class="text-center" style="margin-bottom: 0;">{{ this.text }}</h5>
@@ -48,7 +67,7 @@
               <h6 class="text-center subheader">{{ this.text }}</h6>
                 {{/ifequal}}
               {{#ifequal this.type "heading"}}
-                <h5 class="subheader">{{ this.text }}</h4>
+                <h5 class="subheader">{{ this.text }}</h5>
               {{/ifequal}}
 
               {{#ifequal this.type "paragraph"}}
@@ -125,4 +144,3 @@
     })
   })
 </script>
-{{/schoolData}}
