@@ -1,35 +1,384 @@
-# A PS eseményei a saját naptárforrás megadásakor tölthetők fel.
+# Forrás: 2026-ps-esemenynaptar.docx (2026–2027).
+# A forrásból hiányzó szeptemberi cím a tanévnyitó előtt pótolva.
+school_year: 2026/2027
 months:
   - id: augusztus
     title: Augusztus
-    events: []
+    events:
+      - date: 24-31.
+        description:
+          - Szülői értekezletek 2-8-ig
   - id: szeptember
     title: Szeptember
-    events: []
+    events:
+      - date: '1.'
+        description:
+          - Tanévnyitó ünnepség
+          - Házirend ismertetése
+          - Baleset- és tűzvédelmi oktatás
+          - Szülői értekezlet 1.o
+          - Érzékenyítő program-iskolatáska gyűjtés
+      - date: ''
+        description:
+          - Lázár Ervin Program
+          - Nemzeti Emlékezetpedagógiai Program
+      - date: ''
+        description:
+          - Papírgyűjtés
+      - date: ''
+        description:
+          - 8.o.– pályaválasztást megalapozó kompetenciák vizsgálata
+      - date: ''
+        description:
+          - Szakmafesztivál – a SZSZC családinapja a 8. osztályos tanulók részére
+      - date: '24.'
+        description:
+          - MaTalent mérés
+      - date: '25.'
+        description:
+          - Európai Diáksport napján való részvétel
+      - date: ''
+        description:
+          - Rendhagyó történelemóra-8. osztály
+      - date: 09.28-30.
+        description:
+          - Jeles napok-Népmese napjához kapcsolódó projekthét
+          - Aranytoll prózaíró verseny
+      - date: 09.28-10.02.
+        description:
+          - A Világ Legnagyobb Tanórája – rendhagyó biológiaóra
+      - date: '29.'
+        description:
+          - Suliváró foglalkozás
   - id: oktober
     title: Október
-    events: []
+    events:
+      - date: '1.'
+        description:
+          - Zenei Világnap „Lásd a zenét!”
+      - date: '2.'
+        description:
+          - Szüreti Piknik
+      - date: 5-9.
+        description:
+          - Jubileumi ünnepi hét
+      - date: '6.'
+        description:
+          - Október 6. Megemlékezés
+      - date: '12.'
+        description:
+          - Pályaorientációs szakmai nap
+      - date: '19.'
+        description:
+          - Halloween Afternoon. Idegen nyelvi délután a felső tagozaton
+      - date: '21.'
+        description:
+          - Építsd a jövőt!
+      - date: '20.'
+        description:
+          - Diákok hangja témanap
+      - date: ''
+        description:
+          - Találd ki magad pályaválasztási börze
+      - date: '22.'
+        description:
+          - Október 23-i megemlékezés – 8. osztály
+      - date: 10.23-11.01.
+        description:
+          - Őszi szünet (utolsó tanítási nap október 22. első tanítási nap november 2.)
   - id: november
     title: November
-    events: []
+    events:
+      - date: '2.'
+        description:
+          - Iskolásdi foglalkozás
+      - date: '11.'
+        description:
+          - 'Jeles napok: Márton nap'
+      - date: ''
+        description:
+          - Mi a pálya?
+      - date: '13.'
+        description:
+          - A magyar nyelv napja
+          - „Nyelvében él a nemzet”
+      - date: '12.'
+        description:
+          - Népdal és népköltészet hete
+      - date: ''
+        description:
+          - Érzékenyítő program
+          - Csoki- és állateledelgyűjtő akció
+      - date: '16.'
+        description:
+          - Suliváró foglakozás óvodásoknak-tematikus délután
+      - date: '17.'
+        description:
+          - Iskolai szülői értekezlet a központi írásbelire való jelentkezésről
+      - date: '24.'
+        description:
+          - Az egységes írásbelire való jelentkezés leadása az osztályfőnöknek.
+      - date: '25.'
+        description:
+          - Egészségnap
+          - Rendhagyó biológiaórák szervezése
+          - Rendhagyó kémiaóra
+      - date: '27.'
+        description:
+          - 'Rajzverseny a Bálint Sándor Tagiskolával: „Az angyalok köztünk járnak”'
+      - date: ''
+        description:
+          - Beiskolázási nyílt nap a 2. osztályban
+      - date: ''
+        description:
+          - Nyílt tanítási nap az 1. osztályban
+      - date: ''
+        description:
+          - Óvónők látogatása az első osztályban-kerekasztal beszélgetés az óvónőkkel
   - id: december
     title: December
-    events: []
+    events:
+      - date: '7.'
+        description:
+          - Az egységes felvételi írásbeli vizsgákra való jelentkezés
+      - date: '8.'
+        description:
+          - Suliváró foglalkozás
+      - date: ''
+        description:
+          - Házi sakkverseny
+      - date: 7-11.
+        description:
+          - Iskolai Advent
+      - date: ''
+        description:
+          - Telepi karácsony
+      - date: ''
+        description:
+          - Rendhagyó biológiaóra a dohányzás veszélyeiről
+      - date: ''
+        description:
+          - Rendhagyó biológia- kémiaóra a klímaváltozás következményeiről
+      - date: ''
+        description:
+          - '"Iskolásdi" foglalkozás óvodai csoport részére'
+      - date: '18.'
+        description:
+          - Iskolai karácsony
+      - date: 12.19-01.03.
+        description:
+          - Téli szünet (utolsó tanítási nap december 18. első tanítási nap január 4.)
   - id: januar
     title: Január
-    events: []
+    events:
+      - date: ''
+        description:
+          - Tanulók NETFIT mérésének kezdete
+      - date: '18.'
+        description:
+          - Suliváró foglakozás óvodásoknak-tematikus délután- Rajzkiállítás
+      - date: '22.'
+        description:
+          - A magyar kultúra napja. Megemlékezés, rajzkiállítás
+      - date: '22.'
+        description:
+          - Az első félév vége
+      - date: 23. 10:00
+        description:
+          - Központi írásbeli felvételi vizsgák 8. osztály
+      - date: ''
+        description:
+          - „Szóforgató” háziverseny
+      - date: ''
+        description:
+          - „ Észpörgető” háziverseny
+      - date: '27.'
+        description:
+          - Holokauszt Nemzetközi Emléknapja
+      - date: '29.'
+        description:
+          - Nevelési értekezlet szakmai nap
   - id: februar
     title: Február
-    events: []
+    events:
+      - date: '1.'
+        description:
+          - Nevelési értekezlet szakmai nap
+      - date: ''
+        description:
+          - Rendhagyó természettudomány-óra - Tisza élővilágának emléknapja
+      - date: '2.'
+        description:
+          - Farsangi mulatság
+      - date: '10.'
+        description:
+          - Matek háziverseny
+      - date: 2-5.
+        description:
+          - Félévi szülői értekezlet
+      - date: '12.'
+        description:
+          - A középfokú iskola értesíti a tanulót az írásbeli eredményéről. A tanuló bemutatja az eredményét az iskola irodájában.
+      - date: '12.'
+        description:
+          - Rendhagyó angol tanítási órák- Valentin nap
+      - date: '15.'
+        description:
+          - A 8. osztályos tanulók szülei a KIFIR felületén kitöltik a tanulók továbbtanulási szándékait (választott iskola, szak, idegen nyelv), és ennek igazoló lapját elküldik az iskolának is.
+      - date: '16.'
+        description:
+          - Suliváró foglalkozás
+      - date: 17-18.
+        description:
+          - A továbbtanuláshoz szükséges Jelentkezési lapok és Tanulói adatlapok szülői aláírása
+      - date: '22.'
+        description:
+          - Magyar Parasport napja
+      - date: '23.'
+        description:
+          - „Szép beszéd” járási prózamondó verseny
+          - „Hetedhét országon túl….” tankerületi mesemondóverseny
+      - date: ''
+        description:
+          - Helyesíró verseny 2-4. osztály
+      - date: '25.'
+        description:
+          - Kommunista és egyéb diktatúrák áldozatainak emléknapja
+      - date: ''
+        description:
+          - Újraélesztés oktatása
   - id: marcius
     title: Március
-    events: []
+    events:
+      - date: '1.'
+        description:
+          - fogadóóra
+      - date: 1-5.
+        description:
+          - Pénz7
+      - date: 03. 22- 05. 28.
+        description:
+          - Országos mérések
+      - date: 01-19.
+        description:
+          - A 8. osztályosok szóbeli meghallgatása a középfokú intézményekben
+      - date: '12.'
+        description:
+          - Megemlékezés márc. 15-ről
+          - Iskolai ünnepség
+      - date: '16.'
+        description:
+          - Petőfisek Kiscsillagai- ki mit tud alsó tagozat
+      - date: ''
+        description:
+          - Nyílt nap
+      - date: ''
+        description:
+          - Rendhagyó biológiaóra- Környezetvédelmi kérdések megbeszélése.
+          - Rendhagyó biológiaóra- Drogok káros hatásairól beszélgetés.
+      - date: '22.'
+        description:
+          - A víz világnapja
+      - date: '23.'
+        description:
+          - Suliváró foglalkozás
+      - date: ''
+        description:
+          - Csendéletfestő háziverseny
+      - date: 03.25-04.04.
+        description:
+          - Tavaszi szünet (utolsó tanítási nap március 24. első tanítási nap április 5.)
+      - date: 25-27.
+        description:
+          - A 8. osztályos tanulók Tanuló adatlapjainak módosítása
+      - date: ''
+        description:
+          - Rendhagyó énekóra vendégművésszel
+      - date: ''
+        description:
+          - Locsolóversíró háziverseny
+      - date: ''
+        description:
+          - Húsvéti kézműves foglalkozás
+      - date: ''
+        description:
+          - Rendhagyó magyaróra
   - id: aprilis
     title: Április
-    events: []
+    events:
+      - date: 5-9.
+        description:
+          - Digitális témahét
+      - date: 9-14.
+        description:
+          - 'A költészet napja '
+          - Megemlékezés, Posztolj egy verset
+      - date: '16.'
+        description:
+          - Holokauszt emléknap Megemlékezés történelemórák keretében
+      - date: '19.'
+        description:
+          - Szövegértés háziverseny 2-3-4.o.
+      - date: '19.'
+        description:
+          - 'Munkaközösség-vezetők értekezlete '
+          - A Föld napja
+          - Fenntarthatóság projektnap
+      - date: ''
+        description:
+          - Papírgyűjtés
+      - date: 23-24.
+        description:
+          - Beiratkozás
   - id: majus
     title: Május
-    events: []
+    events:
+      - date: '3.'
+        description:
+          - A középiskolai felvételi eredmények kiértesítése
+      - date: ''
+        description:
+          - Kütyük nélkül” logikai délután a retró jegyében
+      - date: '18.'
+        description:
+          - Nevelés nélküli munkanap-nevelési értekezlet
+      - date: '24.'
+        description:
+          - Év végi felmérések előkészítése
+          - Munkaközösség-vezetők értekezlete
+      - date: '27.'
+        description:
+          - A kihívás napja
+      - date: ''
+        description:
+          - Szülői értekezlet a beíratott elsősök szüleinek
+      - date: '28.'
+        description:
+          - Témanap-Madarak és Fák napja
   - id: junius
     title: Június
-    events: []
+    events:
+      - date: '4.'
+        description:
+          - Nemzeti összetartozás napja megemlékezés
+      - date: ''
+        description:
+          - Házi sakkverseny
+      - date: ''
+        description:
+          - Év végi szintfelmérések
+      - date: ''
+        description:
+          - Szív Napja A Petőfi-telepi Művelődési Házban
+      - date: '16.'
+        description:
+          - DÖK nap
+      - date: '18.'
+        description:
+          - Ballagás
+      - date: '22.'
+        description:
+          - Tanévzáró ünnepély, bizonyítványosztás
+      - date: 24-25.
+        description:
+          - Beiratkozás a középfokú iskolába.

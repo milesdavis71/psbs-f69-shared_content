@@ -79,7 +79,7 @@ sections:
       - name: "Nyitvatartás rendje"
         status: ""
       - name: "Eseménynaptár"
-        status: "❌"
+        status: "✅"
       - name: "Pedagógiai-szakmai ellenőrzési feladatok ellenőrzése"
         status: ""
       - name: "Intézményi tanfelügyelet eredménye 2018"
