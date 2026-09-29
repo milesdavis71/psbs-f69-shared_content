@@ -154,7 +154,7 @@ sections:
       - name: "Fogadóórák"
         status: "❌"
       - name: "Egyéni fogadóórák"
-        status: "❌"
+        status: "✅"
 
   - name: "Tanórán kívüli foglalkozások"
     items:
