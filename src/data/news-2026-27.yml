@@ -1,5 +1,13 @@
 2026-27:
   - ps:
+    title: Suliváró foglalkozások
+    school: Székhely
+    img: ps-2026-tavasz-sulivaro-fogl.jpg
+    align: center
+    imgclass: medium-3
+    contentclass: medium-9
+    content: news06
+  - ps:
     title: Tanévnyitó ünnepség
     school: Székhely
     img: tanevnyito.jpg

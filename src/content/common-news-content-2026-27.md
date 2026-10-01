@@ -62,3 +62,18 @@ Szeretettel várunk minden érdeklődőt!
 Aki ebéd után (11:45-től) szeretne hazamenni, hozzon magával szülői kikérőt.
 {{/ifequal}}
 
+
+{{#ifequal hir "news06"}}
+
+
+| Időpontok |
+|-----------|
+| 2026\. szeptember 29\. 16:00 |
+| 2026\. november 16\. 16:00 játékos családi délután a szülőkkel |
+| 2026\. december 8\. 16:00 |
+| 2027\. január 18\. 16:00 játékos családi délután a szülőkkel |
+| 2027\. február 16\. 16:00 |
+| 2027\. március 23\. 16:00 |
+
+{{/ifequal}}
+
