@@ -205,6 +205,55 @@
     line-height: 1.2;
 }
 
+.ps-anniversary {
+    display: inline-block;
+    color: #183359;
+    font-weight: 700;
+    white-space: nowrap;
+    outline: 1pt solid #c8008b;
+    outline-offset: 4px;
+}
+
+.ps-anniversary-title {
+    color: #c8008b;
+    font-weight: 800;
+}
+
+.ps-mobile-title-bar {
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    font-size: clamp(0.75rem, 3.3vw, 1rem);
+
+    .title-bar-left,
+    .title-bar-right {
+        display: flex;
+        flex: 0 0 auto;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .title-bar-right {
+        gap: 0.5rem;
+
+        img {
+            max-height: 1.25rem;
+            width: auto;
+        }
+    }
+
+    .ps-anniversary-mobile {
+        flex: 1 0 auto;
+        text-align: center;
+    }
+
+    .ps-anniversary {
+        padding: 0 0.2rem;
+        background-color: #eeeeee;
+        font-size: clamp(0.6875rem, 2.8vw, 0.875rem);
+        outline-offset: 2px;
+    }
+}
+
 body {
     background-color: #eeeeee;
 }
