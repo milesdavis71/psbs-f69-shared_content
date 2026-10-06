@@ -142,7 +142,7 @@ sections:
     status: "❌"
 
   - name: "Osztályaink"
-    status: "❌"
+    status: "✅"
 
   - name: "Órarendek"
     status: "❌"

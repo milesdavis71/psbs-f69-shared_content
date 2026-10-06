@@ -1,18 +1,37 @@
-- class: '1a'
+- class: "1a"
+  students:
+    - Blaskó Fanni
+    - Csáki Botond Alex
+    - Fenyvesi Bence László
+    - Garamvölgyi Olivér
+    - Kalmár Kristóf
+    - Kisalbert Zoltán
+    - Malmos Patrik
+    - Molnár Mira
+    - Nagy Panna
+    - Ördögh Zente Bende
+    - Pesti Alex
+    - Rácz Amir
+    - Tajti Janka
+    - Tarkó Noémi
+    - Torma Iréna
+    - Torma Ivóna
+    - Tóth Máté
+    - Tóth Patrik
+
+- class: "2a"
   students:
     - Ábrahám Gellért
     - Berényi Sára Diána
     - Berta Krisztián
-    - Borzák Mihály Ferenc
     - Dávid Dana Nola
     - Dózsa Panni
-    - Galló Marcell
     - Héger Lilla
     - Horváth Dávid
     - Jaksa Dávid
-    - Kahr Barnabás
-    - Karai Vanda
+    - 🙂
     - Káprai Kinga
+    - Karai Vanda
     - Kenderessy-Szabó Laura Nóra
     - Kiss-Gál Sára
     - Kovács Emma
@@ -20,8 +39,8 @@
     - Márton-Télessy Bence
     - Nagy Emma
     - Németh Balázs Viktor
-    - Országh Zoé
     - Ördögh Zoltán Benett
+    - Országh Zoé
     - Papp Nóra
     - Perényi Boglárka
     - Puskás Zalán
@@ -31,12 +50,12 @@
     - Szűcs Anna Boglárka
     - Tóth Zsuzsanna
 
-- class: '2a'
+- class: "3a"
   students:
     - Balázs Berill
-    - Czirok Gábor
     - Csáki Szofia
     - Csizmadia Bence
+    - Czirok Gábor
     - Dukai Viktória
     - Erdélyi Dominik
     - Erdélyi Dorka
@@ -48,27 +67,26 @@
     - Hágelmann Brenda
     - Horváth Anita Irén
     - Horváth Zsombor Sebestyén
-    - Józsa Zsófia
     - Laczkó Ádám
     - Lele Nóra
     - Mag Ádám
     - Ördögh Leila
     - Szűcs-Tóth Emma Mária
     - Tajti Benedek
-    - Takács Máté
 
-- class: '3a'
+- class: "4a"
   students:
+    - Balogh Benedek László
     - Barta Gergő Norbert
     - Berényi Fanni Margit
+    - Blaskó Zoé
     - Breszka Natasa
     - Császár Kornél
     - de Lamberterie Edmond László
     - Éder Barna
     - Fehér Izabella
     - Garamvölgyi Gellért
-    - Godó Réka
-    - Gyivicsán Zoé
+    - 🙂
     - Hadnagy Boglárka Zoé
     - Héger Viktor
     - Horváth Amanda
@@ -76,7 +94,7 @@
     - Kovács Balázs Martin
     - Losonczi-Tóth Eszter
     - Nagy Noel
-    - 🙂
+    - Németh Ádám Péter
     - Németh Vivien
     - Papp Csongor
     - Petró Nimród
@@ -84,9 +102,9 @@
     - Simon Bella Fruzsina
     - Sóki Izabella
     - Szakács János
-    - Varga Zselyke Melinda 
+    - Varga Zselyke Melinda
 
-- class: '4a'
+- class: "5a"
   students:
     - Annus Amina
     - Béres Bence
@@ -103,12 +121,12 @@
     - Kis Csaba
     - Miklós Erik
     - Nagy Konrád
-    - 🙂
+    - Németh Karolina Edina
     - Németh Zsolt György
     - Sántha Lili Gréta
     - Sirián Lili
     - Sörfőző Luca
-    - 🙂
+    - Szakács Márton
     - Szalai Ádám
     - Sztanó-Arany András
     - Szűcs Eliza Anna
@@ -118,7 +136,7 @@
     - Zámbó Zoltán Dominik
     - Zombori Nolen
 
-- class: '5a'
+- class: "6a"
   students:
     - Bernáth Eliza Fanni
     - 🙂
@@ -138,7 +156,7 @@
     - Kovács Patrik
     - Ktkani Natalia
     - Lele Ákos
-    - Lévai Bence
+    - 🙂
     - Mészáros Benedek Örs
     - Nagy Szófia
     - Nikovics Szabolcs
@@ -151,9 +169,10 @@
     - Vidumánszki Nimród Tamás
     - Vörös Léda
 
-- class: '6a'
+- class: "7a"
   students:
     - Ábrahám Médea
+    - Antal Dóra
     - Bogos Balázs
     - Dávid Damián Nolen
     - Erdélyi Rebeka
@@ -173,9 +192,8 @@
     - Tamás Abigél
     - Tarkó Bence Antal
     - Urbán Jázmin Lara
-    - Antal Dóra (magántanuló)
 
-- class: '7a'
+- class: "8a"
   students:
     - Ács Bence Balázs
     - Ács Petra Panka
@@ -196,38 +214,10 @@
     - Mikó Zalán
     - Nagy Lili
     - Németh Liliána Rozina
-    - Papp Lili Kitti
     - Petró Timót
     - Sebők Csenge Stefánia
     - Sipőcz Gina
     - Sztanojev Olívia
     - Tábit Máté Gábor
     - Tandari Ádám
-    - Tóth - Kalmár Anna
-
-- class: '8a'
-  students:
-    - Balatonyi Kincső
-    - Czékus Anna Diána
-    - Fazekas Panna
-    - Gaál Dávid Ferenc
-    - Havjár István
-    - Hódi Kamilla Haruka
-    - Janiga Bence
-    - Jánoska Kristóf
-    - Kakas Ádám
-    - Kalmár Ádám
-    - Laczkó Máté
-    - Lövey Zoltán Attila
-    - Meleg Zsombor László
-    - Nagy Amarillisz Rubina
-    - Pálfi Gergő
-    - Paschek Tamás Zoltán
-    - Pleskó Balázs József
-    - Rácz Liza
-    - Sári Milán
-    - Szászik Richárd
-    - Varga Szabolcs
-    - Varga Vivien Anna
-    - Vas Richárd
-    - Havai Hunor Áron (magántanuló)
+    - Tóth-Kalmár Anna
