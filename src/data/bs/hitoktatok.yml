@@ -1,19 +1,26 @@
 - job: hitoktató
   name: Török Péter
-  tel1: '+36306348179'
+  tel1: "+36306348179"
   tel2: +36 30 634 8179
   egyhaz: Magyar Katolikus Egyház
 
-- job: református lelkipásztor és vallástanár
-  name: Gyatyel Péter
-  mail: gyatyel.peter@reformatus.hu
-  tel1: '+36308260590'
-  tel2: +36 30 826 0590
-  egyhaz: Magyar Református Egyház
+- job: református vallástanár
+  name: Tóth Judit
+  tel1: "+36302786973"
+  tel2: +36 30 278 6973
+  egyhaz: magyar református egyház
 
 - job: hitoktató
   name: Olajos Barbara
-  egyhaz: Magyar Baptista Egyház
+  tel1: "+36208862157"
+  tel2: "+36 20 886 2157"
+  egyhaz: magyar baptista egyház
+
+- job: hitoktató
+  name: Holik György
+  tel1: "+36306009997"
+  tel2: "+36 30 600 9997"
+  egyhaz: magyar görögkatolikus egyház
 # - job: hitoktató
 #   name: Veres Zoltán
 #   egyhaz: Magyar Görögkatolikus Egyház

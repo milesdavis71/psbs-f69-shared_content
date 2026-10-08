@@ -3,24 +3,29 @@
   mail: tothluca322@gmail.com
   tel1: "+3662541956"
   tel2: +36 62 541 956
-  day: "kedd"
-  hour: "08:00–13.00"
+  availability:
+    - day: "kedd"
+      hour: "08:00–13.00"
+    - day: "szerda"
+      hour: "14:00–16.00"
 
 - job: Gyógypedagógus
   name: Mede Brigitta
   mail:
   tel1: "+36307362795"
   tel2: +36 30 7362795
-  day: "péntek"
-  hour: "13:00–13.45"
+  availability:
+    - day: "péntek"
+      hour: "13:00–13.45"
 
 - job: Logopédus
   name: Dusik-Balázs Dóra
   mail:
   tel1: "+36307362795"
   tel2: +36 30 7362795
-  day: szerda
-  hour: 14:45–15:30
+  availability:
+    - day: szerda
+      hour: 14:45–15:30
 
 - job: Védőnő
   name: Vona Dóra
@@ -33,8 +38,9 @@
   mail: karadag.emin@szeged-eszi.hu
   tel1: "+36307362795"
   tel2: +36 30 7362795
-  day: kedd
-  hour: 12:00–15:30
+  availability:
+    - day: kedd
+      hour: 12:00–15:30
 
 - job: Drogprevenciós tanácsadó
   name: Csala-Pellek Borbála r. őrnagy (Szegedi Rendőrkapitányság)

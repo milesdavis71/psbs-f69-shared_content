@@ -1,59 +1,59 @@
-- job: iskolapszichológus I.
-  name: Ficz Gábor
-  mail: igazgato@petofiszeged.hu
-  tel1: '+36307362795'
-  tel2: +36 30 736 2795
-
-- job: iskolapszichológus II.
-  name: Mészáros Adrienn
-  mail: igazgato@petofiszeged.hu
-  tel1: '+36307362795'
-  tel2: +36 30 736 2795
+- job: iskolapszichológus
+  name: Tóth Luca
+  mail: tothluca322@gmail.com
+  tel1: "+3662541956"
+  tel2: +36 62 541 956
+  availability:
+    - day: "hétfő"
+      hour: "08:00–13.00"
 
 - job: Gyógypedagógus I.
   name: Mede Brigitta
-  tel1: '+36307362795'
+  tel1: "+36307362795"
   tel2: +36 30 7362795
-  day: 'kedd'
-  hour: '14:00–14:45'
-
-- job: Gyógypedagógus II.
-  name: Bozóki Petra
-  tel1: '+36307362795'
-  tel2: +36 30 7362795
-  day: 'hétfő'
-  hour: '12:00–13:45'
+  availability:
+    - day: "hétfő"
+      hour: "11:00–15:45"
+    - day: "kedd"
+      hour: "09:00–09:45"
+    - day: "kedd"
+      hour: "14:00–14:45"
+    - day: "kedd"
+      hour: "15:00–15:45"
+    - day: "csütörtök"
+      hour: "09:00–09:45"
 
 - job: Logopédus
-  name: Dusik-Balázs Dóra
+  name: Kiss Boglárka
   mail:
-  tel1: '+36307362795'
+  tel1: "+36307362795"
   tel2: +36 30 7362795
-  day: szerda
-  hour: 09:00–09:45
+  availability:
+    - day: szerda
+      hour: 12:00–13:45
 
 - job: iskolaorvos
   name: Dr. Csilek Éva
 
 - job: Védőnő
   name: Bereczki Tímea
-  tel1: '+36305108256'
+  tel1: "+36305108256"
   tel2: +36 30 5108256
 
 - job: Iskolai szociális segítő
   name: Balogh Gábor
   mail: balogh.gabor@szeged-eszi.hu
-  tel1: '+36202932818'
+  tel1: "+36202932818"
   tel2: +36 20 2932818
 
 - job: Drogprevenciós tanácsadó
   name: Csala-Pellek Borbála r. őrnagy (Szegedi Rendőrkapitányság)
   mail: csalapb@csongrad.police.hu
-  tel1: '+3662562400'
+  tel1: "+3662562400"
   tel2: +36 62 562 400/48-56
 
 - job: Iskolarendőr
   name: Kőhegyi Árpád
   mail: kohegyia@csongrad.police.hu
-  tel1: '+36204986004'
+  tel1: "+36204986004"
   tel2: +36 20 4986004

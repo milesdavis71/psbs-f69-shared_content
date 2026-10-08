@@ -25,13 +25,15 @@
             {{/if}}
         </p>
       
-        {{#if day}}
+        {{#if availability}}
         <p>Személyes elérhetőség az iskolában:</p>
         <table class="hover">
+        {{#each availability}}
         <tr>
             <td>{{day}}</td>
             <td>{{hour}}</td>
         </tr>
+        {{/each}}
         </table>
         {{/if}}
     </div>
