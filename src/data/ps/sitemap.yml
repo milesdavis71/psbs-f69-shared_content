@@ -35,7 +35,7 @@ sections:
       - name: "Gyermekvédelem"
         status: ""
       - name: "Tankönyvek"
-        status: "❌"
+        status: "✅"
       - name: "Taneszközök"
         status: "✅"
       - name: "Regisztrált tehetségpont"

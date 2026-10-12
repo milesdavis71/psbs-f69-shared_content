@@ -35,7 +35,7 @@ sections:
       - name: "Gyermekvédelem"
         status: ""
       - name: "Tankönyvek"
-        status: "❌"
+        status: "✅"
       - name: "Taneszközök"
         status: "✅"
       - name: "Regisztrált tehetségpont"
@@ -139,12 +139,12 @@ sections:
         status: ""
 
   - name: "A tanév rendje"
-    status: "❌"
+    status: "✅"
 
   - name: "Osztályaink"
     status: "✅"
 
-  - name: "Órarendek"
+  - name: "Órarend"
     status: "❌"
 
   - name: "Szülői értekezletek, fogadóórák"
@@ -166,6 +166,7 @@ sections:
         status: "✅"
 
   - name: "Versenyeredmények"
+    statusz: "❌"
 
   - name: "Fotó archívum"
 
