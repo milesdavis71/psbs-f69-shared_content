@@ -1,7 +1,5 @@
-
-- Biológia 7-8. tankönyv az általános iskolák számára
 - Digitális kultúra 7.
-- Énekeskönyv 7.
+- Fizika tankönyv 7-8.
 - Földrajz 7-8. munkafüzet
 - Földrajz 7-8. tankönyv
 - Kémia 7-8. munkafüzet I. kötet
@@ -11,12 +9,9 @@
 - Irodalom munkafüzet 7.
 - Irodalom tankönyv 7.
 - Magyar nyelv Munkafüzet 7.
-- Történelem munkafüzet 7.
+- Magyar nyelv tankönyv 7.
 - Történelem 7. az általános iskolások számára
-- Képes történelmi atlasz általános iskolásoknak
 - Project Fourth edition UPGRADED Munkafüzet +Online Practice 3
-- Project Fourth edition UPGRADED Tankönyv + E-book 2
 - Project Fourth edition UPGRADED Tankönyv + E-book 3
-- Project Fourth edition UPGRADED Munkafüzet + Online Practice 2
-
-
+- Szövegértést fejlesztő gyakorlatok 7. online melléklettel
+- Énekeskönyv 7.

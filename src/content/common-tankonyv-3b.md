@@ -1,6 +1,6 @@
-
 - Digitális kultúra 3.
 - Ének-zene 3.
+- Etika 3. Beszélgessünk!
 - Környezetismeret munkafüzet 3.
 - Környezetismeret tankönyv 3.
 - Matematika munkafüzet 3. osztályosoknak I. kötet
@@ -12,5 +12,5 @@
 - Hétszínvirág olvasókönyv 3.
 - Szövegalkotás 3. munkafüzet
 - Nyelvtan és helyesírás 3. tankönyv
-
-
+- Sakkpalota 3. Képességfejlesztő feladatgyűjtemény
+- Sakkpalota 4. Képességfejlesztő feladatgyűjtemény
