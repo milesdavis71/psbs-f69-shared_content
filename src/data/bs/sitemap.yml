@@ -48,7 +48,7 @@ sections:
   - name: "Étkezési információk"
     items:
       - name: "Befizetési időpontok az NGSZ-nél"
-        status: "❌"
+        status: "✅"
       - name: "Étkezési térítési díjak"
         status: "✅"
       - name: "Közétkeztetés – NGSZ weboldal"

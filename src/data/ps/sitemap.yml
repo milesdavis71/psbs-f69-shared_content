@@ -48,7 +48,7 @@ sections:
   - name: "Étkezési információk"
     items:
       - name: "Befizetési időpontok az NGSZ-nél"
-        status: "❌"
+        status: "✅"
       - name: "Étkezési térítési díjak"
         status: "✅"
       - name: "Közétkeztetés – NGSZ weboldal"
@@ -139,12 +139,12 @@ sections:
         status: ""
 
   - name: "A tanév rendje"
-    status: "❌"
+    status: "✅"
 
   - name: "Osztályaink"
     status: "✅"
 
-  - name: "Órarendek"
+  - name: "Órarend"
     status: "❌"
 
   - name: "Szülői értekezletek, fogadóórák"
@@ -161,11 +161,12 @@ sections:
       - name: "Egyéni fejlesztés"
         status: "❌"
       - name: "Szakkörök, tehetséggondozás"
-        status: "❌"
+        status: "✅"
       - name: "Szaktárgyi korrepetálások"
         status: "❌"
 
   - name: "Versenyeredmények"
+    status: "❌"
 
   - name: "Fotó archívum"
 
