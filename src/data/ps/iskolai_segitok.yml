@@ -19,13 +19,13 @@
       hour: "13:00–13.45"
 
 - job: Logopédus
-  name: Dusik-Balázs Dóra
+  name: Kiss Bogárka 
   mail:
   tel1: "+36307362795"
   tel2: +36 30 7362795
   availability:
-    - day: szerda
-      hour: 14:45–15:30
+    - day: hétfő
+      hour: 14:00–14:45
 
 - job: Védőnő
   name: Vona Dóra
