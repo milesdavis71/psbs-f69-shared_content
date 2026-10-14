@@ -2,17 +2,11 @@
   name: Dr. Tóth Ildikó Éva
   tel1: '+3662425370'
   tel2: +36 62 425 370
-  egyhaz: Magyar Katolikus Egyház
+  egyhaz: magyar katolikus egyház
 
-- job: református lelkipásztor és vallástanár
-  name: Gyatyel Péter
-  mail: gyatyel.peter@reformatus.hu
-  tel1: '+36308260590'
-  tel2: +36 30 826 0590
-  egyhaz: Magyar Református Egyház
+- job: református vallástanár
+  name: Tóth Judit
+  tel1: "+36302786973"
+  tel2: +36 30 278 6973
+  egyhaz: magyar református egyház
 
-- job: hitoktató
-  name: Megyesi Zoltán
-  tel1: '+36207750600'
-  tel2: +36 20 775 0600
-  egyhaz: Magyar Baptista Egyház
