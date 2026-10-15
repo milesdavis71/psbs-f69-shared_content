@@ -159,9 +159,9 @@ sections:
   - name: "Tanórán kívüli foglalkozások"
     items:
       - name: "Egyéni fejlesztés"
-        status: "❌"
+        status: "✅"
       - name: "Szakkörök, tehetséggondozás"
-        status: "❌"
+        status: "✅"
       - name: "Szaktárgyi korrepetálások"
         status: "✅"
 
