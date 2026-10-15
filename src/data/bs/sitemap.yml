@@ -145,7 +145,7 @@ sections:
     status: "✅"
 
   - name: "Órarend"
-    status: "❌"
+    status: "✅"
 
   - name: "Szülői értekezletek, fogadóórák"
     items:

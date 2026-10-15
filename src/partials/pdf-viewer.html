@@ -2,8 +2,10 @@
 pdfUrl kulcsot: --- layout: default title: Dokumentum címe pdfUrl:
 /assets/pdf/ps/dokumentum.pdf --- 2. Az oldal body részében hívd meg a
 partial-t: { {>pdf-viewer} } (szóközök nélkül) Vagy paraméterrel: { {>pdf-viewer
-pdfUrl="/assets/pdf/common/dokumentum.pdf"} } (szóközök nélkül) Példa teljes
-használat: src/pages/ps/pdf-teszt.html --}}
+pdfUrl="/assets/pdf/common/dokumentum.pdf"} } (szóközök nélkül) Opció:
+fitWidth=true esetén desktop nézetben (min. 640px széles ablak) a PDF
+alapértelmezetten teljes szélességben (page-width zoom) nyílik meg. Példa
+teljes használat: src/pages/ps/pdf-teszt.html --}}
 <div class="grid-container">
     <div class="callout">
         <div
@@ -263,6 +265,9 @@ használat: src/pages/ps/pdf-teszt.html --}}
     }
 
     const pdfUrl = '{{pdfUrl}}'
+    // Opcionális fitWidth paraméter: desktop nézetben a PDF
+    // alapértelmezetten teljes szélességben (page-width) nyílik meg.
+    const fitWidth = {{#if fitWidth}}true{{else}}false{{/if}}
 
     function initPdfViewer() {
         if (!pdfUrl) {
@@ -275,10 +280,18 @@ használat: src/pages/ps/pdf-teszt.html --}}
             return
         }
 
-        const result = PDFObject.embed(pdfUrl, '#pdfViewer', {
+        const embedOptions = {
             fallbackLink:
                 "<p>Ez a böngésző nem támogatja a beágyazott PDF megjelenítést. <a href='[url]'>PDF letöltése</a></p>",
-        })
+        }
+
+        // Desktop nézet (Foundation medium breakpoint, 640px+):
+        // alapértelmezett zoom = oldal szélessége (teljes szélesség).
+        if (fitWidth && window.matchMedia('(min-width: 640px)').matches) {
+            embedOptions.pdfOpenParams = { zoom: 'page-width' }
+        }
+
+        const result = PDFObject.embed(pdfUrl, '#pdfViewer', embedOptions)
 
         if (!result) {
             showError('Nem sikerült beágyazni a PDF fájlt.')
