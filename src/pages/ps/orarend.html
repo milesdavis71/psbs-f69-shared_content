@@ -2,7 +2,9 @@
 layout: two_columns_ps
 title: Órarend
 page: orarend
+hamarosan: false
 ---
 {{>title}}
-<!-- {{> common-hamarosan}} -->
+{{#hamarosan}}
 {{>pdf-viewer pdfUrl="/assets/pdf/ps/orarend-2026-27.pdf"}}
+{{/hamarosan}}

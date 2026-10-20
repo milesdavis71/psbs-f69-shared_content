@@ -6,8 +6,10 @@ dataFile: 5_beiratkozastol_foto_archivumig
 dataKey: szaktargyi_korrepetalasok
 schoolKey: ps
 tableColumns: 3
+hamarosan: true
 ---
 {{> breadcrumb}}
 {{> title}}
-{{> common-hamarosan}}
-<!-- {{> schooldata-dynamic-table}} -->
+{{#hamarosan}}
+{{> schooldata-dynamic-table}}
+{{/hamarosan}}

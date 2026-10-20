@@ -6,10 +6,11 @@ dataFile: 5_beiratkozastol_foto_archivumig
 dataKey: szakkorok
 schoolKey: ps
 tableColumns: 3
+hamarosan: false
 ---
 {{> breadcrumb}}
 {{> title}}
-<!-- {{>common-hamarosan}} -->
+{{#hamarosan}}
 
 {{#markdown}}
 | Szakkör neve | osztály | Időpont |
@@ -32,3 +33,4 @@ tableColumns: 3
 
 
 {{/markdown}}
+{{/hamarosan}}

@@ -6,9 +6,11 @@ dataFile: 4b_kozzeteteli_lista
 dataKey: szaktargyi_korrepetalasok
 schoolKey: bs
 tableColumns: 3
+hamarosan: true
 ---
 {{> breadcrumb}}
 {{>title}}
-{{>common-hamarosan}}
+{{#hamarosan}}
 
-<!-- {{> schooldata-dynamic-table}} -->
+{{> schooldata-dynamic-table}}
+{{/hamarosan}}

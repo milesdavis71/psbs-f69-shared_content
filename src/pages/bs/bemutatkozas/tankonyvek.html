@@ -4,8 +4,10 @@ title: Tankönyvlista
 page: tankonyvek
 dataFile: 02b_bemutatkozas
 school_suffix: b
+hamarosan: false
 ---
 {{> breadcrumb}}
 {{>title}}
-{{> common-hamarosan}}
+{{#hamarosan}}
 {{> tankonyv-accordion suffix=school_suffix}}
+{{/hamarosan}}

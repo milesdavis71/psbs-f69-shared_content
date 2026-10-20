@@ -4,8 +4,10 @@ title: Fogadóórák
 page: fogadoorak
 dataFile: 5_beiratkozastol_foto_archivumig
 schoolKey: ps
+hamarosan: true
 ---
 {{> breadcrumb}}
 {{> title}}
-{{> common-hamarosan}}
-<!-- {{> schooldata-fogadoorak}} -->
+{{#hamarosan}}
+{{> schooldata-fogadoorak}}
+{{/hamarosan}}

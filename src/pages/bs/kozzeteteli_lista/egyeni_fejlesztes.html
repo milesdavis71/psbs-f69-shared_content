@@ -6,8 +6,10 @@ dataFile: 4b_kozzeteteli_lista
 dataKey: egyeni_fejlesztes
 schoolKey: bs
 tableColumns: 3
+hamarosan: true
 ---
 {{> breadcrumb}}
 {{>title}}
-{{>common-hamarosan}}
-<!-- {{> schooldata-dynamic-table}} -->
+{{#hamarosan}}
+{{> schooldata-dynamic-table}}
+{{/hamarosan}}
