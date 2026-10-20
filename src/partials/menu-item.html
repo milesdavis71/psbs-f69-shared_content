@@ -1,6 +1,6 @@
-<li class="{{#ifpage page}}current is-active{{/ifpage}} {{#if childPages}}{{#ifpageInList childPages}}current is-active{{/ifpageInList}}{{/if}} {{#if noColor}}no-color-change{{/if}}" 
+<li class="{{#ifpageInMenu page folder}}current is-active{{/ifpageInMenu}} {{#if childPages}}{{#ifpageInList childPages}}current is-active{{/ifpageInList}}{{/if}} {{#if noColor}}no-color-change{{/if}}" 
     {{#if items}}data-accordion-item{{/if}}
-    {{#if items}}{{#ifpage page}}aria-expanded="true"{{/ifpage}}{{#if childPages}}{{#ifpageInList childPages}}aria-expanded="true"{{/ifpageInList}}{{/if}}{{/if}}
+    {{#if items}}{{#ifpageInMenu page folder}}aria-expanded="true"{{/ifpageInMenu}}{{#if childPages}}{{#ifpageInList childPages}}aria-expanded="true"{{/ifpageInList}}{{/if}}{{/if}}
     {{#if url}}data-menu-url="{{#if external}}{{url}}{{else}}/{{#if folder}}{{folder}}/{{/if}}{{url}}{{/if}}"{{/if}}>
     
     {{#if items}}
@@ -9,8 +9,8 @@
            {{#if external}}target="_blank" rel="noopener noreferrer"{{/if}}>
             {{#if icon}}<i class="fas fa-{{icon}}"></i> {{/if}}{{title}}
         </a>
-        <ul class="menu vertical nested {{#ifpage page}}is-active{{/ifpage}} {{#if childPages}}{{#ifpageInList childPages}}is-active{{/ifpageInList}}{{/if}}" data-submenu>
-            {{#each items}}
+        <ul class="menu vertical nested {{#ifpageInMenu page folder}}is-active{{/ifpageInMenu}} {{#if childPages}}{{#ifpageInList childPages}}is-active{{/ifpageInList}}{{/if}}" data-submenu>
+            {{#each (megosztottAloldalak items)}}
                 {{!-- Rekurzív hívás: önmagát hívja meg az újabb szintekhez --}}
                 {{> menu-item this}}
             {{/each}}

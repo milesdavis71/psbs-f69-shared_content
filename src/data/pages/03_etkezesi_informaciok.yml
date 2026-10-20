@@ -11,9 +11,8 @@
       page: "befiz_idopontok_ngsz"
       url: befiz_idopontok_ngsz
       folder: etkezesi_informaciok
-    - title: Étkezési térítési díjak
-      page: "etkezes_teritesi_dijak"
-      url: etkezes_teritesi_dijak
+    # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
+    - shared: etkezes_teritesi_dijak
       folder: etkezesi_informaciok
     - title: Közétkeztetés – NGSZ weboldal
       url: https://ngsz.hu/2021/01/01/kozetkeztetes/

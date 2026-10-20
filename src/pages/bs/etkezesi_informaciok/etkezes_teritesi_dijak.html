@@ -2,22 +2,11 @@
 layout: default_bs
 title: Étkezési térítési díjak
 page: etkezes_teritesi_dijak
-dataFile: 03_etkezesi_informaciok
-date: 2026 július 27-től
-
-norm-tiz: 228,6
-norm-ebed: 812,8
-norm-uzs: 228,6
-norm-sum: 1269,8
-
-diet-tiz: 279,4
-diet-ebed: 952,5
-diet-uzs: 279,4
-diet-sum: 1511,3
-
-adult-norm-ebed: 1892,3
-adult-diet-ebed: 2400,3
+menu: etkezesi_informaciok
+menuFile: 03_etkezesi_informaciok
 ---
 {{> breadcrumb}}
 {{> title}}
+{{#megosztottTartalom 'etkezes_teritesi_dijak'}}
 {{> common-etkezesi-teritesi-dijak}}
+{{/megosztottTartalom}}

@@ -1,4 +1,5 @@
 const _ = require('lodash')
+const megosztottAloldalak = require('./megosztottAloldalak.js')
 
 /**
  * Breadcrumbs helper - builds a breadcrumb trail for the current page
@@ -8,9 +9,12 @@ const _ = require('lodash')
 module.exports = function (options) {
     const root = options.data?.root || options.data || this?.root || this
 
-    // Read page and dataFile from frontmatter
+    // Read page and menu/dataFile from frontmatter
+    // A megosztott aloldalaknál a `menuFile` mutat a saját menü strukturális
+    // adataira (így a breadcrumb a menünek megfelelő útvonalat mutatja)
     const currentPage = this.page || root.page
-    const dataFileName = this.dataFile || root.dataFile
+    const dataFileName =
+        this.menuFile || root.menuFile || this.dataFile || root.dataFile
 
     if (!root || !currentPage || !dataFileName) return []
 
@@ -61,8 +65,14 @@ module.exports = function (options) {
         return null
     }
 
+    // A `shared:` helyőrzők feloldása, hogy a megosztott aloldalak is
+    // megtalálhatók legyenek a menü-struktúrában
+    const resolvedDataFile = megosztottAloldalak(dataFile, {
+        data: { root: root },
+    })
+
     // Find the path to the current page
-    const pagePath = findPagePath(dataFile, currentPage)
+    const pagePath = findPagePath(resolvedDataFile, currentPage)
 
     if (pagePath) {
         pagePath.forEach((item, index) => {

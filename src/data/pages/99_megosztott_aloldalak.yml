@@ -1,0 +1,106 @@
+# Megosztott aloldalak központi definíciója
+#
+# Azoknak az aloldalaknak a definíciói, amelyek egyszerre jelennek meg
+# több fő menüpontban (pl. a Közzétételi listában és a saját fő menüpontjukban).
+# A tartalom egységesen EGY helyen szerkeszthető: az itt megadott `page`
+# oldalnévhez tartozó egyetlen oldalfájlban.
+#
+# A menü-adatfájlokban (02b_bemutatkozas.yml, 02p_bemutatkozas.yml,
+# 03_etkezesi_informaciok.yml, 04b_kozzeteteli_lista.yml,
+# 04p_kozzeteteli_lista.yml, 05_beiratkozastol_foto_archivumig.yml)
+# az adott aloldal helyén csak ez áll:   - shared: <key>
+#
+# Mezők:
+#   key    - a hivatkozáshoz használt azonosító (a `shared:` értéke)
+#   title  - a menüben megjelenő cím
+#   page   - az oldal fájlneve (a front matter `page` mezője) - ez alapján
+#            történik az aktív állapot kijelölése mindkét menüben
+#   url    - az URL utolsó szakasza
+#   folder - az URL mappa része; a link: /<folder>/<url>
+
+# Megosztott aloldalak központi definíciója
+#
+# Azoknak az aloldalaknak a definíciói, amelyek egyszerre jelennek meg
+# több fő menüpontban (pl. a Közzétételi listában és a saját fő menüpontjukban).
+# A tartalom EGY helyen szerkeszthető: az azonos fájlnevű oldal-példányok
+# (pl. bemutatkozas/szmsz.html és kozzeteli_lista/szmsz.html) ugyanazokat a
+# partialokat/adatokat használják, az itt lévő adatokból dolgoznak.
+#
+# A menü-adatfájlokban (02b, 02p, 03, 04b, 04p, 05) az adott aloldal helyén
+# ez áll:   - shared: <key>   +   folder: <a fő menü mappája>
+#
+# Mezők:
+#   key       - a hivatkozáshoz használt azonosító (a `shared:` értéke)
+#   title     - a menüben megjelenő cím
+#   page      - az oldal fájlneve (mindkét példányon azonos) - az aktív állapot
+#               és a hamarosan kapcsoló feloldása alapja
+#   url       - az URL utolsó szakasza (megegyezik a page mezővel)
+#   folder    - a "fő" (elsődleges) példány mappája
+#   hamarosan - opcionális; ha a megosztott oldal {{#hamarosan}} blokkot használ,
+#               itt kapcsolható (iskolánként: bs / ps)
+#   egyéb mezők - pl. az étkezési díj adatok: a {{#megosztottTartalom}} helper
+#               ezeket teszi a partial contextuséba
+
+megosztott_aloldalak:
+  - key: etkezes_teritesi_dijak
+    title: Étkezési térítési díjak
+    page: etkezes_teritesi_dijak
+    url: etkezes_teritesi_dijak
+    folder: etkezesi_informaciok
+    date: 2026 július 27-től
+    norm-tiz: 228,6
+    norm-ebed: 812,8
+    norm-uzs: 228,6
+    norm-sum: 1269,8
+    diet-tiz: 279,4
+    diet-ebed: 952,5
+    diet-uzs: 279,4
+    diet-sum: 1511,3
+    adult-norm-ebed: 1892,3
+    adult-diet-ebed: 2400,3
+
+  - key: ped_program
+    title: Pedagógiai program
+    page: ped_program
+    url: ped_program
+    folder: bemutatkozas
+
+  - key: szmsz
+    title: SZMSZ
+    page: szmsz
+    url: szmsz
+    folder: bemutatkozas
+
+  - key: hazirend
+    title: Házirend
+    page: hazirend
+    url: hazirend
+    folder: bemutatkozas
+
+  - key: egyeni_fejlesztes
+    title: Egyéni fejlesztés
+    page: egyeni_fejlesztes
+    url: egyeni_fejlesztes
+    folder: tanoran_kivuli_foglalkozasok
+    hamarosan:
+      bs: false
+      ps: true
+
+  - key: szakkorok_tehetseggondozas
+    title: Szakkörök, tehetséggondozás
+    page: szakkorok
+    url: szakkorok
+    folder: tanoran_kivuli_foglalkozasok
+    hamarosan:
+      bs: false
+      ps: false
+
+  - key: szaktargyi_korrepetalasok
+    title: Szaktárgyi korrepetálások
+    page: szaktargyi_korrepetalasok
+    url: szaktargyi_korrepetalasok
+    folder: tanoran_kivuli_foglalkozasok
+    hamarosan:
+      bs: false
+      ps: true
+

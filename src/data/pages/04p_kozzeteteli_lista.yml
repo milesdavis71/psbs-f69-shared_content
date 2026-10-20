@@ -31,10 +31,9 @@
       page: "teritesi_dij"
       url: teritesi_dij
       folder: kozzeteteli_lista
-    - title: Étkezési térítési díjak
-      page: "kozzetetel_etkezesi_teritesi_dijak"
-      url: kozzetetel_etkezesi_teritesi_dijak
-      folder: kozzeteteli_lista
+    # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
+    - shared: etkezes_teritesi_dijak
+      folder: kozzeteli_lista
     - title: Fenntartói értékelés, nyilvános megállapításokat tartalmazó vizsgálatok
       page: "nyilvanos_vizsgalat"
       url: nyilvanos_vizsgalat
@@ -63,18 +62,15 @@
           page: "pedagogus_tanfelugyelet_eredmenye"
           url: "pedagogus_tanfelugyelet_eredmenye"
           folder: kozzeteteli_lista
-    - title: SZMSZ
-      page: "kozzetetel_szmsz"
-      url: kozzetetel_szmsz
-      folder: kozzeteteli_lista
-    - title: Házirend
-      page: "kozzetetel_hazirend"
-      url: kozzetetel_hazirend
-      folder: kozzeteteli_lista
-    - title: Pedagógiai program
-      page: "kozzetetel_ped_program"
-      url: kozzetetel_ped_program
-      folder: kozzeteteli_lista
+    # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
+    - shared: szmsz
+      folder: kozzeteli_lista
+    # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
+    - shared: hazirend
+      folder: kozzeteli_lista
+    # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
+    - shared: ped_program
+      folder: kozzeteli_lista
     - title: Értékelési rendszer helyi szabályzata
       page: "ertekelesi_rendszer_szabalyzat"
       url: ertekelesi_rendszer_szabalyzat
@@ -99,18 +95,15 @@
       page: "tanoran_kivuli_foglalkozasok_igenybevetelenek_lehetosege_root" # Ez a 2. szintű szülő
       url: tanoran_kivuli_foglalkozasok_igenybevetelenek_lehetosege
       items: # <--- Itt kezdődik a HARMADIK mélység (al-almenü)
-        - title: Egyéni fejlesztés
-          page: "egyeni_fejlesztes"
-          url: egyeni_fejlesztes
-          folder: kozzeteteli_lista
-        - title: Szakkörök, tehetséggondozás
-          page: "szakkorok_tehetseggondozas"
-          url: "szakkorok_tehetseggondozas"
-          folder: kozzeteteli_lista
-        - title: Szaktárgyi_korrepetálások
-          page: "szaktargyi_korrepetalasok"
-          url: "szaktargyi_korrepetalasok"
-          folder: kozzeteteli_lista
+        # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
+        - shared: egyeni_fejlesztes
+          folder: kozzeteli_lista
+        # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
+        - shared: szakkorok_tehetseggondozas
+          folder: kozzeteli_lista
+        # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
+        - shared: szaktargyi_korrepetalasok
+          folder: kozzeteli_lista
     - title: Hétvégi házi feladatok, dolgozatok szabályai
       page: "hetvegi_hazi_feladatok_dolgozatok_szabalyai"
       url: hetvegi_hazi_feladatok_dolgozatok_szabalyai

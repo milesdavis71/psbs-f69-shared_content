@@ -28,14 +28,12 @@
       page: 'felekezetek_bemutatkozasa'
       url: 'felekezetek_bemutatkozasa'
       folder: 'bemutatkozas'
-    - title: Pedagógiai program
-      page: 'bemutatk_ped_program'
-      url: 'bemutatk_ped_program'
-      folder: 'bemutatkozas'
-    - title: SZMSZ
-      page: 'bemutatk_szmsz'
-      url: 'bemutatk_szmsz'
-      folder: 'bemutatkozas'
+    # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
+    - shared: ped_program
+      folder: bemutatkozas
+    # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
+    - shared: szmsz
+      folder: bemutatkozas
     # - title: Kollektív szerződés
     #   page: 'kollektiv_szerzodes'
     #   url: 'kollektiv_szerzodes'
@@ -44,10 +42,9 @@
     #   page: 'imip'
     #   url: 'imip'
     #   folder: 'bemutatkozas'
-    - title: Házirend
-      page: 'bemutatk_hazirend'
-      url: 'bemutatk_hazirend'
-      folder: 'bemutatkozas'
+    # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
+    - shared: hazirend
+      folder: bemutatkozas
     - title: Gyermekvédelem
       page: 'gyermekvedelem'
       url: 'gyermekvedelem'
