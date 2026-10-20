@@ -1,22 +1,22 @@
-<li class="{{#ifpageInMenu page folder}}current is-active{{/ifpageInMenu}} {{#if childPages}}{{#ifpageInList childPages}}current is-active{{/ifpageInList}}{{/if}} {{#if noColor}}no-color-change{{/if}}" 
+<li class="{{#ifpageInMenu page menu}}current is-active{{/ifpageInMenu}} {{#if childPages}}{{#ifpageInList childPages}}current is-active{{/ifpageInList}}{{/if}} {{#if noColor}}no-color-change{{/if}}" 
     {{#if items}}data-accordion-item{{/if}}
-    {{#if items}}{{#ifpageInMenu page folder}}aria-expanded="true"{{/ifpageInMenu}}{{#if childPages}}{{#ifpageInList childPages}}aria-expanded="true"{{/ifpageInList}}{{/if}}{{/if}}
+    {{#if items}}{{#ifpageInMenu page menu}}aria-expanded="true"{{/ifpageInMenu}}{{#if childPages}}{{#ifpageInList childPages}}aria-expanded="true"{{/ifpageInList}}{{/if}}{{/if}}
     {{#if url}}data-menu-url="{{#if external}}{{url}}{{else}}/{{#if folder}}{{folder}}/{{/if}}{{url}}{{/if}}"{{/if}}>
     
     {{#if items}}
-        <a href="{{#if external}}{{url}}{{else}}/{{#if folder}}{{folder}}/{{/if}}{{url}}{{/if}}"
+        <a href="{{#if external}}{{url}}{{else}}/{{#if folder}}{{folder}}/{{/if}}{{url}}{{{query}}}{{/if}}"
            class="accordion-title"
            {{#if external}}target="_blank" rel="noopener noreferrer"{{/if}}>
             {{#if icon}}<i class="fas fa-{{icon}}"></i> {{/if}}{{title}}
         </a>
-        <ul class="menu vertical nested {{#ifpageInMenu page folder}}is-active{{/ifpageInMenu}} {{#if childPages}}{{#ifpageInList childPages}}is-active{{/ifpageInList}}{{/if}}" data-submenu>
+        <ul class="menu vertical nested {{#ifpageInMenu page menu}}is-active{{/ifpageInMenu}} {{#if childPages}}{{#ifpageInList childPages}}is-active{{/ifpageInList}}{{/if}}" data-submenu>
             {{#each (megosztottAloldalak items)}}
                 {{!-- Rekurzív hívás: önmagát hívja meg az újabb szintekhez --}}
                 {{> menu-item this}}
             {{/each}}
         </ul>
     {{else}}
-        <a href="{{#if external}}{{url}}{{else}}/{{#if folder}}{{folder}}/{{/if}}{{url}}{{/if}}"
+        <a href="{{#if external}}{{url}}{{else}}/{{#if folder}}{{folder}}/{{/if}}{{url}}{{{query}}}{{/if}}"
            {{#if external}}target="_blank" rel="noopener noreferrer"{{/if}}>
             {{#if icon}}<i class="fas fa-{{icon}}"></i> {{/if}} {{#if logo}} <img src="/assets/img/common/{{logo}}" alt=""> {{/if}} {{title}}
         </a>

@@ -46,7 +46,7 @@ megosztott_aloldalak:
     title: Étkezési térítési díjak
     page: etkezes_teritesi_dijak
     url: etkezes_teritesi_dijak
-    folder: etkezesi_informaciok
+    folder: megosztott
     date: 2026 július 27-től
     norm-tiz: 228,6
     norm-ebed: 812,8
@@ -63,25 +63,25 @@ megosztott_aloldalak:
     title: Pedagógiai program
     page: ped_program
     url: ped_program
-    folder: bemutatkozas
+    folder: megosztott
 
   - key: szmsz
     title: SZMSZ
     page: szmsz
     url: szmsz
-    folder: bemutatkozas
+    folder: megosztott
 
   - key: hazirend
     title: Házirend
     page: hazirend
     url: hazirend
-    folder: bemutatkozas
+    folder: megosztott
 
   - key: egyeni_fejlesztes
     title: Egyéni fejlesztés
     page: egyeni_fejlesztes
     url: egyeni_fejlesztes
-    folder: tanoran_kivuli_foglalkozasok
+    folder: megosztott
     hamarosan:
       bs: false
       ps: true
@@ -90,7 +90,7 @@ megosztott_aloldalak:
     title: Szakkörök, tehetséggondozás
     page: szakkorok
     url: szakkorok
-    folder: tanoran_kivuli_foglalkozasok
+    folder: megosztott
     hamarosan:
       bs: false
       ps: false
@@ -99,7 +99,7 @@ megosztott_aloldalak:
     title: Szaktárgyi korrepetálások
     page: szaktargyi_korrepetalasok
     url: szaktargyi_korrepetalasok
-    folder: tanoran_kivuli_foglalkozasok
+    folder: megosztott
     hamarosan:
       bs: false
       ps: true

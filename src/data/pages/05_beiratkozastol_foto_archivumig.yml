@@ -65,10 +65,10 @@
   items:
     # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
     - shared: egyeni_fejlesztes
-      folder: tanoran_kivuli_foglalkozasok
+      menu: tanoran_kivuli_foglalkozasok
     # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
     - shared: szakkorok_tehetseggondozas
-      folder: tanoran_kivuli_foglalkozasok
+      menu: tanoran_kivuli_foglalkozasok
     # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
     - shared: szaktargyi_korrepetalasok
-      folder: tanoran_kivuli_foglalkozasok
+      menu: tanoran_kivuli_foglalkozasok

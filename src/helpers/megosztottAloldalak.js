@@ -55,6 +55,11 @@ function resolveList(list, sharedEntries) {
                 // (build közben közös) adat nem módosul.
                 resolved = _.assign({}, entry, _.omit(item, ['shared']))
             }
+                // A `?m=` query paraméter jelöli, melyik fő menüből történt
+                // a kattintás - az app.js eszeren jelöli ki az aktív menüt.
+                if (resolved.menu) {
+                    resolved.query = '?m=' + encodeURIComponent(resolved.menu)
+                }
         }
 
         if (resolved && Array.isArray(resolved.items)) {

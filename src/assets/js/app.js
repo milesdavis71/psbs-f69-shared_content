@@ -80,8 +80,63 @@ $(document).ready(function () {
         }
     }
 
+    // Megosztott aloldalak (99_megosztott_aloldalak): a menü linkek
+    // `?m=<főmenü>` paraméterrel jelölik, melyik fő menüből kattintottak az
+    // oldalra. Itt állítjuk be, hogy csak az adott menü legyen aktív.
+    function fixSharedMenuActive(currentPath) {
+        let wanted = null
+        try {
+            wanted = new URLSearchParams(window.location.search).get('m')
+        } catch (e) {
+            return
+        }
+        if (!wanted) return
+
+        // A kért menühöz tartozó, az aktuális oldalra mutató linkek
+        const $wanted = $('.accordion-menu a[href]').filter(function () {
+            const href = $(this).attr('href') || ''
+            let u
+            try {
+                u = new URL(href, window.location.origin)
+            } catch (e) {
+                return false
+            }
+            return (
+                normalizePath(u.pathname) === currentPath &&
+                u.searchParams.get('m') === wanted
+            )
+        })
+        // Ha nincs egyező elem, nem megosztott oldal (?m= figyelmen kívül hagyása)
+        if (!$wanted.length) return
+
+        // A többi, ugyanarra az oldalra mutató (másik menüből való) elem
+        // aktív jelölésének levétele
+        $('.accordion-menu li.current').each(function () {
+            const $li = $(this)
+            const href = $li.children('a').first().attr('href') || ''
+            let u
+            try {
+                u = new URL(href, window.location.origin)
+            } catch (e) {
+                return
+            }
+            if (
+                normalizePath(u.pathname) === currentPath &&
+                u.searchParams.get('m') !== wanted
+            ) {
+                $li.removeClass('current is-active')
+            }
+        })
+
+        // A kért menü elemeire az aktív jelölés
+        $wanted.closest('li').addClass('current is-active')
+    }
+
     function forceOpenMenu() {
         const currentPath = normalizePath(window.location.pathname)
+
+        // 0. Megosztott aloldalak: az aktív menü javítása a ?m= paraméter alapján
+        fixSharedMenuActive(currentPath)
 
         // 1. Keressük meg az aktív menüelemet (minden szinten)
         var $activeItem = $('.accordion-menu li.current').first()

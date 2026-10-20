@@ -13,7 +13,7 @@
       folder: etkezesi_informaciok
     # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
     - shared: etkezes_teritesi_dijak
-      folder: etkezesi_informaciok
+      menu: etkezesi_informaciok
     - title: Közétkeztetés – NGSZ weboldal
       url: https://ngsz.hu/2021/01/01/kozetkeztetes/
       external: true

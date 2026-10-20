@@ -30,10 +30,10 @@
       folder: 'bemutatkozas'
     # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
     - shared: ped_program
-      folder: bemutatkozas
+      menu: bemutatkozas
     # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
     - shared: szmsz
-      folder: bemutatkozas
+      menu: bemutatkozas
     # - title: Kollektív szerződés
     #   page: 'kollektiv_szerzodes'
     #   url: 'kollektiv_szerzodes'
@@ -44,7 +44,7 @@
     #   folder: 'bemutatkozas'
     # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
     - shared: hazirend
-      folder: bemutatkozas
+      menu: bemutatkozas
     - title: Gyermekvédelem
       page: 'gyermekvedelem'
       url: 'gyermekvedelem'

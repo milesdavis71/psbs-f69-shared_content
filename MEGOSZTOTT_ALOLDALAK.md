@@ -1,37 +1,40 @@
-# Megosztott aloldalak – egy tartalom, két menüpont, két URL
+# Megosztott aloldalak – egy helyen szerkeszthetők, két menüpontban jelennek meg
 
 ## Mi ez?
 
-Azok az aloldalak, amelyek két fő menüpontban is szerepelnek (pl. Közzétételi lista + saját menüje), mostantól **egy helyen szerkeszthetők**: mindkét fő menühöz külön oldal-példány van, de **azonos fájlnevvel** (így az URL-ben csak a főmenü/mappa tér el: `/bemutatkozas/szmsz` és `/kozzeteli_lista/szmsz`), és a tartalom ugyanabból a közös forrásból jön. A menüben **csak az a fő menüpont nyílik ki és lesz aktív, amelyikből az oldalt megnyitották**.
+Azok az aloldalak, amelyek két fő menüpontban is szerepelnek (pl. Közzétételi lista + saját menüje), **csak egy helyen, a `megosztott/` mappában léteznek** (`src/pages/bs/megosztott/` és `src/pages/ps/megosztott/`). A menüsorban mindkét fő menüpontban megjelennek, és **csak az a menü nyílik ki / lesz aktív, amelyikből az oldalra kattintottak**.
 
 ## Hogyan működik?
 
-- **Azonos fájlnevek:** minden megosztott aloldalból két példány van (pl. `bemutatkozas/szmsz.html` + `kozzeteli_lista/szmsz.html`); a front matterben a `menu: <főmenü-mappa>` dönti el, melyik menü aktív az adott URL-en.
-- **Központi definíció:** `src/data/pages/99_megosztott_aloldalak.yml` – cím (`title`), oldalnév (`page`), link (`url` + `folder`), opcionálisan `hamarosan` kapcsoló (iskolánként: `bs` / `ps`) és tartalmi adatok (pl. az étkezési díjak).
-- **Menü-adatfájlokban** (`02b/02p_bemutatkozas`, `03_etkezesi_informaciok`, `04b/04p_kozzeteteli_lista`, `05_beiratkozastol_foto_archivumig.yml`) az aloldal helyén helyőrző áll, az adott menü mappájával:
+- **Egy hely:** minden megosztott aloldal egyetlen fájlból áll (pl. `bs/megosztott/szmsz.html`), URL-je: `/megosztott/szmsz`.
+- **Központi definíció:** `src/data/pages/99_megosztott_aloldalak.yml` – cím (`title`), oldalnév (`page`), URL (`url` + `folder: megosztott`), opcionálisan `hamarosan` kapcsoló (iskolánként: `bs` / `ps`) és tartalmi adatok (pl. az étkezési díjak).
+- **Menü-adatfájlokban** (`02b/02p_bemutatkozas`, `03_etkezesi_informaciok`, `04b/04p_kozzeteteli_lista`, `05_beiratkozastol_foto_archivumig.yml`) az aloldal helyén helyőrző áll, a menü azonosítójával:
+
   ```yaml
   - shared: szmsz
-    folder: kozzeteli_lista
+    menu: kozzeteli_lista
   ```
+
 - **Helperek:**
-  - `megosztottAloldalak` – a `shared:` helyőrzőket oldja fel a központi definícióra (`menu-item.html`: `{{#each (megosztottAloldalak items)}}`); rekurzív, a `breadcrumbs.js` is használja.
-  - `ifpageInMenu` – az aktív menüpont jelölése (`menu-item.html`: `{{#ifpageInMenu page folder}}current is-active{{/ifpageInMenu}}`): csak az a menü aktív, amelyiknek a mappájában járnk (`menu:` front matter alapján).
+  - `megosztottAloldalak` – a `shared:` helyőrzőket oldja fel a központi definícióra (`menu-item.html`: `{{#each (megosztottAloldalak items)}}`); a linkhez `?m=<főmenü>` query paramétert fűz; rekurzív, a `breadcrumbs.js` is használja.
+  - `ifpageInMenu` – az aktív menüpont jelölése (`menu-item.html`: `{{#ifpageInMenu page menu}}current is-active{{/ifpageInMenu}}`).
   - `megosztottTartalom` – a központi táblában lévő tartalmi adatokat (pl. étkezési díjak) teszi a partial contextuséba.
-  - `hamarosan` – a kapcsoló az oldal front matteréből ÉS a központi táblából is jöhet (`page` név alapján, iskolánként) – így a megosztott oldalak kapcsolója egy helyen kapcsolható.
+  - `hamarosan` – a kapcsoló az oldal front matteréből ÉS a központi táblából is jöhet (`page` név alapján, iskolánként).
+- **Aktív menü (JS):** az `app.js` `fixSharedMenuActive()` függvénye a `?m=` paraméter alapján az adott menüre teszi az aktív jelölést, a másikról leveszi. `?m=` nélküli (közvetlen) látogatáskor az oldal front matterében lévő `menu:` (kanonikus) menü aktív.
 
-## Érintett aloldalak (azonos fájlnevek mindkét mappában)
+## Érintett aloldalak (mind: `megosztott/` mappában)
 
-| Aloldal | Menüpontok | Oldalfájlok (azonos névvel) |
+| Aloldal | Menüpontok | Fájl |
 |---|---|---|
-| Étkezési térítési díjak | étkezési infók + közzétételi lista | `etkezesi_informaciok/etkezes_teritesi_dijak.html` + `kozzeteli_lista/etkezes_teritesi_dijak.html` |
-| Pedagógiai program | bemutatkozás + közzétételi lista | `bemutatkozas/ped_program.html` + `kozzeteli_lista/ped_program.html` |
-| SZMSZ | bemutatkozás + közzétételi lista | `bemutatkozas/szmsz.html` + `kozzeteli_lista/szmsz.html` |
-| Házirend | bemutatkozás + közzétételi lista | `bemutatkozas/hazirend.html` + `kozzeteli_lista/hazirend.html` |
-| Egyéni fejlesztés | tanórán kívüli + közzétételi lista | `tanoran_kivuli_foglalkozasok/egyeni_fejlesztes.html` + `kozzeteli_lista/egyeni_fejlesztes.html` |
-| Szakkörök, tehetséggondozás | tanórán kívüli + közzétételi lista | `tanoran_kivuli_foglalkozasok/szakkorok.html` + `kozzeteli_lista/szakkorok.html` |
-| Szaktárgyi korrepetálások | tanórán kívüli + közzétételi lista | `tanoran_kivuli_foglalkozasok/szaktargyi_korrepetalasok.html` + `kozzeteli_lista/szaktargyi_korrepetalasok.html` |
+| Étkezési térítési díjak | étkezési infók + közzétételi lista | `megosztott/etkezes_teritesi_dijak.html` |
+| Pedagógiai program | bemutatkozás + közzétételi lista | `megosztott/ped_program.html` |
+| SZMSZ | bemutatkozás + közzétételi lista | `megosztott/szmsz.html` |
+| Házirend | bemutatkozás + közzétételi lista | `megosztott/hazirend.html` |
+| Egyéni fejlesztés | tanórán kívüli + közzétételi lista | `megosztott/egyeni_fejlesztes.html` |
+| Szakkörök, tehetséggondozás | tanórán kívüli + közzétételi lista | `megosztott/szakkorok.html` |
+| Szaktárgyi korrepetálások | tanórán kívüli + közzétételi lista | `megosztott/szaktargyi_korrepetalasok.html` |
 
-Korábbi, eltérő nevű duplikátumok (`bemutatk_*`, `kozzetetel_*`, `tan_kiv_fogl_*`) törölve; a bs szakkörök táblázat tartalma a `src/content/bs-szakkorok.md` fájlból jön (`mdFile`).
+Korábbi duplikátumok (menümappákban lévő másolatok, `bemutatk_*`, `kozzetetel_*`, `tan_kiv_fogl_*` nevek) törölve; a bs szakkörök táblázat tartalma a `src/content/bs-szakkorok.md` fájlból jön (`mdFile`).
 
 ## Hol szerkeszd a tartalmat?
 
@@ -43,11 +46,10 @@ Korábbi, eltérő nevű duplikátumok (`bemutatk_*`, `kozzetetel_*`, `tan_kiv_f
 
 ## Megjegyzések
 
-- Breadcrumb mindkét oldalon a **saját menü** útvonalát mutatja (`menuFile` front matter alapján).
-- A régi `kozzetel_*`, `bemutatk_*`, `tan_kiv_fogl_*` URL-ek megszűntek – ha kell, .htaccess redirect tehető rájuk.
+- Breadcrumb a megosztott oldalakon a kanonikus menü útvonalát mutatja (`menuFile` front matter alapján) — a `?m=` paramétert nem követi.
+- A régi URL-ek (`/kozzeteli_lista/szmsz`, `/bemutatkozas/szmsz` stb.) megszűntek – ha kell, .htaccess redirect tehető rájuk.
 - `submenus.html` és az `arch/` menü-partialok régi neveket tartalmaznak, de dead code (nem épülnek be).
 
 ## Kapcsolódó változás: „Hamarosan" kapcsoló
 
 `src/helpers/hamarosan.js` – az oldal front matterében `hamarosan: true/false` kapcsolóval a `{{#hamarosan}} … {{/hamarosan}}` blokkban lévő valódi tartalom helyett a „Hamarosan…" felirat (a `common-hamarosan` partialból) jeleníthető meg. Megosztott oldalaknál a kapcsoló a központi táblából jön (iskolánként is megadható).
-

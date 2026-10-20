@@ -33,7 +33,7 @@
       folder: kozzeteteli_lista
     # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
     - shared: etkezes_teritesi_dijak
-      folder: kozzeteli_lista
+      menu: kozzeteli_lista
     - title: Fenntartói értékelés, nyilvános megállapításokat tartalmazó vizsgálatok
       page: "nyilvanos_vizsgalat"
       url: nyilvanos_vizsgalat
@@ -64,13 +64,13 @@
           folder: kozzeteteli_lista
     # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
     - shared: szmsz
-      folder: kozzeteli_lista
+      menu: kozzeteli_lista
     # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
     - shared: hazirend
-      folder: kozzeteli_lista
+      menu: kozzeteli_lista
     # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
     - shared: ped_program
-      folder: kozzeteli_lista
+      menu: kozzeteli_lista
     - title: Értékelési rendszer helyi szabályzata
       page: "ertekelesi_rendszer_szabalyzat"
       url: ertekelesi_rendszer_szabalyzat
@@ -97,13 +97,13 @@
       items: # <--- Itt kezdődik a HARMADIK mélység (al-almenü)
         # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
         - shared: egyeni_fejlesztes
-          folder: kozzeteli_lista
+          menu: kozzeteli_lista
         # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
         - shared: szakkorok_tehetseggondozas
-          folder: kozzeteli_lista
+          menu: kozzeteli_lista
         # Megosztott aloldal - definíció: 99_megosztott_aloldalak.yml
         - shared: szaktargyi_korrepetalasok
-          folder: kozzeteli_lista
+          menu: kozzeteli_lista
     - title: Hétvégi házi feladatok, dolgozatok szabályai
       page: "hetvegi_hazi_feladatok_dolgozatok_szabalyai"
       url: hetvegi_hazi_feladatok_dolgozatok_szabalyai
