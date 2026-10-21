@@ -4,6 +4,17 @@
 // or: {{#filterNews schoolKey older=true}} ... {{/filterNews}}
 // The year parameter is read from frontmatter (root.year) or can be passed as second parameter
 
+// The Data dashboard stores the school selection as a string. Adapt it to the
+// existing school-key format so archived and nested news keep their behavior.
+function normalizeSchoolSelection(item) {
+    if (!['ps', 'bs', 'common'].includes(item.site)) {
+        return item
+    }
+
+    const { site, ps, bs, common, ...news } = item
+    return { [site]: null, ...news }
+}
+
 module.exports = function (schoolKey, options) {
     // Get the root context
     const root = options.data && options.data.root ? options.data.root : this
@@ -160,6 +171,7 @@ module.exports = function (schoolKey, options) {
 
         // Now filter the older items by school
         filteredItems = olderItems
+            .map(normalizeSchoolSelection)
             .map((item, index) => {
                 // Determine the item structure and filter by school
                 const hasCommon =
@@ -215,6 +227,7 @@ module.exports = function (schoolKey, options) {
     } else {
         // Normal mode: filter top-level news items
         filteredItems = rightColumnData
+            .map(normalizeSchoolSelection)
             .map((item, index) => {
                 // Determine the item structure and filter by school
                 const hasCommon =

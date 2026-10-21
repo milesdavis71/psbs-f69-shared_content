@@ -8,6 +8,7 @@
         "ps": "gulp start:ps",
         "start": "gulp",
         "build": "gulp build --production",
+        "test:news": "node --test tests/frontmatter-news.test.cjs",
         "format": "prettier --write \"src/**/*.html\"",
         "format:check": "prettier --check \"src/**/*.html\""
     },

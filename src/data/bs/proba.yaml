@@ -1,6 +1,6 @@
-title:    Teszt
+title: Teszt
 items:
-- name: Első
-    value:     123
-- name: Második
-    value:  456
+  - name: Első
+    value: 123
+  - name: Második
+    value: 456

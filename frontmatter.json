@@ -13,48 +13,85 @@
   "frontMatter.data.files": [
     {
       "id": "news-2026-27",
-      "title": "Hírek 2026/2027",
+      "title": "Hírek 2026/2027 (aktuális tanév)",
       "file": "[[workspace]]/src/data/news-2026-27.yml",
-      "fileType": "yaml"
-    },
-    {
-      "id": "news-2025-26",
-      "title": "Hírek 2025/2026",
-      "file": "[[workspace]]/src/data/news-2025-26.yml",
-      "fileType": "yaml"
+      "fileType": "yaml",
+      "labelField": "title",
+      "singleEntry": false,
+      "schema": {
+        "title": "Hír",
+        "type": "object",
+        "required": ["title", "site", "img", "content", "align", "imgclass", "contentclass"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "A hír címe",
+            "minLength": 1
+          },
+          "site": {
+            "type": "string",
+            "title": "Megjelenés (ps = Petőfi, bs = Bálint, common = mindkettő)",
+            "enum": ["ps", "bs", "common"],
+            "default": "ps"
+          },
+          "img": {
+            "type": "string",
+            "title": "Képfájl neve a hirfolyam mappából (kép nélkül: nincs)",
+            "minLength": 1
+          },
+          "content": {
+            "type": "string",
+            "title": "Tartalomazonosító (következő szabad newsNN, pl. news07)",
+            "pattern": "^news[0-9]{2,}$"
+          },
+          "align": {
+            "type": "string",
+            "title": "Kép igazítása",
+            "enum": ["left", "center", "right"],
+            "default": "center"
+          },
+          "imgclass": {
+            "type": "string",
+            "title": "Kép oszlopszélessége (pl. medium-3)",
+            "default": "medium-3",
+            "minLength": 1
+          },
+          "contentclass": {
+            "type": "string",
+            "title": "Tartalom oszlopszélessége (pl. medium-9)",
+            "default": "medium-9",
+            "minLength": 1
+          }
+        }
+      }
     }
   ],
   "frontMatter.content.snippets": {
     "HIR - YAML bejegyzés (news-*.yml)": {
-      "description": "Új hír bejegyzés a src/data/news-*.yml fájlba. A bejegyzést a tanévi kulcs alatti lista LEGELEJÉRE kell beszúrni (legfelül = legfrissebb). A content mező a következő szabad newsNN legyen!",
+      "description": "Új hír a src/data/news-2026-27.yml lista LEGELEJÉRE (Ctrl+Home), tanévi gyűjtőkulcs nélkül. A content mező a következő szabad newsNN legyen!",
       "body": [
-        "  - [[site]]:",
-        "    title: \"[[title]]\"",
-        "    school: \"[[school]]\"",
-        "    img: [[img]]",
-        "    align: center",
-        "    imgclass: [[imgclass]]",
-        "    contentclass: [[contentclass]]",
-        "    content: [[content]]",
+        "- site: [[site]]",
+        "  title: >-",
+        "    [[&title]]",
+        "  img: [[img]]",
+        "  align: center",
+        "  imgclass: [[imgclass]]",
+        "  contentclass: [[contentclass]]",
+        "  content: [[content]]",
         ""
       ],
       "fields": [
         {
           "name": "site",
           "title": "Iskolakulcs (ps / bs / common)",
-          "type": "string",
+          "type": "choice",
+          "choices": ["ps", "bs", "common"],
           "default": "ps"
         },
         {
           "name": "title",
           "title": "A hír címe",
           "type": "string"
-        },
-        {
-          "name": "school",
-          "title": "Székhely / Tagiskola / Common",
-          "type": "string",
-          "default": "Székhely"
         },
         {
           "name": "img",
