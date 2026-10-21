@@ -1,14 +1,65 @@
 const assert = require('node:assert/strict')
 const fs = require('node:fs')
+const os = require('node:os')
 const path = require('node:path')
 const test = require('node:test')
 const yaml = require('js-yaml')
 const filterNews = require('../src/helpers/filterNews')
+const composeConfig = require('../frontmatter.config.cjs')
 
 const projectRoot = path.resolve(__dirname, '..')
-const config = JSON.parse(
+const baseConfig = JSON.parse(
     fs.readFileSync(path.join(projectRoot, 'frontmatter.json'), 'utf8')
 )
+const config = composeConfig(baseConfig)
+
+test('image choices follow uploads and removals without modifying the base config', (t) => {
+    const folder = fs.mkdtempSync(
+        path.join(os.tmpdir(), 'frontmatter-media-test-')
+    )
+    const firstImage = path.join(folder, 'régi kép.JPG')
+    const newImage = path.join(folder, 'új-kép.png')
+    const video = path.join(folder, 'video.mp4')
+    const subfolder = path.join(folder, 'album.jpg')
+    t.after(() => {
+        for (const file of [firstImage, newImage, video]) {
+            if (fs.existsSync(file)) fs.unlinkSync(file)
+        }
+        fs.rmdirSync(subfolder)
+        fs.rmdirSync(folder)
+    })
+    fs.writeFileSync(firstImage, '')
+    fs.writeFileSync(video, '')
+    fs.mkdirSync(subfolder)
+    fs.utimesSync(firstImage, new Date(0), new Date(0))
+    const unrelatedFile = {
+        id: 'authors',
+        schema: { type: 'object', properties: { img: { type: 'string' } } },
+    }
+    const input = {
+        ...baseConfig,
+        'frontMatter.content.publicFolder': folder,
+        'frontMatter.data.files': [
+            ...baseConfig['frontMatter.data.files'],
+            unrelatedFile,
+        ],
+    }
+    const before = structuredClone(input)
+    const choices = () =>
+        composeConfig(input)['frontMatter.data.files'][0].schema.properties.img
+            .enum
+
+    assert.deepEqual(choices(), ['nincs', 'régi kép.JPG'])
+    fs.writeFileSync(newImage, '')
+    assert.deepEqual(choices(), ['nincs', 'új-kép.png', 'régi kép.JPG'])
+    fs.unlinkSync(firstImage)
+    assert.deepEqual(choices(), ['nincs', 'új-kép.png'])
+    assert.deepEqual(input, before)
+    assert.deepEqual(
+        composeConfig(input)['frontMatter.data.files'].at(-1),
+        unrelatedFile
+    )
+})
 
 function select(newsData, school, extra = {}) {
     let result
@@ -153,6 +204,10 @@ test('registered news files have forms and unique, matching content blocks', () 
             'unique content IDs'
         )
         for (const item of entries) {
+            assert.ok(
+                schema.properties.img.enum.includes(item.img),
+                `${item.content}: current image is selectable in the Data form`
+            )
             assert.ok(
                 schema.properties.site.enum.includes(item.site),
                 `${item.content}: supported school`

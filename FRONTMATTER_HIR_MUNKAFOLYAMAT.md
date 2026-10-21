@@ -7,6 +7,7 @@ Az aktuális tanév **2026-27**. A Front Matter Dashboard **Data** fülén a **H
 | Fájl | Szerep |
 |------|--------|
 | `frontmatter.json` | Adatűrlap sémája, média mappa és snippetek |
+| `frontmatter.config.cjs` | A feltöltött hírképek listáját adja az adatűrlap képválasztójához |
 | `.frontmatter/templates/hir-uj.md` | Emlékeztető a lépésekhez |
 | `src/data/news-2026-27.yml` | Hírlista: cím, iskola, kép, tartalomazonosító |
 | `src/content/common-news-content-2026-27.md` | Hírszövegek: `{{#ifequal hir "newsNN"}}` blokkok |
@@ -15,9 +16,22 @@ Az aktuális tanév **2026-27**. A Front Matter Dashboard **Data** fülén a **H
 
 ## 1. Kép feltöltése
 
-- `Ctrl+Shift+P` → `Front Matter: Open Dashboard` → **Media** fül → Hírképek (hirfolyam).
-- Vagy másold a képet a `src/assets/img/hirfolyam/` mappába.
-- Jegyezd meg a fájl nevét, például `ujhir.jpg`. Kép nélküli hírhez az `img` értéke `nincs`.
+**A képet csak egyszer kell feltölteni.** A Media fül menti a képfájlt; a Data űrlap csak kiválasztja, melyik képet használja a hír.
+
+1. `Ctrl+Shift+P` → **Front Matter: Open media dashboard**, vagy a dashboard **Media** füle. Az alapértelmezett médiamappa a `src/assets/img/hirfolyam/`.
+2. Nyisd meg a **Windows Fájlkezelőt**, és onnan kezdd el a képfájl húzását a Media fül képeket mutató területére. **Húzás közben nyomd le és tartsd nyomva a Shift billentyűt.** Várd meg a Front Matter feltöltési jelzését (feltöltési nyíl és célmappa), majd **előbb az egérgombot engedd fel, és csak utána a Shiftet**. Várd meg a feltöltés visszajelzését. A Front Matter 10.13.0 ezen a felületen húzással fogad fájlokat; nincs külön „Add/Upload” fájlválasztó gomb.
+3. `Ctrl+Shift+P` → **Front Matter: Refresh Front Matter Settings**. Ez újraolvassa a képmappát és frissíti a Data űrlap képválasztóját. A Media saját frissítőgombja csak a médiatárat frissíti.
+4. Válts a **Data → Hírek 2026/2027** adatforrásra, és a **Hírkép** listából válaszd ki a fájlt. A legutóbb módosított képek kerülnek előre; a `nincs` választás kép nélküli hírt jelent.
+
+Meglévő képhez csak a 4. lépés kell. Alternatív feltöltésként a fájlt közvetlenül a `src/assets/img/hirfolyam/` mappába is másolhatod, majd frissítsd a Front Matter beállításait.
+
+**Ha a kép új szerkesztőlapon nyílik meg:** a rádobást a VS Code fájlmegnyitója kezelte. A kurzor melletti pluszjel önmagában még nem jelzi a Front Matter feltöltését. Térj vissza a Media fülre, és ismételd meg a húzást **végig nyomva tartott Shifttel**, a képeket mutató terület fölött. A VS Code a Shift hatására adja át a húzást a beágyazott felületnek; ezt a telepített 1.143.0 verzió kódja is megerősíti. Forrás: [VS Code húzáskezelő](https://github.com/microsoft/vscode/blob/main/src/vs/workbench/contrib/webview/browser/webviewWindowDragMonitor.ts).
+
+**Előbb töltsd fel a képet és frissítsd a listát, utána töltsd ki a hír űrlapját.** Ha már szerkesztettél egy hírt, mentsd el az **Add/Update** gombbal, mielőtt másik fülre váltasz vagy frissítesz. Ha a már megnyitott adatűrlapon még a régi lista látszik, zárd be az adatforrást, és válaszd ki újra.
+
+Használj egyedi fájlnevet: a Media húzásos feltöltése az azonos nevű meglévő fájlt felülírhatja. A képválasztó a hírfotók mappájának közvetlen képfájljait mutatja; videókat, PSD-fájlokat és almappák tartalmát nem.
+
+A Data nézetben nincs beépített képfeltöltő vagy bélyegképes médiaválasztó. A fájlnévlistát a projekt dinamikus konfigurációja állítja össze, így a fájlnevet nem kell kézzel beírnod. Forrás: [Media feltöltés](https://frontmatter.codes/docs/dashboard/media-view/#drag-and-drop), [dinamikus konfiguráció](https://frontmatter.codes/docs/settings/#extending-with-code).
 
 ## 2. Új bejegyzés a Data fülön
 
@@ -29,7 +43,7 @@ Az aktuális tanév **2026-27**. A Front Matter Dashboard **Data** fülén a **H
 |------|-------------|
 | A hír címe | A megjelenő cím |
 | Megjelenés (`site`) | `ps`: Petőfi / Székhely; `bs`: Bálint / Tagiskola; `common`: mindkettő |
-| Képfájl (`img`) | Csak a fájlnév a hirfolyam mappából, vagy `nincs` |
+| Hírkép (`img`) | Válassz a feltöltött képek listájából; kép nélkül `nincs` |
 | Tartalomazonosító (`content`) | A következő szabad `newsNN`, például `news07` |
 | Kép igazítása | Általában `center` |
 | Kép oszlopszélessége | Általában `medium-3` |
@@ -49,6 +63,8 @@ Ha közvetlenül a fájlban dolgoznál:
 1. Nyisd meg a `src/data/news-2026-27.yml` fájlt, és menj a legelejére (`Ctrl+Home`).
 2. `Ctrl+Shift+P` → **Front Matter: Insert Snippet into your content** → **HIR - YAML bejegyzés (news-*.yml)**.
 3. Töltsd ki a mezőket, majd szúrd be a bejegyzést a meglévő lista elé. Ezt a lépést ne végezd el újra, ha az adatűrlapon már hozzáadtad a hírt.
+
+A YAML snippet `img` mezője továbbra is fájlnevet kér. A gépelés nélküli képválasztáshoz a **Data** űrlapot használd.
 
 A fájl gyökerében közvetlenül lista található, **nincs `2026-27:` gyűjtőkulcs**. Példa:
 

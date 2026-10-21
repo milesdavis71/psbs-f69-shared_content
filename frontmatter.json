@@ -3,11 +3,14 @@
   "frontMatter.snippets.wrapper.enabled": false,
   "frontMatter.templates.enabled": true,
   "frontMatter.templates.folder": ".frontmatter/templates",
+  "frontMatter.config.dynamicFilePath": "[[workspace]]/frontmatter.config.cjs",
+  "frontMatter.content.publicFolder": "src/assets/img/hirfolyam",
   "frontMatter.content.pageFolders": [
     {
-      "title": "Hírképek (hirfolyam)",
-      "path": "[[workspace]]/src/assets/img/hirfolyam",
-      "excludeSubdir": true
+      "title": "Hírszövegek és közös tartalmak",
+      "path": "[[workspace]]/src/content",
+      "excludeSubdir": true,
+      "disableCreation": true
     }
   ],
   "frontMatter.data.files": [
@@ -36,7 +39,8 @@
           },
           "img": {
             "type": "string",
-            "title": "Képfájl neve a hirfolyam mappából (kép nélkül: nincs)",
+            "title": "Hírkép (kép nélkül: nincs)",
+            "description": "Előbb töltsd fel a Media fülön, majd futtasd a Refresh Front Matter Settings parancsot. Ezután itt kiválaszthatod a fájlt.",
             "minLength": 1
           },
           "content": {

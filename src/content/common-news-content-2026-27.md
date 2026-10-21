@@ -77,3 +77,4 @@ Aki ebéd után (11:45-től) szeretne hazamenni, hozzon magával szülői kikér
 
 {{/ifequal}}
 
+

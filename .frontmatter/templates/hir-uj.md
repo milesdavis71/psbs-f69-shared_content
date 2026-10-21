@@ -15,10 +15,14 @@ Ez a sablon emlékeztető. **A fájl NEM kerül buildbe** — a lépéseket a va
 
 ## 1. Kép feltöltése
 - Fájl: `src/assets/img/hirfolyam/<nev>.jpg`
-- Tipp: a Front Matter Media Menedzserből feltölthető (Media fül → Hírképek).
+- A **Windows Fájlkezelőből húzd a képet a Media fül képeket mutató területére, húzás közben nyomva tartott Shifttel**. Várd meg a feltöltési jelzést, majd előbb az egérgombot engedd fel, és csak utána a Shiftet. Az alapértelmezett médiamappa a hirfolyam.
+- Ha a kép új szerkesztőlapon nyílik meg, a VS Code fájlmegnyitója kapta meg: ismételd meg a húzást Shifttel. A sima pluszjel még nem feltöltési jelzés.
+- Feltöltés után: `Ctrl+Shift+P` → **Front Matter: Refresh Front Matter Settings**. Ezt az adatűrlap kitöltése előtt végezd el.
+- A képet csak egyszer töltöd fel; a Data űrlapon már a listából választod ki.
 
 ## 2. YAML bejegyzés → `src/data/news-2026-27.yml`
 - **Data → Hírek 2026/2027**: töltsd ki az új bejegyzés űrlapját, majd **Add**.
+- A **Hírkép** listából válaszd ki a feltöltött képet (kép nélkül: `nincs`).
 - A `site` mező választja ki az iskolát: `ps` = Petőfi, `bs` = Bálint, `common` = mindkettő.
 - Az új hírt mentés után **húzd a lista LEGELEJÉRE**. Az Add alapból a lista végére teszi.
 - Alternatíva: a YAML fájl legelején (`Ctrl+Home`) használd a `HIR - YAML bejegyzés (news-*.yml)` snippetet. A fájl közvetlen lista, nincs `2026-27:` gyűjtőkulcs.

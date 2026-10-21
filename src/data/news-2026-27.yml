@@ -52,3 +52,11 @@
   contentclass: medium-9
   content: news01
   id: news01
+- site: bs
+  align: left
+  imgclass: medium-3
+  contentclass: medium-9
+  img: bs-iskolaba-hivogato-2026.jpg
+  content: news07
+  title: Iskolába hívogató
+
