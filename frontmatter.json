@@ -1,0 +1,133 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.snippets.wrapper.enabled": false,
+  "frontMatter.templates.enabled": true,
+  "frontMatter.templates.folder": ".frontmatter/templates",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Hírképek (hirfolyam)",
+      "path": "[[workspace]]/src/assets/img/hirfolyam",
+      "excludeSubdir": true
+    }
+  ],
+  "frontMatter.data.files": [
+    {
+      "id": "news-2026-27",
+      "title": "Hírek 2026/2027",
+      "file": "[[workspace]]/src/data/news-2026-27.yml",
+      "fileType": "yaml"
+    },
+    {
+      "id": "news-2025-26",
+      "title": "Hírek 2025/2026",
+      "file": "[[workspace]]/src/data/news-2025-26.yml",
+      "fileType": "yaml"
+    }
+  ],
+  "frontMatter.content.snippets": {
+    "HIR - YAML bejegyzés (news-*.yml)": {
+      "description": "Új hír bejegyzés a src/data/news-*.yml fájlba. A bejegyzést a tanévi kulcs alatti lista LEGELEJÉRE kell beszúrni (legfelül = legfrissebb). A content mező a következő szabad newsNN legyen!",
+      "body": [
+        "  - [[site]]:",
+        "    title: \"[[title]]\"",
+        "    school: \"[[school]]\"",
+        "    img: [[img]]",
+        "    align: center",
+        "    imgclass: [[imgclass]]",
+        "    contentclass: [[contentclass]]",
+        "    content: [[content]]",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "site",
+          "title": "Iskolakulcs (ps / bs / common)",
+          "type": "string",
+          "default": "ps"
+        },
+        {
+          "name": "title",
+          "title": "A hír címe",
+          "type": "string"
+        },
+        {
+          "name": "school",
+          "title": "Székhely / Tagiskola / Common",
+          "type": "string",
+          "default": "Székhely"
+        },
+        {
+          "name": "img",
+          "title": "Képfájl neve a hirfolyam mappából (pl. ujhir.jpg)",
+          "type": "string"
+        },
+        {
+          "name": "imgclass",
+          "title": "Kép oszlopszélessége",
+          "type": "string",
+          "default": "medium-3"
+        },
+        {
+          "name": "contentclass",
+          "title": "Tartalom oszlopszélessége",
+          "type": "string",
+          "default": "medium-9"
+        },
+        {
+          "name": "content",
+          "title": "newsNN (a következő szabad szám, pl. news07)",
+          "type": "string"
+        }
+      ]
+    },
+    "HIR - Tartalom blokk (common-news-content-*.md)": {
+      "description": "Handlebars tartalom blokk a common-news-content-*.md fájl VÉGÉRE. A contentId-nek egyeznie kell a YAML-ben használt newsNN-nel!",
+      "body": [
+        "{{#ifequal hir \"[[contentId]]\"}}",
+        "",
+        "[[&content]]",
+        "",
+        "{{/ifequal}}",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "contentId",
+          "title": "newsNN azonosító (pl. news07)",
+          "type": "string"
+        },
+        {
+          "name": "content",
+          "title": "A hír szövege (Markdown/HTML)",
+          "type": "string"
+        }
+      ]
+    },
+    "HIR - Táblázat sor (időpontlistákhoz)": {
+      "description": "3 oszlopos táblázatsor a hír tartalmába (pl. szülői értekezletek: osztály, dátum, időpont).",
+      "body": [
+        "|           |                  |       |",
+        "|-----------|------------------|-------|",
+        "| [[col1]]        | [[col2]]               | [[col3]]    |"
+      ],
+      "fields": [
+        {
+          "name": "col1",
+          "title": "1. oszlop (pl. 1. oszt.)",
+          "type": "string"
+        },
+        {
+          "name": "col2",
+          "title": "2. oszlop (pl. aug. 31. hétfő)",
+          "type": "string"
+        },
+        {
+          "name": "col3",
+          "title": "3. oszlop (pl. 17:00)",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  "frontMatter.git.enabled": false
+}
