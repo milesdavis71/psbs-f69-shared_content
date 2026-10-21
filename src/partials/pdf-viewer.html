@@ -4,8 +4,8 @@ pdfUrl kulcsot: --- layout: default title: Dokumentum címe pdfUrl:
 partial-t: { {>pdf-viewer} } (szóközök nélkül) Vagy paraméterrel: { {>pdf-viewer
 pdfUrl="/assets/pdf/common/dokumentum.pdf"} } (szóközök nélkül) Opció:
 fitWidth=true esetén desktop nézetben (min. 640px széles ablak) a PDF
-alapértelmezetten teljes szélességben (page-width zoom) nyílik meg. Példa
-teljes használat: src/pages/ps/pdf-teszt.html --}}
+alapértelmezetten teljes szélességben (page-width zoom) nyílik meg. Példa teljes
+használat: src/pages/ps/pdf-teszt.html --}}
 <div class="grid-container">
     <div class="callout">
         <div
@@ -90,7 +90,9 @@ teljes használat: src/pages/ps/pdf-teszt.html --}}
         }
         supportsPDFs =
             !isIOS &&
-            (isFirefoxWithPDFJS || supportsPdfMimeType || (isIE() && supportsPdfActiveX()))
+            (isFirefoxWithPDFJS ||
+                supportsPdfMimeType ||
+                (isIE() && supportsPdfActiveX()))
         buildFragmentString = function (pdfParams) {
             var string = '',
                 prop
@@ -145,7 +147,8 @@ teljes használat: src/pages/ps/pdf-teszt.html --}}
             PDFJS_URL,
             id
         ) {
-            var fullURL = PDFJS_URL + '?file=' + encodeURIComponent(url) + pdfOpenFragment
+            var fullURL =
+                PDFJS_URL + '?file=' + encodeURIComponent(url) + pdfOpenFragment
             var scrollfix = isIOS
                 ? '-webkit-overflow-scrolling: touch; overflow-y: scroll; '
                 : 'overflow: hidden; '
@@ -181,7 +184,7 @@ teljes használat: src/pages/ps/pdf-teszt.html --}}
             }
             targetNode.className += ' pdfobject-container'
             targetNode.innerHTML =
-                "<embed " +
+                '<embed ' +
                 id +
                 " class='pdfobject' src='" +
                 url +
@@ -195,19 +198,31 @@ teljes használat: src/pages/ps/pdf-teszt.html --}}
             if (typeof url !== 'string') {
                 return embedError('URL is not valid')
             }
-            targetSelector = typeof targetSelector !== 'undefined' ? targetSelector : false
+            targetSelector =
+                typeof targetSelector !== 'undefined' ? targetSelector : false
             options = typeof options !== 'undefined' ? options : {}
             var id =
-                    options.id && typeof options.id === 'string' ? "id='" + options.id + "'" : '',
+                    options.id && typeof options.id === 'string'
+                        ? "id='" + options.id + "'"
+                        : '',
                 page = options.page ? options.page : false,
-                pdfOpenParams = options.pdfOpenParams ? options.pdfOpenParams : {},
+                pdfOpenParams = options.pdfOpenParams
+                    ? options.pdfOpenParams
+                    : {},
                 fallbackLink =
-                    typeof options.fallbackLink !== 'undefined' ? options.fallbackLink : true,
+                    typeof options.fallbackLink !== 'undefined'
+                        ? options.fallbackLink
+                        : true,
                 width = options.width ? options.width : '100%',
                 height = options.height ? options.height : '100%',
                 assumptionMode =
-                    typeof options.assumptionMode === 'boolean' ? options.assumptionMode : true,
-                forcePDFJS = typeof options.forcePDFJS === 'boolean' ? options.forcePDFJS : false,
+                    typeof options.assumptionMode === 'boolean'
+                        ? options.assumptionMode
+                        : true,
+                forcePDFJS =
+                    typeof options.forcePDFJS === 'boolean'
+                        ? options.forcePDFJS
+                        : false,
                 PDFJS_URL = options.PDFJS_URL ? options.PDFJS_URL : false,
                 targetNode = getTargetElement(targetSelector),
                 fallbackHTML = '',
@@ -222,8 +237,17 @@ teljes használat: src/pages/ps/pdf-teszt.html --}}
             }
             pdfOpenFragment = buildFragmentString(pdfOpenParams)
             if (forcePDFJS && PDFJS_URL) {
-                return generatePDFJSiframe(targetNode, url, pdfOpenFragment, PDFJS_URL, id)
-            } else if (supportsPDFs || (assumptionMode && isModernBrowser && !isIOS)) {
+                return generatePDFJSiframe(
+                    targetNode,
+                    url,
+                    pdfOpenFragment,
+                    PDFJS_URL,
+                    id
+                )
+            } else if (
+                supportsPDFs ||
+                (assumptionMode && isModernBrowser && !isIOS)
+            ) {
                 return generateEmbedElement(
                     targetNode,
                     targetSelector,
@@ -234,11 +258,19 @@ teljes használat: src/pages/ps/pdf-teszt.html --}}
                     id
                 )
             } else if (PDFJS_URL) {
-                return generatePDFJSiframe(targetNode, url, pdfOpenFragment, PDFJS_URL, id)
+                return generatePDFJSiframe(
+                    targetNode,
+                    url,
+                    pdfOpenFragment,
+                    PDFJS_URL,
+                    id
+                )
             } else {
                 if (fallbackLink) {
                     fallbackHTML =
-                        typeof fallbackLink === 'string' ? fallbackLink : fallbackHTML_default
+                        typeof fallbackLink === 'string'
+                            ? fallbackLink
+                            : fallbackHTML_default
                     targetNode.innerHTML = fallbackHTML.replace(/\[url\]/g, url)
                 }
                 return embedError('This browser does not support embedded PDFs')

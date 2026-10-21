@@ -4,8 +4,14 @@
     "todo-tree.ripgrep": "c:\\Users\\heves\\.vscode\\extensions\\openai.chatgpt-26.527.31454-win32-x64\\bin\\windows-x86_64\\rg.exe",
     "todo-tree.ripgrep.ripgrep": "c:\\Users\\heves\\.vscode\\extensions\\openai.chatgpt-26.527.31454-win32-x64\\bin\\windows-x86_64\\rg.exe",
     "markdown.extension.showActionButtons": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.formatOnSave": true
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true
     }
 }

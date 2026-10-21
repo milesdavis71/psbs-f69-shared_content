@@ -6,33 +6,27 @@
     </p>
 </div>
 
-{{#schoolData "ps" "sitemap"}}
-    {{#each sections}}
-        <table class="hover sitemap-table">
-            <thead>
-                <tr>
-                    {{#if status}}
-                        <th class="text-center" width="64">
-                            {{status}}
-                        </th>
-                        <th>{{name}}</th>
-                    {{else}}
-                        <th colspan="2">{{name}}</th>
-                    {{/if}}
-                </tr>
-            </thead>
-            {{#if items}}
-                <tbody>
-                    {{#each items}}
-                        <tr>
-                            <td class="text-center" width="64">
-                                {{status}}
-                            </td>
-                            <td>{{name}}</td>
-                        </tr>
-                    {{/each}}
-                </tbody>
+{{#schoolData "ps" "sitemap"}} {{#each sections}}
+<table class="hover sitemap-table">
+    <thead>
+        <tr>
+            {{#if status}}
+            <th class="text-center" width="64">{{status}}</th>
+            <th>{{name}}</th>
+            {{else}}
+            <th colspan="2">{{name}}</th>
             {{/if}}
-        </table>
-    {{/each}}
-{{/schoolData}}
+        </tr>
+    </thead>
+    {{#if items}}
+    <tbody>
+        {{#each items}}
+        <tr>
+            <td class="text-center" width="64">{{status}}</td>
+            <td>{{name}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+    {{/if}}
+</table>
+{{/each}} {{/schoolData}}
