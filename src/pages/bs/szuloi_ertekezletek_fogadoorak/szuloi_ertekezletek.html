@@ -6,8 +6,15 @@ dataFile: 5_beiratkozastol_foto_archivumig
 schoolKey: bs
 hamarosan: false
 ---
+
 {{> breadcrumb}}
 {{> title}}
 {{#hamarosan}}
-{{> schooldata-szuloi-ertekezletek}}
+    <div class='grid-x grid-margin-x'>
+        <div class='cell auto'></div>
+        <div class='cell small-12 large-8'>
+            {{> schooldata-szuloi-ertekezletek}}
+        </div>
+        <div class='cell auto'></div>
+    </div>
 {{/hamarosan}}
