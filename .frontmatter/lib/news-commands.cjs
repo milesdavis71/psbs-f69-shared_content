@@ -1,9 +1,11 @@
 const fs = require('node:fs')
 const path = require('node:path')
-const { saveNews, sourcePaths } = require('./news-store.cjs')
+const { finalizePendingNews, saveNews, sourcePaths } = require('./news-store.cjs')
 
 let registration
 let current
+let watcherRegistration
+let finalizeTimer
 
 // Loaded by Front Matter's dynamic configuration in the VS Code extension host.
 // Refreshes replace the configuration without registering duplicate commands.
@@ -58,6 +60,47 @@ function registerNewsCommands(vscode, root, config) {
             vscode.window.showErrorMessage(error.message)
         }
     })
+    watchPendingNews(vscode)
+}
+
+function watchPendingNews(vscode) {
+    if (watcherRegistration || !current) return
+    try {
+        const RelativePattern = vscode.RelativePattern
+        const createWatcher = vscode.workspace?.createFileSystemWatcher
+        if (!RelativePattern || typeof vscode.Uri?.file !== 'function' || typeof createWatcher !== 'function') return
+        const pattern = new RelativePattern(vscode.Uri.file(current.root), 'src/data/news-*.yml')
+        const watcher = createWatcher.call(vscode.workspace, pattern)
+        watcherRegistration = watcher
+        const schedule = () => {
+            clearTimeout(finalizeTimer)
+            finalizeTimer = setTimeout(() => finalizeNow(vscode), 800)
+        }
+        watcher.onDidChange(schedule)
+        watcher.onDidCreate(schedule)
+    } catch {
+        watcherRegistration = undefined
+    }
+}
+
+async function finalizeNow(vscode) {
+    if (!current) return
+    // A concurrent save holds the lock for a moment: retry briefly.
+    for (let attempt = 0; attempt < 12; attempt++) {
+        try {
+            const created = finalizePendingNews(current.root, current.config)
+            for (const item of created) {
+                vscode.window?.showInformationMessage?.(`Hír létrehozva: ${item.id}. A szövegblokk elkészült.`)
+            }
+            return
+        } catch (error) {
+            if (!/folyamatban/.test(error.message || '')) {
+                vscode.window?.showErrorMessage?.(`Hír véglegesítési hiba: ${error.message}`)
+                return
+            }
+            await new Promise(resolve => setTimeout(resolve, 500))
+        }
+    }
 }
 
 module.exports = { registerNewsCommands }

@@ -1,3 +1,17 @@
+- site: common
+  img: oszi-szunet-2025.jpg
+  align: center
+  imgclass: medium-3
+  contentclass: medium-9
+  title: Őszi szünet
+  content: news08
+- site: bs
+  align: left
+  imgclass: medium-3
+  contentclass: medium-9
+  img: bs-iskolaba-hivogato-2026.jpg
+  content: news07
+  title: Iskolába hívogató
 - site: ps
   title: Suliváró foglalkozások
   school: Székhely
@@ -52,18 +66,3 @@
   contentclass: medium-9
   content: news01
   id: news01
-- site: bs
-  align: left
-  imgclass: medium-3
-  contentclass: medium-9
-  img: bs-iskolaba-hivogato-2026.jpg
-  content: news07
-  title: Iskolába hívogató
-- site: bs
-  align: center
-  imgclass: medium-3
-  contentclass: medium-9
-  title: huhuu
-  img: bs-iskolaba-hivogato-2026.jpg
-  content: news007
-

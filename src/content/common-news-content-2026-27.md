@@ -86,3 +86,11 @@ Helyszín:Bálint Sándor Tagiskola
 6753 Szeged, Kölcsey tér 1b.
 
 {{/ifequal}}
+
+{{#ifequal hir "news08"}}
+**2026.10.23. - 2026.11.01.**
+
+- **utolsó tanítási nap:**<br>2025. december 19. (péntek)
+- **első tanítási nap:**<br>2026. január 5. (hétfő)
+
+{{/ifequal}}

@@ -58,7 +58,10 @@ module.exports = (config) => {
                                 ...file.schema.properties.content,
                                 uniforms: {
                                     readOnly: true,
-                                    placeholder: 'Mentéskor automatikusan létrejön',
+                                    // The placeholder carries the source id as a fallback
+                                    // marker: some uniforms builds do not forward custom
+                                    // data-* attributes to the rendered input.
+                                    placeholder: `Mentéskor automatikusan létrejön (${file.id})`,
                                     'data-news-source': file.id,
                                 },
                             },

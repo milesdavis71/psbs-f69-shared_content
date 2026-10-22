@@ -6,7 +6,7 @@ const { randomUUID } = require('node:crypto')
 const { spawn } = require('node:child_process')
 const test = require('node:test')
 const yaml = require('js-yaml')
-const { nextNewsId, saveNews, sourcePaths } = require('../.frontmatter/lib/news-store.cjs')
+const { finalizePendingNews, nextNewsId, saveNews, sourcePaths } = require('../.frontmatter/lib/news-store.cjs')
 
 function fixture(t) {
     const temporaryRoot = path.resolve(os.tmpdir())
@@ -166,4 +166,55 @@ test('VS Code command registration is refresh-safe and requests are idempotent',
     assert.equal(rejected.ok, false)
     assert.match(rejected.message, /Előbb mentsd/)
     assert.equal(f.read().length, 1)
+})
+
+test('untouched select fields fall back to the schema defaults', t => {
+    const f = fixture(t)
+    f.config['frontMatter.data.files'][0].schema = {
+        properties: {
+            site: { default: 'common' },
+            img: { default: 'nincs' },
+            align: { default: 'left' },
+            imgclass: { default: 'medium-4' },
+            contentclass: { default: 'medium-8' },
+        },
+    }
+    const request = {
+        sourceId: f.sourceId,
+        model: { title: 'Kijelölés nélküli mentés', site: '', img: '', align: '', imgclass: '', contentclass: '', content: '' },
+    }
+    const result = saveNews(f.root, f.config, request)
+    assert.equal(result.id, 'news08')
+    assert.deepEqual(f.read()[0], {
+        title: 'Kijelölés nélküli mentés',
+        site: 'common',
+        img: 'nincs',
+        align: 'left',
+        imgclass: 'medium-4',
+        contentclass: 'medium-8',
+        content: 'news08',
+    })
+})
+
+test('dashboard-saved entries are finalized with an id, top position and text block', t => {
+    const f = fixture(t)
+    const existing = { site: 'ps', title: 'Meglévő', img: 'nincs', align: 'center', imgclass: 'medium-3', contentclass: 'medium-9', content: 'news07' }
+    const first = { site: "bs", title: "Első dashboard hír", img: "nincs", align: "center", imgclass: "medium-3", contentclass: "medium-9", content: "" }
+    const second = { site: "bs", title: "Második dashboard hír", img: "nincs", align: "center", imgclass: "medium-3", contentclass: "medium-9", content: "" }
+    fs.writeFileSync(f.files.data, yaml.dump([existing, first, second]))
+
+    const created = finalizePendingNews(f.root, f.config)
+    assert.deepEqual(created, [
+        { sourceId: f.sourceId, id: "news08" },
+        { sourceId: f.sourceId, id: "news09" },
+    ])
+    const entries = f.read()
+    assert.deepEqual(entries.map((e) => e.content), ["news09", "news08", "news07"])
+    assert.equal(entries[0].title, "Második dashboard hír")
+    const text = fs.readFileSync(f.files.content, "utf8")
+    assert.equal(text.split('{{#ifequal hir "news08"}}').length, 2)
+    assert.equal(text.split('{{#ifequal hir "news09"}}').length, 2)
+    // Idempotent: nothing left to finalize.
+    assert.deepEqual(finalizePendingNews(f.root, f.config), [])
+    assert.deepEqual(f.read().map((e) => e.content), ["news09", "news08", "news07"])
 })

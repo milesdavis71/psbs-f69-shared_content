@@ -278,3 +278,44 @@ test('registered news files have forms and unique, matching content blocks', () 
         }
     }
 })
+
+
+test('the dashboard script saves through runCommand messages, not command links', () => {
+    const source = fs.readFileSync(
+        path.join(projectRoot, '.frontmatter/ui/news-id.mjs'),
+        'utf8'
+    )
+    assert.match(source, /runCommand/)
+    assert.match(source, /psbs\.news\.save/)
+    // The VS Code API can be acquired only once: consuming it would break
+    // the dashboard, so the script must never acquire it.
+    assert.doesNotMatch(source, /acquireVsCodeApi/)
+    assert.match(source, /__vscode_post_message__/)
+    assert.doesNotMatch(source, /command:psbs\.news/)
+    assert.doesNotMatch(source, /\.click\(\)/)
+})
+
+test('the auto-assigned content field cannot block the Add form', () => {
+    const file = config['frontMatter.data.files'][0]
+    const content = file.schema.properties.content
+    assert.equal(content.pattern, undefined)
+    assert.ok(!file.schema.required.includes('content'))
+    assert.equal(file.schema.properties.img.default, 'nincs')
+    assert.equal(content.uniforms.readOnly, true)
+    assert.equal(content.uniforms['data-news-source'], file.id)
+    assert.equal(
+        content.uniforms.placeholder.match(/news-\d{4}-\d{2}/)[0],
+        file.id
+    )
+})
+
+test('the dashboard list keeps the newest news first', () => {
+    const source = fs.readFileSync(
+        path.join(projectRoot, '.frontmatter/ui/news-id.mjs'),
+        'utf8'
+    )
+    assert.match(source, /sortNewestFirst/)
+    assert.match(source, /newsRank/)
+    // Sorting must be skipped while an entry is being edited.
+    assert.match(source, /content\.value\.trim\(\)/)
+})

@@ -24,6 +24,7 @@ Ez a sablon emlékeztető. **A fájl NEM kerül buildbe** — a lépéseket a va
 - **Data → Hírek 2026/2027**: töltsd ki az új bejegyzés űrlapját, majd **Add**.
 - A **Hírkép** listából válaszd ki a feltöltött képet (kép nélkül: `nincs`).
 - A `site` mező választja ki az iskolát: `ps` = Petőfi, `bs` = Bálint, `common` = mindkettő.
+- A `site`, `align`, `imgclass` és `contentclass` legördülőket nem kell átálltogatni: ha érintetlenül hagyod őket, a mentés a séma alapértelmezését írja ki (ps, center, medium-3, medium-9). A `Hírkép` üresen hagyva a `nincs` értéket kapja.
 - A `content` mező **automatikus és csak olvasható**. Az Add frissen kiszámolja a következő `newsNN` azonosítót, és elkészíti a szövegblokkot is. Várd meg a „Mentve: newsNN” visszajelzést.
 - Az új hír a Data listában és a honlapon is **legfelül jelenik meg**; nem kell áthúzni.
 - Az Update megtartja az azonosítót. Ha közben másik ablakban módosították a hírt, nyisd meg újra az adatforrást.

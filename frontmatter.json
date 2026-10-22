@@ -28,7 +28,7 @@
       "schema": {
         "title": "Hír",
         "type": "object",
-        "required": ["title", "site", "img", "content", "align", "imgclass", "contentclass"],
+        "required": ["title", "site", "img", "align", "imgclass", "contentclass"],
         "properties": {
           "title": {
             "type": "string",
@@ -45,13 +45,13 @@
             "type": "string",
             "title": "Hírkép (kép nélkül: nincs)",
             "description": "Előbb töltsd fel a Media fülön, majd futtasd a Refresh Front Matter Settings parancsot. Ezután itt kiválaszthatod a fájlt.",
+            "default": "nincs",
             "minLength": 1
           },
           "content": {
             "type": "string",
             "title": "Tartalomazonosító (automatikus)",
-            "description": "Új hírnél mentéskor kap newsNN azonosítót és szövegblokkot. Meglévő hír azonosítója változatlan marad.",
-            "pattern": "^news[0-9]{2,}$"
+            "description": "Új hírnél mentéskor kap newsNN azonosítót és szövegblokkot. Meglévő hír azonosítója változatlan marad."
           },
           "align": {
             "type": "string",

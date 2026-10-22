@@ -38,14 +38,24 @@ function nextNewsId(entries, markdown) {
     return `news${String(maximum + 1).padStart(2, '0')}`
 }
 
-function validateModel(root, config, model) {
+function validateModel(root, config, sourceId, model) {
     const fields = ['title', 'site', 'img', 'align', 'imgclass', 'contentclass']
+    // The dashboard submits untouched select fields as empty values: the schema
+    // defaults (ajv useDefaults) are only injected during its own validation,
+    // which the intercepted save bypasses. Fall back to them here.
+    const defaults =
+        config['frontMatter.data.files']?.find(file => file.id === sourceId)
+            ?.schema?.properties || {}
     const record = {}
     for (const field of fields) {
-        if (typeof model?.[field] !== 'string' || !model[field].trim()) {
+        const value =
+            typeof model?.[field] === 'string' && model[field].trim()
+                ? model[field].trim()
+                : defaults[field]?.default
+        if (typeof value !== 'string' || !value.trim()) {
             throw new Error(`A(z) ${field} mező kitöltése kötelező.`)
         }
-        record[field] = model[field].trim()
+        record[field] = value.trim()
     }
     if (!['ps', 'bs', 'common'].includes(record.site)) throw new Error('Érvénytelen iskola.')
     if (!['left', 'center', 'right'].includes(record.align)) throw new Error('Érvénytelen képigazítás.')
@@ -101,7 +111,7 @@ function saveNews(root, config, request, options = {}) {
         const oldContent = fs.readFileSync(files.content, 'utf8')
         const entries = yaml.load(oldData)
         if (!Array.isArray(entries)) throw new Error('A tanévi hírlista nem YAML-lista.')
-        const record = validateModel(root, config, request.model)
+        const record = validateModel(root, config, request.sourceId, request.model)
         let content = oldContent
         let id
         if (request.baseline) {
@@ -144,4 +154,63 @@ function saveNews(root, config, request, options = {}) {
     }
 }
 
-module.exports = { nextNewsId, saveNews, sourcePaths }
+function isPending(entry) {
+    return Boolean(entry) && (typeof entry.content !== 'string' || !entry.content.trim())
+}
+
+// Entries saved by the dashboard itself arrive with an empty content id. This
+// finalizes them: it assigns the next newsNN, moves them to the top of the
+// list (newest first) and appends the matching text blocks. Safe to repeat:
+// entries that already have an id are left untouched.
+function finalizePendingNews(root, config) {
+    const sources = (config['frontMatter.data.files'] || [])
+        .filter(file => /^news-\d{4}-\d{2}$/.test(file.id || ''))
+    const created = []
+    for (const source of sources) {
+        const files = sourcePaths(root, config, source.id)
+        if (!fs.existsSync(files.data) || !fs.existsSync(files.content)) continue
+        let entries
+        try {
+            entries = yaml.load(fs.readFileSync(files.data, 'utf8'))
+        } catch {
+            continue
+        }
+        if (!Array.isArray(entries) || !entries.some(isPending)) continue
+        fs.mkdirSync(files.runtime, { recursive: true })
+        const lock = path.join(files.runtime, `${source.id}.lock`)
+        const descriptor = acquireLock(lock)
+        try {
+            const oldData = fs.readFileSync(files.data, 'utf8')
+            const oldContent = fs.readFileSync(files.content, 'utf8')
+            const current = yaml.load(oldData)
+            if (!Array.isArray(current)) continue
+            const pending = current.filter(isPending)
+            if (pending.length === 0) continue
+            const eol = oldContent.includes('\r\n') ? '\r\n' : '\n'
+            let markdown = oldContent
+            for (const entry of pending) {
+                const id = nextNewsId(current, markdown)
+                entry.content = id
+                markdown = markdown + (markdown.endsWith(eol) ? eol : eol + eol) +
+                    [`{{#ifequal hir "${id}"}}`, '', '<!-- Ide írd a hír szövegét. -->', '', '{{/ifequal}}', ''].join(eol)
+                created.push({ sourceId: source.id, id })
+            }
+            // The dashboard appends new entries: show the newest first.
+            const rest = current.filter(entry => !pending.includes(entry))
+            const ordered = [...pending.slice().reverse(), ...rest]
+            atomicWrite(files.content, markdown)
+            try {
+                atomicWrite(files.data, yaml.dump(ordered, { lineWidth: -1, noRefs: true }))
+            } catch (error) {
+                atomicWrite(files.content, oldContent)
+                throw error
+            }
+        } finally {
+            fs.closeSync(descriptor)
+            fs.unlinkSync(lock)
+        }
+    }
+    return created
+}
+
+module.exports = { finalizePendingNews, nextNewsId, saveNews, sourcePaths }
