@@ -1,18 +1,22 @@
 # Hír létrehozása Front Matter pluginnel
 
-Az aktuális tanév **2026-27**. A Front Matter Dashboard **Data** fülén a **Hírek 2026/2027 (aktuális tanév)** adatforrásban hozhatod létre és szerkesztheted a hírlista bejegyzéseit. A hír szövegét külön, a tanévi Markdown-fájlban kell megadni.
+Az aktuális tanév **2026-27**. A Front Matter Dashboard **Data** fülén a **Hírek 2026/2027 (aktuális tanév)** adatforrásban hozhatod létre és szerkesztheted a hírlista bejegyzéseit. Mentéskor automatikusan létrejön a `newsNN` azonosító és a hozzá tartozó üres szövegblokk. A hír szövegét ebben a blokkban, a tanévi Markdown-fájlban kell megadni.
 
 ## Kapcsolódó fájlok
 
 | Fájl | Szerep |
 |------|--------|
 | `frontmatter.json` | Adatűrlap sémája, média mappa és snippetek |
-| `frontmatter.config.cjs` | A feltöltött hírképek listáját adja az adatűrlap képválasztójához |
+| `frontmatter.config.cjs` | Képválasztó, csak olvasható ID-mező és a hírmentési parancsok regisztrálása |
+| `.frontmatter/ui/data-select-colors.js` | A Data legördülő mezőinek és listaelemeinek olvasható témaszínei |
+| `.frontmatter/ui/news-id.mjs` | Az Add/Update gomb ellenőrzött mentése és visszajelzése |
+| `.frontmatter/lib/news-store.cjs` | Friss fájlolvasás, ID-kiosztás, ütközésellenőrzés és szövegblokk létrehozása |
+| `.frontmatter/lib/news-commands.cjs` | A mentés és a szöveg megnyitása a VS Code-ban |
 | `.frontmatter/templates/hir-uj.md` | Emlékeztető a lépésekhez |
 | `src/data/news-2026-27.yml` | Hírlista: cím, iskola, kép, tartalomazonosító |
 | `src/content/common-news-content-2026-27.md` | Hírszövegek: `{{#ifequal hir "newsNN"}}` blokkok |
 | `src/assets/img/hirfolyam/` | Hírképek |
-| `src/helpers/filterNews.js` | A megfelelő iskola híreinek kiválasztása |
+| `src/helpers/filterNews.js` | A megfelelő iskola híreinek kiválasztása és a főoldali hírek rendezése |
 
 ## 1. Kép feltöltése
 
@@ -33,7 +37,11 @@ Használj egyedi fájlnevet: a Media húzásos feltöltése az azonos nevű megl
 
 A Data nézetben nincs beépített képfeltöltő vagy bélyegképes médiaválasztó. A fájlnévlistát a projekt dinamikus konfigurációja állítja össze, így a fájlnevet nem kell kézzel beírnod. Forrás: [Media feltöltés](https://frontmatter.codes/docs/dashboard/media-view/#drag-and-drop), [dinamikus konfiguráció](https://frontmatter.codes/docs/settings/#extending-with-code).
 
+**Ha a képválasztóban fehér szöveg jelenik meg fehér háttéren:** a projekt UI-kiegészítése a mező és a lenyíló lista szövegét és hátterét is a VS Code témájához igazítja. A javítás első betöltéséhez mentsd a folyamatban lévő szerkesztést, futtasd a **Front Matter: Refresh Front Matter Settings** parancsot, majd zárd be és nyisd meg újra a dashboard lapját. Ha még a régi színek látszanak, futtasd a **Developer: Reload Window** parancsot. A kiegészítést a `frontMatter.extensibility.scripts` beállítás tölti be; lásd a [Front Matter UI-bővítésének dokumentációját](https://frontmatter.codes/docs/ui-extensibility/).
+
 ## 2. Új bejegyzés a Data fülön
+
+**Az automatikus ID-kiosztás első betöltése:** mentsd a módosított fájlokat, majd `Ctrl+Shift+P` → **Developer: Reload Window**. Ezután nyisd meg újra a Front Matter Dashboardot. A Tartalomazonosító mező csak olvasható; új hírnél a „Mentéskor automatikusan létrejön” felirat látszik benne.
 
 1. Nyisd meg a **Data** fület, majd válaszd a **Hírek 2026/2027 (aktuális tanév)** adatforrást.
 2. Új hírhez az üres hozzáadási űrlapot használd. Ha egy meglévő hírt választottál ki, előbb kattints az új bejegyzés hozzáadására vagy a **Cancel** gombra.
@@ -44,21 +52,25 @@ A Data nézetben nincs beépített képfeltöltő vagy bélyegképes médiavála
 | A hír címe | A megjelenő cím |
 | Megjelenés (`site`) | `ps`: Petőfi / Székhely; `bs`: Bálint / Tagiskola; `common`: mindkettő |
 | Hírkép (`img`) | Válassz a feltöltött képek listájából; kép nélkül `nincs` |
-| Tartalomazonosító (`content`) | A következő szabad `newsNN`, például `news07` |
+| Tartalomazonosító (`content`) | Automatikus, nem kell és nem lehet beírni; mentés után például `news08` |
 | Kép igazítása | Általában `center` |
 | Kép oszlopszélessége | Általában `medium-3` |
 | Tartalom oszlopszélessége | Általában `medium-9` |
 
-4. Kattints az **Add** gombra. Meglévő hír mentéséhez az **Update** gombot használd.
-5. **Az új bejegyzést húzd a lista tetejére** a cím melletti mozgatófogantyúval. A Front Matter az új elemet a lista végére teszi; a honlap a YAML sorrendjét követi.
+4. Kattints az **Add** gombra. Várd meg a **Mentve: newsNN. A szövegblokk elkészült.** visszajelzést. Meglévő hír mentéséhez az **Update** gombot használd; az azonosítója megmarad.
+5. **Az új hír automatikusan legfelül jelenik meg.** A kiegészítés a Data listájának elejére menti. A két főoldal a `content` mező `newsNN` sorszáma szerint, csökkenő sorrendben rendezi a híreket (például `news100`, `news99`, `news98`). Nem kell kézzel áthúzni; a Data lista húzással módosított sorrendje nem változtatja meg a főoldali sorrendet.
 
-A `newsNN` a YAML-ben és a tartalomfájlban már szereplő legnagyobb szám + 1 legyen. A plugin a formátumot ellenőrzi, a szabad sorszámot nem választja ki helyetted. Ugyanezt az azonosítót kell használnod a következő lépésben is.
+A kiosztás minden mentéskor újraolvassa a tanévi YAML-listát és a tartalomfájlt, és a legnagyobb meglévő sorszám + 1 értéket használja. A két iskola és a közös hírek egy számsort használnak. A formátum `news01`…`news99`, majd `news100` stb. A törölt bejegyzés megmaradt szövegblokkja továbbra is foglalja a számát. Meglévő azonosítót a rendszer nem számoz át, a korábbi hibás azonosítókat sem javítja át magától.
 
-Az **Add** csak a hírlista bejegyzését menti. A hírszöveg létrehozásához folytasd a 3. lépéssel.
+Egymás után több hírt is felvehetsz beállításfrissítés nélkül. A mentés fájlzárral védi a kiosztást a másik VS Code-ablakból indított egyidejű mentéstől. Ha egy szerkesztett hírt közben máshol módosítottak, a mentés hibát jelez: nyisd meg újra az adatforrást, majd végezd el újra a módosítást. Ha a YAML vagy a szövegfájl megnyitott, nem mentett változtatást tartalmaz, előbb mentsd el azt.
+
+A főoldalak a `filterNews` segédet `newestFirst=true` beállítással hívják. A meglévő hírek szerkesztése nem változtatja meg a sorrendet, amíg a sorszámuk változatlan. Az archív oldalak továbbra is a saját adatlistájuk sorrendjét követik.
+
+Az **Add** a hírlista bejegyzését és az üres szövegblokkot is elkészíti. A szöveg kitöltéséhez folytasd a 3. lépéssel.
 
 ### Alternatíva: YAML snippet
 
-Ha közvetlenül a fájlban dolgoznál:
+Ha közvetlenül a fájlban dolgoznál, a kézi snippet továbbra is használható. Ez megkerüli az automatikus kiosztást: a YAML-ben és a szövegfájlban található legnagyobb szám + 1 azonosítót neked kell megadnod, mindkét helyen pontosan ugyanúgy.
 
 1. Nyisd meg a `src/data/news-2026-27.yml` fájlt, és menj a legelejére (`Ctrl+Home`).
 2. `Ctrl+Shift+P` → **Front Matter: Insert Snippet into your content** → **HIR - YAML bejegyzés (news-*.yml)**.
@@ -82,11 +94,11 @@ A megjelenés helyét a `site` mező határozza meg. A régi bejegyzésekben meg
 
 ## 3. A hír szövege
 
-1. Nyisd meg a `src/content/common-news-content-2026-27.md` fájlt, és menj a **végére** (`Ctrl+End`).
-2. `Ctrl+Shift+P` → **Front Matter: Insert Snippet into your content** → **HIR - Tartalom blokk (common-news-content-*.md)**.
-3. A `contentId` legyen az adatűrlapon megadott azonosító, például `news07`.
-4. A `content` mezőbe írd a hír szövegét Markdown vagy HTML formátumban.
-5. Az **Insert** gombbal szúrd be a blokkot, majd mentsd a fájlt.
+1. A mentési visszajelzésben kattints a **Hír szövegének megnyitása** linkre. Ez a tanévi Markdown-fájl megfelelő `newsNN` blokkjához visz. Később a fájlt közvetlenül is megnyithatod.
+2. A `<!-- Ide írd a hír szövegét. -->` megjegyzés helyére írd a hírt Markdown vagy HTML formátumban.
+3. A blokk nyitó és záró sorát hagyd meg, majd mentsd a fájlt. Az azonosítót nem kell másolnod vagy újragépelned.
+
+Ha a hírt a kézi YAML snippettel készítetted, az üres blokk nem jön létre automatikusan. Ilyenkor a fájl végén (`Ctrl+End`) használd a **Front Matter: Insert Snippet into your content → HIR - Tartalom blokk (common-news-content-*.md)** snippetet a YAML-ben megadott azonosítóval. Az Add által már létrehozott blokk mellé ne szúrj be másodikat ugyanazzal az ID-val.
 
 Példa:
 
@@ -106,8 +118,15 @@ Táblázatos időpontlistákhoz használható a **HIR - Táblázat sor (időpont
 - A hír a megfelelő iskola főoldalának tetején jelenjen meg; `common` esetén mindkettőn.
 - Ellenőrizd a címet, a képet és a szöveget is.
 - `npm run test:news`: a hírszűrés és a hírek tartalomkapcsolatainak automatikus ellenőrzése.
+- `node --test tests/news-ids.test.cjs`: ID-kiosztás, egymás utáni és párhuzamos mentés, szerkesztési ütközés és hibás mentés ellenőrzése elkülönített tesztfájlokkal.
 
 A **Content** fül „Create article” művelete önálló cikkfájlt készít, ezért ehhez a hírrendszerhez a **Data** űrlapot és a tartalomblokkot használd. Az emlékeztető sablon önmagában nem hoz létre hírt.
+
+### Mentési hiba elhárítása
+
+Ha nem érkezik mentési visszajelzés, előbb nyisd meg újra az adatforrást, és ellenőrizd, létrejött-e a hír. Ezután szükség esetén futtasd a **Developer: Reload Window** parancsot. A megoldás a projekt dinamikus konfigurációjával regisztrált VS Code-parancsot és a Front Matter által támogatott UI-scriptet használja; a telepített bővítmény fájljait nem módosítja.
+
+A `.frontmatter/runtime/` csak helyi visszajelzéseket és a folyamatban lévő mentés zárolását tartalmazza; Git nem követi. Ha a VS Code mentés közben összeomlik, megmaradhat a `news-2026-27.lock` fájl. Kizárólag az összes, ezt a projektet szerkesztő VS Code-ablak bezárása után töröld ezt a lock fájlt; normál működéskor automatikusan eltűnik.
 
 ## Ha a dashboard hibaoldalon maradt
 

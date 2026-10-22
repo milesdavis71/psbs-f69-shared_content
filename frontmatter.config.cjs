@@ -1,9 +1,18 @@
 const fs = require('node:fs')
 const path = require('node:path')
+const { registerNewsCommands } = require('./.frontmatter/lib/news-commands.cjs')
 
 // Front Matter calls this function when its settings are loaded/refreshed.
-// Keep the JSON config as the source of the form; only its image choices vary.
+// Keep the JSON schema as the form definition; add image choices and ID handling.
 module.exports = (config) => {
+    // Plain Node tests do not have VS Code's extension-host API.
+    let vscode
+    try {
+        vscode = require('vscode')
+    } catch (error) {
+        if (error.code !== 'MODULE_NOT_FOUND') throw error
+    }
+    if (vscode) registerNewsCommands(vscode, __dirname, config)
     const publicFolder = config['frontMatter.content.publicFolder']
     const folder =
         typeof publicFolder === 'string' ? publicFolder : publicFolder.path
@@ -45,6 +54,14 @@ module.exports = (config) => {
                         ...file.schema,
                         properties: {
                             ...file.schema.properties,
+                            content: {
+                                ...file.schema.properties.content,
+                                uniforms: {
+                                    readOnly: true,
+                                    placeholder: 'Mentéskor automatikusan létrejön',
+                                    'data-news-source': file.id,
+                                },
+                            },
                             img: {
                                 ...file.schema.properties.img,
                                 enum: ['nincs', ...images],

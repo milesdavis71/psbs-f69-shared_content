@@ -78,3 +78,11 @@ Aki ebéd után (11:45-től) szeretne hazamenni, hozzon magával szülői kikér
 {{/ifequal}}
 
 
+{{#ifequal hir "news07"}}
+
+Szeretettel várunk benneteket "Gágogó" című őszi játékos foglalkozásunkra 2026.november 11-én 16:30 és 17:30 között!
+Edina néni és Eva néni
+Helyszín:Bálint Sándor Tagiskola
+6753 Szeged, Kölcsey tér 1b.
+
+{{/ifequal}}

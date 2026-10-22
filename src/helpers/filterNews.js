@@ -2,6 +2,7 @@
 // Usage: {{#filterNews "ps"}} ... {{/filterNews}}
 // or: {{#filterNews schoolKey}} ... {{/filterNews}}
 // or: {{#filterNews schoolKey older=true}} ... {{/filterNews}}
+// or: {{#filterNews schoolKey newestFirst=true}} ... {{/filterNews}}
 // The year parameter is read from frontmatter (root.year) or can be passed as second parameter
 
 // The Data dashboard stores the school selection as a string. Adapt it to the
@@ -13,6 +14,11 @@ function normalizeSchoolSelection(item) {
 
     const { site, ps, bs, common, ...news } = item
     return { [site]: null, ...news }
+}
+
+function newsSequence(item) {
+    const match = /^news(\d+)$/.exec(item.content || '')
+    return match ? Number(match[1]) : -1
 }
 
 module.exports = function (schoolKey, options) {
@@ -280,6 +286,13 @@ module.exports = function (schoolKey, options) {
                 return item
             })
             .filter((item) => item !== null)
+    }
+
+    // Front Matter appends new entries. Current homepages use the increasing
+    // newsNN content ID to show the newest first, regardless of YAML position.
+    // Other callers (including archives) keep their existing list order.
+    if (options.hash && options.hash.newestFirst === true) {
+        filteredItems.sort((a, b) => newsSequence(b) - newsSequence(a))
     }
 
     // Keep Panini's page-relative root path available inside each news item.

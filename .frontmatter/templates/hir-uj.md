@@ -24,15 +24,17 @@ Ez a sablon emlékeztető. **A fájl NEM kerül buildbe** — a lépéseket a va
 - **Data → Hírek 2026/2027**: töltsd ki az új bejegyzés űrlapját, majd **Add**.
 - A **Hírkép** listából válaszd ki a feltöltött képet (kép nélkül: `nincs`).
 - A `site` mező választja ki az iskolát: `ps` = Petőfi, `bs` = Bálint, `common` = mindkettő.
-- Az új hírt mentés után **húzd a lista LEGELEJÉRE**. Az Add alapból a lista végére teszi.
-- Alternatíva: a YAML fájl legelején (`Ctrl+Home`) használd a `HIR - YAML bejegyzés (news-*.yml)` snippetet. A fájl közvetlen lista, nincs `2026-27:` gyűjtőkulcs.
-- A `content` kulcs a **következő szabad** `newsNN` legyen (a legmagasabb meglévő + 1)!
-- Az adatűrlap csak a hírlista bejegyzését menti; a hírszöveghez a következő lépést is végezd el.
+- A `content` mező **automatikus és csak olvasható**. Az Add frissen kiszámolja a következő `newsNN` azonosítót, és elkészíti a szövegblokkot is. Várd meg a „Mentve: newsNN” visszajelzést.
+- Az új hír a Data listában és a honlapon is **legfelül jelenik meg**; nem kell áthúzni.
+- Az Update megtartja az azonosítót. Ha közben másik ablakban módosították a hírt, nyisd meg újra az adatforrást.
+- Az automatikus kiosztás első betöltéséhez: **Developer: Reload Window**, majd nyisd meg újra a dashboardot.
+- Kézi alternatíva: a YAML fájl legelején (`Ctrl+Home`) használd a `HIR - YAML bejegyzés (news-*.yml)` snippetet. Ennél te adod meg a YAML-ben és a szövegfájlban található legnagyobb sorszám + 1 azonosítót, és külön hozod létre a szövegblokkot.
 
 ## 3. Tartalom blokk → `src/content/common-news-content-2026-27.md`
-- A blokk a fájl **VÉGÉRE** kerül.
-- Használd a snippetet: `HIR - Tartalom blokk (common-news-content-*.md)`.
-- Az `ifequal` kulcs **ugyanaz** a `newsNN`, amit a YAML-ben használtál!
+- A mentési visszajelzésben kattints a **Hír szövegének megnyitása** linkre.
+- Az automatikusan elkészült blokkban az `<!-- Ide írd a hír szövegét. -->` megjegyzést cseréld a hír szövegére, majd mentsd a fájlt.
+- A blokk nyitó/záró sorát hagyd meg; az azonosítót nem kell újra beírni.
+- Csak kézi YAML-bejegyzésnél használd a `HIR - Tartalom blokk (common-news-content-*.md)` snippetet, pontosan a YAML-ben megadott `newsNN` értékkel.
 
 ## 4. Ellenőrzés
 - `npm run ps` (Petőfi) és/vagy `npm run bs` (Bálint) → böngészőben ellenőrzés.

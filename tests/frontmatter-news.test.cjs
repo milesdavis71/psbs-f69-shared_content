@@ -93,6 +93,54 @@ test('Data form records reach the selected school, in list order', () => {
     assert.ok(select(entries, 'ps').every((item) => item.root === '../../'))
 })
 
+test('appended Data form records appear first on the appropriate homepages', () => {
+    const entries = [
+        { site: 'common', title: 'Közös', content: 'news99' },
+        { site: 'bs', title: 'Bálint', content: 'news10' },
+        { site: 'ps', title: 'Petőfi', content: 'news09' },
+    ]
+    // Add behaves like Array.push in the Front Matter Data dashboard.
+    entries.push({ site: 'bs', title: 'Új Bálint hír', content: 'news100' })
+    entries.push({ site: 'common', title: 'Új közös hír', content: 'news101' })
+    const before = structuredClone(entries)
+    const newestFirst = { newestFirst: true }
+
+    assert.deepEqual(
+        select(entries, 'bs', newestFirst).map((item) => item.content),
+        ['news101', 'news100', 'news99', 'news10']
+    )
+    assert.deepEqual(
+        select(entries, 'ps', newestFirst).map((item) => item.content),
+        ['news101', 'news99', 'news09']
+    )
+    // An existing news item keeps its position when its title is edited.
+    entries[1].title = 'Javított Bálint cím'
+    assert.deepEqual(
+        select(entries, 'bs', newestFirst).map((item) => item.content),
+        ['news101', 'news100', 'news99', 'news10']
+    )
+    before[1].title = entries[1].title
+    assert.deepEqual(entries, before, 'rendering must not reorder the data file')
+    assert.deepEqual(
+        select(entries, 'bs').map((item) => item.content),
+        ['news99', 'news10', 'news100', 'news101'],
+        'callers without newestFirst retain their original order'
+    )
+})
+
+test('news without a sequence keep their relative order after numbered news', () => {
+    const entries = [
+        { site: 'ps', title: 'Azonosító nélkül' },
+        { site: 'ps', content: 'news09' },
+        { site: 'ps', title: 'Régi azonosító', content: 'other' },
+        { site: 'ps', content: 'news10' },
+    ]
+    assert.deepEqual(
+        select(entries, 'ps', { newestFirst: true }).map((item) => item.content),
+        ['news10', 'news09', undefined, 'other']
+    )
+})
+
 test('changing the school in the form takes effect even with a legacy marker', () => {
     const entries = [{ ps: null, site: 'bs', title: 'Áthelyezett hír' }]
     assert.equal(select(entries, 'ps').length, 0)
