@@ -86,7 +86,7 @@ Szeretettel várunk benneteket
 **Helyszín:** Bálint Sándor Tagiskola
 6753 Szeged, Kölcsey tér 1b.
 
-*Edina néni és Eva néni*
+*Edina néni és Éva néni*
 
 
 {{/ifequal}}
