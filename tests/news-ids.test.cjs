@@ -218,3 +218,29 @@ test('dashboard-saved entries are finalized with an id, top position and text bl
     assert.deepEqual(finalizePendingNews(f.root, f.config), [])
     assert.deepEqual(f.read().map((e) => e.content), ["news09", "news08", "news07"])
 })
+
+test('a manual Data list order survives new saves', t => {
+    const f = fixture(t)
+    const manual = [
+        { site: "ps", title: "Harmadik", img: "nincs", align: "center", imgclass: "medium-3", contentclass: "medium-9", content: "news07" },
+        { site: "ps", title: "Első", img: "nincs", align: "center", imgclass: "medium-3", contentclass: "medium-9", content: "news05" },
+        { site: "ps", title: "Második", img: "nincs", align: "center", imgclass: "medium-3", contentclass: "medium-9", content: "news06" },
+    ]
+    fs.writeFileSync(f.files.data, yaml.dump(manual))
+    const result = saveNews(f.root, f.config, { sourceId: f.sourceId, model: f.model })
+    assert.equal(result.id, "news08")
+    assert.deepEqual(f.read().map((e) => e.content), ["news08", "news07", "news05", "news06"])
+    // The watcher must not re-sort a manually ordered list.
+    assert.deepEqual(finalizePendingNews(f.root, f.config), [])
+    assert.deepEqual(f.read().map((e) => e.content), ["news08", "news07", "news05", "news06"])
+    const baseline = f.read()[2]
+    saveNews(f.root, f.config, {
+        sourceId: f.sourceId, baseline,
+        model: { ...baseline, title: 'Edited in place' },
+    })
+    assert.deepEqual(f.read().map(e => e.content), ["news08", "news07", "news05", "news06"])
+    // Native dashboard fallback appends an unnumbered entry before finalization.
+    fs.writeFileSync(f.files.data, yaml.dump([...f.read(), f.model]))
+    finalizePendingNews(f.root, f.config)
+    assert.deepEqual(f.read().map(e => e.content), ["news09", "news08", "news07", "news05", "news06"])
+})

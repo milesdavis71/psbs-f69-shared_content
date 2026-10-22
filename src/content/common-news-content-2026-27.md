@@ -80,17 +80,34 @@ Aki ebéd után (11:45-től) szeretne hazamenni, hozzon magával szülői kikér
 
 {{#ifequal hir "news07"}}
 
-Szeretettel várunk benneteket "Gágogó" című őszi játékos foglalkozásunkra 2026.november 11-én 16:30 és 17:30 között!
-Edina néni és Eva néni
-Helyszín:Bálint Sándor Tagiskola
+Szeretettel várunk benneteket  
+*"Gágogó"* című őszi játékos foglalkozásunkra  
+**2026.november 11-én 16:30 és 17:30 között!**  
+**Helyszín:** Bálint Sándor Tagiskola
 6753 Szeged, Kölcsey tér 1b.
+
+*Edina néni és Eva néni*
+
 
 {{/ifequal}}
 
 {{#ifequal hir "news08"}}
 **2026.10.23. - 2026.11.01.**
 
-- **utolsó tanítási nap:**<br>2025. december 19. (péntek)
-- **első tanítási nap:**<br>2026. január 5. (hétfő)
+- **utolsó tanítási nap:**<br>2026. október 22. (csütörtök)
+- **első tanítási nap:**<br>2026. november 2. (hétfő)
 
 {{/ifequal}}
+
+{{#ifequal hir "news09"}}
+
+**Időpont:** 2026\. november 12.  
+7:00 – (várhatóan)17:00-ig
+
+*A könyveket kemény borító és műanyag csomagolás nélkül kérjük hozni.*
+
+
+{{/ifequal}}
+
+
+

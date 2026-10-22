@@ -93,13 +93,13 @@ test('Data form records reach the selected school, in list order', () => {
     assert.ok(select(entries, 'ps').every((item) => item.root === '../../'))
 })
 
-test('appended Data form records appear first on the appropriate homepages', () => {
+test('explicit numeric sorting remains available to callers that request it', () => {
     const entries = [
         { site: 'common', title: 'Közös', content: 'news99' },
         { site: 'bs', title: 'Bálint', content: 'news10' },
         { site: 'ps', title: 'Petőfi', content: 'news09' },
     ]
-    // Add behaves like Array.push in the Front Matter Data dashboard.
+    // This opt-in mode sorts even records appended to the data file.
     entries.push({ site: 'bs', title: 'Új Bálint hír', content: 'news100' })
     entries.push({ site: 'common', title: 'Új közös hír', content: 'news101' })
     const before = structuredClone(entries)
@@ -139,6 +139,43 @@ test('news without a sequence keep their relative order after numbered news', ()
         select(entries, 'ps', { newestFirst: true }).map((item) => item.content),
         ['news10', 'news09', undefined, 'other']
     )
+})
+
+test('both homepage templates render the saved manual order, including after new entries and edits', () => {
+    const handlebars = require('handlebars').create()
+    handlebars.registerHelper('filterNews', filterNews)
+    handlebars.registerHelper('mdFile', () => '')
+    for (const name of ['title', 'hir-cells', 'common-ps-korabbi-hirek']) {
+        handlebars.registerPartial(name, '')
+    }
+    const templates = Object.fromEntries(['ps', 'bs'].map(school => [
+        school,
+        handlebars.compile(fs.readFileSync(
+            path.join(projectRoot, 'src/pages', school, 'index.html'), 'utf8'
+        )),
+    ]))
+    const entries = [
+        { site: 'common', title: 'manual-first', content: 'news02' },
+        { site: 'bs', title: 'bs-second', content: 'news100' },
+        { site: 'ps', title: 'ps-second', content: 'news99' },
+        { site: 'common', title: 'manual-last', content: 'news01' },
+    ]
+    const titles = school => [...templates[school]({ 'news-2026-27': entries })
+        .matchAll(/class="title-bar"[\s\S]*?>\s*([^<]+?)\s*<\/div>/g)]
+        .map(match => match[1].trim())
+    const check = (bs, ps) => {
+        const before = structuredClone(entries)
+        assert.deepEqual(titles('bs'), bs)
+        assert.deepEqual(titles('ps'), ps)
+        assert.deepEqual(entries, before, 'rendering preserves the saved list')
+    }
+    check(['manual-first', 'bs-second', 'manual-last'], ['manual-first', 'ps-second', 'manual-last'])
+    entries.unshift({ site: 'common', title: 'new-first', content: 'news101' })
+    check(['new-first', 'manual-first', 'bs-second', 'manual-last'], ['new-first', 'manual-first', 'ps-second', 'manual-last'])
+    // A dashboard drag moves an older item above the newest one.
+    entries.unshift(entries.pop())
+    entries[0].title = 'edited-first'
+    check(['edited-first', 'new-first', 'manual-first', 'bs-second'], ['edited-first', 'new-first', 'manual-first', 'ps-second'])
 })
 
 test('changing the school in the form takes effect even with a legacy marker', () => {
@@ -309,13 +346,15 @@ test('the auto-assigned content field cannot block the Add form', () => {
     )
 })
 
-test('the dashboard list keeps the newest news first', () => {
+test('the dashboard list keeps new entries first and respects manual order', () => {
     const source = fs.readFileSync(
         path.join(projectRoot, '.frontmatter/ui/news-id.mjs'),
         'utf8'
     )
-    assert.match(source, /sortNewestFirst/)
-    assert.match(source, /newsRank/)
-    // Sorting must be skipped while an entry is being edited.
+    assert.match(source, /pendingFirst/)
+    assert.match(source, /isPending/)
+    // No automatic re-sorting: a manual drag & drop order must stay intact.
+    assert.doesNotMatch(source, /sortNewestFirst/)
+    // Reordering must be skipped while an entry is being edited.
     assert.match(source, /content\.value\.trim\(\)/)
 })

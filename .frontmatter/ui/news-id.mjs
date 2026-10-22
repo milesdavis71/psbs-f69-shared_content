@@ -7,18 +7,17 @@ let busy = false
 
 let sorting = false
 
-// The homepage shows the newest news first (filterNews newestFirst). Keep the
-// Data view's left list in the same order: numbered news descending, a just
-// added entry without an id first, legacy entries without a sequence last.
-function newsRank(entry) {
-    const content = typeof entry?.content === 'string' ? entry.content.trim() : ''
-    if (!content) return Number.MAX_SAFE_INTEGER
-    const match = /^news(\d+)$/.exec(content)
-    return match ? Number(match[1]) : -1
+// A new entry has no content id until the save assigns one. It always belongs
+// at the top; every other entry keeps the file's order, so a manual drag & drop
+// in the Data list is respected and never re-sorted automatically.
+function isPending(entry) {
+    return !(typeof entry?.content === 'string' && entry.content.trim())
 }
 
-function sortNewestFirst(list) {
-    return [...list].sort((left, right) => newsRank(right) - newsRank(left))
+function pendingFirst(list) {
+    const pending = list.filter(isPending)
+    if (pending.length === 0) return [...list]
+    return [...pending, ...list.filter(entry => !isPending(entry))]
 }
 
 function sameOrder(left, right) {
@@ -28,15 +27,15 @@ function sameOrder(left, right) {
 window.addEventListener('message', event => {
     if (event.data?.command !== 'dataFileEntries' || !Array.isArray(event.data.payload)) return
     entries = structuredClone(event.data.payload)
-    const sorted = sortNewestFirst(event.data.payload)
-    if (sorting || sameOrder(event.data.payload, sorted)) return
-    // Sorting shifts the selected index, so skip it while an entry is edited.
+    const ordered = pendingFirst(event.data.payload)
+    if (sorting || sameOrder(event.data.payload, ordered)) return
+    // Reordering shifts the selected index, so skip it while an entry is edited.
     const content = document.querySelector('form input[name="content"]')
     if (content && content.value.trim()) return
-    // Re-dispatch the sorted entries so the dashboard re-renders the list.
+    // Re-dispatch so the dashboard re-renders the list with the new entry first.
     sorting = true
     window.dispatchEvent(new MessageEvent('message', {
-        data: { command: 'dataFileEntries', payload: sorted },
+        data: { command: 'dataFileEntries', payload: ordered },
     }))
     sorting = false
 })

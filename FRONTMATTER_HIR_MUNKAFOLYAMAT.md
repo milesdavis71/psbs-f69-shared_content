@@ -58,14 +58,16 @@ A Data nézetben nincs beépített képfeltöltő vagy bélyegképes médiavála
 | Tartalom oszlopszélessége | Általában `medium-9` |
 
 4. Kattints az **Add** gombra. Várd meg a **Mentve: newsNN. A szövegblokk elkészült.** visszajelzést. Meglévő hír mentéséhez az **Update** gombot használd; az azonosítója megmarad.
-5. **Az új hír automatikusan legfelül jelenik meg.** A kiegészítés a Data listájának elejére menti. A két főoldal a `content` mező `newsNN` sorszáma szerint, csökkenő sorrendben rendezi a híreket (például `news100`, `news99`, `news98`). Nem kell kézzel áthúzni; a Data lista húzással módosított sorrendje nem változtatja meg a főoldali sorrendet.
-A Data fül bal oldali bejegyzéslistája is ezt a legújabb-elöl sorrendet követi: a `content` sorszám szerint csökkenően (például news10, news07, news06), a még azonosító nélküli, frissen felvett bejegyzés legelöl, a sorszám nélküli régi bejegyzések pedig a lista végén. A sorrend mentés után automatikusan frissül; kézzel áthúzni nem kell.
+5. **Az új hír automatikusan legfelül jelenik meg.** A kiegészítés a Data listájának elejére menti. A két főoldal a Data listában mentett sorrendet követi, az adott iskolához tartozó és közös hírekre szűrve.
+A Data fül bal oldali bejegyzéslistája a YAML-fájl sorrendjét mutatja (alapból legújabb elöl), a még azonosító nélküli, frissen felvett bejegyzés pedig mindig a lista elejére kerül.
+
+A sorrend **kézzel felülírható**: ha a Data listában húzással (drag & drop) átrendezed a híreket, az új sorrend bekerül a YAML-fájlba, és a következő rendereléskor a **honlap hírfolyama is ezt követi**. A meglévő hírek mentése és a háttérben futó véglegesítés megőrzi ezt a sorrendet. Új hír felvételekor csak az új bejegyzés kerül eléjük; a korábbi hírek egymáshoz viszonyított sorrendje megmarad. Az azonosítókat nem kell átírnod a rendezéshez.
 
 A kiosztás minden mentéskor újraolvassa a tanévi YAML-listát és a tartalomfájlt, és a legnagyobb meglévő sorszám + 1 értéket használja. A két iskola és a közös hírek egy számsort használnak. A formátum `news01`…`news99`, majd `news100` stb. A törölt bejegyzés megmaradt szövegblokkja továbbra is foglalja a számát. Meglévő azonosítót a rendszer nem számoz át, a korábbi hibás azonosítókat sem javítja át magától.
 
 Egymás után több hírt is felvehetsz beállításfrissítés nélkül. A mentés fájlzárral védi a kiosztást a másik VS Code-ablakból indított egyidejű mentéstől. Ha egy szerkesztett hírt közben máshol módosítottak, a mentés hibát jelez: nyisd meg újra az adatforrást, majd végezd el újra a módosítást. Ha a YAML vagy a szövegfájl megnyitott, nem mentett változtatást tartalmaz, előbb mentsd el azt.
 
-A főoldalak a `filterNews` segédet `newestFirst=true` beállítással hívják. A meglévő hírek szerkesztése nem változtatja meg a sorrendet, amíg a sorszámuk változatlan. Az archív oldalak továbbra is a saját adatlistájuk sorrendjét követik.
+A főoldalak a `filterNews` segédet automatikus sorszám szerinti rendezés nélkül hívják. A `content` azonosító a hír szövegblokkjához kapcsol, a megjelenítési helyet a YAML-listában elfoglalt pozíció határozza meg. Az archív oldalak továbbra is a saját adatlistájuk sorrendjét követik.
 
 Az **Add** a hírlista bejegyzését és az üres szövegblokkot is elkészíti. A szöveg kitöltéséhez folytasd a 3. lépéssel.
 

@@ -288,9 +288,8 @@ module.exports = function (schoolKey, options) {
             .filter((item) => item !== null)
     }
 
-    // Front Matter appends new entries. Current homepages use the increasing
-    // newsNN content ID to show the newest first, regardless of YAML position.
-    // Other callers (including archives) keep their existing list order.
+    // Numeric sorting is opt-in. Homepages use the saved Data/YAML list order:
+    // creation prepends new entries, while manual reordering remains authoritative.
     if (options.hash && options.hash.newestFirst === true) {
         filteredItems.sort((a, b) => newsSequence(b) - newsSequence(a))
     }
