@@ -109,5 +109,10 @@ Szeretettel várunk benneteket
 
 {{/ifequal}}
 
+{{#ifequal hir "news11"}}
 
+Szeretettel várunk minden szülőt a   
+**november 10-én 16:30 és 18:00 óra között**  
+tartandó szaktanári fogadóórákra.
 
+{{/ifequal}}

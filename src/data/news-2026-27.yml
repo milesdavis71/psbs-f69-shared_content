@@ -1,4 +1,11 @@
 - site: bs
+  img: fogadoora_small.jpg
+  align: center
+  imgclass: medium-4
+  contentclass: medium-8
+  title: Szaktanári fogadóórák
+  content: news11
+- site: bs
   align: left
   imgclass: medium-3
   contentclass: medium-9
