@@ -1,3 +1,123 @@
+<style>
+    /* A galéria kártya-stílusai a partialban vannak, hogy a HTML-lel együtt
+       kerüljenek ki a szerverre: így nem függenek a CSS újrafordításától. */
+    .gallery-card-grid {
+        margin-bottom: 0.5rem;
+    }
+
+    .gallery-card-cell {
+        display: flex;
+        margin-bottom: 1.1rem;
+    }
+
+    .gallery-card {
+        flex: 1 1 auto;
+        height: 100%;
+        overflow: hidden;
+        background: #fff;
+        border: 1px solid #e2e2e2;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        transition:
+            box-shadow 0.2s ease,
+            transform 0.2s ease;
+    }
+
+    .gallery-card:hover,
+    .gallery-card:focus-within {
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+        transform: translateY(-2px);
+    }
+
+    .gallery-card-link {
+        display: block;
+        color: inherit;
+    }
+
+    .gallery-card-media {
+        position: relative;
+        padding-top: 75%;
+        overflow: hidden;
+        background: #ececec;
+    }
+
+    .gallery-card-image {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 0.35s ease;
+    }
+
+    .gallery-card:hover .gallery-card-image,
+    .gallery-card:focus-within .gallery-card-image {
+        transform: scale(1.035);
+    }
+
+    .gallery-card-placeholder {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ececec;
+        color: #666;
+    }
+
+    .gallery-card-section {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.7rem 0.7rem 0.8rem;
+    }
+
+    .gallery-card-title {
+        margin: 0 0 0.25rem;
+        color: inherit;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.25;
+        text-align: center;
+    }
+
+    .gallery-card-title a {
+        color: inherit;
+    }
+
+    .gallery-card-date {
+        margin: 0;
+        color: #666;
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 39.9375em) {
+        .gallery-card-cell {
+            margin-bottom: 0.85rem;
+        }
+
+        .gallery-card {
+            border-radius: 0.4rem;
+        }
+
+        .gallery-card-section {
+            padding: 0.55rem 0.5rem 0.65rem;
+        }
+
+        .gallery-card-title {
+            font-size: 0.92rem;
+            line-height: 1.2;
+        }
+
+        .gallery-card-date {
+            font-size: 0.76rem;
+        }
+    }
+</style>
+
 {{#if items}}
 <div
     class="grid-x grid-margin-x small-up-1 medium-up-3 large-up-4 gallery-card-grid"

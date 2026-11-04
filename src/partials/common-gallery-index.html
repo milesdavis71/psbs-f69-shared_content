@@ -1,3 +1,141 @@
+<style>
+    /* A galéria stílusai a partialban vannak, hogy a HTML-lel együtt
+       kerüljenek ki a szerverre: így nem függenek a CSS újrafordításától. */
+    .gallery-year-tabs {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 0 0 1rem;
+        padding: 0 0.2rem;
+        border: 0;
+        border-bottom: 1px solid #d6d6d6;
+        background: #fff;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        scroll-padding-inline: 0.2rem;
+        scrollbar-width: thin;
+    }
+
+    .gallery-year-tabs::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .gallery-year-tabs::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+        border-radius: 999px;
+    }
+
+    .gallery-year-tabs > li.tabs-title {
+        float: none;
+        flex: 0 0 auto;
+        margin: 0;
+        scroll-snap-align: start;
+    }
+
+    .gallery-year-tabs > li.tabs-title > a {
+        display: inline-flex;
+        align-items: center;
+        vertical-align: middle;
+        gap: 0.4rem;
+        padding: 0.7rem 0.9rem;
+        border-bottom: 3px solid transparent;
+        color: #444;
+        font-size: 0.95rem;
+        font-weight: 600;
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+
+    .gallery-year-tabs > li.tabs-title > a:hover {
+        background: #f6f6f6;
+        color: #1779ba;
+    }
+
+    .gallery-year-tabs > li.tabs-title > a:focus-visible {
+        outline: 2px solid #1779ba;
+        outline-offset: -2px;
+    }
+
+    .gallery-year-tabs > li.tabs-title > a[aria-selected='true'] {
+        border-bottom-color: #ffa500;
+        background: #fff;
+        color: #1779ba;
+    }
+
+    .gallery-tab-label {
+        white-space: nowrap;
+    }
+
+    .gallery-year-count {
+        display: inline-block;
+        flex: 0 0 auto;
+        margin: 0;
+        padding: 0.1rem 0.45rem;
+        border-radius: 999px;
+        background: #e6e6e6;
+        color: #444;
+        font-size: 0.72rem;
+        font-weight: 600;
+        line-height: 1.4;
+        vertical-align: middle;
+    }
+
+    .gallery-year-tabs > li.tabs-title > a[aria-selected='true']
+        .gallery-year-count {
+        background: #ffa500;
+        color: #fff;
+    }
+
+    .gallery-tabs-content {
+        padding: 0;
+        border: 0;
+        background: transparent;
+    }
+
+    .gallery-year-heading {
+        margin: 0.4rem 0 1rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 39.9375em) {
+        .gallery-year-tabs {
+            gap: 0.2rem;
+            margin: 0 0 0.75rem;
+            padding: 0 0.2rem;
+            scrollbar-width: none;
+        }
+
+        .gallery-year-tabs::-webkit-scrollbar {
+            display: none;
+        }
+
+        .gallery-year-tabs > li.tabs-title > a {
+            padding: 0.5rem 0.6rem;
+            gap: 0.3rem;
+            border-bottom-width: 2px;
+            font-size: 0.82rem;
+            scroll-snap-align: center;
+        }
+
+        .gallery-year-count {
+            padding: 0.08rem 0.4rem;
+            font-size: 0.68rem;
+        }
+
+        .gallery-year-heading {
+            margin: 0.3rem 0 0.8rem;
+            font-size: 1.08rem;
+        }
+    }
+</style>
+
 {{#if (galleryYears schoolKey)}}
 <ul
     class="tabs gallery-year-tabs"
