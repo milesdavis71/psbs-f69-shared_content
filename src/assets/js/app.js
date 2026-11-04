@@ -183,8 +183,41 @@ $(document).ready(function () {
         })
     }
 
+    // Galéria főoldal: a Foundation vízszintes tab sáv aktív tabjának
+    // középre igazítása (mobilen vízszintesen görgethető sáv).
+    function setupGalleryTabs() {
+        var $tabs = $('#gallery-year-tabs')
+        if (!$tabs.length) return
+
+        var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
+
+        function centerActiveTab() {
+            var $active = $tabs.find('li.tabs-title.is-active > a')
+            if (!$active.length) return
+            var left =
+                $active[0].offsetLeft -
+                $tabs[0].clientWidth / 2 +
+                $active[0].clientWidth / 2
+            $tabs[0].scrollTo({
+                left: Math.max(0, left),
+                behavior: reduceMotion.matches ? 'auto' : 'smooth',
+            })
+        }
+
+        $tabs.on('change.zf.tabs deeplink.zf.tabs', function () {
+            setTimeout(centerActiveTab, 0)
+        })
+
+        // A Foundation a script betöltésekor inicializál, ezért a tab-sáv
+        // középre igazítását a későbbi időzítések is elvégzik.
+        setTimeout(centerActiveTab, 0)
+        setTimeout(centerActiveTab, 100)
+        setTimeout(centerActiveTab, 300)
+    }
+
     // 1. Futtatás azonnal betöltéskor
     forceOpenMenu()
+    setupGalleryTabs()
 
     // 2. Futtatás a Foundation inicializálása után (on init esemény)
     $('.accordion-menu').on('init.zf.accordionMenu', function () {

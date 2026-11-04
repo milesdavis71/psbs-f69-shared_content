@@ -6,7 +6,8 @@
   "frontMatter.config.dynamicFilePath": "[[workspace]]/frontmatter.config.cjs",
   "frontMatter.extensibility.scripts": [
     "[[workspace]]/.frontmatter/ui/data-select-colors.js",
-    "[[workspace]]/.frontmatter/ui/news-id.mjs"
+    "[[workspace]]/.frontmatter/ui/news-id.mjs",
+    "[[workspace]]/.frontmatter/ui/gallery-form.mjs"
   ],
   "frontMatter.content.publicFolder": "src/assets/img/hirfolyam",
   "frontMatter.content.pageFolders": [
@@ -70,6 +71,57 @@
             "title": "Tartalom oszlopszélessége (pl. medium-9)",
             "default": "medium-9",
             "minLength": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "gallery-events",
+      "title": "Galéria események (ps/bs)",
+      "file": "[[workspace]]/src/data/gallery_events.yml",
+      "fileType": "yaml",
+      "labelField": "title",
+      "singleEntry": false,
+      "schema": {
+        "title": "Galéria esemény",
+        "type": "object",
+        "required": ["folder", "title"],
+        "properties": {
+          "folder": {
+            "type": "string",
+            "title": "Feldolgozott galériamappa",
+            "description": "Válaszd ki a resizer.py programmal előkészített mappát. Az iskola, a tanév, a slug és a dátum automatikusan kitöltődik.",
+            "minLength": 1
+          },
+          "school": {
+            "type": "string",
+            "title": "Iskola (automatikus)",
+            "enum": ["ps", "bs"],
+            "default": "ps"
+          },
+          "year": {
+            "type": "string",
+            "title": "Tanév (automatikus)",
+            "description": "A mappanév dátumából számolódik."
+          },
+          "slug": {
+            "type": "string",
+            "title": "Mappa / slug (automatikus)",
+            "description": "A képmappa neve; mentéskor a rendszer tölti ki."
+          },
+          "title": {
+            "type": "string",
+            "title": "A galéria címe",
+            "minLength": 1
+          },
+          "date": {
+            "type": "string",
+            "title": "Dátum (pl. 2026. 09. 10.)",
+            "description": "Üresen hagyva a mappanév dátumából töltődik ki."
+          },
+          "alt": {
+            "type": "string",
+            "title": "Képek alt szövege (opcionális)"
           }
         }
       }
@@ -170,6 +222,58 @@
         {
           "name": "col3",
           "title": "3. oszlop (pl. 17:00)",
+          "type": "string"
+        }
+      ]
+    },
+    "GAL - YAML bejegyzés (gallery_events.yml)": {
+      "description": "Új galéria esemény a src/data/gallery_events.yml lista LEGELEJÉRE. A mappanév legyen feldolgozott: iskola/tanév/slug.",
+      "body": [
+        "- folder: [[folder]]",
+        "  school: [[school]]",
+        "  year: '[[year]]'",
+        "  date: '[[date]]'",
+        "  slug: '[[slug]]'",
+        "  title: '[[title]]'",
+        "  alt: '[[alt]]'",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "folder",
+          "title": "Galériamappa (pl. ps/2026-27/2026_09_10_esemeny)",
+          "type": "string"
+        },
+        {
+          "name": "school",
+          "title": "Iskolakulcs",
+          "type": "choice",
+          "choices": ["ps", "bs"],
+          "default": "ps"
+        },
+        {
+          "name": "year",
+          "title": "Tanév (pl. 2026-27)",
+          "type": "string"
+        },
+        {
+          "name": "date",
+          "title": "Dátum (pl. 2026. 09. 10.)",
+          "type": "string"
+        },
+        {
+          "name": "slug",
+          "title": "Slug / mappanév",
+          "type": "string"
+        },
+        {
+          "name": "title",
+          "title": "Esemény címe",
+          "type": "string"
+        },
+        {
+          "name": "alt",
+          "title": "Alt szöveg (opcionális)",
           "type": "string"
         }
       ]

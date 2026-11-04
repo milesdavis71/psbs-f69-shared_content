@@ -1,3 +1,11 @@
+"""Régi galéria-HTML generátor.
+
+A jelenlegi folyamat a Front Matter Data „Galéria események” űrlapja és a
+`.frontmatter/lib/gallery-store.cjs`. Ez a szkript csak régi anyagok egyszeri
+átvételéhez/migrációjához használható; új eseményt ne ezzel hozz létre, mert a
+fő galériaoldal a `src/data/gallery_events.yml` registryből dolgozik.
+"""
+
 from __future__ import annotations
 
 import re
@@ -246,7 +254,7 @@ class GalleryGeneratorApp:
     def __init__(self) -> None:
         root_class = TkinterDnD.Tk if TkinterDnD else Tk
         self.root = root_class()
-        self.root.title("Galéria HTML generátor")
+        self.root.title("Galéria HTML generátor (régi – új eseményhez a Front Matter Data használandó)")
         self.root.geometry("820x560")
         self.school_key = StringVar(value="ps")
         self.ps_checked = BooleanVar(value=True)

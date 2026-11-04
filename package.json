@@ -9,6 +9,12 @@
         "start": "gulp",
         "build": "gulp build --production",
         "test:news": "node --test tests/frontmatter-news.test.cjs tests/news-ids.test.cjs",
+    "test:gallery": "node --test tests/gallery-store.test.cjs tests/gallery-helpers.test.cjs",
+    "test": "npm run test:news && npm run test:gallery",
+    "gallery:migrate": "node scripts/migrate_gallery_events.cjs",
+    "gallery:fix-titles": "node scripts/fix_gallery_titles.cjs",
+"gallery:fix-titles": "node scripts/fix_gallery_titles.cjs",
+    "build:js": "node scripts/build_js.cjs",
         "format": "prettier --write \"src/**/*.html\"",
         "format:check": "prettier --check \"src/**/*.html\""
     },

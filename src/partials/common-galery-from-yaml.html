@@ -1,3 +1,4 @@
+{{#with (galleryEntry schoolKey year slug)}}
 <h5 class="text-center">
     {{title}}<br />
     <small>{{date}}</small>
@@ -8,8 +9,8 @@
         <div class="gg-box dark" id="square">
             {{#range 1 count pad=2}}
             <img
-                src="/assets/img/{{../schoolKey}}/galeriak/{{../year}}/{{../slug}}/thumb/{{this}}_thumb.jpg"
-                data-full="/assets/img/{{../schoolKey}}/galeriak/{{../year}}/{{../slug}}/full/{{this}}_full.jpg"
+                src="/assets/img/{{../assetSchool}}/galeriak/{{../assetYear}}/{{../assetSlug}}/thumb/{{this}}_thumb.jpg"
+                data-full="/assets/img/{{../assetSchool}}/galeriak/{{../assetYear}}/{{../assetSlug}}/full/{{this}}_full.jpg"
                 alt="{{../title}} – {{this}}"
                 loading="lazy"
             />
@@ -17,6 +18,8 @@
         </div>
     </div>
 </div>
+{{/with}}
+
 <script>
     const root = document.querySelector('body, html')
     const container = document.querySelector('.gg-container')

@@ -1,0 +1,38 @@
+{{#if items}}
+<div
+    class="grid-x grid-margin-x small-up-1 medium-up-3 large-up-4 gallery-card-grid"
+>
+    {{#each items}}
+    <div class="cell gallery-card-cell">
+        <article class="card gallery-card">
+            <a class="gallery-card-link" href="{{href}}" aria-label="{{title}}">
+                <div class="gallery-card-media">
+                    {{#if cover}}
+                    <img
+                        class="gallery-card-image"
+                        src="{{cover}}"
+                        alt="{{alt}}"
+                        loading="lazy"
+                    />
+                    {{else}}
+                    <span class="gallery-card-placeholder"
+                        >Nincs borítókép</span
+                    >
+                    {{/if}}
+                </div>
+            </a>
+            <div class="card-section gallery-card-section">
+                <p class="gallery-card-title">
+                    <a href="{{href}}">{{title}}</a>
+                </p>
+                {{#if date}}
+                <p class="gallery-card-date">{{date}}</p>
+                {{/if}}
+            </div>
+        </article>
+    </div>
+    {{/each}}
+</div>
+{{else}}
+<p class="text-center">Ebben a tanévben még nincsenek fotógalériák.</p>
+{{/if}}

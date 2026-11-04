@@ -1,0 +1,44 @@
+{{#if (galleryYears schoolKey)}}
+<ul
+    class="tabs gallery-year-tabs"
+    data-tabs
+    id="gallery-year-tabs"
+    data-deep-link="true"
+    data-update-history="true"
+>
+    {{#each (galleryYears schoolKey)}}
+    <li class="tabs-title{{#if @first}} is-active{{/if}}">
+        <a
+            id="tab-{{anchor}}"
+            href="#{{anchor}}"
+            data-tabs-target="{{anchor}}"
+            role="tab"
+            aria-controls="{{anchor}}"
+            aria-selected="{{#if @first}}true{{else}}false{{/if}}"
+        >
+            <span class="gallery-tab-label">{{label}}</span>
+            <span class="gallery-year-count">{{count}}</span>
+        </a>
+    </li>
+    {{/each}}
+</ul>
+{{/if}}
+
+<div
+    class="tabs-content gallery-tabs-content"
+    data-tabs-content="gallery-year-tabs"
+>
+    {{#each (gallerySections schoolKey)}}
+    <div
+        class="tabs-panel{{#if @first}} is-active{{/if}}"
+        id="{{anchor}}"
+        role="tabpanel"
+        aria-labelledby="tab-{{anchor}}"
+    >
+        <h5 class="gallery-year-heading">
+            {{label}} <span class="gallery-year-count">{{count}}</span>
+        </h5>
+        {{> gallery-cards items=cards}}
+    </div>
+    {{/each}}
+</div>

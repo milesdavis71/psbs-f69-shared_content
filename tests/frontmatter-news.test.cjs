@@ -249,7 +249,9 @@ test('the YAML snippet creates a root list and preserves quoted Hungarian titles
 })
 
 test('registered news files have forms and unique, matching content blocks', () => {
-    for (const file of config['frontMatter.data.files']) {
+    for (const file of config['frontMatter.data.files'].filter((item) =>
+        item.id.startsWith('news-')
+    )) {
         const schema =
             file.schema ||
             config['frontMatter.data.types']?.find(

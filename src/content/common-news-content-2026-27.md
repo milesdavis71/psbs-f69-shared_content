@@ -109,6 +109,12 @@ Szeretettel várunk benneteket
 
 {{/ifequal}}
 
+{{#ifequal hir "news10"}}
+
+<!-- Ide írd a papírgyűjtés hír szövegét. -->
+
+{{/ifequal}}
+
 {{#ifequal hir "news11"}}
 
 Szeretettel várunk minden szülőt a   

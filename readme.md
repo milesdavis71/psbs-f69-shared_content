@@ -66,3 +66,9 @@ http://localhost:8000
 ```
 
 To create compressed, production-ready assets, run `yarn run build`.
+
+## Projekt-specifikus dokumentáció
+
+- Hírkezelés: `FRONTMATTER_HIR_MUNKAFOLYAMAT.md`
+- Galéria események kezelése: `FRONTMATTER_GALERIA_MUNKAFOLYAMAT.md`
+

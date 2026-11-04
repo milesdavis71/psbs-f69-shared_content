@@ -1,4 +1,4 @@
-<li class="{{#ifpageInMenu page menu}}current is-active{{/ifpageInMenu}} {{#if childPages}}{{#ifpageInList childPages}}current is-active{{/ifpageInList}}{{/if}} {{#if noColor}}no-color-change{{/if}}" 
+<li class="{{#ifpageInMenu page menu}}current is-active{{/ifpageInMenu}} {{#if childPages}}{{#ifpageInList childPages}}current is-active{{/ifpageInList}}{{/if}} {{#galleryRootActive page}}current is-active{{/galleryRootActive}} {{#if noColor}}no-color-change{{/if}}" 
     {{#if items}}data-accordion-item{{/if}}
     {{#if items}}{{#ifpageInMenu page menu}}aria-expanded="true"{{/ifpageInMenu}}{{#if childPages}}{{#ifpageInList childPages}}aria-expanded="true"{{/ifpageInList}}{{/if}}{{/if}}
     {{#if url}}data-menu-url="{{#if external}}{{url}}{{else}}/{{#if folder}}{{folder}}/{{/if}}{{url}}{{/if}}"{{/if}}>

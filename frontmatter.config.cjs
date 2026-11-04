@@ -1,6 +1,9 @@
 const fs = require('node:fs')
 const path = require('node:path')
+const yaml = require('js-yaml')
 const { registerNewsCommands } = require('./.frontmatter/lib/news-commands.cjs')
+const { registerGalleryCommands } = require('./.frontmatter/lib/gallery-commands.cjs')
+const { galleryFolders } = require('./src/lib/gallery-utils.cjs')
 
 // Front Matter calls this function when its settings are loaded/refreshed.
 // Keep the JSON schema as the form definition; add image choices and ID handling.
@@ -12,7 +15,26 @@ module.exports = (config) => {
     } catch (error) {
         if (error.code !== 'MODULE_NOT_FOUND') throw error
     }
-    if (vscode) registerNewsCommands(vscode, __dirname, config)
+    if (vscode) {
+        registerNewsCommands(vscode, __dirname, config)
+        registerGalleryCommands(vscode, __dirname, config)
+    }
+    const galleryChoices = galleryFolders(__dirname).map((item) => item.value)
+    const eventsFile = path.join(__dirname, 'src/data/gallery_events.yml')
+    if (fs.existsSync(eventsFile)) {
+        try {
+            const events = yaml.load(fs.readFileSync(eventsFile, 'utf8'))
+            if (Array.isArray(events)) {
+                for (const event of events) {
+                    if (event?.folder && !galleryChoices.includes(event.folder)) {
+                        galleryChoices.push(event.folder)
+                    }
+                }
+            }
+        } catch {
+            /* A broken registry must not prevent the dashboard from opening. */
+        }
+    }
     const publicFolder = config['frontMatter.content.publicFolder']
     const folder =
         typeof publicFolder === 'string' ? publicFolder : publicFolder.path
@@ -41,6 +63,41 @@ module.exports = (config) => {
         ...config,
         'frontMatter.data.files': config['frontMatter.data.files'].map(
             (file) => {
+                if (
+                    file.id === 'gallery-events' &&
+                    file.schema?.properties?.folder
+                ) {
+                    return {
+                        ...file,
+                        schema: {
+                            ...file.schema,
+                            properties: {
+                                ...file.schema.properties,
+                                folder: {
+                                    ...file.schema.properties.folder,
+                                    enum: galleryChoices,
+                                    uniforms: {
+                                        placeholder:
+                                            'Válassz feldolgozott galériamappát (gallery-events)',
+                                        'data-gallery-source': file.id,
+                                    },
+                                },
+                                school: {
+                                    ...file.schema.properties.school,
+                                    uniforms: { readOnly: true },
+                                },
+                                year: {
+                                    ...file.schema.properties.year,
+                                    uniforms: { readOnly: true },
+                                },
+                                slug: {
+                                    ...file.schema.properties.slug,
+                                    uniforms: { readOnly: true },
+                                },
+                            },
+                        },
+                    }
+                }
                 if (
                     !file.id.startsWith('news-') ||
                     !file.schema?.properties?.img

@@ -11,7 +11,7 @@ from tkinter import (
     BooleanVar,
 )
 from tkinterdnd2 import DND_FILES, TkinterDnD
-from PIL import Image
+from PIL import Image, ImageOps
 
 
 # -----------------------------
@@ -19,6 +19,7 @@ from PIL import Image
 # -----------------------------
 def resize_image(input_path, output_path, target_width, quality):
     with Image.open(input_path) as img:
+        img = ImageOps.exif_transpose(img)
         img = img.convert("RGB")
         w, h = img.size
 
@@ -27,48 +28,75 @@ def resize_image(input_path, output_path, target_width, quality):
         resized.save(output_path, "JPEG", quality=quality)
 
 
+
 # -----------------------------
 #  Mappa Feldolgozás
 # -----------------------------
-def process_folder(folder_path, digit_count, keep_full_size, keep_filenames):
+IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
+
+
+def list_images(folder_path):
+    return sorted(
+        [
+            name
+            for name in os.listdir(folder_path)
+            if os.path.isfile(os.path.join(folder_path, name))
+            and os.path.splitext(name)[1].lower() in IMAGE_EXTENSIONS
+        ],
+        key=str.lower,
+    )
+
+
+def process_folder(
+    folder_path,
+    digit_count,
+    keep_full_size,
+    keep_filenames,
+    keep_originals=False,
+):
     print(
         f"Feldolgozás: {folder_path} | "
         f"számjegyek: {digit_count} | "
         f"full eredeti méret: {keep_full_size} | "
-        f"eredeti fájlnevek: {keep_filenames}"
+        f"eredeti fájlnevek: {keep_filenames} | "
+        f"eredetik megőrzése: {keep_originals}"
     )
 
     full_dir = os.path.join(folder_path, "full")
     thumb_dir = os.path.join(folder_path, "thumb")
+    original_dir = os.path.join(folder_path, "original")
     os.makedirs(full_dir, exist_ok=True)
     os.makedirs(thumb_dir, exist_ok=True)
+    if keep_originals:
+        os.makedirs(original_dir, exist_ok=True)
 
-    files = sorted(
-        [f for f in os.listdir(folder_path) if f.lower().endswith(".jpg")]
-    )
+    files = list_images(folder_path)
 
     # -----------------------------
     #  ÁTNEVEZÉS, ha nincs kikapcsolva
     # -----------------------------
-    if not keep_filenames:
-        for index, filename in enumerate(files, start=1):
-            old_path = os.path.join(folder_path, filename)
-            new_filename = f"{index:0{digit_count}d}.jpg"
-            new_path = os.path.join(folder_path, new_filename)
+    if not keep_filenames and files:
+        # Kétfázisú átnevezés: így a 01.jpg nem írja felül a soron következő
+        # feldolgozandó fájlt.
+        temporary = []
+        for index, filename in enumerate(files):
+            extension = os.path.splitext(filename)[1].lower()
+            temp_name = f"__resizer_tmp_{index:04d}{extension}"
+            temp_path = os.path.join(folder_path, temp_name)
+            os.replace(os.path.join(folder_path, filename), temp_path)
+            temporary.append((temp_path, extension, filename))
+        for index, (temp_path, extension, original_name) in enumerate(temporary, start=1):
+            new_filename = f"{index:0{digit_count}d}{extension}"
+            os.replace(temp_path, os.path.join(folder_path, new_filename))
+            print(f"Átnevezve: {original_name} -> {new_filename}")
 
-            if filename != new_filename:
-                os.rename(old_path, new_path)
-                print(f"Átnevezve: {filename} -> {new_filename}")
-
-        files = sorted(
-            [f for f in os.listdir(folder_path) if f.lower().endswith(".jpg")]
-        )
+        files = list_images(folder_path)
 
     # -----------------------------
     #  FULL + THUMB létrehozás
     # -----------------------------
     for filename in files:
-        base, ext = os.path.splitext(filename)
+        base, _ext = os.path.splitext(filename)
         img_path = os.path.join(folder_path, filename)
 
         full_output = os.path.join(full_dir, f"{base}_full.jpg")
@@ -85,11 +113,14 @@ def process_folder(folder_path, digit_count, keep_full_size, keep_filenames):
 
         print(f"Kész: {filename}")
 
-        # eredeti törlése
-        os.remove(img_path)
+        if keep_originals:
+            os.replace(img_path, os.path.join(original_dir, filename))
+        else:
+            os.remove(img_path)
 
     print("Feldolgozás kész:", folder_path)
     print("------------------------------")
+
 
 
 # -----------------------------
@@ -112,6 +143,7 @@ def run_processing():
     digit_count = digit_var.get()
     keep_full_size = keep_full_size_var.get()
     keep_filenames = keep_filenames_var.get()
+    keep_originals = keep_originals_var.get()
 
     for i in range(folder_list.size()):
         folder = folder_list.get(i)
@@ -120,6 +152,7 @@ def run_processing():
             digit_count,
             keep_full_size,
             keep_filenames,
+            keep_originals,
         )
 
     print("Minden mappa feldolgozva.")
@@ -130,7 +163,7 @@ def run_processing():
 # -----------------------------
 root = TkinterDnD.Tk()
 root.title("Képméretező - full + thumb + automatikus átnevezés")
-root.geometry("650x540")
+root.geometry("650x580")
 
 Label(root, text="Húzd ide a mappákat (Drag & Drop)").pack(pady=5)
 
@@ -145,7 +178,7 @@ Button(
     command=clear_folder_list,
 ).pack(pady=(0, 10))
 
-digit_var = IntVar(value=3)
+digit_var = IntVar(value=2)
 
 Label(root, text="Fájlnév formátum átnevezés esetén:").pack()
 
@@ -165,6 +198,7 @@ Radiobutton(
 
 keep_full_size_var = BooleanVar(value=False)
 keep_filenames_var = BooleanVar(value=False)
+keep_originals_var = BooleanVar(value=True)
 
 Label(root, text="Extra beállítások:").pack(pady=(15, 0))
 
@@ -178,6 +212,12 @@ Checkbutton(
     root,
     text="Fájlnevek változatlanul hagyása",
     variable=keep_filenames_var,
+).pack()
+
+Checkbutton(
+    root,
+    text="Eredeti képek megőrzése (original mappa)",
+    variable=keep_originals_var,
 ).pack()
 
 Button(
