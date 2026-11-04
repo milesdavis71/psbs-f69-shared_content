@@ -8,6 +8,7 @@
         "ps": "gulp start:ps",
         "start": "gulp",
         "build": "gulp build --production",
+        "browserslist:update": "node scripts/update_browserslist.cjs",
         "test:news": "node --test tests/frontmatter-news.test.cjs tests/news-ids.test.cjs",
     "test:gallery": "node --test tests/gallery-store.test.cjs tests/gallery-helpers.test.cjs",
     "test": "npm run test:news && npm run test:gallery",

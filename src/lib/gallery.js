@@ -36,7 +36,12 @@ function yearLabel(year) {
 function normalizeEvent(event, projectRoot) {
     if (!event || !['ps', 'bs'].includes(event.school)) return null
     if (!event.year || !event.slug) return null
-    const cover = galleryCover(projectRoot, event.school, event.year, event.slug)
+    const cover = galleryCover(
+        projectRoot,
+        event.school,
+        event.year,
+        event.slug
+    )
     return {
         ...event,
         year: String(event.year),
@@ -105,7 +110,9 @@ function entry(root, school, year, slug, fallback = {}) {
     const date = event.date || fallback.date || ''
     const alt = event.alt || fallback.alt || title
     const count =
-        galleryCount(projectRoot, school, year, slug) || Number(fallback.count) || 0
+        galleryCount(projectRoot, school, year, slug) ||
+        Number(fallback.count) ||
+        0
     return {
         ...fallback,
         ...event,
@@ -121,7 +128,9 @@ function entry(root, school, year, slug, fallback = {}) {
         count,
         href: `/galeriak/${year}/${slug}`,
         cover: event.cover || galleryCover(projectRoot, school, year, slug),
-        directory: asset.directory || galleryDirectory(projectRoot, school, year, slug),
+        directory:
+            asset.directory ||
+            galleryDirectory(projectRoot, school, year, slug),
     }
 }
 

@@ -67,6 +67,22 @@ http://localhost:8000
 
 To create compressed, production-ready assets, run `yarn run build`.
 
+## Böngészőadatbázis frissítése
+
+```bash
+npm run browserslist:update
+```
+
+PowerShellben, ha az `npm.ps1` futtatását tiltja a rendszer, használd az
+`npm.cmd run browserslist:update` parancsot.
+
+A parancs célzottan frissíti a `caniuse-lite` és (ha a függőségi fában szerepel)
+a `baseline-browser-mapping` csomagot, valamint a `package-lock.json` fájlt.
+Megkerüli az npm `EALLOWSCRIPTS` hibáját: eltávolítja a gyermekfolyamatnak
+átadott `npm_config_allow_scripts` változót, így az npm az eredeti
+`.npmrc`/`package.json` beállításokat olvassa. A frissítés telepítési szkripteket
+nem futtat, a felhasználói npm-beállításokat nem módosítja.
+
 ## Projekt-specifikus dokumentáció
 
 - Hírkezelés: `FRONTMATTER_HIR_MUNKAFOLYAMAT.md`

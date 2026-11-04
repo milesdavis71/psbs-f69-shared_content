@@ -12,3 +12,7 @@ Ctrl + K, majd Ctrl + J
 
 python .\resizer.py
 python .\gallery_html_generator.py
+
+bal oldali explorer és vissza toggle:
+ctrl + alt + L
+mappa becsukása/kinyitása ⬅️/➡️
