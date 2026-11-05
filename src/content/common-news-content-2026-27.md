@@ -122,3 +122,19 @@ Szeretettel várunk minden szülőt a
 tartandó szaktanári fogadóórákra.
 
 {{/ifequal}}
+
+{{#ifequal hir "news12"}}
+
+| Dátum és időpont | Program |
+|---|---|
+| 2026. november 10. | Márton-napi látogatás az iskolában |
+| 2026. november 11. 16:30 | „GÁGOGÓ” – iskolahívogató |
+| 2026. december 9. 16:30 | „MIKULÁSVÁLTÓ” – iskolahívogató |
+| 2027. január 11. | Rajzpályázat |
+| 2027. február 9. | Téltemetés az iskolában |
+| 2027. február 15. 16:30 | „ITT A FARSANG” – iskolahívogató |
+| 2027. március 11. 16:30 | „GERGELY-JÁRÁS” – iskolahívogató |
+| 2027. március 19. 16:30 | „BEE-BOT” – iskolahívogató |
+
+Szeretettel várunk minden érdeklődőt!
+{{/ifequal}}

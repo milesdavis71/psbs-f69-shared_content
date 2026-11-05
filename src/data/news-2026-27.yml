@@ -1,4 +1,11 @@
 - site: bs
+  img: iskolaba-hivogato.jpg
+  align: center
+  imgclass: medium-3
+  contentclass: medium-9
+  title: Iskolabemutató programok nagycsoportosoknak
+  content: news12
+- site: bs
   img: fogadoora_small.jpg
   align: center
   imgclass: medium-4
