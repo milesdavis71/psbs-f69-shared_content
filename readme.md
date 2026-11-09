@@ -83,6 +83,17 @@ Megkerüli az npm `EALLOWSCRIPTS` hibáját: eltávolítja a gyermekfolyamatnak
 `.npmrc`/`package.json` beállításokat olvassa. A frissítés telepítési szkripteket
 nem futtat, a felhasználói npm-beállításokat nem módosítja.
 
+## Galéria karbantartás
+
+```bash
+npm run gallery:sync           # a hiányzó galériaoldalak és registrybejegyzések létrehozása
+npm run gallery:fix-registry   # a registry rendrakása (üres/duplikált bejegyzések, címek)
+```
+
+Az `npm run gallery:sync` a feldolgozott képmappákból (`src/assets/img/{ps,bs}/galeriak/…`)
+létrehozza a hiányzó eseményoldalakat és a `src/data/gallery_events.yml` bejegyzéseit.
+Ez a Front Matter Data fül **„Képlista frissítése”** gombjának parancssori változata.
+
 ## Projekt-specifikus dokumentáció
 
 - Hírkezelés: `FRONTMATTER_HIR_MUNKAFOLYAMAT.md`

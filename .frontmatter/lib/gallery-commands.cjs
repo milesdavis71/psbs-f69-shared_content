@@ -1,6 +1,7 @@
 const fs = require('node:fs')
 const path = require('node:path')
-const { saveGallery, syncGalleryPages } = require('./gallery-store.cjs')
+const { saveGallery, syncGalleryPages, readGalleryEntries } = require('./gallery-store.cjs')
+const { galleryFolders } = require('../../src/lib/gallery-utils.cjs')
 
 let registration
 let current
@@ -50,6 +51,81 @@ function registerGalleryCommands(vscode, root, config) {
         }
         const temporary = response + '.tmp'
         fs.writeFileSync(temporary, JSON.stringify(result), 'utf8')
+        fs.renameSync(temporary, response)
+    })
+    // A galériamappák listájának újratöltése a lemezről. A Front Matter
+    // "Refresh Front Matter Settings" parancsa csak a háttérben frissíti a
+    // sémát, a nyitott űrlap listája viszont nem változik.
+    vscode.commands.registerCommand('psbs.gallery.folders', async request => {
+        if (!request || !/^[a-f0-9-]{36}$/.test(request.requestId)) return
+        if (!vscode.workspace.isTrusted) return
+        const { root, config } = current
+        const runtime = path.join(root, '.frontmatter/runtime')
+        const response = path.join(runtime, `gallery-${request.requestId}.json`)
+        fs.mkdirSync(runtime, { recursive: true })
+        // A kézzel felvett képmappákból létrehozzuk a hiányzó eseményoldalakat
+        // és registrybejegyzéseket, hogy az új tanév megjelenjen a főoldalon.
+        let created = []
+        try {
+            created = syncGalleryPages(root, config)
+        } catch (error) {
+            const temporary = response + '.tmp'
+            fs.writeFileSync(
+                temporary,
+                JSON.stringify({ ok: false, message: error.message }),
+                'utf8'
+            )
+            fs.renameSync(temporary, response)
+            return
+        }
+        const folders = { ps: [], bs: [] }
+        const years = { ps: [], bs: [] }
+        for (const folder of galleryFolders(root)) {
+            folders[folder.school].push(folder.value)
+            if (!years[folder.school].includes(folder.year)) {
+                years[folder.school].push(folder.year)
+            }
+        }
+        // A legfrissebb tanév legyen elöl.
+        for (const school of Object.keys(years)) {
+            years[school].sort((left, right) => right.localeCompare(left))
+        }
+        const temporary = response + '.tmp'
+        fs.writeFileSync(
+            temporary,
+            JSON.stringify({
+                ok: true,
+                folders,
+                years,
+                created: created.map(file => path.basename(file)),
+            }),
+            'utf8'
+        )
+        fs.renameSync(temporary, response)
+    })
+    // A registry bejegyzései: a dashboard bal oldali listájának rendezéséhez.
+    vscode.commands.registerCommand('psbs.gallery.entries', async request => {
+        if (!request || !/^[a-f0-9-]{36}$/.test(request.requestId)) return
+        if (!vscode.workspace.isTrusted) return
+        const { root, config } = current
+        const runtime = path.join(root, '.frontmatter/runtime')
+        const response = path.join(runtime, `gallery-${request.requestId}.json`)
+        fs.mkdirSync(runtime, { recursive: true })
+        const temporary = response + '.tmp'
+        try {
+            const entries = readGalleryEntries(root, config)
+            fs.writeFileSync(
+                temporary,
+                JSON.stringify({ ok: true, entries }),
+                'utf8'
+            )
+        } catch (error) {
+            fs.writeFileSync(
+                temporary,
+                JSON.stringify({ ok: false, message: error.message }),
+                'utf8'
+            )
+        }
         fs.renameSync(temporary, response)
     })
     vscode.commands.registerCommand('psbs.gallery.openPage', async request => {

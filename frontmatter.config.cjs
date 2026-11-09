@@ -75,7 +75,10 @@ module.exports = (config) => {
                                 ...file.schema.properties,
                                 folder: {
                                     ...file.schema.properties.folder,
-                                    enum: galleryChoices,
+                                    // Az üres érték is érvényes kell legyen: a
+                                    // dashboard saját validációja különben a
+                                    // mappa kiválasztása előtt elhasal.
+                                    enum: ['', ...galleryChoices],
                                     uniforms: {
                                         placeholder:
                                             'Válassz feldolgozott galériamappát (gallery-events)',
@@ -84,11 +87,11 @@ module.exports = (config) => {
                                 },
                                 school: {
                                     ...file.schema.properties.school,
-                                    uniforms: { readOnly: true },
+                                    uniforms: {},
                                 },
                                 year: {
                                     ...file.schema.properties.year,
-                                    uniforms: { readOnly: true },
+                                    uniforms: {},
                                 },
                                 slug: {
                                     ...file.schema.properties.slug,

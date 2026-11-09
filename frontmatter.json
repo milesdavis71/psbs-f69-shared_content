@@ -85,34 +85,26 @@
       "schema": {
         "title": "Galéria esemény",
         "type": "object",
-        "required": ["folder", "title"],
+        "required": ["school"],
         "properties": {
-          "folder": {
-            "type": "string",
-            "title": "Feldolgozott galériamappa",
-            "description": "Válaszd ki a resizer.py programmal előkészített mappát. Az iskola, a tanév, a slug és a dátum automatikusan kitöltődik.",
-            "minLength": 1
-          },
           "school": {
             "type": "string",
-            "title": "Iskola (automatikus)",
+            "title": "Iskola",
+            "description": "Válaszd ki az iskolát. A galériamappa lista erre szűkül: ps esetén csak a ps, bs esetén csak a bs galériák láthatók.",
             "enum": ["ps", "bs"],
             "default": "ps"
           },
-          "year": {
+          "folder": {
             "type": "string",
-            "title": "Tanév (automatikus)",
-            "description": "A mappanév dátumából számolódik."
-          },
-          "slug": {
-            "type": "string",
-            "title": "Mappa / slug (automatikus)",
-            "description": "A képmappa neve; mentéskor a rendszer tölti ki."
+            "title": "Feldolgozott galériamappa",
+            "description": "Válaszd ki a resizer.py programmal előkészített mappát a kiválasztott iskolából. A tanév, a slug és a dátum automatikusan kitöltődik. Mentéshez kötelező.",
+            "default": ""
           },
           "title": {
             "type": "string",
             "title": "A galéria címe",
-            "minLength": 1
+            "description": "A mappanévből automatikusan kitöltődik, de átírható. Mentéshez kötelező.",
+            "default": ""
           },
           "date": {
             "type": "string",
@@ -122,6 +114,17 @@
           "alt": {
             "type": "string",
             "title": "Képek alt szövege (opcionális)"
+          },
+          "year": {
+            "type": "string",
+            "title": "Tanév",
+            "description": "Válaszd ki a tanévet. A lista a kiválasztott iskola galériamappáiból olvasódik (pl. 2026-27).",
+            "default": ""
+          },
+          "slug": {
+            "type": "string",
+            "title": "Mappa / slug (automatikus)",
+            "description": "A képmappa neve; mentéskor a rendszer tölti ki."
           }
         }
       }

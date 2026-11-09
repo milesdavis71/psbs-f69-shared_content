@@ -3,6 +3,7 @@ const fs = require('node:fs')
 const os = require('node:os')
 const path = require('node:path')
 const test = require('node:test')
+const yaml = require('js-yaml')
 const gallery = require('../src/lib/gallery.js')
 const composeConfig = require('../frontmatter.config.cjs')
 const {
@@ -89,6 +90,80 @@ test('entry falls back to page front matter and counts processed images', (t) =>
     assert.equal(entry.school, 'ps')
 })
 
+test('a processed image folder appears even without a registry entry', (t) => {
+    const root = fixture(t)
+    // Nincs registry bejegyzés: a feldolgozott képmappa önmagában is
+    // megjelenik a galériában (így kerül be az új tanév is).
+    root.gallery_events = []
+    const cards = gallery.cards(root, 'ps', '2026-27')
+    assert.equal(cards.length, 1)
+    assert.equal(cards[0].slug, '2026_09_10_teszt')
+    assert.equal(cards[0].title, 'Teszt')
+    assert.equal(cards[0].date, '2026. 09. 10.')
+    assert.deepEqual(
+        gallery.years(root, 'ps').map((item) => item.year),
+        ['2026-27']
+    )
+})
+
+test('the gallery folder path decides the school of a registry entry', (t) => {
+    const root = fixture(t)
+    root.gallery_events = [
+        {
+            // Az iskola mező ellentmond a mappa előtagjának.
+            school: 'ps',
+            folder: 'bs/2026-27/2026_09_10_teszt',
+            year: '2026-27',
+            slug: '2026_09_10_teszt',
+            title: 'Teszt',
+            alt: 'Teszt',
+            date: '2026. 09. 12.',
+        },
+    ]
+    const bs = gallery.cards(root, 'bs', '2026-27')
+    assert.equal(bs.length, 1)
+    assert.equal(bs[0].title, 'Teszt')
+    assert.equal(bs[0].date, '2026. 09. 12.')
+    // A ps galériában csak a képmappa jelenik meg, a registry bejegyzés nem.
+    const ps = gallery.cards(root, 'ps', '2026-27')
+    assert.equal(ps.length, 1)
+    assert.equal(ps[0].date, '2026. 09. 10.')
+})
+
+test('the gallery entries command reads the registry', (t) => {
+    const { readGalleryEntries } = require('../.frontmatter/lib/gallery-store.cjs')
+    const root = fs.mkdtempSync(path.join(os.tmpdir(), 'gallery-entries-test-'))
+    t.after(() => fs.rmSync(root, { recursive: true, force: true }))
+    const data = path.join(root, 'src/data/gallery_events.yml')
+    fs.mkdirSync(path.dirname(data), { recursive: true })
+    fs.writeFileSync(
+        data,
+        yaml.dump([
+            {
+                school: 'ps',
+                year: '2026-27',
+                slug: '2026_09_10_teszt',
+                title: 'Teszt',
+                alt: 'Teszt',
+                date: '2026. 09. 10.',
+            },
+        ])
+    )
+    const config = {
+        'frontMatter.data.files': [
+            {
+                id: 'gallery-events',
+                file: '[[workspace]]/src/data/gallery_events.yml',
+            },
+        ],
+    }
+    const entries = readGalleryEntries(root, config)
+    assert.equal(entries.length, 1)
+    assert.equal(entries[0].school, 'ps')
+    assert.equal(entries[0].year, '2026-27')
+    assert.equal(entries[0].title, 'Teszt')
+})
+
 test('folder names produce dates, school years and readable titles', () => {
     const date = parseDateFromSlug('2026_09_10_100_eves_az_iskola')
     assert.deepEqual(date, { year: 2026, month: 9, day: 10 })
@@ -132,11 +207,42 @@ test('the Front Matter gallery source exposes processed folders', () => {
         (file) => file.id === 'gallery-events'
     )
     assert.ok(source)
-    assert.equal(source.schema.required.includes('folder'), true)
-    assert.equal(source.schema.properties.folder.uniforms['data-gallery-source'], 'gallery-events')
+    // A mappa és a cím nem lehet a required listában: a dashboard saját
+    // validációja különben a mentés előtt elhasalna. A kötelezőséget a
+    // gallery-store validációja biztosítja, pontos hibaüzenettel.
+    assert.equal(source.schema.required.includes('folder'), false)
+    assert.equal(source.schema.required.includes('title'), false)
+    assert.equal(source.schema.required.includes('school'), true)
+    // Az üres érték is érvényes a legördülőben.
+    assert.equal(source.schema.properties.folder.enum[0], '')
+    assert.equal(
+        source.schema.properties.folder.uniforms['data-gallery-source'],
+        'gallery-events'
+    )
     assert.ok(
         source.schema.properties.folder.enum.includes(
             'ps/2026-27/2026_09_10_100_eves_az_iskola'
         )
     )
+})
+
+test('the gallery form filters folders by the visible school selector', () => {
+    const source = fs.readFileSync(
+        path.join(__dirname, '../.frontmatter/ui/gallery-form.mjs'),
+        'utf8'
+    )
+    // A saját választó az elsődleges forrás: a Uniforms modellje csak a
+    // change esemény után frissül, ezért abból olvasva későn váltana át.
+    assert.match(source, /querySelector\('\[data-gallery-school\]'\)/)
+    // A szűrés a mappa előtagjára épül.
+    assert.match(source, /startsWith\(prefix\)/)
+    // A programozott mezőbejelenítés legyen erősebb a változatlan értéknél.
+    assert.match(source, /force = false/)
+    assert.match(source, /setField\(form, 'school', select\.value, true\)/)
+    // A listát a lemezről is újra lehet tölteni.
+    assert.match(source, /psbs\.gallery\.folders/)
+    // A kiválasztott mappa meghatározza az iskolát is.
+    assert.match(source, /setField\(form, 'school', school, true\)/)
+    // A VS Code API csak egyszer szerezhető meg, ezért a script nem használhatja.
+    assert.doesNotMatch(source, /acquireVsCodeApi/)
 })

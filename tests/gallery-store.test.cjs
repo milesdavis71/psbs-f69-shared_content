@@ -122,6 +122,69 @@ test('invalid folders and stale baselines are rejected', (t) => {
     )
 })
 
+test('the chosen school decides the gallery and mismatches are rejected', (t) => {
+    const f = fixture(t)
+    const bsDirectory = path.join(
+        f.root,
+        'src/assets/img/bs/galeriak/2026-27/2026_09_10_teszt_esemeny'
+    )
+    fs.mkdirSync(path.join(bsDirectory, 'full'), { recursive: true })
+    fs.mkdirSync(path.join(bsDirectory, 'thumb'), { recursive: true })
+    fs.writeFileSync(path.join(bsDirectory, 'full', '01_full.jpg'), '')
+    fs.writeFileSync(path.join(bsDirectory, 'thumb', '01_thumb.jpg'), '')
+
+    // A ps mappa ps iskolához tartozik.
+    const psResult = saveGallery(f.root, f.config, {
+        sourceId: 'gallery-events',
+        model: f.model,
+    })
+    assert.equal(psResult.school, 'ps')
+
+    // A bs mappa bs iskolához tartozik.
+    const bsResult = saveGallery(f.root, f.config, {
+        sourceId: 'gallery-events',
+        model: {
+            ...f.model,
+            folder: 'bs/2026-27/2026_09_10_teszt_esemeny',
+            school: 'bs',
+            year: '2026-27',
+        },
+    })
+    assert.equal(bsResult.school, 'bs')
+    assert.equal(bsResult.year, '2026-27')
+
+    // A galériamappa kanonikus: még ha a form iskolája ellentmond is,
+    // a bejegyzés a mappa iskolájához kerül.
+    const canonical = saveGallery(f.root, f.config, {
+        sourceId: 'gallery-events',
+        model: {
+            ...f.model,
+            folder: 'bs/2026-27/2026_09_10_teszt_esemeny',
+            school: 'ps',
+        },
+    })
+    assert.equal(canonical.school, 'bs')
+    assert.equal(canonical.year, '2026-27')
+    assert.equal(canonical.slug, '2026_09_10_teszt_esemeny')
+    const entries = read(f.files.data)
+    assert.equal(entries.filter((entry) => entry.school === 'bs').length, 1)
+
+    // A mappával nem egyező tanév nem választható.
+    assert.throws(
+        () =>
+            saveGallery(f.root, f.config, {
+                sourceId: 'gallery-events',
+                model: {
+                    ...f.model,
+                    folder: 'ps/2026-27/2026_09_10_teszt_esemeny',
+                    school: 'ps',
+                    year: '2025-26',
+                },
+            }),
+        /nem felel meg a galériamappának/
+    )
+})
+
 test('dashboard fallback sync creates missing event pages', (t) => {
     const f = fixture(t)
     fs.writeFileSync(

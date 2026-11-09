@@ -6,9 +6,11 @@ const yaml = require('js-yaml')
 const {
     formatHungarianDate,
     galleryCount,
+    galleryFolders,
     parseDateFromSlug,
     parseGalleryFolder,
     resolveGalleryAsset,
+    titleFromSlug,
 } = require('../../src/lib/gallery-utils.cjs')
 
 const SOURCE_ID = 'gallery-events'
@@ -32,6 +34,16 @@ function readEvents(file) {
     const entries = yaml.load(fs.readFileSync(file, 'utf8'))
     if (!Array.isArray(entries)) throw new Error('A galérialista nem YAML-lista.')
     return entries
+}
+
+// A registry bejegyzései (iskola, tanév, slug, cím, dátum, alt). A dashboard
+// bal oldali listáját ezek alapján rendezzük.
+function readGalleryEntries(root, config) {
+    const files = sourcePaths(root, config, SOURCE_ID)
+    if (!fs.existsSync(files.data)) return []
+    return readEvents(files.data).map((entry) =>
+        entry && typeof entry === 'object' ? entry : null
+    )
 }
 
 function atomicWrite(file, text) {
@@ -78,22 +90,70 @@ function pagePaths(root, record) {
     }
 }
 
+// Az esemény oldalfájlja már létezik valamelyik iskolában? Ha igen, azt
+// használjuk, hogy a kézzel szerkesztett példány maradjon.
+function findEventPage(root, record) {
+    const schools = [record.school, record.school === 'ps' ? 'bs' : 'ps']
+    for (const school of schools) {
+        const file = path.join(
+            root,
+            'src/pages',
+            school,
+            'galeriak',
+            record.year,
+            `${record.slug}.html`
+        )
+        if (fs.existsSync(file)) return file
+    }
+    return null
+}
+
+// A fájl front matterje egyezik a bejegyzéssel? Csak eltérés esetén írunk,
+// hogy a feleslegesen módosított fájlok ne keletkezzenek. Az alt és a date
+// mező formázása eltérhet, ezért ezek nem triggerelnek újraírást.
+function pageMatches(file, record) {
+    try {
+        const source = fs.readFileSync(file, 'utf8')
+        const match = /^---\r?\n([\s\S]*?)\r?\n---/.exec(source)
+        if (!match) return false
+        const fields = yaml.load(match[1]) || {}
+        return (
+            String(fields.title || '') === record.title &&
+            String(fields.schoolKey || '') === record.school &&
+            String(fields.slug || '') === record.slug &&
+            String(fields.year || '') === record.year
+        )
+    } catch {
+        return false
+    }
+}
+
 function validateModel(root, config, model) {
+    // A galériamappa kanonikus: belőle származtatjuk az iskolát, a tanévet és
+    // a slugot. Így a bejegyzés akkor is a helyes iskolához kerül, ha a
+    // form mezői ellentmondanak egymásnak.
     const folder = parseGalleryFolder(model?.folder)
+    if (!folder) {
+        throw new Error(
+            'Válassz ki egy feldolgozott galériamappát a kiválasztott iskolából.'
+        )
+    }
+    const school = folder.school
+    const selectedYear = String(model?.year || '').trim()
+    if (selectedYear && selectedYear !== folder.year) {
+        throw new Error(
+            'A kiválasztott tanév nem felel meg a galériamappának. Válaszd ki újra a tanévet.'
+        )
+    }
     const record = {
-        folder: folder
-            ? `${folder.school}/${folder.year}/${folder.slug}`
-            : '',
-        school: folder?.school || model?.school,
-        year: folder?.year || String(model?.year || ''),
-        slug: folder?.slug || String(model?.slug || ''),
+        folder: `${folder.school}/${folder.year}/${folder.slug}`,
+        school,
+        year: folder.year,
+        slug: folder.slug,
         title: String(model?.title || '').trim(),
         alt: String(model?.alt || '').trim(),
         date: String(model?.date || '').trim(),
     }
-    if (!['ps', 'bs'].includes(record.school)) throw new Error('Érvénytelen iskola.')
-    if (!/^\d{4}-\d{2}$/.test(record.year)) throw new Error('Érvénytelen tanév.')
-    if (!record.slug || /[/\\]/.test(record.slug)) throw new Error('Érvénytelen galéria-slug.')
     if (!record.title) throw new Error('A galéria címe kötelező.')
     if (!record.date) {
         const parsed = parseDateFromSlug(record.slug)
@@ -262,27 +322,68 @@ function saveGallery(root, config, request, options = {}) {
 
 // Fallback for entries saved by the dashboard itself: create any missing page
 // files from the registry. Safe to repeat.
+// A kézzel felvett képmappákból is létrehozza a hiányzó eseményoldalt és a
+// registrybejegyzést, így az új tanév automatikusan megjelenik a főoldalon.
 function syncGalleryPages(root, config) {
     const files = sourcePaths(root, config, SOURCE_ID)
     if (!fs.existsSync(files.data)) return []
     const created = []
-    for (const entry of readEvents(files.data)) {
+    const entries = readEvents(files.data)
+    const known = new Set()
+    for (const entry of entries) {
         if (!entry) continue
         const parsed = parseGalleryFolder(entry.folder)
-        const school = entry.school || parsed?.school
-        if (!['ps', 'bs'].includes(school)) continue
+        // A mappa útvonala kanonikus, ezért ez az iskola érvényesül.
+        const school = parsed?.school || entry.school
+        const year = String(parsed?.year || entry.year || '')
+        const slug = String(parsed?.slug || entry.slug || '')
+        if (school && year && slug) known.add(`${school}/${year}/${slug}`)
         const record = {
             school,
-            year: String(entry.year || parsed?.year || ''),
-            slug: String(entry.slug || parsed?.slug || ''),
+            year,
+            slug,
             title: String(entry.title || ''),
             alt: String(entry.alt || entry.title || ''),
             date: String(entry.date || ''),
         }
+        if (!['ps', 'bs'].includes(school)) continue
         if (!/^\d{4}-\d{2}$/.test(record.year) || !record.slug || !record.title) continue
+        const paths = pagePaths(root, record)
+        // Az esemény oldalfájlja: ha már létezik (akár a másik iskolában),
+        // a front matterjét frissítjük, de a saját tartalma megmarad.
+        const existing = findEventPage(root, record)
+        if (existing) {
+            if (!pageMatches(existing, record)) writePage(existing, record)
+        } else if (ensureFile(paths.page, renderEventPage(record))) {
+            created.push(paths.page)
+        }
+        ensureFile(paths.main, renderMainPage(record.school))
+    }
+
+    // A képmappákból még hiányzó események: eseményoldal + registrybejegyzés.
+    const added = []
+    for (const folder of galleryFolders(root)) {
+        const key = `${folder.school}/${folder.year}/${folder.slug}`
+        if (known.has(key)) continue
+        known.add(key)
+        const parsed = parseDateFromSlug(folder.slug)
+        const title = titleFromSlug(folder.slug)
+        const record = {
+            school: folder.school,
+            year: folder.year,
+            slug: folder.slug,
+            title,
+            alt: title,
+            date: parsed ? formatHungarianDate(parsed) : '',
+        }
         const paths = pagePaths(root, record)
         if (ensureFile(paths.page, renderEventPage(record))) created.push(paths.page)
         ensureFile(paths.main, renderMainPage(record.school))
+        added.push(record)
+    }
+    if (added.length) {
+        const data = yaml.dump([...added, ...entries], { lineWidth: -1, noRefs: true })
+        atomicWrite(files.data, data)
     }
     return created
 }
@@ -291,6 +392,7 @@ module.exports = {
     SOURCE_ID,
     pagePaths,
     readEvents,
+    readGalleryEntries,
     saveGallery,
     sourcePaths,
     syncGalleryPages,
