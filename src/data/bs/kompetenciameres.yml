@@ -1,4 +1,153 @@
 tabs:
+  - id: '2026'
+    tabtitle: '2026'
+    title: '2026'
+    table:
+      headers:
+        [
+          'tantárgy',
+          'oszt',
+          'fh eredm',
+          'fh eredm orsz átl',
+          'fh eredm 1 visz csop',
+          'fh eredm 2 visz csop',
+        ]
+      rows:
+        - - rowspan: 5
+            content: matematika
+          - content: '4.'
+          - content: 1413
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+        - - content: '5.'
+          - content: 1491
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+        - - content: '6.'
+          - content: 1522
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+        - - content: '7.'
+          - content: 1589
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+        - - content: '8.'
+          - content: 1739
+          - content: 🟢
+          - content: 🟢
+          - content: 🟢
+        - - rowspan: 5
+            content: szövegértés
+          - content: '4.'
+          - content: 1451
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+        - - content: '5.'
+          - content: 1471
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+        - - content: '6.'
+          - content: 1555
+          - content: 🟢
+          - content: 🟡
+          - content: 🟢
+        - - content: '7.'
+          - content: 1584
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+        - - content: '8.'
+          - content: 1703
+          - content: 🟢
+          - content: 🟢
+          - content: 🟢
+        - - rowspan: 3
+            content: term. tud.
+          - content: '6.'
+          - content: 1578
+          - content: 🟢
+          - content: 🟡
+          - content: 🟢
+        - - content: '7.'
+          - content: 1558
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+        - - content: '8.'
+          - content: 1797
+          - content: 🟢
+          - content: 🟢
+          - content: 🟢
+
+        - - rowspan: 3
+            content: angol nyelv
+          - content: '6.'
+          - content: 1578
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+        - - content: '7.'
+          - content: 1608
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+        - - content: '8.'
+          - content: 1796
+          - content: 🟢
+          - content: 🟢
+          - content: 🟢
+        - - rowspan: 4
+            content: történelem
+          - content: '5.'
+          - content: 1505
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+        - - content: '6.'
+          - content: 1591
+          - content: 🟡
+          - content: 🟡
+          - content: 🟢
+        - - content: '7.'
+          - content: 1597
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+        - - content: '8.'
+          - content: 1792
+          - content: 🟢
+          - content: 🟢
+          - content: 🟢
+
+        - - rowspan: 4
+            content: digitális kultúra
+          - content: '5.'
+          - content: 1470
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+        - - content: '6.'
+          - content: 1642
+          - content: 🟢
+          - content: 🟢
+          - content: 🟢
+        - - content: '7.'
+          - content: 1580
+          - content: 🟡
+          - content: 🟡
+          - content: 🟡
+        - - content: '8.'
+          - content: 1774
+          - content: 🟢
+          - content: 🟢
+          - content: 🟢
+
   - id: '2025'
     tabtitle: '2025'
     title: '2025'
