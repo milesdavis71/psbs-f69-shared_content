@@ -1,5 +1,54 @@
 - school: bs
   year: 2026-27
+  slug: 2026-11-09-oltozz-ki-nap
+  title: Öltözz ki! nap
+  alt: Oltozz ki nap
+  date: 2026. 11. 09.
+  folder: ''
+- school: bs
+  year: 2026-27
+  slug: 2026-10-13_palyaorientacios-nap
+  title: Pályaorientációs nap
+  alt: Palyaorientacios nap
+  date: 2026. 10. 13.
+  folder: ''
+- school: bs
+  year: 2026-27
+  slug: 2026-10-07-a-vadasparkban
+  title: A Vadasparkban
+  alt: A vadasparkban
+  date: 2026. 10. 07.
+  folder: ''
+- school: bs
+  year: 2026-27
+  slug: 2026-10-06_egyutt-gondolkodunk
+  title: Együtt gondolkodunk...
+  alt: Együtt gondolkodunk…
+  date: 2026. 10. 06.
+  folder: ''
+- school: bs
+  year: 2026-27
+  slug: 2026-10-01_szent-mihaly-napi-lepegeto
+  title: Szent Mihály-napi lépegető
+  alt: Szent mihaly napi lepegeto
+  date: 2026. 10. 01.
+  folder: ''
+- school: bs
+  year: 2026-27
+  slug: 2026_09_29_medve-matek-a-ligetben
+  title: Medve matek a Ligetben
+  alt: ''
+  date: 2026. 09. 29.
+  folder: ''
+- school: bs
+  year: 2026-27
+  slug: 2026_09_29_magyar-diaksport-napja
+  title: A magyar diáksport napja
+  alt: Magyar diáksport napja
+  date: 2026. 09. 29.
+  folder: ''
+- school: bs
+  year: 2026-27
   slug: 2026_09_01_tanevnyito
   title: Tanévnyitó
   alt: Tanévnyitó
@@ -2652,4 +2701,16 @@
   slug: 2022_09_16_szureti_piknik
   title: Szüreti piknik
   alt: Szüreti piknik
+- school: ps
+  year: ''
+  folder: bs/2026-27/2026_09_21_rendhagyo-magyar-ora
+  slug: 2026_09_21_rendhagyo-magyar-ora
+  date: 2026. 09. 21.
+  title: Rendhagyó magyaróra
+- school: ps
+  year: 2026-27
+  slug: 2026_09_23_homokvar-epites
+  date: 2026. 09. 23.
+  title: Homokvár építés
+  folder: bs/2026-27/2026_09_23_homokvar-epites
 
