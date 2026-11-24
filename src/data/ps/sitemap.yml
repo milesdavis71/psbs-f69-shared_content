@@ -150,7 +150,7 @@ sections:
   - name: "Szülői értekezletek, fogadóórák"
     items:
       - name: "Szülői értekezletek"
-        status: "❌"
+        status: "✅"
       - name: "Fogadóórák"
         status: "✅"
       - name: "Egyéni fogadóórák"

@@ -2,51 +2,48 @@
 # A táblázat fejlécei külön YAML struktúrában
 tableHeaders:
   twoColumn:
-    - name: 'Név'
-      key: 'name'
-    - name: 'Leírás'
-      key: 'description'
+    - name: "Név"
+      key: "name"
+    - name: "Leírás"
+      key: "description"
 
   threeColumn:
-    - name: 'tantárgy'
-      key: 'name'
-    - name: 'nap'
-      key: 'description'
-    - name: 'óra'
-      key: 'category'
+    - name: "tantárgy"
+      key: "name"
+    - name: "nap"
+      key: "description"
+    - name: "óra"
+      key: "category"
 
 # Táblázat adatok
 tableData:
-  - name: 'Egyéni fejlesztés 1.'
-    description: 'Csütörtök'
-    category: '	6. óra'
-  - name: 'Egyéni fejlesztés 2.'
-    description: 'Kedd'
-    category: '	7. óra'
-  - name: 'Egyéni fejlesztés 3.'
-    description: 'Kedd'
-    category: '	6. óra'
-  - name: 'Egyéni fejlesztés 4.'
-    description: 'Szerda'
-    category: '	7. óra'
-  - name: 'Egyéni fejlesztés 5.'
-    description: 'Hétfő'
-    category: '	6. óra'
-  - name: 'Egyéni fejlesztés 6.'
-    description: 'Kedd'
-    category: '	7. óra'
-  - name: 'Egyéni fejlesztés 7.'
-    description: 'Kedd'
-    category: '	8. óra'
-  - name: 'Egyéni fejlesztés 8.'
-    description: 'Kedd'
-    category: '	6. óra'
-  - name: 'Egyéni fejlesztés 9.'
-    description: 'Hétfő'
-    category: '	6. óra'
-  - name: 'Egyéni fejlesztés 10.'
-    description: 'Csütörtök'
-    category: '	8. óra'
-  - name: 'Egyéni fejlesztés 11.'
-    description: 'Szerda'
-    category: '	8. óra'
+  - name: "Egyéni fejlesztés 1."
+    description: "Kedd"
+    category: "	7. óra"
+  - name: "Egyéni fejlesztés 2."
+    description: "Csütörtök"
+    category: "	7. óra"
+  - name: "Egyéni fejlesztés 3."
+    description: "Kedd"
+    category: "	8. óra"
+  - name: "Egyéni fejlesztés 4."
+    description: "Csütörtök"
+    category: "	8. óra"
+  - name: "Egyéni fejlesztés 5."
+    description: "Hétfő"
+    category: "	8. óra"
+  - name: "Egyéni fejlesztés 6."
+    description: "Szerda"
+    category: "	7. óra"
+  - name: "Egyéni fejlesztés 7."
+    description: "Csütörtök"
+    category: "	6. óra"
+  - name: "Egyéni fejlesztés 8."
+    description: "Szerda"
+    category: "	7. óra"
+  - name: "Egyéni fejlesztés 9."
+    description: "Hétfő"
+    category: "	7. óra"
+  - name: "Egyéni fejlesztés 10."
+    description: "Hétfő"
+    category: "	6. óra"
