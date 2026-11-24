@@ -138,3 +138,9 @@ tartandó szaktanári fogadóórákra.
 
 Szeretettel várunk minden érdeklődőt!
 {{/ifequal}}
+
+{{#ifequal hir "news13"}}
+
+<!-- Ide írd a hír szövegét. -->
+
+{{/ifequal}}

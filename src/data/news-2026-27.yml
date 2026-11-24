@@ -1,3 +1,10 @@
+- site: ps
+  img: nincs
+  align: center
+  imgclass: medium-3
+  contentclass: medium-9
+  title: Őszi papírgyűjtés
+  content: news13
 - site: bs
   img: iskolaba-hivogato.jpg
   align: center
@@ -87,4 +94,3 @@
   contentclass: medium-9
   content: news01
   id: news01
-
