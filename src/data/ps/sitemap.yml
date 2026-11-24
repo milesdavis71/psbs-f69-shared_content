@@ -111,7 +111,7 @@ sections:
       - name: "Szakkörök, tehetséggondozás"
         status: "✅"
       - name: "Szaktárgyi korrepetálások"
-        status: "❌"
+        status: "✅"
       - name: "Hétvégi házi feladatok, dolgozatok szabályai"
         status: ""
       - name: "Tanulmányok alatti vizsgák követelményei"
@@ -159,11 +159,11 @@ sections:
   - name: "Tanórán kívüli foglalkozások"
     items:
       - name: "Egyéni fejlesztés"
-        status: "❌"
+        status: "✅"
       - name: "Szakkörök, tehetséggondozás"
         status: "✅"
       - name: "Szaktárgyi korrepetálások"
-        status: "❌"
+        status: "✅"
 
   - name: "Versenyeredmények"
     status: "✅"

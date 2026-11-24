@@ -17,24 +17,29 @@ tableHeaders:
 
 # Táblázat adatok
 tableData:
-  - name: korrepetálás 1
-    description: szerda
-    category: 6. óra
-  - name: korrepetálás 2
-    description: hétfő
-    category: 6. óra
-  - name: korrepetálás 3
-    description: hétfő
-    category: 5. óra
-  - name: korrepetálás 4
-    description: csütörtök
-    category: 5. óra
-  - name: korrepetálás 6
-    description: szerda
-    category: 7. óra
-  - name: korrepetálás 7
-    description: hétfő
-    category: 6. óra
-  - name: korrepetálás 8
-    description: kedd
-    category: 8. óra
+  # Felső tagozat
+  - name: Fizika
+    description: felső tagozat
+    category: hétfő 6. óra
+  - name: Matematika
+    description: 5–6. osztály
+    category: csütörtök 7. óra
+  - name: Magyar
+    description: felső tagozat
+    category: szerda 8. óra
+  - name: Angol
+    description: felső tagozat
+    category: csütörtök 8. óra
+  # Alsó tagozat
+  - name: 1. osztály
+    description: alsó tagozat
+    category: szerda 6. óra
+  - name: 2. osztály
+    description: alsó tagozat
+    category: hétfő 7. óra
+  - name: 3. osztály
+    description: alsó tagozat
+    category: szerda 6. óra
+  - name: 4. osztály
+    description: alsó tagozat
+    category: hétfő 6. óra
