@@ -1,10 +1,31 @@
-- site: ps
-  img: nincs
+- title: Téli szünet 2026
+  site: common
+  img: kids_teli_szunet_2023.png
   align: center
   imgclass: medium-3
   contentclass: medium-9
-  title: Őszi papírgyűjtés
-  content: news13
+  content: news16
+- title: A leendő 1. osztályos osztályfőnök nyílt órája
+  site: ps
+  img: 1oszt-nyilt-nap-ps-2027.jpg
+  align: center
+  imgclass: medium-3
+  contentclass: medium-9
+  content: news15
+- title: Fogadóóra
+  site: ps
+  img: fogadoora_small.jpg
+  align: center
+  imgclass: medium-3
+  contentclass: medium-9
+  content: news17
+- title: Suliváró foglalkozások 2026. december – 2027. március
+  site: ps
+  img: sulivaro2026ps.jpg
+  align: center
+  imgclass: medium-2
+  contentclass: medium-10
+  content: news14
 - site: bs
   img: iskolaba-hivogato.jpg
   align: center
@@ -36,10 +57,10 @@
 - site: ps
   img: papirgyujtes.png
   align: center
-  imgclass: medium-4
-  contentclass: medium-8
-  title: Papírgyűjtés
-  content: news10
+  imgclass: medium-3
+  contentclass: medium-9
+  title: Őszi papírgyűjtés
+  content: news13
 - site: ps
   title: Suliváró foglalkozások
   school: Székhely

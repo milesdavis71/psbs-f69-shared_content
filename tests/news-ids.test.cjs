@@ -67,13 +67,127 @@ test('editing preserves the ID, legacy fields and Markdown; stale edits are reje
     assert.equal(fs.readFileSync(f.files.content, 'utf8'), oldText)
     assert.throws(() => saveNews(f.root, f.config, request), /közben módosították/)
     assert.equal(f.read()[0].title, 'Javított cím')
-    assert.throws(() => saveNews(f.root, f.config, { ...request, baseline: result.entries[0], model: { ...request.model, content: 'news08' } }), /nem változtatható/)
+    const renamed = saveNews(f.root, f.config, { ...request, baseline: result.entries[0], model: { ...request.model, content: ' news08 ' } })
+    assert.equal(renamed.id, 'news08')
+    assert.equal(renamed.created, false)
+    assert.equal(renamed.entries.length, 1)
+    assert.equal(renamed.entries[0].id, 'legacy-id')
+    assert.equal(fs.readFileSync(f.files.content, 'utf8'), oldText.replace('news07', 'news08'))
 })
 
-test('new IDs cannot be supplied manually, and invalid forms do not write files', t => {
+test('renaming preserves list order and only changes the matching block header', t => {
+    const f = fixture(t)
+    const baseline = { ...f.model, content: 'news07' }
+    const entries = [{ ...f.model, content: 'news09' }, baseline]
+    const markdown = "{{#ifequal hir 'news09'}}\r\nMásik hír\r\n{{/ifequal}}\r\n{{#ifequal  hir 'news07' }}\r\nSzöveg news07 hivatkozással\r\n{{/ifequal}}\r\n"
+    fs.writeFileSync(f.files.data, yaml.dump(entries))
+    fs.writeFileSync(f.files.content, markdown)
+    saveNews(f.root, f.config, { sourceId: f.sourceId, baseline, model: { ...baseline, content: 'news42' } })
+    assert.deepEqual(f.read().map(entry => entry.content), ['news09', 'news42'])
+    assert.equal(fs.readFileSync(f.files.content, 'utf8'), markdown.replace("hir 'news07'", "hir 'news42'"))
+})
+
+test('invalid, empty or occupied rename targets leave both files unchanged', t => {
+    const f = fixture(t)
+    const baseline = { ...f.model, content: 'news08' }
+    fs.writeFileSync(f.files.data, yaml.dump([baseline, { ...f.model, content: 'news09' }]))
+    fs.appendFileSync(f.files.content, '{{#ifequal hir "news08"}}Szöveg{{/ifequal}}')
+    const before = [f.files.data, f.files.content].map(file => fs.readFileSync(file, 'utf8'))
+    for (const content of ['news07', 'news09', '', '  ', 'invalid']) {
+        assert.throws(() => saveNews(f.root, f.config, { sourceId: f.sourceId, baseline, model: { ...baseline, content } }))
+        assert.deepEqual([f.files.data, f.files.content].map(file => fs.readFileSync(file, 'utf8')), before)
+    }
+})
+
+test('missing or duplicate original blocks prevent a rename', t => {
+    const f = fixture(t)
+    const baseline = { ...f.model, content: 'news08' }
+    fs.writeFileSync(f.files.data, yaml.dump([baseline]))
+    const block = '{{#ifequal hir "news08"}}Szöveg{{/ifequal}}\n'
+    for (const markdown of ['', block + block]) {
+        fs.writeFileSync(f.files.content, markdown)
+        assert.throws(() => saveNews(f.root, f.config, { sourceId: f.sourceId, baseline, model: { ...baseline, content: 'news42' } }), /szövegblokkja/)
+        assert.equal(f.read()[0].content, 'news08')
+        assert.equal(fs.readFileSync(f.files.content, 'utf8'), markdown)
+    }
+})
+
+test('a broken content reference can reconnect to one unclaimed existing block', t => {
+    const f = fixture(t)
+    const baseline = { ...f.model, content: 'news14' }
+    fs.writeFileSync(f.files.data, yaml.dump([baseline]))
+    const markdown = '{{#ifequal hir "news13"}}\r\nA hír meglévő szövege\r\n{{/ifequal}}\r\n'
+    fs.writeFileSync(f.files.content, markdown)
+    const result = saveNews(f.root, f.config, { sourceId: f.sourceId, baseline, model: { ...baseline, content: 'news13' } })
+    assert.equal(result.id, 'news13')
+    assert.equal(result.created, false)
+    assert.equal(f.read().length, 1)
+    assert.equal(f.read()[0].content, 'news13')
+    assert.equal(fs.readFileSync(f.files.content, 'utf8'), markdown)
+})
+
+test('reconnecting refuses duplicate target blocks or a block used by another news item', t => {
+    const f = fixture(t)
+    const baseline = { ...f.model, content: 'news14' }
+    const block = '{{#ifequal hir "news13"}}Szöveg{{/ifequal}}\n'
+    for (const [entries, markdown] of [
+        [[baseline], block + block],
+        [[baseline, { ...f.model, content: 'news13' }], block],
+    ]) {
+        fs.writeFileSync(f.files.data, yaml.dump(entries))
+        fs.writeFileSync(f.files.content, markdown)
+        assert.throws(() => saveNews(f.root, f.config, { sourceId: f.sourceId, baseline, model: { ...baseline, content: 'news13' } }))
+        assert.deepEqual(f.read(), entries)
+        assert.equal(fs.readFileSync(f.files.content, 'utf8'), markdown)
+    }
+})
+
+test('a failed rename rolls back the original Markdown block', t => {
+    const f = fixture(t)
+    const baseline = { ...f.model, content: 'news07' }
+    fs.writeFileSync(f.files.data, yaml.dump([baseline]))
+    const original = fs.readFileSync(f.files.content, 'utf8')
+    assert.throws(() => saveNews(f.root, f.config, { sourceId: f.sourceId, baseline, model: { ...baseline, content: 'news42' } }, {
+        writeFile(file, text) {
+            if (file === f.files.data) throw new Error('disk failure')
+            fs.writeFileSync(file, text)
+        },
+    }), /disk failure/)
+    assert.equal(f.read()[0].content, 'news07')
+    assert.equal(fs.readFileSync(f.files.content, 'utf8'), original)
+})
+
+test('manual IDs create matching blocks and advance subsequent automatic allocation', t => {
+    const f = fixture(t)
+    const request = { sourceId: f.sourceId, model: { ...f.model, content: ' news42 ' } }
+    const result = saveNews(f.root, f.config, request)
+    assert.equal(result.id, 'news42')
+    assert.equal(result.created, true)
+    assert.equal(f.read()[0].content, 'news42')
+    assert.ok(fs.readFileSync(f.files.content, 'utf8').includes('{{#ifequal hir "news42"}}'))
+    assert.equal(saveNews(f.root, f.config, { ...request, model: { ...f.model, content: '   ' } }).id, 'news43')
+    // A free ID below the maximum can also be chosen explicitly.
+    assert.equal(saveNews(f.root, f.config, { ...request, model: { ...f.model, content: 'news03' } }).id, 'news03')
+})
+
+test('manual IDs reserved by YAML or Markdown are rejected without changing files', t => {
+    const f = fixture(t)
+    fs.writeFileSync(f.files.data, yaml.dump([{ ...f.model, content: 'news08' }]))
+    const before = [f.files.data, f.files.content].map(file => fs.readFileSync(file, 'utf8'))
+    for (const content of ['news07', 'news08']) {
+        assert.throws(() => saveNews(f.root, f.config, {
+            sourceId: f.sourceId, model: { ...f.model, content },
+        }), /már foglalt/)
+        assert.deepEqual([f.files.data, f.files.content].map(file => fs.readFileSync(file, 'utf8')), before)
+    }
+})
+
+test('invalid manual IDs and invalid forms do not write files', t => {
     const f = fixture(t)
     const request = { sourceId: f.sourceId, model: { ...f.model, content: 'news07' } }
-    assert.throws(() => saveNews(f.root, f.config, request), /rendszer osztja ki/)
+    for (const content of ['other42', 'news', 'news-1', 'news42"', 'news99999999999999999']) {
+        assert.throws(() => saveNews(f.root, f.config, { ...request, model: { ...f.model, content } }), /érvényes sorszám/)
+    }
     for (const changes of [{ title: '' }, { site: 'other' }, { img: '../picture.jpg' }, { img: 'missing.jpg' }, { align: 'other' }]) {
         assert.throws(() => saveNews(f.root, f.config, { ...request, model: { ...f.model, ...changes } }))
     }

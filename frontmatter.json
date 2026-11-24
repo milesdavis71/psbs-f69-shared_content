@@ -52,7 +52,7 @@
           "content": {
             "type": "string",
             "title": "Tartalomazonosító (automatikus)",
-            "description": "Új hírnél mentéskor kap newsNN azonosítót és szövegblokkot. Meglévő hír azonosítója változatlan marad."
+            "description": "Új hírnél üresen hagyva automatikus. Kézzel is megadhatsz szabad newsNN azonosítót (pl. news42). Meglévő hírnél az Update a szövegblokk azonosítóját is átírja, a szöveget megőrzi."
           },
           "align": {
             "type": "string",

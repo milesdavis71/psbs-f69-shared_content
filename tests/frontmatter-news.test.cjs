@@ -340,7 +340,7 @@ test('the auto-assigned content field cannot block the Add form', () => {
     assert.equal(content.pattern, undefined)
     assert.ok(!file.schema.required.includes('content'))
     assert.equal(file.schema.properties.img.default, 'nincs')
-    assert.equal(content.uniforms.readOnly, true)
+    assert.notEqual(content.uniforms.readOnly, true)
     assert.equal(content.uniforms['data-news-source'], file.id)
     assert.equal(
         content.uniforms.placeholder.match(/news-\d{4}-\d{2}/)[0],
@@ -359,4 +359,174 @@ test('the dashboard list keeps new entries first and respects manual order', () 
     assert.doesNotMatch(source, /sortNewestFirst/)
     // Reordering must be skipped while an entry is being edited.
     assert.match(source, /content\.value\.trim\(\)/)
+})
+
+function newsForm(t, { selected = 'null', content = '', bridge = true, records, wrapped = true, response } = {}) {
+    const { JSDOM } = require('jsdom')
+    const dom = new JSDOM(`<section><ul><li class="sortable_item" data-test="${selected}-0"></li></ul>
+        <div><form><input name="content" data-news-source="news-2026-27" placeholder="news-2026-27"><input name="title" value="Új hír"></form></div>
+        </section>`, { runScripts: 'outside-only' })
+    const { window } = dom
+    const observers = []
+    const NativeObserver = window.MutationObserver
+    window.MutationObserver = class extends NativeObserver {
+        constructor(callback) { super(callback); observers.push(this) }
+    }
+    t.after(() => {
+        observers.forEach(observer => observer.disconnect())
+        window.close()
+    })
+    Object.defineProperty(window, 'crypto', { value: { randomUUID: require('node:crypto').randomUUID } })
+    const form = window.document.querySelector('form')
+    form.elements.content.value = content
+    window.structuredClone = structuredClone
+    // Keep the response poll pending; these tests inspect the dispatched save.
+    window.setTimeout = response ? callback => queueMicrotask(callback) : () => 1
+    if (response) window.fetch = async () => ({ ok: true, json: async () => response })
+    const messages = []
+    if (bridge) window.__vscode_post_message__ = (_, payload) => messages.push(payload.message)
+    window.eval(fs.readFileSync(path.join(projectRoot, '.frontmatter/ui/news-id.mjs'), 'utf8')
+        .replace('import.meta.url', JSON.stringify('https://example.test/.frontmatter/ui/news-id.mjs')))
+    window.dispatchEvent(new window.MessageEvent('message', {
+        data: { command: 'dataFileEntries', payload: wrapped
+            ? { file: '[[workspace]]/src/data/news-2026-27.yml', entries: records || [{ content: 'news07', title: 'Meglévő' }] }
+            : records || [{ content: 'news07', title: 'Meglévő' }] },
+    }))
+    function submit() {
+        const event = new window.Event('submit', { bubbles: true, cancelable: true })
+        form.dispatchEvent(event)
+        return event
+    }
+    return { window, form, messages, submit }
+}
+
+test('image search filters filenames without changing the saved image or adding model fields', async t => {
+    const ui = newsForm(t)
+    const select = ui.window.document.createElement('select')
+    select.name = 'img'
+    select.innerHTML = '<option>nincs</option><option selected>régi.jpg</option><option>ÁRVÍZ.JPG</option><option>sulivaro.png</option>'
+    ui.form.appendChild(select)
+    await Promise.resolve()
+    const input = ui.form.querySelector('input[type="search"]')
+    const visible = () => Array.from(select.options).filter(option => !option.hidden).map(option => option.value)
+    const search = value => {
+        input.value = value
+        input.dispatchEvent(new ui.window.Event('input', { bubbles: true }))
+    }
+    search(' arviz ')
+    assert.deepEqual(visible(), ['nincs', 'régi.jpg', 'ÁRVÍZ.JPG'])
+    assert.equal(select.value, 'régi.jpg')
+    search('missing')
+    assert.deepEqual(visible(), ['nincs', 'régi.jpg'])
+    assert.match(ui.form.querySelector('[role="status"]').textContent, /Nincs találat/)
+    const enter = new ui.window.KeyboardEvent('keydown', { key: 'Enter', bubbles: true, cancelable: true })
+    input.dispatchEvent(enter)
+    assert.equal(enter.defaultPrevented, true)
+    input.dispatchEvent(new ui.window.KeyboardEvent('keydown', { key: 'Escape', bubbles: true, cancelable: true }))
+    assert.equal(input.value, '')
+    assert.equal(visible().length, 4)
+    search('arviz')
+    select.value = 'ÁRVÍZ.JPG'
+    select.dispatchEvent(new ui.window.Event('change', { bubbles: true }))
+    assert.deepEqual(visible(), ['nincs', 'ÁRVÍZ.JPG'])
+    ui.submit()
+    assert.deepEqual(Object.keys(ui.messages[0].payload.args.model).sort(), ['content', 'img', 'title'])
+    assert.equal(ui.messages[0].payload.args.model.img, 'ÁRVÍZ.JPG')
+})
+
+test('image search follows refreshed choices and remounted forms without duplicate controls', async t => {
+    const ui = newsForm(t)
+    ui.form.insertAdjacentHTML('beforeend', '<select name="img"><option>nincs</option><option>old.jpg</option></select>')
+    await Promise.resolve()
+    const input = ui.form.querySelector('input[type="search"]')
+    input.value = 'new'
+    input.dispatchEvent(new ui.window.Event('input', { bubbles: true }))
+    ui.form.elements.img.insertAdjacentHTML('beforeend', '<option>new.jpg</option><option>other.jpg</option>')
+    await Promise.resolve()
+    assert.equal(ui.form.elements.img.options[2].hidden, false)
+    assert.equal(ui.form.elements.img.options[3].hidden, true)
+    assert.equal(ui.form.querySelectorAll('input[type="search"]').length, 1)
+    ui.form.reset()
+    assert.equal(input.value, '')
+    assert.equal(Array.from(ui.form.elements.img.options).some(option => option.hidden), false)
+    ui.form.innerHTML = '<input name="content" placeholder="news-2026-27"><select name="img"><option>nincs</option></select>'
+    await Promise.resolve()
+    assert.equal(ui.form.querySelectorAll('input[type="search"]').length, 1)
+    assert.equal(ui.form.querySelector('input[type="search"]').value, '')
+    const unrelated = ui.window.document.createElement('form')
+    unrelated.innerHTML = '<select name="img"><option>other.jpg</option></select>'
+    ui.window.document.body.appendChild(unrelated)
+    await Promise.resolve()
+    assert.equal(unrelated.querySelector('input[type="search"]'), null)
+})
+
+test('Add sends manual IDs as new records even when the ID matches an existing record', t => {
+    for (const content of ['', 'news42', 'news07']) {
+        const ui = newsForm(t, { content })
+        assert.equal(ui.form.elements.content.readOnly, false)
+        assert.equal(ui.submit().defaultPrevented, true)
+        const request = ui.messages[0].payload.args
+        assert.equal(request.model.content, content)
+        assert.equal(request.baseline, null, 'a duplicate ID must not turn Add into Update')
+    }
+})
+
+test('Update allows typing a new ID while retaining the original baseline', async t => {
+    const ui = newsForm(t, { selected: '0', content: 'news07' })
+    assert.equal(ui.form.elements.content.readOnly, false)
+    // A stale schema must not relock the field after a React render.
+    ui.form.elements.content.readOnly = true
+    await Promise.resolve()
+    assert.equal(ui.form.elements.content.readOnly, false)
+    ui.form.elements.content.value = 'news42'
+    ui.form.elements.content.dispatchEvent(new ui.window.Event('input', { bubbles: true }))
+    ui.submit()
+    assert.equal(ui.messages[0].payload.args.baseline.content, 'news07')
+    assert.equal(ui.messages[0].payload.args.model.content, 'news42')
+})
+
+test('legacy array messages still identify the record being renamed', t => {
+    const ui = newsForm(t, { selected: '0', content: 'news42', wrapped: false })
+    ui.submit()
+    assert.equal(ui.messages[0].payload.args.baseline.content, 'news07')
+})
+
+test('10.14 receives the renamed entries with the original file envelope', async t => {
+    const response = { ok: true, id: 'news42', created: false, entries: [{ content: 'news42', title: 'Új hír' }] }
+    const ui = newsForm(t, { selected: '0', content: 'news42', response })
+    const received = []
+    ui.window.addEventListener('message', event => received.push(event.data))
+    ui.submit()
+    for (let i = 0; i < 15; i++) await Promise.resolve()
+    const saved = received.find(message => message.command === 'dataFileEntries')
+    assert.equal(saved.payload.file, '[[workspace]]/src/data/news-2026-27.yml')
+    assert.equal(saved.payload.entries[0].content, 'news42')
+    assert.match(ui.window.document.querySelector('[data-news-status]').textContent, /Mentve: news42/)
+    assert.equal(ui.form.closest('section').inert, false)
+})
+
+test('messages for other data files cannot replace the news edit baseline', t => {
+    const ui = newsForm(t, { selected: '0', content: 'news42' })
+    ui.window.dispatchEvent(new ui.window.MessageEvent('message', {
+        data: { command: 'dataFileEntries', payload: { file: '[[workspace]]/src/data/gallery_events.yml', entries: [{ title: 'Galéria' }] } },
+    }))
+    ui.submit()
+    assert.equal(ui.messages[0].payload.args.baseline.content, 'news07')
+})
+
+test('an empty list accepts a manual ID for the first news item', t => {
+    const ui = newsForm(t, { content: 'news01', records: [] })
+    ui.window.document.querySelector('li').remove()
+    ui.submit()
+    assert.equal(ui.messages[0].payload.args.baseline, null)
+})
+
+test('missing bridge blocks manual IDs but preserves the automatic fallback', t => {
+    const manual = newsForm(t, { content: 'news42', bridge: false })
+    assert.equal(manual.submit().defaultPrevented, true)
+    assert.match(manual.window.document.querySelector('[data-news-status]').textContent, /Reload Window/)
+    const automatic = newsForm(t, { bridge: false })
+    assert.equal(automatic.submit().defaultPrevented, false)
+    const rename = newsForm(t, { selected: '0', content: 'news42', bridge: false })
+    assert.equal(rename.submit().defaultPrevented, true)
 })

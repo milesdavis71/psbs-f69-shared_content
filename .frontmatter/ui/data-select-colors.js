@@ -4,6 +4,34 @@ const styleId = 'frontmatter-data-select-colors'
 const style = document.getElementById(styleId) || document.createElement('style')
 style.id = styleId
 style.textContent = `
+    .news-image-search {
+        margin-bottom: 0.4rem;
+    }
+
+    .news-image-search label,
+    .news-image-search input {
+        display: block;
+        width: 100%;
+    }
+
+    .news-image-search input {
+        box-sizing: border-box;
+        margin-top: 0.25rem;
+        padding: 0.35rem 0.5rem;
+        color: var(--vscode-input-foreground, #333333);
+        background: var(--vscode-input-background, #ffffff);
+        border: 1px solid var(--vscode-input-border, #888888);
+        border-radius: 2px;
+    }
+
+    .news-image-search input:focus {
+        outline: 1px solid var(--vscode-focusBorder, #007acc);
+    }
+
+    .news-image-search input::placeholder {
+        color: var(--vscode-input-placeholderForeground, #666666);
+    }
+
     .autoform .autoform__select_field select,
     .autoform .autoform__select_field select option,
     .autoform .autoform__select_field select optgroup,

@@ -7,7 +7,7 @@ Az aktuális tanév **2026-27**. A Front Matter Dashboard **Data** fülén a **H
 | Fájl | Szerep |
 |------|--------|
 | `frontmatter.json` | Adatűrlap sémája, média mappa és snippetek |
-| `frontmatter.config.cjs` | Képválasztó, csak olvasható ID-mező és a hírmentési parancsok regisztrálása |
+| `frontmatter.config.cjs` | Képválasztó, automatikus vagy kézzel megadható ID-mező és a hírmentési parancsok regisztrálása |
 | `.frontmatter/ui/data-select-colors.js` | A Data legördülő mezőinek és listaelemeinek olvasható témaszínei |
 | `.frontmatter/ui/news-id.mjs` | Az Add/Update gomb ellenőrzött mentése és visszajelzése |
 | `.frontmatter/lib/news-store.cjs` | Friss fájlolvasás, ID-kiosztás, ütközésellenőrzés és szövegblokk létrehozása |
@@ -25,7 +25,7 @@ Az aktuális tanév **2026-27**. A Front Matter Dashboard **Data** fülén a **H
 1. `Ctrl+Shift+P` → **Front Matter: Open media dashboard**, vagy a dashboard **Media** füle. Az alapértelmezett médiamappa a `src/assets/img/hirfolyam/`.
 2. Nyisd meg a **Windows Fájlkezelőt**, és onnan kezdd el a képfájl húzását a Media fül képeket mutató területére. **Húzás közben nyomd le és tartsd nyomva a Shift billentyűt.** Várd meg a Front Matter feltöltési jelzését (feltöltési nyíl és célmappa), majd **előbb az egérgombot engedd fel, és csak utána a Shiftet**. Várd meg a feltöltés visszajelzését. A Front Matter 10.13.0 ezen a felületen húzással fogad fájlokat; nincs külön „Add/Upload” fájlválasztó gomb.
 3. `Ctrl+Shift+P` → **Front Matter: Refresh Front Matter Settings**. Ez újraolvassa a képmappát és frissíti a Data űrlap képválasztóját. A Media saját frissítőgombja csak a médiatárat frissíti.
-4. Válts a **Data → Hírek 2026/2027** adatforrásra, és a **Hírkép** listából válaszd ki a fájlt. A legutóbb módosított képek kerülnek előre; a `nincs` választás kép nélküli hírt jelent.
+4. Válts a **Data → Hírek 2026/2027** adatforrásra, és a **Hírkép** listából válaszd ki a fájlt. A lista feletti **Hírkép keresése** mezőbe írva fájlnévrészletre szűrhetsz, kis- és nagybetűktől, illetve ékezetektől függetlenül. A keresés törlésével (vagy az Esc billentyűvel) újra minden kép látható. A kiválasztott kép és a `nincs` lehetőség keresés közben is megmarad. A legutóbb módosított képek kerülnek előre; a `nincs` választás kép nélküli hírt jelent.
 
 Meglévő képhez csak a 4. lépés kell. Alternatív feltöltésként a fájlt közvetlenül a `src/assets/img/hirfolyam/` mappába is másolhatod, majd frissítsd a Front Matter beállításait.
 
@@ -41,7 +41,7 @@ A Data nézetben nincs beépített képfeltöltő vagy bélyegképes médiavála
 
 ## 2. Új bejegyzés a Data fülön
 
-**Az automatikus ID-kiosztás első betöltése:** mentsd a módosított fájlokat, majd `Ctrl+Shift+P` → **Developer: Reload Window**. Ezután nyisd meg újra a Front Matter Dashboardot. A Tartalomazonosító mező csak olvasható; új hírnél a „Mentéskor automatikusan létrejön” felirat látszik benne.
+**Az ID-kezelés első betöltése:** mentsd a módosított fájlokat, majd `Ctrl+Shift+P` → **Developer: Reload Window**. Ezután nyisd meg újra a Front Matter Dashboardot. A Tartalomazonosító mező új és meglévő hírnél is szerkeszthető; új hírnél üresen hagyva automatikus azonosítót kap.
 
 1. Nyisd meg a **Data** fület, majd válaszd a **Hírek 2026/2027 (aktuális tanév)** adatforrást.
 2. Új hírhez az üres hozzáadási űrlapot használd. Ha egy meglévő hírt választottál ki, előbb kattints az új bejegyzés hozzáadására vagy a **Cancel** gombra.
@@ -52,18 +52,20 @@ A Data nézetben nincs beépített képfeltöltő vagy bélyegképes médiavála
 | A hír címe | A megjelenő cím |
 | Megjelenés (`site`) | `ps`: Petőfi / Székhely; `bs`: Bálint / Tagiskola; `common`: mindkettő |
 | Hírkép (`img`) | Válassz a feltöltött képek listájából; kép nélkül `nincs` |
-| Tartalomazonosító (`content`) | Automatikus, nem kell és nem lehet beírni; mentés után például `news08` |
+| Tartalomazonosító (`content`) | Új hírnél üresen automatikus; új és meglévő hírhez szabad `newsNN` azonosító kézzel is beírható, például `news42` |
 | Kép igazítása | Általában `center` |
 | Kép oszlopszélessége | Általában `medium-3` |
 | Tartalom oszlopszélessége | Általában `medium-9` |
 
-4. Kattints az **Add** gombra. Várd meg a **Mentve: newsNN. A szövegblokk elkészült.** visszajelzést. Meglévő hír mentéséhez az **Update** gombot használd; az azonosítója megmarad.
+4. Kattints az **Add** gombra. Várd meg a **Mentve: newsNN. A szövegblokk elkészült.** visszajelzést. Meglévő hír mentéséhez az **Update** gombot használd. Ha átírod az azonosítót, a mentés a hozzá tartozó szövegblokk azonosítóját is átírja; a szöveget és a hír listabeli helyét megőrzi. Meglévő hír azonosítója nem lehet üres. Ha az eredeti blokk hiányzik, egyetlen meglévő, más hír által nem használt blokk azonosítójára javíthatod a hivatkozást (például `news14` → `news13`); ilyenkor a szövegfájl változatlan marad. Hiányzó célblokk vagy nem egyértelmű kapcsolat esetén a mentés hibaüzenetet ad.
 5. **Az új hír automatikusan legfelül jelenik meg.** A kiegészítés a Data listájának elejére menti. A két főoldal a Data listában mentett sorrendet követi, az adott iskolához tartozó és közös hírekre szűrve.
 A Data fül bal oldali bejegyzéslistája a YAML-fájl sorrendjét mutatja (alapból legújabb elöl), a még azonosító nélküli, frissen felvett bejegyzés pedig mindig a lista elejére kerül.
 
 A sorrend **kézzel felülírható**: ha a Data listában húzással (drag & drop) átrendezed a híreket, az új sorrend bekerül a YAML-fájlba, és a következő rendereléskor a **honlap hírfolyama is ezt követi**. A meglévő hírek mentése és a háttérben futó véglegesítés megőrzi ezt a sorrendet. Új hír felvételekor csak az új bejegyzés kerül eléjük; a korábbi hírek egymáshoz viszonyított sorrendje megmarad. Az azonosítókat nem kell átírnod a rendezéshez.
 
-A kiosztás minden mentéskor újraolvassa a tanévi YAML-listát és a tartalomfájlt, és a legnagyobb meglévő sorszám + 1 értéket használja. A két iskola és a közös hírek egy számsort használnak. A formátum `news01`…`news99`, majd `news100` stb. A törölt bejegyzés megmaradt szövegblokkja továbbra is foglalja a számát. Meglévő azonosítót a rendszer nem számoz át, a korábbi hibás azonosítókat sem javítja át magától.
+A kiosztás minden mentéskor újraolvassa a tanévi YAML-listát és a tartalomfájlt. Üres mezőnél a legnagyobb meglévő sorszám + 1 értéket használja; kézzel megadott `newsNN` azonosítónál ellenőrzi a formátumot és azt, hogy az érték egyik fájlban sem foglalt. A szövegblokk mindkét esetben elkészül. A két iskola és a közös hírek egy számsort használnak. A formátum `news01`…`news99`, majd `news100` stb. A törölt bejegyzés megmaradt szövegblokkja továbbra is foglalja a számát. Meglévő azonosítót a rendszer nem számoz át, a korábbi hibás azonosítókat sem javítja át magától.
+
+Kézi azonosítóhoz működő dashboard-üzenethíd szükséges. Ha ez nem elérhető, a mentés újratöltést kér, hogy az ütközésellenőrzés és a szövegblokk létrehozása biztosan megtörténjen. Az üres azonosító tartalék mentési útja továbbra is használható.
 
 Egymás után több hírt is felvehetsz beállításfrissítés nélkül. A mentés fájlzárral védi a kiosztást a másik VS Code-ablakból indított egyidejű mentéstől. Ha egy szerkesztett hírt közben máshol módosítottak, a mentés hibát jelez: nyisd meg újra az adatforrást, majd végezd el újra a módosítást. Ha a YAML vagy a szövegfájl megnyitott, nem mentett változtatást tartalmaz, előbb mentsd el azt.
 
@@ -121,6 +123,7 @@ Táblázatos időpontlistákhoz használható a **HIR - Táblázat sor (időpont
 - A hír a megfelelő iskola főoldalának tetején jelenjen meg; `common` esetén mindkettőn.
 - Ellenőrizd a címet, a képet és a szöveget is.
 - `npm run test:news`: a hírszűrés és a hírek tartalomkapcsolatainak automatikus ellenőrzése.
+- `npm run test:news:browser`: valódi Chromium alatt ellenőrzi az Update üzenethídját, az átnevezést és a hibás hivatkozás javítását, ideiglenes hírfájlokkal. A böngésző útvonala a `NEWS_TEST_CHROME` környezeti változóval is megadható.
 - `node --test tests/news-ids.test.cjs`: ID-kiosztás, egymás utáni és párhuzamos mentés, szerkesztési ütközés és hibás mentés ellenőrzése elkülönített tesztfájlokkal.
 
 A **Content** fül „Create article” művelete önálló cikkfájlt készít, ezért ehhez a hírrendszerhez a **Data** űrlapot és a tartalomblokkot használd. Az emlékeztető sablon önmagában nem hoz létre hírt.

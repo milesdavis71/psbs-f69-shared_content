@@ -25,10 +25,11 @@ Ez a sablon emlékeztető. **A fájl NEM kerül buildbe** — a lépéseket a va
 - A **Hírkép** listából válaszd ki a feltöltött képet (kép nélkül: `nincs`).
 - A `site` mező választja ki az iskolát: `ps` = Petőfi, `bs` = Bálint, `common` = mindkettő.
 - A `site`, `align`, `imgclass` és `contentclass` legördülőket nem kell átálltogatni: ha érintetlenül hagyod őket, a mentés a séma alapértelmezését írja ki (ps, center, medium-3, medium-9). A `Hírkép` üresen hagyva a `nincs` értéket kapja.
-- A `content` mező **automatikus és csak olvasható**. Az Add frissen kiszámolja a következő `newsNN` azonosítót, és elkészíti a szövegblokkot is. Várd meg a „Mentve: newsNN” visszajelzést.
+- A `content` mező **üresen hagyva automatikus**, új hírnél kézzel is megadhatsz szabad `newsNN` azonosítót (pl. `news42`). Az Add ellenőrzi, hogy az azonosító nem foglalt-e a hírlistában vagy a szövegfájlban, és elkészíti a szövegblokkot is. Várd meg a „Mentve: newsNN” visszajelzést.
 - Az új hír a Data listában és a honlapon is **legfelül jelenik meg**; nem kell áthúzni.
 - A Data listában húzással beállított sorrend a honlap hírfolyamában is érvényesül. A következő új hír eléjük kerül, a korábbi hírek egymás közötti sorrendje megmarad.
-- Az Update megtartja az azonosítót. Ha közben másik ablakban módosították a hírt, nyisd meg újra az adatforrást.
+- Meglévő hírnél a `content` mező is szerkeszthető. Az **Update** a szövegblokk azonosítóját is átírja, miközben a hír szövege és listabeli helye megmarad. Az új azonosító nem lehet üres vagy foglalt. Ha közben másik ablakban módosították a hírt, nyisd meg újra az adatforrást.
+- Hibás tartalomhivatkozás javításakor: ha a régi azonosítóhoz nincs szövegblokk, megadhatod egy már meglévő, más hír által nem használt blokk azonosítóját. Az Update ilyenkor ehhez kapcsolja a hírt, a szövegfájlt nem módosítja.
 - Az automatikus kiosztás első betöltéséhez: **Developer: Reload Window**, majd nyisd meg újra a dashboardot.
 - Kézi alternatíva: a YAML fájl legelején (`Ctrl+Home`) használd a `HIR - YAML bejegyzés (news-*.yml)` snippetet. Ennél te adod meg a YAML-ben és a szövegfájlban található legnagyobb sorszám + 1 azonosítót, és külön hozod létre a szövegblokkot.
 

@@ -139,8 +139,53 @@ tartandó szaktanári fogadóórákra.
 Szeretettel várunk minden érdeklődőt!
 {{/ifequal}}
 
+
+
 {{#ifequal hir "news13"}}
 
-<!-- Ide írd a hír szövegét. -->
+2026\. november 12. 7:00 – (várhatóan) 17:00-ig
+
+*A könyveket kemény borító és műanyag csomagolás nélkül, kérjük hozni!*
+
+{{/ifequal}}
+
+
+
+{{#ifequal hir "news14"}}
+
+
+- 2026\. december 8. 16:00
+- 2027\. január 18. 16:00 játékos családi délután a szülőkkel
+- 2027\. február 16. 16:00
+- 2027\. március 23. 16:00
+
+
+{{/ifequal}}
+
+{{#ifequal hir "news15"}}
+
+Nyílt órát tart a leendő 1. osztályos osztályfőnök  
+**Szabó Adrienne** 
+2027\. január 14. 8:00 
+
+*Várjuk a leendő első osztályos szülőket!*
+
+
+{{/ifequal}}
+
+{{#ifequal hir "news16"}}
+
+**2026\. 12. 19. - 2027. 01. 03.**
+
+**utolsó tanítási nap:** december 18. (péntek)  
+**első tanítási nap:** 2027\. január 4. (hétfő)
+
+{{/ifequal}}
+
+
+
+{{#ifequal hir "news17"}}
+
+2026\. 12. 07. 17:00
 
 {{/ifequal}}

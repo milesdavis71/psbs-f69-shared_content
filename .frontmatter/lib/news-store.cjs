@@ -79,6 +79,23 @@ function atomicWrite(file, text) {
     }
 }
 
+function manualNewsId(value) {
+    const id = typeof value === 'string' ? value.trim() : ''
+    if (id && (!/^news\d+$/.test(id) ||
+        !Number.isSafeInteger(Number(id.slice(4))) ||
+        Number(id.slice(4)) >= Number.MAX_SAFE_INTEGER)) {
+        throw new Error('Az azonosító news és egy érvényes sorszám legyen, például news42.')
+    }
+    return id
+}
+
+function assertIdAvailable(id, entries, markdown) {
+    const blockIds = Array.from(markdown.matchAll(/\{\{#ifequal\s+hir\s+["'](news\d+)["']\s*\}\}/g), match => match[1])
+    if (entries.some(entry => entry.content === id) || blockIds.includes(id)) {
+        throw new Error(`A(z) ${id} azonosító már foglalt a hírlistában vagy a szövegfájlban. Válassz másikat.`)
+    }
+}
+
 function acquireLock(lock) {
     try {
         const descriptor = fs.openSync(lock, 'wx')
@@ -120,11 +137,35 @@ function saveNews(root, config, request, options = {}) {
             if (matches.length !== 1 || !isDeepStrictEqual(matches[0], request.baseline)) {
                 throw new Error('Ezt a hírt közben módosították. Nyisd meg újra az adatforrást a mentés előtt.')
             }
-            if (request.model.content !== id) throw new Error('Meglévő hír azonosítója nem változtatható meg.')
+            const newId = manualNewsId(request.model.content)
+            if (!newId) throw new Error('Meglévő hír azonosítója nem lehet üres.')
+            if (newId !== id) {
+                if (entries.some(entry => entry.content === newId)) {
+                    throw new Error(`A(z) ${newId} azonosítót már másik hír használja.`)
+                }
+                const blockIds = Array.from(oldContent.matchAll(/\{\{#ifequal\s+hir\s+["'](news\d+)["']\s*\}\}/g), match => match[1])
+                const originalCount = blockIds.filter(blockId => blockId === id).length
+                const targetCount = blockIds.filter(blockId => blockId === newId).length
+                // Repair a broken reference (e.g. YAML news14, text news13)
+                // by linking to the single, unclaimed target block as-is.
+                const reconnect = originalCount === 0 && targetCount === 1
+                if (!reconnect) assertIdAvailable(newId, entries, oldContent)
+                let blocks = 0
+                content = oldContent.replace(/(\{\{#ifequal\s+hir\s+)(["'])(news\d+)\2(\s*\}\})/g,
+                    (opening, prefix, quote, blockId, suffix) => {
+                        if (blockId !== id) return opening
+                        blocks++
+                        return `${prefix}${quote}${newId}${quote}${suffix}`
+                    })
+                if (!reconnect && blocks !== 1) throw new Error('A hír szövegblokkja hiányzik vagy többször szerepel. Az azonosító nem írható át biztonságosan.')
+                id = newId
+                matches[0].content = id
+            }
             Object.assign(matches[0], record)
         } else {
-            if (request.model.content) throw new Error('Új hír azonosítóját a rendszer osztja ki. Nyisd meg az új hír űrlapját.')
-            id = nextNewsId(entries, oldContent)
+            const manualId = manualNewsId(request.model.content)
+            id = manualId || nextNewsId(entries, oldContent)
+            assertIdAvailable(id, entries, oldContent)
             entries.unshift({ ...record, content: id })
             const eol = oldContent.includes('\r\n') ? '\r\n' : '\n'
             content = oldContent + (oldContent.endsWith(eol) ? eol : eol + eol) +
