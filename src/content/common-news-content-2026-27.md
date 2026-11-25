@@ -192,13 +192,30 @@ Nyílt órát tart a leendő 1. osztályos osztályfőnök
 
 {{#ifequal hir "news18"}}
 
-Tedd öromtelivé beteg
-gyerekek karácsonyát egy
-tábla csokival, vagy
-kettővel!
+Tedd öromtelivé beteg gyerekek karácsonyát egy tábla csokival, vagy kettővel!
 
-December 15-ig
-várjuk a felajánlásokat a
-titkárságon!
+**December 15-ig várjuk a felajánlásokat a titkárságon!**
+{{/ifequal}}
 
+{{#ifequal hir "news19"}}
+
+Lépj pályára, próbáld ki, játssz velünk! 🏀
+
+Szeretettel várjuk az 1–2. osztályos gyerekeket a Kosárpalánta programba!
+
+*Nem kell profinak lenned – csak hozd a lelkesedésedet!*
+
+**Foglalkozások:**  
+szerda, csütörtök
+16:00–16:45
+
+{{/ifequal}}
+
+
+{{#ifequal hir "news20"}}
+
+
+Szeretettel várunk benneteket **december 9-én (szerdán) 16:30-kor** kezdődő *„Játékos téli készülődés”* című suliváró foglalkozásunkra!
+
+*Magdi néni, Nóri néni és Marian néni*
 {{/ifequal}}
