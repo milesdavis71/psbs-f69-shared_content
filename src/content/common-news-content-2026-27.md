@@ -189,3 +189,16 @@ Nyílt órát tart a leendő 1. osztályos osztályfőnök
 2026\. 12. 07. 17:00
 
 {{/ifequal}}
+
+{{#ifequal hir "news18"}}
+
+Tedd öromtelivé beteg
+gyerekek karácsonyát egy
+tábla csokival, vagy
+kettővel!
+
+December 15-ig
+várjuk a felajánlásokat a
+titkárságon!
+
+{{/ifequal}}
