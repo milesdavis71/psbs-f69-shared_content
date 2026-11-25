@@ -1,6 +1,6 @@
 const fs = require('node:fs')
 const path = require('node:path')
-const { saveGallery, syncGalleryPages, readGalleryEntries } = require('./gallery-store.cjs')
+const { saveGallery, syncGalleryPages, readGalleryEntries, withGalleryRetry } = require('./gallery-store.cjs')
 const { galleryFolders } = require('../../src/lib/gallery-utils.cjs')
 
 let registration
@@ -31,7 +31,7 @@ function registerGalleryCommands(vscode, root, config) {
         if (fs.existsSync(response)) return
         let result
         try {
-            result = saveGallery(root, config, request, {
+            result = await withGalleryRetry(() => saveGallery(root, config, request, {
                 assertClean(files) {
                     if (
                         vscode.workspace.textDocuments.some(
@@ -45,7 +45,7 @@ function registerGalleryCommands(vscode, root, config) {
                         )
                     }
                 },
-            })
+            }))
         } catch (error) {
             result = { ok: false, message: error.message }
         }
@@ -67,7 +67,7 @@ function registerGalleryCommands(vscode, root, config) {
         // és registrybejegyzéseket, hogy az új tanév megjelenjen a főoldalon.
         let created = []
         try {
-            created = syncGalleryPages(root, config)
+            created = await withGalleryRetry(() => syncGalleryPages(root, config))
         } catch (error) {
             const temporary = response + '.tmp'
             fs.writeFileSync(
@@ -159,6 +159,7 @@ function registerGalleryCommands(vscode, root, config) {
         }
     })
     watchGalleryData(vscode)
+    syncNow(vscode)
 }
 
 function watchGalleryData(vscode) {
@@ -183,22 +184,14 @@ function watchGalleryData(vscode) {
 
 async function syncNow(vscode) {
     if (!current) return
-    for (let attempt = 0; attempt < 12; attempt++) {
-        try {
-            const created = syncGalleryPages(current.root, current.config)
-            for (const file of created) {
-                vscode.window?.showInformationMessage?.(
-                    `Galériaoldal létrehozva: ${path.basename(file)}`
-                )
-            }
-            return
-        } catch (error) {
-            if (!/folyamatban/.test(error.message || '')) {
-                vscode.window?.showErrorMessage?.(`Galéria szinkronizálási hiba: ${error.message}`)
-                return
-            }
-            await new Promise(resolve => setTimeout(resolve, 500))
+    const { root, config } = current
+    try {
+        const created = await withGalleryRetry(() => syncGalleryPages(root, config))
+        for (const file of created) {
+            vscode.window?.showInformationMessage?.(`Galériaoldal létrehozva: ${path.basename(file)}`)
         }
+    } catch (error) {
+        vscode.window?.showErrorMessage?.(`Galéria szinkronizálási hiba: ${error.message}`)
     }
 }
 

@@ -1,0 +1,13 @@
+---
+layout: two_columns_ps
+page: galeriak_root
+galleryRoot: true
+title: 5 osztalyosok a mora ferenc muzeumban
+alt: 5 osztalyosok a mora ferenc muzeumban
+date: 2025. 11. 25.
+schoolKey: ps
+slug: 2025_11_25_5_osztalyosok_a_mora_ferenc_muzeumban
+year: 2025-26
+---
+
+{{> gallery-breadcrumb}}{{> common-galery-from-yaml}}

@@ -1,3 +1,147 @@
+- school: ps
+  year: 2026-27
+  slug: 2026-10-22-enekora-a-konyvtarban
+  title: Énekóra a könyvtárban
+  alt: énekóra a könyvtárban
+  date: 2026. 10. 22.
+  folder: ''
+- school: ps
+  year: 2026-27
+  slug: 2026-10-21-laogatas-a-vedresben
+  title: Látogatás a Vedres Gimnáziumban
+  alt: látogatás a Vedresben
+  date: 2026. 10. 21.
+  folder: ''
+- school: ps
+  year: 2026-27
+  slug: 2026-10-21-halloween-partik
+  title: Halloween partik
+  alt: Halloween partik az osztályokban
+  date: 2026. 10. 21.
+  folder: ''
+- school: ps
+  year: 2026-27
+  slug: 2026-10-20-diakok-hangja-temanap
+  title: Diákok hangja témanap
+  alt: Diakok hangja temanap
+  date: 2026. 10. 20.
+  folder: ''
+- school: ps
+  year: 2026-27
+  slug: 2026-10-15-sakkpalota
+  title: Sakkpalota
+  alt: Sakkpalota
+  date: 2026. 10. 15.
+- school: ps
+  year: 2026-27
+  slug: 2026-10-15-erasmus-treasure-hunt
+  title: Erasmus treasure hunt
+  alt: Erasmus treasure hunt
+  date: 2026. 10. 15.
+- school: ps
+  year: 2026-27
+  slug: 2026-10-13-palyavalasztasi-nap
+  title: Pályavalásztási nap
+  alt: Pályavalásztási nap
+  date: 2026. 10. 13.
+  folder: ''
+- school: ps
+  year: 2026-27
+  slug: 2026-10-08-csapatversenyek
+  title: Csapatversenyek
+  alt: Csapatversenyek
+  date: 2026. 10. 08.
+- school: ps
+  year: 2026-27
+  slug: 2026-10-07-jubileumi-csaladi-nap
+  title: Jubileumi családi nap
+  alt: Jubileumi családi nap
+  date: 2026. 10. 07.
+  folder: ''
+- school: ps
+  year: 2026-27
+  slug: 2026-10-06-kuldetes-setajatekon
+  title: „Küldetés sétajátékon” (100 éves az iskola)
+  alt: „Küldetés sétajátékon” (100 éves az iskola)
+  date: 2026. 10. 06.
+  folder: ''
+- school: ps
+  year: 2026-27
+  slug: 2026-10-05-jubileumi-ajandek-gyerekeknek
+  title: Jubileumi ajándék gyerekeknek
+  alt: Jubileumi ajandek gyerekeknek
+  date: 2026. 10. 05.
+  folder: ''
+- school: ps
+  year: 2026-27
+  slug: 2026-10-05-iskolatorteneti-kiallitas
+  title: Iskolatörteneti kiállitás
+  alt: Iskolatörteneti kiállitás
+  date: 2026. 10. 05.
+  folder: ''
+- school: ps
+  year: 2026-27
+  slug: 2026-10-05-idokapszula-a-jovo-diakjainak
+  title: Időkapszula a jövő diákjainak
+  alt: Időkapszula a jövő diákjainak
+  date: 2026. 10. 05.
+  folder: ''
+- school: ps
+  year: 2026-27
+  slug: 2026-10-02-jubileumi-szureti-piknik
+  title: Jubileumi szüreti piknik
+  alt: Jubileumi szüreti piknik
+  date: 2026. 10. 02.
+  folder: ''
+- school: ps
+  year: 2026-27
+  slug: 2026-10-01-szent-mihaly-napi-lepegeto
+  title: Szent Mihály-napi lépegető
+  alt: Szent Mihály-napi lépegető
+  date: 2026. 10. 01.
+  folder: ''
+- school: ps
+  year: 2026-27
+  slug: 2026-10-01-a-vilag-legnagyobb-tanoraja
+  title: A világ legnagyobb tanórája
+  alt: A vilag legnagyobb tanoraja
+  date: 2026. 10. 01.
+  folder: ''
+- school: ps
+  year: 2026-27
+  slug: 2026-09-23-eu-diaksport-napja
+  title: EU diáksport nap
+  alt: EU diáksport nap
+  date: 2026. 09. 23.
+  folder: ''
+- school: ps
+  year: 2026-27
+  slug: 2026-09-14-mohacs-500
+  title: 'Mohács: 500 éves'
+  alt: 'Mohács: 500 éves'
+  date: 2026. 09. 14.
+  folder: ''
+- school: ps
+  year: 2026-27
+  slug: 2026-09-04-matekozas-maskent
+  title: Matekozás másként
+  alt: Matekozás másként
+  date: 2026. 09. 04.
+  folder: ''
+- school: ps
+  year: 2026-27
+  slug: 2026-09-03-logi-grafi-klub
+  title: Logi-grafi klub
+  alt: Logi-grafi klub
+  date: 2026. 09. 03.
+  folder: ''
+- school: ps
+  year: 2026-27
+  slug: 2026-09-01-tanevnyito
+  title: Tanévnyitó
+  alt: Tanévnyitó
+  date: 2026. 09. 01.
+  folder: ''
 - school: bs
   year: 2026-27
   slug: 2026-11-09-oltozz-ki-nap
@@ -50,10 +194,10 @@
 - school: bs
   year: 2026-27
   slug: 2026_09_01_tanevnyito
-  title: Tanévnyitó
+  title: Tanévnyitóó
   alt: Tanévnyitó
   date: 2026. 09. 01.
-  folder: bs/2026-27/2026_09_01_tanevnyito
+  folder: ''
 - school: bs
   year: 2026-27
   slug: 2026_09_03_sarkanyhajozas
@@ -74,12 +218,13 @@
   title: Madarak es fak temanap
   alt: Madarak es fak temanap
   date: 2025. 05. 29.
-- school: ps
+- folder: ps/2025-26/2025_11_25_5_osztalyosok_a_Mora_ferenc_muzeumban
+  school: ps
   year: 2025-26
-  slug: 2025_11_25_5_osztalyosok_a_mora_ferenc_muzeumban
-  title: 5 osztalyosok a mora ferenc muzeumban
-  alt: 5 osztalyosok a mora ferenc muzeumban
   date: 2025. 11. 25.
+  slug: 2025_11_25_5_osztalyosok_a_Mora_ferenc_muzeumban
+  title: 5. osztály a Móra Múzeumban
+  alt: Petőfi Sándor Általános Iskola 2025 5. osztályosok a Móra Ferenc Múzeumban
 - school: ps
   year: 2025-26
   slug: 2025_10_14_angol_nyelvu_digit_prezent_keszitese_es_kutatomunka
@@ -880,13 +1025,6 @@
   slug: 2025_11_25_2025_bolyai_csapatverseny
   title: Bolyai csapatverseny
   alt: Petőfi Sándor Általános Iskola 2025 Bolyai csapatverseny
-- folder: ps/2025-26/2025_11_25_5_osztalyosok_a_Mora_ferenc_muzeumban
-  school: ps
-  year: 2025-26
-  date: 2025. 11. 25.
-  slug: 2025_11_25_5_osztalyosok_a_Mora_ferenc_muzeumban
-  title: 5. osztály a Móra Múzeumban
-  alt: Petőfi Sándor Általános Iskola 2025 5. osztályosok a Móra Ferenc Múzeumban
 - folder: ps/2025-26/2025_11_26_egeszsegnap
   school: ps
   year: 2025-26
@@ -2713,4 +2851,18 @@
   date: 2026. 09. 23.
   title: Homokvár építés
   folder: bs/2026-27/2026_09_23_homokvar-epites
+- school: ps
+  year: 2026-27
+  slug: 2026-11-19-notebook-a-tanulasban
+  date: 2026. 11. 19.
+  title: Notebook a tanulásban
+  folder: ps/2026-27/2026-11-19-notebook-a-tanulasban
+  alt: Notebook a tanulásban
+- school: ps
+  year: 2026-27
+  slug: 2026-11-13-marton-napi-vetelkedo
+  date: 2026. 11. 13.
+  title: Márton napi vetélkedő
+  folder: ps/2026-27/2026-11-13-marton-napi-vetelkedo
+  alt: Márton napi vetélkedő
 

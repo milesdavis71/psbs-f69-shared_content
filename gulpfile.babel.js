@@ -297,38 +297,30 @@ function reload(done) {
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
     gulp.watch(PATHS.assets, copy)
-    gulp.watch('src/pages/**/*.html').on(
-        'all',
-        gulp.series(pages, browser.reload)
+    gulp.watch('src/pages/**/*.html',
+        gulp.series(pages, reload)
     )
-    gulp.watch('src/{layouts,partials}/**/*.html').on(
-        'all',
-        gulp.series(resetPages, pages, browser.reload)
+    gulp.watch('src/{layouts,partials}/**/*.html',
+        gulp.series(resetPages, pages, reload)
     )
-    gulp.watch('src/data/**/*.{js,json,yml}').on(
-        'all',
-        gulp.series(resetPages, pages, browser.reload)
+    gulp.watch('src/data/**/*.{js,json,yml}',
+        gulp.series(resetPages, pages, reload)
     )
-    gulp.watch('src/helpers/**/*.js').on(
-        'all',
-        gulp.series(resetPages, pages, browser.reload)
+    gulp.watch('src/helpers/**/*.js',
+        gulp.series(resetPages, pages, reload)
     )
-    gulp.watch('src/content/**/*.md').on(
-        'all',
-        gulp.series(resetPages, pages, browser.reload)
+    gulp.watch('src/content/**/*.md',
+        gulp.series(resetPages, pages, reload)
     )
-    gulp.watch('src/assets/scss/**/*.scss').on('all', sassBuild)
-    gulp.watch('src/assets/js/**/*.js').on(
-        'all',
-        gulp.series(javascript, browser.reload)
+    gulp.watch('src/assets/scss/**/*.scss', sassBuild)
+    gulp.watch('src/assets/js/**/*.js',
+        gulp.series(javascript, reload)
     )
-    gulp.watch('src/assets/img/**/*').on(
-        'all',
-        gulp.series(images, browser.reload)
+    gulp.watch('src/assets/img/**/*',
+        gulp.series(images, reload)
     )
-    gulp.watch('src/styleguide/**').on(
-        'all',
-        gulp.series(styleGuide, browser.reload)
+    gulp.watch('src/styleguide/**',
+        gulp.series(styleGuide, reload)
     )
 }
 // ----- School-specific Handling -----
@@ -343,6 +335,14 @@ function setSchool(school) {
         console.log(`\n🔧 Building for: ${currentSchool}\n`)
         done()
     }
+}
+
+async function syncGalleries() {
+    const { syncGalleryPages, withGalleryRetry } = require('./.frontmatter/lib/gallery-store.cjs')
+    await withGalleryRetry(() => syncGalleryPages(
+        process.cwd(),
+        JSON.parse(fs.readFileSync('frontmatter.json', 'utf8'))
+    ))
 }
 
 // This is the task for build pages of each school + kozos
@@ -384,51 +384,46 @@ function pagesSchool() {
 }
 
 // Override default `pages` task with the dynamic one
-gulp.task('pages', pagesSchool)
+gulp.task('pages', gulp.series(syncGalleries, resetPages, pagesSchool))
+
+// A failed edit must not terminate the development server's watcher.
+async function rebuildSchool() {
+    try {
+        await syncGalleries()
+        panini.refresh()
+        await new Promise((resolve, reject) => {
+            require('async-done')(pagesSchool, error => error ? reject(error) : resolve())
+        })
+        browser.reload()
+    } catch (error) {
+        console.error('Gallery/page rebuild failed:', error.message)
+    }
+}
 
 // Update watch to reflect current school + kozos
 function watchSchool() {
     gulp.watch(PATHS.assets, copy)
 
-    // school-specifikus + kozos oldalak figyelése
+    // One queued watcher combines gallery page/data events and prevents
+    // concurrent Panini builds when synchronization updates several files.
     gulp.watch([
         `src/pages/${currentSchool}/**/*.html`,
         `src/pages/${SHARED_DIR}/**/*.html`,
-    ]).on('all', gulp.series(pagesSchool, browser.reload))
+        'src/{layouts,partials}/**/*.html',
+        'src/data/**/*.{js,json,yml}',
+        'src/helpers/**/*.js',
+        'src/content/**/*.md',
+    ], { delay: 500, queue: true, awaitWriteFinish: { stabilityThreshold: 300, pollInterval: 100 } }, rebuildSchool)
 
-    gulp.watch('src/{layouts,partials}/**/*.html').on(
-        'all',
-        gulp.series(resetPages, pagesSchool, browser.reload)
+    gulp.watch('src/assets/scss/**/*.scss', sassBuild)
+    gulp.watch('src/assets/js/**/*.js',
+        gulp.series(javascript, reload)
     )
-
-    // data alatt minden yml/js/json – ebben benne van src/data/kozos is
-    gulp.watch('src/data/**/*.{js,json,yml}').on(
-        'all',
-        gulp.series(resetPages, pagesSchool, browser.reload)
+    gulp.watch('src/assets/img/**/*',
+        gulp.series(images, reload)
     )
-
-    gulp.watch('src/helpers/**/*.js').on(
-        'all',
-        gulp.series(resetPages, pagesSchool, browser.reload)
-    )
-
-    gulp.watch('src/content/**/*.md').on(
-        'all',
-        gulp.series(resetPages, pagesSchool, browser.reload)
-    )
-
-    gulp.watch('src/assets/scss/**/*.scss').on('all', sassBuild)
-    gulp.watch('src/assets/js/**/*.js').on(
-        'all',
-        gulp.series(javascript, browser.reload)
-    )
-    gulp.watch('src/assets/img/**/*').on(
-        'all',
-        gulp.series(images, browser.reload)
-    )
-    gulp.watch('src/styleguide/**').on(
-        'all',
-        gulp.series(styleGuide, browser.reload)
+    gulp.watch('src/styleguide/**',
+        gulp.series(styleGuide, reload)
     )
 }
 
@@ -441,6 +436,7 @@ SCHOOLS.forEach((school) => {
         gulp.series(
             setSchool(school),
             clean,
+            syncGalleries,
             gulp.parallel(pagesSchool, javascript, images, copy, routing),
             sassBuild,
             styleGuide

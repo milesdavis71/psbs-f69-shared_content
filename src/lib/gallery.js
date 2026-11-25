@@ -15,6 +15,7 @@ const {
 
 const EVENTS_FILE = path.join(process.cwd(), 'src/data/gallery_events.yml')
 const SCHOOLS = ['ps', 'bs']
+const { readState } = require('./gallery-state.cjs')
 
 function rootOf(options) {
     return options?.data?.root || this
@@ -190,7 +191,8 @@ function loadEvents(root, includeAssets = false) {
             byKey.set(key, merged)
         }
     }
-    return sortEvents([...byKey.values()])
+    const deleted = new Set(readState(projectRootOf(root)).deleted)
+    return sortEvents([...byKey.values()].filter(event => !deleted.has(eventKey(event))))
 }
 
 function yearLabel(year) {

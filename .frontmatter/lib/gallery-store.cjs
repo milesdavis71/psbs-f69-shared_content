@@ -14,6 +14,7 @@ const {
 } = require('../../src/lib/gallery-utils.cjs')
 
 const SOURCE_ID = 'gallery-events'
+const { eventKey, readState } = require('../../src/lib/gallery-state.cjs')
 
 function sourcePaths(root, config, sourceId) {
     if (sourceId !== SOURCE_ID) {
@@ -41,12 +42,13 @@ function readEvents(file) {
 function readGalleryEntries(root, config) {
     const files = sourcePaths(root, config, SOURCE_ID)
     if (!fs.existsSync(files.data)) return []
-    return readEvents(files.data).map((entry) =>
+    return uniqueEntries(readEvents(files.data)).map((entry) =>
         entry && typeof entry === 'object' ? entry : null
     )
 }
 
 function atomicWrite(file, text) {
+    if (fs.existsSync(file) && fs.readFileSync(file, 'utf8') === text) return
     const temporary = `${file}.${randomUUID()}.tmp`
     try {
         fs.mkdirSync(path.dirname(file), { recursive: true })
@@ -57,23 +59,75 @@ function atomicWrite(file, text) {
     }
 }
 
+// Never expire a live owner's lock: a slow save must not lose its protection.
 function acquireLock(lock) {
-    try {
-        const descriptor = fs.openSync(lock, 'wx')
+    for (let attempt = 0; attempt < 3; attempt++) {
         try {
-            fs.writeFileSync(descriptor, JSON.stringify({ pid: process.pid }))
+            const descriptor = fs.openSync(lock, 'wx')
+            try {
+                fs.writeFileSync(descriptor, JSON.stringify({ pid: process.pid, token: randomUUID() }))
+            } catch (error) {
+                fs.closeSync(descriptor)
+                fs.unlinkSync(lock)
+                throw error
+            }
+            return descriptor
         } catch (error) {
-            fs.closeSync(descriptor)
-            fs.unlinkSync(lock)
-            throw error
+            if (error.code !== 'EEXIST') throw error
+            try {
+                const contents = fs.readFileSync(lock, 'utf8')
+                let abandoned = false
+                try {
+                    const owner = JSON.parse(contents)
+                    if (Number.isInteger(owner.pid) && owner.pid > 0) {
+                        try { process.kill(owner.pid, 0) }
+                        catch (error) { abandoned = error.code === 'ESRCH' }
+                    }
+                } catch {
+                    // Allow the creator time to write its owner record.
+                    abandoned = Date.now() - fs.statSync(lock).mtimeMs > 30000
+                }
+                if (abandoned && fs.readFileSync(lock, 'utf8') === contents) {
+                    fs.unlinkSync(lock)
+                    continue
+                }
+            } catch (error) {
+                if (error.code === 'ENOENT') continue
+                throw error
+            }
+            const busy = new Error('Másik galériaművelet van folyamatban. Próbáld újra néhány másodperc múlva.')
+            busy.code = 'GALLERY_BUSY'
+            throw busy
         }
-        return descriptor
-    } catch (error) {
-        if (error.code !== 'EEXIST') throw error
-        throw new Error(
-            'Másik galériamentés van folyamatban. Próbáld újra néhány másodperc múlva.'
-        )
     }
+    const error = new Error('A galéria zárolása nem sikerült. Próbáld újra.')
+    error.code = 'GALLERY_BUSY'
+    throw error
+}
+
+// GUI and Gulp wait without blocking their event loops, with a bounded timeout.
+async function withGalleryRetry(operation, { timeout = 8000, delay = 100 } = {}) {
+    const deadline = Date.now() + timeout
+    while (true) {
+        try { return operation() }
+        catch (error) {
+            if (error.code !== 'GALLERY_BUSY' || Date.now() >= deadline) throw error
+            await new Promise(resolve => setTimeout(resolve, delay))
+        }
+    }
+}
+
+// Windows resolves these slugs to the same file. Prefer the explicit GUI
+// folder selection over a legacy entry inferred from an image directory.
+function uniqueEntries(entries) {
+    const records = new Map()
+    for (const entry of entries) {
+        const key = eventKey(entry)?.toLowerCase()
+        if (!key) { records.set(Symbol(), entry); continue }
+        const previous = records.get(key)
+        if (!previous || (!previous.folder && entry.folder)) records.set(key, entry)
+    }
+    return [...records.values()]
 }
 
 function pagePaths(root, record) {
@@ -108,9 +162,7 @@ function findEventPage(root, record) {
     return null
 }
 
-// A fájl front matterje egyezik a bejegyzéssel? Csak eltérés esetén írunk,
-// hogy a feleslegesen módosított fájlok ne keletkezzenek. Az alt és a date
-// mező formázása eltérhet, ezért ezek nem triggerelnek újraírást.
+// Compare all managed fields; atomicWrite avoids changing identical files.
 function pageMatches(file, record) {
     try {
         const source = fs.readFileSync(file, 'utf8')
@@ -119,6 +171,8 @@ function pageMatches(file, record) {
         const fields = yaml.load(match[1]) || {}
         return (
             String(fields.title || '') === record.title &&
+            String(fields.alt || '') === record.alt &&
+            String(fields.date || '') === record.date &&
             String(fields.schoolKey || '') === record.school &&
             String(fields.slug || '') === record.slug &&
             String(fields.year || '') === record.year
@@ -262,16 +316,15 @@ function saveGallery(root, config, request, options = {}) {
         const oldData = fs.existsSync(files.data)
             ? fs.readFileSync(files.data, 'utf8')
             : '[]\n'
-        const entries = yaml.load(oldData)
-        if (!Array.isArray(entries)) throw new Error('A galérialista nem YAML-lista.')
+        const parsedEntries = yaml.load(oldData)
+        if (!Array.isArray(parsedEntries)) throw new Error('A galérialista nem YAML-lista.')
+        const entries = uniqueEntries(parsedEntries)
         const record = validateModel(root, config, request.model)
         const paths = pagePaths(root, record)
         options.assertClean?.([files.data, paths.page])
         const same = (entry) =>
             entry &&
-            entry.school === record.school &&
-            String(entry.year) === record.year &&
-            entry.slug === record.slug
+            eventKey(entry)?.toLowerCase() === eventKey(record)?.toLowerCase()
         let existing
         if (request.baseline) {
             const matches = entries.filter(same)
@@ -303,6 +356,15 @@ function saveGallery(root, config, request, options = {}) {
             throw new Error('A galérialista közben megváltozott. Próbáld újra a mentést.')
         }
         atomicWrite(files.data, data)
+        const state = readState(root)
+        const key = eventKey(record)
+        atomicWrite(
+            path.join(root, 'src/data/gallery_state.json'),
+            JSON.stringify({
+                known: [...new Set([...state.known, ...entries.map(eventKey).filter(Boolean)])],
+                deleted: state.deleted.filter(item => item !== key),
+            }, null, 2) + '\n'
+        )
         return {
             ok: true,
             id: record.slug,
@@ -327,65 +389,100 @@ function saveGallery(root, config, request, options = {}) {
 function syncGalleryPages(root, config) {
     const files = sourcePaths(root, config, SOURCE_ID)
     if (!fs.existsSync(files.data)) return []
-    const created = []
-    const entries = readEvents(files.data)
-    const known = new Set()
-    for (const entry of entries) {
-        if (!entry) continue
-        const parsed = parseGalleryFolder(entry.folder)
-        // A mappa útvonala kanonikus, ezért ez az iskola érvényesül.
-        const school = parsed?.school || entry.school
-        const year = String(parsed?.year || entry.year || '')
-        const slug = String(parsed?.slug || entry.slug || '')
-        if (school && year && slug) known.add(`${school}/${year}/${slug}`)
-        const record = {
-            school,
-            year,
-            slug,
-            title: String(entry.title || ''),
-            alt: String(entry.alt || entry.title || ''),
-            date: String(entry.date || ''),
+    fs.mkdirSync(files.runtime, { recursive: true })
+    const lock = path.join(files.runtime, `${SOURCE_ID}.lock`)
+    const descriptor = acquireLock(lock)
+    try {
+        const created = []
+        const originalEntries = readEvents(files.data)
+        const entries = uniqueEntries(originalEntries)
+        const state = readState(root)
+        const active = new Set(entries.map(eventKey).filter(Boolean))
+        const activeFolded = new Set([...active].map(key => key.toLowerCase()))
+        const deleted = new Set(state.deleted)
+        for (const key of state.known) {
+            if (!activeFolded.has(key.toLowerCase())) deleted.add(key)
         }
-        if (!['ps', 'bs'].includes(school)) continue
-        if (!/^\d{4}-\d{2}$/.test(record.year) || !record.slug || !record.title) continue
-        const paths = pagePaths(root, record)
-        // Az esemény oldalfájlja: ha már létezik (akár a másik iskolában),
-        // a front matterjét frissítjük, de a saját tartalma megmarad.
-        const existing = findEventPage(root, record)
-        if (existing) {
-            if (!pageMatches(existing, record)) writePage(existing, record)
-        } else if (ensureFile(paths.page, renderEventPage(record))) {
-            created.push(paths.page)
+        for (const key of deleted) {
+            if (activeFolded.has(key.toLowerCase())) deleted.delete(key)
         }
-        ensureFile(paths.main, renderMainPage(record.school))
-    }
+        for (const key of deleted) {
+            const [school, year, slug] = key.split('/')
+            if (eventKey({ school, year, slug }) !== key) continue
+            for (const file of [
+                pagePaths(root, { school, year, slug }).page,
+                path.join(root, 'dist', 'galeriak', year, `${slug}.html`),
+                path.join(root, 'dist', school, 'galeriak', year, `${slug}.html`),
+            ]) {
+                if (fs.existsSync(file)) fs.unlinkSync(file)
+            }
+        }
+        const known = new Set()
+        for (const entry of entries) {
+            if (!entry) continue
+            const parsed = parseGalleryFolder(entry.folder)
+            // A mappa útvonala kanonikus, ezért ez az iskola érvényesül.
+            const school = parsed?.school || entry.school
+            const year = String(parsed?.year || entry.year || '')
+            const slug = String(parsed?.slug || entry.slug || '')
+            if (school && year && slug) known.add(`${school}/${year}/${slug}`.toLowerCase())
+            const record = {
+                school,
+                year,
+                slug,
+                title: String(entry.title || ''),
+                alt: String(entry.alt || entry.title || ''),
+                date: String(entry.date || ''),
+            }
+            if (!['ps', 'bs'].includes(school)) continue
+            if (!/^\d{4}-\d{2}$/.test(record.year) || !record.slug || !record.title) continue
+            const paths = pagePaths(root, record)
+            // Az esemény oldalfájlja: ha már létezik (akár a másik iskolában),
+            // a front matterjét frissítjük, de a saját tartalma megmarad.
+            const existing = findEventPage(root, record)
+            if (existing) {
+                if (!pageMatches(existing, record)) writePage(existing, record)
+            } else if (ensureFile(paths.page, renderEventPage(record))) {
+                created.push(paths.page)
+            }
+            ensureFile(paths.main, renderMainPage(record.school))
+        }
 
-    // A képmappákból még hiányzó események: eseményoldal + registrybejegyzés.
-    const added = []
-    for (const folder of galleryFolders(root)) {
-        const key = `${folder.school}/${folder.year}/${folder.slug}`
-        if (known.has(key)) continue
-        known.add(key)
-        const parsed = parseDateFromSlug(folder.slug)
-        const title = titleFromSlug(folder.slug)
-        const record = {
-            school: folder.school,
-            year: folder.year,
-            slug: folder.slug,
-            title,
-            alt: title,
-            date: parsed ? formatHungarianDate(parsed) : '',
+        // A képmappákból még hiányzó események: eseményoldal + registrybejegyzés.
+        const added = []
+        for (const folder of galleryFolders(root)) {
+            const key = `${folder.school}/${folder.year}/${folder.slug}`
+            if ([...deleted].some(item => item.toLowerCase() === key.toLowerCase())) continue
+            if (known.has(key.toLowerCase())) continue
+            known.add(key.toLowerCase())
+            const parsed = parseDateFromSlug(folder.slug)
+            const title = titleFromSlug(folder.slug)
+            const record = {
+                school: folder.school,
+                year: folder.year,
+                slug: folder.slug,
+                title,
+                alt: title,
+                date: parsed ? formatHungarianDate(parsed) : '',
+            }
+            const paths = pagePaths(root, record)
+            if (ensureFile(paths.page, renderEventPage(record))) created.push(paths.page)
+            ensureFile(paths.main, renderMainPage(record.school))
+            added.push(record)
         }
-        const paths = pagePaths(root, record)
-        if (ensureFile(paths.page, renderEventPage(record))) created.push(paths.page)
-        ensureFile(paths.main, renderMainPage(record.school))
-        added.push(record)
+        if (added.length || entries.length !== originalEntries.length) {
+            const data = yaml.dump([...added, ...entries], { lineWidth: -1, noRefs: true })
+            atomicWrite(files.data, data)
+        }
+        const nextState = { known: [...active, ...added.map(eventKey)], deleted: [...deleted] }
+        if (!isDeepStrictEqual(state, nextState)) {
+            atomicWrite(path.join(root, 'src/data/gallery_state.json'), JSON.stringify(nextState, null, 2) + '\n')
+        }
+        return created
+    } finally {
+        fs.closeSync(descriptor)
+        fs.unlinkSync(lock)
     }
-    if (added.length) {
-        const data = yaml.dump([...added, ...entries], { lineWidth: -1, noRefs: true })
-        atomicWrite(files.data, data)
-    }
-    return created
 }
 
 module.exports = {
@@ -397,5 +494,6 @@ module.exports = {
     sourcePaths,
     syncGalleryPages,
     validateModel,
+    withGalleryRetry,
 }
 
