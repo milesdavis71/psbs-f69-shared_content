@@ -9,3 +9,4 @@ yarn.lock
 copilot-instructions.md
 .frontmatter/database
 .frontmatter/runtime/
+/src/data/gallery_events.yml
