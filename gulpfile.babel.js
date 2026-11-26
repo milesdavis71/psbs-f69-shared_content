@@ -107,7 +107,13 @@ function clean(done) {
 // Copy files out of the assets folder
 // This task skips over the "img", "js", and "scss" folders, which are parsed separately
 function copy() {
-    return gulp.src(PATHS.assets).pipe(gulp.dest(PATHS.dist + '/assets'))
+    return mergeStream(
+        gulp.src(PATHS.assets).pipe(gulp.dest(PATHS.dist + '/assets')),
+        gulp.src('node_modules/pdfjs-dist/legacy/build/{pdf.min.js,pdf.worker.min.js}')
+            .pipe(gulp.dest(PATHS.dist + '/assets/pdf-viewer')),
+        gulp.src('node_modules/pdfjs-dist/{cmaps,standard_fonts}/**/*', { base: 'node_modules/pdfjs-dist' })
+            .pipe(gulp.dest(PATHS.dist + '/assets/pdf-viewer'))
+    )
 }
 
 function routing(done) {

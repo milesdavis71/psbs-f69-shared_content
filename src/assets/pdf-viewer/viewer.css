@@ -1,0 +1,9 @@
+.pdf-reader { min-width: 0; }
+.pdf-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 8px; }
+.pdf-controls[hidden] { display: none; }
+.pdf-controls button { min-width: 44px; min-height: 44px; padding: 8px; background: #075985; color: white; border-radius: 4px; cursor: pointer; }
+.pdf-controls button:disabled { opacity: .45; cursor: default; }
+.pdf-surface { width: 100%; overflow: auto; max-height: 75vh; max-height: 75dvh; background: #f5f5f5; -webkit-overflow-scrolling: touch; }
+.pdf-surface canvas { display: block; max-width: none; margin: 0 auto; }
+.pdf-surface embed { display: block; width: 100%; height: 75vh; }
+.pdf-reader a { overflow-wrap: anywhere; }
