@@ -10,3 +10,4 @@ copilot-instructions.md
 .frontmatter/database
 .frontmatter/runtime/
 /src/data/gallery_events.yml
+/src/data/gallery_state.json
