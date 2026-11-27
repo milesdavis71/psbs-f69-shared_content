@@ -165,7 +165,7 @@ Szeretettel várunk minden érdeklődőt!
 {{#ifequal hir "news15"}}
 
 Nyílt órát tart a leendő 1. osztályos osztályfőnök  
-**Szabó Adrienne** 
+**Szabó Adrienne**  
 2027\. január 14. 8:00 
 
 *Várjuk a leendő első osztályos szülőket!*
@@ -218,4 +218,25 @@ szerda, csütörtök
 Szeretettel várunk benneteket **december 9-én (szerdán) 16:30-kor** kezdődő *„Játékos téli készülődés”* című suliváró foglalkozásunkra!
 
 *Magdi néni, Nóri néni és Marian néni*
+{{/ifequal}}
+
+{{#ifequal hir "news21"}}
+
+
+Nyílt órát tart a leendő 1. osztályos osztályfőnök  
+**Erdélyi Marian**  
+2027\. január 14. 8:00 
+
+*Várjuk a leendő első osztályos szülőket!*
+
+{{/ifequal}}
+
+{{#ifequal hir "news22"}}
+
+**2026.12.19. - 2027.01.03.**  
+
+utolsó tanítási nap:  
+**2026\. december 18.** (péntek)  
+első tanítási nap:  
+**2027\. január 4. (hétfő)**
 {{/ifequal}}
