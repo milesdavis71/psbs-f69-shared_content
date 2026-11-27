@@ -66,31 +66,17 @@ function loadSchoolConfig() {
     fs.writeFileSync('./src/assets/scss/_dynamic-colors.scss', scssVars)
 }
 
-gulp.task('sass', function () {
-    loadSchoolConfig()
-    return gulp
-        .src(paths.sass)
-        .pipe(sourcemaps.init())
-        .pipe(
-            sass
-                .sync({
-                    includePaths: ['node_modules'],
-                    quietDeps: true,
-                })
-                .on('error', sass.logError)
-        )
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(paths.dist + '/assets/css'))
-})
+gulp.task('sass', gulp.series(sassBuild, verifyCss))
 
 // Build the "dist" folder by running all of the below tasks
-// Sass must be run later so UnCSS can search for used classes in the others assets.
+// UnCSS is disabled. Produce and verify the main stylesheet before copying assets.
 gulp.task(
     'build',
     gulp.series(
         clean,
-        gulp.parallel(pages, javascript, images, copy, routing),
         sassBuild,
+        verifyCss,
+        gulp.parallel(pages, javascript, images, copy, routing),
         styleGuide
     )
 )
@@ -159,6 +145,23 @@ function styleGuide(done) {
 // Compile Sass into CSS
 // In production, the CSS is compressed
 function sassBuild() {
+    return compileStyles(false)
+}
+
+function sassWatch() {
+    return compileStyles(true)
+}
+
+function verifyCss(done) {
+    const file = path.join(PATHS.dist, 'assets/css/app.css')
+    if (!fs.existsSync(file) || fs.statSync(file).size === 0) {
+        done(new Error('CSS build failed: missing or empty ' + file))
+        return
+    }
+    done()
+}
+
+function compileStyles(watching) {
     const postCssPlugins = [
         // Autoprefixer
         autoprefixer(),
@@ -169,12 +172,17 @@ function sassBuild() {
     return gulp
         .src('src/assets/scss/app.scss')
         .pipe(sourcemaps.init())
-        .pipe(plumber())
+        .pipe(plumber({
+            errorHandler: watching ? function (error) {
+                console.error(error.message)
+                this.emit('end')
+            } : false,
+        }))
         .pipe(
             sass({
                 includePaths: PATHS.sass,
                 quietDeps: true,
-            }).on('error', sass.logError)
+            })
         )
         .pipe(postcss(postCssPlugins))
         .pipe(sourcemaps.write('.'))
@@ -318,7 +326,7 @@ function watch() {
     gulp.watch('src/content/**/*.md',
         gulp.series(resetPages, pages, reload)
     )
-    gulp.watch('src/assets/scss/**/*.scss', sassBuild)
+    gulp.watch('src/assets/scss/**/*.scss', sassWatch)
     gulp.watch('src/assets/js/**/*.js',
         gulp.series(javascript, reload)
     )
@@ -421,7 +429,7 @@ function watchSchool() {
         'src/content/**/*.md',
     ], { delay: 500, queue: true, awaitWriteFinish: { stabilityThreshold: 300, pollInterval: 100 } }, rebuildSchool)
 
-    gulp.watch('src/assets/scss/**/*.scss', sassBuild)
+    gulp.watch('src/assets/scss/**/*.scss', sassWatch)
     gulp.watch('src/assets/js/**/*.js',
         gulp.series(javascript, reload)
     )
@@ -442,9 +450,10 @@ SCHOOLS.forEach((school) => {
         gulp.series(
             setSchool(school),
             clean,
+            sassBuild,
+            verifyCss,
             syncGalleries,
             gulp.parallel(pagesSchool, javascript, images, copy, routing),
-            sassBuild,
             styleGuide
         )
     )
